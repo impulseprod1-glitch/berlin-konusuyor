@@ -270,6 +270,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   position: relative;
   padding: calc(var(--nav-height) + 36px + 40px) clamp(24px, 5vw, 80px) 80px;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -368,6 +369,9 @@ img { max-width: 100%; display: block; }
   padding: 120px clamp(24px, 5vw, 80px);
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  background: var(--bg-primary);
 }
 
 .section-dark {
@@ -375,6 +379,8 @@ img { max-width: 100%; display: block; }
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  position: relative;
+  z-index: 6;
 }
 
 .section-dark > .section-header,

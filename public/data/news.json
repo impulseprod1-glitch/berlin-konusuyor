@@ -1,120 +1,49 @@
 {
-  "lastUpdated": "2026-03-13T21:07:08.495Z",
-  "count": 10,
+  "lastUpdated": "2026-03-15T15:00:00Z",
   "articles": [
     {
-      "title": "Hatay'da depremlerin ardından 123'üncü cami ibadete açıldı",
-      "description": "Hatay'da hayırseverlerin desteğiyle yapılan Gülcihan Camisi, düzenlenen törenle ibadete açıldı.",
-      "url": "https://www.aa.com.tr/tr/guncel/hatayda-depremlerin-ardindan-123uncu-cami-ibadete-acildi/3863965",
-      "image": "",
-      "date": "2026-03-13T20:54:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
+      "id": "1",
+      "title": "Berlin'de Konut Piyasası ve Yeni Düzenlemeler",
+      "summary_tr": "Berlin'de Konut Piyasası ve Yeni Düzenlemeler",
+      "description": "Berlin senatosu, kiralık konut piyasasını rahatlatmak amacıyla yeni bir yapılaşma paketini onayladı. Bu paketle birlikte yeni sosyal konutların inşası hızlanacak.",
+      "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80",
+      "date": "2026-03-15T08:00:00Z",
+      "source": "Berlin News",
+      "url": "#"
     },
     {
-      "title": "1:4 in Aachen: Cottbus mit Ausrutscher im Aufstiegskampf",
-      "description": "Herber Rückschlag im Aufstiegsrennen: Drittligist Energie Cottbus verliert am verregneten Tivoli und bleibt erstmals in diesem Kalenderjahr ohne Punkt. Große Chancen für die Führung ließen die Lausitzer im ersten Durchgang liegen.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/03/3-liga-fussball-alemannia-aachen-energie-cottbus-live-ticker.html",
-      "image": "",
-      "date": "2026-03-13T20:48:09.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
+      "id": "2",
+      "title": "Kreuzberg Festivali Hazırlıkları Başladı",
+      "summary_tr": "Kreuzberg Festivali Hazırlıkları Başladı",
+      "description": "Her yıl düzenlenen Kreuzberg sokak festivali için geri sayım başladı. Bu yıl katılımın rekor kırması bekleniyor.",
+      "image": "https://images.unsplash.com/photo-1558239027-d0a47f480377?w=800&q=80",
+      "date": "2026-03-14T12:00:00Z",
+      "source": "Kultur Berlin",
+      "url": "#"
     },
     {
-      "title": "İHH, Şam’da 400 yetim ailesi için iftar programı düzenledi",
-      "description": "İnsan Hak Ve Hürriyetleri (İHH) İnsani Yardım Vakfı, Şam’da 400 yetim ailesine yönelik düzenlediği iftar programında çocuklara bayram harçlığı ve oyuncak dağıtarak yüzlerini güldürdü.",
-      "url": "https://www.aa.com.tr/tr/guncel/ihh-sam-da-400-yetim-ailesi-icin-iftar-programi-duzenledi/3863957",
-      "image": "",
-      "date": "2026-03-13T20:43:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
+      "id": "3",
+      "title": "Berlin Teknoloji Zirvesi 2026",
+      "summary_tr": "Berlin Teknoloji Zirvesi 2026",
+      "description": "Avrupa'nın en büyük teknoloji zirvelerinden biri olan Berlin Tech Summit, kapılarını start-up dünyasına açıyor.",
+      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
+      "date": "2026-03-13T10:00:00Z",
+      "source": "Tech Berlin",
+      "url": "#"
     },
     {
-      "title": "S&P Orta Doğu'daki savaşın ABD ekonomisi üzerinde uzun vadeli etkileri olabileceğini belirtti",
-      "description": "Uluslararası kredi derecelendirme kuruluşu Standard & Poor's (S&P), Orta Doğu'daki savaşın ABD ekonomisi ve kredi koşulları üzerinde uzun vadeli etkileri olabileceğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/guncel/sp-orta-dogudaki-savasin-abd-ekonomisi-uzerinde-uzun-vadeli-etkileri-olabilecegini-belirtti/3863926",
-      "image": "",
-      "date": "2026-03-13T20:12:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bilal Erdoğan: Türkiye bugün küresel ölçekte barışın güçlenmesi için gayret gösteren önemli bir aktör konumundadır",
-      "description": "İlim Yayma Vakfı Mütevelli Heyeti Başkanı Bilal Erdoğan, \"Türkiye, bugün bölgesel ve küresel ölçekte barışın güçlenmesi için gayret gösteren önemli bir aktör konumundadır.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/bilal-erdogan-turkiye-bugun-kuresel-olcekte-barisin-guclenmesi-icin-gayret-gosteren-onemli-bir-aktor-konumundadir/3863919",
-      "image": "",
-      "date": "2026-03-13T20:04:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ticaret Bakanı Bolat: Kapıkule'nin hemen kuzeyinde yeni bir gümrük kapısı daha açacağız",
-      "description": "Ticaret Bakanı Ömer Bolat, \"Kapıkule'nin hemen kuzeyinde yeni bir gümrük kapısı daha açacağız. Bu da Avrupa'ya taşımalarımız için çok önemli. Yeni ticari taşımalara da imkan sağlayacak.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/ticaret-bakani-bolat-kapikulenin-hemen-kuzeyinde-yeni-bir-gumruk-kapisi-daha-acacagiz/3863911",
-      "image": "",
-      "date": "2026-03-13T19:51:06.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Prignitz: Ein Bulle nach Unfall noch immer nicht gefunden - mehrere Tiere getötet ",
-      "description": "Bei einem Unfall in der Prignitz konnten neun Bullen aus einem umgekippten Tiertransporter ausbüxen. Acht von ihnen wurden gefunden und getötet - nach einem Tier wird noch gesucht. Die Behörden warnen davor, sich dem Bullen zu nähern.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/prignitz-rindertransport-umgekippt-bullen-gefluechtet.html",
-      "image": "",
-      "date": "2026-03-13T18:26:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "CDU stimmt in Hennigsdorf mit AfD für Bürgerpatrouillen - Demonstration am Freitag",
-      "description": "In Hennigsdorf sorgt ein gemeinsames Votum für Aufsehen: Stadtverordnete der CDU haben für eine von der AfD initiierte Bürgerpatrouille gestimmt.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/03/brandenburg-hennigsdorf-svv-cdu-afd-buerger-patrouillen-kritik-polizei.html",
-      "image": "",
-      "date": "2026-03-13T18:11:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Mann in Berlin-Neukölln durch Schuss leicht verletzt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-neukoelln-schuss-mann-leicht-verletzt.html",
-      "image": "",
-      "date": "2026-03-13T17:34:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Brand in Lagerhalle eines Lebensmittelhandels in Berlin-Neukölln",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-brand-lagerhalle-neukoelln.html",
-      "image": "",
-      "date": "2026-03-13T17:16:34.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
+      "id": "4",
+      "title": "Berlin Duvarı Turu: Yeni Rotalar",
+      "summary_tr": "Berlin Duvarı Turu: Yeni Rotalar",
+      "description": "Şehir turizmi ofisi, Berlin Duvarı kalıntılarını takip eden yeni yürüyüş rotalarını duyurdu.",
+      "image": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?w=800&q=80",
+      "date": "2026-03-12T15:00:00Z",
+      "source": "Travel Berlin",
+      "url": "#"
     }
   ],
   "insights": {
-    "weatherAdvice": "Berlin'de güzel bir gün dileriz!",
-    "newsBrief": "Berlin gündemi her zaman hareketli."
+    "weatherAdvice": "Bugün Berlin'de hava biraz kapalı, şemsiyenizi yanınıza almayı unutmayın!",
+    "newsBrief": "Bugün öne çıkanlar: Konut krizi için yeni adımlar ve Kreuzberg festivali heyecanı."
   }
 }

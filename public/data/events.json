@@ -1,36 +1,25 @@
 {
   "events": [
     {
-      "id": "e1",
-      "title": "Berlin Türk Tiyatro Festivali",
-      "date": "2026-03-20T19:00:00Z",
-      "location": "SO36, Kreuzberg",
-      "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
-      "category": "Kültür & Sanat"
+      "category": "KÜLTÜR",
+      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
+      "date": "2026-03-20",
+      "title": "Berlin Sanat Galerisi Açılışı",
+      "location": "Mitte, Berlin"
     },
     {
-      "id": "e2",
-      "title": "Girişimciler Networking Buluşması",
-      "date": "2026-03-22T18:00:00Z",
-      "location": "Betahaus, Neukölln",
-      "image": "https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800&q=80",
-      "category": "İş & Kariyer"
+      "category": "MÜZİK",
+      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80",
+      "date": "2026-03-22",
+      "title": "Açık Hava Caz Konseri",
+      "location": "Tiergarten, Berlin"
     },
     {
-      "id": "e3",
-      "title": "Stand-up: Berlin Geceleri",
-      "date": "2026-03-25T20:30:00Z",
-      "location": "Quatsch Comedy Club",
-      "image": "https://images.unsplash.com/photo-1527269534026-c86f4009eace?w=800&q=80",
-      "category": "Eğlence"
-    },
-    {
-      "id": "e4",
-      "title": "Türk Mutfağı Gastronomi Fuarı",
-      "date": "2026-03-28T12:00:00Z",
-      "location": "Messe Berlin",
-      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
-      "category": "Yeme & İçme"
+      "category": "TEKNOLOJİ",
+      "image": "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?w=800&q=80",
+      "date": "2026-03-25",
+      "title": "Start-up Networking Gecesi",
+      "location": "Friedrichshain, Berlin"
     }
   ]
 }
