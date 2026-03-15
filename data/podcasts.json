@@ -1,0 +1,18 @@
+{
+  "podcasts": [
+    {
+      "id": "vid2",
+      "title": "En İyi Dönerciler",
+      "desc": "Berlin Gurme Turu",
+      "src": "https://www.youtube.com/watch?v=2U-Ka2te7Vc",
+      "thumbClass": "yt-thumb-2"
+    },
+    {
+      "id": "vid3",
+      "title": "Bürokrasi ve Berlin",
+      "desc": "Oturum İzni Rehberi",
+      "src": "https://www.youtube.com/watch?v=DYfFalgNe1U",
+      "thumbClass": "yt-thumb-3"
+    }
+  ]
+}

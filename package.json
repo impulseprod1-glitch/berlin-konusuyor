@@ -1,0 +1,20 @@
+{
+  "name": "berlin-konusuyor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.3.1",
+    "rss-parser": "^3.13.0"
+  }
+}
