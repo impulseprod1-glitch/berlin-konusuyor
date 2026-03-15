@@ -990,6 +990,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 8px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: all 0.3s var(--ease);
 }
 

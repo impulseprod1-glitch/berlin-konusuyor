@@ -335,7 +335,30 @@ function renderTicker(articles) {
 
 async function loadNews() {
   try {
-    // RSS-to-JSON API to fetch live news from TRT Haber
+    // 1. Önce AI tarafından üretilmiş yerel haberleri ve insightları çek
+    const localRes = await fetch('/data/news.json');
+    if (localRes.ok) {
+      const localData = await localRes.json();
+      if (localData.articles && localData.articles.length) {
+        globalNews = localData.articles;
+        renderNews(globalNews);
+        renderTicker(globalNews);
+        
+        // AI Dashboard'u güncelle
+        if (localData.insights) {
+          renderAIDashboard(localData.insights);
+        }
+
+        const badge = document.getElementById('newsSource');
+        if (badge) {
+          const ago = getTimeAgo(localData.lastUpdated || new Date());
+          badge.textContent = `AI Destekli Akış (Son: ${ago})`;
+        }
+        return; // Yerel haberler yüklendiyse TRT fallback'e gerek yok
+      }
+    }
+
+    // 2. Fallback: RSS-to-JSON API to fetch live news from TRT Haber (Eğer yerel veri yoksa)
     const rssUrl = 'https://www.trthaber.com/manset_articles.rss';
     const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
     
