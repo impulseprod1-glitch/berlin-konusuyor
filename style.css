@@ -275,6 +275,8 @@ img { max-width: 100%; display: block; }
 .hero-content {
   max-width: 800px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-eyebrow {
@@ -283,9 +285,11 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   opacity: 0;
   animation: fadeUp 1s var(--ease) 0.2s forwards;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title {
@@ -296,8 +300,9 @@ img { max-width: 100%; display: block; }
   display: block;
   font-size: clamp(2.5rem, 7vw, 5.5rem);
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.02em;
+  margin-bottom: 8px;
   opacity: 0;
   animation: fadeUp 1s var(--ease) 0.4s forwards;
 }
@@ -313,10 +318,12 @@ img { max-width: 100%; display: block; }
   font-weight: 300;
   color: var(--text-secondary);
   max-width: 480px;
-  margin: 0 auto 48px;
+  margin: 16px auto 48px;
   line-height: 1.7;
   opacity: 0;
   animation: fadeUp 1s var(--ease) 0.8s forwards;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-cta {
@@ -634,11 +641,8 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   gap: 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
 }
 
 .youtube-info {
@@ -2652,10 +2656,7 @@ body::after {
   z-index: 0;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
+
 
 /* ── Stats Bar ───────────────────────────── */
 .stats-bar {
