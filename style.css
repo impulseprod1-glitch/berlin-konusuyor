@@ -271,6 +271,8 @@ img { max-width: 100%; display: block; }
   position: relative;
   padding: calc(var(--nav-height) + 36px + 40px) clamp(24px, 5vw, 80px) 80px;
   overflow: hidden;
+  background: var(--bg-primary);
+  z-index: 10;
 }
 
 .hero-content {
@@ -2645,6 +2647,7 @@ body::after {
 .hero {
   position: relative;
   overflow: hidden;
+  z-index: 10;
 }
 
 .hero::before {
@@ -2732,9 +2735,11 @@ body::after {
 .section-wave {
   width: 100%;
   line-height: 0;
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 11;
 }
 
 .section-wave svg {
