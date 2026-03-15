@@ -111,6 +111,7 @@
         <span class="lang-sep">·</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
+      <button id="loginBtn" class="nav-login-btn magnetic-btn" onclick="openLoginModal()">Giriş Yap</button>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -158,6 +159,29 @@
     </div>
     <div class="news-grid reveal reveal-stagger" id="newsGrid">
       <!-- Haberler main.js tarafından dinamik olarak yüklenir -->
+    </div>
+  </section>
+
+  
+  <!-- ═══════════════ ISTATISTIKLER ═══════════════ -->
+  <section class="section" id="statsBar">
+    <div class="stats-grid reveal">
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="150000" data-suffix="+">0</h3>
+        <p class="stat-label" data-i18n="stat_reach">Aylık Erişim</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="500" data-suffix="">0</h3>
+        <p class="stat-label" data-i18n="stat_videos">Video</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="45000" data-suffix="+">0</h3>
+        <p class="stat-label" data-i18n="stat_subscribers">Abone</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="3" data-suffix="">0</h3>
+        <p class="stat-label" data-i18n="stat_languages">Dil</p>
+      </div>
     </div>
   </section>
 
@@ -346,6 +370,26 @@
   <div class="section-wave section-wave-up">
     <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
   </div>
+
+  
+  <!-- ═══════════════ TOPLULUK FORUMU ═══════════════ -->
+  <section class="section" id="topluluk">
+    <div class="section-header reveal">
+      <span class="section-tag">Topluluk</span>
+      <h2 class="section-title">Soru & Cevap</h2>
+      <p class="news-auto-badge">Berlinliler yardımlaşıyor</p>
+    </div>
+    <div class="qa-container reveal">
+      <form id="qaForm" class="qa-form glass-panel">
+        <input type="text" id="qaName" class="qa-input" placeholder="İsminiz (İsteğe bağlı)" />
+        <textarea id="qaQuestion" class="qa-textarea" placeholder="Topluluğa bir soru sorun..." required></textarea>
+        <button type="submit" class="qa-submit magnetic-btn">Soruyu Gönder</button>
+      </form>
+      <div id="qaFeed" class="qa-feed">
+        <!-- JS ile doldurulacak -->
+      </div>
+    </div>
+  </section>
 
   <!-- ═══════════════ NEWSLETTER ═══════════════ -->
   <section class="newsletter-section" id="newsletter">

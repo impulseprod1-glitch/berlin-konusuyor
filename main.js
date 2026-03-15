@@ -759,6 +759,51 @@ if (mainAudio) {
   });
 }
 
+
+// ── Text-to-Speech (TTS) ───────────────────
+let synth = window.speechSynthesis;
+let isSpeaking = false;
+
+window.toggleTTS = () => {
+  const ttsBtn = document.getElementById('ttsBtn');
+  const titleEl = document.getElementById('newsModalTitle');
+  const descEl = document.getElementById('newsModalDesc');
+  if (!titleEl || !descEl) return;
+  const title = titleEl.innerText;
+  const desc = descEl.innerText;
+  
+  if (!synth) return;
+
+  if (isSpeaking) {
+    synth.cancel();
+    isSpeaking = false;
+    if(ttsBtn) ttsBtn.innerHTML = '<i class="fas fa-volume-up"></i> <span data-i18n="listen_news">Dinle</span>';
+    return;
+  }
+
+  const textToRead = title + '. ' + desc;
+  const utterance = new SpeechSynthesisUtterance(textToRead);
+  utterance.lang = localStorage.getItem('bk-lang') === 'tr' ? 'tr-TR' : localStorage.getItem('bk-lang') === 'de' ? 'de-DE' : 'en-US';
+  
+  utterance.onend = () => {
+    isSpeaking = false;
+    if(ttsBtn) ttsBtn.innerHTML = '<i class="fas fa-volume-up"></i> <span data-i18n="listen_news">Dinle</span>';
+  };
+
+  synth.speak(utterance);
+  isSpeaking = true;
+  if(ttsBtn) ttsBtn.innerHTML = '<i class="fas fa-stop"></i> <span data-i18n="listen_stop">Durdur</span>';
+};
+
+window.stopTTS = () => {
+  if (synth && isSpeaking) {
+    synth.cancel();
+    isSpeaking = false;
+    const ttsBtn = document.getElementById('ttsBtn');
+    if (ttsBtn) ttsBtn.innerHTML = '<i class="fas fa-volume-up"></i> <span data-i18n="listen_news">Dinle</span>';
+  }
+};
+
 // ── User Auth (Mock LocalStorage) ───────────
 const loginBtn = document.getElementById('loginBtn');
 const loginModal = document.getElementById('loginModal');
@@ -769,16 +814,16 @@ function checkAuthStatus() {
   const user = localStorage.getItem('bk_user');
   if (user) {
     // Logged In State
-    loginBtn.innerHTML = '<i class="fas fa-user-circle"></i> Profil';
-    loginBtn.style.background = 'transparent';
-    loginBtn.style.border = '1px solid var(--accent)';
-    loginBtn.style.color = 'var(--text-primary)';
+    if(loginBtn) { loginBtn.innerHTML = '<i class="fas fa-user-circle"></i> Profil'; }
+    if(loginBtn) { loginBtn.style.background = 'transparent'; }
+    if(loginBtn) { loginBtn.style.border = '1px solid var(--accent)'; }
+    if(loginBtn) { loginBtn.style.color = 'var(--text-primary)'; }
   } else {
     // Logged Out State
-    loginBtn.innerHTML = 'Giriş Yap';
-    loginBtn.style.background = '';
-    loginBtn.style.border = '';
-    loginBtn.style.color = '';
+    if(loginBtn) { loginBtn.innerHTML = 'Giriş Yap'; }
+    if(loginBtn) { loginBtn.style.background = ''; }
+    if(loginBtn) { loginBtn.style.border = ''; }
+    if(loginBtn) { loginBtn.style.color = ''; }
   }
 }
 
@@ -1061,6 +1106,33 @@ function initParallax() {
       }
     }
   }, { passive: true });
+}
+
+
+// ── Tilt Effects ────────────────────────────
+function initTiltEffects() {
+  const cards = document.querySelectorAll('.glass-panel, .magnetic-card');
+  if (window.matchMedia('(max-width: 768px)').matches) return;
+
+  cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = ((y - centerY) / centerY) * -5;
+      const rotateY = ((x - centerX) / centerX) * 5;
+      
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+    });
+  });
 }
 
 // ── Animated Counter ────────────────────────
