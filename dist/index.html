@@ -13,9 +13,9 @@
   <link rel="canonical" href="https://berlinkonusuyor.com" />
 
   <!-- PWA Metadata -->
-  <link rel="manifest" href="/assets/manifest-C_YIUjqT.json">
+  <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#000000">
-  <link rel="apple-touch-icon" href="/public/icon-192.png">
+  <link rel="apple-touch-icon" href="/icon-192.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -59,8 +59,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
-  <!-- FontAwesome (if missing for icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Leaflet Map CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
@@ -69,9 +69,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/index-BtMm7FRI.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-C9frHNi-.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/index-SK69C1M5.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-QMsfY87M.css">
 </head>
 <body>
 
@@ -99,12 +99,36 @@
   <nav class="navbar" id="navbar">
     <a href="#" class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></a>
     <div class="nav-links" id="navLinks">
+      <div class="mobile-menu-header">
+        <span class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></span>
+      </div>
       <a href="#haberler" data-i18n="nav_news">Haberler</a>
       <a href="#roportajlar" data-i18n="nav_interviews">Röportajlar</a>
       <a href="#rehber" data-i18n="nav_guide">Rehber</a>
       <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
+      
+      <div class="mobile-menu-footer">
+        <div class="mobile-socials">
+          <a href="https://www.instagram.com/berlin.konusuyor/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@berlinkonusuyor" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://youtube.com/@berlinkonusuyortv" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
     </div>
+
     <div class="nav-right">
+      <div class="search-container" id="searchContainer">
+        <button class="search-toggle-btn" id="searchToggle" aria-label="Arama">
+          <i class="fas fa-search"></i>
+        </button>
+        <div class="search-input-wrapper" id="searchInputWrapper">
+          <input type="text" id="searchInput" placeholder="Haber veya rehber ara..." data-i18n-placeholder="search_placeholder">
+          <button class="search-close-btn" id="searchClose">&times;</button>
+        </div>
+      </div>
+      <button id="themeToggle" class="theme-toggle-btn" aria-label="Tema Değiştir">
+        <i class="fas fa-moon"></i>
+      </button>
       <div class="lang-switcher" id="langSwitcher">
         <button class="lang-btn active" data-lang="tr">TR</button>
         <span class="lang-sep">·</span>
@@ -112,6 +136,7 @@
         <span class="lang-sep">·</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
+      <button id="loginBtn" class="nav-login-btn magnetic-btn" onclick="openLoginModal()">Giriş Yap</button>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -130,14 +155,19 @@
 
   <!-- ═══════════════ HERO ═══════════════ -->
   <section class="hero" id="hero">
-    <div class="hero-content">
-      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Dijital Medya Platformu</p>
-      <h1 class="hero-title">
-        <span class="hero-line" data-i18n="hero_line1">Gerçek İnsanlar,</span>
-        <span class="hero-line hero-line-accent" data-i18n="hero_line2">Gerçek Hikayeler.</span>
-      </h1>
-      <p class="hero-sub" data-i18n="hero_sub">Sokak röportajları, güncel haberler ve şehir rehberi — hepsi bir arada.</p>
-      <a href="#haberler" class="hero-cta magnetic-btn" data-i18n="hero_cta">Keşfet</a>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Dijital Medya Platformu</p>
+        <h1 class="hero-title">
+          <span class="hero-line" data-i18n="hero_line1">Gerçek İnsanlar,</span>
+          <span class="hero-line hero-line-accent" data-i18n="hero_line2">Gerçek Hikayeler.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero_sub">Sokak röportajları, güncel haberler ve şehir rehberi — hepsi bir arada.</p>
+        <a href="#haberler" class="hero-cta magnetic-btn" data-i18n="hero_cta">Keşfet</a>
+      </div>
+      <div class="hero-featured-wrapper reveal" id="heroFeaturedNews">
+        <!-- JS tarafından doldurulacak -->
+      </div>
     </div>
     <div class="hero-scroll-indicator">
       <div class="scroll-line"></div>
@@ -151,14 +181,62 @@
   </div>
 
   <!-- ═══════════════ SON HABERLER (Dinamik) ═══════════════ -->
-  <section class="section" id="haberler">
-    <div class="section-header reveal">
-      <span class="section-tag" data-i18n="news_tag">Güncel</span>
-      <h2 class="section-title" data-i18n="news_title">Son Haberler</h2>
-      <p class="news-auto-badge" id="newsSource"></p>
+  <section class="news-section section-padding" id="haberler">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="section_news">Gündem</span>
+        <h2 class="section-title" data-i18n="news_title">Berlin'de Neler Oluyor?</h2>
+        
+        <!-- ── Berlin Pulse (AI Focus) ──────────────── -->
+        <div class="berlin-pulse-container" id="berlinPulse">
+          <!-- AI bubbles will be injected here -->
+        </div>
+
+        <div class="news-filters-wrapper">
+          <div class="news-filters" id="newsFilters">
+            <button class="filter-btn active" data-category="all" data-i18n="filter_all">Tümü</button>
+            <button class="filter-btn" data-category="politics" data-i18n="filter_politics">Siyaset</button>
+            <button class="filter-btn" data-category="culture" data-i18n="filter_culture">Kültür</button>
+            <button class="filter-btn" data-category="economy" data-i18n="filter_economy">Ekonomi</button>
+            <button class="filter-btn" data-category="lifestyle" data-i18n="filter_lifestyle">Yaşam</button>
+          </div>
+        </div>
+        <div class="news-meta-info">
+          <span class="news-count" id="newsCount"></span>
+          <span class="news-badge" id="newsSource">TRT Haber</span>
+        </div>
+      </div>
+      
+      <div class="news-grid" id="newsGrid">
+        <!-- Skeleton loaders initially -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
     </div>
-    <div class="news-grid reveal reveal-stagger" id="newsGrid">
-      <!-- Haberler main.js tarafından dinamik olarak yüklenir -->
+  </section>
+
+  
+  <!-- ═══════════════ ISTATISTIKLER ═══════════════ -->
+  <section class="section" id="statsBar">
+    <div class="stats-grid reveal">
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="150000" data-suffix="+">0</h3>
+        <p class="stat-label" data-i18n="stat_reach">Aylık Erişim</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="500" data-suffix="">0</h3>
+        <p class="stat-label" data-i18n="stat_videos">Video</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="45000" data-suffix="+">0</h3>
+        <p class="stat-label" data-i18n="stat_subscribers">Abone</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="3" data-suffix="">0</h3>
+        <p class="stat-label" data-i18n="stat_languages">Dil</p>
+      </div>
     </div>
   </section>
 
@@ -348,6 +426,26 @@
     <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
   </div>
 
+  
+  <!-- ═══════════════ TOPLULUK FORUMU ═══════════════ -->
+  <section class="section" id="topluluk">
+    <div class="section-header reveal">
+      <span class="section-tag">Topluluk</span>
+      <h2 class="section-title">Soru & Cevap</h2>
+      <p class="news-auto-badge">Berlinliler yardımlaşıyor</p>
+    </div>
+    <div class="qa-container reveal">
+      <form id="qaForm" class="qa-form glass-panel">
+        <input type="text" id="qaName" class="qa-input" placeholder="İsminiz (İsteğe bağlı)" />
+        <textarea id="qaQuestion" class="qa-textarea" placeholder="Topluluğa bir soru sorun..." required></textarea>
+        <button type="submit" class="qa-submit magnetic-btn">Soruyu Gönder</button>
+      </form>
+      <div id="qaFeed" class="qa-feed">
+        <!-- JS ile doldurulacak -->
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════════════ NEWSLETTER ═══════════════ -->
   <section class="newsletter-section" id="newsletter">
     <div class="newsletter-container reveal">
@@ -495,6 +593,7 @@
     <audio id="mainAudio" src=""></audio>
   </div>
 
+
   <!-- ═══════════════ AI CHATBOT WIDGET ═══════════════ -->
   <button id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Berlin Asistanı" onclick="toggleChatbot()">
     <i class="fas fa-robot"></i>
@@ -519,10 +618,62 @@
       <!-- Messages will appear here -->
     </div>
     
-    <form id="chatbotForm" class="chatbot-input-area">
-      <input type="text" id="chatbotInput" placeholder="Mesajınızı yazın..." autocomplete="off">
-      <button type="submit" aria-label="Mesaj Gönder" title="Mesaj Gönder"><i class="fas fa-paper-plane"></i></button>
-    </form>
+    <form id="chatbotForm" class="chatbot-input-area"></form>
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
+  </div>
+
+  <!-- ── History Portal Modal (Shake Feature) ───── -->
+  <div class="modal" id="historyModal">
+    <div class="modal-overlay" onclick="closeHistoryModal()"></div>
+    <div class="modal-container history-portal-container">
+      <div class="history-flare"></div>
+      <button class="modal-close" onclick="closeHistoryModal()">&times;</button>
+      <div class="history-content">
+        <div class="history-date-tag" id="historyDate">16 MART 1920</div>
+        <div class="history-newspaper-header">BERLINER ZEITUNG</div>
+        <div class="history-image" id="historyImage"></div>
+        <h2 class="history-title" id="historyTitle">Berlin'de Tarihi Bir Gün</h2>
+        <div class="history-text" id="historyText">
+          Salladığınızda ortaya çıkacak gizemli bir tarih...
+        </div>
+        <div class="history-footer">
+          <span class="history-source" data-i18n="history_archive">Berlin Arşivi</span>
+          <div class="history-share">
+            <i class="fas fa-share-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shake Hint (Mobile Only) -->
+  <div class="shake-hint" id="shakeHint">
+    <i class="fas fa-mobile-alt"></i>
+    <span data-i18n="shake_hint">Tarihe yolculuk için telefonu salla!</span>
+  </div>
+
+  <!-- ── Mobile Floating Dock ──────────────── -->
+  <div class="mobile-dock" id="mobileDock">
+    <a href="#" class="dock-item active" aria-label="Home">
+      <i class="fas fa-home"></i>
+      <span class="dock-label">Home</span>
+    </a>
+    <a href="#haberler" class="dock-item" aria-label="News">
+      <i class="fas fa-newspaper"></i>
+      <span class="dock-label">Haberler</span>
+    </a>
+    <a href="#ai-insights" class="dock-item" id="dockAiBtn" aria-label="AI Insight">
+      <i class="fas fa-robot"></i>
+      <span class="dock-label">AI</span>
+    </a>
+    <a href="#berlinMap" class="dock-item" aria-label="Map">
+      <i class="fas fa-map-marked-alt"></i>
+      <span class="dock-label">Harita</span>
+    </a>
+    <button class="dock-item" id="dockSearchBtn" aria-label="Search">
+      <i class="fas fa-search"></i>
+      <span class="dock-label">Ara</span>
+    </button>
   </div>
 
 </body>
