@@ -625,7 +625,7 @@ function initNavbar() {
 }
 
 // ── Configuration ───────────────────────────
-const APP_VERSION = '1.0.7-debug';
+const APP_VERSION = '1.0.8-FIX';
 console.info(`%c Berlin Konuşuyor %c v${APP_VERSION} `, 'background: #000; color: #fff; font-weight: bold;', 'background: #ff3e00; color: #fff;');
 
 // ── Translations ─────────────────────────────
