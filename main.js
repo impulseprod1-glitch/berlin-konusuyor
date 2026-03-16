@@ -1,3 +1,5 @@
+import './style.css';
+
 /* ═══════════════════════════════════════════
    BERLIN KONUŞUYOR — Main JS
    i18n · Dynamic News · Scroll Reveal · Mobile Menu
@@ -16,14 +18,35 @@ function renderAIDashboard(insights) {
 }
 
 // ── Dashboard Utilities ─────────────────────
+function updateTime() {
+  const now = new Date();
+  const berlinTime = now.toLocaleTimeString('tr-TR', { timeZone: 'Europe/Berlin' });
+  const clockEl = document.getElementById('berlinClock');
+  if (clockEl) clockEl.innerText = berlinTime;
+}
+
 function initDashboardUtils() {
-  // 1. Canlı Saat
-  setInterval(() => {
-    const now = new Date();
-    const berlinTime = now.toLocaleTimeString('tr-TR', { timeZone: 'Europe/Berlin' });
-    const clockEl = document.getElementById('berlinClock');
-    if (clockEl) clockEl.innerText = berlinTime;
-  }, 1000);
+  updateTime();
+  setInterval(updateTime, 1000);
+  
+  // Mock Dynamic Status for Premium feel
+  const statusContainer = document.querySelector('.ai-stats');
+  if (statusContainer) {
+    // Clear existing to avoid double-appending on re-init if any
+    const existingDynamic = statusContainer.querySelectorAll('.dynamic-stat');
+    existingDynamic.forEach(e => e.remove());
+
+    statusContainer.innerHTML += `
+      <div class="stat-item reveal dynamic-stat">
+        <span class="stat-label">Hava Kalitesi</span>
+        <span class="stat-value">İyi (24 AQI)</span>
+      </div>
+      <div class="stat-item reveal dynamic-stat">
+        <span class="stat-label">S-Bahn Durumu</span>
+        <span class="stat-value text-success">Normal</span>
+      </div>
+    `;
+  }
 
   // 2. Hava Durumu (Basit Fetch)
   fetch('https://wttr.in/Berlin?format=%t+%C')
@@ -77,6 +100,13 @@ const translations = {
     guide_food_desc: 'En iyi restoranlar, kafeler ve gece hayatı.',
     footer_rights: 'Tüm hakları saklıdır.',
     ticker_label: 'SON DAKİKA',
+    search_placeholder: 'Haber veya rehber ara...',
+    filter_all: 'Tümü',
+    filter_politics: 'Siyaset',
+    filter_culture: 'Kültür',
+    filter_economy: 'Ekonomi',
+    filter_lifestyle: 'Yaşam',
+    read_time: 'dk okuma',
     meta_title: "Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz",
     meta_desc: "Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için dijital medya platformu.",
     legal_impressum: "Impressum",
@@ -135,6 +165,13 @@ const translations = {
     guide_food_desc: 'Die besten Restaurants, Cafés und das Nachtleben.',
     footer_rights: 'Alle Rechte vorbehalten.',
     ticker_label: 'BREAKING NEWS',
+    search_placeholder: 'Suchen...',
+    filter_all: 'Alle',
+    filter_politics: 'Politik',
+    filter_culture: 'Kultur',
+    filter_economy: 'Wirtschaft',
+    filter_lifestyle: 'Lifestyle',
+    read_time: 'Min. Lesezeit',
     meta_title: "Berlin Konuşuyor — Am Puls Berlins, Deine Stimme",
     meta_desc: "Aktuelle Nachrichten aus Berlin, Straßeninterviews und umfangreicher Stadtführer. Die digitale Plattform für die türkische Community.",
     legal_impressum: "Impressum",
@@ -193,6 +230,13 @@ const translations = {
     guide_food_desc: 'Best restaurants, cafés and nightlife.',
     footer_rights: 'All rights reserved.',
     ticker_label: 'LATEST NEWS',
+    search_placeholder: 'Search for news...',
+    filter_all: 'All',
+    filter_politics: 'Politics',
+    filter_culture: 'Culture',
+    filter_economy: 'Economy',
+    filter_lifestyle: 'Lifestyle',
+    read_time: 'min read',
     meta_title: "Berlin Konuşuyor — Berlin's Pulse, Your Voice",
     meta_desc: "Latest Berlin news, street interviews, and comprehensive city guide. Digital media platform for global Berliners.",
     legal_impressum: "Imprint",
@@ -321,11 +365,56 @@ function renderNews(articles) {
   grid.innerHTML = featuredHTML + `<div class="news-side reveal-stagger">${sideHTML}</div>`;
 }
 
+// ── News Rendering ──────────────────────────
+// ── News Rendering ──────────────────────────
+function renderNews(articles, category = 'all') {
+  const container = document.getElementById('newsGrid');
+  const countSpan = document.getElementById('newsCount');
+  if (!container) return;
+
+  const filtered = category === 'all' 
+    ? articles 
+    : articles.filter(a => a.category === category);
+
+  if (countSpan) {
+    const total = filtered.length;
+    countSpan.textContent = `${total} ${translations[currentLang].news_title}`;
+  }
+
+  container.innerHTML = filtered.map((article, index) => {
+    const readTime = calculateReadTime(article.description || article.summary_tr || article.title || '');
+    return `
+      <article class="news-card reveal" style="animation-delay: ${index * 0.1}s" onclick="openNewsModal(${index})">
+        <div class="news-card-img" style="background-image: url('${article.image || PLACEHOLDER_IMG}')"></div>
+        <div class="news-card-content">
+          <div class="news-meta">
+            <span class="news-source-tag">${article.source}</span>
+            <span class="news-read-time">
+              <i class="far fa-clock"></i> ${readTime} ${translations[currentLang].read_time}
+            </span>
+          </div>
+          <h3 class="news-card-title">${article.summary_tr || article.title}</h3>
+          <div class="news-card-actions">
+            <button class="action-btn" title="Paylaş" onclick="event.stopPropagation();"><i class="fas fa-share-alt"></i></button>
+            <button class="action-btn" title="Kaydet" onclick="event.stopPropagation();"><i class="far fa-bookmark"></i></button>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+function calculateReadTime(text) {
+  const wordsPerMinute = 200;
+  const noOfWords = (text || '').trim().split(/\s+/).length || 1;
+  const minutes = Math.ceil(noOfWords / wordsPerMinute);
+  return minutes || 1;
+}
+
 function renderTicker(articles) {
   const ticker = document.getElementById('tickerContent');
   if (!ticker || !articles.length) return;
 
-  // Double the content for seamless infinite scroll
   const items = [...articles, ...articles].map((a, i) => `
     <span class="ticker-item" onclick="openNewsModal(${i % articles.length})">${a.summary_tr || a.title}</span>
   `).join('');
@@ -334,6 +423,10 @@ function renderTicker(articles) {
 }
 
 async function loadNews() {
+  const grid = document.getElementById('newsGrid');
+  // Show skeletons
+  if (grid) grid.innerHTML = '<div class="skeleton-card"></div>'.repeat(4);
+
   try {
     // 1. Önce AI tarafından üretilmiş yerel haberleri ve insightları çek
     const localRes = await fetch('/data/news.json');
@@ -341,8 +434,9 @@ async function loadNews() {
       const localData = await localRes.json();
       if (localData.articles && localData.articles.length) {
         globalNews = localData.articles;
-        renderNews(globalNews);
+        renderNews(globalNews); // Use the new renderNews
         renderTicker(globalNews);
+        renderHeroFeatured(globalNews[0]);
         
         // AI Dashboard'u güncelle
         if (localData.insights) {
@@ -376,12 +470,14 @@ async function loadNews() {
         image: item.thumbnail || (item.enclosure && item.enclosure.link) || PLACEHOLDER_IMG,
         date: item.pubDate,
         source: "TRT Haber",
-        url: item.link
+        url: item.link,
+        category: 'Politics' // Default category for RSS fallback
       }));
 
       globalNews = articles;
-      renderNews(articles);
+      renderNews(articles); 
       renderTicker(articles);
+      renderHeroFeatured(articles[0]);
 
       // Show last updated info
       const badge = document.getElementById('newsSource');
@@ -396,6 +492,7 @@ async function loadNews() {
     console.log('Canlı haber akışı yüklenemedi:', err);
     const badge = document.getElementById('newsSource');
     if (badge) badge.textContent = 'Haber akışı güncellenemedi.';
+    if (grid) grid.innerHTML = '<p class="error-message">Haberler yüklenemedi. Lütfen daha sonra tekrar deneyin.</p>';
   }
 }
 
@@ -565,6 +662,8 @@ function initLangSwitcher() {
   const saved = localStorage.getItem('bk-lang');
   if (saved && translations[saved]) {
     setLanguage(saved);
+  } else {
+    setLanguage('tr'); // Default language
   }
 }
 
@@ -1348,6 +1447,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initQAForum();
   initServiceWorker();
   initMap();
+  initSearch();
+  initTheme();
+  initFilters();
 });
 
 // ── Service Worker Registration ─────────────
@@ -1402,5 +1504,93 @@ function initMap() {
     L.marker(loc.coords, {icon: customIcon})
       .addTo(map)
       .bindPopup(`<strong>${loc.name}</strong><br>${loc.desc}`);
+  });
+}
+
+// ── Search Logic ────────────────────────────
+function initSearch() {
+  const toggle = document.getElementById('searchToggle');
+  const wrapper = document.getElementById('searchInputWrapper');
+  const close = document.getElementById('searchClose');
+  const input = document.getElementById('searchInput');
+
+  if (!toggle || !wrapper || !close || !input) return;
+
+  toggle.addEventListener('click', () => {
+    wrapper.classList.add('active');
+    setTimeout(() => input.focus(), 100);
+  });
+
+  close.addEventListener('click', () => {
+    wrapper.classList.remove('active');
+    input.value = '';
+  });
+
+  input.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    if (query.length < 3) return;
+    
+    // In a real app, this would filter articles or show an overlay
+    console.log('Searching for:', query);
+  });
+}
+
+// ── Theme Logic ─────────────────────────────
+function initTheme() {
+  const toggle = document.getElementById('themeToggle');
+  const body = document.body;
+  const icon = toggle?.querySelector('i');
+
+  const savedTheme = localStorage.getItem('bk-theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-theme');
+    if (icon) icon.className = 'fas fa-sun';
+  }
+
+  toggle?.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    const isLight = body.classList.contains('light-theme');
+    localStorage.setItem('bk-theme', isLight ? 'light' : 'dark');
+    if (icon) icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+  });
+}
+
+// ── Render Hero Featured Article ─────────────
+function renderHeroFeatured(article) {
+  const container = document.getElementById('heroFeaturedNews');
+  if (!container || !article) return;
+
+  container.innerHTML = `
+    <article class="news-card magnetic-card" onclick="openNewsModal(0)">
+      <div class="news-card-img" style="background-image: url('${article.image || PLACEHOLDER_IMG}')"></div>
+      <div class="news-card-content">
+        <div class="news-meta">
+          <span class="news-source-tag">${article.source}</span>
+          <span class="news-date">${formatDate(article.date)}</span>
+        </div>
+        <h3 class="news-card-title">${article.summary_tr || article.title}</h3>
+      </div>
+    </article>
+  `;
+  container.classList.add('visible');
+}
+
+// ── Category Filters Logic ─────────────────
+function initFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Toggle active states
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const category = btn.dataset.category;
+      renderNews(globalNews, category);
+      
+      // Smooth scroll back to top of news if needed
+      if (window.innerWidth < 1024) {
+        document.getElementById('haberler').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   });
 }

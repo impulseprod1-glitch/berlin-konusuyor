@@ -9,7 +9,8 @@
       "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80",
       "date": "2026-03-15T08:00:00Z",
       "source": "Berlin News",
-      "url": "#"
+      "url": "#",
+      "category": "lifestyle"
     },
     {
       "id": "2",
@@ -19,7 +20,8 @@
       "image": "https://images.unsplash.com/photo-1558239027-d0a47f480377?w=800&q=80",
       "date": "2026-03-14T12:00:00Z",
       "source": "Kultur Berlin",
-      "url": "#"
+      "url": "#",
+      "category": "culture"
     },
     {
       "id": "3",
@@ -29,7 +31,8 @@
       "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
       "date": "2026-03-13T10:00:00Z",
       "source": "Tech Berlin",
-      "url": "#"
+      "url": "#",
+      "category": "economy"
     },
     {
       "id": "4",
@@ -39,7 +42,8 @@
       "image": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?w=800&q=80",
       "date": "2026-03-12T15:00:00Z",
       "source": "Travel Berlin",
-      "url": "#"
+      "url": "#",
+      "category": "culture"
     }
   ],
   "insights": {

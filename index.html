@@ -59,8 +59,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
-  <!-- FontAwesome (if missing for icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Leaflet Map CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
@@ -104,6 +104,18 @@
       <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
     </div>
     <div class="nav-right">
+      <div class="search-container" id="searchContainer">
+        <button class="search-toggle-btn" id="searchToggle" aria-label="Arama">
+          <i class="fas fa-search"></i>
+        </button>
+        <div class="search-input-wrapper" id="searchInputWrapper">
+          <input type="text" id="searchInput" placeholder="Haber veya rehber ara..." data-i18n-placeholder="search_placeholder">
+          <button class="search-close-btn" id="searchClose">&times;</button>
+        </div>
+      </div>
+      <button id="themeToggle" class="theme-toggle-btn" aria-label="Tema Değiştir">
+        <i class="fas fa-moon"></i>
+      </button>
       <div class="lang-switcher" id="langSwitcher">
         <button class="lang-btn active" data-lang="tr">TR</button>
         <span class="lang-sep">·</span>
@@ -130,14 +142,19 @@
 
   <!-- ═══════════════ HERO ═══════════════ -->
   <section class="hero" id="hero">
-    <div class="hero-content">
-      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Dijital Medya Platformu</p>
-      <h1 class="hero-title">
-        <span class="hero-line" data-i18n="hero_line1">Gerçek İnsanlar,</span>
-        <span class="hero-line hero-line-accent" data-i18n="hero_line2">Gerçek Hikayeler.</span>
-      </h1>
-      <p class="hero-sub" data-i18n="hero_sub">Sokak röportajları, güncel haberler ve şehir rehberi — hepsi bir arada.</p>
-      <a href="#haberler" class="hero-cta magnetic-btn" data-i18n="hero_cta">Keşfet</a>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Dijital Medya Platformu</p>
+        <h1 class="hero-title">
+          <span class="hero-line" data-i18n="hero_line1">Gerçek İnsanlar,</span>
+          <span class="hero-line hero-line-accent" data-i18n="hero_line2">Gerçek Hikayeler.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero_sub">Sokak röportajları, güncel haberler ve şehir rehberi — hepsi bir arada.</p>
+        <a href="#haberler" class="hero-cta magnetic-btn" data-i18n="hero_cta">Keşfet</a>
+      </div>
+      <div class="hero-featured-wrapper reveal" id="heroFeaturedNews">
+        <!-- JS tarafından doldurulacak -->
+      </div>
     </div>
     <div class="hero-scroll-indicator">
       <div class="scroll-line"></div>
@@ -151,14 +168,32 @@
   </div>
 
   <!-- ═══════════════ SON HABERLER (Dinamik) ═══════════════ -->
-  <section class="section" id="haberler">
-    <div class="section-header reveal">
-      <span class="section-tag" data-i18n="news_tag">Güncel</span>
-      <h2 class="section-title" data-i18n="news_title">Son Haberler</h2>
-      <p class="news-auto-badge" id="newsSource"></p>
-    </div>
-    <div class="news-grid reveal reveal-stagger" id="newsGrid">
-      <!-- Haberler main.js tarafından dinamik olarak yüklenir -->
+  <section class="news-section section-padding" id="haberler">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-i18n="news_title">Berlin Haberleri</h2>
+        <div class="news-filters-wrapper">
+          <div class="news-filters" id="newsFilters">
+            <button class="filter-btn active" data-category="all" data-i18n="filter_all">Tümü</button>
+            <button class="filter-btn" data-category="politics" data-i18n="filter_politics">Siyaset</button>
+            <button class="filter-btn" data-category="culture" data-i18n="filter_culture">Kültür</button>
+            <button class="filter-btn" data-category="economy" data-i18n="filter_economy">Ekonomi</button>
+            <button class="filter-btn" data-category="lifestyle" data-i18n="filter_lifestyle">Yaşam</button>
+          </div>
+        </div>
+        <div class="news-meta-info">
+          <span class="news-count" id="newsCount"></span>
+          <span class="news-badge" id="newsSource">TRT Haber</span>
+        </div>
+      </div>
+      
+      <div class="news-grid" id="newsGrid">
+        <!-- Skeleton loaders initially -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
     </div>
   </section>
 
