@@ -619,12 +619,16 @@ function initNavbar() {
     if (currentScroll > 100) {
       navbar.style.background = 'rgba(0, 0, 0, 0.95)';
     } else {
-      navbar.style.background = 'rgba(0, 0, 0, 0.85)';
+        navbar.style.background = 'rgba(0, 0, 0, 0.85)';
     }
   });
 }
 
-// ── Mobile Menu ─────────────────────────────
+// ── Configuration ───────────────────────────
+const APP_VERSION = '1.0.7-debug';
+console.info(`%c Berlin Konuşuyor %c v${APP_VERSION} `, 'background: #000; color: #fff; font-weight: bold;', 'background: #ff3e00; color: #fff;');
+
+// ── Translations ─────────────────────────────
 function initMobileMenu() {
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
@@ -666,6 +670,10 @@ function initMobileDock() {
   const aiBtn = document.getElementById('dockAiBtn');
   if (!dock) return;
 
+  if (window.innerWidth > 768) {
+    console.log('Mobile Dock: Hidden (Desktop Viewport)');
+    return;
+  }
   // Scroll visibility logic
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
@@ -712,7 +720,14 @@ function initMobileDock() {
 
 function initBerlinPulse(articles) {
   const container = document.getElementById('berlinPulse');
-  if (!container || !articles.length) return;
+  if (!container) return;
+  
+  if (!articles || !articles.length) {
+    console.warn('Berlin Pulse: No articles to render');
+    return;
+  }
+
+  console.log(`Berlin Pulse: Initializing with ${articles.length} articles`);
 
   // Select top 6 dynamic topics/articles
   const pulsers = articles.slice(0, 6).map((article, index) => {
