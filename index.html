@@ -124,6 +124,10 @@
           <input type="text" id="searchInput" placeholder="Haber veya rehber ara..." data-i18n-placeholder="search_placeholder">
           <button class="search-close-btn" id="searchClose">&times;</button>
         </div>
+        <div class="search-results-overlay" id="searchResultsOverlay">
+          <div class="search-results-list" id="searchResultsList"></div>
+          <div class="search-shortcut-hint"><kbd>Ctrl</kbd>+<kbd>K</kbd> ile arama açın</div>
+        </div>
       </div>
       <button id="themeToggle" class="theme-toggle-btn" aria-label="Tema Değiştir">
         <i class="fas fa-moon"></i>
@@ -434,10 +438,33 @@
       <p class="news-auto-badge">Berlinliler yardımlaşıyor</p>
     </div>
     <div class="qa-container reveal">
+      <div class="qa-toolbar">
+        <div class="qa-filters" id="qaFilters">
+          <button class="qa-filter-btn active" data-category="all">Tümü</button>
+          <button class="qa-filter-btn" data-category="Ev & Kira">🏠 Ev</button>
+          <button class="qa-filter-btn" data-category="Vize">🛂 Vize</button>
+          <button class="qa-filter-btn" data-category="Ulaşım">🚇 Ulaşım</button>
+          <button class="qa-filter-btn" data-category="İş">💼 İş</button>
+          <button class="qa-filter-btn" data-category="Genel">💬 Genel</button>
+        </div>
+        <div class="qa-sort">
+          <button class="qa-sort-btn active" data-sort="newest"><i class="fas fa-clock"></i> Yeni</button>
+          <button class="qa-sort-btn" data-sort="popular"><i class="fas fa-fire"></i> Popüler</button>
+        </div>
+      </div>
       <form id="qaForm" class="qa-form glass-panel">
         <input type="text" id="qaName" class="qa-input" placeholder="İsminiz (İsteğe bağlı)" />
         <textarea id="qaQuestion" class="qa-textarea" placeholder="Topluluğa bir soru sorun..." required></textarea>
-        <button type="submit" class="qa-submit magnetic-btn">Soruyu Gönder</button>
+        <div class="qa-form-footer">
+          <select id="qaCategory" class="qa-category-select" aria-label="Kategori Seçi">
+            <option value="Genel">💬 Genel</option>
+            <option value="Ev & Kira">🏠 Ev & Kira</option>
+            <option value="Vize">🛂 Vize</option>
+            <option value="Ulaşım">🚇 Ulaşım</option>
+            <option value="İş">💼 İş</option>
+          </select>
+          <button type="submit" class="qa-submit magnetic-btn">Soruyu Gönder</button>
+        </div>
       </form>
       <div id="qaFeed" class="qa-feed">
         <!-- JS ile doldurulacak -->
@@ -617,8 +644,18 @@
       <!-- Messages will appear here -->
     </div>
     
-    <form id="chatbotForm" class="chatbot-input-area"></form>
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
+    <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+      <button class="quick-reply-btn" data-query="Anmeldung">📋 Anmeldung</button>
+      <button class="quick-reply-btn" data-query="Ev bulma">🏠 Ev Bulma</button>
+      <button class="quick-reply-btn" data-query="Ulaşım">🚇 Ulaşım</button>
+      <button class="quick-reply-btn" data-query="Vize">🛂 Vize</button>
+      <button class="quick-reply-btn" data-query="Yeme içme">🍽️ Restoran</button>
+      <button class="quick-reply-btn" data-query="İş bulma">💼 İş Bulma</button>
+    </div>
+    <form id="chatbotForm" class="chatbot-input-area">
+      <input type="text" id="chatbotInput" placeholder="Berlin hakkında bir şey sorun..." autocomplete="off" />
+      <button type="submit" aria-label="Gönder"><i class="fas fa-paper-plane"></i></button>
+    </form>
   </div>
 
   <!-- ── History Portal Modal (Shake Feature) ───── -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevrimdışısınız | Berlin Konuşuyor</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --text-primary: #ffffff;
+            --accent: #E3B04B;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 400px;
+        }
+        i {
+            font-size: 4rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            display: block;
+        }
+        h1 { font-weight: 700; margin-bottom: 1rem; }
+        p { color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 2rem; }
+        .btn {
+            background: var(--accent);
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <i class="fas fa-wifi-slash"></i>
+        <h1>İnternet Yok</h1>
+        <p>Görünüşe göre şu an çevrimdışısınız. Berlin'in tadını çıkarın! <br>İnternetiniz geldiğinde haberleri güncellemek için sayfayı yenileyebilirsiniz.</p>
+        <a href="/" class="btn">Tekrar Dene</a>
+    </div>
+</body>
+</html>

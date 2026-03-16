@@ -417,34 +417,36 @@ async function loadNews() {
   if (grid) grid.innerHTML = '<div class="skeleton-card"></div>'.repeat(4);
 
   try {
-    // 1. Önce AI tarafından üretilmiş yerel haberleri ve insightları çek
+    let combinedNews = [];
+    
+    // 1. Get custom news from localStorage (Admin Panel)
+    const customNews = JSON.parse(localStorage.getItem('bk_custom_news') || '[]');
+    
+    // 2. Önce AI tarafından üretilmiş yerel haberleri ve insightları çek
     const localRes = await fetch('/data/news.json');
     if (localRes.ok) {
       const localData = await localRes.json();
       if (localData.articles && localData.articles.length) {
-        globalNews = localData.articles;
-        renderNews(globalNews); // Use the new renderNews
+        combinedNews = [...customNews, ...localData.articles];
+        globalNews = combinedNews;
+        
+        renderNews(globalNews);
         renderTicker(globalNews);
         renderHeroFeatured(globalNews[0]);
         
-        // AI Dashboard'u güncelle
-        if (localData.insights) {
-          renderAIDashboard(localData.insights);
-        }
-
-        // Initialize Berlin Pulse
+        if (localData.insights) renderAIDashboard(localData.insights);
         initBerlinPulse(globalNews);
 
         const badge = document.getElementById('newsSource');
         if (badge) {
           const ago = getTimeAgo(localData.lastUpdated || new Date());
-          badge.textContent = `AI Destekli Akış (Son: ${ago})`;
+          badge.textContent = customNews.length > 0 ? `Özel Akış + AI (${combinedNews.length} Haber)` : `AI Destekli Akış (Son: ${ago})`;
         }
-        return; // Yerel haberler yüklendiyse TRT fallback'e gerek yok
+        return;
       }
     }
 
-    // 2. Fallback: RSS-to-JSON API to fetch live news from TRT Haber (Eğer yerel veri yoksa)
+    // 3. Fallback: RSS-to-JSON
     const rssUrl = 'https://www.trthaber.com/manset_articles.rss';
     const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
     
@@ -453,38 +455,30 @@ async function loadNews() {
     const data = await res.json();
 
     if (data.status === 'ok' && data.items?.length) {
-      // API dönüşünü kendi modelimize uyarlıyoruz
       const articles = data.items.slice(0, 5).map(item => ({
         id: Math.random().toString(36).substr(2, 9),
         title: item.title,
         summary_tr: item.title,
-        description: item.description.replace(/<[^>]*>?/gm, '').trim(), // HTML etiketlerini temizle
+        description: item.description.replace(/<[^>]*>?/gm, '').trim(),
         image: item.thumbnail || (item.enclosure && item.enclosure.link) || PLACEHOLDER_IMG,
         date: item.pubDate,
         source: "TRT Haber",
         url: item.link,
-        category: 'Politics' // Default category for RSS fallback
+        category: 'Politics'
       }));
 
-      globalNews = articles;
-      renderNews(articles); 
-      renderTicker(articles);
-      renderHeroFeatured(articles[0]);
+      globalNews = [...customNews, ...articles];
+      renderNews(globalNews); 
+      renderTicker(globalNews);
+      renderHeroFeatured(globalNews[0]);
 
-      // Show last updated info
       const badge = document.getElementById('newsSource');
       if (badge && articles.length > 0) {
-        const ago = getTimeAgo(articles[0].date);
-        badge.textContent = `Canlı Akış (Son: ${ago})`;
+        badge.textContent = `Canlı Akış + Özel (${globalNews.length} Haber)`;
       }
-    } else {
-      throw new Error('Geçersiz RSS veri yapısı');
     }
   } catch (err) {
-    console.log('Canlı haber akışı yüklenemedi:', err);
-    const badge = document.getElementById('newsSource');
-    if (badge) badge.textContent = 'Haber akışı güncellenemedi.';
-    if (grid) grid.innerHTML = '<p class="error-message">Haberler yüklenemedi. Lütfen daha sonra tekrar deneyin.</p>';
+    console.log('Haber akışı yüklenemedi:', err);
   }
 }
 
@@ -500,51 +494,23 @@ function getTimeAgo(isoDate) {
 }
 
 // ── Dynamic Events Loading ──────────────────
-function renderEvents(events) {
-  const track = document.getElementById('eventsTrack');
-  if (!track || !events.length) return;
-
-  const html = events.map(e => {
-    const d = new Date(e.date);
-    const day = d.toLocaleDateString('tr-TR', { day: '2-digit' });
-    const month = d.toLocaleDateString('tr-TR', { month: 'short' });
-    
-    return `
-      <div class="event-card">
-        <div class="event-img" style="background-image: url('${e.image}')">
-          <span class="event-category">${e.category}</span>
-        </div>
-        <div class="event-body">
-          <div class="event-date-box">
-            <span class="event-day">${day}</span>
-            <span class="event-month">${month}</span>
-          </div>
-          <h4 class="event-title">${e.title}</h4>
-          <div class="event-location">
-            <i class="fas fa-map-marker-alt"></i> ${e.location}
-          </div>
-        </div>
-      </div>
-    `;
-  }).join('');
-
-  track.innerHTML = html;
-}
-
 async function loadEvents() {
   try {
+    const customEvents = JSON.parse(localStorage.getItem('bk_custom_events') || '[]');
     const res = await fetch('/data/events.json');
     if (!res.ok) throw new Error('Events fetch failed');
     const data = await res.json();
-    if (data.events?.length) {
-      renderEvents(data.events);
+    
+    const combinedEvents = [...customEvents, ...(data.events || [])];
+    if (combinedEvents.length) {
+      renderEvents(combinedEvents);
+      // Store in global for search
+      window.globalEvents = combinedEvents;
     }
   } catch (err) {
     console.log('Etkinlikler yüklenemedi.');
   }
 }
-
-// ── Dynamic Podcasts Loading ────────────────
 async function loadPodcasts() {
   try {
     const res = await fetch('/data/podcasts.json');
@@ -552,12 +518,7 @@ async function loadPodcasts() {
     const data = await res.json();
     
     const grid = document.getElementById('podcastGrid');
-    if (!grid || !data.podcasts) {
-      console.log('Podcast grid element not found or no data.');
-      return;
-    }
-
-    console.log(`Rendering ${data.podcasts.length} podcasts...`);
+    if (!grid || !data.podcasts) return;
 
     const html = data.podcasts.map(p => `
       <div class="yt-mini-card glass-panel" onclick="playPodcast('${p.title.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.src}', '${p.thumbClass}')">
@@ -574,30 +535,24 @@ async function loadPodcasts() {
   }
 }
 
-// ── Reveal Logic Enhancement ───────────────
 function initReveal() {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
-  );
-
-  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal, .reveal-small').forEach((el) => observer.observe(el));
 }
 
-// ── Smooth Section Navigation ─────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const targetId = this.getAttribute('href');
     if (targetId === '#') return;
-    
     e.preventDefault();
+
     const target = document.querySelector(targetId);
     if (target) {
       const offset = 80;
@@ -625,7 +580,7 @@ function initNavbar() {
 }
 
 // ── Configuration ───────────────────────────
-const APP_VERSION = '1.0.8-FIX';
+const APP_VERSION = '1.0.9-NUCLEAR';
 console.info(`%c Berlin Konuşuyor %c v${APP_VERSION} `, 'background: #000; color: #fff; font-weight: bold;', 'background: #ff3e00; color: #fff;');
 
 // ── Translations ─────────────────────────────
@@ -1247,12 +1202,19 @@ document.addEventListener('DOMContentLoaded', checkAuthStatus);
 
 
 // ── Community Q&A Forum (LocalStorage) ──────
+// ── Community Q&A Forum (Enhanced with Categories & Replies) ──────
 function initQAForum() {
   const qaForm = document.getElementById('qaForm');
   const qaFeed = document.getElementById('qaFeed');
+  const qaFilters = document.querySelectorAll('.qa-filter-btn');
+  const qaSortBtns = document.querySelectorAll('.qa-sort-btn');
+  
   if (!qaForm || !qaFeed) return;
 
   let questions = [];
+  let currentCategory = 'all';
+  let currentSort = 'newest';
+
   try {
     questions = JSON.parse(localStorage.getItem('bk_qa') || '[]');
   } catch(e) {}
@@ -1260,33 +1222,94 @@ function initQAForum() {
   // Load defaults if empty
   if (questions.length === 0) {
     questions = [
-      { id: 1, name: 'Ahmet Y.', text: 'Merhaba, Kreuzberg civarında uygun fiyatlı ve nezih bir kiralık ev bulmak için hangi siteleri önerirsiniz?', time: '2 saat önce', karma: 14, tags: ['Ev & Kira', 'Kreuzberg'] },
-      { id: 2, name: 'Anonim', text: 'Mavi kart başvurum 3 aydır Ausländerbehörde\'de bekliyor. Süreci hızlandırmak için avukat tutmalı mıyım?', time: '5 saat önce', karma: 32, tags: ['Vize', 'Bürokrasi'] }
+      { 
+        id: 1, 
+        name: 'Ahmet Y.', 
+        text: 'Merhaba, Kreuzberg civarında uygun fiyatlı ve nezih bir kiralık ev bulmak için hangi siteleri önerirsiniz?', 
+        time: new Date(Date.now() - 7200000).toISOString(), 
+        karma: 14, 
+        category: 'Ev & Kira',
+        replies: [
+          { name: 'BerlinGezgini', text: 'Immobilienscout24 ve WG-Gesucht klasik ama en iyileridir.', time: new Date(Date.now() - 3600000).toISOString() }
+        ]
+      },
+      { 
+        id: 2, 
+        name: 'Elif S.', 
+        text: 'Mavi kart başvurum 3 aydır Ausländerbehörde\'de bekliyor. Süreci hızlandırmak için bir yol var mı?', 
+        time: new Date(Date.now() - 18000000).toISOString(), 
+        karma: 32, 
+        category: 'Vize',
+        replies: []
+      }
     ];
+    saveQA();
+  }
+
+  function saveQA() {
     localStorage.setItem('bk_qa', JSON.stringify(questions));
   }
 
+  function getTimeAgo(dateStr) {
+    const seconds = Math.floor((new Date() - new Date(dateStr)) / 1000);
+    if (seconds < 60) return 'Az önce';
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return `${minutes} dk önce`;
+    const hours = Math.floor(minutes / 14400); // 1340 / 60 = 22.3 -> wait, 3600 is an hour
+    // Let me fix the math here
+    const hrs = Math.floor(minutes / 60);
+    if (hrs < 24) return `${hrs} sa önce`;
+    return `${Math.floor(hrs / 24)} gün önce`;
+  }
+
   function renderFeed() {
-    qaFeed.innerHTML = questions.map(q => `
-      <div class="qa-card glass-panel">
+    let filtered = [...questions];
+    if (currentCategory !== 'all') {
+      filtered = filtered.filter(q => q.category === currentCategory);
+    }
+
+    if (currentSort === 'newest') {
+      filtered.sort((a, b) => new Date(b.time) - new Date(a.time));
+    } else {
+      filtered.sort((a, b) => (b.karma + (b.replies?.length || 0)) - (a.karma + (a.replies?.length || 0)));
+    }
+
+    qaFeed.innerHTML = filtered.map(q => `
+      <div class="qa-card glass-panel reveal-small" data-id="${q.id}">
         <div class="qa-header">
           <div class="qa-author-box">
             <div class="qa-avatar">${q.name.charAt(0).toUpperCase()}</div>
             <div>
               <div class="qa-author">${q.name}</div>
-              <div class="qa-time">${q.time}</div>
+              <div class="qa-time">${getTimeAgo(q.time)}</div>
             </div>
           </div>
-          <div class="qa-tags">
-            ${(q.tags || []).map(t => `<span class="qa-tag">${t}</span>`).join('')}
+          <span class="qa-badge-category">${q.category || 'Genel'}</span>
+        </div>
+        <div class="qa-body">${q.text}</div>
+        
+        ${q.replies && q.replies.length > 0 ? `
+          <div class="qa-replies-section">
+            ${q.replies.map(r => `
+              <div class="qa-reply-item">
+                <div class="qa-reply-author"><strong>${r.name}</strong> • ${getTimeAgo(r.time)}</div>
+                <div class="qa-reply-text">${r.text}</div>
+              </div>
+            `).join('')}
           </div>
-        </div>
-        <div class="qa-body">
-          ${q.text}
-        </div>
+        ` : ''}
+
         <div class="qa-actions">
-          <button class="qa-action-btn" onclick="upvoteQA(${q.id})"><i class="fas fa-arrow-up"></i> ${q.karma}</button>
-          <button class="qa-action-btn"><i class="far fa-comment-alt"></i> Yanıtla</button>
+          <button class="qa-action-btn upvote" onclick="window.upvoteQA(${q.id})"><i class="fas fa-arrow-up"></i> ${q.karma}</button>
+          <button class="qa-action-btn reply-toggle" onclick="window.toggleReplyForm(${q.id})"><i class="far fa-comment-alt"></i> ${q.replies?.length || 0} Yanıt</button>
+        </div>
+
+        <div class="qa-reply-form-wrapper" id="reply-form-${q.id}" style="display:none">
+          <div class="qa-reply-input-group">
+            <input type="text" placeholder="Adınız" class="reply-name-input" id="reply-name-${q.id}">
+            <textarea placeholder="Yanıtınızı yazın..." class="reply-text-input" id="reply-text-${q.id}"></textarea>
+            <button class="reply-submit-btn" onclick="window.submitReply(${q.id})">Gönder</button>
+          </div>
         </div>
       </div>
     `).join('');
@@ -1296,7 +1319,33 @@ function initQAForum() {
     const q = questions.find(x => x.id === id);
     if (q) {
       q.karma++;
-      localStorage.setItem('bk_qa', JSON.stringify(questions));
+      saveQA();
+      renderFeed();
+    }
+  };
+
+  window.toggleReplyForm = (id) => {
+    const form = document.getElementById(`reply-form-${id}`);
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+  };
+
+  window.submitReply = (id) => {
+    const nameInput = document.getElementById(`reply-name-${id}`);
+    const textInput = document.getElementById(`reply-text-${id}`);
+    const name = nameInput.value.trim() || 'Anonim';
+    const text = textInput.value.trim();
+
+    if (!text) return;
+
+    const q = questions.find(x => x.id === id);
+    if (q) {
+      if (!q.replies) q.replies = [];
+      q.replies.push({ 
+        name, 
+        text, 
+        time: new Date().toISOString() 
+      });
+      saveQA();
       renderFeed();
     }
   };
@@ -1305,6 +1354,7 @@ function initQAForum() {
     e.preventDefault();
     const nameInput = document.getElementById('qaName');
     const textInput = document.getElementById('qaQuestion');
+    const categorySelect = document.getElementById('qaCategory');
     const btn = qaForm.querySelector('.qa-submit');
     
     if(!textInput.value.trim()) return;
@@ -1313,15 +1363,15 @@ function initQAForum() {
       id: Date.now(),
       name: nameInput.value.trim() || 'Anonim',
       text: textInput.value.trim(),
-      time: 'Az önce',
+      category: categorySelect ? categorySelect.value : 'Genel',
+      time: new Date().toISOString(),
       karma: 0,
-      tags: ['Yeni Soru']
+      replies: []
     };
 
     questions.unshift(newQ);
-    localStorage.setItem('bk_qa', JSON.stringify(questions));
+    saveQA();
     
-    // UI Feedback
     textInput.value = '';
     nameInput.value = '';
     const org = btn.innerHTML;
@@ -1336,10 +1386,54 @@ function initQAForum() {
     }, 2000);
   });
 
+  // Filter Event Listeners
+  if (qaFilters) {
+    qaFilters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        qaFilters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.category;
+        renderFeed();
+      });
+    });
+  }
+
+  // Sort Event Listeners
+  if (qaSortBtns) {
+    qaSortBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        qaSortBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentSort = btn.dataset.sort;
+        renderFeed();
+      });
+    });
+  }
+
   renderFeed();
 }
 
-// ── AI Chatbot Assistant ──────────────────────
+// ── AI Chatbot Assistant (Knowledge-Base Powered) ──────────
+const BERLIN_KB = [
+  { keys: ['anmeldung','adres','kayıt','registration','adresse','anmelden'], answer: '📋 **Anmeldung (Adres Kaydı)**\n\nBerlin\'e taşındıktan sonra **14 gün içinde** Bürgeramt\'a gidip adres kaydı yaptırmanız gerekir.\n\n🔹 Gerekli belgeler:\n• Kimlik/Pasaport\n• Kira sözleşmesi\n• Wohnungsgeberbestätigung (ev sahibinden onay formu)\n\n🔹 Online randevu: service.berlin.de\n\n💡 İpucu: Randevu bulmak zor olabilir. Her sabah 08:00\'da yeni randevular açılır!' },
+  { keys: ['ev','kira','wohnung','daire','kiralık','ev bulma','mietwohnung','housing'], answer: '🏠 **Berlin\'de Ev Bulma**\n\nPopüler arama siteleri:\n• immobilienscout24.de\n• wg-gesucht.de (paylaşımlı ev)\n• ebay-kleinanzeigen.de\n• immowelt.de\n\n🔹 Ortalama kira (soğuk):\n• 1+1: 600-900€\n• 2+1: 900-1.300€\n• WG odası: 400-650€\n\n💡 İpucu: Schufa (kredi raporu) hazır bulundurun. Başvurularda öz-tanıtım mektubu çok işe yarar!' },
+  { keys: ['vize','visum','visa','oturum','çalışma izni','aufenthaltstitel','blue card','mavi kart'], answer: '🛂 **Vize & Oturum İzni**\n\n🔹 Türk vatandaşları için:\n• Turist vizesi: Schengen vizesi (90 gün)\n• Çalışma vizesi: İş teklifi + Ausländerbehörde başvurusu\n• Mavi Kart (Blue Card): Üniversite diploması + yıllık min. ~43.800€ maaş\n\n🔹 Ausländerbehörde randevu:\notv.verwalt-berlin.de\n\n💡 İpucu: Başvuru öncesi tüm belgelerin noter onaylı çevirilerini hazırlayın.' },
+  { keys: ['ulaşım','transport','bvg','u-bahn','s-bahn','bilet','fahrkarte','ticket','metro'], answer: '🚇 **Berlin Ulaşım Rehberi**\n\n🔹 Bilet türleri (AB Bölgesi):\n• Tek bilet: 3.20€\n• Günlük: 9.50€\n• Aylık: 86€\n• Deutschland-Ticket: 49€/ay (tüm Almanya!)\n\n🔹 Uygulamalar: BVG app, DB Navigator\n\n💡 İpucu: Deutschland-Ticket (49€) en mantıklı seçenek — bütün şehir içi + bölgesel trenlerde geçerli!' },
+  { keys: ['iş','job','arbeit','çalışmak','maaş','gehalt','iş bulma','bewerbung'], answer: '💼 **Berlin\'de İş Bulma**\n\nPopüler iş arama platformları:\n• linkedin.com\n• indeed.de\n• stepstone.de\n• xing.com\n• arbeitsagentur.de\n\n🔹 Ortalama maaşlar (brüt):\n• IT Uzmanı: 55-75k€\n• Gastronomi: 28-35k€\n• Ofis işleri: 35-50k€\n\n💡 İpucu: Almanca bilmek büyük avantaj! VHS (Volkshochschule) kursları oldukça uygun fiyatlı.' },
+  { keys: ['yeme','restoran','restaurant','yemek','cafe','kafe','döner','türk','essen','food'], answer: '🍽️ **Yeme & İçme Rehberi**\n\nKreuzberg\'in en iyileri:\n• Hasır (Adalbertstr.) — Klasik Türk mutfağı\n• Mustafa\'s Gemüse Kebap — Efsanevi döner\n• Five Elephant — Specialty kahve\n• Markthalle Neun — Street food cenneti\n\n🔹 Neukölln:\n• Sonnenallee ("Arap Sokağı") — Ortadoğu lezzetleri\n• Lavanderia Vecchia — İtalyan fine dining\n\n💡 İpucu: Öğle yemeklerinde "Mittagstisch" menülerine bakın — 7-12€ arası!' },
+  { keys: ['sağlık','arzt','doktor','hastane','sigorta','versicherung','krankenhaus','health'], answer: '🏥 **Sağlık Sistemi**\n\n🔹 Sigorta:\n• Zorunlu sağlık sigortası (gesetzliche KV): TK, AOK, Barmer\n• Aylık: Maaşın ~%14.6\'sı (yarısını işveren öder)\n\n🔹 Acil durumlar:\n• Acil: 112 numarayı arayın\n• Ärztlicher Bereitschaftsdienst: 116 117\n\n💡 İpucu: Doctolib uygulaması ile kolayca doktor randevusu alabilirsiniz.' },
+  { keys: ['dil','almanca','deutsch','sprache','kurs','öğrenmek','lernen','language'], answer: '📚 **Almanca Öğrenme**\n\nÜcretsiz/uygun kaynaklar:\n• VHS (Volkshochschule) — dönemlik kurslar (~100-200€)\n• DW (Deutsche Welle) — ücretsiz online kurs\n• Goethe Institut — profesyonel kurslar\n• Tandem dil uygulamaları\n\n🔹 Önemli seviyeler:\n• A1-A2: Günlük yaşam\n• B1: Oturum izni için gerekli\n• B2-C1: İş dünyası\n\n💡 İpucu: Kreuzberg ve Neukölln\'de Türkçe konuşanlar çok ama Almanca pratik için Prenzlauer Berg idealdir!' },
+  { keys: ['gece','nightlife','club','party','techno','berghain','bar','eğlence'], answer: '🎶 **Berlin Gece Hayatı**\n\nEfsanevi kulüpler:\n• Berghain/Panorama Bar — Techno tapınağı\n• Tresor — Endüstriyel techno\n• Watergate — Spree nehri manzaralı\n• KitKat Club — Öncü\n• Sisyphos — Açık hava partisi\n\n💡 İpucu: Berghain\'e giriş garanti değil! Sade giyinin, küçük gruplarla gidin ve Almanca konuşun.' },
+  { keys: ['hava','wetter','weather','sıcaklık','yağmur','mevsim'], answer: '🌤️ **Berlin Hava Durumu**\n\nMevsimsel ortalamalar:\n• Yaz (Haz-Ağu): 20-30°C, uzun günler\n• Kış (Kas-Şub): -5 ile 5°C, erken karanlık\n• İlkbahar/Sonbahar: 8-18°C, değişken\n\n💡 İpucu: Kış çok karanlık olabilir, D vitamini almanız önerilir. Yaz aylarında parklar ve göller harikadır!' },
+  { keys: ['banka','konto','hesap','bank','n26','finans'], answer: '🏦 **Banka Hesabı Açma**\n\nPopüler bankalar:\n• N26 — %100 online, hızlı açılım\n• Deutsche Bank — Geleneksel\n• Commerzbank — Yaygın ATM ağı\n• ING — Ücretsiz Girokonto\n\n🔹 Gerekli belgeler:\n• Kimlik/Pasaport\n• Anmeldung belgesi\n• Bazen Schufa (kredi raporu)\n\n💡 İpucu: N26 veya Wise ile Anmeldung\'dan bile önce hesap açabilirsiniz!' },
+  { keys: ['kültür','museum','müze','sanat','kultur','galeri','ausstellung'], answer: '🎭 **Kültür & Müzeler**\n\nÜcretsiz/indirimli müzeler:\n• Museumsinsel (UNESCO) — kombi bilet 22€\n• East Side Gallery — ücretsiz\n• Gedenkstätte Berliner Mauer — ücretsiz\n• Her ayın ilk Pazar günü birçok müze ücretsiz!\n\n💡 İpucu: Museum Pass Berlin (3 gün) 36€ — 30+ müzeye giriş!' },
+  { keys: ['çocuk','kita','kreş','okul','schule','kindergarten','aile'], answer: '👶 **Çocuk & Eğitim**\n\nBerlin\'de Kita (kreş):\n• Başvuru: kita-navigator.berlin.de\n• 0-6 yaş arası ücretsiz (son yıl zorunlu)\n• Erken başvuru yapın — bekleme listesi uzun!\n\n🔹 Okullar:\n• Devlet okulları ücretsiz\n• Türk-Alman Eğitim Merkezi Kreuzberg\'de\n\n💡 İpucu: Kita başvurusunu doğumdan hemen sonra yapın!' },
+  { keys: ['merhaba','selam','hello','hi','hey','naber','nasılsın'], answer: 'Merhaba! 👋 Ben Berlin Konuşuyor Asistanı. Size Berlin hakkında her konuda yardımcı olabilirim.\n\nŞu konularda sorular sorabilirsiniz:\n📋 Anmeldung & Resmi işlemler\n🏠 Ev bulma\n🛂 Vize & Oturum\n🚇 Ulaşım\n💼 İş arama\n🍽️ Yeme & İçme\n🎶 Gece hayatı\n\nYa da aşağıdaki hızlı butonları kullanın!' },
+  { keys: ['teşekkür','sağol','danke','thanks','eyvallah'], answer: 'Rica ederim! 😊 Berlin\'de size yardımcı olmaktan mutluluk duyarım. Başka sorunuz olursa çekinmeden sorun!\n\n📧 Daha detaylı sorularınız için: hello@berlinkonusuyor.com' },
+  { keys: ['schufa','kredi','kredit','credit'], answer: '📊 **Schufa (Kredi Raporu)**\n\nSchufa, Almanya\'daki kredi itibar sistemidir.\n\n🔹 Nasıl alınır?\n• meineschufa.de → Ücretsiz kopyayı "Datenkopie" bölümünden talep edin\n• Ücretli anında erişim: ~29.95€\n\n🔹 Neden önemli?\n• Ev kiralama başvurularında şart\n• Telefon aboneliği, kredi kartı\n\n💡 İpucu: Ücretsiz Schufa kopyası yılda 1 kez hakkınızdır!' },
+  { keys: ['spor','sport','fitness','gym','yüzme','schwimmen'], answer: '🏋️ **Spor İmkanları**\n\nUygun fiyatlı seçenekler:\n• Fitness First, McFit: ~20-30€/ay\n• Urban Sports Club: ~50-100€/ay (çoklu tesis)\n• Berlin\'deki açık hava spor alanları ücretsiz!\n• Halk yüzme havuzları: ~5-6€/giriş\n\n💡 İpucu: Tiergarten ve Tempelhofer Feld koşu için mükemmel!' },
+];
+
 const chatbotWindow = document.getElementById('chatbotWindow');
 const chatbotMessages = document.getElementById('chatbotMessages');
 const chatbotForm = document.getElementById('chatbotForm');
@@ -1347,35 +1441,51 @@ const chatbotInput = document.getElementById('chatbotInput');
 
 window.toggleChatbot = () => {
   chatbotWindow.classList.toggle('active');
-  if (chatbotWindow.classList.contains('active')) {
+  if (chatbotWindow.classList.contains('active') && chatbotInput) {
     setTimeout(() => chatbotInput.focus(), 300);
   }
 };
 
-if (chatbotForm) {
-  chatbotForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const txt = chatbotInput.value.trim();
-    if (!txt) return;
+function findBestAnswer(query) {
+  const q = query.toLowerCase().replace(/[?.!,]/g, '');
+  const words = q.split(/\s+/);
 
-    // Add user msg
-    addChatMsg(txt, 'user-msg');
-    chatbotInput.value = '';
+  let bestMatch = null;
+  let bestScore = 0;
 
-    // Show typing
-    const typingId = 'typing-' + Date.now();
-    addChatMsg('<i class="fas fa-ellipsis-h fa-fade"></i>', 'bot-msg', typingId);
+  for (const item of BERLIN_KB) {
+    let score = 0;
+    for (const key of item.keys) {
+      const keyLower = key.toLowerCase();
+      // Exact substring match in query
+      if (q.includes(keyLower)) {
+        score += keyLower.length * 3;
+      }
+      // Individual word match
+      for (const word of words) {
+        if (word.length < 2) continue;
+        if (keyLower.includes(word) || word.includes(keyLower)) {
+          score += word.length;
+        }
+      }
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      bestMatch = item;
+    }
+  }
 
-    // Mock AI Response
-    setTimeout(() => {
-      const typingEl = document.getElementById(typingId);
-      if (typingEl) typingEl.remove();
+  if (bestScore >= 4 && bestMatch) {
+    return bestMatch.answer;
+  }
+  return null;
+}
 
-      const reply = "Merhaba! 👋 Ben Berlin Konuşuyor Asistanı. Şu an geliştirme aşamasındayım ve test ediliyorum. İhtiyaçlarınız ve sorularınız için bizimle doğrudan iletişime geçebilirsiniz: <br><br> <a href='mailto:hello@berlinkonusuyor.com' style='color:var(--accent);text-decoration:underline;'>hello@berlinkonusuyor.com</a>";
-
-      addChatMsg(reply, 'bot-msg');
-    }, 1500);
-  });
+function formatBotMessage(text) {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n/g, '<br>')
+    .replace(/• /g, '&bull; ');
 }
 
 function addChatMsg(content, cls, id = '') {
@@ -1383,9 +1493,49 @@ function addChatMsg(content, cls, id = '') {
   div.className = `chat-msg ${cls}`;
   div.innerHTML = content;
   if (id) div.id = id;
-  chatbotMessages.appendChild(div);
-  chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  if (chatbotMessages) {
+    chatbotMessages.appendChild(div);
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
 }
+
+function handleChatQuery(query) {
+  addChatMsg(query, 'user-msg');
+
+  // Show typing indicator
+  const typingId = 'typing-' + Date.now();
+  addChatMsg('<div class="typing-indicator"><span></span><span></span><span></span></div>', 'bot-msg', typingId);
+
+  setTimeout(() => {
+    const typingEl = document.getElementById(typingId);
+    if (typingEl) typingEl.remove();
+
+    const answer = findBestAnswer(query);
+    if (answer) {
+      addChatMsg(formatBotMessage(answer), 'bot-msg');
+    } else {
+      addChatMsg(formatBotMessage('🤔 Bu konuda henüz bilgi bankamda yeterli veri yok. Ama size yardımcı olmak isterim!\n\n📧 Detaylı sorularınız için: <a href="mailto:hello@berlinkonusuyor.com" style="color:var(--accent);text-decoration:underline;">hello@berlinkonusuyor.com</a>\n\nŞu konularda sorular sorabilirsiniz:\n📋 Anmeldung\n🏠 Ev bulma\n🛂 Vize\n🚇 Ulaşım\n💼 İş bulma\n🍽️ Restoran'), 'bot-msg');
+    }
+  }, 800 + Math.random() * 600);
+}
+
+if (chatbotForm) {
+  chatbotForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const txt = chatbotInput.value.trim();
+    if (!txt) return;
+    chatbotInput.value = '';
+    handleChatQuery(txt);
+  });
+}
+
+// Quick Reply Buttons
+document.querySelectorAll('.quick-reply-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const query = btn.dataset.query;
+    if (query) handleChatQuery(query);
+  });
+});
 
 // ═══════════════════════════════════════════
 // PREMIUM ENHANCEMENTS
@@ -1730,13 +1880,23 @@ document.addEventListener('DOMContentLoaded', () => {
 // ── Service Worker Registration ─────────────
 function initServiceWorker() {
   if ('serviceWorker' in navigator) {
+    // Aggressive Cleanup of old SWs
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+      for (let registration of registrations) {
+        if (!registration.active?.scriptURL.includes('sw-v15.js')) {
+          console.warn('🗑️ Cleaning old Service Worker:', registration.active?.scriptURL);
+          registration.unregister();
+        }
+      }
+    });
+
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
+      navigator.serviceWorker.register('/sw-v15.js')
         .then(registration => {
-          console.log('SW registered: ', registration);
+          console.log('✅ SW Registered (v15): ', registration);
         })
         .catch(registrationError => {
-          console.log('SW registration failed: ', registrationError);
+          console.error('❌ SW Registration failed: ', registrationError);
         });
     });
   }
@@ -1782,31 +1942,168 @@ function initMap() {
   });
 }
 
-// ── Search Logic ────────────────────────────
+// ── Search Logic (Enhanced with Results Overlay & Shortcut) ──────
 function initSearch() {
   const toggle = document.getElementById('searchToggle');
   const wrapper = document.getElementById('searchInputWrapper');
   const close = document.getElementById('searchClose');
   const input = document.getElementById('searchInput');
+  const overlay = document.getElementById('searchResultsOverlay');
+  const resultsList = document.getElementById('searchResultsList');
 
-  if (!toggle || !wrapper || !close || !input) return;
+  if (!toggle || !wrapper || !close || !input || !overlay) return;
 
-  toggle.addEventListener('click', () => {
+  function openSearch() {
     wrapper.classList.add('active');
+    overlay.classList.add('active');
     setTimeout(() => input.focus(), 100);
-  });
+  }
 
-  close.addEventListener('click', () => {
+  function closeSearch() {
     wrapper.classList.remove('active');
+    overlay.classList.remove('active');
     input.value = '';
+    resultsList.innerHTML = '';
+  }
+
+  toggle.addEventListener('click', openSearch);
+  close.addEventListener('click', closeSearch);
+
+  // Keyboard Shortcut: Ctrl + K
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
+    if (e.key === 'Escape') closeSearch();
   });
 
   input.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase();
-    if (query.length < 3) return;
+    const query = e.target.value.toLowerCase().trim();
+    if (query.length < 2) {
+      resultsList.innerHTML = '';
+      return;
+    }
+
+    // Search in News, Events (globalNews, globalEvents)
+    const newsResults = (globalNews || []).filter(n => 
+      (n.title && n.title.toLowerCase().includes(query)) || 
+      (n.summary_tr && n.summary_tr.toLowerCase().includes(query))
+    );
+
+    const eventResults = (globalEvents || []).filter(ev => 
+      (ev.title && ev.title.toLowerCase().includes(query)) || 
+      (ev.description && ev.description.toLowerCase().includes(query))
+    );
+
+    renderSearchResults(newsResults, eventResults);
+  });
+
+  function renderSearchResults(news, events) {
+    if (news.length === 0 && events.length === 0) {
+      resultsList.innerHTML = '<div class="search-no-results">Sonuç bulunamadı...</div>';
+      return;
+    }
+
+    let html = '';
     
-    // In a real app, this would filter articles or show an overlay
-    console.log('Searching for:', query);
+    if (news.length > 0) {
+      html += `<div class="search-category-title">Haberler (${news.length})</div>`;
+      news.slice(0, 5).forEach(n => {
+        html += `
+          <div class="search-result-item" onclick="openNewsModal(${globalNews.indexOf(n)})">
+            <i class="fas fa-newspaper"></i>
+            <div>
+              <div class="search-result-title">${n.title}</div>
+              <div class="search-result-meta">${n.source} • ${formatDate(n.date)}</div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    if (events.length > 0) {
+      html += `<div class="search-category-title">Etkinlikler (${events.length})</div>`;
+      events.slice(0, 5).forEach(ev => {
+        html += `
+          <div class="search-result-item">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <div class="search-result-title">${ev.title}</div>
+              <div class="search-result-meta">${ev.date || 'Yakında'} • ${ev.venue || 'Berlin'}</div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    resultsList.innerHTML = html;
+  }
+}
+
+// ── Newsletter Logic (Success Animation & Local Storage) ───────
+function initNewsletter() {
+  const form = document.getElementById('newsletterForm');
+  const msg = document.getElementById('newsletterMessage');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const input = form.querySelector('.newsletter-input');
+    const btn = form.querySelector('.newsletter-btn');
+    const email = input.value.trim();
+    
+    // Basic Validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailPattern.test(email)) {
+      btn.textContent = 'Hata!';
+      btn.classList.add('error');
+      setTimeout(() => {
+        btn.textContent = 'Abone Ol';
+        btn.classList.remove('error');
+      }, 2000);
+      return;
+    }
+
+    // Loading State
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+
+    // Mock API call then store locally
+    setTimeout(() => {
+      // Store in localStorage
+      let subscribers = JSON.parse(localStorage.getItem('bk_subscribers') || '[]');
+      if (!subscribers.includes(email)) {
+        subscribers.push(email);
+        localStorage.setItem('bk_subscribers', JSON.stringify(subscribers));
+      }
+
+      // Success UI
+      btn.innerHTML = 'Kayıt Başarılı <i class="fas fa-check"></i>';
+      btn.style.background = '#22c55e';
+      input.value = '';
+      
+      if (msg) {
+        msg.innerHTML = '✅ Berlin bültenine başarıyla abone oldunuz!';
+        msg.classList.add('show', 'success');
+      }
+
+      // Confetti effect (Dynamic import to save initial load)
+      if (typeof canvasConfetti !== 'undefined') {
+        canvasConfetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }
+
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        if (msg) msg.classList.remove('show');
+      }, 4000);
+    }, 1200);
   });
 }
 
@@ -1869,3 +2166,17 @@ function initFilters() {
     });
   });
 }
+// ── Global Initialization ───────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  initDashboardUtils();
+  loadNews();
+  loadEvents();
+  loadPodcasts();
+  initChatbot();
+  initQAForum();
+  initSearch();
+  initNewsletter();
+  initTheme();
+  initFilters();
+  initReveal();
+});
