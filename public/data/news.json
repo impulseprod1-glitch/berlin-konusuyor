@@ -1,53 +1,120 @@
 {
-  "lastUpdated": "2026-03-15T15:00:00Z",
+  "lastUpdated": "2026-03-16T01:35:37.708Z",
+  "count": 10,
   "articles": [
     {
-      "id": "1",
-      "title": "Berlin'de Konut Piyasası ve Yeni Düzenlemeler",
-      "summary_tr": "Berlin'de Konut Piyasası ve Yeni Düzenlemeler",
-      "description": "Berlin senatosu, kiralık konut piyasasını rahatlatmak amacıyla yeni bir yapılaşma paketini onayladı. Bu paketle birlikte yeni sosyal konutların inşası hızlanacak.",
-      "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80",
-      "date": "2026-03-15T08:00:00Z",
-      "source": "Berlin News",
-      "url": "#",
-      "category": "lifestyle"
+      "title": "BAE: Dubai Uluslararası Havalimanı çevresinde İHA saldırısı sonucu yangın çıktı",
+      "description": "Birleşik Arap Emirlikleri'ndeki (BAE) Dubai Uluslararası Havalimanı çevresinde insansız hava aracı (İHA) ile düzenlenen saldırı sonucu yangın çıktığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/bae-dubai-uluslararasi-havalimani-cevresinde-iha-saldirisi-sonucu-yangin-cikti/3865952",
+      "image": "",
+      "date": "2026-03-16T00:32:35.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
     },
     {
-      "id": "2",
-      "title": "Kreuzberg Festivali Hazırlıkları Başladı",
-      "summary_tr": "Kreuzberg Festivali Hazırlıkları Başladı",
-      "description": "Her yıl düzenlenen Kreuzberg sokak festivali için geri sayım başladı. Bu yıl katılımın rekor kırması bekleniyor.",
-      "image": "https://images.unsplash.com/photo-1558239027-d0a47f480377?w=800&q=80",
-      "date": "2026-03-14T12:00:00Z",
-      "source": "Kultur Berlin",
-      "url": "#",
-      "category": "culture"
+      "title": "İran medyası: ABD-İsrail saldırıları altındaki İran'ın Tahran ve Kerec kentlerinde patlama sesi duyuldu",
+      "description": "ABD ve İsrail'in İran'a saldırılarında Tahran ve Kerec kentlerinde patlama sesleri duyulduğu bildirildi. İsrail ordusu İran'da 200'den fazla hedefe saldırı düzenlediğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/guncel/iran-medyasi-abd-israil-saldirilari-altindaki-iranin-tahran-ve-kerec-kentlerinde-patlama-sesi-duyuldu/3865929",
+      "image": "",
+      "date": "2026-03-15T23:33:27.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
     },
     {
-      "id": "3",
-      "title": "Berlin Teknoloji Zirvesi 2026",
-      "summary_tr": "Berlin Teknoloji Zirvesi 2026",
-      "description": "Avrupa'nın en büyük teknoloji zirvelerinden biri olan Berlin Tech Summit, kapılarını start-up dünyasına açıyor.",
-      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
-      "date": "2026-03-13T10:00:00Z",
-      "source": "Tech Berlin",
-      "url": "#",
-      "category": "economy"
+      "title": "Siirt için sağanak uyarısı",
+      "description": "Siirt için gök gürültülü sağanak uyarısında bulunuldu.",
+      "url": "https://www.aa.com.tr/tr/guncel/siirt-icin-saganak-uyarisi/3865918",
+      "image": "",
+      "date": "2026-03-15T22:59:51.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
     },
     {
-      "id": "4",
-      "title": "Berlin Duvarı Turu: Yeni Rotalar",
-      "summary_tr": "Berlin Duvarı Turu: Yeni Rotalar",
-      "description": "Şehir turizmi ofisi, Berlin Duvarı kalıntılarını takip eden yeni yürüyüş rotalarını duyurdu.",
-      "image": "https://images.unsplash.com/photo-1549213821-4708d624e1d1?w=800&q=80",
-      "date": "2026-03-12T15:00:00Z",
-      "source": "Travel Berlin",
-      "url": "#",
-      "category": "culture"
+      "title": "Almanya, Hürmüz Boğazı'nda uluslararası bir askeri operasyona katılmayacak",
+      "description": "Almanya Dışişleri Bakanı Johann Wadephul, ülkesinin Hürmüz Boğazı'ndaki gerilim ve İran'a yönelik saldırılar bağlamında uluslararası bir askeri operasyona katılmayacağını yineledi.",
+      "url": "https://www.aa.com.tr/tr/guncel/almanya-hurmuz-bogazinda-uluslararasi-bir-askeri-operasyona-katilmayacak/3865912",
+      "image": "",
+      "date": "2026-03-15T22:33:49.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrailli güvenlik kaynakları, İran'a karşı savaşın \"belirlenen hızda\" ilerlemediğini söyledi",
+      "description": "İsrailli güvenlik kaynakları, İran'a karşı yürütülen savaşın \"askeri kurumun savaşın başında belirlediği hızda ilerlemediğini\" belirtti.",
+      "url": "https://www.aa.com.tr/tr/guncel/israilli-guvenlik-kaynaklari-irana-karsi-savasin-belirlenen-hizda-ilerlemedigini-soyledi/3865887",
+      "image": "",
+      "date": "2026-03-15T21:51:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "HBL: Füchse gewinnen gegen Erlangen und rücken vor auf Platz zwei",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/handball-bundesliga-hbl-fuechse-berlin-hc-erlangen-spielbericht.html",
+      "image": "",
+      "date": "2026-03-15T21:04:24.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bundesliga: Union macht großen Schritt Richtung Klassenerhalt",
+      "description": "Nur eines der letzten zehn Bundesliga-Spiele hatte der 1. FC Union vor der Partie in Freiburg für sich entscheiden können. Gegen den Lieblingsgegner aus dem Breisgau allerdings platzte nun der Knoten - wenn auch spät.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/fussball-bundesliga-sc-freiburg-fc-union-berlin-liveticker-audio-stream-spielbericht.html",
+      "image": "",
+      "date": "2026-03-15T20:21:54.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Elbe-Elster: Brand in Hohenleipisch beeinträchtigt Zugverkehr über Stunden",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/hohenleipisch-elbe-elster-brandenburg-feuerwehr-brand.html",
+      "image": "",
+      "date": "2026-03-15T19:13:54.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "BBL: Alba Berlin erlebt Debakel beim MBC",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/basketball-bundesliga-bbl-mbc-weissenfels-alba-berlin-spielbericht.html",
+      "image": "",
+      "date": "2026-03-15T17:40:50.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "DEL: Eisbären schlagen München und machen Viertelfinal-Einzug perfekt",
+      "description": "Die Eisbären Berlin haben ihr Viertelfinal-Ticket für die DEL-Playoffs sicher. Am Sonntag setzte sich der amtierende Meister mit 5:1 gegen München durch und baute seine Siegesserie zum Ende der Hauptrunde weiter aus.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/eishockey-del-eisbaeren-berlin-ehc-rb-muenchen-hauptrunde-playoffs-spielbericht.html",
+      "image": "",
+      "date": "2026-03-15T17:20:28.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
     }
   ],
   "insights": {
-    "weatherAdvice": "Bugün Berlin'de hava biraz kapalı, şemsiyenizi yanınıza almayı unutmayın!",
-    "newsBrief": "Bugün öne çıkanlar: Konut krizi için yeni adımlar ve Kreuzberg festivali heyecanı."
+    "weatherAdvice": "Berlin'de güzel bir gün dileriz!",
+    "newsBrief": "Berlin gündemi her zaman hareketli."
   }
 }

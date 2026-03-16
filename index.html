@@ -70,7 +70,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
 
@@ -98,11 +98,23 @@
   <nav class="navbar" id="navbar">
     <a href="#" class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></a>
     <div class="nav-links" id="navLinks">
+      <div class="mobile-menu-header">
+        <span class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></span>
+      </div>
       <a href="#haberler" data-i18n="nav_news">Haberler</a>
       <a href="#roportajlar" data-i18n="nav_interviews">Röportajlar</a>
       <a href="#rehber" data-i18n="nav_guide">Rehber</a>
       <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
+      
+      <div class="mobile-menu-footer">
+        <div class="mobile-socials">
+          <a href="https://www.instagram.com/berlin.konusuyor/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@berlinkonusuyor" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://youtube.com/@berlinkonusuyortv" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
     </div>
+
     <div class="nav-right">
       <div class="search-container" id="searchContainer">
         <button class="search-toggle-btn" id="searchToggle" aria-label="Arama">
@@ -171,7 +183,14 @@
   <section class="news-section section-padding" id="haberler">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="section-title" data-i18n="news_title">Berlin Haberleri</h2>
+        <span class="section-tag" data-i18n="section_news">Gündem</span>
+        <h2 class="section-title" data-i18n="news_title">Berlin'de Neler Oluyor?</h2>
+        
+        <!-- ── Berlin Pulse (AI Focus) ──────────────── -->
+        <div class="berlin-pulse-container" id="berlinPulse">
+          <!-- AI bubbles will be injected here -->
+        </div>
+
         <div class="news-filters-wrapper">
           <div class="news-filters" id="newsFilters">
             <button class="filter-btn active" data-category="all" data-i18n="filter_all">Tümü</button>
@@ -595,14 +614,261 @@
         Merhaba 👋 Ben Berlin Konuşuyor Asistanı. Şu an geliştirme aşamasındayım. İhtiyaçlarınız için doğrudan <a href="mailto:hello@berlinkonusuyor.com" class="chatbot-email-link">hello@berlinkonusuyor.com</a> adresinden bize yazabilirsiniz.
       </div>
       <!-- Messages will appear here -->
-    </div>
-    
-    <form id="chatbotForm" class="chatbot-input-area">
-      <input type="text" id="chatbotInput" placeholder="Mesajınızı yazın..." autocomplete="off">
-      <button type="submit" aria-label="Mesaj Gönder" title="Mesaj Gönder"><i class="fas fa-paper-plane"></i></button>
-    </form>
+
+  <!-- Section Wave Divider -->
+  <div class="section-wave section-wave-up">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
   </div>
 
-  <script type="module" src="/main.js"></script>
+  
+  <!-- ═══════════════ TOPLULUK FORUMU ═══════════════ -->
+  <section class="section" id="topluluk">
+    <div class="section-header reveal">
+      <span class="section-tag">Topluluk</span>
+      <h2 class="section-title">Soru & Cevap</h2>
+      <p class="news-auto-badge">Berlinliler yardımlaşıyor</p>
+    </div>
+    <div class="qa-container reveal">
+      <form id="qaForm" class="qa-form glass-panel">
+        <input type="text" id="qaName" class="qa-input" placeholder="İsminiz (İsteğe bağlı)" />
+        <textarea id="qaQuestion" class="qa-textarea" placeholder="Topluluğa bir soru sorun..." required></textarea>
+        <button type="submit" class="qa-submit magnetic-btn">Soruyu Gönder</button>
+      </form>
+      <div id="qaFeed" class="qa-feed">
+        <!-- JS ile doldurulacak -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ NEWSLETTER ═══════════════ -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="newsletter-container reveal">
+      <div class="newsletter-glow"></div>
+      <div class="newsletter-content">
+        <span class="newsletter-tag" data-i18n="newsletter_tag">Bülten</span>
+        <h2 class="newsletter-title" data-i18n="newsletter_title">Berlin'den haberdar ol</h2>
+        <p class="newsletter-desc" data-i18n="newsletter_desc">En güncel haberler, etkinlikler ve rehber içeriklerini doğrudan e-postanıza gönderin.</p>
+        <form class="newsletter-form" id="newsletterForm" action="https://formsubmit.co/hello@berlinkonusuyor.com" method="POST">
+          <input type="email" name="email" class="newsletter-input" placeholder="E-posta adresiniz" data-i18n-placeholder="newsletter_placeholder" required />
+          <button type="submit" class="newsletter-btn magnetic-btn" data-i18n="newsletter_btn">Abone Ol</button>
+        </form>
+        <p id="newsletterMessage" class="newsletter-message"></p>
+        <p class="newsletter-privacy" data-i18n="newsletter_privacy">Gizliliğinize saygı duyuyoruz. İstediğiniz zaman abonelikten çıkabilirsiniz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer" id="iletisim">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></span>
+        <p class="footer-tagline" data-i18n="footer_tagline">Berlin'in nabzını tutan dijital medya platformu.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/berlin.konusuyor/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@berlinkonusuyor" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.21a8.16 8.16 0 004.76 1.51v-3.4a4.85 4.85 0 01-1-.63z"/></svg>
+        </a>
+        <a href="https://youtube.com/@berlinkonusuyortv" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M23.5 6.2a3.02 3.02 0 00-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.56A3.02 3.02 0 00.5 6.2 31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.8 3.02 3.02 0 002.12 2.14c1.84.56 9.38.56 9.38.56s7.54 0 9.38-.56a3.02 3.02 0 002.12-2.14A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Berlin Konuşuyor. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></p>
+      <div class="footer-legal">
+        <a href="#" onclick="openLegal('impressum')" data-i18n="legal_impressum">Impressum</a>
+        <a href="#" onclick="openLegal('privacy')" data-i18n="legal_privacy">Gizlilik Politikası</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ LEGAL MODAL ═══════════════ -->
+  <div id="legalModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeLegal()">&times;</span>
+      <div id="legalContent" class="legal-text">
+        <!-- JS ile doldurulur -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ LOGIN / PROFILE MODAL ═══════════════ -->
+  <div id="loginModal" class="modal login-modal">
+    <div class="modal-content glass-panel login-modal-content">
+      <span class="modal-close" onclick="closeLoginModal()">&times;</span>
+      
+      <!-- Login View -->
+      <div id="loginView">
+        <h2 class="login-modal-title">Giriş Yap</h2>
+        <p class="login-modal-subtitle">Favori içeriklerini kaydetmek için giriş yap.</p>
+        
+        <button class="magnetic-btn login-google-btn" onclick="mockLogin()" aria-label="Google ile Giriş Yap">
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20" height="20" alt="Google" aria-hidden="true"> Google ile Giriş Yap
+        </button>
+        
+        <p class="login-modal-disclaimer">
+          *Bu bir demo girişidir. Bilgileriniz tarayıcınızda (LocalStorage) tutulmaktadır.
+        </p>
+      </div>
+
+      <!-- Profile View (Hidden initially) -->
+      <div id="profileView" class="hidden-view">
+        <div class="profile-avatar">
+          BK
+        </div>
+        <h2 class="profile-title">Hoş Geldiniz!</h2>
+        <p class="profile-email" id="profileEmail">demo@berlinkonusuyor.com</p>
+        
+        <div class="profile-bookmarks">
+          <h4 class="profile-bookmarks-title"><i class="fas fa-bookmark" aria-hidden="true"></i> Kaydedilenler (Demo)</h4>
+          <ul class="profile-bookmarks-list">
+            <li>- Kreuzberg En İyi Kahveciler</li>
+            <li>- Hafta Sonu Techno Etkinliği</li>
+          </ul>
+        </div>
+
+        <button class="magnetic-btn profile-logout-btn" onclick="mockLogout()">
+          Çıkış Yap
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════ NEWS MODAL ═══════════════ -->
+  <div id="newsModal" class="news-modal">
+    <div class="news-modal-progress" id="modalProgress"></div>
+    <div class="news-modal-content">
+      <button class="news-modal-close" onclick="closeNewsModal()">&times;</button>
+      <div class="news-modal-header-actions">
+          <button id="ttsBtn" class="tts-btn" onclick="toggleTTS()" title="Sesli Dinle">
+            <i class="fas fa-volume-up"></i> <span data-i18n="listen_news">Dinle</span>
+          </button>
+      </div>
+      <div class="news-modal-img" id="newsModalImg"></div>
+      <div class="news-modal-body">
+        <div class="news-meta">
+          <span class="news-source-tag" id="newsModalSource"></span>
+          <span class="news-date" id="newsModalDate"></span>
+        </div>
+        <h2 class="news-headline-large news-modal-title" id="newsModalTitle"></h2>
+        <div class="news-modal-text" id="newsModalDesc"></div>
+        <a href="#" target="_blank" rel="noopener" id="newsModalLink" class="magnetic-btn news-modal-btn">Habere Git <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ PODCAST AUDIO PLAYER ═══════════════ -->
+  <div id="podcastPlayer" class="podcast-player glass-panel">
+    <button class="player-close" onclick="closePodcast()" aria-label="Kapat">&times;</button>
+    <div class="player-info">
+      <div id="playerThumb" class="player-thumb"></div>
+      <div class="player-text">
+        <span class="player-title" id="playerTitle">Yükleniyor...</span>
+        <span class="player-desc" id="playerDesc">Berlin Konuşuyor</span>
+      </div>
+    </div>
+    <div class="player-controls">
+      <button class="player-btn" onclick="skipPodcast(-10)" aria-label="Geri Sarı 10s" title="10s Geri"><i class="fas fa-undo-alt"></i></button>
+      <button class="player-btn play-pause-btn" id="playPauseBtn" onclick="togglePlay()" aria-label="Oynat/Durdur" title="Oynat/Durdur"><i class="fas fa-play"></i></button>
+      <button class="player-btn" onclick="skipPodcast(30)" aria-label="İleri Sarı 30s" title="30s İleri"><i class="fas fa-redo-alt"></i></button>
+    </div>
+    <div class="player-progress-container">
+      <span class="player-time" id="currentTime">0:00</span>
+      <div class="player-progress-bg" id="progressBg">
+        <div class="player-progress-fill" id="progressFill"></div>
+      </div>
+      <span class="player-time" id="totalTime">0:00</span>
+    </div>
+    <audio id="mainAudio" src=""></audio>
+  </div>
+
+  <!-- ═══════════════ AI CHATBOT WIDGET ═══════════════ -->
+  <button id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Berlin Asistanı" onclick="toggleChatbot()">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <div id="chatbotWindow" class="chatbot-window glass-panel">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <h4>Berlin Asistanı</h4>
+          <span>Yapay Zeka Destekli</span>
+        </div>
+      </div>
+      <button class="chatbot-close" onclick="toggleChatbot()">&times;</button>
+    </div>
+    
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-msg bot-msg">
+        Merhaba 👋 Ben Berlin Konuşuyor Asistanı. Şu an geliştirme aşamasındayım. İhtiyaçlarınız için doğrudan <a href="mailto:hello@berlinkonusuyor.com" class="chatbot-email-link">hello@berlinkonusuyor.com</a> adresinden bize yazabilirsiniz.
+      </div>
+      <!-- Messages will appear here -->
+    </div>
+    
+    <form id="chatbotForm" class="chatbot-input-area"></form>
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
+  </div>
+
+  <!-- ── History Portal Modal (Shake Feature) ───── -->
+  <div class="modal" id="historyModal">
+    <div class="modal-overlay" onclick="closeHistoryModal()"></div>
+    <div class="modal-container history-portal-container">
+      <div class="history-flare"></div>
+      <button class="modal-close" onclick="closeHistoryModal()">&times;</button>
+      <div class="history-content">
+        <div class="history-date-tag" id="historyDate">16 MART 1920</div>
+        <div class="history-newspaper-header">BERLINER ZEITUNG</div>
+        <div class="history-image" id="historyImage"></div>
+        <h2 class="history-title" id="historyTitle">Berlin'de Tarihi Bir Gün</h2>
+        <div class="history-text" id="historyText">
+          Salladığınızda ortaya çıkacak gizemli bir tarih...
+        </div>
+        <div class="history-footer">
+          <span class="history-source" data-i18n="history_archive">Berlin Arşivi</span>
+          <div class="history-share">
+            <i class="fas fa-share-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shake Hint (Mobile Only) -->
+  <div class="shake-hint" id="shakeHint">
+    <i class="fas fa-mobile-alt"></i>
+    <span data-i18n="shake_hint">Tarihe yolculuk için telefonu salla!</span>
+  </div>
+
+  <!-- ── Mobile Floating Dock ──────────────── -->
+  <div class="mobile-dock" id="mobileDock">
+    <a href="#" class="dock-item active" aria-label="Home">
+      <i class="fas fa-home"></i>
+      <span class="dock-label">Home</span>
+    </a>
+    <a href="#haberler" class="dock-item" aria-label="News">
+      <i class="fas fa-newspaper"></i>
+      <span class="dock-label">Haberler</span>
+    </a>
+    <a href="#ai-insights" class="dock-item" id="dockAiBtn" aria-label="AI Insight">
+      <i class="fas fa-robot"></i>
+      <span class="dock-label">AI</span>
+    </a>
+    <a href="#berlinMap" class="dock-item" aria-label="Map">
+      <i class="fas fa-map-marked-alt"></i>
+      <span class="dock-label">Harita</span>
+    </a>
+    <button class="dock-item" id="dockSearchBtn" aria-label="Search">
+      <i class="fas fa-search"></i>
+      <span class="dock-label">Ara</span>
+    </button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
