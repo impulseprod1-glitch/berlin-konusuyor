@@ -325,15 +325,16 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Hero Update ──────────────────────────── */
+/* ── Hero section consolidated ── */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: calc(var(--nav-height) + 36px + 40px) clamp(24px, 5vw, 80px) 80px;
+  padding: calc(var(--nav-height) + 36px + 40px) clamp(24px, 5vw, 80px) 120px;
   overflow: hidden;
-  background: var(--bg-primary);
+  background: var(--bg-primary) !important; /* Ensure solid background to prevent overlap visibility */
   z-index: 10;
 }
 
@@ -3100,11 +3101,7 @@ body::after {
 }
 
 /* ── Parallax Hero ───────────────────────── */
-.hero {
-  position: relative;
-  overflow: hidden;
-  z-index: 10;
-}
+/* .hero merged into main definition above */
 
 .hero::before {
   content: '';
