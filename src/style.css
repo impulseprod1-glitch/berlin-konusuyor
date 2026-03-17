@@ -325,20 +325,26 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Hero Update ──────────────────────────── */
-/* ── Hero section consolidated with aggressive height enforcement ── */
+/* ── RADICAL HERO FIX ── */
 #hero, .hero {
+  display: block !important;
   min-height: 100vh !important;
-  height: 100vh !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
+  height: auto !important; /* Allow content to expand but keep min-height */
   position: relative !important;
-  padding: calc(var(--nav-height) + 36px + 40px) clamp(24px, 5vw, 80px) 120px;
-  overflow: hidden;
+  margin-top: 120px !important; /* Force space below Navbar & Ticker */
+  padding: 60px 5vw !important;
   background: var(--bg-primary) !important;
-  z-index: 10;
-  visibility: visible !important;
-  opacity: 1 !important;
+  z-index: 10 !important;
+  overflow: visible !important;
+}
+
+.hero-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  min-height: 70vh !important;
 }
 
 .hero-container {
