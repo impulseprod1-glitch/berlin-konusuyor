@@ -1,70 +1,120 @@
 {
-  "lastUpdated": "2026-03-17T01:45:00.000Z",
+  "lastUpdated": "2026-03-17T01:20:29.422Z",
   "count": 10,
   "articles": [
     {
-      "title": "Berlin Havalimanı (BER) Çarşamba Günü Grevle Duruyor",
-      "description": "Ver.di sendikası, 18 Mart Çarşamba günü BER havalimanında 24 saatlik uyarı grevi çağrısında bulundu. Yaklaşık 445 uçuş iptal edilecek, 57 bin yolcu etkilenecek.",
-      "summary_tr": "BER Havalimanı'nda Yarın Dev Grev: 445 Uçuş İptal",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/03/verdi-wanstreik-flughafen-ber-tarifkonflikt-ausfaelle-verspaetungen.html",
-      "image": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&q=80",
-      "date": "2026-03-17T08:00:00.000Z",
-      "source": "RBB24",
+      "title": "İran, İsrail'in kuzeyini hedef alan bir saldırı dalgası düzenledi",
+      "description": "ABD-İsrail'in ortak saldırılarını sürdürdüğü İran, İsrail'in kuzeyini hedef alan bir misilleme yaptı.",
+      "url": "https://www.aa.com.tr/tr/guncel/iran-israilin-kuzeyini-hedef-alan-bir-saldiri-dalgasi-duzenledi/3867420",
+      "image": "",
+      "date": "2026-03-17T00:23:30.000Z",
+      "source": "Anadolu Ajansı",
       "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran, ABD üslerinin bulunduğu Körfez ülkelerine saldırılarını sürdürüyor",
+      "description": "İran'ın, ABD üslerinin bulunduğu Körfez ülkelerine yönelik saldırıları sürüyor.",
+      "url": "https://www.aa.com.tr/tr/guncel/iran-abd-uslerinin-bulundugu-korfez-ulkelerine-saldirilarini-surduruyor/3867416",
+      "image": "",
+      "date": "2026-03-17T00:13:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran medyası: ABD-İsrail saldırıları altındaki başkent Tahran’da patlama sesleri duyuldu",
+      "description": "ABD ve İsrail'in İran'a saldırıları altındaki başkent Tahran'da patlama seslerinin duyulduğu bildirildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/iran-medyasi-abd-israil-saldirilari-altindaki-baskent-tahran-da-patlama-sesleri-duyuldu/3867406",
+      "image": "",
+      "date": "2026-03-16T23:54:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Irak'ın başkenti Bağdat'ta art arda patlama sesleri duyuldu",
+      "description": "Irak'ın başkenti Bağdat'ta art arda şiddetli patlama sesleri duyuldu.",
+      "url": "https://www.aa.com.tr/tr/guncel/irakin-baskenti-bagdatta-art-arda-patlama-sesleri-duyuldu/3867405",
+      "image": "",
+      "date": "2026-03-16T23:52:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD ordusu: İran'a saldırılarda yaralanan ABD askerlerinin sayısı 200'e çıktı",
+      "description": "ABD Merkez Kuvvetler Komutanlığı (CENTCOM) Sözcüsü Tim Hawkins, ABD ve İsrail'in İran'a saldırılarının başlamasından bu yana yaralanan ABD askerlerinin sayısının 200'e yükseldiğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/guncel/abd-ordusu-irana-saldirilarda-yaralanan-abd-askerlerinin-sayisi-200e-cikti/3867377",
+      "image": "",
+      "date": "2026-03-16T23:04:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Boxerin Nina Meinke: Mit Humor und Dominanz zum WM-Titel",
+      "description": "Wenn die Berliner Boxerin Nina Meinke am 20. März in den Ring steigt, geht es gegen \"Die Maschine\" und gleich zwei WM-Titel. Warum die Spandauerin trotz eines Bandscheibenvorfalls im Vorjahr bester Dinge ist.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/boxen-nina-meinke-vor-wm-kampf-gegen-dyana-vargas.html",
+      "image": "",
+      "date": "2026-03-16T20:50:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
       "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "Merz: \"Hürmüz Boğazı Savaşında Askeri Rol Almayacağız\"",
-      "description": "Almanya Şansölyesi Friedrich Merz, ABD-İran geriliminde Almanya'nın Hürmüz Boğazı'na askeri gemi göndermeyeceğini, diplomatik çözüme odaklandıklarını açıkladı.",
-      "summary_tr": "Şansölye Merz'den Hürmüz Boğazı Açıklaması",
-      "url": "https://www.yeniasya.com.tr/dunya/merz-bogaz-guvenligine-katilmayacagiz_3867057",
-      "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80",
-      "date": "2026-03-17T10:30:00.000Z",
-      "source": "Yeni Asya",
-      "lang": "tr",
-      "category": "politics",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin'de Konut Krizi: Yeni İnşaat Projeleri Durduruldu",
-      "description": "Artan maliyetler ve faiz oranları nedeniyle Berlin'deki pek çok sosyal konut projesi askıya alındı. Topluluk çözüm bekliyor.",
-      "summary_tr": "Berlin'de İnşaat Projelerine 'Maliyet' Freni",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-brandenburg-psychotherapie-honorare-senkung-krankenkassen.html",
-      "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80",
-      "date": "2026-03-17T09:15:00.000Z",
-      "source": "RBB24",
-      "lang": "tr",
-      "category": "economy",
-      "type": "rss"
-    },
-    {
-      "title": "ITB Berlin 2026 Fuarı Başarıyla Tamamlandı",
-      "description": "Dünyanın en büyük turizm fuarı ITB Berlin, bu yıl rekor katılımla kapılarını kapattı. Sri Lanka ve Türkiye stantları yoğun ilgi gördü.",
-      "summary_tr": "Turizm Dünyasının Kalbi Berlin'de Attı",
-      "url": "https://www.dailynews.lk/2026/03/17/business/itb-berlin-success",
-      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
-      "date": "2026-03-16T17:23:40.000Z",
-      "source": "Daily News",
-      "lang": "tr",
-      "category": "culture",
-      "type": "rss"
-    },
-    {
-      "title": "Antisemitismusbeauftragter tritt aus Partei aus",
-      "description": "Brandenburg Yahudi Karşıtlığı ile Mücadele Sorumlusu, Sol Parti'den istifa etti. İstifa gerekçesi olarak parti içindeki görüş ayrılıklarını gösterdi.",
-      "summary_tr": "Brandenburg'da Siyasi İstifa",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/03/brandenburg-antisemitismusbeauftragter-buettner-austritt-linke.html",
-      "image": "https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=800&q=80",
-      "date": "2026-03-16T17:23:40.000Z",
+      "title": "Minerva Hases Kostüm-Designerin im Interview: \"Viel hilft viel\"",
+      "description": "Seit vielen Jahren entwirft Britta Gericke die Kostüme der Berliner Eiskunstläuferin Minerva Hase und ihrer Partner. Im Interview erzählt sie, worauf es dabei ankommt und wie aus einer Idee ein Kleid wird.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/eiskunstlauf-interview-britta-gericke-designerin-kostueme-minerva-hase-nikita-volodin.html",
+      "image": "",
+      "date": "2026-03-16T19:34:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
-      "category": "politics",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Warnstreik legt Flughafen BER am Mittwoch lahm - keine Passagierflüge",
+      "description": "Am Flughafen BER soll es am Mittwoch wegen eines Warnstreiks keine regulären Passagierflüge geben. Betroffen sind laut Airport rund 57.000 Passagiere bei 445 Starts und Landungen. Aufgerufen zum Ausstand hat die Gewerkschaft Verdi.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/03/verdi-wanstreik-flughafen-ber-tarifkonflikt-ausfaelle-verspaetungen.html",
+      "image": "",
+      "date": "2026-03-16T19:07:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Karneval der Kulturen braucht noch Geld",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/03/karneval-der-kulturen-berlin-geld-senat.html",
+      "image": "",
+      "date": "2026-03-16T18:46:55.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Anwalt legt Revision gegen Urteil nach Angriff am Berliner Holocaust-Mahnmal ein",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/revision-gegen-urteil-messerattacke-holocaust-mahnmal.html",
+      "image": "",
+      "date": "2026-03-16T18:46:14.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     }
   ],
   "insights": {
-    "weatherAdvice": "Yarınki BER grevine dikkat! Ulaşımınızı önceden planlayın.",
-    "newsBrief": "Bugün Berlin'de gündem: Havalimanı grevi ve diplomatik açıklamalar."
+    "weatherAdvice": "Berlin'de güzel bir gün dileriz!",
+    "newsBrief": "Berlin gündemi her zaman hareketli."
   }
 }
