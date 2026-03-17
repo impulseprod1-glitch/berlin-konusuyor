@@ -6,11 +6,37 @@
   
   <!-- Primary Meta Tags -->
   <title id="metaTitle">Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz</title>
-  <meta name="title" content="Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz">
-  <meta name="description" id="metaDescription" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için dijital medya platformu.">
+  <meta name="description" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için profesyonel dijital medya platformu.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://berlin-konusuyor.vercel.app/">
+    <meta property="og:title" content="Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz">
+    <meta property="og:description" content="Berlin'in haberleri, röportajları ve şehir rehberi.">
+    <meta property="og:image" content="https://berlin-konusuyor.vercel.app/public/icon-512.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://berlin-konusuyor.vercel.app/">
+    <meta property="twitter:title" content="Berlin Konuşuyor — Berlin'un Nabzı">
+    <meta property="twitter:description" content="Berlin'in haberleri, röportajları ve şehir rehberi.">
+    <meta property="twitter:image" content="https://berlin-konusuyor.vercel.app/public/icon-512.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Berlin Konuşuyor",
+      "url": "https://berlin-konusuyor.vercel.app/",
+      "logo": "https://berlin-konusuyor.vercel.app/public/icon-512.png",
+      "sameAs": [
+        "https://www.youtube.com/@berlinkonusuyor",
+        "https://www.instagram.com/berlinkonusuyor"
+      ]
+    }
+    </script>
   <meta name="keywords" content="Berlin haberleri, Berlin Türk toplumu, gurbetçi rehberi, Berlin sokak röportajları, Berlin yaşam, Berlin etkinlik rehberi">
   <meta name="author" content="Antigravity">
-  <link rel="canonical" href="https://berlinkonusuyor.com" />
 
   <!-- PWA Metadata -->
   <link rel="manifest" href="/manifest.json">
@@ -764,6 +790,21 @@
       <i class="fas fa-search"></i>
       <span class="dock-label">Ara</span>
     </button>
+  </div>
+
+  <!-- GDPR Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner glass-panel">
+    <div class="cookie-content">
+      <i class="fas fa-cookie-bite cookie-icon"></i>
+      <div class="cookie-text">
+        <p><strong>Çerez Onayı / Cookie Consent</strong></p>
+        <p>Size en iyi deneyimi sunmak için çerezler kullanıyoruz. <a href="#" onclick="openLegal('privacy'); return false;">Gizlilik Politikasını</a> inceleyebilirsiniz.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn secondary" onclick="closeCookieBanner()">Reddet</button>
+        <button class="cookie-btn primary" onclick="acceptCookies()">Kabul Et</button>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="/src/main.js"></script>

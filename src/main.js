@@ -908,52 +908,65 @@ const legalDocs = {
   tr: {
     impressum: `
       <h2>Impressum (Künye)</h2>
-      <p><strong>Berlin Konuşuyor Medya</strong></p>
-      <p>Berlin, Almanya</p>
-      <p><strong>Sorumlu:</strong> Berlin Konuşuyor Ekibi</p>
-      <p><strong>İletişim:</strong> info@berlinkonusuyor.com</p>
-      <h3>Yasal Uyarı</h3>
-      <p>İçeriklerimizin izinsiz kopyalanması yasaktır. Harici linklerin içeriğinden sorumlu değiliz.</p>
+      <p><strong>Site Sahibi / Sorumlu:</strong> [İSİM/ŞİRKET ADI]</p>
+      <p><strong>Adres:</strong> [ADRES - ALMANYA]</p>
+      <p><strong>İletişim:</strong> E-posta: hello@berlinkonusuyor.com | Tel: [TELEFON]</p>
+      <h3>Hukuki Sorumluluk (Haftung für Inhalte)</h3>
+      <p>Hizmet sağlayıcı olarak TMG § 7 Abs.1 uyarınca kendi içeriklerimizden sorumluyuz. TMG §§ 8 ila 10 uyarınca, iletilen veya saklanan yabancı bilgileri izlemek veya yasa dışı faaliyete işaret eden durumları araştırmakla yükümlü değiliz.</p>
+      <h3>Telif Hakkı</h3>
+      <p>Bu sitedeki içerikler Alman telif hakkı yasasına tabidir. Yazılı izin olmaksızın çoğaltılması veya dağıtılması yasaktır.</p>
     `,
     privacy: `
-      <h2>Gizlilik Politikası</h2>
-      <p>Kullanıcı verileriniz AB Veri Koruma Yönetmeliği (DSGVO) uyarınca korunmaktadır.</p>
-      <p><strong>Çerezler:</strong> Sitemiz sadece teknik olarak gerekli çerezleri kullanır.</p>
-      <p><strong>Haklarınız:</strong> Verilerinize erişme, düzeltme ve silme hakkına sahipsiniz.</p>
+      <h2>Gizlilik Politikası (DSGVO)</h2>
+      <p>Veri koruma önceliğimizdir. Verileriniz AB Veri Koruma Yönetmeliği (GDPR/DSGVO) uyarınca işlenmektedir.</p>
+      <h3>1. Veri Sorumlusu</h3>
+      <p>[İSİM/ŞİRKET ADI], Berlin, E-posta: hello@berlinkonusuyor.com</p>
+      <h3>2. Firebase & Barındırma</h3>
+      <p>Sitemiz Firebase (Google Cloud) altyapısını kullanmaktadır. Veriler güvenli Google sunucularında saklanmaktadır. Auth (Giriş) ve Firestore (Veritabanı) işlemleri bu kapsamdadır.</p>
+      <h3>3. Çerezler (Cookies)</h3>
+      <p>Sitemiz, kullanıcı deneyimini iyileştirmek için teknik olarak gerekli çerezleri kullanır. Google Analytics veya benzeri takip araçları için onayınız alınır.</p>
+      <h3>4. Haklarınız</h3>
+      <p>Verileriniz hakkında bilgi alma, düzeltme, sildirme ve itiraz etme hakkına sahipsiniz.</p>
     `
   },
   de: {
     impressum: `
       <h2>Impressum</h2>
-      <p><strong>Berlin Konuşuyor Media</strong></p>
-      <p>Berlin, Deutschland</p>
-      <p><strong>Verantwortlich für den Inhalt:</strong> Team Berlin Konuşuyor</p>
-      <p><strong>Kontakt:</strong> info@berlinkonusuyor.com</p>
-      <h3>Haftungsausschluss</h3>
-      <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.</p>
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+      <p>[NAME/FIRMA]</p>
+      <p>[STRASSE, PLZ, BERLIN]</p>
+      <p><strong>Kontakt:</strong> E-Mail: hello@berlinkonusuyor.com | Tel: [TELEFON]</p>
+      <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
+      <p>[NAME DER PERSON]</p>
+      <h3>Streitschlichtung</h3>
+      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.</p>
     `,
     privacy: `
       <h2>Datenschutzerklärung</h2>
-      <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen.</p>
-      <h3>DSGVO Konformität</h3>
-      <p>Wir verarbeiten Daten gemäß der Datenschutz-Grundverordnung (DSGVO).</p>
-      <p><strong>Cookies:</strong> Wir verwenden nur technisch notwendige Cookies.</p>
+      <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften (DSGVO).</p>
+      <h3>Einwilligung</h3>
+      <p>Durch die Nutzung unserer Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäß der nachfolgenden Beschreibung einverstanden.</p>
+      <h3>Hosting & Firebase</h3>
+      <p>Unsere Website nutzt Dienste von Firebase (Google Ireland Limited). Dabei werden Daten an Google übertragen und dort verarbeitet.</p>
     `
   },
   en: {
     impressum: `
       <h2>Imprint</h2>
-      <p><strong>Berlin Konuşuyor Media</strong></p>
-      <p>Berlin, Germany</p>
-      <p><strong>Responsible:</strong> Berlin Konuşuyor Team</p>
-      <p><strong>Contact:</strong> info@berlinkonusuyor.com</p>
-      <h3>Disclaimer</h3>
-      <p>We do not assume liability for the content of external links.</p>
+      <p><strong>According to § 5 TMG (Germany)</strong></p>
+      <p>[NAME/COMPANY]</p>
+      <p>[ADDRESS, BERLIN]</p>
+      <p><strong>Contact:</strong> Email: hello@berlinkonusuyor.com | Tel: [PHONE]</p>
+      <h3>Copyright</h3>
+      <p>The contents of these pages are subject to German copyright law. Reproduction, processing, distribution, or any form of commercialization requires written consent.</p>
     `,
     privacy: `
-      <h2>Privacy Policy</h2>
-      <p>Your privacy is important to us. We comply with GDPR regulations.</p>
-      <p><strong>Cookies:</strong> We use only strictly necessary cookies.</p>
+      <h2>Privacy Policy (GDPR)</h2>
+      <p>This privacy policy informs you about the type, scope and purpose of the processing of personal data on our website according to GDPR.</p>
+      <h3>Firebase Service</h3>
+      <p>We use Firebase (Google) for authentication and database services. Data may be stored on servers located in the US under appropriate safety certifications.</p>
+      <h3>User Rights</h3>
+      <p>You have the right to access, rectify, or delete your personal data stored by us at any time.</p>
     `
   }
 };
@@ -969,6 +982,32 @@ window.openLegal = (type) => {
 window.closeLegal = () => {
   document.getElementById('legalModal').classList.remove('active');
   document.body.style.overflow = '';
+};
+
+// ── Cookie Consent Logic ─────────────────────
+function initCookieBanner() {
+  const banner = document.getElementById('cookieBanner');
+  if (!banner) return;
+
+  const isAccepted = localStorage.getItem('bk-cookies-accepted');
+  if (!isAccepted) {
+    setTimeout(() => {
+      banner.classList.add('active');
+    }, 2000);
+  }
+}
+
+window.acceptCookies = () => {
+  localStorage.setItem('bk-cookies-accepted', 'true');
+  const banner = document.getElementById('cookieBanner');
+  if (banner) banner.classList.remove('active');
+  console.log('Cookies accepted');
+};
+
+window.closeCookieBanner = () => {
+  localStorage.setItem('bk-cookies-accepted', 'false'); // Minimal refusal tracking
+  const banner = document.getElementById('cookieBanner');
+  if (banner) banner.classList.remove('active');
 };
 
 window.openNewsModal = (index) => {
@@ -1428,108 +1467,6 @@ function initQAForum() {
   renderFeed();
 }
 
-// ── Job Board Module (Phase 4 Extension) ─────
-async function initJobBoard() {
-  const jobsGrid = document.getElementById('jobsGrid');
-  if (!jobsGrid) return;
-
-  const jobFilters = document.querySelectorAll('.job-filter-btn');
-  let currentJobType = 'all';
-
-  onSnapshot(query(collection(db, "jobs"), orderBy("createdAt", "desc")), (snapshot) => {
-    let jobs = [];
-    snapshot.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
-    renderJobs(jobs);
-  });
-
-  function renderJobs(jobs) {
-    let filtered = currentJobType === 'all' ? jobs : jobs.filter(j => j.type === currentJobType);
-    
-    if (filtered.length === 0) {
-      jobsGrid.innerHTML = '<div class="empty-state" style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">Henüz ilan yok. İlk ilanı sen Ver!</div>';
-      return;
-    }
-
-    jobsGrid.innerHTML = filtered.map(job => `
-      <div class="job-card reveal-small">
-        <span class="job-badge">${job.type}</span>
-        <h3 class="job-title">${job.title}</h3>
-        <p class="job-company">${job.company}</p>
-        <div class="job-meta">
-          <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
-          <span><i class="fas fa-calendar-alt"></i> ${job.createdAt?.toDate ? formatDate(job.createdAt.toDate()) : 'Bugün'}</span>
-        </div>
-        <a href="mailto:${job.contact}" class="job-apply-btn">Başvur / İletişime Geç</a>
-      </div>
-    `).join('');
-  }
-
-  jobFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      jobFilters.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentJobType = btn.dataset.type;
-      // Re-render handled by snapshot naturally if we kept jobs in scope, but for simplicity:
-      getDocs(collection(db, "jobs")).then(snap => {
-        let jobs = [];
-        snap.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
-        renderJobs(jobs);
-      });
-    });
-  });
-}
-
-window.openJobModal = () => {
-  if (!auth.currentUser) {
-    alert("İlan vermek için giriş yapmalısınız.");
-    openLoginModal();
-    return;
-  }
-  const title = prompt("İş Başlığı (örn: Garson):");
-  const company = prompt("Şirket/Mekan Adı:");
-  const location = prompt("Bölge (örn: Kreuzberg):");
-  const type = prompt("İş Tipi (Tam Zamanlı, Yarı Zamanlı, Minijob):", "Tam Zamanlı");
-  const contact = prompt("İletişim E-postası:");
-
-  if (title && company && contact) {
-    addDoc(collection(db, "jobs"), {
-      title, company, location, type, contact,
-      postedBy: auth.currentUser.uid,
-      createdAt: serverTimestamp()
-    }).then(() => {
-      alert("İlanınız başarıyla eklendi.");
-    }).catch(err => console.error(err));
-  }
-};
-
-// ── Bookmark System ─────────────────────────
-window.toggleBookmark = async (id, type) => {
-  if (!auth.currentUser) {
-    alert("Kaydetmek için giriş yapmalısınız.");
-    openLoginModal();
-    return;
-  }
-
-  const userRef = doc(db, "users", auth.currentUser.uid);
-  // Simple check via localStorage for UI speed, but should be Firestore based
-  let bookmarks = JSON.parse(localStorage.getItem(`bookmarks_${auth.currentUser.uid}`) || '[]');
-  
-  if (bookmarks.includes(id)) {
-    bookmarks = bookmarks.filter(b => b !== id);
-    alert("Kaydedilenlerden kaldırıldı.");
-  } else {
-    bookmarks.push(id);
-    alert("Kaydedildi!");
-  }
-  
-  localStorage.setItem(`bookmarks_${auth.currentUser.uid}`, JSON.stringify(bookmarks));
-  await updateDoc(userRef, { bookmarks }).catch(async (err) => {
-    // If user doc doesn't exist, create it (not ideal here, but common for simple setup)
-    if (err.code === 'not-found') {
-      // Create user doc logic
-    }
-  });
-};
 
 // ── AI Chatbot Assistant (Knowledge-Base Powered) ──────────
 const BERLIN_KB = [
@@ -1994,6 +1931,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initFilters();
   initJobBoard();
   initPolls();
+  initNotifications();
+  initAuthListener();
+  initCookieBanner();
 });
 
 // ── Service Worker Registration & Layout Fail-safe ─────────────
@@ -2428,8 +2368,66 @@ function initFilters() {
   });
 }
 
-// ── Initialize App ──────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
-  initJobBoard();
-  initPolls();
-});
+// ── Auth & Notification Logic ────────────────
+async function loginWithGoogle() {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    console.log("User logged in:", result.user);
+  } catch (error) {
+    console.error("Login Error:", error);
+  }
+}
+
+function initAuthListener() {
+  onAuthStateChanged(auth, (user) => {
+    const loginLabel = document.getElementById('loginLabel');
+    
+    if (user) {
+      if (loginLabel) loginLabel.innerText = user.displayName || user.email;
+      const modal = document.getElementById('loginModal');
+      if (modal) modal.classList.remove('active');
+    } else {
+      if (loginLabel) loginLabel.innerText = 'Giriş Yap';
+    }
+  });
+}
+
+async function initNotifications() {
+  if (!('Notification' in window) || !('serviceWorker' in navigator)) return;
+  if (Notification.permission === 'default') {
+    const permission = await Notification.requestPermission();
+    if (permission === 'granted') subscribeUser();
+  } else if (Notification.permission === 'granted') {
+    subscribeUser();
+  }
+}
+
+async function subscribeUser() {
+  const sw = await navigator.serviceWorker.ready;
+  try {
+    const sub = await sw.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: 'BIsy3-W_ZfO1773702207039-PWA-TEST-KEY-PLACEHOLDER'
+    });
+    
+    if (auth.currentUser) {
+      const { setDoc } = await import('firebase/firestore'); // Ensure setDoc is avail or imported
+      const subRef = doc(db, "subscriptions", auth.currentUser.uid);
+      await updateDoc(subRef, {
+        endpoint: sub.endpoint,
+        keys: JSON.parse(JSON.stringify(sub.getKey ? {
+          p256dh: btoa(String.fromCharCode.apply(null, new Uint8Array(sub.getKey('p256dh')))),
+          auth: btoa(String.fromCharCode.apply(null, new Uint8Array(sub.getKey('auth'))))
+        } : {})),
+        updatedAt: serverTimestamp()
+      }).catch(async () => {
+         // Create if not exists - placeholder for complex logic if needed
+      });
+    }
+  } catch (err) {
+    console.log('Failed to subscribe: ', err);
+  }
+}
+
+window.openLoginModal = () => loginWithGoogle();
+window.logout = () => signOut(auth).then(() => location.reload());
