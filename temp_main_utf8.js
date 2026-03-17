@@ -1,4 +1,4 @@
-import './style.css';
+﻿import './style.css';
 import { 
   db, auth, googleProvider,
   collection, query, orderBy, onSnapshot, addDoc, 
@@ -9,12 +9,12 @@ import {
 let currentLang = localStorage.getItem('bk-lang') || 'tr';
 
 
-/* ═══════════════════════════════════════════
-   BERLIN KONUŞUYOR — Main JS
-   i18n · Dynamic News · Scroll Reveal · Mobile Menu
-   ═══════════════════════════════════════════ */
+/* ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ
+   BERLIN KONU┼×UYOR ÔÇö Main JS
+   i18n ┬À Dynamic News ┬À Scroll Reveal ┬À Mobile Menu
+   ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ */
 
-// ── AI Dashboard Rendering ──────────────────
+// ÔöÇÔöÇ AI Dashboard Rendering ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function renderAIDashboard(insights) {
   if (insights) {
     if (insights.weatherAdvice) {
@@ -26,7 +26,7 @@ function renderAIDashboard(insights) {
   }
 }
 
-// ── Dashboard Utilities ─────────────────────
+// ÔöÇÔöÇ Dashboard Utilities ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function updateTime() {
   const now = new Date();
   const berlinTime = now.toLocaleTimeString('tr-TR', { timeZone: 'Europe/Berlin' });
@@ -48,7 +48,7 @@ function initDashboardUtils() {
     statusContainer.innerHTML += `
       <div class="stat-item reveal dynamic-stat">
         <span class="stat-label">Hava Kalitesi</span>
-        <span class="stat-value">İyi (24 AQI)</span>
+        <span class="stat-value">─░yi (24 AQI)</span>
       </div>
       <div class="stat-item reveal dynamic-stat">
         <span class="stat-label">S-Bahn Durumu</span>
@@ -71,108 +71,108 @@ function initDashboardUtils() {
     })
     .catch(() => {
       const tempEl = document.getElementById('berlinTemp');
-      if (tempEl) tempEl.innerText = "12°C"; // Fallback
+      if (tempEl) tempEl.innerText = "12┬░C"; // Fallback
     });
 }
 
-// ── Navbar & Interactions ───────────────────────
+// ÔöÇÔöÇ Navbar & Interactions ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 const translations = {
   tr: {
     nav_news: 'Haberler',
-    nav_interviews: 'Röportajlar',
+    nav_interviews: 'R├Âportajlar',
     nav_guide: 'Rehber',
-    nav_contact: 'İletişim',
+    nav_contact: '─░leti┼ƒim',
     hero_eyebrow: 'Dijital Medya Platformu',
-    hero_line1: "Berlin'in Nabzı,",
+    hero_line1: "Berlin'in Nabz─▒,",
     hero_line2: 'Sizin Sesiniz.',
-    hero_sub: 'Sokak röportajları, güncel haberler ve şehir rehberi — hepsi bir arada.',
-    hero_cta: 'Keşfet',
-    news_tag: 'Güncel',
+    hero_sub: 'Sokak r├Âportajlar─▒, g├╝ncel haberler ve ┼ƒehir rehberi ÔÇö hepsi bir arada.',
+    hero_cta: 'Ke┼ƒfet',
+    news_tag: 'G├╝ncel',
     news_title: 'Son Haberler',
     interviews_tag: 'Video',
-    interviews_title: 'Röportajlar',
-    yt_desc: 'Sokak röportajları, Berlin haberleri ve şehir yaşamı — hepsini kanalımızda izleyin.',
-    yt_subscribe: 'Kanala Abone Ol →',
+    interviews_title: 'R├Âportajlar',
+    yt_desc: 'Sokak r├Âportajlar─▒, Berlin haberleri ve ┼ƒehir ya┼ƒam─▒ ÔÇö hepsini kanal─▒m─▒zda izleyin.',
+    yt_subscribe: 'Kanala Abone Ol ÔåÆ',
     guide_tag: 'Rehber',
     guide_title: 'Berlin Rehberi',
     guide_housing: 'Ev Bulma',
-    guide_housing_desc: 'Kiralık ev arama, başvuru süreci ve ipuçları.',
-    guide_official: 'Resmi İşlemler',
-    guide_official_desc: 'Anmeldung, vize, çalışma izni ve daha fazlası.',
+    guide_housing_desc: 'Kiral─▒k ev arama, ba┼ƒvuru s├╝reci ve ipu├ºlar─▒.',
+    guide_official: 'Resmi ─░┼ƒlemler',
+    guide_official_desc: 'Anmeldung, vize, ├ºal─▒┼ƒma izni ve daha fazlas─▒.',
     guide_events: 'Etkinlikler',
-    guide_events_desc: 'Haftalık kültür, sanat ve sosyal etkinlikler.',
-    guide_transport: 'Ulaşım',
-    guide_transport_desc: 'U-Bahn, S-Bahn, bilet çeşitleri ve rotalar.',
-    guide_jobs: 'İş Bulmak',
-    guide_jobs_desc: 'İş arama, CV hazırlama ve mülakat ipuçları.',
-    guide_food: 'Yeme & İçme',
-    guide_food_desc: 'En iyi restoranlar, kafeler ve gece hayatı.',
-    footer_rights: 'Tüm hakları saklıdır.',
-    ticker_label: 'SON DAKİKA',
+    guide_events_desc: 'Haftal─▒k k├╝lt├╝r, sanat ve sosyal etkinlikler.',
+    guide_transport: 'Ula┼ƒ─▒m',
+    guide_transport_desc: 'U-Bahn, S-Bahn, bilet ├ºe┼ƒitleri ve rotalar.',
+    guide_jobs: '─░┼ƒ Bulmak',
+    guide_jobs_desc: '─░┼ƒ arama, CV haz─▒rlama ve m├╝lakat ipu├ºlar─▒.',
+    guide_food: 'Yeme & ─░├ºme',
+    guide_food_desc: 'En iyi restoranlar, kafeler ve gece hayat─▒.',
+    footer_rights: 'T├╝m haklar─▒ sakl─▒d─▒r.',
+    ticker_label: 'SON DAK─░KA',
     search_placeholder: 'Haber veya rehber ara...',
-    filter_all: 'Tümü',
+    filter_all: 'T├╝m├╝',
     filter_politics: 'Siyaset',
-    filter_culture: 'Kültür',
+    filter_culture: 'K├╝lt├╝r',
     filter_economy: 'Ekonomi',
-    filter_lifestyle: 'Yaşam',
+    filter_lifestyle: 'Ya┼ƒam',
     read_time: 'dk okuma',
-    meta_title: "Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz",
-    meta_desc: "Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için dijital medya platformu.",
+    meta_title: "Berlin Konu┼ƒuyor ÔÇö Berlin'in Nabz─▒, Sizin Sesiniz",
+    meta_desc: "Berlin'in en g├╝ncel haberleri, sokak r├Âportajlar─▒ ve kapsaml─▒ ┼ƒehir rehberi. Berlin'deki T├╝rk toplumu ve gurbet├ºiler i├ºin dijital medya platformu.",
     legal_impressum: "Impressum",
-    legal_privacy: "Gizlilik Politikası",
+    legal_privacy: "Gizlilik Politikas─▒",
     ai_dashboard_title: "Berlin AI Insight",
     widget_weather_title: "Hava Durumu & Vibe",
-    widget_brief_title: "AI Haber Özeti",
+    widget_brief_title: "AI Haber ├ûzeti",
     widget_time_title: "Berlin Saati",
     widget_time_desc: "Berlin'de hayat devam ediyor.",
     stat_subscribers: "Abone",
     stat_videos: "Video",
     stat_languages: "Dil",
-    stat_reach: "Aylık Erişim",
-    newsletter_tag: "Bülten",
+    stat_reach: "Ayl─▒k Eri┼ƒim",
+    newsletter_tag: "B├╝lten",
     newsletter_title: "Berlin'den haberdar ol",
-    newsletter_desc: "En güncel haberler, etkinlikler ve rehber içeriklerini doğrudan e-postanıza gönderin.",
+    newsletter_desc: "En g├╝ncel haberler, etkinlikler ve rehber i├ºeriklerini do─ƒrudan e-postan─▒za g├Ânderin.",
     newsletter_placeholder: "E-posta adresiniz",
     newsletter_btn: "Abone Ol",
-    newsletter_privacy: "Gizliliğinize saygı duyuyoruz. İstediğiniz zaman abonelikten çıkabilirsiniz.",
-    map_tag: "Keşfet",
-    map_title: "İnteraktif Şehir Haritası",
-    map_desc: "Önemli lokasyonları, konsoloslukları ve Berlin'in ikonik mekanlarını harita üzerinde inceleyin.",
+    newsletter_privacy: "Gizlili─ƒinize sayg─▒ duyuyoruz. ─░stedi─ƒiniz zaman abonelikten ├º─▒kabilirsiniz.",
+    map_tag: "Ke┼ƒfet",
+    map_title: "─░nteraktif ┼×ehir Haritas─▒",
+    map_desc: "├ûnemli lokasyonlar─▒, konsolosluklar─▒ ve Berlin'in ikonik mekanlar─▒n─▒ harita ├╝zerinde inceleyin.",
     events_cal_tag: "Takvim",
-    events_cal_title: "Yaklaşan Etkinlikler",
+    events_cal_title: "Yakla┼ƒan Etkinlikler",
     listen_news: "Dinle",
     read_time: "dk okuma"
   },
   de: {
     nav_news: 'Nachrichten',
     nav_interviews: 'Interviews',
-    nav_guide: 'Stadtführer',
+    nav_guide: 'Stadtf├╝hrer',
     nav_contact: 'Kontakt',
     hero_eyebrow: 'Digitale Medienplattform',
     hero_line1: 'Der Puls Berlins,',
     hero_line2: 'Eure Stimme.',
-    hero_sub: 'Straßeninterviews, aktuelle Nachrichten und Stadtführer — alles an einem Ort.',
+    hero_sub: 'Stra├ƒeninterviews, aktuelle Nachrichten und Stadtf├╝hrer ÔÇö alles an einem Ort.',
     hero_cta: 'Entdecken',
     news_tag: 'Aktuell',
     news_title: 'Neueste Nachrichten',
     interviews_tag: 'Video',
     interviews_title: 'Interviews',
-    yt_desc: 'Straßeninterviews, Berlin-Nachrichten und Stadtleben — alles auf unserem Kanal.',
-    yt_subscribe: 'Kanal Abonnieren →',
-    guide_tag: 'Stadtführer',
+    yt_desc: 'Stra├ƒeninterviews, Berlin-Nachrichten und Stadtleben ÔÇö alles auf unserem Kanal.',
+    yt_subscribe: 'Kanal Abonnieren ÔåÆ',
+    guide_tag: 'Stadtf├╝hrer',
     guide_title: 'Berlin Guide',
     guide_housing: 'Wohnungssuche',
     guide_housing_desc: 'Mietwohnungen suchen, Bewerbung und Tipps.',
-    guide_official: 'Behördengänge',
+    guide_official: 'Beh├Ârdeng├ñnge',
     guide_official_desc: 'Anmeldung, Visum, Arbeitserlaubnis und mehr.',
     guide_events: 'Veranstaltungen',
-    guide_events_desc: 'Wöchentliche Kultur-, Kunst- und Sozialevents.',
+    guide_events_desc: 'W├Âchentliche Kultur-, Kunst- und Sozialevents.',
     guide_transport: 'Nahverkehr',
     guide_transport_desc: 'U-Bahn, S-Bahn, Fahrscheine und Routen.',
     guide_jobs: 'Jobsuche',
     guide_jobs_desc: 'Stellensuche, Lebenslauf und Bewerbungstipps.',
     guide_food: 'Essen & Trinken',
-    guide_food_desc: 'Die besten Restaurants, Cafés und das Nachtleben.',
+    guide_food_desc: 'Die besten Restaurants, Caf├®s und das Nachtleben.',
     footer_rights: 'Alle Rechte vorbehalten.',
     ticker_label: 'BREAKING NEWS',
     search_placeholder: 'Suchen...',
@@ -182,10 +182,10 @@ const translations = {
     filter_economy: 'Wirtschaft',
     filter_lifestyle: 'Lifestyle',
     read_time: 'Min. Lesezeit',
-    meta_title: "Berlin Konuşuyor — Am Puls Berlins, Deine Stimme",
-    meta_desc: "Aktuelle Nachrichten aus Berlin, Straßeninterviews und umfangreicher Stadtführer. Die digitale Plattform für die türkische Community.",
+    meta_title: "Berlin Konu┼ƒuyor ÔÇö Am Puls Berlins, Deine Stimme",
+    meta_desc: "Aktuelle Nachrichten aus Berlin, Stra├ƒeninterviews und umfangreicher Stadtf├╝hrer. Die digitale Plattform f├╝r die t├╝rkische Community.",
     legal_impressum: "Impressum",
-    legal_privacy: "Datenschutzerklärung",
+    legal_privacy: "Datenschutzerkl├ñrung",
     ai_dashboard_title: "Berlin AI Insight",
     widget_weather_title: "Wetter & Vibe",
     widget_brief_title: "AI News Brief",
@@ -196,18 +196,18 @@ const translations = {
     stat_languages: "Sprachen",
     stat_reach: "Monatl. Reichweite",
     newsletter_tag: "Newsletter",
-    newsletter_title: "Bleib informiert über Berlin",
-    newsletter_desc: "Erhalte die neuesten Nachrichten, Veranstaltungen und Stadtführer direkt in dein E-Mail-Postfach.",
+    newsletter_title: "Bleib informiert ├╝ber Berlin",
+    newsletter_desc: "Erhalte die neuesten Nachrichten, Veranstaltungen und Stadtf├╝hrer direkt in dein E-Mail-Postfach.",
     newsletter_placeholder: "E-Mail-Adresse",
     newsletter_btn: "Abonnieren",
-    newsletter_privacy: "Wir respektieren deine Privatsphäre. Du kannst dich jederzeit abmelden.",
+    newsletter_privacy: "Wir respektieren deine Privatsph├ñre. Du kannst dich jederzeit abmelden.",
     map_tag: "Entdecken",
     map_title: "Interaktiver Stadtplan",
-    map_desc: "Entdecken Sie wichtige Orte, Konsulate und ikonische Berliner Schauplätze auf der Karte.",
+    map_desc: "Entdecken Sie wichtige Orte, Konsulate und ikonische Berliner Schaupl├ñtze auf der Karte.",
     events_cal_tag: "Kalender",
     events_cal_title: "Anstehende Veranstaltungen",
     events_cal_desc: "Was ist dieses Wochenende in Berlin los?",
-    listen_news: "Hören",
+    listen_news: "H├Âren",
     read_time: "Min. Lesezeit"
   },
   en: {
@@ -218,14 +218,14 @@ const translations = {
     hero_eyebrow: 'Digital Media Platform',
     hero_line1: 'The Pulse of Berlin,',
     hero_line2: 'Your Voice.',
-    hero_sub: 'Street interviews, breaking news and city guide — all in one place.',
+    hero_sub: 'Street interviews, breaking news and city guide ÔÇö all in one place.',
     hero_cta: 'Explore',
     news_tag: 'Latest',
     news_title: 'Latest News',
     interviews_tag: 'Video',
     interviews_title: 'Interviews',
-    yt_desc: 'Street interviews, Berlin news and city life — watch it all on our channel.',
-    yt_subscribe: 'Subscribe to Channel →',
+    yt_desc: 'Street interviews, Berlin news and city life ÔÇö watch it all on our channel.',
+    yt_subscribe: 'Subscribe to Channel ÔåÆ',
     guide_tag: 'Guide',
     guide_title: 'Berlin Guide',
     guide_housing: 'Finding a Home',
@@ -239,7 +239,7 @@ const translations = {
     guide_jobs: 'Finding Work',
     guide_jobs_desc: 'Job search, CV preparation and interview tips.',
     guide_food: 'Food & Drink',
-    guide_food_desc: 'Best restaurants, cafés and nightlife.',
+    guide_food_desc: 'Best restaurants, caf├®s and nightlife.',
     footer_rights: 'All rights reserved.',
     ticker_label: 'LATEST NEWS',
     search_placeholder: 'Search for news...',
@@ -249,7 +249,7 @@ const translations = {
     filter_economy: 'Economy',
     filter_lifestyle: 'Lifestyle',
     read_time: 'min read',
-    meta_title: "Berlin Konuşuyor — Berlin's Pulse, Your Voice",
+    meta_title: "Berlin Konu┼ƒuyor ÔÇö Berlin's Pulse, Your Voice",
     meta_desc: "Latest Berlin news, street interviews, and comprehensive city guide. Digital media platform for global Berliners.",
     legal_impressum: "Imprint",
     legal_privacy: "Privacy Policy",
@@ -278,7 +278,7 @@ const translations = {
   },
 };
 
-// ── Set Language ────────────────────────────
+// ÔöÇÔöÇ Set Language ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function setLanguage(lang) {
   const elements = document.querySelectorAll('[data-i18n]');
   const t = translations[lang];
@@ -306,7 +306,7 @@ function setLanguage(lang) {
   updateMeta(lang);
 }
 
-// ── Dynamic Meta UI Update ───────────────────
+// ÔöÇÔöÇ Dynamic Meta UI Update ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function updateMeta(lang) {
   const t = translations[lang];
   if (!t) return;
@@ -326,7 +326,7 @@ function updateMeta(lang) {
   if (ogDesc) ogDesc.setAttribute('content', t.meta_desc);
 }
 
-// ── Dynamic News Loading ────────────────────
+// ÔöÇÔöÇ Dynamic News Loading ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 const PLACEHOLDER_IMG = 'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80';
 let globalNews = [];
 
@@ -340,8 +340,8 @@ function formatDate(isoDate) {
 }
 
 
-// ── News Rendering ──────────────────────────
-// ── News Rendering ──────────────────────────
+// ÔöÇÔöÇ News Rendering ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+// ÔöÇÔöÇ News Rendering ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function renderNews(articles, category = 'all') {
   const container = document.getElementById('newsGrid');
   const countSpan = document.getElementById('newsCount');
@@ -370,7 +370,7 @@ function renderNews(articles, category = 'all') {
           </div>
           <h3 class="news-card-title">${article.summary_tr || article.title}</h3>
           <div class="news-card-actions">
-            <button class="action-btn share-trigger" title="Paylaş" onclick="event.stopPropagation(); shareNews('${article.title.replace(/'/g, "\\'")}');"><i class="fas fa-share-alt"></i></button>
+            <button class="action-btn share-trigger" title="Payla┼ƒ" onclick="event.stopPropagation(); shareNews('${article.title.replace(/'/g, "\\'")}');"><i class="fas fa-share-alt"></i></button>
             <button class="action-btn bookmark-trigger" title="Kaydet" onclick="event.stopPropagation(); toggleBookmark(${index});"><i class="far fa-bookmark"></i></button>
           </div>
         </div>
@@ -382,12 +382,12 @@ function renderNews(articles, category = 'all') {
 window.shareNews = (title) => {
   if (navigator.share) {
     navigator.share({
-      title: 'Berlin Konuşuyor',
+      title: 'Berlin Konu┼ƒuyor',
       text: title,
       url: window.location.href
     }).catch(console.error);
   } else {
-    alert('Paylaş: ' + title);
+    alert('Payla┼ƒ: ' + title);
   }
 };
 
@@ -448,7 +448,7 @@ async function loadNews() {
       }
 
       globalNews = firestoreNews;
-      console.log(`[Firestore] Haber akışı güncellendi: ${globalNews.length} haber.`);
+      console.log(`[Firestore] Haber ak─▒┼ƒ─▒ g├╝ncellendi: ${globalNews.length} haber.`);
       renderNews(globalNews);
       renderTicker(globalNews);
       if (globalNews.length > 0) renderHeroFeatured(globalNews[0]);
@@ -469,15 +469,15 @@ async function loadNews() {
 function getTimeAgo(isoDate) {
   const diff = Date.now() - new Date(isoDate).getTime();
   const mins = Math.floor(diff / 60000);
-  if (mins < 1) return 'az önce';
-  if (mins < 60) return `${mins} dakika önce`;
+  if (mins < 1) return 'az ├Ânce';
+  if (mins < 60) return `${mins} dakika ├Ânce`;
   const hours = Math.floor(mins / 60);
-  if (hours < 24) return `${hours} saat önce`;
+  if (hours < 24) return `${hours} saat ├Ânce`;
   const days = Math.floor(hours / 24);
-  return `${days} gün önce`;
+  return `${days} g├╝n ├Ânce`;
 }
 
-// ── Dynamic Events Loading ──────────────────
+// ÔöÇÔöÇ Dynamic Events Loading ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 async function loadEvents() {
   console.log('[Events] loadEvents triggered with DB:', db);
   if (!db) {
@@ -496,7 +496,7 @@ async function loadEvents() {
       });
 
       if (firestoreEvents.length > 0) {
-        console.log(`[Firestore] ${firestoreEvents.length} etkinlik güncellendi.`);
+        console.log(`[Firestore] ${firestoreEvents.length} etkinlik g├╝ncellendi.`);
         renderEvents(firestoreEvents);
         window.globalEvents = firestoreEvents;
       } else {
@@ -537,7 +537,7 @@ async function loadPodcasts() {
 
     grid.innerHTML = html;
   } catch (err) {
-    console.log('Podcast listesi yüklenemedi:', err);
+    console.log('Podcast listesi y├╝klenemedi:', err);
   }
 }
 
@@ -571,7 +571,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ── Navbar scroll effect ────────────────────
+// ÔöÇÔöÇ Navbar scroll effect ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initNavbar() {
   const navbar = document.getElementById('navbar');
 
@@ -585,11 +585,11 @@ function initNavbar() {
   });
 }
 
-// ── Configuration ───────────────────────────
+// ÔöÇÔöÇ Configuration ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 const APP_VERSION = '1.0.9-NUCLEAR';
-console.info(`%c Berlin Konuşuyor %c v${APP_VERSION} `, 'background: #000; color: #fff; font-weight: bold;', 'background: #ff3e00; color: #fff;');
+console.info(`%c Berlin Konu┼ƒuyor %c v${APP_VERSION} `, 'background: #000; color: #fff; font-weight: bold;', 'background: #ff3e00; color: #fff;');
 
-// ── Translations ─────────────────────────────
+// ÔöÇÔöÇ Translations ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initMobileMenu() {
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
@@ -695,9 +695,9 @@ function initBerlinPulse(articles) {
     let label = 'Berlin';
     const lowerTitle = article.title.toLowerCase();
     
-    if (article.source === 'Anadolu Ajansı') label = 'Dünya';
-    else if (lowerTitle.includes('union') || lowerTitle.includes('alba') || lowerTitle.includes('füchse')) label = 'Spor';
-    else if (lowerTitle.includes('brand') || lowerTitle.includes('kaza')) label = 'Flaş';
+    if (article.source === 'Anadolu Ajans─▒') label = 'D├╝nya';
+    else if (lowerTitle.includes('union') || lowerTitle.includes('alba') || lowerTitle.includes('f├╝chse')) label = 'Spor';
+    else if (lowerTitle.includes('brand') || lowerTitle.includes('kaza')) label = 'Fla┼ƒ';
 
     return `
       <div class="pulse-bubble" onclick="openNewsModal(${index})">
@@ -713,37 +713,37 @@ function initBerlinPulse(articles) {
 }
 
 
-// ── Language Switcher (Placeholder) ──
+// ÔöÇÔöÇ Language Switcher (Placeholder) ÔöÇÔöÇ
 
 const BERLIN_HISTORY_EVENTS = [
   {
     date: "9 KASIM 1989",
-    title: "Berlin Duvarı Yıkılıyor",
-    text: "Soğuk Savaş'ın simgesi olan Berlin Duvarı, halkın baskısı ve yanlış anlaşılan bir basın açıklaması sonucu açıldı. Binlerce Doğu ve Batı Berlinli, Brandenburg Kapısı'nda kucaklaştı.",
+    title: "Berlin Duvar─▒ Y─▒k─▒l─▒yor",
+    text: "So─ƒuk Sava┼ƒ'─▒n simgesi olan Berlin Duvar─▒, halk─▒n bask─▒s─▒ ve yanl─▒┼ƒ anla┼ƒ─▒lan bir bas─▒n a├º─▒klamas─▒ sonucu a├º─▒ld─▒. Binlerce Do─ƒu ve Bat─▒ Berlinli, Brandenburg Kap─▒s─▒'nda kucakla┼ƒt─▒.",
     image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=800&auto=format&fit=crop"
   },
   {
     date: "16 MART 1920",
-    title: "Altın Yirmili Yıllar Başlıyor",
-    text: "Berlin, sanatın ve eğlencenin dünya başkenti haline geldi. Bauhaus akımı, kabareler ve sinema şehre eşsiz bir ruh kattı.",
+    title: "Alt─▒n Yirmili Y─▒llar Ba┼ƒl─▒yor",
+    text: "Berlin, sanat─▒n ve e─ƒlencenin d├╝nya ba┼ƒkenti haline geldi. Bauhaus ak─▒m─▒, kabareler ve sinema ┼ƒehre e┼ƒsiz bir ruh katt─▒.",
     image: "https://images.unsplash.com/photo-1549413204-c36399990818?q=80&w=800&auto=format&fit=crop"
   },
   {
-    date: "27 ŞUBAT 1933",
-    title: "Reichstag Yangını",
-    text: "Alman Parlamento binası Reichstag'ın kundaklanması, ülkenin kaderini değiştiren karanlık bir dönemin başlangıcı oldu.",
+    date: "27 ┼×UBAT 1933",
+    title: "Reichstag Yang─▒n─▒",
+    text: "Alman Parlamento binas─▒ Reichstag'─▒n kundaklanmas─▒, ├╝lkenin kaderini de─ƒi┼ƒtiren karanl─▒k bir d├Ânemin ba┼ƒlang─▒c─▒ oldu.",
     image: "https://images.unsplash.com/photo-1510443425977-889a7f347101?q=80&w=800&auto=format&fit=crop"
   },
   {
-    date: "1 AĞUSTOS 1936",
-    title: "Berlin Olimpiyatları",
-    text: "Berlin, o güne kadar görülmüş en görkemli olimpiyatlara ev sahipliği yaptı. Jesse Owens'ın başarısı tarihe geçti.",
+    date: "1 A─×USTOS 1936",
+    title: "Berlin Olimpiyatlar─▒",
+    text: "Berlin, o g├╝ne kadar g├Âr├╝lm├╝┼ƒ en g├Ârkemli olimpiyatlara ev sahipli─ƒi yapt─▒. Jesse Owens'─▒n ba┼ƒar─▒s─▒ tarihe ge├ºti.",
     image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=800&auto=format&fit=crop"
   },
   {
-    date: "24 HAZİRAN 1948",
-    title: "Berlin Hava Köprüsü",
-    text: "Sovyet ablukası altındaki Batı Berlin'e müttefik uçakları tarafından aylar boyu gıda ve kömür taşındı. 'Şeker Bombacıları' efsanesi doğdu.",
+    date: "24 HAZ─░RAN 1948",
+    title: "Berlin Hava K├Âpr├╝s├╝",
+    text: "Sovyet ablukas─▒ alt─▒ndaki Bat─▒ Berlin'e m├╝ttefik u├ºaklar─▒ taraf─▒ndan aylar boyu g─▒da ve k├Âm├╝r ta┼ƒ─▒nd─▒. '┼×eker Bombac─▒lar─▒' efsanesi do─ƒdu.",
     image: "https://images.unsplash.com/photo-1524338198850-8a2ff63aaceb?q=80&w=800&auto=format&fit=crop"
   }
 ];
@@ -886,7 +886,7 @@ function initSwipeToDismiss() {
   });
 }
 
-// ── Language Switcher ───────────────────────
+// ÔöÇÔöÇ Language Switcher ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initLangSwitcher() {
   const buttons = document.querySelectorAll('.lang-btn');
   buttons.forEach((btn) => {
@@ -903,49 +903,49 @@ function initLangSwitcher() {
   }
 }
 
-// ── Legal Modals ─────────────────────────────
+// ÔöÇÔöÇ Legal Modals ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 const legalDocs = {
   tr: {
     impressum: `
-      <h2>Impressum (Künye)</h2>
-      <p><strong>Berlin Konuşuyor Medya</strong></p>
+      <h2>Impressum (K├╝nye)</h2>
+      <p><strong>Berlin Konu┼ƒuyor Medya</strong></p>
       <p>Berlin, Almanya</p>
-      <p><strong>Sorumlu:</strong> Berlin Konuşuyor Ekibi</p>
-      <p><strong>İletişim:</strong> info@berlinkonusuyor.com</p>
-      <h3>Yasal Uyarı</h3>
-      <p>İçeriklerimizin izinsiz kopyalanması yasaktır. Harici linklerin içeriğinden sorumlu değiliz.</p>
+      <p><strong>Sorumlu:</strong> Berlin Konu┼ƒuyor Ekibi</p>
+      <p><strong>─░leti┼ƒim:</strong> info@berlinkonusuyor.com</p>
+      <h3>Yasal Uyar─▒</h3>
+      <p>─░├ºeriklerimizin izinsiz kopyalanmas─▒ yasakt─▒r. Harici linklerin i├ºeri─ƒinden sorumlu de─ƒiliz.</p>
     `,
     privacy: `
-      <h2>Gizlilik Politikası</h2>
-      <p>Kullanıcı verileriniz AB Veri Koruma Yönetmeliği (DSGVO) uyarınca korunmaktadır.</p>
-      <p><strong>Çerezler:</strong> Sitemiz sadece teknik olarak gerekli çerezleri kullanır.</p>
-      <p><strong>Haklarınız:</strong> Verilerinize erişme, düzeltme ve silme hakkına sahipsiniz.</p>
+      <h2>Gizlilik Politikas─▒</h2>
+      <p>Kullan─▒c─▒ verileriniz AB Veri Koruma Y├Ânetmeli─ƒi (DSGVO) uyar─▒nca korunmaktad─▒r.</p>
+      <p><strong>├çerezler:</strong> Sitemiz sadece teknik olarak gerekli ├ºerezleri kullan─▒r.</p>
+      <p><strong>Haklar─▒n─▒z:</strong> Verilerinize eri┼ƒme, d├╝zeltme ve silme hakk─▒na sahipsiniz.</p>
     `
   },
   de: {
     impressum: `
       <h2>Impressum</h2>
-      <p><strong>Berlin Konuşuyor Media</strong></p>
+      <p><strong>Berlin Konu┼ƒuyor Media</strong></p>
       <p>Berlin, Deutschland</p>
-      <p><strong>Verantwortlich für den Inhalt:</strong> Team Berlin Konuşuyor</p>
+      <p><strong>Verantwortlich f├╝r den Inhalt:</strong> Team Berlin Konu┼ƒuyor</p>
       <p><strong>Kontakt:</strong> info@berlinkonusuyor.com</p>
       <h3>Haftungsausschluss</h3>
-      <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.</p>
+      <p>Trotz sorgf├ñltiger inhaltlicher Kontrolle ├╝bernehmen wir keine Haftung f├╝r die Inhalte externer Links.</p>
     `,
     privacy: `
-      <h2>Datenschutzerklärung</h2>
-      <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen.</p>
-      <h3>DSGVO Konformität</h3>
-      <p>Wir verarbeiten Daten gemäß der Datenschutz-Grundverordnung (DSGVO).</p>
+      <h2>Datenschutzerkl├ñrung</h2>
+      <p>Der Schutz Ihrer pers├Ânlichen Daten ist uns ein wichtiges Anliegen.</p>
+      <h3>DSGVO Konformit├ñt</h3>
+      <p>Wir verarbeiten Daten gem├ñ├ƒ der Datenschutz-Grundverordnung (DSGVO).</p>
       <p><strong>Cookies:</strong> Wir verwenden nur technisch notwendige Cookies.</p>
     `
   },
   en: {
     impressum: `
       <h2>Imprint</h2>
-      <p><strong>Berlin Konuşuyor Media</strong></p>
+      <p><strong>Berlin Konu┼ƒuyor Media</strong></p>
       <p>Berlin, Germany</p>
-      <p><strong>Responsible:</strong> Berlin Konuşuyor Team</p>
+      <p><strong>Responsible:</strong> Berlin Konu┼ƒuyor Team</p>
       <p><strong>Contact:</strong> info@berlinkonusuyor.com</p>
       <h3>Disclaimer</h3>
       <p>We do not assume liability for the content of external links.</p>
@@ -979,7 +979,7 @@ window.openNewsModal = (index) => {
   document.getElementById('newsModalTitle').innerText = article.summary_tr || article.title;
   document.getElementById('newsModalSource').innerText = article.source;
   document.getElementById('newsModalDate').innerText = formatDate(article.date);
-  document.getElementById('newsModalDesc').innerText = article.description || 'Haberin devamı için kaynağa gidiniz.';
+  document.getElementById('newsModalDesc').innerText = article.description || 'Haberin devam─▒ i├ºin kayna─ƒa gidiniz.';
   document.getElementById('newsModalLink').href = article.url;
   const modal = document.getElementById('newsModal');
   modal.style.display = 'block';
@@ -1007,7 +1007,7 @@ window.onclick = (event) => {
   if (event.target == loginModal) closeLoginModal();
 };
 
-// ── Podcast Audio Player ────────────────────
+// ÔöÇÔöÇ Podcast Audio Player ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 const mainAudio = document.getElementById('mainAudio');
 const podcastPlayer = document.getElementById('podcastPlayer');
 const playPauseBtn = document.getElementById('playPauseBtn');
@@ -1097,7 +1097,7 @@ if (mainAudio) {
 }
 
 
-// ── Text-to-Speech (TTS) ───────────────────
+// ÔöÇÔöÇ Text-to-Speech (TTS) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 let synth = window.speechSynthesis;
 let isSpeaking = false;
 
@@ -1141,7 +1141,7 @@ window.stopTTS = () => {
   }
 };
 
-// ── User Auth (Mock LocalStorage) ───────────
+// ÔöÇÔöÇ User Auth (Mock LocalStorage) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 const loginBtn = document.getElementById('loginBtn');
 const loginModal = document.getElementById('loginModal');
 const loginView = document.getElementById('loginView');
@@ -1158,7 +1158,7 @@ function checkAuthStatus(user) {
     if(profileEmail) { profileEmail.textContent = user.email; }
   } else {
     if(loginBtn) { 
-      loginBtn.innerHTML = 'Giriş Yap';
+      loginBtn.innerHTML = 'Giri┼ƒ Yap';
       loginBtn.onclick = () => openLoginModal();
     }
   }
@@ -1191,14 +1191,14 @@ window.closeLoginModal = () => {
 window.mockLogin = async () => {
   const btn = loginView.querySelector('button');
   const orgHtml = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Bağlanıyor...';
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Ba─ƒlan─▒yor...';
   
   try {
     await signInWithPopup(auth, googleProvider);
     closeLoginModal();
   } catch (err) {
     console.error("Login Error:", err);
-    alert("Giriş başarısız oldu. Lütfen tekrar deneyin.");
+    alert("Giri┼ƒ ba┼ƒar─▒s─▒z oldu. L├╝tfen tekrar deneyin.");
   } finally {
     btn.innerHTML = orgHtml;
   }
@@ -1217,8 +1217,8 @@ window.mockLogout = async () => {
 // Eliminated old DOMContentLoaded trigger for auth check as onAuthStateChanged handles it
 
 
-// ── Community Q&A Forum (LocalStorage) ──────
-// ── Community Q&A Forum (Enhanced with Categories & Replies) ──────
+// ÔöÇÔöÇ Community Q&A Forum (LocalStorage) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+// ÔöÇÔöÇ Community Q&A Forum (Enhanced with Categories & Replies) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initQAForum() {
   const qaForm = document.getElementById('qaForm');
   const qaFeed = document.getElementById('qaFeed');
@@ -1246,7 +1246,7 @@ function initQAForum() {
         { 
           id: 'default1', 
           name: 'Ahmet Y.', 
-          text: 'Merhaba, Kreuzberg civarında uygun fiyatlı ve nezih bir kiralık ev bulmak için hangi siteleri önerirsiniz?', 
+          text: 'Merhaba, Kreuzberg civar─▒nda uygun fiyatl─▒ ve nezih bir kiral─▒k ev bulmak i├ºin hangi siteleri ├Ânerirsiniz?', 
           time: new Date(Date.now() - 7200000).toISOString(), 
           karma: 14, 
           category: 'Ev & Kira',
@@ -1262,12 +1262,12 @@ function initQAForum() {
   function getTimeAgo(dateStr) {
     try {
       const seconds = Math.floor((new Date() - new Date(dateStr)) / 1000);
-      if (seconds < 60) return 'Az önce';
+      if (seconds < 60) return 'Az ├Ânce';
       const minutes = Math.floor(seconds / 60);
-      if (minutes < 60) return `${minutes} dk önce`;
+      if (minutes < 60) return `${minutes} dk ├Ânce`;
       const hrs = Math.floor(minutes / 60);
-      if (hrs < 24) return `${hrs} sa önce`;
-      return `${Math.floor(hrs / 24)} gün önce`;
+      if (hrs < 24) return `${hrs} sa ├Ânce`;
+      return `${Math.floor(hrs / 24)} g├╝n ├Ânce`;
     } catch(e) { return '...'; }
   }
 
@@ -1301,7 +1301,7 @@ function initQAForum() {
           <div class="qa-replies-section">
             ${q.replies.map(r => `
               <div class="qa-reply-item">
-                <div class="qa-reply-author"><strong>${r.name}</strong> • ${getTimeAgo(r.time)}</div>
+                <div class="qa-reply-author"><strong>${r.name}</strong> ÔÇó ${getTimeAgo(r.time)}</div>
                 <div class="qa-reply-text">${r.text}</div>
               </div>
             `).join('')}
@@ -1310,14 +1310,14 @@ function initQAForum() {
 
         <div class="qa-actions">
           <button class="qa-action-btn upvote" onclick="window.upvoteQA('${q.id}')"><i class="fas fa-arrow-up"></i> ${q.karma}</button>
-          <button class="qa-action-btn reply-toggle" onclick="window.toggleReplyForm('${q.id}')"><i class="far fa-comment-alt"></i> ${q.replies?.length || 0} Yanıt</button>
+          <button class="qa-action-btn reply-toggle" onclick="window.toggleReplyForm('${q.id}')"><i class="far fa-comment-alt"></i> ${q.replies?.length || 0} Yan─▒t</button>
         </div>
 
         <div class="qa-reply-form-wrapper" id="reply-form-${q.id}" style="display:none">
           <div class="qa-reply-input-group">
-            <input type="text" placeholder="Adınız" class="reply-name-input" id="reply-name-${q.id}">
-            <textarea placeholder="Yanıtınızı yazın..." class="reply-text-input" id="reply-text-${q.id}"></textarea>
-            <button class="reply-submit-btn" onclick="window.submitReply('${q.id}')">Gönder</button>
+            <input type="text" placeholder="Ad─▒n─▒z" class="reply-name-input" id="reply-name-${q.id}">
+            <textarea placeholder="Yan─▒t─▒n─▒z─▒ yaz─▒n..." class="reply-text-input" id="reply-text-${q.id}"></textarea>
+            <button class="reply-submit-btn" onclick="window.submitReply('${q.id}')">G├Ânder</button>
           </div>
         </div>
       </div>
@@ -1382,22 +1382,22 @@ function initQAForum() {
     };
 
     try {
-      console.log('[Forum] Soru gönderiliyor...', newQ);
+      console.log('[Forum] Soru g├Ânderiliyor...', newQ);
       await addDoc(collection(db, "forum"), newQ);
-      console.log('[Forum] Soru başarıyla eklendi.');
+      console.log('[Forum] Soru ba┼ƒar─▒yla eklendi.');
       
       textInput.value = '';
       nameInput.value = '';
       const org = btn.innerHTML;
-      btn.innerHTML = 'Gönderildi <i class="fas fa-check"></i>';
+      btn.innerHTML = 'G├Ânderildi <i class="fas fa-check"></i>';
       btn.style.background = '#22c55e';
       setTimeout(() => {
         btn.innerHTML = org;
         btn.style.background = '';
       }, 2000);
     } catch(err) {
-      console.error('[Forum] Gönderim hatası:', err);
-      alert('Soru gönderilemedi: ' + err.message);
+      console.error('[Forum] G├Ânderim hatas─▒:', err);
+      alert('Soru g├Ânderilemedi: ' + err.message);
     }
   });
 
@@ -1428,7 +1428,7 @@ function initQAForum() {
   renderFeed();
 }
 
-// ── Job Board Module (Phase 4 Extension) ─────
+// ÔöÇÔöÇ Job Board Module (Phase 4 Extension) ÔöÇÔöÇÔöÇÔöÇÔöÇ
 async function initJobBoard() {
   const jobsGrid = document.getElementById('jobsGrid');
   if (!jobsGrid) return;
@@ -1446,7 +1446,7 @@ async function initJobBoard() {
     let filtered = currentJobType === 'all' ? jobs : jobs.filter(j => j.type === currentJobType);
     
     if (filtered.length === 0) {
-      jobsGrid.innerHTML = '<div class="empty-state" style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">Henüz ilan yok. İlk ilanı sen Ver!</div>';
+      jobsGrid.innerHTML = '<div class="empty-state" style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-muted);">Hen├╝z ilan yok. ─░lk ilan─▒ sen Ver!</div>';
       return;
     }
 
@@ -1457,9 +1457,9 @@ async function initJobBoard() {
         <p class="job-company">${job.company}</p>
         <div class="job-meta">
           <span><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
-          <span><i class="fas fa-calendar-alt"></i> ${job.createdAt?.toDate ? formatDate(job.createdAt.toDate()) : 'Bugün'}</span>
+          <span><i class="fas fa-calendar-alt"></i> ${job.createdAt?.toDate ? formatDate(job.createdAt.toDate()) : 'Bug├╝n'}</span>
         </div>
-        <a href="mailto:${job.contact}" class="job-apply-btn">Başvur / İletişime Geç</a>
+        <a href="mailto:${job.contact}" class="job-apply-btn">Ba┼ƒvur / ─░leti┼ƒime Ge├º</a>
       </div>
     `).join('');
   }
@@ -1481,15 +1481,15 @@ async function initJobBoard() {
 
 window.openJobModal = () => {
   if (!auth.currentUser) {
-    alert("İlan vermek için giriş yapmalısınız.");
+    alert("─░lan vermek i├ºin giri┼ƒ yapmal─▒s─▒n─▒z.");
     openLoginModal();
     return;
   }
-  const title = prompt("İş Başlığı (örn: Garson):");
-  const company = prompt("Şirket/Mekan Adı:");
-  const location = prompt("Bölge (örn: Kreuzberg):");
-  const type = prompt("İş Tipi (Tam Zamanlı, Yarı Zamanlı, Minijob):", "Tam Zamanlı");
-  const contact = prompt("İletişim E-postası:");
+  const title = prompt("─░┼ƒ Ba┼ƒl─▒─ƒ─▒ (├Ârn: Garson):");
+  const company = prompt("┼×irket/Mekan Ad─▒:");
+  const location = prompt("B├Âlge (├Ârn: Kreuzberg):");
+  const type = prompt("─░┼ƒ Tipi (Tam Zamanl─▒, Yar─▒ Zamanl─▒, Minijob):", "Tam Zamanl─▒");
+  const contact = prompt("─░leti┼ƒim E-postas─▒:");
 
   if (title && company && contact) {
     addDoc(collection(db, "jobs"), {
@@ -1497,15 +1497,15 @@ window.openJobModal = () => {
       postedBy: auth.currentUser.uid,
       createdAt: serverTimestamp()
     }).then(() => {
-      alert("İlanınız başarıyla eklendi.");
+      alert("─░lan─▒n─▒z ba┼ƒar─▒yla eklendi.");
     }).catch(err => console.error(err));
   }
 };
 
-// ── Bookmark System ─────────────────────────
+// ÔöÇÔöÇ Bookmark System ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 window.toggleBookmark = async (id, type) => {
   if (!auth.currentUser) {
-    alert("Kaydetmek için giriş yapmalısınız.");
+    alert("Kaydetmek i├ºin giri┼ƒ yapmal─▒s─▒n─▒z.");
     openLoginModal();
     return;
   }
@@ -1516,7 +1516,7 @@ window.toggleBookmark = async (id, type) => {
   
   if (bookmarks.includes(id)) {
     bookmarks = bookmarks.filter(b => b !== id);
-    alert("Kaydedilenlerden kaldırıldı.");
+    alert("Kaydedilenlerden kald─▒r─▒ld─▒.");
   } else {
     bookmarks.push(id);
     alert("Kaydedildi!");
@@ -1531,25 +1531,25 @@ window.toggleBookmark = async (id, type) => {
   });
 };
 
-// ── AI Chatbot Assistant (Knowledge-Base Powered) ──────────
+// ÔöÇÔöÇ AI Chatbot Assistant (Knowledge-Base Powered) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 const BERLIN_KB = [
-  { keys: ['anmeldung','adres','kayıt','registration','adresse','anmelden'], answer: '📋 **Anmeldung (Adres Kaydı)**\n\nBerlin\'e taşındıktan sonra **14 gün içinde** Bürgeramt\'a gidip adres kaydı yaptırmanız gerekir.\n\n🔹 Gerekli belgeler:\n• Kimlik/Pasaport\n• Kira sözleşmesi\n• Wohnungsgeberbestätigung (ev sahibinden onay formu)\n\n🔹 Online randevu: service.berlin.de\n\n💡 İpucu: Randevu bulmak zor olabilir. Her sabah 08:00\'da yeni randevular açılır!' },
-  { keys: ['ev','kira','wohnung','daire','kiralık','ev bulma','mietwohnung','housing'], answer: '🏠 **Berlin\'de Ev Bulma**\n\nPopüler arama siteleri:\n• immobilienscout24.de\n• wg-gesucht.de (paylaşımlı ev)\n• ebay-kleinanzeigen.de\n• immowelt.de\n\n🔹 Ortalama kira (soğuk):\n• 1+1: 600-900€\n• 2+1: 900-1.300€\n• WG odası: 400-650€\n\n💡 İpucu: Schufa (kredi raporu) hazır bulundurun. Başvurularda öz-tanıtım mektubu çok işe yarar!' },
-  { keys: ['vize','visum','visa','oturum','çalışma izni','aufenthaltstitel','blue card','mavi kart'], answer: '🛂 **Vize & Oturum İzni**\n\n🔹 Türk vatandaşları için:\n• Turist vizesi: Schengen vizesi (90 gün)\n• Çalışma vizesi: İş teklifi + Ausländerbehörde başvurusu\n• Mavi Kart (Blue Card): Üniversite diploması + yıllık min. ~43.800€ maaş\n\n🔹 Ausländerbehörde randevu:\notv.verwalt-berlin.de\n\n💡 İpucu: Başvuru öncesi tüm belgelerin noter onaylı çevirilerini hazırlayın.' },
-  { keys: ['ulaşım','transport','bvg','u-bahn','s-bahn','bilet','fahrkarte','ticket','metro'], answer: '🚇 **Berlin Ulaşım Rehberi**\n\n🔹 Bilet türleri (AB Bölgesi):\n• Tek bilet: 3.20€\n• Günlük: 9.50€\n• Aylık: 86€\n• Deutschland-Ticket: 49€/ay (tüm Almanya!)\n\n🔹 Uygulamalar: BVG app, DB Navigator\n\n💡 İpucu: Deutschland-Ticket (49€) en mantıklı seçenek — bütün şehir içi + bölgesel trenlerde geçerli!' },
-  { keys: ['iş','job','arbeit','çalışmak','maaş','gehalt','iş bulma','bewerbung'], answer: '💼 **Berlin\'de İş Bulma**\n\nPopüler iş arama platformları:\n• linkedin.com\n• indeed.de\n• stepstone.de\n• xing.com\n• arbeitsagentur.de\n\n🔹 Ortalama maaşlar (brüt):\n• IT Uzmanı: 55-75k€\n• Gastronomi: 28-35k€\n• Ofis işleri: 35-50k€\n\n💡 İpucu: Almanca bilmek büyük avantaj! VHS (Volkshochschule) kursları oldukça uygun fiyatlı.' },
-  { keys: ['yeme','restoran','restaurant','yemek','cafe','kafe','döner','türk','essen','food'], answer: '🍽️ **Yeme & İçme Rehberi**\n\nKreuzberg\'in en iyileri:\n• Hasır (Adalbertstr.) — Klasik Türk mutfağı\n• Mustafa\'s Gemüse Kebap — Efsanevi döner\n• Five Elephant — Specialty kahve\n• Markthalle Neun — Street food cenneti\n\n🔹 Neukölln:\n• Sonnenallee ("Arap Sokağı") — Ortadoğu lezzetleri\n• Lavanderia Vecchia — İtalyan fine dining\n\n💡 İpucu: Öğle yemeklerinde "Mittagstisch" menülerine bakın — 7-12€ arası!' },
-  { keys: ['sağlık','arzt','doktor','hastane','sigorta','versicherung','krankenhaus','health'], answer: '🏥 **Sağlık Sistemi**\n\n🔹 Sigorta:\n• Zorunlu sağlık sigortası (gesetzliche KV): TK, AOK, Barmer\n• Aylık: Maaşın ~%14.6\'sı (yarısını işveren öder)\n\n🔹 Acil durumlar:\n• Acil: 112 numarayı arayın\n• Ärztlicher Bereitschaftsdienst: 116 117\n\n💡 İpucu: Doctolib uygulaması ile kolayca doktor randevusu alabilirsiniz.' },
-  { keys: ['dil','almanca','deutsch','sprache','kurs','öğrenmek','lernen','language'], answer: '📚 **Almanca Öğrenme**\n\nÜcretsiz/uygun kaynaklar:\n• VHS (Volkshochschule) — dönemlik kurslar (~100-200€)\n• DW (Deutsche Welle) — ücretsiz online kurs\n• Goethe Institut — profesyonel kurslar\n• Tandem dil uygulamaları\n\n🔹 Önemli seviyeler:\n• A1-A2: Günlük yaşam\n• B1: Oturum izni için gerekli\n• B2-C1: İş dünyası\n\n💡 İpucu: Kreuzberg ve Neukölln\'de Türkçe konuşanlar çok ama Almanca pratik için Prenzlauer Berg idealdir!' },
-  { keys: ['gece','nightlife','club','party','techno','berghain','bar','eğlence'], answer: '🎶 **Berlin Gece Hayatı**\n\nEfsanevi kulüpler:\n• Berghain/Panorama Bar — Techno tapınağı\n• Tresor — Endüstriyel techno\n• Watergate — Spree nehri manzaralı\n• KitKat Club — Öncü\n• Sisyphos — Açık hava partisi\n\n💡 İpucu: Berghain\'e giriş garanti değil! Sade giyinin, küçük gruplarla gidin ve Almanca konuşun.' },
-  { keys: ['hava','wetter','weather','sıcaklık','yağmur','mevsim'], answer: '🌤️ **Berlin Hava Durumu**\n\nMevsimsel ortalamalar:\n• Yaz (Haz-Ağu): 20-30°C, uzun günler\n• Kış (Kas-Şub): -5 ile 5°C, erken karanlık\n• İlkbahar/Sonbahar: 8-18°C, değişken\n\n💡 İpucu: Kış çok karanlık olabilir, D vitamini almanız önerilir. Yaz aylarında parklar ve göller harikadır!' },
-  { keys: ['banka','konto','hesap','bank','n26','finans'], answer: '🏦 **Banka Hesabı Açma**\n\nPopüler bankalar:\n• N26 — %100 online, hızlı açılım\n• Deutsche Bank — Geleneksel\n• Commerzbank — Yaygın ATM ağı\n• ING — Ücretsiz Girokonto\n\n🔹 Gerekli belgeler:\n• Kimlik/Pasaport\n• Anmeldung belgesi\n• Bazen Schufa (kredi raporu)\n\n💡 İpucu: N26 veya Wise ile Anmeldung\'dan bile önce hesap açabilirsiniz!' },
-  { keys: ['kültür','museum','müze','sanat','kultur','galeri','ausstellung'], answer: '🎭 **Kültür & Müzeler**\n\nÜcretsiz/indirimli müzeler:\n• Museumsinsel (UNESCO) — kombi bilet 22€\n• East Side Gallery — ücretsiz\n• Gedenkstätte Berliner Mauer — ücretsiz\n• Her ayın ilk Pazar günü birçok müze ücretsiz!\n\n💡 İpucu: Museum Pass Berlin (3 gün) 36€ — 30+ müzeye giriş!' },
-  { keys: ['çocuk','kita','kreş','okul','schule','kindergarten','aile'], answer: '👶 **Çocuk & Eğitim**\n\nBerlin\'de Kita (kreş):\n• Başvuru: kita-navigator.berlin.de\n• 0-6 yaş arası ücretsiz (son yıl zorunlu)\n• Erken başvuru yapın — bekleme listesi uzun!\n\n🔹 Okullar:\n• Devlet okulları ücretsiz\n• Türk-Alman Eğitim Merkezi Kreuzberg\'de\n\n💡 İpucu: Kita başvurusunu doğumdan hemen sonra yapın!' },
-  { keys: ['merhaba','selam','hello','hi','hey','naber','nasılsın'], answer: 'Merhaba! 👋 Ben Berlin Konuşuyor Asistanı. Size Berlin hakkında her konuda yardımcı olabilirim.\n\nŞu konularda sorular sorabilirsiniz:\n📋 Anmeldung & Resmi işlemler\n🏠 Ev bulma\n🛂 Vize & Oturum\n🚇 Ulaşım\n💼 İş arama\n🍽️ Yeme & İçme\n🎶 Gece hayatı\n\nYa da aşağıdaki hızlı butonları kullanın!' },
-  { keys: ['teşekkür','sağol','danke','thanks','eyvallah'], answer: 'Rica ederim! 😊 Berlin\'de size yardımcı olmaktan mutluluk duyarım. Başka sorunuz olursa çekinmeden sorun!\n\n📧 Daha detaylı sorularınız için: hello@berlinkonusuyor.com' },
-  { keys: ['schufa','kredi','kredit','credit'], answer: '📊 **Schufa (Kredi Raporu)**\n\nSchufa, Almanya\'daki kredi itibar sistemidir.\n\n🔹 Nasıl alınır?\n• meineschufa.de → Ücretsiz kopyayı "Datenkopie" bölümünden talep edin\n• Ücretli anında erişim: ~29.95€\n\n🔹 Neden önemli?\n• Ev kiralama başvurularında şart\n• Telefon aboneliği, kredi kartı\n\n💡 İpucu: Ücretsiz Schufa kopyası yılda 1 kez hakkınızdır!' },
-  { keys: ['spor','sport','fitness','gym','yüzme','schwimmen'], answer: '🏋️ **Spor İmkanları**\n\nUygun fiyatlı seçenekler:\n• Fitness First, McFit: ~20-30€/ay\n• Urban Sports Club: ~50-100€/ay (çoklu tesis)\n• Berlin\'deki açık hava spor alanları ücretsiz!\n• Halk yüzme havuzları: ~5-6€/giriş\n\n💡 İpucu: Tiergarten ve Tempelhofer Feld koşu için mükemmel!' },
+  { keys: ['anmeldung','adres','kay─▒t','registration','adresse','anmelden'], answer: '­ƒôï **Anmeldung (Adres Kayd─▒)**\n\nBerlin\'e ta┼ƒ─▒nd─▒ktan sonra **14 g├╝n i├ºinde** B├╝rgeramt\'a gidip adres kayd─▒ yapt─▒rman─▒z gerekir.\n\n­ƒö╣ Gerekli belgeler:\nÔÇó Kimlik/Pasaport\nÔÇó Kira s├Âzle┼ƒmesi\nÔÇó Wohnungsgeberbest├ñtigung (ev sahibinden onay formu)\n\n­ƒö╣ Online randevu: service.berlin.de\n\n­ƒÆí ─░pucu: Randevu bulmak zor olabilir. Her sabah 08:00\'da yeni randevular a├º─▒l─▒r!' },
+  { keys: ['ev','kira','wohnung','daire','kiral─▒k','ev bulma','mietwohnung','housing'], answer: '­ƒÅá **Berlin\'de Ev Bulma**\n\nPop├╝ler arama siteleri:\nÔÇó immobilienscout24.de\nÔÇó wg-gesucht.de (payla┼ƒ─▒ml─▒ ev)\nÔÇó ebay-kleinanzeigen.de\nÔÇó immowelt.de\n\n­ƒö╣ Ortalama kira (so─ƒuk):\nÔÇó 1+1: 600-900Ôé¼\nÔÇó 2+1: 900-1.300Ôé¼\nÔÇó WG odas─▒: 400-650Ôé¼\n\n­ƒÆí ─░pucu: Schufa (kredi raporu) haz─▒r bulundurun. Ba┼ƒvurularda ├Âz-tan─▒t─▒m mektubu ├ºok i┼ƒe yarar!' },
+  { keys: ['vize','visum','visa','oturum','├ºal─▒┼ƒma izni','aufenthaltstitel','blue card','mavi kart'], answer: '­ƒøé **Vize & Oturum ─░zni**\n\n­ƒö╣ T├╝rk vatanda┼ƒlar─▒ i├ºin:\nÔÇó Turist vizesi: Schengen vizesi (90 g├╝n)\nÔÇó ├çal─▒┼ƒma vizesi: ─░┼ƒ teklifi + Ausl├ñnderbeh├Ârde ba┼ƒvurusu\nÔÇó Mavi Kart (Blue Card): ├£niversite diplomas─▒ + y─▒ll─▒k min. ~43.800Ôé¼ maa┼ƒ\n\n­ƒö╣ Ausl├ñnderbeh├Ârde randevu:\notv.verwalt-berlin.de\n\n­ƒÆí ─░pucu: Ba┼ƒvuru ├Âncesi t├╝m belgelerin noter onayl─▒ ├ºevirilerini haz─▒rlay─▒n.' },
+  { keys: ['ula┼ƒ─▒m','transport','bvg','u-bahn','s-bahn','bilet','fahrkarte','ticket','metro'], answer: '­ƒÜç **Berlin Ula┼ƒ─▒m Rehberi**\n\n­ƒö╣ Bilet t├╝rleri (AB B├Âlgesi):\nÔÇó Tek bilet: 3.20Ôé¼\nÔÇó G├╝nl├╝k: 9.50Ôé¼\nÔÇó Ayl─▒k: 86Ôé¼\nÔÇó Deutschland-Ticket: 49Ôé¼/ay (t├╝m Almanya!)\n\n­ƒö╣ Uygulamalar: BVG app, DB Navigator\n\n­ƒÆí ─░pucu: Deutschland-Ticket (49Ôé¼) en mant─▒kl─▒ se├ºenek ÔÇö b├╝t├╝n ┼ƒehir i├ºi + b├Âlgesel trenlerde ge├ºerli!' },
+  { keys: ['i┼ƒ','job','arbeit','├ºal─▒┼ƒmak','maa┼ƒ','gehalt','i┼ƒ bulma','bewerbung'], answer: '­ƒÆ╝ **Berlin\'de ─░┼ƒ Bulma**\n\nPop├╝ler i┼ƒ arama platformlar─▒:\nÔÇó linkedin.com\nÔÇó indeed.de\nÔÇó stepstone.de\nÔÇó xing.com\nÔÇó arbeitsagentur.de\n\n­ƒö╣ Ortalama maa┼ƒlar (br├╝t):\nÔÇó IT Uzman─▒: 55-75kÔé¼\nÔÇó Gastronomi: 28-35kÔé¼\nÔÇó Ofis i┼ƒleri: 35-50kÔé¼\n\n­ƒÆí ─░pucu: Almanca bilmek b├╝y├╝k avantaj! VHS (Volkshochschule) kurslar─▒ olduk├ºa uygun fiyatl─▒.' },
+  { keys: ['yeme','restoran','restaurant','yemek','cafe','kafe','d├Âner','t├╝rk','essen','food'], answer: '­ƒì¢´©Å **Yeme & ─░├ºme Rehberi**\n\nKreuzberg\'in en iyileri:\nÔÇó Has─▒r (Adalbertstr.) ÔÇö Klasik T├╝rk mutfa─ƒ─▒\nÔÇó Mustafa\'s Gem├╝se Kebap ÔÇö Efsanevi d├Âner\nÔÇó Five Elephant ÔÇö Specialty kahve\nÔÇó Markthalle Neun ÔÇö Street food cenneti\n\n­ƒö╣ Neuk├Âlln:\nÔÇó Sonnenallee ("Arap Soka─ƒ─▒") ÔÇö Ortado─ƒu lezzetleri\nÔÇó Lavanderia Vecchia ÔÇö ─░talyan fine dining\n\n­ƒÆí ─░pucu: ├û─ƒle yemeklerinde "Mittagstisch" men├╝lerine bak─▒n ÔÇö 7-12Ôé¼ aras─▒!' },
+  { keys: ['sa─ƒl─▒k','arzt','doktor','hastane','sigorta','versicherung','krankenhaus','health'], answer: '­ƒÅÑ **Sa─ƒl─▒k Sistemi**\n\n­ƒö╣ Sigorta:\nÔÇó Zorunlu sa─ƒl─▒k sigortas─▒ (gesetzliche KV): TK, AOK, Barmer\nÔÇó Ayl─▒k: Maa┼ƒ─▒n ~%14.6\'s─▒ (yar─▒s─▒n─▒ i┼ƒveren ├Âder)\n\n­ƒö╣ Acil durumlar:\nÔÇó Acil: 112 numaray─▒ aray─▒n\nÔÇó ├ärztlicher Bereitschaftsdienst: 116 117\n\n­ƒÆí ─░pucu: Doctolib uygulamas─▒ ile kolayca doktor randevusu alabilirsiniz.' },
+  { keys: ['dil','almanca','deutsch','sprache','kurs','├Â─ƒrenmek','lernen','language'], answer: '­ƒôÜ **Almanca ├û─ƒrenme**\n\n├£cretsiz/uygun kaynaklar:\nÔÇó VHS (Volkshochschule) ÔÇö d├Ânemlik kurslar (~100-200Ôé¼)\nÔÇó DW (Deutsche Welle) ÔÇö ├╝cretsiz online kurs\nÔÇó Goethe Institut ÔÇö profesyonel kurslar\nÔÇó Tandem dil uygulamalar─▒\n\n­ƒö╣ ├ûnemli seviyeler:\nÔÇó A1-A2: G├╝nl├╝k ya┼ƒam\nÔÇó B1: Oturum izni i├ºin gerekli\nÔÇó B2-C1: ─░┼ƒ d├╝nyas─▒\n\n­ƒÆí ─░pucu: Kreuzberg ve Neuk├Âlln\'de T├╝rk├ºe konu┼ƒanlar ├ºok ama Almanca pratik i├ºin Prenzlauer Berg idealdir!' },
+  { keys: ['gece','nightlife','club','party','techno','berghain','bar','e─ƒlence'], answer: '­ƒÄÂ **Berlin Gece Hayat─▒**\n\nEfsanevi kul├╝pler:\nÔÇó Berghain/Panorama Bar ÔÇö Techno tap─▒na─ƒ─▒\nÔÇó Tresor ÔÇö End├╝striyel techno\nÔÇó Watergate ÔÇö Spree nehri manzaral─▒\nÔÇó KitKat Club ÔÇö ├ûnc├╝\nÔÇó Sisyphos ÔÇö A├º─▒k hava partisi\n\n­ƒÆí ─░pucu: Berghain\'e giri┼ƒ garanti de─ƒil! Sade giyinin, k├╝├º├╝k gruplarla gidin ve Almanca konu┼ƒun.' },
+  { keys: ['hava','wetter','weather','s─▒cakl─▒k','ya─ƒmur','mevsim'], answer: '­ƒîñ´©Å **Berlin Hava Durumu**\n\nMevsimsel ortalamalar:\nÔÇó Yaz (Haz-A─ƒu): 20-30┬░C, uzun g├╝nler\nÔÇó K─▒┼ƒ (Kas-┼×ub): -5 ile 5┬░C, erken karanl─▒k\nÔÇó ─░lkbahar/Sonbahar: 8-18┬░C, de─ƒi┼ƒken\n\n­ƒÆí ─░pucu: K─▒┼ƒ ├ºok karanl─▒k olabilir, D vitamini alman─▒z ├Ânerilir. Yaz aylar─▒nda parklar ve g├Âller harikad─▒r!' },
+  { keys: ['banka','konto','hesap','bank','n26','finans'], answer: '­ƒÅª **Banka Hesab─▒ A├ºma**\n\nPop├╝ler bankalar:\nÔÇó N26 ÔÇö %100 online, h─▒zl─▒ a├º─▒l─▒m\nÔÇó Deutsche Bank ÔÇö Geleneksel\nÔÇó Commerzbank ÔÇö Yayg─▒n ATM a─ƒ─▒\nÔÇó ING ÔÇö ├£cretsiz Girokonto\n\n­ƒö╣ Gerekli belgeler:\nÔÇó Kimlik/Pasaport\nÔÇó Anmeldung belgesi\nÔÇó Bazen Schufa (kredi raporu)\n\n­ƒÆí ─░pucu: N26 veya Wise ile Anmeldung\'dan bile ├Ânce hesap a├ºabilirsiniz!' },
+  { keys: ['k├╝lt├╝r','museum','m├╝ze','sanat','kultur','galeri','ausstellung'], answer: '­ƒÄ¡ **K├╝lt├╝r & M├╝zeler**\n\n├£cretsiz/indirimli m├╝zeler:\nÔÇó Museumsinsel (UNESCO) ÔÇö kombi bilet 22Ôé¼\nÔÇó East Side Gallery ÔÇö ├╝cretsiz\nÔÇó Gedenkst├ñtte Berliner Mauer ÔÇö ├╝cretsiz\nÔÇó Her ay─▒n ilk Pazar g├╝n├╝ bir├ºok m├╝ze ├╝cretsiz!\n\n­ƒÆí ─░pucu: Museum Pass Berlin (3 g├╝n) 36Ôé¼ ÔÇö 30+ m├╝zeye giri┼ƒ!' },
+  { keys: ['├ºocuk','kita','kre┼ƒ','okul','schule','kindergarten','aile'], answer: '­ƒæÂ **├çocuk & E─ƒitim**\n\nBerlin\'de Kita (kre┼ƒ):\nÔÇó Ba┼ƒvuru: kita-navigator.berlin.de\nÔÇó 0-6 ya┼ƒ aras─▒ ├╝cretsiz (son y─▒l zorunlu)\nÔÇó Erken ba┼ƒvuru yap─▒n ÔÇö bekleme listesi uzun!\n\n­ƒö╣ Okullar:\nÔÇó Devlet okullar─▒ ├╝cretsiz\nÔÇó T├╝rk-Alman E─ƒitim Merkezi Kreuzberg\'de\n\n­ƒÆí ─░pucu: Kita ba┼ƒvurusunu do─ƒumdan hemen sonra yap─▒n!' },
+  { keys: ['merhaba','selam','hello','hi','hey','naber','nas─▒ls─▒n'], answer: 'Merhaba! ­ƒæï Ben Berlin Konu┼ƒuyor Asistan─▒. Size Berlin hakk─▒nda her konuda yard─▒mc─▒ olabilirim.\n\n┼×u konularda sorular sorabilirsiniz:\n­ƒôï Anmeldung & Resmi i┼ƒlemler\n­ƒÅá Ev bulma\n­ƒøé Vize & Oturum\n­ƒÜç Ula┼ƒ─▒m\n­ƒÆ╝ ─░┼ƒ arama\n­ƒì¢´©Å Yeme & ─░├ºme\n­ƒÄÂ Gece hayat─▒\n\nYa da a┼ƒa─ƒ─▒daki h─▒zl─▒ butonlar─▒ kullan─▒n!' },
+  { keys: ['te┼ƒekk├╝r','sa─ƒol','danke','thanks','eyvallah'], answer: 'Rica ederim! ­ƒÿè Berlin\'de size yard─▒mc─▒ olmaktan mutluluk duyar─▒m. Ba┼ƒka sorunuz olursa ├ºekinmeden sorun!\n\n­ƒôº Daha detayl─▒ sorular─▒n─▒z i├ºin: hello@berlinkonusuyor.com' },
+  { keys: ['schufa','kredi','kredit','credit'], answer: '­ƒôè **Schufa (Kredi Raporu)**\n\nSchufa, Almanya\'daki kredi itibar sistemidir.\n\n­ƒö╣ Nas─▒l al─▒n─▒r?\nÔÇó meineschufa.de ÔåÆ ├£cretsiz kopyay─▒ "Datenkopie" b├Âl├╝m├╝nden talep edin\nÔÇó ├£cretli an─▒nda eri┼ƒim: ~29.95Ôé¼\n\n­ƒö╣ Neden ├Ânemli?\nÔÇó Ev kiralama ba┼ƒvurular─▒nda ┼ƒart\nÔÇó Telefon aboneli─ƒi, kredi kart─▒\n\n­ƒÆí ─░pucu: ├£cretsiz Schufa kopyas─▒ y─▒lda 1 kez hakk─▒n─▒zd─▒r!' },
+  { keys: ['spor','sport','fitness','gym','y├╝zme','schwimmen'], answer: '­ƒÅï´©Å **Spor ─░mkanlar─▒**\n\nUygun fiyatl─▒ se├ºenekler:\nÔÇó Fitness First, McFit: ~20-30Ôé¼/ay\nÔÇó Urban Sports Club: ~50-100Ôé¼/ay (├ºoklu tesis)\nÔÇó Berlin\'deki a├º─▒k hava spor alanlar─▒ ├╝cretsiz!\nÔÇó Halk y├╝zme havuzlar─▒: ~5-6Ôé¼/giri┼ƒ\n\n­ƒÆí ─░pucu: Tiergarten ve Tempelhofer Feld ko┼ƒu i├ºin m├╝kemmel!' },
 ];
 
 const chatbotWindow = document.getElementById('chatbotWindow');
@@ -1603,7 +1603,7 @@ function formatBotMessage(text) {
   return text
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .replace(/\n/g, '<br>')
-    .replace(/• /g, '&bull; ');
+    .replace(/ÔÇó /g, '&bull; ');
 }
 
 function addChatMsg(content, cls, id = '') {
@@ -1632,7 +1632,7 @@ function handleChatQuery(query) {
     if (answer) {
       addChatMsg(formatBotMessage(answer), 'bot-msg');
     } else {
-      addChatMsg(formatBotMessage('🤔 Bu konuda henüz bilgi bankamda yeterli veri yok. Ama size yardımcı olmak isterim!\n\n📧 Detaylı sorularınız için: <a href="mailto:hello@berlinkonusuyor.com" style="color:var(--accent);text-decoration:underline;">hello@berlinkonusuyor.com</a>\n\nŞu konularda sorular sorabilirsiniz:\n📋 Anmeldung\n🏠 Ev bulma\n🛂 Vize\n🚇 Ulaşım\n💼 İş bulma\n🍽️ Restoran'), 'bot-msg');
+      addChatMsg(formatBotMessage('­ƒñö Bu konuda hen├╝z bilgi bankamda yeterli veri yok. Ama size yard─▒mc─▒ olmak isterim!\n\n­ƒôº Detayl─▒ sorular─▒n─▒z i├ºin: <a href="mailto:hello@berlinkonusuyor.com" style="color:var(--accent);text-decoration:underline;">hello@berlinkonusuyor.com</a>\n\n┼×u konularda sorular sorabilirsiniz:\n­ƒôï Anmeldung\n­ƒÅá Ev bulma\n­ƒøé Vize\n­ƒÜç Ula┼ƒ─▒m\n­ƒÆ╝ ─░┼ƒ bulma\n­ƒì¢´©Å Restoran'), 'bot-msg');
     }
   }, 800 + Math.random() * 600);
 }
@@ -1655,11 +1655,11 @@ document.querySelectorAll('.quick-reply-btn').forEach(btn => {
   });
 });
 
-// ═══════════════════════════════════════════
+// ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ
 // PREMIUM ENHANCEMENTS
-// ═══════════════════════════════════════════
+// ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ
 
-// ── Splash Screen ───────────────────────────
+// ÔöÇÔöÇ Splash Screen ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initSplash() {
   const splash = document.getElementById('splashScreen');
   if (!splash) return;
@@ -1672,7 +1672,7 @@ function initSplash() {
   }, 2600);
 }
 
-// ── Scroll Progress Bar ─────────────────────
+// ÔöÇÔöÇ Scroll Progress Bar ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initScrollProgress() {
   const bar = document.getElementById('scrollProgress');
   if (!bar) return;
@@ -1684,7 +1684,7 @@ function initScrollProgress() {
   }, { passive: true });
 }
 
-// ── Cursor Ring (Cursor 2.0) ─────────────────
+// ÔöÇÔöÇ Cursor Ring (Cursor 2.0) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initCursorPremium() {
   const glow = document.getElementById('cursorGlow');
   const ring = document.getElementById('cursorRing');
@@ -1729,7 +1729,7 @@ function initCursorPremium() {
   });
 }
 
-// ── Parallax Hero ───────────────────────────
+// ÔöÇÔöÇ Parallax Hero ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initParallax() {
   const heroBg = document.querySelector('.hero::before') ? document.querySelector('.hero') : null;
   if (!heroBg) return;
@@ -1747,7 +1747,7 @@ function initParallax() {
 }
 
 
-// ── Tilt Effects ────────────────────────────
+// ÔöÇÔöÇ Tilt Effects ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initTiltEffects() {
   const cards = document.querySelectorAll('.glass-panel, .magnetic-card');
   if (window.matchMedia('(max-width: 768px)').matches) return;
@@ -1773,7 +1773,7 @@ function initTiltEffects() {
   });
 }
 
-// ── Animated Counter ────────────────────────
+// ÔöÇÔöÇ Animated Counter ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initCounters() {
   const counters = document.querySelectorAll('.stat-number');
   if (!counters.length) return;
@@ -1826,7 +1826,7 @@ function initCounters() {
   if (statsBar) observer.observe(statsBar);
 }
 
-// ── Magnetic Buttons ────────────────────────
+// ÔöÇÔöÇ Magnetic Buttons ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initMagneticButtons() {
   const btns = document.querySelectorAll('.magnetic-btn');
   if (!btns.length || window.matchMedia('(max-width: 768px)').matches) return;
@@ -1845,7 +1845,7 @@ function initMagneticButtons() {
   });
 }
 
-// ── Text Reveal Animation ───────────────────
+// ÔöÇÔöÇ Text Reveal Animation ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initTextReveal() {
   const heroLines = document.querySelectorAll('.hero-line');
   heroLines.forEach((line) => {
@@ -1868,13 +1868,13 @@ function initTextReveal() {
   });
 }
 
-// ── Newsletter Form (Formsubmit.co & Brevo Template) ──────────
+// ÔöÇÔöÇ Newsletter Form (Formsubmit.co & Brevo Template) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initNewsletter() {
   const form = document.getElementById('newsletterForm');
   if (!form) return;
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault(); // AJAX ile gönderim için standart formu engelle
+    e.preventDefault(); // AJAX ile g├Ânderim i├ºin standart formu engelle
     
     const input = form.querySelector('.newsletter-input');
     const btn = form.querySelector('.newsletter-btn');
@@ -1883,7 +1883,7 @@ function initNewsletter() {
     // Basic Validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailPattern.test(email)) {
-      btn.textContent = 'Geçersiz E-posta!';
+      btn.textContent = 'Ge├ºersiz E-posta!';
       btn.style.background = '#e74c3c';
       setTimeout(() => resetNewsletterBtn(btn), 2000);
       return;
@@ -1892,7 +1892,7 @@ function initNewsletter() {
     // Loading State
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
 
-    // OPSİYONEL: Brevo Entegrasyonu (Gelecekte API Key ile aktifleştirilebilir)
+    // OPS─░YONEL: Brevo Entegrasyonu (Gelecekte API Key ile aktifle┼ƒtirilebilir)
     // subscribeToBrevo(email).then(success => { ... });
 
     // Submit via AJAX to Formsubmit (Current Stable Flow)
@@ -1904,29 +1904,29 @@ function initNewsletter() {
       },
       body: JSON.stringify({
         email: email,
-        _subject: 'Yeni Bülten Aboneliği (Berlin Konuşuyor)'
+        _subject: 'Yeni B├╝lten Aboneli─ƒi (Berlin Konu┼ƒuyor)'
       })
     })
     .then(response => response.json())
     .then(data => {
       // Success UI
-      btn.innerHTML = 'Kayıt Başarılı <i class="fas fa-check"></i>';
+      btn.innerHTML = 'Kay─▒t Ba┼ƒar─▒l─▒ <i class="fas fa-check"></i>';
       btn.style.background = '#22c55e';
       input.value = '';
       const msg = document.getElementById('newsletterMessage');
       if (msg) {
-        msg.textContent = '✅ Başarıyla abone olundu! Teşekkürler.';
+        msg.textContent = 'Ô£à Ba┼ƒar─▒yla abone olundu! Te┼ƒekk├╝rler.';
         msg.className = 'newsletter-message show success';
       }
       setTimeout(() => resetNewsletterBtn(btn), 3000);
     })
     .catch(error => {
       console.error(error);
-      btn.textContent = 'Bağlantı Hatası';
+      btn.textContent = 'Ba─ƒlant─▒ Hatas─▒';
       btn.style.background = '#e74c3c';
       const msg = document.getElementById('newsletterMessage');
       if (msg) {
-        msg.textContent = '❌ Bir sorun oluştu, lütfen tekrar deneyin.';
+        msg.textContent = 'ÔØî Bir sorun olu┼ƒtu, l├╝tfen tekrar deneyin.';
         msg.className = 'newsletter-message show error';
       }
       setTimeout(() => resetNewsletterBtn(btn), 2500);
@@ -1935,16 +1935,16 @@ function initNewsletter() {
 }
 
 /**
- * Brevo API Entegrasyon Şablonu
- * Not: Bu kodu frontend'de kullanmak API anahtarını açık eder. 
- * Güvenli kullanım için Netlify/Vercel Functions kullanılmalıdır.
+ * Brevo API Entegrasyon ┼×ablonu
+ * Not: Bu kodu frontend'de kullanmak API anahtar─▒n─▒ a├º─▒k eder. 
+ * G├╝venli kullan─▒m i├ºin Netlify/Vercel Functions kullan─▒lmal─▒d─▒r.
  */
 async function subscribeToBrevo(email) {
   try {
     const res = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
-        'api-key': 'BREVO_API_KEY_BURAYA', // ← GÜVENLİK NOTU: API anahtarını asla buraya yazmayın!
+        'api-key': 'BREVO_API_KEY_BURAYA', // ÔåÉ G├£VENL─░K NOTU: API anahtar─▒n─▒ asla buraya yazmay─▒n!
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
@@ -1964,7 +1964,7 @@ function resetNewsletterBtn(btn) {
   btn.style.background = '';
 }
 
-// ── Init ────────────────────────────────────
+// ÔöÇÔöÇ Init ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 document.addEventListener('DOMContentLoaded', () => {
   initSplash();
   initTextReveal();
@@ -1975,6 +1975,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initMobileMenu();
   initMobileDock();
+  // initBerlinPulse(globalNews); // Removed from here (moved to loadNews)
   initShakeHistory();
   initSwipeToDismiss();
   initLangSwitcher();
@@ -1992,147 +1993,25 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearch();
   initTheme();
   initFilters();
-  initJobBoard();
-  initPolls();
 });
 
-// ── Service Worker Registration & Layout Fail-safe ─────────────
+// ÔöÇÔöÇ Service Worker Registration ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initServiceWorker() {
-  // Fix for Hero Height Collapse
-  const hero = document.getElementById('hero');
-  if (hero) {
-    const h = hero.offsetHeight;
-    if (h < 100) { // If height is collapsed
-      hero.style.height = '100vh';
-      hero.style.minHeight = '100vh';
-      hero.style.display = 'flex';
-      console.warn('⚠️ Hero height fail-safe activated');
-    }
-  }
-
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
+      // Register either name to avoid 404s
       navigator.serviceWorker.register('/service-worker.js')
         .then(registration => {
-          console.log('✅ SW Registered');
+          console.log('Ô£à SW Registered: ', registration);
         })
-        .catch(err => {
-          console.error('❌ SW Failed', err);
+        .catch(registrationError => {
+          console.error('ÔØî SW Registration failed: ', registrationError);
         });
     });
   }
 }
 
-// ── Job Board logic ─────────────────────────
-async function initJobBoard() {
-  const jobsGrid = document.getElementById('jobsGrid');
-  const jobFilters = document.querySelectorAll('.job-filter-btn');
-  if (!jobsGrid) return;
-
-  try {
-    const jobsRef = collection(db, "jobs");
-    const q = query(jobsRef, orderBy("createdAt", "desc"));
-    
-    onSnapshot(q, (snap) => {
-      let jobs = [];
-      snap.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
-      renderJobs(jobs);
-    });
-
-  } catch (error) {
-    console.error("Jobs error:", error);
-  }
-
-  jobFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      jobFilters.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const type = btn.dataset.type;
-      
-      getDocs(collection(db, "jobs")).then(snap => {
-        let jobs = [];
-        snap.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
-        if (type !== 'all') {
-            jobs = jobs.filter(j => j.type === type);
-        }
-        renderJobs(jobs);
-      });
-    });
-  });
-}
-
-function renderJobs(jobs) {
-  const jobsGrid = document.getElementById('jobsGrid');
-  if (!jobs.length) {
-    jobsGrid.innerHTML = '<p class="no-data">Gösterilecek ilan bulunmuyor.</p>';
-    return;
-  }
-  
-  jobsGrid.innerHTML = jobs.map(job => `
-    <div class="job-card reveal glass-panel">
-      <span class="job-badge">${job.type}</span>
-      <h3 class="job-title">${job.title}</h3>
-      <p class="job-company">${job.company}</p>
-      <div class="job-meta">
-        <span><i class="fas fa-map-marker-alt"></i> ${job.location || 'Berlin'}</span>
-      </div>
-      <a href="mailto:${job.contact}" class="job-apply-btn">Başvur / İletişime Geç</a>
-    </div>
-  `).join('');
-}
-
-window.openJobModal = () => {
-  if (!auth.currentUser) {
-    alert("İlan vermek için giriş yapmalısınız.");
-    openLoginModal();
-    return;
-  }
-  const title = prompt("İş Başlığı (örn: Garson):");
-  const company = prompt("Şirket/Mekan Adı:");
-  const location = prompt("Bölge (örn: Kreuzberg):");
-  const type = prompt("İş Tipi (Tam Zamanlı, Yarı Zamanlı, Minijob):", "Tam Zamanlı");
-  const contact = prompt("İletişim E-postası:");
-
-  if (title && company && contact) {
-    addDoc(collection(db, "jobs"), {
-      title, company, location, type, contact,
-      postedBy: auth.currentUser.uid,
-      createdAt: serverTimestamp()
-    }).then(() => {
-      alert("İlanınız başarıyla eklendi.");
-    }).catch(err => console.error(err));
-  }
-};
-
-// ── Bookmark System ─────────────────────────
-window.toggleBookmark = async (id, type) => {
-  if (!auth.currentUser) {
-    alert("Kaydetmek için giriş yapmalısınız.");
-    openLoginModal();
-    return;
-  }
-
-  const userRef = doc(db, "users", auth.currentUser.uid);
-  let bookmarks = JSON.parse(localStorage.getItem(`bookmarks_${auth.currentUser.uid}`) || '[]');
-  
-  if (bookmarks.includes(id)) {
-    bookmarks = bookmarks.filter(b => b !== id);
-    alert("Kaydedilenlerden kaldırıldı.");
-  } else {
-    bookmarks.push(id);
-    alert("Kaydedildi!");
-  }
-  
-  localStorage.setItem(`bookmarks_${auth.currentUser.uid}`, JSON.stringify(bookmarks));
-  await updateDoc(userRef, { bookmarks }).catch(async (err) => {
-    if (err.code === 'not-found') {
-        // Simple create if not exists
-        await setDoc(userRef, { bookmarks });
-    }
-  });
-};
-
-// ── Weekly Polls (Anket) Logic ─────────────────
+// ÔöÇÔöÇ Weekly Polls (Anket) Logic ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 async function initPolls() {
   const pollQuestionEl = document.getElementById('pollQuestion');
   const pollOptionsEl = document.getElementById('pollOptions');
@@ -2148,7 +2027,7 @@ async function initPolls() {
     const querySnapshot = await getDocs(q);
 
     if (querySnapshot.empty) {
-      pollQuestionEl.innerText = "Şu an aktif bir anket bulunmuyor.";
+      pollQuestionEl.innerText = "┼×u an aktif bir anket bulunmuyor.";
       return;
     }
 
@@ -2173,7 +2052,7 @@ async function initPolls() {
 
   } catch (error) {
     console.error("Poll error:", error);
-    pollQuestionEl.innerText = "Anket yüklenirken bir hata oluştu.";
+    pollQuestionEl.innerText = "Anket y├╝klenirken bir hata olu┼ƒtu.";
   }
 }
 
@@ -2228,7 +2107,7 @@ window.votePoll = async (pollId, optionIndex) => {
   }
 };
 
-// ── Interactive Map Initialization ──────────
+// ÔöÇÔöÇ Interactive Map Initialization ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initMap() {
   const mapEl = document.getElementById('berlinMap');
   // Check if Leaflet is loaded and mapEl exists
@@ -2244,12 +2123,12 @@ function initMap() {
   }).addTo(map);
 
   const locations = [
-    { name: "T.C. Berlin Başkonsolosluğu", coords: [52.4965, 13.2985], desc: "Resmi işlemleriniz için başkonsolosluk adresi." },
-    { name: "Kreuzberg Merkez (SO36)", coords: [52.5003, 13.4243], desc: "Küçük İstanbul olarak da bilinir, Türk nüfusunun yoğun yaşadığı, hareketli bölge." },
-    { name: "Brandenburg Kapısı", coords: [52.5163, 13.3777], desc: "Berlin'in sembolü ve en bilinen turistik noktası." },
-    { name: "Alexanderplatz", coords: [52.5219, 13.4132], desc: "Şehrin en kalabalık ve merkezi noktalarından biri." },
-    { name: "East Side Gallery", coords: [52.5050, 13.4396], desc: "Berlin Duvarı'nın en uzun kalıntısı ve açık hava galerisi." },
-    { name: "Neukölln", coords: [52.4811, 13.4354], desc: "Son yılların popüler, çok kültürlü ve kafeleriyle ünlü semti." }
+    { name: "T.C. Berlin Ba┼ƒkonsoloslu─ƒu", coords: [52.4965, 13.2985], desc: "Resmi i┼ƒlemleriniz i├ºin ba┼ƒkonsolosluk adresi." },
+    { name: "Kreuzberg Merkez (SO36)", coords: [52.5003, 13.4243], desc: "K├╝├º├╝k ─░stanbul olarak da bilinir, T├╝rk n├╝fusunun yo─ƒun ya┼ƒad─▒─ƒ─▒, hareketli b├Âlge." },
+    { name: "Brandenburg Kap─▒s─▒", coords: [52.5163, 13.3777], desc: "Berlin'in sembol├╝ ve en bilinen turistik noktas─▒." },
+    { name: "Alexanderplatz", coords: [52.5219, 13.4132], desc: "┼×ehrin en kalabal─▒k ve merkezi noktalar─▒ndan biri." },
+    { name: "East Side Gallery", coords: [52.5050, 13.4396], desc: "Berlin Duvar─▒'n─▒n en uzun kal─▒nt─▒s─▒ ve a├º─▒k hava galerisi." },
+    { name: "Neuk├Âlln", coords: [52.4811, 13.4354], desc: "Son y─▒llar─▒n pop├╝ler, ├ºok k├╝lt├╝rl├╝ ve kafeleriyle ├╝nl├╝ semti." }
   ];
 
   const customIcon = L.icon({
@@ -2268,7 +2147,7 @@ function initMap() {
   });
 }
 
-// ── Search Logic (Enhanced with Results Overlay & Shortcut) ──────
+// ÔöÇÔöÇ Search Logic (Enhanced with Results Overlay & Shortcut) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initSearch() {
   const toggle = document.getElementById('searchToggle');
   const wrapper = document.getElementById('searchInputWrapper');
@@ -2327,7 +2206,7 @@ function initSearch() {
 
   function renderSearchResults(news, events) {
     if (news.length === 0 && events.length === 0) {
-      resultsList.innerHTML = '<div class="search-no-results">Sonuç bulunamadı...</div>';
+      resultsList.innerHTML = '<div class="search-no-results">Sonu├º bulunamad─▒...</div>';
       return;
     }
 
@@ -2341,7 +2220,7 @@ function initSearch() {
             <i class="fas fa-newspaper"></i>
             <div>
               <div class="search-result-title">${n.title}</div>
-              <div class="search-result-meta">${n.source} • ${formatDate(n.date)}</div>
+              <div class="search-result-meta">${n.source} ÔÇó ${formatDate(n.date)}</div>
             </div>
           </div>
         `;
@@ -2356,7 +2235,7 @@ function initSearch() {
             <i class="fas fa-calendar-alt"></i>
             <div>
               <div class="search-result-title">${ev.title}</div>
-              <div class="search-result-meta">${ev.date || 'Yakında'} • ${ev.venue || 'Berlin'}</div>
+              <div class="search-result-meta">${ev.date || 'Yak─▒nda'} ÔÇó ${ev.venue || 'Berlin'}</div>
             </div>
           </div>
         `;
@@ -2367,7 +2246,7 @@ function initSearch() {
   }
 }
 
-// ── Theme Logic ─────────────────────────────
+// ÔöÇÔöÇ Theme Logic ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initTheme() {
 
   const toggle = document.getElementById('themeToggle');
@@ -2388,7 +2267,7 @@ function initTheme() {
   });
 }
 
-// ── Render Hero Featured Article ─────────────
+// ÔöÇÔöÇ Render Hero Featured Article ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function renderHeroFeatured(article) {
   const container = document.getElementById('heroFeaturedNews');
   if (!container || !article) return;
@@ -2408,7 +2287,7 @@ function renderHeroFeatured(article) {
   container.classList.add('visible');
 }
 
-// ── Category Filters Logic ─────────────────
+// ÔöÇÔöÇ Category Filters Logic ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 function initFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   filterBtns.forEach(btn => {
@@ -2428,7 +2307,7 @@ function initFilters() {
   });
 }
 
-// ── Initialize App ──────────────────────────
+// ÔöÇÔöÇ Initialize App ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
 document.addEventListener('DOMContentLoaded', () => {
   initJobBoard();
   initPolls();

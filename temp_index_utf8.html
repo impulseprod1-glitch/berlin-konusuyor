@@ -1,0 +1,772 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title id="metaTitle">Berlin Konu┼ƒuyor ÔÇö Berlin'in Nabz─▒, Sizin Sesiniz</title>
+  <meta name="title" content="Berlin Konu┼ƒuyor ÔÇö Berlin'in Nabz─▒, Sizin Sesiniz">
+  <meta name="description" id="metaDescription" content="Berlin'in en g├╝ncel haberleri, sokak r├Âportajlar─▒ ve kapsaml─▒ ┼ƒehir rehberi. Berlin'deki T├╝rk toplumu ve gurbet├ºiler i├ºin dijital medya platformu.">
+  <meta name="keywords" content="Berlin haberleri, Berlin T├╝rk toplumu, gurbet├ºi rehberi, Berlin sokak r├Âportajlar─▒, Berlin ya┼ƒam, Berlin etkinlik rehberi">
+  <meta name="author" content="Antigravity">
+  <link rel="canonical" href="https://berlinkonusuyor.com" />
+
+  <!-- PWA Metadata -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://berlinkonusuyor.com">
+  <meta property="og:title" id="ogTitle" content="Berlin Konu┼ƒuyor ÔÇö Berlin'in Nabz─▒, Sizin Sesiniz">
+  <meta property="og:description" id="ogDescription" content="Berlin'in en g├╝ncel haberleri, sokak r├Âportajlar─▒ ve kapsaml─▒ ┼ƒehir rehberi.">
+  <meta property="og:image" content="https://berlinkonusuyor.com/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://berlinkonusuyor.com">
+  <meta property="twitter:title" id="twitterTitle" content="Berlin Konu┼ƒuyor ÔÇö Berlin'in Nabz─▒, Sizin Sesiniz">
+  <meta property="twitter:description" id="twitterDescription" content="Berlin'in en g├╝ncel haberleri, sokak r├Âportajlar─▒ ve kapsaml─▒ ┼ƒehir rehberi.">
+  <meta property="twitter:image" content="https://berlinkonusuyor.com/og-image.jpg">
+
+  <!-- Multilingual (hreflang) -->
+  <link rel="alternate" hreflang="tr" href="https://berlinkonusuyor.com?lang=tr" />
+  <link rel="alternate" hreflang="de" href="https://berlinkonusuyor.com?lang=de" />
+  <link rel="alternate" hreflang="en" href="https://berlinkonusuyor.com?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://berlinkonusuyor.com" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Berlin Konu┼ƒuyor",
+    "url": "https://berlinkonusuyor.com",
+    "logo": "https://berlinkonusuyor.com/logo.png",
+    "sameAs": [
+      "https://youtube.com/@berlinkonusuyortv",
+      "https://www.instagram.com/berlin.konusuyor/",
+      "https://www.tiktok.com/@berlinkonusuyor"
+    ],
+    "description": "Berlin'deki T├╝rk toplumu i├ºin ba─ƒ─▒ms─▒z dijital medya platformu."
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Leaflet Map CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ SPLASH SCREEN ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div id="splashScreen" class="splash">
+    <div class="splash-content">
+      <span class="splash-logo">BERLIN<span class="logo-accent">KONU┼×UYOR</span></span>
+      <div class="splash-loader">
+        <div class="splash-loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ SCROLL PROGRESS ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ PREMIUM BACKGROUND ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div class="ambient-bg" id="ambientBg"></div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ CURSOR GLOW ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ NAVBAR ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">BERLIN<span class="logo-accent">KONU┼×UYOR</span></a>
+    <div class="nav-links" id="navLinks">
+      <div class="mobile-menu-header">
+        <span class="nav-logo">BERLIN<span class="logo-accent">KONU┼×UYOR</span></span>
+      </div>
+      <a href="#haberler" data-i18n="nav_news">Haberler</a>
+      <a href="#roportajlar" data-i18n="nav_interviews">R├Âportajlar</a>
+      <a href="#rehber" data-i18n="nav_guide">Rehber</a>
+      <a href="#iletisim" data-i18n="nav_contact">─░leti┼ƒim</a>
+      
+      <div class="mobile-menu-footer">
+        <div class="mobile-socials">
+          <a href="https://www.instagram.com/berlin.konusuyor/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@berlinkonusuyor" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://youtube.com/@berlinkonusuyortv" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-container" id="searchContainer">
+        <button class="search-toggle-btn" id="searchToggle" aria-label="Arama">
+          <i class="fas fa-search"></i>
+        </button>
+        <div class="search-input-wrapper" id="searchInputWrapper">
+          <input type="text" id="searchInput" placeholder="Haber veya rehber ara..." data-i18n-placeholder="search_placeholder">
+          <button class="search-close-btn" id="searchClose">&times;</button>
+        </div>
+        <div class="search-results-overlay" id="searchResultsOverlay">
+          <div class="search-results-list" id="searchResultsList"></div>
+          <div class="search-shortcut-hint"><kbd>Ctrl</kbd>+<kbd>K</kbd> ile arama a├º─▒n</div>
+        </div>
+      </div>
+      <button id="themeToggle" class="theme-toggle-btn" aria-label="Tema De─ƒi┼ƒtir">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn active" data-lang="tr">TR</button>
+        <span class="lang-sep">┬À</span>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <span class="lang-sep">┬À</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button id="loginBtn" class="nav-login-btn magnetic-btn" onclick="openLoginModal()">Giri┼ƒ Yap</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ NEWS TICKER ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div class="ticker-bar">
+    <span class="ticker-label" data-i18n="ticker_label">SON DAK─░KA</span>
+    <div class="ticker-track">
+      <div class="ticker-content" id="tickerContent">
+        <!-- main.js taraf─▒ndan doldurulur -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ HERO ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Dijital Medya Platformu</p>
+        <h1 class="hero-title">
+          <span class="hero-line" data-i18n="hero_line1">Ger├ºek ─░nsanlar,</span>
+          <span class="hero-line hero-line-accent" data-i18n="hero_line2">Ger├ºek Hikayeler.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero_sub">Sokak r├Âportajlar─▒, g├╝ncel haberler ve ┼ƒehir rehberi ÔÇö hepsi bir arada.</p>
+        <a href="#haberler" class="hero-cta magnetic-btn" data-i18n="hero_cta">Ke┼ƒfet</a>
+      </div>
+      <div class="hero-featured-wrapper reveal" id="heroFeaturedNews">
+        <!-- JS taraf─▒ndan doldurulacak -->
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- Section Wave Divider -->
+  <div class="section-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1440,40 L1440,60 L0,60 Z" fill="var(--bg-primary)"/></svg>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ SON HABERLER (Dinamik) ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="news-section section-padding" id="haberler">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="section_news">G├╝ndem</span>
+        <h2 class="section-title" data-i18n="news_title">Berlin'de Neler Oluyor?</h2>
+        
+        <!-- ÔöÇÔöÇ Berlin Pulse (AI Focus) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ -->
+        <div class="berlin-pulse-container" id="berlinPulse">
+          <!-- AI bubbles will be injected here -->
+        </div>
+
+        <div class="news-filters-wrapper">
+          <div class="news-filters" id="newsFilters">
+            <button class="filter-btn active" data-category="all" data-i18n="filter_all">T├╝m├╝</button>
+            <button class="filter-btn" data-category="politics" data-i18n="filter_politics">Siyaset</button>
+            <button class="filter-btn" data-category="culture" data-i18n="filter_culture">K├╝lt├╝r</button>
+            <button class="filter-btn" data-category="economy" data-i18n="filter_economy">Ekonomi</button>
+            <button class="filter-btn" data-category="lifestyle" data-i18n="filter_lifestyle">Ya┼ƒam</button>
+          </div>
+        </div>
+        <div class="news-meta-info">
+          <span class="news-count" id="newsCount"></span>
+          <span class="news-badge" id="newsSource">TRT Haber</span>
+        </div>
+      </div>
+      
+      <div class="news-grid" id="newsGrid">
+        <!-- Skeleton loaders initially -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ ISTATISTIKLER ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="section" id="statsBar">
+    <div class="stats-grid reveal">
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="150000" data-suffix="+">0</h3>
+        <p class="stat-label" data-i18n="stat_reach">Ayl─▒k Eri┼ƒim</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="500" data-suffix="">0</h3>
+        <p class="stat-label" data-i18n="stat_videos">Video</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="45000" data-suffix="+">0</h3>
+        <p class="stat-label" data-i18n="stat_subscribers">Abone</p>
+      </div>
+      <div class="stat-item glass-panel">
+        <h3 class="stat-number" data-target="3" data-suffix="">0</h3>
+        <p class="stat-label" data-i18n="stat_languages">Dil</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ YOUTUBE KANALI ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="section section-dark" id="roportajlar">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="interviews_tag">Video</span>
+      <h2 class="section-title" data-i18n="interviews_title">R├Âportajlar</h2>
+    </div>
+    <div class="youtube-section reveal">
+      <div class="yt-main-grid">
+        <div class="yt-player-container reveal">
+          <div class="yt-player-glow"></div>
+          <iframe
+            id="ytPlayer"
+            src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A"
+            title="Berlin Konu┼ƒuyor TV"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="yt-info-card glass-panel reveal">
+          <div class="yt-card-header">
+            <div class="live-badge">
+              <span class="pulsate-dot"></span> LIVE
+            </div>
+            <span class="yt-channel-meta">24/7 Berlin Info</span>
+          </div>
+          <h3 class="yt-title"><i class="fab fa-youtube color-red"></i> Berlin Konu┼ƒuyor TV</h3>
+          <p class="yt-desc" data-i18n="yt_desc">Sokak r├Âportajlar─▒, Berlin ya┼ƒam─▒ ve ki┼ƒisel deneyimlerimi payla┼ƒt─▒─ƒ─▒m kanal─▒ma ho┼ƒ geldiniz.</p>
+
+          <a href="https://www.youtube.com/@BerlinKonusuyor" target="_blank" rel="noopener" class="yt-subscribe-btn magnetic-btn">
+            <span data-i18n="yt_subscribe">KANALIMA ABONE OLUN</span> <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Discovery Ribbon (Dinamik) -->
+      <div class="yt-discovery-ribbon" id="podcastGrid">
+        <!-- Podcast kartlar─▒ main.js loadPodcasts() taraf─▒ndan buraya y├╝klenir -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ AI DASHBOARD WIDGETS ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="ai-dashboard" id="dashboard">
+    <div class="dashboard-container">
+      <div class="dashboard-header reveal">
+        <div class="ai-pulse"></div>
+        <h2 class="dashboard-title" data-i18n="ai_dashboard_title">Berlin AI Insight</h2>
+        <div class="dashboard-status">
+          <span class="status-dot"></span>
+          <span class="status-text">LIVE</span>
+        </div>
+      </div>
+      <div class="dashboard-grid reveal">
+
+        <!-- Widget 1: Hava Durumu & Vibe -->
+        <div class="widget widget-weather">
+          <div class="widget-glow"></div>
+          <div class="widget-header">
+            <span class="widget-icon">­ƒîñ´©Å</span>
+            <span class="widget-title" data-i18n="widget_weather_title">Hava Durumu & Vibe</span>
+          </div>
+          <div class="widget-content">
+            <div class="weather-main">
+              <span class="weather-temp" id="berlinTemp">ÔÇö</span>
+              <span class="weather-temp" style="margin-right: 5px;">|</span>
+              <span class="weather-desc" id="weatherDesc">Y├╝kleniyor...</span>
+            </div>
+            <div class="ai-advice" id="aiWeatherAdvice">Berlin'in nabz─▒n─▒ hissediyoruz...</div>
+          </div>
+          <div class="widget-shimmer"></div>
+        </div>
+
+        <!-- Widget 2: AI Haber ├ûzeti -->
+        <div class="widget widget-brief">
+          <div class="widget-glow"></div>
+          <div class="widget-header">
+            <span class="widget-icon">­ƒºá</span>
+            <span class="widget-title" data-i18n="widget_brief_title">AI Haber ├ûzeti</span>
+          </div>
+          <div class="widget-content">
+            <p class="ai-brief-text" id="aiBriefText">G├╝n├╝n ├Âne ├º─▒kan geli┼ƒmeleri analiz ediliyor...</p>
+          </div>
+          <div class="widget-footer">
+            <span class="widget-badge">GPT Powered</span>
+          </div>
+          <div class="widget-shimmer"></div>
+        </div>
+
+        <!-- Widget 3: Berlin Saati -->
+        <div class="widget widget-time">
+          <div class="widget-glow"></div>
+          <div class="widget-header">
+            <span class="widget-icon">ÔÅ░</span>
+            <span class="widget-title" data-i18n="widget_time_title">Berlin Saati</span>
+          </div>
+          <div class="widget-content">
+            <div class="clock-display">
+              <span class="clock-time" id="berlinClock">--:--:--</span>
+              <span class="clock-zone">CET ┬À Europe/Berlin</span>
+            </div>
+            <p class="clock-vibe" data-i18n="widget_time_desc">Berlin'de hayat devam ediyor.</p>
+          </div>
+          <div class="widget-shimmer"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Wave Divider -->
+  <div class="section-wave section-wave-up">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ HAFTALIK ANKET (POLLS) ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="section section-dark" id="anket">
+    <div class="section-header reveal">
+      <span class="section-tag">Topluluk</span>
+      <h2 class="section-title">Haftal─▒k Berlin Anketi</h2>
+      <p class="news-auto-badge">Sesinizi duyurun, sonu├ºlar─▒ an─▒nda g├Âr├╝n</p>
+    </div>
+    
+    <div class="poll-container reveal">
+      <div class="poll-card glass-panel" id="pollCard">
+        <h3 class="poll-question" id="pollQuestion">Y├╝kleniyor...</h3>
+        <div class="poll-options" id="pollOptions">
+          <!-- Dinamik se├ºenekler buraya gelecek -->
+        </div>
+        <div class="poll-footer">
+          <span class="poll-total" id="pollTotal">Toplam 0 oy</span>
+          <button class="poll-reset-btn hidden" id="pollReset">Tekrar Oy Ver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Wave Divider -->
+  <div class="section-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1440,40 L1440,60 L0,60 Z" fill="var(--bg-primary)"/></svg>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ ─░┼× ─░LANLARI (JOB BOARD) ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="section" id="is-ilanlari">
+    <div class="section-header reveal">
+      <span class="section-tag">Kariyer</span>
+      <h2 class="section-title">Berlin ─░┼ƒ ─░lanlar─▒</h2>
+      <p class="news-auto-badge">Topluluk taraf─▒ndan payla┼ƒ─▒lan g├╝ncel ilanlar</p>
+    </div>
+    
+    <div class="jobs-container reveal">
+      <div class="jobs-toolbar">
+        <div class="jobs-filters" id="jobFilters">
+          <button class="job-filter-btn active" data-type="all">T├╝m├╝</button>
+          <button class="job-filter-btn" data-type="Tam Zamanl─▒">Tam Zamanl─▒</button>
+          <button class="job-filter-btn" data-type="Yar─▒ Zamanl─▒">Yar─▒ Zamanl─▒</button>
+          <button class="job-filter-btn" data-type="Minijob">Minijob</button>
+        </div>
+        <button class="post-job-btn magnetic-btn" onclick="openJobModal()">─░lan Ver</button>
+      </div>
+      
+      <div class="jobs-grid" id="jobsGrid">
+        <div class="skeleton-job"></div>
+        <div class="skeleton-job"></div>
+        <div class="skeleton-job"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ ETK─░NL─░KLER ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="section" id="etkinlikler">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="events_cal_tag">Takvim</span>
+      <h2 class="section-title" data-i18n="events_cal_title">Yakla┼ƒan Etkinlikler</h2>
+      <p class="news-auto-badge" data-i18n="events_cal_desc">Berlin'de bu hafta sonu neler var?</p>
+    </div>
+    <div class="events-carousel reveal">
+      <div class="events-track" id="eventsTrack">
+        <!-- Events main.js taraf─▒ndan dinamik olarak y├╝klenir -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ BERL─░N REHBER─░ ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="section" id="rehber">
+    <div class="section-header reveal">
+      <span class="section-tag" data-i18n="guide_tag">Rehber</span>
+      <h2 class="section-title" data-i18n="guide_title">Berlin Rehberi</h2>
+    </div>
+    <div class="guide-grid reveal reveal-stagger">
+      <a href="#" class="guide-item">
+        <div class="guide-icon">­ƒÅá</div>
+        <h3 class="guide-label" data-i18n="guide_housing">Ev Bulma</h3>
+        <p class="guide-desc" data-i18n="guide_housing_desc">Kiral─▒k ev arama, ba┼ƒvuru s├╝reci ve ipu├ºlar─▒.</p>
+      </a>
+      <a href="#" class="guide-item">
+        <div class="guide-icon">­ƒôï</div>
+        <h3 class="guide-label" data-i18n="guide_official">Resmi ─░┼ƒlemler</h3>
+        <p class="guide-desc" data-i18n="guide_official_desc">Anmeldung, vize, ├ºal─▒┼ƒma izni ve daha fazlas─▒.</p>
+      </a>
+      <a href="#" class="guide-item">
+        <div class="guide-icon">­ƒÄ¡</div>
+        <h3 class="guide-label" data-i18n="guide_events">Etkinlikler</h3>
+        <p class="guide-desc" data-i18n="guide_events_desc">Haftal─▒k k├╝lt├╝r, sanat ve sosyal etkinlikler.</p>
+      </a>
+      <a href="#" class="guide-item">
+        <div class="guide-icon">­ƒÜç</div>
+        <h3 class="guide-label" data-i18n="guide_transport">Ula┼ƒ─▒m</h3>
+        <p class="guide-desc" data-i18n="guide_transport_desc">U-Bahn, S-Bahn, bilet ├ºe┼ƒitleri ve rotalar.</p>
+      </a>
+      <a href="#" class="guide-item">
+        <div class="guide-icon">­ƒÆ╝</div>
+        <h3 class="guide-label" data-i18n="guide_jobs">─░┼ƒ Bulmak</h3>
+        <p class="guide-desc" data-i18n="guide_jobs_desc">─░┼ƒ arama, CV haz─▒rlama ve m├╝lakat ipu├ºlar─▒.</p>
+      </a>
+      <a href="#" class="guide-item">
+        <div class="guide-icon">­ƒì¢´©Å</div>
+        <h3 class="guide-label" data-i18n="guide_food">Yeme & ─░├ºme</h3>
+        <p class="guide-desc" data-i18n="guide_food_desc">En iyi restoranlar, kafeler ve gece hayat─▒.</p>
+      </a>
+    </div>
+
+    <!-- Interactive City Map Section -->
+    <div class="map-container reveal">
+      <div class="map-header">
+        <span class="section-tag" data-i18n="map_tag">Ke┼ƒfet</span>
+        <h3 class="map-title" data-i18n="map_title">─░nteraktif ┼×ehir Haritas─▒</h3>
+        <p class="map-desc" data-i18n="map_desc">├ûnemli lokasyonlar─▒, konsolosluklar─▒ ve Berlin'in ikonik mekanlar─▒n─▒ harita ├╝zerinde inceleyin.</p>
+      </div>
+      <div class="map-wrapper glass-panel">
+        <div id="berlinMap"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Wave Divider -->
+  <div class="section-wave section-wave-up">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
+  </div>
+
+  
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ TOPLULUK FORUMU ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="section" id="topluluk">
+    <div class="section-header reveal">
+      <span class="section-tag">Topluluk</span>
+      <h2 class="section-title">Soru & Cevap</h2>
+      <p class="news-auto-badge">Berlinliler yard─▒mla┼ƒ─▒yor</p>
+    </div>
+    <div class="qa-container reveal">
+      <div class="qa-toolbar">
+        <div class="qa-filters" id="qaFilters">
+          <button class="qa-filter-btn active" data-category="all">T├╝m├╝</button>
+          <button class="qa-filter-btn" data-category="Ev & Kira">­ƒÅá Ev</button>
+          <button class="qa-filter-btn" data-category="Vize">­ƒøé Vize</button>
+          <button class="qa-filter-btn" data-category="Ula┼ƒ─▒m">­ƒÜç Ula┼ƒ─▒m</button>
+          <button class="qa-filter-btn" data-category="─░┼ƒ">­ƒÆ╝ ─░┼ƒ</button>
+          <button class="qa-filter-btn" data-category="Genel">­ƒÆ¼ Genel</button>
+        </div>
+        <div class="qa-sort">
+          <button class="qa-sort-btn active" data-sort="newest"><i class="fas fa-clock"></i> Yeni</button>
+          <button class="qa-sort-btn" data-sort="popular"><i class="fas fa-fire"></i> Pop├╝ler</button>
+        </div>
+      </div>
+      <form id="qaForm" class="qa-form glass-panel">
+        <input type="text" id="qaName" class="qa-input" placeholder="─░sminiz (─░ste─ƒe ba─ƒl─▒)" />
+        <textarea id="qaQuestion" class="qa-textarea" placeholder="Toplulu─ƒa bir soru sorun..." required></textarea>
+        <div class="qa-form-footer">
+          <select id="qaCategory" class="qa-category-select" aria-label="Kategori Se├ºi">
+            <option value="Genel">­ƒÆ¼ Genel</option>
+            <option value="Ev & Kira">­ƒÅá Ev & Kira</option>
+            <option value="Vize">­ƒøé Vize</option>
+            <option value="Ula┼ƒ─▒m">­ƒÜç Ula┼ƒ─▒m</option>
+            <option value="─░┼ƒ">­ƒÆ╝ ─░┼ƒ</option>
+          </select>
+          <button type="submit" class="qa-submit magnetic-btn">Soruyu G├Ânder</button>
+        </div>
+      </form>
+      <div id="qaFeed" class="qa-feed">
+        <!-- JS ile doldurulacak -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ NEWSLETTER ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="newsletter-container reveal">
+      <div class="newsletter-glow"></div>
+      <div class="newsletter-content">
+        <span class="newsletter-tag" data-i18n="newsletter_tag">B├╝lten</span>
+        <h2 class="newsletter-title" data-i18n="newsletter_title">Berlin'den haberdar ol</h2>
+        <p class="newsletter-desc" data-i18n="newsletter_desc">En g├╝ncel haberler, etkinlikler ve rehber i├ºeriklerini do─ƒrudan e-postan─▒za g├Ânderin.</p>
+        <form class="newsletter-form" id="newsletterForm" action="https://formsubmit.co/hello@berlinkonusuyor.com" method="POST">
+          <input type="email" name="email" class="newsletter-input" placeholder="E-posta adresiniz" data-i18n-placeholder="newsletter_placeholder" required />
+          <button type="submit" class="newsletter-btn magnetic-btn" data-i18n="newsletter_btn">Abone Ol</button>
+        </form>
+        <p id="newsletterMessage" class="newsletter-message"></p>
+        <p class="newsletter-privacy" data-i18n="newsletter_privacy">Gizlili─ƒinize sayg─▒ duyuyoruz. ─░stedi─ƒiniz zaman abonelikten ├º─▒kabilirsiniz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ FOOTER ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <footer class="footer" id="iletisim">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-logo">BERLIN<span class="logo-accent">KONU┼×UYOR</span></span>
+        <p class="footer-tagline" data-i18n="footer_tagline">Berlin'in nabz─▒n─▒ tutan dijital medya platformu.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/berlin.konusuyor/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@berlinkonusuyor" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.21a8.16 8.16 0 004.76 1.51v-3.4a4.85 4.85 0 01-1-.63z"/></svg>
+        </a>
+        <a href="https://youtube.com/@berlinkonusuyortv" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M23.5 6.2a3.02 3.02 0 00-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.56A3.02 3.02 0 00.5 6.2 31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.8 3.02 3.02 0 002.12 2.14c1.84.56 9.38.56 9.38.56s7.54 0 9.38-.56a3.02 3.02 0 002.12-2.14A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>┬® 2026 Berlin Konu┼ƒuyor. <span data-i18n="footer_rights">T├╝m haklar─▒ sakl─▒d─▒r.</span></p>
+      <div class="footer-legal">
+        <a href="#" onclick="openLegal('impressum')" data-i18n="legal_impressum">Impressum</a>
+        <a href="#" onclick="openLegal('privacy')" data-i18n="legal_privacy">Gizlilik Politikas─▒</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ LEGAL MODAL ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div id="legalModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeLegal()">&times;</span>
+      <div id="legalContent" class="legal-text">
+        <!-- JS ile doldurulurk -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ LOGIN / PROFILE MODAL ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div id="loginModal" class="modal login-modal">
+    <div class="modal-content glass-panel login-modal-content">
+      <span class="modal-close" onclick="closeLoginModal()">&times;</span>
+      
+      <!-- Login View -->
+      <div id="loginView">
+        <h2 class="login-modal-title">Giri┼ƒ Yap</h2>
+        <p class="login-modal-subtitle">Favori i├ºeriklerini kaydetmek i├ºin giri┼ƒ yap.</p>
+        
+        <button class="magnetic-btn login-google-btn" onclick="mockLogin()" aria-label="Google ile Giri┼ƒ Yap">
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20" height="20" alt="Google" aria-hidden="true"> Google ile Giri┼ƒ Yap
+        </button>
+        
+        <p class="login-modal-disclaimer">
+          *Bu bir demo giri┼ƒidir. Bilgileriniz taray─▒c─▒n─▒zda (LocalStorage) tutulmaktad─▒r.
+        </p>
+      </div>
+
+      <!-- Profile View (Hidden initially) -->
+      <div id="profileView" class="hidden-view">
+        <div class="profile-avatar">
+          BK
+        </div>
+        <h2 class="profile-title">Ho┼ƒ Geldiniz!</h2>
+        <p class="profile-email" id="profileEmail">demo@berlinkonusuyor.com</p>
+        
+        <div class="profile-bookmarks">
+          <h4 class="profile-bookmarks-title"><i class="fas fa-bookmark" aria-hidden="true"></i> Kaydedilenler (Demo)</h4>
+          <ul class="profile-bookmarks-list">
+            <li>- Kreuzberg En ─░yi Kahveciler</li>
+            <li>- Hafta Sonu Techno Etkinli─ƒi</li>
+          </ul>
+        </div>
+
+        <button class="magnetic-btn profile-logout-btn" onclick="mockLogout()">
+          ├ç─▒k─▒┼ƒ Yap
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ NEWS MODAL ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div id="newsModal" class="news-modal">
+    <div class="news-modal-progress" id="modalProgress"></div>
+    <div class="news-modal-content">
+      <button class="news-modal-close" onclick="closeNewsModal()">&times;</button>
+      <div class="news-modal-header-actions">
+          <button id="ttsBtn" class="tts-btn" onclick="toggleTTS()" title="Sesli Dinle">
+            <i class="fas fa-volume-up"></i> <span data-i18n="listen_news">Dinle</span>
+          </button>
+      </div>
+      <div class="news-modal-img" id="newsModalImg"></div>
+      <div class="news-modal-body">
+        <div class="news-meta">
+          <span class="news-source-tag" id="newsModalSource"></span>
+          <span class="news-date" id="newsModalDate"></span>
+        </div>
+        <h2 class="news-headline-large news-modal-title" id="newsModalTitle"></h2>
+        <div class="news-modal-text" id="newsModalDesc"></div>
+        <a href="#" target="_blank" rel="noopener" id="newsModalLink" class="magnetic-btn news-modal-btn">Habere Git <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ PODCAST AUDIO PLAYER ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <div id="podcastPlayer" class="podcast-player glass-panel">
+    <button class="player-close" onclick="closePodcast()" aria-label="Kapat">&times;</button>
+    <div class="player-info">
+      <div id="playerThumb" class="player-thumb"></div>
+      <div class="player-text">
+        <span class="player-title" id="playerTitle">Y├╝kleniyor...</span>
+        <span class="player-desc" id="playerDesc">Berlin Konu┼ƒuyor</span>
+      </div>
+    </div>
+    <div class="player-controls">
+      <button class="player-btn" onclick="skipPodcast(-10)" aria-label="Geri Sar─▒ 10s" title="10s Geri"><i class="fas fa-undo-alt"></i></button>
+      <button class="player-btn play-pause-btn" id="playPauseBtn" onclick="togglePlay()" aria-label="Oynat/Durdur" title="Oynat/Durdur"><i class="fas fa-play"></i></button>
+      <button class="player-btn" onclick="skipPodcast(30)" aria-label="─░leri Sar─▒ 30s" title="30s ─░leri"><i class="fas fa-redo-alt"></i></button>
+    </div>
+    <div class="player-progress-container">
+      <span class="player-time" id="currentTime">0:00</span>
+      <div class="player-progress-bg" id="progressBg">
+        <div class="player-progress-fill" id="progressFill"></div>
+      </div>
+      <span class="player-time" id="totalTime">0:00</span>
+    </div>
+    <audio id="mainAudio" src=""></audio>
+  </div>
+
+
+  <!-- ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ AI CHATBOT WIDGET ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ -->
+  <button id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Berlin Asistan─▒" onclick="toggleChatbot()">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <div id="chatbotWindow" class="chatbot-window glass-panel">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <h4>Berlin Asistan─▒</h4>
+          <span>Yapay Zeka Destekli</span>
+        </div>
+      </div>
+      <button class="chatbot-close" onclick="toggleChatbot()">&times;</button>
+    </div>
+    
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-msg bot-msg">
+        Merhaba ­ƒæï Ben Berlin Konu┼ƒuyor Asistan─▒. ┼×u an geli┼ƒtirme a┼ƒamas─▒nday─▒m. ─░htiya├ºlar─▒n─▒z i├ºin do─ƒrudan <a href="mailto:hello@berlinkonusuyor.com" class="chatbot-email-link">hello@berlinkonusuyor.com</a> adresinden bize yazabilirsiniz.
+      </div>
+      <!-- Messages will appear here -->
+    </div>
+    
+    <div class="chatbot-quick-replies" id="chatbotQuickReplies">
+      <button class="quick-reply-btn" data-query="Anmeldung">­ƒôï Anmeldung</button>
+      <button class="quick-reply-btn" data-query="Ev bulma">­ƒÅá Ev Bulma</button>
+      <button class="quick-reply-btn" data-query="Ula┼ƒ─▒m">­ƒÜç Ula┼ƒ─▒m</button>
+      <button class="quick-reply-btn" data-query="Vize">­ƒøé Vize</button>
+      <button class="quick-reply-btn" data-query="Yeme i├ºme">­ƒì¢´©Å Restoran</button>
+      <button class="quick-reply-btn" data-query="─░┼ƒ bulma">­ƒÆ╝ ─░┼ƒ Bulma</button>
+    </div>
+    <form id="chatbotForm" class="chatbot-input-area">
+      <input type="text" id="chatbotInput" placeholder="Berlin hakk─▒nda bir ┼ƒey sorun..." autocomplete="off" />
+      <button type="submit" aria-label="G├Ânder"><i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- ÔöÇÔöÇ History Portal Modal (Shake Feature) ÔöÇÔöÇÔöÇÔöÇÔöÇ -->
+  <div class="modal" id="historyModal">
+    <div class="modal-overlay" onclick="closeHistoryModal()"></div>
+    <div class="modal-container history-portal-container">
+      <div class="history-flare"></div>
+      <button class="modal-close" onclick="closeHistoryModal()">&times;</button>
+      <div class="history-content">
+        <div class="history-date-tag" id="historyDate">16 MART 1920</div>
+        <div class="history-newspaper-header">BERLINER ZEITUNG</div>
+        <div class="history-image" id="historyImage"></div>
+        <h2 class="history-title" id="historyTitle">Berlin'de Tarihi Bir G├╝n</h2>
+        <div class="history-text" id="historyText">
+          Sallad─▒─ƒ─▒n─▒zda ortaya ├º─▒kacak gizemli bir tarih...
+        </div>
+        <div class="history-footer">
+          <span class="history-source" data-i18n="history_archive">Berlin Ar┼ƒivi</span>
+          <div class="history-share">
+            <i class="fas fa-share-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shake Hint (Mobile Only) -->
+  <div class="shake-hint" id="shakeHint">
+    <i class="fas fa-mobile-alt"></i>
+    <span data-i18n="shake_hint">Tarihe yolculuk i├ºin telefonu salla!</span>
+  </div>
+
+  <!-- ÔöÇÔöÇ Mobile Floating Dock ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ -->
+  <div class="mobile-dock" id="mobileDock">
+    <a href="#" class="dock-item active" aria-label="Home">
+      <i class="fas fa-home"></i>
+      <span class="dock-label">Home</span>
+    </a>
+    <a href="#haberler" class="dock-item" aria-label="News">
+      <i class="fas fa-newspaper"></i>
+      <span class="dock-label">Haberler</span>
+    </a>
+    <a href="#ai-insights" class="dock-item" id="dockAiBtn" aria-label="AI Insight">
+      <i class="fas fa-robot"></i>
+      <span class="dock-label">AI</span>
+    </a>
+    <a href="#berlinMap" class="dock-item" aria-label="Map">
+      <i class="fas fa-map-marked-alt"></i>
+      <span class="dock-label">Harita</span>
+    </a>
+    <button class="dock-item" id="dockSearchBtn" aria-label="Search">
+      <i class="fas fa-search"></i>
+      <span class="dock-label">Ara</span>
+    </button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
