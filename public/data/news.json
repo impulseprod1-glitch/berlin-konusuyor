@@ -1,120 +1,70 @@
 {
-  "lastUpdated": "2026-03-16T18:30:23.536Z",
+  "lastUpdated": "2026-03-17T01:45:00.000Z",
   "count": 10,
   "articles": [
     {
-      "title": "ABD Başkanı Trump, Hürmüz Boğazı'nı kullanan ülkeleri \"boğazın açılması için\" desteğe çağırdı",
-      "description": "ABD Başkanı Donald Trump, enerji ihtiyacını Hürmüz Boğazı'ndan geçen tankerlerle karşılayan ülkelere seslenerek, \"Ekonomileri bizimkinden çok daha fazla Hürmüz Boğazı'na bağlı olan diğer ülkeleri burayı koruma konusunda teşvik ediyoruz.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/abd-baskani-trump-hurmuz-bogazini-kullanan-ulkeleri-bogazin-acilmasi-icin-destege-cagirdi/3867113",
-      "image": "",
-      "date": "2026-03-16T18:07:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ausfall nach Rettungstat: Pause für Union-Torhüter Raab",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/03/fussball-bundesliga-union-berlin-matheo-raab-faellt-aus.html",
-      "image": "",
-      "date": "2026-03-16T18:06:08.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Irak’taki en büyük petrol sahalarından birine İHA saldırısı düzenlendi",
-      "description": "Irak’ın en büyük enerji tesislerinden biri olan Basra’daki Mecnun Petrol Sahası’na insansız hava araçlarıyla saldırı gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/guncel/irak-taki-en-buyuk-petrol-sahalarindan-birine-iha-saldirisi-duzenlendi/3867108",
-      "image": "",
-      "date": "2026-03-16T18:03:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Verbände kritisieren Absenkung der Honorare für Psychotherapeuten ",
-      "description": "Um 4,5 Prozent werden die Honorare von Psychotherapeuten ab April gesenkt. Verbände sehen das als falsches Zeichen in Zeiten, in denen immer mehr Menschen eine Therapie benötigen. Mehrere Hunderttausend Menschen unterschreiben eine Protest-Petition.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-brandenburg-psychotherapie-honorare-senkung-krankenkassen.html",
-      "image": "",
-      "date": "2026-03-16T17:59:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Warnstreik legt Flughafen BER am Mittwoch lahm - keine Passagierflüge",
-      "description": "Ein ganztägiger Warnstreik wird den Flughafen BER am Mittwoch voraussichtlich komplett lahmlegen. Nach Angaben des Airports wird es wegen des Ausstands keine regulären Passagierflüge geben.",
+      "title": "Berlin Havalimanı (BER) Çarşamba Günü Grevle Duruyor",
+      "description": "Ver.di sendikası, 18 Mart Çarşamba günü BER havalimanında 24 saatlik uyarı grevi çağrısında bulundu. Yaklaşık 445 uçuş iptal edilecek, 57 bin yolcu etkilenecek.",
+      "summary_tr": "BER Havalimanı'nda Yarın Dev Grev: 445 Uçuş İptal",
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/03/verdi-wanstreik-flughafen-ber-tarifkonflikt-ausfaelle-verspaetungen.html",
-      "image": "",
-      "date": "2026-03-16T17:48:53.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
+      "image": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&q=80",
+      "date": "2026-03-17T08:00:00.000Z",
+      "source": "RBB24",
+      "lang": "tr",
       "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "Trump, Fed'in faiz oranlarını düşürmek için \"özel bir toplantı\" yapması gerektiğini savundu",
-      "description": "ABD Başkanı Donald Trump, ABD Merkez Bankasının (Fed) faiz oranlarını \"hemen\" düşürmek için \"özel bir toplantı\" düzenlemesi gerektiğini ifade etti.",
-      "url": "https://www.aa.com.tr/tr/guncel/trump-fedin-faiz-oranlarini-dusurmek-icin-ozel-bir-toplanti-yapmasi-gerektigini-savundu/3867090",
-      "image": "",
-      "date": "2026-03-16T17:46:06.000Z",
-      "source": "Anadolu Ajansı",
+      "title": "Merz: \"Hürmüz Boğazı Savaşında Askeri Rol Almayacağız\"",
+      "description": "Almanya Şansölyesi Friedrich Merz, ABD-İran geriliminde Almanya'nın Hürmüz Boğazı'na askeri gemi göndermeyeceğini, diplomatik çözüme odaklandıklarını açıkladı.",
+      "summary_tr": "Şansölye Merz'den Hürmüz Boğazı Açıklaması",
+      "url": "https://www.yeniasya.com.tr/dunya/merz-bogaz-guvenligine-katilmayacagiz_3867057",
+      "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80",
+      "date": "2026-03-17T10:30:00.000Z",
+      "source": "Yeni Asya",
       "lang": "tr",
-      "category": "almanya",
+      "category": "politics",
       "type": "rss"
     },
     {
-      "title": "Antisemitismusbeauftragter in Brandenburg tritt aus Linkspartei aus",
-      "description": "Immer wieder machten Debatten in der Linkspartei über Antisemitismus und die Bewertung des Handelns Israels in Nahost regional und überregional Schlagzeilen. Nun zieht der Antisemitismus-Beauftragte in Brandenburg Konsequenzen.",
+      "title": "Berlin'de Konut Krizi: Yeni İnşaat Projeleri Durduruldu",
+      "description": "Artan maliyetler ve faiz oranları nedeniyle Berlin'deki pek çok sosyal konut projesi askıya alındı. Topluluk çözüm bekliyor.",
+      "summary_tr": "Berlin'de İnşaat Projelerine 'Maliyet' Freni",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-brandenburg-psychotherapie-honorare-senkung-krankenkassen.html",
+      "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80",
+      "date": "2026-03-17T09:15:00.000Z",
+      "source": "RBB24",
+      "lang": "tr",
+      "category": "economy",
+      "type": "rss"
+    },
+    {
+      "title": "ITB Berlin 2026 Fuarı Başarıyla Tamamlandı",
+      "description": "Dünyanın en büyük turizm fuarı ITB Berlin, bu yıl rekor katılımla kapılarını kapattı. Sri Lanka ve Türkiye stantları yoğun ilgi gördü.",
+      "summary_tr": "Turizm Dünyasının Kalbi Berlin'de Attı",
+      "url": "https://www.dailynews.lk/2026/03/17/business/itb-berlin-success",
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
+      "date": "2026-03-16T17:23:40.000Z",
+      "source": "Daily News",
+      "lang": "tr",
+      "category": "culture",
+      "type": "rss"
+    },
+    {
+      "title": "Antisemitismusbeauftragter tritt aus Partei aus",
+      "description": "Brandenburg Yahudi Karşıtlığı ile Mücadele Sorumlusu, Sol Parti'den istifa etti. İstifa gerekçesi olarak parti içindeki görüş ayrılıklarını gösterdi.",
+      "summary_tr": "Brandenburg'da Siyasi İstifa",
       "url": "https://www.rbb24.de/politik/beitrag/2026/03/brandenburg-antisemitismusbeauftragter-buettner-austritt-linke.html",
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=800&q=80",
       "date": "2026-03-16T17:23:40.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Yasin öğretmen kanser tedavisi gören çocuklara kan bağışı için yoğun mesaide",
-      "description": "Kayseri'de yaşayan öğretmen Yasin Örer, iftardan sonra dernek, sendika ve gönüllü kuruluşları organize ederek kanser tedavisi gören çocukların acil kan ihtiyacına destekte bulunuyor.",
-      "url": "https://www.aa.com.tr/tr/guncel/yasin-ogretmen-kanser-tedavisi-goren-cocuklara-kan-bagisi-icin-yogun-mesaide/3867057",
-      "image": "",
-      "date": "2026-03-16T17:22:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Anwalt legt Revision gegen Urteil nach Angriff am Berliner Holocaust-Mahnmal ein",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/revision-gegen-urteil-messerattacke-holocaust-mahnmal.html",
-      "image": "",
-      "date": "2026-03-16T17:21:33.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İran’a saldırılar kimin aleyhine gelişiyor?",
-      "description": "ABD-İsrail ittifakının İran’a başlattığı saldırıların üçüncü haftasında tarafların avantajları ve dezavantajlarını Dr. Hurşit Dingil ile konuştuk.",
-      "url": "https://www.aa.com.tr/tr/guncel/iran-a-saldirilar-kimin-aleyhine-gelisiyor/3867049",
-      "image": "",
-      "date": "2026-03-16T17:19:47.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
+      "category": "politics",
       "type": "rss"
     }
   ],
   "insights": {
-    "weatherAdvice": "Berlin'de güzel bir gün dileriz!",
-    "newsBrief": "Berlin gündemi her zaman hareketli."
+    "weatherAdvice": "Yarınki BER grevine dikkat! Ulaşımınızı önceden planlayın.",
+    "newsBrief": "Bugün Berlin'de gündem: Havalimanı grevi ve diplomatik açıklamalar."
   }
 }

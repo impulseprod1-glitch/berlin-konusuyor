@@ -1998,20 +1998,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // ── Service Worker Registration ─────────────
 function initServiceWorker() {
   if ('serviceWorker' in navigator) {
-    // Aggressive Cleanup of old SWs
-    navigator.serviceWorker.getRegistrations().then(registrations => {
-      for (let registration of registrations) {
-        if (!registration.active?.scriptURL.includes('sw-v15.js')) {
-          console.warn('🗑️ Cleaning old Service Worker:', registration.active?.scriptURL);
-          registration.unregister();
-        }
-      }
-    });
-
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw-v15.js')
+      // Register either name to avoid 404s
+      navigator.serviceWorker.register('/service-worker.js')
         .then(registration => {
-          console.log('✅ SW Registered (v15): ', registration);
+          console.log('✅ SW Registered: ', registration);
         })
         .catch(registrationError => {
           console.error('❌ SW Registration failed: ', registrationError);
@@ -2019,6 +2010,102 @@ function initServiceWorker() {
     });
   }
 }
+
+// ── Weekly Polls (Anket) Logic ─────────────────
+async function initPolls() {
+  const pollQuestionEl = document.getElementById('pollQuestion');
+  const pollOptionsEl = document.getElementById('pollOptions');
+  const pollTotalEl = document.getElementById('pollTotal');
+  const pollResetBtn = document.getElementById('pollReset');
+
+  if (!pollQuestionEl || !pollOptionsEl) return;
+
+  try {
+    // Get active poll from Firestore
+    const pollsRef = collection(db, 'polls');
+    const q = query(pollsRef, orderBy('createdAt', 'desc'));
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+      pollQuestionEl.innerText = "Şu an aktif bir anket bulunmuyor.";
+      return;
+    }
+
+    const pollDoc = querySnapshot.docs[0];
+    const pollId = pollDoc.id;
+    const pollData = pollDoc.data();
+
+    pollQuestionEl.innerText = pollData.question;
+    
+    // Check if user already voted (LocalStorage for simplicity in demo)
+    const votedId = localStorage.getItem(`bk-poll-${pollId}`);
+    
+    renderPollOptions(pollId, pollData, votedId);
+
+    pollResetBtn.addEventListener('click', () => {
+      localStorage.removeItem(`bk-poll-${pollId}`);
+      renderPollOptions(pollId, pollData, null);
+      pollResetBtn.classList.add('hidden');
+    });
+
+    if (votedId) pollResetBtn.classList.remove('hidden');
+
+  } catch (error) {
+    console.error("Poll error:", error);
+    pollQuestionEl.innerText = "Anket yüklenirken bir hata oluştu.";
+  }
+}
+
+function renderPollOptions(pollId, pollData, votedId) {
+  const pollOptionsEl = document.getElementById('pollOptions');
+  const pollTotalEl = document.getElementById('pollTotal');
+  const options = pollData.options || [];
+  const totalVotes = options.reduce((sum, opt) => sum + (opt.votes || 0), 0);
+  
+  pollTotalEl.innerText = `Toplam ${totalVotes} oy`;
+
+  pollOptionsEl.innerHTML = options.map((option, index) => {
+    const percent = totalVotes > 0 ? Math.round((option.votes / totalVotes) * 100) : 0;
+    const isVoted = votedId !== null;
+    const isSelected = votedId === String(index);
+
+    return `
+      <button class="poll-option-btn ${isVoted ? 'voted' : ''} ${isSelected ? 'selected' : ''}" 
+              onclick="votePoll('${pollId}', ${index})" 
+              ${isVoted ? 'disabled' : ''}>
+        <div class="poll-progress-bg" style="width: ${isVoted ? percent : 0}%"></div>
+        <span class="poll-option-text">${option.text}</span>
+        <span class="poll-option-percent">${percent}%</span>
+      </button>
+    `;
+  }).join('');
+}
+
+window.votePoll = async (pollId, optionIndex) => {
+  try {
+    const pollRef = doc(db, 'polls', pollId);
+    
+    // Get latest data to update correctly
+    const querySnapshot = await getDocs(query(collection(db, 'polls')));
+    const pollDoc = querySnapshot.docs.find(d => d.id === pollId);
+    if (!pollDoc) return;
+
+    const pollData = pollDoc.data();
+    const options = [...pollData.options];
+    options[optionIndex].votes = (options[optionIndex].votes || 0) + 1;
+
+    await updateDoc(pollRef, { options });
+    
+    localStorage.setItem(`bk-poll-${pollId}`, String(optionIndex));
+    
+    // Re-render
+    renderPollOptions(pollId, { ...pollData, options }, String(optionIndex));
+    document.getElementById('pollReset').classList.remove('hidden');
+
+  } catch (error) {
+    console.error("Vote error:", error);
+  }
+};
 
 // ── Interactive Map Initialization ──────────
 function initMap() {
@@ -2223,4 +2310,5 @@ function initFilters() {
 // ── Initialize App ──────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initJobBoard();
+  initPolls();
 });
