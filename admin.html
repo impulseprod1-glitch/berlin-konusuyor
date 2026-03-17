@@ -163,67 +163,6 @@
         <button class="export-btn" id="exportData">Verileri JSON Olarak İndir (Yedek)</button>
     </div>
 
-    <script>
-        // Basit Admin Logic
-        const updateStats = () => {
-            const news = JSON.parse(localStorage.getItem('bk_custom_news') || '[]');
-            const events = JSON.parse(localStorage.getItem('bk_custom_events') || '[]');
-            const subs = JSON.parse(localStorage.getItem('bk_subscribers') || '[]');
-            
-            document.getElementById('statNews').textContent = news.length;
-            document.getElementById('statEvents').textContent = events.length;
-            document.getElementById('statSubs').textContent = subs.length;
-        };
-
-        document.getElementById('addNewsForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const news = JSON.parse(localStorage.getItem('bk_custom_news') || '[]');
-            news.push({
-                id: Date.now(),
-                title: document.getElementById('newsTitle').value,
-                category: document.getElementById('newsCat').value,
-                source: document.getElementById('newsSource').value || 'Berlin Konuşuyor',
-                image: document.getElementById('newsImg').value || 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800',
-                summary_tr: document.getElementById('newsSummary').value,
-                date: new Date().toISOString()
-            });
-            localStorage.setItem('bk_custom_news', JSON.stringify(news));
-            alert('Haber başarıyla eklendi! Ana sayfada görünecektir.');
-            e.target.reset();
-            updateStats();
-        });
-
-        document.getElementById('addEventForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const events = JSON.parse(localStorage.getItem('bk_custom_events') || '[]');
-            events.push({
-                id: Date.now(),
-                title: document.getElementById('eventTitle').value,
-                date: document.getElementById('eventDate').value,
-                venue: document.getElementById('eventVenue').value,
-                category: document.getElementById('eventCat').value
-            });
-            localStorage.setItem('bk_custom_events', JSON.stringify(events));
-            alert('Etkinlik başarıyla eklendi!');
-            e.target.reset();
-            updateStats();
-        });
-
-        document.getElementById('exportData').addEventListener('click', () => {
-            const data = {
-                news: JSON.parse(localStorage.getItem('bk_custom_news') || '[]'),
-                events: JSON.parse(localStorage.getItem('bk_custom_events') || '[]'),
-                subscribers: JSON.parse(localStorage.getItem('bk_subscribers') || '[]')
-            };
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'berlin_konusuyor_backup.json';
-            a.click();
-        });
-
-        updateStats();
-    </script>
+    <script type="module" src="src/admin.js"></script>
 </body>
 </html>

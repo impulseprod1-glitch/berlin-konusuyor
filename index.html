@@ -309,6 +309,7 @@
           <div class="widget-content">
             <div class="weather-main">
               <span class="weather-temp" id="berlinTemp">—</span>
+              <span class="weather-temp" style="margin-right: 5px;">|</span>
               <span class="weather-desc" id="weatherDesc">Yükleniyor...</span>
             </div>
             <div class="ai-advice" id="aiWeatherAdvice">Berlin'in nabzını hissediyoruz...</div>
@@ -357,6 +358,33 @@
   <div class="section-wave section-wave-up">
     <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
   </div>
+
+  <!-- ═══════════════ İŞ İLANLARI (JOB BOARD) ═══════════════ -->
+  <section class="section" id="is-ilanlari">
+    <div class="section-header reveal">
+      <span class="section-tag">Kariyer</span>
+      <h2 class="section-title">Berlin İş İlanları</h2>
+      <p class="news-auto-badge">Topluluk tarafından paylaşılan güncel ilanlar</p>
+    </div>
+    
+    <div class="jobs-container reveal">
+      <div class="jobs-toolbar">
+        <div class="jobs-filters" id="jobFilters">
+          <button class="job-filter-btn active" data-type="all">Tümü</button>
+          <button class="job-filter-btn" data-type="Tam Zamanlı">Tam Zamanlı</button>
+          <button class="job-filter-btn" data-type="Yarı Zamanlı">Yarı Zamanlı</button>
+          <button class="job-filter-btn" data-type="Minijob">Minijob</button>
+        </div>
+        <button class="post-job-btn magnetic-btn" onclick="openJobModal()">İlan Ver</button>
+      </div>
+      
+      <div class="jobs-grid" id="jobsGrid">
+        <div class="skeleton-job"></div>
+        <div class="skeleton-job"></div>
+        <div class="skeleton-job"></div>
+      </div>
+    </div>
+  </section>
 
   <!-- ═══════════════ ETKİNLİKLER ═══════════════ -->
   <section class="section" id="etkinlikler">
@@ -523,7 +551,7 @@
     <div class="modal-content">
       <span class="modal-close" onclick="closeLegal()">&times;</span>
       <div id="legalContent" class="legal-text">
-        <!-- JS ile doldurulur -->
+        <!-- JS ile doldurulurk -->
       </div>
     </div>
   </div>

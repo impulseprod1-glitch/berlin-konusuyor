@@ -9,8 +9,8 @@
   ],
   "routes": [
     {
-      "src": "^/service-worker.js",
-      "dest": "/service-worker.js",
+      "src": "^/sw-v15.js",
+      "dest": "/sw-v15.js",
       "headers": {
         "cache-control": "public, max-age=0, must-revalidate"
       }
