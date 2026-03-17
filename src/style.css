@@ -325,17 +325,20 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Hero Update ──────────────────────────── */
-/* ── Hero section consolidated ── */
-.hero {
-  min-height: 100vh;
-  display: flex;
+/* ── Hero section consolidated with aggressive height enforcement ── */
+#hero, .hero {
+  min-height: 100vh !important;
+  height: 100vh !important;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative !important;
   padding: calc(var(--nav-height) + 36px + 40px) clamp(24px, 5vw, 80px) 120px;
   overflow: hidden;
-  background: var(--bg-primary) !important; /* Ensure solid background to prevent overlap visibility */
+  background: var(--bg-primary) !important;
   z-index: 10;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .hero-container {
@@ -2322,6 +2325,14 @@ kbd {
   .yt-main-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Fail-safe to prevent overlap if Hero collapses */
+.news-section, .section-dark {
+  clear: both;
+  position: relative;
+  z-index: 5;
+  background: var(--bg-primary);
 }
 
 .yt-player-container {

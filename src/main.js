@@ -1996,16 +1996,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ── Service Worker Registration ─────────────
+// ── Service Worker Registration & Layout Fail-safe ─────────────
 function initServiceWorker() {
+  // Fix for Hero Height Collapse
+  const hero = document.getElementById('hero');
+  if (hero) {
+    const h = hero.offsetHeight;
+    if (h < 100) { // If height is collapsed
+      hero.style.height = '100vh';
+      hero.style.minHeight = '100vh';
+      hero.style.display = 'flex';
+      console.warn('⚠️ Hero height fail-safe activated');
+    }
+  }
+
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      // Register either name to avoid 404s
       navigator.serviceWorker.register('/service-worker.js')
         .then(registration => {
-          console.log('✅ SW Registered: ', registration);
+          console.log('✅ SW Registered');
         })
-        .catch(registrationError => {
-          console.error('❌ SW Registration failed: ', registrationError);
+        .catch(err => {
+          console.error('❌ SW Failed', err);
         });
     });
   }
