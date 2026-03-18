@@ -1,10 +1,10 @@
 import { initializeApp } from "firebase/app";
-import { 
+import {
   getFirestore, collection, query, where, orderBy, onSnapshot, addDoc, setDoc,
-  serverTimestamp, doc, updateDoc, increment, getDocs 
+  serverTimestamp, doc, updateDoc, increment, getDocs, getDoc, deleteDoc
 } from "firebase/firestore";
-import { 
-  getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged 
+import {
+  getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -21,9 +21,9 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
-export { 
+export {
   db, auth, googleProvider,
   collection, query, where, orderBy, onSnapshot, addDoc, setDoc,
-  serverTimestamp, doc, updateDoc, increment, getDocs,
+  serverTimestamp, doc, updateDoc, increment, getDocs, getDoc, deleteDoc,
   signInWithPopup, signOut, onAuthStateChanged
 };

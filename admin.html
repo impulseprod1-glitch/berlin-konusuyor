@@ -8,22 +8,36 @@
     <style>
         :root {
             --admin-bg: #050505;
-            --admin-card: #111111;
+            --admin-card: rgba(15, 15, 15, 0.4);
+            --admin-border: rgba(255, 255, 255, 0.1);
+        }
+        .btn-edit-cancel {
+            margin-top: 10px;
+            background: #222 !important;
+            color: #fff !important;
+            display: none;
+        }
+        .admin-poll-hint {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 15px;
         }
         body.admin-body {
-            background: var(--admin-bg);
+            background-color: var(--admin-bg);
+            background-image: radial-gradient(circle at top right, rgba(229, 9, 20, 0.05), transparent 400px);
             color: #fff;
             padding: 40px;
             font-family: 'Inter', sans-serif;
             max-width: 1200px;
             margin: 0 auto;
+            line-height: 1.6;
         }
         .admin-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 40px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid var(--admin-border);
             padding-bottom: 20px;
         }
         .admin-grid {
@@ -32,135 +46,392 @@
             gap: 40px;
         }
         @media (max-width: 900px) { .admin-grid { grid-template-columns: 1fr; } }
-        
+
         .admin-card {
             background: var(--admin-card);
-            padding: 30px;
-            border-radius: 16px;
-            border: 1px solid #222;
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            padding: 32px;
+            border-radius: 24px;
+            border: 1px solid var(--admin-border);
+            margin-bottom: 30px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
-        .admin-card h2 { margin-top: 0; color: var(--accent); margin-bottom: 24px; }
-        
+        .admin-card:hover {
+            box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+            border-color: rgba(229, 9, 20, 0.3);
+        }
+        .admin-card h2 { margin-top: 0; color: var(--accent); margin-bottom: 24px; font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em; }
+
         .form-group { margin-bottom: 20px; }
-        label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: #aaa; }
+        label { display: block; margin-bottom: 8px; font-size: 0.85rem; color: #aaa; font-weight: 500; }
         input, textarea, select {
             width: 100%;
-            background: #000;
-            border: 1px solid #333;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--admin-border);
             color: #fff;
-            padding: 12px;
-            border-radius: 8px;
+            padding: 14px;
+            border-radius: 12px;
             box-sizing: border-box;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow: 0 0 10px rgba(229, 9, 20, 0.2);
         }
         button.admin-btn {
             background: var(--accent);
-            color: #000;
+            color: #fff;
             border: none;
             padding: 14px 24px;
-            border-radius: 8px;
-            font-weight: 700;
+            border-radius: 99px;
+            font-weight: 600;
             cursor: pointer;
             width: 100%;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 12px rgba(229, 9, 20, 0.2);
         }
+        button.admin-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(229, 9, 20, 0.4);
+            filter: brightness(1.1);
+        }
+
         .admin-stats {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-bottom: 40px;
         }
         .stat-box {
-            background: #111;
-            padding: 20px;
-            border-radius: 12px;
-            flex: 1;
+            background: var(--admin-card);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border-radius: 20px;
             text-align: center;
+            border: 1px solid var(--admin-border);
+            transition: transform 0.3s;
         }
-        .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+        .stat-box:hover { transform: translateY(-5px); }
+        .stat-num { font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 4px; line-height: 1; }
+
+        /* Tab Navigation */
+        .admin-nav {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--admin-border);
+            padding-bottom: 16px;
+            overflow-x: auto;
+        }
+        .nav-tab {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid transparent;
+            color: #aaa;
+            padding: 10px 24px;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 99px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .nav-tab.active {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+            box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+        }
+        .nav-tab:hover:not(.active) {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--admin-border);
+        }
+
+        .tab-content { display: none; margin-top: 20px; }
+        .tab-content.active { display: block; animation: fadeIn 0.4s ease; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* List Management Styles */
+        .data-list { margin-top: 20px; }
+        .data-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--admin-border);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s;
+        }
+        .data-item:hover { background: rgba(255, 255, 255, 0.04); border-color: rgba(255, 255, 255, 0.2); transform: translateX(4px); }
+        .item-info { flex: 1; min-width: 0; }
+        .item-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .item-meta { font-size: 0.8rem; color: #888; }
+        .item-actions { display: flex; gap: 8px; }
+
+        .action-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--admin-border);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 99px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .action-btn:hover { background: rgba(255, 255, 255, 0.1); }
+        .action-delete { color: #ff4d4d; border-color: rgba(255, 77, 77, 0.3); background: rgba(255, 77, 77, 0.05); }
+        .action-delete:hover { background: rgba(255, 77, 77, 0.2); color: #fff; }
+
         .export-section { margin-top: 40px; text-align: center; }
-        .export-btn { background: #333; color: #fff; border: 1px solid #444; padding: 10px 20px; border-radius: 6px; cursor: pointer; }
+
+        /* Verification List Styles */
+        .verification-container { margin-top: 20px; }
+        .verification-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--admin-border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s;
+        }
+        .verification-card:hover { transform: translateX(4px); border-color: rgba(255, 255, 255, 0.15); }
+        .verification-info { flex: 1; }
+        .verification-type {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+        .verification-title { font-weight: 600; margin-bottom: 8px; font-size: 1.1rem; }
+        .verification-body { font-size: 0.9rem; color: #bbb; line-height: 1.5; }
+        .verification-actions { display: flex; gap: 10px; }
+
+        .v-btn {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 99px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .v-btn:hover { transform: translateY(-2px); filter: brightness(1.1); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        .v-btn-approve { background: #10b981; color: #fff; }
+        .v-btn-reject { background: #ef4444; color: #fff; }
+        .empty-list { color: #666; text-align: center; padding: 40px; font-style: italic; }
+
+        .accent-text { color: var(--accent); }
+        .flex-row-gap { display: flex; gap: 15px; align-items: center; }
+        .back-link { color: #aaa; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        .back-link:hover { color: #fff; }
+        .mt-20 { margin-top: 20px; }
+        .flex-col-gap { display: flex; flex-direction: column; gap: 12px; }
+        .btn-dark { background: rgba(255, 255, 255, 0.05); color: #fff; border: 1px solid var(--admin-border); }
+        .btn-dark:hover { background: rgba(255, 255, 255, 0.1); }
     </style>
 </head>
 <body class="admin-body">
     <div class="admin-header">
-        <h1>Berlin Konuşuyor <span style="color:var(--accent)">Admin</span></h1>
-        <a href="/" style="color:#aaa; text-decoration:none">← Siteye Dön</a>
-    </div>
-
-    <div class="admin-stats">
-        <div class="stat-box">
-            <div class="stat-num" id="statNews">0</div>
-            <div>Haber</div>
-        </div>
-        <div class="stat-box">
-            <div class="stat-num" id="statEvents">0</div>
-            <div>Etkinlik</div>
-        </div>
-        <div class="stat-box">
-            <div class="stat-num" id="statSubs">0</div>
-            <div>Abone</div>
+        <h1>Berlin Konuşuyor <span class="accent-text">Admin</span></h1>
+        <div class="flex-row-gap">
+            <button class="action-btn" id="exportData">Yedekle (JSON)</button>
+            <a href="/" class="back-link">← Siteye Dön</a>
         </div>
     </div>
 
-    <div class="admin-grid">
-        <!-- Haber Ekleme -->
+    <nav class="admin-nav">
+        <button class="nav-tab active" data-tab="tab-summary">Özet</button>
+        <button class="nav-tab" data-tab="tab-news">Haberler</button>
+        <button class="nav-tab" data-tab="tab-events">Etkinlikler</button>
+        <button class="nav-tab" data-tab="tab-community">Topluluk & Onay</button>
+        <button class="nav-tab" data-tab="tab-polls">Anketler</button>
+        <button class="nav-tab" data-tab="tab-subscribers">Aboneler</button>
+    </nav>
+
+    <!-- Tab: Özet -->
+    <div id="tab-summary" class="tab-content active">
+        <div class="admin-stats">
+            <div class="stat-box">
+                <div class="stat-num" id="statNews">0</div>
+                <div>Haber</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num" id="statEvents">0</div>
+                <div>Etkinlik</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num" id="statSubs">0</div>
+                <div>Abone</div>
+            </div>
+        </div>
+
+        <div class="admin-grid">
+            <div class="admin-card">
+                <h2>Bekleyen Onaylar Özet</h2>
+                <div id="miniVerificationList">
+                    <p class="empty-list">Bekleyen onay yok.</p>
+                </div>
+                <button class="admin-btn mt-20" onclick="document.querySelector('[data-tab=tab-community]').click()">Hepsini Yönet</button>
+            </div>
+            <div class="admin-card">
+                <h2>Hızlı İşlemler</h2>
+                <div class="flex-col-gap">
+                    <button class="admin-btn" onclick="document.querySelector('[data-tab=tab-news]').click()">Yeni Haber Ekle</button>
+                    <button class="admin-btn" onclick="document.querySelector('[data-tab=tab-events]').click()">Yeni Etkinlik Kaydet</button>
+                    <button class="admin-btn btn-dark" onclick="document.querySelector('[data-tab=tab-polls]').click()">Anket Oluştur</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab: Haberler -->
+    <div id="tab-news" class="tab-content">
+        <div class="admin-grid">
+            <div class="admin-card">
+                <h2 id="newsFormTitle">Yeni Haber Ekle</h2>
+                <form id="addNewsForm">
+                    <input type="hidden" id="newsId">
+                    <div class="form-group">
+                        <label>Başlık</label>
+                        <input type="text" id="newsTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori</label>
+                        <select id="newsCat">
+                            <option value="Güncel">Güncel</option>
+                            <option value="Yaşam">Yaşam</option>
+                            <option value="Ekonomi">Ekonomi</option>
+                            <option value="Kültür">Kültür</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Kaynak</label>
+                        <input type="text" id="newsSource">
+                    </div>
+                    <div class="form-group">
+                        <label>Görsel URL</label>
+                        <input type="text" id="newsImg" placeholder="https://...">
+                    </div>
+                    <div class="form-group">
+                        <label>İçerik/Özet (TR)</label>
+                        <textarea id="newsSummary" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="admin-btn" id="newsSubmitBtn">Haberi Yayınla</button>
+                    <button type="button" id="cancelEditNews" class="admin-btn btn-secondary btn-edit-cancel">Düzenlemeyi İptal Et</button>
+                </form>
+            </div>
+            <div class="admin-card">
+                <h2>Mevcut Haberler</h2>
+                <div id="newsList" class="data-list">
+                    <p class="empty-list">Haberler yükleniyor...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab: Etkinlikler -->
+    <div id="tab-events" class="tab-content">
+        <div class="admin-grid">
+            <div class="admin-card">
+                <h2 id="eventFormTitle">Yeni Etkinlik Ekle</h2>
+                <form id="addEventForm">
+                    <input type="hidden" id="eventId">
+                    <div class="form-group">
+                        <label>Etkinlik Adı</label>
+                        <input type="text" id="eventTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tarih</label>
+                        <input type="date" id="eventDate">
+                    </div>
+                    <div class="form-group">
+                        <label>Mekan</label>
+                        <input type="text" id="eventVenue">
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori</label>
+                        <input type="text" id="eventCat" placeholder="Örn: Konser">
+                    </div>
+                    <button type="submit" class="admin-btn" id="eventSubmitBtn">Etkinliği Kaydet</button>
+                    <button type="button" id="cancelEditEvent" class="admin-btn btn-secondary btn-edit-cancel">Düzenlemeyi İptal Et</button>
+                </form>
+            </div>
+            <div class="admin-card">
+                <h2>Gelecek Etkinlikler</h2>
+                <div id="eventsList" class="data-list">
+                    <p class="empty-list">Etkinlikler yükleniyor...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab: Topluluk & Onay -->
+    <div id="tab-community" class="tab-content">
         <div class="admin-card">
-            <h2>Yeni Haber Ekle</h2>
-            <form id="addNewsForm">
-                <div class="form-group">
-                    <label>Başlık</label>
-                    <input type="text" id="newsTitle" required>
-                </div>
-                <div class="form-group">
-                    <label>Kategori</label>
-                    <select id="newsCat">
-                        <option value="Güncel">Güncel</option>
-                        <option value="Yaşam">Yaşam</option>
-                        <option value="Ekonomi">Ekonomi</option>
-                        <option value="Kültür">Kültür</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Kaynak</label>
-                    <input type="text" id="newsSource">
-                </div>
-                <div class="form-group">
-                    <label>Görsel URL</label>
-                    <input type="text" id="newsImg" placeholder="https://...">
-                </div>
-                <div class="form-group">
-                    <label>İçerik/Özet (TR)</label>
-                    <textarea id="newsSummary" rows="4"></textarea>
-                </div>
-                <button type="submit" class="admin-btn">Haberi Yayınla</button>
-            </form>
-        </div>
-
-        <!-- Etkinlik Ekleme -->
-        <div class="admin-card">
-            <h2>Yeni Etkinlik Ekle</h2>
-            <form id="addEventForm">
-                <div class="form-group">
-                    <label>Etkinlik Adı</label>
-                    <input type="text" id="eventTitle" required>
-                </div>
-                <div class="form-group">
-                    <label>Tarih</label>
-                    <input type="date" id="eventDate">
-                </div>
-                <div class="form-group">
-                    <label>Mekan</label>
-                    <input type="text" id="eventVenue">
-                </div>
-                <div class="form-group">
-                    <label>Kategori</label>
-                    <input type="text" id="eventCat">
-                </div>
-                <button type="submit" class="admin-btn">Etkinliği Kaydet</button>
-            </form>
+            <h2>Doğrulama Listesi (Bekleyen Onaylar)</h2>
+            <div id="verificationList" class="verification-container">
+                <p class="empty-list">Yükleniyor...</p>
+            </div>
         </div>
     </div>
 
-    <div class="export-section">
-        <button class="export-btn" id="exportData">Verileri JSON Olarak İndir (Yedek)</button>
+    <!-- Tab: Anketler -->
+    <div id="tab-polls" class="tab-content">
+        <div class="admin-grid">
+            <div class="admin-card">
+                <h2>Yeni Anket Oluştur</h2>
+                <p class="admin-poll-hint">Yeni anket oluşturulduğunda eskisi arşivlenir.</p>
+                <form id="addPollForm">
+                    <div class="form-group">
+                        <label>Soru</label>
+                        <input type="text" id="pollQuestion" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Seçenek 1</label>
+                        <input type="text" id="pollOpt1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Seçenek 2</label>
+                        <input type="text" id="pollOpt2" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Seçenek 3 (Opsiyonel)</label>
+                        <input type="text" id="pollOpt3">
+                    </div>
+                    <button type="submit" class="admin-btn">Anketi Başlat</button>
+                </form>
+            </div>
+            <div class="admin-card">
+                <h2>Anket Geçmişi & Sonuçlar</h2>
+                <div id="pollsList" class="data-list">
+                    <p class="empty-list">Anketler yükleniyor...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab: Aboneler -->
+    <div id="tab-subscribers" class="tab-content">
+        <div class="admin-card">
+            <h2>Bülten Aboneleri</h2>
+            <div id="subscribersList" class="data-list">
+                <p class="empty-list">Yükleniyor...</p>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="src/admin.js"></script>

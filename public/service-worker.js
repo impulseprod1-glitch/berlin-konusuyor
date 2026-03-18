@@ -92,7 +92,7 @@ self.addEventListener('fetch', (event) => {
 // ── Push Notification Support ────────────────
 self.addEventListener('push', (event) => {
   let data = { title: 'Berlin Konuşuyor', body: 'Yeni bir haber var!', icon: '/public/icon-192.png' };
-  
+
   if (event.data) {
     try {
       data = event.data.json();

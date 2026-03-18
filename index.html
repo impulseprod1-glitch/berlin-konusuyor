@@ -3,65 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Primary Meta Tags -->
   <title id="metaTitle">Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz</title>
-  <meta name="description" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için profesyonel dijital medya platformu.">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://berlin-konusuyor.vercel.app/">
-    <meta property="og:title" content="Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz">
-    <meta property="og:description" content="Berlin'in haberleri, röportajları ve şehir rehberi.">
-    <meta property="og:image" content="https://berlin-konusuyor.vercel.app/public/icon-512.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://berlin-konusuyor.vercel.app/">
-    <meta property="twitter:title" content="Berlin Konuşuyor — Berlin'un Nabzı">
-    <meta property="twitter:description" content="Berlin'in haberleri, röportajları ve şehir rehberi.">
-    <meta property="twitter:image" content="https://berlin-konusuyor.vercel.app/public/icon-512.png">
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Berlin Konuşuyor",
-      "url": "https://berlin-konusuyor.vercel.app/",
-      "logo": "https://berlin-konusuyor.vercel.app/public/icon-512.png",
-      "sameAs": [
-        "https://www.youtube.com/@berlinkonusuyor",
-        "https://www.instagram.com/berlinkonusuyor"
-      ]
-    }
-    </script>
+  <meta name="description" id="metaDesc" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için profesyonel dijital medya platformu.">
   <meta name="keywords" content="Berlin haberleri, Berlin Türk toplumu, gurbetçi rehberi, Berlin sokak röportajları, Berlin yaşam, Berlin etkinlik rehberi">
   <meta name="author" content="Antigravity">
 
   <!-- PWA Metadata -->
   <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#050505">
   <link rel="apple-touch-icon" href="/icon-192.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://berlinkonusuyor.com">
+  <meta property="og:url" id="ogUrl" content="https://berlin-konusuyor.vercel.app/">
   <meta property="og:title" id="ogTitle" content="Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz">
   <meta property="og:description" id="ogDescription" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi.">
-  <meta property="og:image" content="https://berlinkonusuyor.com/og-image.jpg">
+  <meta property="og:image" id="ogImage" content="https://berlin-konusuyor.vercel.app/icon-512.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://berlinkonusuyor.com">
+  <meta property="twitter:url" id="twitterUrl" content="https://berlin-konusuyor.vercel.app/">
   <meta property="twitter:title" id="twitterTitle" content="Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz">
   <meta property="twitter:description" id="twitterDescription" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi.">
-  <meta property="twitter:image" content="https://berlinkonusuyor.com/og-image.jpg">
+  <meta property="twitter:image" id="twitterImage" content="https://berlin-konusuyor.vercel.app/icon-512.png">
 
   <!-- Multilingual (hreflang) -->
-  <link rel="alternate" hreflang="tr" href="https://berlinkonusuyor.com?lang=tr" />
-  <link rel="alternate" hreflang="de" href="https://berlinkonusuyor.com?lang=de" />
-  <link rel="alternate" hreflang="en" href="https://berlinkonusuyor.com?lang=en" />
-  <link rel="alternate" hreflang="x-default" href="https://berlinkonusuyor.com" />
+  <link rel="alternate" hreflang="tr" href="https://berlin-konusuyor.vercel.app/?lang=tr" />
+  <link rel="alternate" hreflang="de" href="https://berlin-konusuyor.vercel.app/?lang=de" />
+  <link rel="alternate" hreflang="en" href="https://berlin-konusuyor.vercel.app/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://berlin-konusuyor.vercel.app/" />
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -69,8 +41,8 @@
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     "name": "Berlin Konuşuyor",
-    "url": "https://berlinkonusuyor.com",
-    "logo": "https://berlinkonusuyor.com/logo.png",
+    "url": "https://berlin-konusuyor.vercel.app/",
+    "logo": "https://berlin-konusuyor.vercel.app/icon-512.png",
     "sameAs": [
       "https://youtube.com/@berlinkonusuyortv",
       "https://www.instagram.com/berlin.konusuyor/",
@@ -85,17 +57,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+  <!-- External Resources -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Leaflet Map CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-  <!-- Leaflet Map JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -123,14 +88,12 @@
   <nav class="navbar" id="navbar">
     <a href="#" class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></a>
     <div class="nav-links" id="navLinks">
-      <div class="mobile-menu-header">
-        <span class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></span>
-      </div>
+      <!-- Removed redundant logo from mobile-menu-header to fix duplication -->
       <a href="#haberler" data-i18n="nav_news">Haberler</a>
       <a href="#roportajlar" data-i18n="nav_interviews">Röportajlar</a>
       <a href="#rehber" data-i18n="nav_guide">Rehber</a>
       <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
-      
+
       <div class="mobile-menu-footer">
         <div class="mobile-socials">
           <a href="https://www.instagram.com/berlin.konusuyor/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -145,13 +108,16 @@
         <button class="search-toggle-btn" id="searchToggle" aria-label="Arama">
           <i class="fas fa-search"></i>
         </button>
-        <div class="search-input-wrapper" id="searchInputWrapper">
-          <input type="text" id="searchInput" placeholder="Haber veya rehber ara..." data-i18n-placeholder="search_placeholder">
-          <button class="search-close-btn" id="searchClose">&times;</button>
-        </div>
-        <div class="search-results-overlay" id="searchResultsOverlay">
-          <div class="search-results-list" id="searchResultsList"></div>
-          <div class="search-shortcut-hint"><kbd>Ctrl</kbd>+<kbd>K</kbd> ile arama açın</div>
+        <div class="search-overlay" id="searchOverlay">
+          <div class="search-glass-content">
+            <div class="search-input-group">
+              <i class="fas fa-search search-icon-main"></i>
+              <input type="text" id="searchInput" placeholder="Haber veya rehber ara..." data-i18n-placeholder="search_placeholder" autocomplete="off">
+              <button class="search-close-btn" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results-list" id="searchResultsList"></div>
+            <div class="search-shortcut-hint"><kbd>ESC</kbd> ile kapatın</div>
+          </div>
         </div>
       </div>
       <button id="themeToggle" class="theme-toggle-btn" aria-label="Tema Değiştir">
@@ -187,7 +153,7 @@
       <div class="hero-content">
         <p class="hero-eyebrow" data-i18n="hero_eyebrow">Dijital Medya Platformu</p>
         <h1 class="hero-title">
-          <span class="hero-line" data-i18n="hero_line1">Gerçek İnsanlar,</span>
+          <span class="hero-line" data-i18n="hero_line1">Berlin'in Nabzı:</span>
           <span class="hero-line hero-line-accent" data-i18n="hero_line2">Gerçek Hikayeler.</span>
         </h1>
         <p class="hero-sub" data-i18n="hero_sub">Sokak röportajları, güncel haberler ve şehir rehberi — hepsi bir arada.</p>
@@ -214,7 +180,7 @@
       <div class="section-header reveal">
         <span class="section-tag" data-i18n="section_news">Gündem</span>
         <h2 class="section-title" data-i18n="news_title">Berlin'de Neler Oluyor?</h2>
-        
+
         <!-- ── Berlin Pulse (AI Focus) ──────────────── -->
         <div class="berlin-pulse-container" id="berlinPulse">
           <!-- AI bubbles will be injected here -->
@@ -234,7 +200,7 @@
           <span class="news-badge" id="newsSource">TRT Haber</span>
         </div>
       </div>
-      
+
       <div class="news-grid" id="newsGrid">
         <!-- Skeleton loaders initially -->
         <div class="skeleton-card"></div>
@@ -245,7 +211,7 @@
     </div>
   </section>
 
-  
+
   <!-- ═══════════════ ISTATISTIKLER ═══════════════ -->
   <section class="section" id="statsBar">
     <div class="stats-grid reveal">
@@ -334,7 +300,7 @@
           <div class="widget-content">
             <div class="weather-main">
               <span class="weather-temp" id="berlinTemp">—</span>
-              <span class="weather-temp" style="margin-right: 5px;">|</span>
+              <span class="weather-temp weather-pipe">|</span>
               <span class="weather-desc" id="weatherDesc">Yükleniyor...</span>
             </div>
             <div class="ai-advice" id="aiWeatherAdvice">Berlin'in nabzını hissediyoruz...</div>
@@ -391,7 +357,7 @@
       <h2 class="section-title">Haftalık Berlin Anketi</h2>
       <p class="news-auto-badge">Sesinizi duyurun, sonuçları anında görün</p>
     </div>
-    
+
     <div class="poll-container reveal">
       <div class="poll-card glass-panel" id="pollCard">
         <h3 class="poll-question" id="pollQuestion">Yükleniyor...</h3>
@@ -418,7 +384,7 @@
       <h2 class="section-title">Berlin İş İlanları</h2>
       <p class="news-auto-badge">Topluluk tarafından paylaşılan güncel ilanlar</p>
     </div>
-    
+
     <div class="jobs-container reveal">
       <div class="jobs-toolbar">
         <div class="jobs-filters" id="jobFilters">
@@ -429,7 +395,7 @@
         </div>
         <button class="post-job-btn magnetic-btn" onclick="openJobModal()">İlan Ver</button>
       </div>
-      
+
       <div class="jobs-grid" id="jobsGrid">
         <div class="skeleton-job"></div>
         <div class="skeleton-job"></div>
@@ -509,7 +475,7 @@
     <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
   </div>
 
-  
+
   <!-- ═══════════════ TOPLULUK FORUMU ═══════════════ -->
   <section class="section" id="topluluk">
     <div class="section-header reveal">
@@ -536,7 +502,7 @@
         <input type="text" id="qaName" class="qa-input" placeholder="İsminiz (İsteğe bağlı)" />
         <textarea id="qaQuestion" class="qa-textarea" placeholder="Topluluğa bir soru sorun..." required></textarea>
         <div class="qa-form-footer">
-          <select id="qaCategory" class="qa-category-select" aria-label="Kategori Seçi">
+          <select id="qaCategory" class="qa-category-select" aria-label="Kategori Seçimi">
             <option value="Genel">💬 Genel</option>
             <option value="Ev & Kira">🏠 Ev & Kira</option>
             <option value="Vize">🛂 Vize</option>
@@ -612,16 +578,16 @@
   <div id="loginModal" class="modal login-modal">
     <div class="modal-content glass-panel login-modal-content">
       <span class="modal-close" onclick="closeLoginModal()">&times;</span>
-      
+
       <!-- Login View -->
       <div id="loginView">
         <h2 class="login-modal-title">Giriş Yap</h2>
         <p class="login-modal-subtitle">Favori içeriklerini kaydetmek için giriş yap.</p>
-        
+
         <button class="magnetic-btn login-google-btn" onclick="mockLogin()" aria-label="Google ile Giriş Yap">
           <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20" height="20" alt="Google" aria-hidden="true"> Google ile Giriş Yap
         </button>
-        
+
         <p class="login-modal-disclaimer">
           *Bu bir demo girişidir. Bilgileriniz tarayıcınızda (LocalStorage) tutulmaktadır.
         </p>
@@ -634,7 +600,7 @@
         </div>
         <h2 class="profile-title">Hoş Geldiniz!</h2>
         <p class="profile-email" id="profileEmail">demo@berlinkonusuyor.com</p>
-        
+
         <div class="profile-bookmarks">
           <h4 class="profile-bookmarks-title"><i class="fas fa-bookmark" aria-hidden="true"></i> Kaydedilenler (Demo)</h4>
           <ul class="profile-bookmarks-list">
@@ -716,14 +682,14 @@
       </div>
       <button class="chatbot-close" onclick="toggleChatbot()">&times;</button>
     </div>
-    
+
     <div class="chatbot-messages" id="chatbotMessages">
       <div class="chat-msg bot-msg">
         Merhaba 👋 Ben Berlin Konuşuyor Asistanı. Şu an geliştirme aşamasındayım. İhtiyaçlarınız için doğrudan <a href="mailto:hello@berlinkonusuyor.com" class="chatbot-email-link">hello@berlinkonusuyor.com</a> adresinden bize yazabilirsiniz.
       </div>
       <!-- Messages will appear here -->
     </div>
-    
+
     <div class="chatbot-quick-replies" id="chatbotQuickReplies">
       <button class="quick-reply-btn" data-query="Anmeldung">📋 Anmeldung</button>
       <button class="quick-reply-btn" data-query="Ev bulma">🏠 Ev Bulma</button>

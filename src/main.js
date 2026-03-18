@@ -1,12 +1,13 @@
 import './style.css';
-import { 
+import {
   db, auth, googleProvider,
-  collection, query, orderBy, onSnapshot, addDoc, 
-  serverTimestamp, doc, updateDoc, increment, getDocs,
+  collection, query, where, orderBy, onSnapshot, addDoc, setDoc,
+  serverTimestamp, doc, updateDoc, increment, getDocs, deleteDoc,
   signInWithPopup, signOut, onAuthStateChanged
 } from './firebase-config.js';
 
 let currentLang = localStorage.getItem('bk-lang') || 'tr';
+let loadingTimeout;
 
 
 /* ═══════════════════════════════════════════
@@ -18,10 +19,20 @@ let currentLang = localStorage.getItem('bk-lang') || 'tr';
 function renderAIDashboard(insights) {
   if (insights) {
     if (insights.weatherAdvice) {
-      document.getElementById('aiWeatherAdvice').innerText = insights.weatherAdvice;
+      const el = document.getElementById('aiWeatherAdvice');
+      if (el) el.innerText = insights.weatherAdvice;
     }
     if (insights.newsBrief) {
-      document.getElementById('aiBriefText').innerText = insights.newsBrief;
+      const el = document.getElementById('aiBriefText');
+      if (el) el.innerText = insights.newsBrief;
+    }
+    if (insights.temp) {
+      const el = document.getElementById('berlinTemp');
+      if (el) el.innerText = insights.temp;
+    }
+    if (insights.desc) {
+      const el = document.getElementById('weatherDesc');
+      if (el) el.innerText = insights.desc;
     }
   }
 }
@@ -37,7 +48,7 @@ function updateTime() {
 function initDashboardUtils() {
   updateTime();
   setInterval(updateTime, 1000);
-  
+
   // Mock Dynamic Status for Premium feel
   const statusContainer = document.querySelector('.ai-stats');
   if (statusContainer) {
@@ -274,7 +285,7 @@ const translations = {
     events_cal_tag: "Calendar",
     events_cal_title: "Upcoming Events",
     events_cal_desc: "What's happening in Berlin this weekend?",
-    listen_news: "Listen",
+    listen_news: "Listen"
   },
 };
 
@@ -313,7 +324,7 @@ function updateMeta(lang) {
 
   // Title
   document.title = t.meta_title;
-  
+
   // Meta description
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.setAttribute('content', t.meta_desc);
@@ -327,8 +338,30 @@ function updateMeta(lang) {
 }
 
 // ── Dynamic News Loading ────────────────────
-const PLACEHOLDER_IMG = 'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80';
+const CATEGORY_IMAGES = {
+  politics: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80',
+  culture: 'https://images.unsplash.com/photo-1580655653885-65763b2597ad?w=800&q=80',
+  economy: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80',
+  lifestyle: 'https://images.unsplash.com/photo-1559564484-e484c2076b46?w=800&q=80',
+  default: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80'
+};
+
+const DEMO_JOBS = [
+  { id: 'demo1', title: 'Barista / Servis Elemanı', company: 'The Barn Coffee Roasters', location: 'Mitte', type: 'Part-time', contact: 'jobs@thebarn.de', status: 'approved' },
+  { id: 'demo2', title: 'Senior Software Engineer', company: 'Zalando SE', location: 'Friedrichshain', type: 'Full-time', contact: 'careers@zalando.de', status: 'approved' },
+  { id: 'demo3', title: 'Satış Danışmanı', company: 'KaDeWe', location: 'Schöneberg', type: 'Minijob', contact: 'hr@kadewe.de', status: 'approved' },
+  { id: 'demo4', title: 'Kurye / Teslimat Sorumlusu', company: 'Lieferando', location: 'Berlin Geneli', type: 'Full-time', contact: 'apply@lieferando.de', status: 'approved' }
+];
+
+const PLACEHOLDER_IMG = CATEGORY_IMAGES.default;
 let globalNews = [];
+let globalEvents = [];
+let globalPodcasts = [];
+
+function getNewsImage(article) {
+  if (article.image && article.image.startsWith('http')) return article.image;
+  return CATEGORY_IMAGES[article.category] || CATEGORY_IMAGES.default;
+}
 
 function formatDate(isoDate) {
   try {
@@ -339,16 +372,14 @@ function formatDate(isoDate) {
   }
 }
 
-
-// ── News Rendering ──────────────────────────
 // ── News Rendering ──────────────────────────
 function renderNews(articles, category = 'all') {
   const container = document.getElementById('newsGrid');
   const countSpan = document.getElementById('newsCount');
   if (!container) return;
 
-  const filtered = category === 'all' 
-    ? articles 
+  const filtered = category === 'all'
+    ? articles
     : articles.filter(a => a.category === category);
 
   if (countSpan) {
@@ -360,7 +391,7 @@ function renderNews(articles, category = 'all') {
     const readTime = calculateReadTime(article.description || article.summary_tr || article.title || '');
     return `
       <article class="news-card reveal" style="animation-delay: ${index * 0.1}s" onclick="openNewsModal(${index})">
-        <div class="news-card-img" style="background-image: url('${article.image || PLACEHOLDER_IMG}')"></div>
+        <div class="news-card-img" style="background-image: url('${getNewsImage(article)}')"></div>
         <div class="news-card-content">
           <div class="news-meta">
             <span class="news-source-tag">${article.source}</span>
@@ -377,6 +408,14 @@ function renderNews(articles, category = 'all') {
       </article>
     `;
   }).join('');
+
+  // Re-observe or show immediately
+  const reveals = container.querySelectorAll('.reveal');
+  if (window.revealObserver) {
+    reveals.forEach(el => window.revealObserver.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('visible'));
+  }
 }
 
 window.shareNews = (title) => {
@@ -429,40 +468,38 @@ async function loadNews() {
   }
 
   try {
+    let newsLoadingTimeout = setTimeout(() => {
+      console.warn('[News] Firestore timeout reaching 5s, using fallback');
+      fetchFallbackNews();
+    }, 5000);
+
     const q = query(collection(db, "news"), orderBy("date", "desc"));
-    console.log('[News] Firestore query created.');
-    
+
     onSnapshot(q, async (snapshot) => {
+      if (newsLoadingTimeout) clearTimeout(newsLoadingTimeout);
       let firestoreNews = [];
       snapshot.forEach((doc) => {
         firestoreNews.push({ id: doc.id, ...doc.data() });
       });
 
       if (firestoreNews.length === 0) {
-        console.log('[News] Firestore empty, fetching local fallback...');
-        const localRes = await fetch('/data/news.json');
-        if (localRes.ok) {
-          const localData = await localRes.json();
-          firestoreNews = localData.articles || [];
-        }
+        fetchFallbackNews();
+      } else {
+        globalNews = firestoreNews;
+        renderNews(globalNews);
+        renderTicker(globalNews);
+        if (globalNews.length > 0) renderHeroFeatured(globalNews[0]);
+        initBerlinPulse(globalNews);
       }
-
-      globalNews = firestoreNews;
-      console.log(`[Firestore] Haber akışı güncellendi: ${globalNews.length} haber.`);
-      renderNews(globalNews);
-      renderTicker(globalNews);
-      if (globalNews.length > 0) renderHeroFeatured(globalNews[0]);
-      initBerlinPulse(globalNews);
+    }, (error) => {
+      console.error('[News] onSnapshot error:', error);
+      if (newsLoadingTimeout) clearTimeout(newsLoadingTimeout);
+      fetchFallbackNews();
     });
 
   } catch (err) {
     console.error('[News] Firestore error:', err);
-    // Fallback if query fails
-    fetch('/data/news.json').then(res => res.json()).then(data => {
-      globalNews = data.articles || [];
-      renderNews(globalNews);
-      renderTicker(globalNews);
-    });
+    fetchFallbackNews();
   }
 }
 
@@ -479,6 +516,9 @@ function getTimeAgo(isoDate) {
 
 // ── Dynamic Events Loading ──────────────────
 async function loadEvents() {
+  const track = document.getElementById('eventsTrack');
+  if (track) track.innerHTML = '<div class="skeleton-event"></div>'.repeat(3);
+
   console.log('[Events] loadEvents triggered with DB:', db);
   if (!db) {
     console.warn('[Events] DB not ready yet, retrying in 500ms...');
@@ -487,43 +527,92 @@ async function loadEvents() {
   }
 
   try {
+    let eventsLoadingTimeout = setTimeout(() => {
+      console.warn('[Events] Firestore timeout reaching 5s, using fallback');
+      fetchFallbackEvents();
+    }, 5000);
+
     const q = query(collection(db, "events"), orderBy("date", "asc"));
-    
+
     onSnapshot(q, (snapshot) => {
+      if (eventsLoadingTimeout) clearTimeout(eventsLoadingTimeout);
       let firestoreEvents = [];
       snapshot.forEach((doc) => {
         firestoreEvents.push({ id: doc.id, ...doc.data() });
       });
 
       if (firestoreEvents.length > 0) {
-        console.log(`[Firestore] ${firestoreEvents.length} etkinlik güncellendi.`);
-        renderEvents(firestoreEvents);
-        window.globalEvents = firestoreEvents;
+        globalEvents = firestoreEvents;
+        renderEvents(globalEvents);
       } else {
-        console.log('[Events] Firestore empty, fetching local fallback...');
-        fetch('/data/events.json').then(res => res.json()).then(data => {
-          if (data.events) {
-            renderEvents(data.events);
-            window.globalEvents = data.events;
-          }
-        });
+        fetchFallbackEvents();
       }
+    }, (error) => {
+      console.error('[Events] onSnapshot error:', error);
+      if (eventsLoadingTimeout) clearTimeout(eventsLoadingTimeout);
+      fetchFallbackEvents();
     });
   } catch (err) {
     console.error('[Events] Firestore error:', err);
-    // Fallback
-    fetch('/data/events.json').then(res => res.json()).then(data => {
-      if (data.events) renderEvents(data.events);
-    });
+    fetchFallbackEvents();
   }
 }
+function renderEvents(events) {
+  const container = document.getElementById('eventsTrack');
+  if (!container) return;
+
+  try {
+    container.innerHTML = events.map((event, index) => {
+      let day = '--';
+      let month = 'AY';
+
+      try {
+        const eventDate = new Date(event.date);
+        if (!isNaN(eventDate.getTime())) {
+          day = eventDate.getDate();
+          month = eventDate.toLocaleString(currentLang === 'tr' ? 'tr-TR' : 'de-DE', { month: 'short' }).toUpperCase();
+        }
+      } catch (e) {
+        console.error('Date error:', e);
+      }
+
+      return `
+        <div class="event-card reveal" style="animation-delay: ${index * 0.1}s">
+          <div class="event-date">
+            <span class="day">${day}</span>
+            <span class="month">${month}</span>
+          </div>
+          <div class="event-info">
+            <h3 class="event-title">${event.summary_tr || event.title}</h3>
+            <p class="event-location"><i class="fas fa-map-marker-alt"></i> ${event.venue || 'Berlin'}</p>
+            <p class="event-description">${event.description || ''}</p>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    // Re-observe or show immediately
+    const reveals = container.querySelectorAll('.reveal');
+    if (window.revealObserver) {
+      reveals.forEach(el => window.revealObserver.observe(el));
+    } else {
+      reveals.forEach(el => el.classList.add('visible'));
+    }
+  } catch (err) {
+    console.error('renderEvents crash:', err);
+    container.innerHTML = '<p class="error-msg">Etkinlikler yüklenirken bir hata oluştu.</p>';
+  }
+}
+
 async function loadPodcasts() {
+  const grid = document.getElementById('podcastGrid');
+  if (grid) grid.innerHTML = '<div class="skeleton-card"></div>'.repeat(3);
+
   try {
     const res = await fetch('/data/podcasts.json');
     if (!res.ok) throw new Error('Podcasts fetch failed');
     const data = await res.json();
-    
-    const grid = document.getElementById('podcastGrid');
+
     if (!grid || !data.podcasts) return;
 
     const html = data.podcasts.map(p => `
@@ -535,6 +624,7 @@ async function loadPodcasts() {
       </div>
     `).join('');
 
+    globalPodcasts = data.podcasts;
     grid.innerHTML = html;
   } catch (err) {
     console.log('Podcast listesi yüklenemedi:', err);
@@ -542,15 +632,29 @@ async function loadPodcasts() {
 }
 
 function initReveal() {
-  const observer = new IntersectionObserver((entries) => {
+  if (window.revealObserver) {
+    // Already initialized, just re-scan for any missed elements
+    document.querySelectorAll('.reveal:not(.visible), .reveal-small:not(.visible)').forEach((el) => {
+      window.revealObserver.observe(el);
+    });
+    return;
+  }
+
+  window.revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        window.revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-  document.querySelectorAll('.reveal, .reveal-small').forEach((el) => observer.observe(el));
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  document.querySelectorAll('.reveal, .reveal-small').forEach((el) => {
+    window.revealObserver.observe(el);
+  });
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -597,13 +701,13 @@ function initMobileMenu() {
 
   const toggleMenu = (forceClose = false) => {
     const isOpen = forceClose ? false : !navLinks.classList.contains('open');
-    
+
     hamburger.classList.toggle('active', isOpen);
     navLinks.classList.toggle('open', isOpen);
-    
+
     // Premium: Scroll Lock
     document.body.style.overflow = isOpen ? 'hidden' : '';
-    
+
     // Optional: Close on backdrop click (if we had a separate backdrop, but nav-links is full screen)
   };
 
@@ -639,7 +743,7 @@ function initMobileDock() {
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
     if (window.innerWidth > 768) return;
-    
+
     const currentScroll = window.pageYOffset;
     if (currentScroll <= 0) {
       dock.classList.remove('hidden');
@@ -682,7 +786,7 @@ function initMobileDock() {
 function initBerlinPulse(articles) {
   const container = document.getElementById('berlinPulse');
   if (!container) return;
-  
+
   if (!articles || !articles.length) {
     console.warn('Berlin Pulse: No articles to render');
     return;
@@ -694,7 +798,7 @@ function initBerlinPulse(articles) {
   const pulsers = articles.slice(0, 6).map((article, index) => {
     let label = 'Berlin';
     const lowerTitle = article.title.toLowerCase();
-    
+
     if (article.source === 'Anadolu Ajansı') label = 'Dünya';
     else if (lowerTitle.includes('union') || lowerTitle.includes('alba') || lowerTitle.includes('füchse')) label = 'Spor';
     else if (lowerTitle.includes('brand') || lowerTitle.includes('kaza')) label = 'Flaş';
@@ -813,16 +917,16 @@ function initShakeHistory() {
 
   window.triggerHistoryPortal = () => {
     const event = BERLIN_HISTORY_EVENTS[Math.floor(Math.random() * BERLIN_HISTORY_EVENTS.length)];
-    
+
     document.getElementById('historyDate').textContent = event.date;
     document.getElementById('historyTitle').textContent = event.title;
     document.getElementById('historyText').textContent = event.text;
     document.getElementById('historyImage').style.backgroundImage = `url('${event.image}')`;
-    
+
     modal.classList.add('active');
     const container = modal.querySelector('.history-portal-container');
     container.classList.add('portal-open');
-    
+
     // Haptic feedback if available
     if ('vibrate' in navigator) navigator.vibrate([100, 50, 100]);
   };
@@ -835,7 +939,7 @@ function initShakeHistory() {
 
 function initSwipeToDismiss() {
   const modals = document.querySelectorAll('.modal, .news-modal');
-  
+
   modals.forEach(modal => {
     const content = modal.querySelector('.modal-container, .modal-content, .news-modal-content, .history-portal-container');
     if (!content) return;
@@ -1013,7 +1117,7 @@ window.closeCookieBanner = () => {
 window.openNewsModal = (index) => {
   const article = globalNews[index];
   if (!article) return;
-  
+
   document.getElementById('newsModalImg').style.backgroundImage = `url('${article.image || PLACEHOLDER_IMG}')`;
   document.getElementById('newsModalTitle').innerText = article.summary_tr || article.title;
   document.getElementById('newsModalSource').innerText = article.source;
@@ -1060,14 +1164,14 @@ let isCurrentlyPlaying = false;
 window.playPodcast = (title, desc, audioUrl, thumbClass) => {
   document.getElementById('playerTitle').innerText = title;
   document.getElementById('playerDesc').innerText = desc;
-  
+
   const thumb = document.getElementById('playerThumb');
   thumb.className = `player-thumb ${thumbClass}`; // carry over the background class
 
   mainAudio.src = audioUrl;
   mainAudio.load();
   mainAudio.play();
-  
+
   isCurrentlyPlaying = true;
   updatePlayBtnIcon();
   podcastPlayer.classList.add('active');
@@ -1147,7 +1251,7 @@ window.toggleTTS = () => {
   if (!titleEl || !descEl) return;
   const title = titleEl.innerText;
   const desc = descEl.innerText;
-  
+
   if (!synth) return;
 
   if (isSpeaking) {
@@ -1160,7 +1264,7 @@ window.toggleTTS = () => {
   const textToRead = title + '. ' + desc;
   const utterance = new SpeechSynthesisUtterance(textToRead);
   utterance.lang = localStorage.getItem('bk-lang') === 'tr' ? 'tr-TR' : localStorage.getItem('bk-lang') === 'de' ? 'de-DE' : 'en-US';
-  
+
   utterance.onend = () => {
     isSpeaking = false;
     if(ttsBtn) ttsBtn.innerHTML = '<i class="fas fa-volume-up"></i> <span data-i18n="listen_news">Dinle</span>';
@@ -1190,13 +1294,13 @@ function checkAuthStatus(user) {
   const profileEmail = document.getElementById('profileEmail');
   const loginBtn = document.getElementById('loginBtn');
   if (user) {
-    if(loginBtn) { 
+    if(loginBtn) {
       loginBtn.innerHTML = '<i class="fas fa-user-circle"></i> Profil';
       loginBtn.onclick = () => window.location.href = '/profile.html';
     }
     if(profileEmail) { profileEmail.textContent = user.email; }
   } else {
-    if(loginBtn) { 
+    if(loginBtn) {
       loginBtn.innerHTML = 'Giriş Yap';
       loginBtn.onclick = () => openLoginModal();
     }
@@ -1217,7 +1321,7 @@ window.openLoginModal = () => {
     loginView.style.display = 'block';
     profileView.style.display = 'none';
   }
-  
+
   loginModal.classList.add('active');
   document.body.style.overflow = 'hidden';
 };
@@ -1231,7 +1335,7 @@ window.mockLogin = async () => {
   const btn = loginView.querySelector('button');
   const orgHtml = btn.innerHTML;
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Bağlanıyor...';
-  
+
   try {
     await signInWithPopup(auth, googleProvider);
     closeLoginModal();
@@ -1263,7 +1367,7 @@ function initQAForum() {
   const qaFeed = document.getElementById('qaFeed');
   const qaFilters = document.querySelectorAll('.qa-filter-btn');
   const qaSortBtns = document.querySelectorAll('.qa-sort-btn');
-  
+
   if (!qaForm || !qaFeed) return;
 
   let questions = [];
@@ -1271,23 +1375,23 @@ function initQAForum() {
   let currentSort = 'newest';
 
   // 1. Listen to Firestore "forum" collection
-  const q = query(collection(db, "forum"), orderBy("time", "desc"));
-  
+  const q = query(collection(db, "forum"), where("status", "==", "approved"), orderBy("time", "desc"));
+
   onSnapshot(q, (snapshot) => {
     questions = [];
     snapshot.forEach((doc) => {
       questions.push({ id: doc.id, ...doc.data() });
     });
-    
+
     // Fallback defaults if firestore is totally empty
     if (questions.length === 0) {
       questions = [
-        { 
-          id: 'default1', 
-          name: 'Ahmet Y.', 
-          text: 'Merhaba, Kreuzberg civarında uygun fiyatlı ve nezih bir kiralık ev bulmak için hangi siteleri önerirsiniz?', 
-          time: new Date(Date.now() - 7200000).toISOString(), 
-          karma: 14, 
+        {
+          id: 'default1',
+          name: 'Ahmet Y.',
+          text: 'Merhaba, Kreuzberg civarında uygun fiyatlı ve nezih bir kiralık ev bulmak için hangi siteleri önerirsiniz?',
+          time: new Date(Date.now() - 7200000).toISOString(),
+          karma: 14,
           category: 'Ev & Kira',
           replies: [
             { name: 'BerlinGezgini', text: 'Immobilienscout24 ve WG-Gesucht klasik ama en iyileridir.', time: new Date(Date.now() - 3600000).toISOString() }
@@ -1335,7 +1439,7 @@ function initQAForum() {
           <span class="qa-badge-category">${q.category || 'Genel'}</span>
         </div>
         <div class="qa-body">${q.text}</div>
-        
+
         ${q.replies && q.replies.length > 0 ? `
           <div class="qa-replies-section">
             ${q.replies.map(r => `
@@ -1388,10 +1492,10 @@ function initQAForum() {
     const qDoc = doc(db, "forum", id);
     const q = questions.find(x => x.id === id);
     if (q) {
-      const newReplies = [...(q.replies || []), { 
-        name, 
-        text, 
-        time: new Date().toISOString() 
+      const newReplies = [...(q.replies || []), {
+        name,
+        text,
+        time: new Date().toISOString()
       }];
       try {
         await updateDoc(qDoc, { replies: newReplies });
@@ -1417,14 +1521,17 @@ function initQAForum() {
       category: categorySelect ? categorySelect.value : 'Genel',
       time: new Date().toISOString(),
       karma: 0,
-      replies: []
+      replies: [],
+      status: 'pending'
     };
 
     try {
       console.log('[Forum] Soru gönderiliyor...', newQ);
       await addDoc(collection(db, "forum"), newQ);
       console.log('[Forum] Soru başarıyla eklendi.');
-      
+
+      alert("Sorunuz alındı ve kontrol edildikten sonra yayına girecektir.");
+
       textInput.value = '';
       nameInput.value = '';
       const org = btn.innerHTML;
@@ -1651,7 +1758,7 @@ function initCursorPremium() {
     ringY += (mouseY - ringY) * 0.15;
     ring.style.left = ringX + 'px';
     ring.style.top = ringY + 'px';
-    
+
     requestAnimationFrame(animate);
   }
   animate();
@@ -1694,16 +1801,16 @@ function initTiltEffects() {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      
+
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
-      
+
       const rotateX = ((y - centerY) / centerY) * -5;
       const rotateY = ((x - centerX) / centerX) * 5;
-      
+
       card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
     });
-    
+
     card.addEventListener('mouseleave', () => {
       card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
     });
@@ -1812,11 +1919,11 @@ function initNewsletter() {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault(); // AJAX ile gönderim için standart formu engelle
-    
+
     const input = form.querySelector('.newsletter-input');
     const btn = form.querySelector('.newsletter-btn');
     const email = input.value.trim();
-    
+
     // Basic Validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailPattern.test(email)) {
@@ -1873,7 +1980,7 @@ function initNewsletter() {
 
 /**
  * Brevo API Entegrasyon Şablonu
- * Not: Bu kodu frontend'de kullanmak API anahtarını açık eder. 
+ * Not: Bu kodu frontend'de kullanmak API anahtarını açık eder.
  * Güvenli kullanım için Netlify/Vercel Functions kullanılmalıdır.
  */
 async function subscribeToBrevo(email) {
@@ -1934,6 +2041,14 @@ document.addEventListener('DOMContentLoaded', () => {
   initNotifications();
   initAuthListener();
   initCookieBanner();
+
+  // Call AI Dashboard with initial/mock data
+  renderAIDashboard({
+    temp: "8°C",
+    desc: "Parçalı Bulutlu",
+    weatherAdvice: "Bugün hava biraz serin, yanınıza bir ceket almayı unutmayın! 🧥",
+    newsBrief: "Berlin'de haftalık etkinlikler ve teknoloji haberleri öne çıkıyor. Şehir genelinde ulaşım normal seyrinde."
+  });
 });
 
 // ── Service Worker Registration & Layout Fail-safe ─────────────
@@ -1971,12 +2086,18 @@ async function initJobBoard() {
 
   try {
     const jobsRef = collection(db, "jobs");
-    const q = query(jobsRef, orderBy("createdAt", "desc"));
-    
+    const q = query(jobsRef, where("status", "==", "approved"), orderBy("createdAt", "desc"));
+
     onSnapshot(q, (snap) => {
       let jobs = [];
       snap.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
-      renderJobs(jobs);
+
+      if (jobs.length === 0) {
+        console.log('[Jobs] Firestore empty, showing demo jobs.');
+        renderJobs(DEMO_JOBS);
+      } else {
+        renderJobs(jobs);
+      }
     });
 
   } catch (error) {
@@ -1988,8 +2109,8 @@ async function initJobBoard() {
       jobFilters.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const type = btn.dataset.type;
-      
-      getDocs(collection(db, "jobs")).then(snap => {
+
+      getDocs(query(collection(db, "jobs"), where("status", "==", "approved"))).then(snap => {
         let jobs = [];
         snap.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
         if (type !== 'all') {
@@ -2003,11 +2124,13 @@ async function initJobBoard() {
 
 function renderJobs(jobs) {
   const jobsGrid = document.getElementById('jobsGrid');
+  if (!jobsGrid) return;
+
   if (!jobs.length) {
     jobsGrid.innerHTML = '<p class="no-data">Gösterilecek ilan bulunmuyor.</p>';
     return;
   }
-  
+
   jobsGrid.innerHTML = jobs.map(job => `
     <div class="job-card reveal glass-panel">
       <span class="job-badge">${job.type}</span>
@@ -2019,6 +2142,14 @@ function renderJobs(jobs) {
       <a href="mailto:${job.contact}" class="job-apply-btn">Başvur / İletişime Geç</a>
     </div>
   `).join('');
+
+  // Re-observe or show immediately
+  const reveals = jobsGrid.querySelectorAll('.reveal');
+  if (window.revealObserver) {
+    reveals.forEach(el => window.revealObserver.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('visible'));
+  }
 }
 
 window.openJobModal = () => {
@@ -2037,9 +2168,10 @@ window.openJobModal = () => {
     addDoc(collection(db, "jobs"), {
       title, company, location, type, contact,
       postedBy: auth.currentUser.uid,
+      status: 'pending',
       createdAt: serverTimestamp()
     }).then(() => {
-      alert("İlanınız başarıyla eklendi.");
+      alert("İlanınız başarıyla alındı ve kontrol edildikten sonra yayına girecektir.");
     }).catch(err => console.error(err));
   }
 };
@@ -2054,7 +2186,7 @@ window.toggleBookmark = async (id, type) => {
 
   const userRef = doc(db, "users", auth.currentUser.uid);
   let bookmarks = JSON.parse(localStorage.getItem(`bookmarks_${auth.currentUser.uid}`) || '[]');
-  
+
   if (bookmarks.includes(id)) {
     bookmarks = bookmarks.filter(b => b !== id);
     alert("Kaydedilenlerden kaldırıldı.");
@@ -2062,7 +2194,7 @@ window.toggleBookmark = async (id, type) => {
     bookmarks.push(id);
     alert("Kaydedildi!");
   }
-  
+
   localStorage.setItem(`bookmarks_${auth.currentUser.uid}`, JSON.stringify(bookmarks));
   await updateDoc(userRef, { bookmarks }).catch(async (err) => {
     if (err.code === 'not-found') {
@@ -2097,10 +2229,10 @@ async function initPolls() {
     const pollData = pollDoc.data();
 
     pollQuestionEl.innerText = pollData.question;
-    
+
     // Check if user already voted (LocalStorage for simplicity in demo)
     const votedId = localStorage.getItem(`bk-poll-${pollId}`);
-    
+
     renderPollOptions(pollId, pollData, votedId);
 
     pollResetBtn.addEventListener('click', () => {
@@ -2122,7 +2254,7 @@ function renderPollOptions(pollId, pollData, votedId) {
   const pollTotalEl = document.getElementById('pollTotal');
   const options = pollData.options || [];
   const totalVotes = options.reduce((sum, opt) => sum + (opt.votes || 0), 0);
-  
+
   pollTotalEl.innerText = `Toplam ${totalVotes} oy`;
 
   pollOptionsEl.innerHTML = options.map((option, index) => {
@@ -2131,8 +2263,8 @@ function renderPollOptions(pollId, pollData, votedId) {
     const isSelected = votedId === String(index);
 
     return `
-      <button class="poll-option-btn ${isVoted ? 'voted' : ''} ${isSelected ? 'selected' : ''}" 
-              onclick="votePoll('${pollId}', ${index})" 
+      <button class="poll-option-btn ${isVoted ? 'voted' : ''} ${isSelected ? 'selected' : ''}"
+              onclick="votePoll('${pollId}', ${index})"
               ${isVoted ? 'disabled' : ''}>
         <div class="poll-progress-bg" style="width: ${isVoted ? percent : 0}%"></div>
         <span class="poll-option-text">${option.text}</span>
@@ -2145,7 +2277,7 @@ function renderPollOptions(pollId, pollData, votedId) {
 window.votePoll = async (pollId, optionIndex) => {
   try {
     const pollRef = doc(db, 'polls', pollId);
-    
+
     // Get latest data to update correctly
     const querySnapshot = await getDocs(query(collection(db, 'polls')));
     const pollDoc = querySnapshot.docs.find(d => d.id === pollId);
@@ -2156,9 +2288,9 @@ window.votePoll = async (pollId, optionIndex) => {
     options[optionIndex].votes = (options[optionIndex].votes || 0) + 1;
 
     await updateDoc(pollRef, { options });
-    
+
     localStorage.setItem(`bk-poll-${pollId}`, String(optionIndex));
-    
+
     // Re-render
     renderPollOptions(pollId, { ...pollData, options }, String(optionIndex));
     document.getElementById('pollReset').classList.remove('hidden');
@@ -2211,23 +2343,22 @@ function initMap() {
 // ── Search Logic (Enhanced with Results Overlay & Shortcut) ──────
 function initSearch() {
   const toggle = document.getElementById('searchToggle');
-  const wrapper = document.getElementById('searchInputWrapper');
+  const overlay = document.getElementById('searchOverlay');
   const close = document.getElementById('searchClose');
   const input = document.getElementById('searchInput');
-  const overlay = document.getElementById('searchResultsOverlay');
   const resultsList = document.getElementById('searchResultsList');
 
-  if (!toggle || !wrapper || !close || !input || !overlay) return;
+  if (!toggle || !overlay || !close || !input) return;
 
   function openSearch() {
-    wrapper.classList.add('active');
     overlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Lock scroll
     setTimeout(() => input.focus(), 100);
   }
 
   function closeSearch() {
-    wrapper.classList.remove('active');
     overlay.classList.remove('active');
+    document.body.style.overflow = ''; // Unlock scroll
     input.value = '';
     resultsList.innerHTML = '';
   }
@@ -2235,13 +2366,20 @@ function initSearch() {
   toggle.addEventListener('click', openSearch);
   close.addEventListener('click', closeSearch);
 
-  // Keyboard Shortcut: Ctrl + K
+  // Close on backdrop click (but not content)
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeSearch();
+  });
+
+  // Keyboard Shortcut: Ctrl + K or Escape
   document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
       e.preventDefault();
       openSearch();
     }
-    if (e.key === 'Escape') closeSearch();
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      closeSearch();
+    }
   });
 
   input.addEventListener('input', (e) => {
@@ -2251,14 +2389,13 @@ function initSearch() {
       return;
     }
 
-    // Search in News, Events (globalNews, globalEvents)
-    const newsResults = (globalNews || []).filter(n => 
-      (n.title && n.title.toLowerCase().includes(query)) || 
+    const newsResults = (globalNews || []).filter(n =>
+      (n.title && n.title.toLowerCase().includes(query)) ||
       (n.summary_tr && n.summary_tr.toLowerCase().includes(query))
     );
 
-    const eventResults = (globalEvents || []).filter(ev => 
-      (ev.title && ev.title.toLowerCase().includes(query)) || 
+    const eventResults = (globalEvents || []).filter(ev =>
+      (ev.title && ev.title.toLowerCase().includes(query)) ||
       (ev.description && ev.description.toLowerCase().includes(query))
     );
 
@@ -2272,10 +2409,10 @@ function initSearch() {
     }
 
     let html = '';
-    
+
     if (news.length > 0) {
       html += `<div class="search-category-title">Haberler (${news.length})</div>`;
-      news.slice(0, 5).forEach(n => {
+      news.slice(0, 6).forEach(n => {
         html += `
           <div class="search-result-item" onclick="openNewsModal(${globalNews.indexOf(n)})">
             <i class="fas fa-newspaper"></i>
@@ -2290,7 +2427,7 @@ function initSearch() {
 
     if (events.length > 0) {
       html += `<div class="search-category-title">Etkinlikler (${events.length})</div>`;
-      events.slice(0, 5).forEach(ev => {
+      events.slice(0, 4).forEach(ev => {
         html += `
           <div class="search-result-item">
             <i class="fas fa-calendar-alt"></i>
@@ -2335,7 +2472,7 @@ function renderHeroFeatured(article) {
 
   container.innerHTML = `
     <article class="news-card magnetic-card" onclick="openNewsModal(0)">
-      <div class="news-card-img" style="background-image: url('${article.image || PLACEHOLDER_IMG}')"></div>
+      <div class="news-card-img" style="background-image: url('${getNewsImage(article)}')"></div>
       <div class="news-card-content">
         <div class="news-meta">
           <span class="news-source-tag">${article.source}</span>
@@ -2345,7 +2482,11 @@ function renderHeroFeatured(article) {
       </div>
     </article>
   `;
-  container.classList.add('visible');
+
+  // Re-observe
+  if (window.revealObserver) {
+    container.querySelectorAll('.reveal').forEach(el => window.revealObserver.observe(el));
+  }
 }
 
 // ── Category Filters Logic ─────────────────
@@ -2359,7 +2500,7 @@ function initFilters() {
 
       const category = btn.dataset.category;
       renderNews(globalNews, category);
-      
+
       // Smooth scroll back to top of news if needed
       if (window.innerWidth < 1024) {
         document.getElementById('haberler').scrollIntoView({ behavior: 'smooth' });
@@ -2381,7 +2522,7 @@ async function loginWithGoogle() {
 function initAuthListener() {
   onAuthStateChanged(auth, (user) => {
     const loginLabel = document.getElementById('loginLabel');
-    
+
     if (user) {
       if (loginLabel) loginLabel.innerText = user.displayName || user.email;
       const modal = document.getElementById('loginModal');
@@ -2409,7 +2550,7 @@ async function subscribeUser() {
       userVisibleOnly: true,
       applicationServerKey: 'BIsy3-W_ZfO1773702207039-PWA-TEST-KEY-PLACEHOLDER'
     });
-    
+
     if (auth.currentUser) {
       const { setDoc } = await import('firebase/firestore'); // Ensure setDoc is avail or imported
       const subRef = doc(db, "subscriptions", auth.currentUser.uid);
@@ -2429,5 +2570,4 @@ async function subscribeUser() {
   }
 }
 
-window.openLoginModal = () => loginWithGoogle();
 window.logout = () => signOut(auth).then(() => location.reload());
