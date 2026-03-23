@@ -155,8 +155,8 @@ async function summarizeWithAI(articles) {
           summarized++;
         }
 
-        // Rate limit: 15 istek/dk → ~4sn arası bekle
-        await sleep(4000);
+        // Rate limit: 15 istek/dk → ~5sn arası bekle
+        await sleep(5000);
       } catch (err) {
         console.log(`    ⚠️  Özetleme hatası: ${err.message}`);
       }
@@ -180,7 +180,7 @@ async function generateAIInsights(articles) {
   try {
     console.log('  🤖 Gemini AI — Berlin Insight üretiliyor...');
     const genAI = new GoogleGenerativeAI(CONFIG.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
     // 1. Haber Özeti (Flash ile hızlı)
     const titles = articles.slice(0, 5).map(a => a.title).join('\n');
@@ -266,6 +266,7 @@ async function main() {
   writeFileSync(DATA_PATH, JSON.stringify(output, null, 2), 'utf-8');
   console.log(`\n💾 Kaydedildi: ${DATA_PATH}`);
   console.log('✅ Tamamlandı!\n');
+  process.exit(0);
 }
 
 main().catch((err) => {

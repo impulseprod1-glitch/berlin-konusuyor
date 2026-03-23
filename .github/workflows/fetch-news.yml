@@ -1,0 +1,49 @@
+name: Otomatik Haber Guncelleme
+
+on:
+  schedule:
+    # Her saat başı 0. dakikada çalışır (Cron formatı)
+    # Örnek: '0 * * * *' = Her saat başı
+    # Örnek: '*/30 * * * *' = Her 30 dakikada bir
+    - cron: '0 * * * *'
+  
+  # İhtiyaç duyduğunuzda GitHub arayüzünden manuel bir butona basarak da çalıştırabilmenizi sağlar
+  workflow_dispatch:
+
+permissions:
+  contents: write # Bot'un github'a geri commit atabilmesi için gerekli izin
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Repoyu Klonla
+        uses: actions/checkout@v4
+
+      - name: Node.js Kurulumu
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Bagimliliklari Yukle (Install Dependencies)
+        run: npm install
+
+      - name: Haberleri Çek ve Güncelle (Fetch News)
+        # .env dosyasındaki şifreleri GitHub Secrets'tan alıyoruz:
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NEWSDATA_API_KEY: ${{ secrets.NEWSDATA_API_KEY }}
+        run: node scripts/fetch-news.mjs
+
+      - name: Değişiklikleri Kaydet ve Repoya Gönder (Commit & Push)
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/news.json
+          
+          # Eğer hiçbir yeni haber haberi yoksa hata vermemesi için "|| echo" ekliyoruz.
+          git commit -m "Oto-Güncelleme: Yeni haberler çekildi 🤖 [skip ci]" || echo "Değişiklik yok, commit atlanıyor."
+          
+          # Değişikliği projenize yollar
+          git push

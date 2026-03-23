@@ -12,7 +12,8 @@
 
   <!-- PWA Metadata -->
   <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#050505">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="/icon-192.png">
 
   <!-- Open Graph / Facebook -->
@@ -198,6 +199,20 @@
         <div class="news-meta-info">
           <span class="news-count" id="newsCount"></span>
           <span class="news-badge" id="newsSource">TRT Haber</span>
+        </div>
+      </div>
+
+      <!-- ── GÜNÜN YORUMU (SHORTS) ──────────────── -->
+      <div class="daily-shorts-container reveal">
+        <div class="shorts-video-wrapper">
+          <!-- Varsayılan olarak sizin YouTube kanalınızı gösterir. Shorts linklerinizi (ör: embed/ID_BURAYA ) buraya ekleyebilirsiniz -->
+          <iframe src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A" title="Berlin Konuşuyor - Günün Yorumu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="shorts-info">
+          <div class="live-badge"><span class="pulsate-dot"></span> BERLİN GÜNDEMİ</div>
+          <h3 class="shorts-title">Bugün Berlin'de Neler Oldu?</h3>
+          <p class="shorts-desc">Kısa ve öz: Berlin'deki önemli gelişmeleri ve haberlerin perde arkasını sizin için 1 dakikada özetledim. Berlin'in kalbini dinlemeye devam edin.</p>
+          <a href="#newsGrid" class="magnetic-btn shorts-btn" aria-label="Haberi Oku">Detayları Oku <i class="fas fa-arrow-down"></i></a>
         </div>
       </div>
 
@@ -773,6 +788,7 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

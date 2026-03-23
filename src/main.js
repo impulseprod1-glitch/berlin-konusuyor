@@ -70,15 +70,20 @@ function initDashboardUtils() {
 
   // 2. Hava Durumu (Basit Fetch)
   fetch('https://wttr.in/Berlin?format=%t+%C')
-    .then(res => res.text())
+    .then(res => {
+      if (!res.ok) throw new Error('Weather service unreachable');
+      return res.text();
+    })
     .then(data => {
+      if (!data || data.includes('Unknown') || data.includes('html')) throw new Error('Invalid weather data');
       const parts = data.split(' ');
       const temp = parts[0];
       const desc = parts.slice(1).join(' ');
+
       const tempEl = document.getElementById('berlinTemp');
       const descEl = document.getElementById('weatherDesc');
-      if (tempEl) tempEl.innerText = temp;
-      if (descEl) descEl.innerText = desc;
+      if (tempEl && temp.includes('°')) tempEl.innerText = temp;
+      if (descEl && desc) descEl.innerText = desc;
     })
     .catch(() => {
       const tempEl = document.getElementById('berlinTemp');
@@ -503,6 +508,28 @@ async function loadNews() {
   }
 }
 
+async function fetchFallbackNews() {
+  console.log('[News] Fetching local fallback news...');
+  try {
+    const res = await fetch('/data/news.json');
+    if (!res.ok) throw new Error('News fallback fetch failed');
+    const data = await res.json();
+    if (data.articles && data.articles.length > 0) {
+      globalNews = data.articles;
+      renderNews(globalNews);
+      renderTicker(globalNews);
+      renderHeroFeatured(globalNews[0]);
+
+      // Update AI Dashboard if insights exist
+      if (data.insights && typeof renderAIDashboard === 'function') {
+        renderAIDashboard(data.insights);
+      }
+    }
+  } catch (err) {
+    console.error('[News] Fallback error:', err);
+  }
+}
+
 function getTimeAgo(isoDate) {
   const diff = Date.now() - new Date(isoDate).getTime();
   const mins = Math.floor(diff / 60000);
@@ -557,6 +584,21 @@ async function loadEvents() {
     fetchFallbackEvents();
   }
 }
+
+async function fetchFallbackEvents() {
+  console.log('[Events] Fetching local fallback events...');
+  try {
+    const res = await fetch('/data/events.json');
+    if (!res.ok) throw new Error('Events fallback fetch failed');
+    const data = await res.json();
+    if (data.events && data.events.length > 0) {
+      globalEvents = data.events;
+      renderEvents(globalEvents);
+    }
+  } catch (err) {
+    console.error('[Events] Fallback error:', err);
+  }
+}
 function renderEvents(events) {
   const container = document.getElementById('eventsTrack');
   if (!container) return;
@@ -577,21 +619,23 @@ function renderEvents(events) {
       }
 
       return `
-        <div class="event-card reveal" style="animation-delay: ${index * 0.1}s">
-          <div class="event-date">
-            <span class="day">${day}</span>
-            <span class="month">${month}</span>
+        <div class="event-card reveal" style="animation-delay: ${index * 0.1}s" onclick="window.open('${event.url || '#'}', '_blank')">
+          <div class="event-img" style="background-image: url('${event.image || PLACEHOLDER_IMG}')">
+            ${event.category ? `<span class="event-category">${event.category}</span>` : ''}
           </div>
-          <div class="event-info">
+          <div class="event-body">
+            <div class="event-date-box">
+              <span class="event-day">${day}</span>
+              <span class="event-month">${month}</span>
+            </div>
             <h3 class="event-title">${event.summary_tr || event.title}</h3>
-            <p class="event-location"><i class="fas fa-map-marker-alt"></i> ${event.venue || 'Berlin'}</p>
-            <p class="event-description">${event.description || ''}</p>
+            <p class="event-location"><i class="fas fa-map-marker-alt"></i> ${event.location || event.venue || 'Berlin'}</p>
           </div>
         </div>
       `;
     }).join('');
 
-    // Re-observe or show immediately
+    // Re-observe
     const reveals = container.querySelectorAll('.reveal');
     if (window.revealObserver) {
       reveals.forEach(el => window.revealObserver.observe(el));
@@ -633,8 +677,8 @@ async function loadPodcasts() {
 
 function initReveal() {
   if (window.revealObserver) {
-    // Already initialized, just re-scan for any missed elements
-    document.querySelectorAll('.reveal:not(.visible), .reveal-small:not(.visible)').forEach((el) => {
+    // Already initialized, re-scan
+    document.querySelectorAll('.reveal:not(.visible), .reveal-small:not(.visible), .reveal-left:not(.visible), .reveal-right:not(.visible)').forEach((el) => {
       window.revealObserver.observe(el);
     });
     return;
@@ -652,7 +696,7 @@ function initReveal() {
     rootMargin: '0px 0px -60px 0px'
   });
 
-  document.querySelectorAll('.reveal, .reveal-small').forEach((el) => {
+  document.querySelectorAll('.reveal, .reveal-small, .reveal-left, .reveal-right').forEach((el) => {
     window.revealObserver.observe(el);
   });
 }
@@ -769,8 +813,8 @@ function initMobileDock() {
 
   aiBtn?.addEventListener('click', (e) => {
     e.preventDefault();
-    const chatbot = document.getElementById('chatbot');
-    if (chatbot) chatbot.classList.add('active');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    if (chatbotWindow) chatbotWindow.classList.add('active');
   });
 
   // Highlight active link on click
@@ -1307,10 +1351,7 @@ function checkAuthStatus(user) {
   }
 }
 
-// 1. Firebase Auth State Listener
-onAuthStateChanged(auth, (user) => {
-  checkAuthStatus(user);
-});
+// Auth listener is handled in initAuthListener below
 
 window.openLoginModal = () => {
   const user = auth.currentUser;
@@ -1700,9 +1741,6 @@ document.querySelectorAll('.quick-reply-btn').forEach(btn => {
 });
 
 // ═══════════════════════════════════════════
-// PREMIUM ENHANCEMENTS
-// ═══════════════════════════════════════════
-
 // ── Splash Screen ───────────────────────────
 function initSplash() {
   const splash = document.getElementById('splashScreen');
@@ -2002,6 +2040,30 @@ async function subscribeToBrevo(email) {
   }
 }
 
+// ── Lenis Smooth Scroll ─────────────────────
+function initLenis() {
+  if (typeof Lenis !== 'undefined') {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: 'vertical', // vertical, horizontal
+      gestureDirection: 'vertical', // vertical, horizontal, both
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+    console.log("Premium Feature: Lenis Smooth Scroll Initialized");
+  }
+}
+
 function resetNewsletterBtn(btn) {
   const lang = localStorage.getItem('bk-lang') || 'tr';
   btn.textContent = translations[lang]?.newsletter_btn || 'Abone Ol';
@@ -2010,6 +2072,7 @@ function resetNewsletterBtn(btn) {
 
 // ── Init ────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  initLenis();
   initSplash();
   initTextReveal();
   loadNews();
@@ -2522,13 +2585,26 @@ async function loginWithGoogle() {
 function initAuthListener() {
   onAuthStateChanged(auth, (user) => {
     const loginLabel = document.getElementById('loginLabel');
+    const profileEmail = document.getElementById('profileEmail');
+    const loginBtn = document.getElementById('loginBtn');
 
     if (user) {
       if (loginLabel) loginLabel.innerText = user.displayName || user.email;
+      if (profileEmail) profileEmail.textContent = user.email;
+
+      if (loginBtn) {
+        loginBtn.innerHTML = '<i class="fas fa-user-circle"></i> Profil';
+        loginBtn.onclick = () => window.location.href = '/profile.html';
+      }
+
       const modal = document.getElementById('loginModal');
       if (modal) modal.classList.remove('active');
     } else {
       if (loginLabel) loginLabel.innerText = 'Giriş Yap';
+      if (loginBtn) {
+        loginBtn.innerHTML = 'Giriş Yap';
+        loginBtn.onclick = () => openLoginModal();
+      }
     }
   });
 }
