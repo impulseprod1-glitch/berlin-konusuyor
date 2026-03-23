@@ -589,46 +589,23 @@
     </div>
   </div>
 
-  <!-- ═══════════════ LOGIN / PROFILE MODAL ═══════════════ -->
+  <!-- ═══════════════ LOGIN MODAL ═══════════════ -->
   <div id="loginModal" class="modal login-modal">
     <div class="modal-content glass-panel login-modal-content">
       <span class="modal-close" onclick="closeLoginModal()">&times;</span>
-
-      <!-- Login View -->
+      
       <div id="loginView">
         <h2 class="login-modal-title">Giriş Yap</h2>
-        <p class="login-modal-subtitle">Favori içeriklerini kaydetmek için giriş yap.</p>
+        <p class="login-modal-subtitle">Eyleminize devam etmek için Google hesabınızla güvenle giriş yapın.</p>
 
-        <button class="magnetic-btn login-google-btn" onclick="mockLogin()" aria-label="Google ile Giriş Yap">
+        <button class="magnetic-btn login-google-btn" onclick="login(); closeLoginModal();" aria-label="Google ile Giriş Yap">
           <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20" height="20" alt="Google" aria-hidden="true"> Google ile Giriş Yap
         </button>
 
-        <p class="login-modal-disclaimer">
-          *Bu bir demo girişidir. Bilgileriniz tarayıcınızda (LocalStorage) tutulmaktadır.
+        <p class="login-modal-disclaimer" style="margin-top: 20px; font-size: 0.8rem; color: var(--text-muted);">
+          *Sistemimizde Google Firebase güvenli altyapısı kullanılmaktadır.
         </p>
       </div>
-
-      <!-- Profile View (Hidden initially) -->
-      <div id="profileView" class="hidden-view">
-        <div class="profile-avatar">
-          BK
-        </div>
-        <h2 class="profile-title">Hoş Geldiniz!</h2>
-        <p class="profile-email" id="profileEmail">demo@berlinkonusuyor.com</p>
-
-        <div class="profile-bookmarks">
-          <h4 class="profile-bookmarks-title"><i class="fas fa-bookmark" aria-hidden="true"></i> Kaydedilenler (Demo)</h4>
-          <ul class="profile-bookmarks-list">
-            <li>- Kreuzberg En İyi Kahveciler</li>
-            <li>- Hafta Sonu Techno Etkinliği</li>
-          </ul>
-        </div>
-
-        <button class="magnetic-btn profile-logout-btn" onclick="mockLogout()">
-          Çıkış Yap
-        </button>
-      </div>
-
     </div>
   </div>
 

@@ -1181,6 +1181,30 @@ img { max-width: 100%; display: block; }
   gap: 8px;
 }
 
+/* ── İŞ İLANLARI (JOB BOARD) ──────────────── */
+.jobs-container { max-width: 1000px; margin: 0 auto; }
+.jobs-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 15px; }
+.jobs-filters { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; }
+.jobs-filters::-webkit-scrollbar { height: 4px; }
+.jobs-filters::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+.job-filter-btn { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-primary); padding: 8px 16px; border-radius: 20px; cursor: pointer; white-space: nowrap; transition: all 0.3s ease; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+.job-filter-btn:hover, .job-filter-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
+.post-job-btn { background: var(--gradient-primary); color: white; border: none; padding: 10px 24px; border-radius: 25px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 15px rgba(255,75,43,0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.post-job-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,75,43,0.4); }
+.jobs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.job-card { padding: 24px; display: flex; flex-direction: column; gap: 12px; transition: transform 0.3s ease; border-left: 4px solid var(--primary); }
+.job-card:hover { transform: translateY(-5px); }
+.job-role { font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin: 0; }
+.job-company { color: var(--text-secondary); font-size: 0.95rem; margin: 0; display: flex; align-items: center; gap: 6px; }
+.job-meta-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 5px; }
+.job-badge { background: rgba(255, 255, 255, 0.08); padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; color: var(--text-primary); display: flex; align-items: center; gap: 5px; }
+.job-apply-btn { margin-top: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text-primary); text-align: center; padding: 10px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; }
+.job-apply-btn:hover { background: var(--primary); border-color: var(--primary); color: white; }
+@media (max-width: 768px) {
+  .jobs-toolbar { flex-direction: column-reverse; align-items: stretch; }
+  .post-job-btn { width: 100%; margin-bottom: 10px; }
+}
+
 /* ── Footer ──────────────────────────────── */
 .footer {
   border-top: 1px solid var(--border);
