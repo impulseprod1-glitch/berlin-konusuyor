@@ -55,10 +55,20 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: var(--bg-primary);
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(circle at 15% 50%, rgba(128, 0, 32, 0.05), transparent 50%),
+                    radial-gradient(circle at 85% 30%, rgba(200, 0, 50, 0.05), transparent 50%);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: bgShift 15s ease infinite alternate;
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1203,6 +1213,60 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .jobs-toolbar { flex-direction: column-reverse; align-items: stretch; }
   .post-job-btn { width: 100%; margin-bottom: 10px; }
+}
+
+/* ── MOBILE BOTTOM NAV ────────────────────── */
+.mobile-bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  max-width: 400px;
+  background: rgba(18, 18, 18, 0.85);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 10px 20px;
+  z-index: 9999;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+.bottom-nav-item i {
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+  transition: transform 0.3s ease;
+}
+.bottom-nav-item:hover, .bottom-nav-item.active {
+  color: var(--text-primary);
+}
+.bottom-nav-item:hover i, .bottom-nav-item.active i {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .mobile-bottom-nav {
+    display: flex;
+  }
+  .footer {
+    padding-bottom: 100px;
+  }
 }
 
 /* ── Footer ──────────────────────────────── */

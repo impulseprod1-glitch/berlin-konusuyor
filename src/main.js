@@ -2937,6 +2937,19 @@ function initJobs() {
       loadJobs();
     });
   });
-
   loadJobs();
 }
+
+window.scrollToTop = (e) => {
+  if (e) e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+window.handleMobileProfile = (e) => {
+  if (e) e.preventDefault();
+  if (auth.currentUser) {
+    window.location.href = 'profile.html';
+  } else {
+    login();
+  }
+};
