@@ -2,7 +2,7 @@ import './style.css';
 import {
   db, auth, googleProvider,
   collection, query, where, orderBy, onSnapshot, addDoc, setDoc,
-  serverTimestamp, doc, updateDoc, increment, getDocs, deleteDoc,
+  serverTimestamp, doc, updateDoc, increment, getDocs, getDoc, deleteDoc,
   signInWithPopup, signOut, onAuthStateChanged
 } from './firebase-config.js';
 
@@ -2683,7 +2683,151 @@ async function subscribeUser() {
 window.logout = () => signOut(auth).then(() => location.reload());
 
 // Auth
+// Auth & QA
 document.addEventListener('DOMContentLoaded', () => {
   initAuthListener();
+  initQA();
 });
 
+// ── TOPLULUK SORU & CEVAP (QA) ───────────────────
+function initQA() {
+  const qaForm = document.getElementById('qaForm');
+  const qaFeed = document.getElementById('qaFeed');
+  if (!qaForm || !qaFeed) return;
+
+  let currentCategory = 'all';
+  let currentSort = 'newest';
+
+  const loadQuestions = () => {
+    const q = query(collection(db, "questions"), orderBy("createdAt", "desc"));
+    onSnapshot(q, (snapshot) => {
+      let questions = [];
+      snapshot.forEach(doc => questions.push({ id: doc.id, ...doc.data() }));
+      
+      if (currentCategory !== 'all') {
+        questions = questions.filter(q => q.category === currentCategory);
+      }
+      
+      if (currentSort === 'popular') {
+        questions.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+      }
+
+      renderQAFeed(questions);
+    });
+  };
+
+  const renderQAFeed = (questions) => {
+    if (questions.length === 0) {
+      qaFeed.innerHTML = '<div class="empty-state" style="text-align:center; padding: 20px;"><p>Henüz bu kategoride soru yok. İlk soran sen ol!</p></div>';
+      return;
+    }
+
+    qaFeed.innerHTML = questions.map(q => {
+      const dateStr = q.createdAt ? new Date(q.createdAt.toDate()).toLocaleDateString('tr-TR') : 'Şimdi';
+      const isLiked = auth.currentUser && q.likedBy && q.likedBy.includes(auth.currentUser.uid);
+      const heartClass = isLiked ? 'fas fa-heart text-danger' : 'far fa-heart';
+      
+      return `
+        <div class="qa-card glass-panel" style="padding: 15px; margin-bottom: 15px; border-radius: 12px;">
+          <div class="qa-header" style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.9rem; color: var(--text-secondary);">
+            <span class="qa-author"><i class="fas fa-user-circle"></i> ${q.author || 'Anonim'}</span>
+            <span class="qa-date">${dateStr}</span>
+          </div>
+          <p class="qa-text" style="margin-bottom: 15px; line-height: 1.5;">${q.text}</p>
+          <div class="qa-footer" style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="news-source-tag" style="font-size: 0.8rem; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 10px;">${q.category}</span>
+            <button class="qa-action-btn ${isLiked ? 'liked' : ''}" onclick="window.toggleQALike('${q.id}')" style="background: none; border: none; cursor: pointer; color: var(--text-primary); display: flex; align-items: center; gap: 5px;">
+              <i class="${heartClass}"></i> ${q.likes || 0}
+            </button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  };
+
+  qaForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!auth.currentUser) {
+      alert('Soru sormak için lütfen sağ üstten Giriş Yapın.');
+      return;
+    }
+
+    const nameInput = document.getElementById('qaName').value.trim() || auth.currentUser.displayName || 'İsimsiz';
+    const textInput = document.getElementById('qaQuestion').value.trim();
+    const catInput = document.getElementById('qaCategory').value;
+    if (!textInput) return;
+
+    try {
+      const btn = qaForm.querySelector('button[type="submit"]');
+      const originalText = btn.innerText;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gönderiliyor...';
+      btn.disabled = true;
+
+      await addDoc(collection(db, "questions"), {
+        author: nameInput,
+        authorId: auth.currentUser.uid,
+        text: textInput,
+        category: catInput,
+        likes: 0,
+        likedBy: [],
+        createdAt: serverTimestamp()
+      });
+
+      document.getElementById('qaQuestion').value = '';
+      btn.disabled = false;
+      btn.innerText = originalText;
+    } catch (err) {
+      console.error('Soru gönderilemedi', err);
+      alert('Bir hata oluştu. Lütfen tekrar deneyin.');
+    }
+  });
+
+  document.querySelectorAll('.qa-filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.qa-filter-btn').forEach(b => b.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+      currentCategory = e.currentTarget.dataset.category;
+      loadQuestions();
+    });
+  });
+
+  document.querySelectorAll('.qa-sort-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.qa-sort-btn').forEach(b => b.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+      currentSort = e.currentTarget.dataset.sort;
+      loadQuestions();
+    });
+  });
+
+  loadQuestions();
+}
+
+window.toggleQALike = async (questionId) => {
+  if (!auth.currentUser) {
+    alert('Teşekkür etmek için lütfen giriş yapın.');
+    return;
+  }
+  
+  try {
+    const qRef = doc(db, "questions", questionId);
+    const qSnap = await getDoc(qRef);
+    if (!qSnap.exists()) return;
+
+    const data = qSnap.data();
+    let likedBy = data.likedBy || [];
+    let likes = data.likes || 0;
+
+    if (likedBy.includes(auth.currentUser.uid)) {
+      likedBy = likedBy.filter(id => id !== auth.currentUser.uid);
+      likes = Math.max(0, likes - 1);
+    } else {
+      likedBy.push(auth.currentUser.uid);
+      likes += 1;
+    }
+
+    await updateDoc(qRef, { likes, likedBy });
+  } catch (err) {
+    console.error("Beğeni güncellenemedi:", err);
+  }
+};
