@@ -93,6 +93,9 @@
     <div id="profileAvatar" class="profile-avatar-large">BK</div>
     <h1 id="userName" class="profile-name">Yükleniyor...</h1>
     <p id="userEmail" class="profile-email">---</p>
+    <button class="action-btn" onclick="logout()" style="margin-top: -15px; margin-bottom: 20px; font-size: 0.9rem; border: 1px solid var(--border); padding: 8px 20px; border-radius: 20px; cursor: pointer; color: var(--text-secondary); background: transparent;">
+      <i class="fas fa-sign-out-alt"></i> Çıkış Yap
+    </button>
 
     <div class="profile-tabs">
       <div class="profile-tab active" onclick="switchTab('bookmarks')">Favorilerim</div>
@@ -102,16 +105,15 @@
 
   <section class="profile-content">
     <div id="tabContent">
-      <!-- Dinamik İçerik -->
       <div class="empty-state">
         <i class="fas fa-bookmark"></i>
-        <p>Henüz bir içerik kaydetmediniz.</p>
+        <p>Favorilerinize eklediğiniz haberler yakında burada görünecek.</p>
       </div>
     </div>
   </section>
 
   <script type="module">
-    import { auth, db, onAuthStateChanged, collection, query, where, getDocs } from './src/firebase-config.js';
+    import { auth, db, onAuthStateChanged, collection, query, where, getDocs, signOut } from './src/firebase-config.js';
 
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -128,14 +130,64 @@
       }
     });
 
+    window.logout = () => {
+      signOut(auth).then(() => {
+        window.location.href = '/';
+      });
+    };
+
     window.switchTab = (tab) => {
       document.querySelectorAll('.profile-tab').forEach(t => t.classList.remove('active'));
       event.target.classList.add('active');
-      // Tab loading logic here
+      
+      const content = document.getElementById('tabContent');
+      if (tab === 'bookmarks') {
+         if (auth.currentUser) loadBookmarks(auth.currentUser.uid);
+      } else {
+         content.innerHTML = `
+          <div class="empty-state">
+            <i class="fas fa-pen"></i>
+            <p>Henüz bir paylaşım yapmadınız.</p>
+          </div>
+         `;
+      }
     };
 
     async function loadBookmarks(uid) {
-      // Logic to fetch bookmarked items
+      const content = document.getElementById('tabContent');
+      content.innerHTML = '<div style="text-align: center;"><i class="fas fa-spinner fa-spin"></i> Yükleniyor...</div>';
+      
+      try {
+        const q = query(collection(db, "bookmarks"), where("userId", "==", uid));
+        const querySnapshot = await getDocs(q);
+        
+        if (querySnapshot.empty) {
+          content.innerHTML = `
+            <div class="empty-state">
+              <i class="fas fa-bookmark"></i>
+              <p>Henüz bir haber kaydetmediniz.</p>
+            </div>
+          `;
+          return;
+        }
+
+        let html = '<div class="news-grid">';
+        querySnapshot.forEach((docSnap) => {
+          const data = docSnap.data();
+          html += `
+            <article class="news-card glass-panel" style="padding: 15px; cursor: pointer;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 10px;">${data.title}</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);"><i class="fas fa-newspaper"></i> Kaynak: ${data.source}</p>
+            </article>
+          `;
+        });
+        html += '</div>';
+        content.innerHTML = html;
+
+      } catch (err) {
+        console.error("Favoriler yüklenirken hata:", err);
+        content.innerHTML = '<p class="text-danger" style="text-align:center;">Favoriler yüklenirken bir hata oluştu.</p>';
+      }
     }
   </script>
 </body>

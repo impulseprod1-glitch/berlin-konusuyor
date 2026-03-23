@@ -435,12 +435,43 @@ window.shareNews = (title) => {
   }
 };
 
-window.toggleBookmark = (index) => {
+window.toggleBookmark = async (index) => {
   const btn = event.currentTarget;
+  if (!auth.currentUser) {
+    alert("Haberleri kaydetmek için lütfen önce Giriş Yapınız.");
+    return;
+  }
+
+  const article = globalNews[index];
+  if (!article) return;
+
   const icon = btn.querySelector('i');
-  icon.classList.toggle('fas');
-  icon.classList.toggle('far');
-  console.log('Bookmarked article index:', index);
+  const isBookmarking = !icon.classList.contains('fas'); // if it doesn't have fas, we will add it
+  
+  icon.classList.toggle('fas', isBookmarking);
+  icon.classList.toggle('far', !isBookmarking);
+
+  try {
+    // Basic ID generation
+    const safeTitle = (article.title || '').replace(/[^a-zA-Z0-9]/g, '').substring(0, 25);
+    const docId = `${auth.currentUser.uid}_${safeTitle}`;
+    const bookmarkRef = doc(db, "bookmarks", docId);
+
+    if (isBookmarking) {
+      await setDoc(bookmarkRef, {
+        userId: auth.currentUser.uid,
+        title: article.summary_tr || article.title,
+        source: article.source || 'Haber',
+        dateAdded: serverTimestamp()
+      });
+      console.log('Bookmarked saved');
+    } else {
+      await deleteDoc(bookmarkRef);
+      console.log('Bookmark removed');
+    }
+  } catch (err) {
+    console.error('Bookmark toggle DB error:', err);
+  }
 };
 
 function calculateReadTime(text) {
@@ -2603,7 +2634,10 @@ function initAuthListener() {
       if (loginLabel) loginLabel.innerText = 'Giriş Yap';
       if (loginBtn) {
         loginBtn.innerHTML = 'Giriş Yap';
-        loginBtn.onclick = () => openLoginModal();
+        loginBtn.onclick = (e) => {
+          e.preventDefault();
+          loginWithGoogle();
+        };
       }
     }
   });
@@ -2647,3 +2681,9 @@ async function subscribeUser() {
 }
 
 window.logout = () => signOut(auth).then(() => location.reload());
+
+// Auth
+document.addEventListener('DOMContentLoaded', () => {
+  initAuthListener();
+});
+
