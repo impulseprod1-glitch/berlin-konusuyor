@@ -632,6 +632,33 @@
     </div>
   </div>
 
+  <!-- ═══════════════ JOB MODAL ═══════════════ -->
+  <div id="jobModal" class="modal login-modal">
+    <div class="modal-content glass-panel login-modal-content">
+      <span class="modal-close" onclick="closeJobModal()">&times;</span>
+      <h2 class="login-modal-title" style="margin-bottom: 10px;">Yeni İş İlanı Ver</h2>
+      <p class="login-modal-subtitle">Berlin topluluğuyla ücretsiz iş ilanı paylaşın.</p>
+      
+      <form id="jobForm" class="qa-form">
+        <input type="text" id="jobTitle" class="qa-input" placeholder="İlan Başlığı (Örn: Barista)" required />
+        <input type="text" id="jobCompany" class="qa-input" placeholder="Şirket / İşletme Adı" required />
+        <input type="text" id="jobLocation" class="qa-input" placeholder="Konum (Örn: Mitte, Kreuzberg)" required />
+        
+        <select id="jobType" class="qa-category-select" style="width: 100%; margin-bottom: 10px;" required>
+          <option value="" disabled selected>Çalışma Tipi Seçin</option>
+          <option value="Tam Zamanlı">Tam Zamanlı</option>
+          <option value="Yarı Zamanlı">Yarı Zamanlı</option>
+          <option value="Minijob">Minijob</option>
+          <option value="Serbest Çalışan">Serbest Çalışan</option>
+        </select>
+        
+        <input type="email" id="jobContact" class="qa-input" placeholder="İletişim İçin E-posta" required />
+        
+        <button type="submit" class="qa-submit magnetic-btn" style="width: 100%;">İlanı Yayınla</button>
+      </form>
+    </div>
+  </div>
+
   <!-- ═══════════════ NEWS MODAL ═══════════════ -->
   <div id="newsModal" class="news-modal">
     <div class="news-modal-progress" id="modalProgress"></div>

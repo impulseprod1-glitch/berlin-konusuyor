@@ -2683,10 +2683,11 @@ async function subscribeUser() {
 window.logout = () => signOut(auth).then(() => location.reload());
 
 // Auth
-// Auth & QA
+// Auth & QA & Jobs
 document.addEventListener('DOMContentLoaded', () => {
   initAuthListener();
   initQA();
+  initJobs();
 });
 
 // ── TOPLULUK SORU & CEVAP (QA) ───────────────────
@@ -2831,3 +2832,111 @@ window.toggleQALike = async (questionId) => {
     console.error("Beğeni güncellenemedi:", err);
   }
 };
+
+// ── İŞ İLANLARI (JOB BOARD) ───────────────────
+window.openJobModal = () => {
+  if (!auth.currentUser) {
+    alert("İlan vermek için lütfen sağ üstten Giriş Yapın.");
+    return;
+  }
+  const modal = document.getElementById('jobModal');
+  if (modal) modal.classList.add('active');
+};
+
+window.closeJobModal = () => {
+  const modal = document.getElementById('jobModal');
+  if (modal) modal.classList.remove('active');
+};
+
+function initJobs() {
+  const jobsGrid = document.getElementById('jobsGrid');
+  const jobForm = document.getElementById('jobForm');
+  if (!jobsGrid) return;
+
+  let currentJobType = 'all';
+
+  const loadJobs = () => {
+    const q = query(collection(db, "jobs"), orderBy("createdAt", "desc"));
+    onSnapshot(q, (snapshot) => {
+      let jobs = [];
+      snapshot.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
+      
+      if (currentJobType !== 'all') {
+        jobs = jobs.filter(j => j.type === currentJobType);
+      }
+
+      renderJobs(jobs);
+    });
+  };
+
+  const renderJobs = (jobs) => {
+    if (jobs.length === 0) {
+      jobsGrid.innerHTML = '<div class="empty-state" style="grid-column: 1/-1; text-align:center; padding: 30px;"><p>Bu kategoride henüz iş ilanı bulunmuyor. İlk ilanı siz verin!</p></div>';
+      return;
+    }
+
+    jobsGrid.innerHTML = jobs.map((job, index) => `
+      <div class="job-card glass-panel reveal visible" style="animation-delay: ${index * 0.1}s">
+        <h3 class="job-role">${job.title}</h3>
+        <p class="job-company"><i class="far fa-building"></i> ${job.company}</p>
+        <div class="job-meta-tags">
+          <span class="job-badge location"><i class="fas fa-map-marker-alt"></i> ${job.location}</span>
+          <span class="job-badge type"><i class="far fa-clock"></i> ${job.type}</span>
+        </div>
+        <a href="mailto:${job.contact}?subject=Başvuru: ${job.title}" class="job-apply-btn">Hemen Başvur</a>
+      </div>
+    `).join('');
+  };
+
+  if (jobForm) {
+    jobForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!auth.currentUser) return;
+
+      const title = document.getElementById('jobTitle').value.trim();
+      const company = document.getElementById('jobCompany').value.trim();
+      const location = document.getElementById('jobLocation').value.trim();
+      const type = document.getElementById('jobType').value;
+      const contact = document.getElementById('jobContact').value.trim();
+
+      if (!title || !company || !location || !type || !contact) return;
+
+      try {
+        const btn = jobForm.querySelector('button[type="submit"]');
+        const originalText = btn.innerText;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gönderiliyor...';
+        btn.disabled = true;
+
+        await addDoc(collection(db, "jobs"), {
+          title,
+          company,
+          location,
+          type,
+          contact,
+          authorId: auth.currentUser.uid,
+          createdAt: serverTimestamp()
+        });
+
+        jobForm.reset();
+        closeJobModal();
+        btn.disabled = false;
+        btn.innerText = originalText;
+        alert("İlanınız başarıyla yayınlandı!");
+      } catch (err) {
+        console.error("Job adding error:", err);
+        alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+      }
+    });
+  }
+
+  document.querySelectorAll('.job-filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.job-filter-btn').forEach(b => b.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+      currentJobType = e.currentTarget.dataset.type;
+      loadJobs();
+    });
+  });
+
+  loadJobs();
+}
