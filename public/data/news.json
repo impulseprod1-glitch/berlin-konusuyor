@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-03-24T23:03:36.448Z",
+  "lastUpdated": "2026-03-25T05:17:41.393Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Brandenburger Polizei kontrolliert verstärkt E-Scooter-Fahrer",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/e-scooter-polizei-brandenburg-verkehrskontrollen.html",
+      "image": "",
+      "date": "2026-03-25T05:16:25.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "AYM'nin siyasi parti mali denetim kararları Resmi Gazete'de",
+      "description": "Anayasa Mahkemesinin (AYM) 10 siyasi partinin mali denetimlerine ilişkin kararları, Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/guncel/aymnin-siyasi-parti-mali-denetim-kararlari-resmi-gazetede/3878018",
+      "image": "",
+      "date": "2026-03-25T00:26:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tahran'da art arda patlamalar meydana geldi",
+      "description": "ABD-İsrail saldırılarının sürdüğü İran'ın başkenti Tahran'da art arda patlamalar meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/guncel/tahranda-art-arda-patlamalar-meydana-geldi/3878000",
+      "image": "",
+      "date": "2026-03-24T23:16:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile telefonda görüştü",
       "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Katar Emiri Şeyh Temim bin Hamed Al Sani ile telefonda görüştü.",
@@ -14,44 +47,22 @@
       "type": "rss"
     },
     {
+      "title": "Irak'ın Erbil kentinde birden fazla noktaya kamikaze İHA saldırısı düzenlendi",
+      "description": "Irak'ın Erbil kentinde birden fazla noktaya kamikaze tipindeki insansız hava araçlarıyla (İHA) saldırı düzenlendi.",
+      "url": "https://www.aa.com.tr/tr/guncel/irakin-erbil-kentinde-birden-fazla-noktaya-kamikaze-iha-saldirisi-duzenlendi/3877987",
+      "image": "",
+      "date": "2026-03-24T22:52:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
       "title": "İran'dan atılan füzeler nedeniyle İsrail'de geniş bir alanda sirenler çaldı",
       "description": "ABD-İsrail'in ortak saldırılar düzenlediği İran'dan atılan füzeler nedeniyle işgal altındaki Batı Şeria'dan İsrail'in liman kenti Aşdod'a kadar geniş bir alanda sirenler çaldı.",
       "url": "https://www.aa.com.tr/tr/guncel/irandan-atilan-fuzeler-nedeniyle-israilde-genis-bir-alanda-sirenler-caldi/3877972",
       "image": "",
       "date": "2026-03-24T22:40:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran, Suudi Arabistan, BAE, Kuveyt ve Bahreyn'deki bazı noktaları füze ve İHA'larla hedef aldı",
-      "description": "Suudi Arabistan, Birleşik Arap Emirlikleri (BAE), Kuveyt ve Bahreyn, İran'dan fırlatılan füze ve insansız hava araçlarını (İHA) engellediklerini açıkladı.",
-      "url": "https://www.aa.com.tr/tr/guncel/iran-suudi-arabistan-bae-kuveyt-ve-bahreyndeki-bazi-noktalari-fuze-ve-ihalarla-hedef-aldi/3877967",
-      "image": "",
-      "date": "2026-03-24T22:37:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BM yetkilisi, işgal altındaki Filistin topraklarına saldırıların \"endişe verici oranda\" arttığını belirtti",
-      "description": "BM Orta Doğu Barış Süreci Özel Koordinatörlüğü (UNSCO) Özel Koordinatör Yardımcısı Ramiz Alakbarov, işgal altındaki Filistin topraklarında İsrail tarafından gerçekleştirilen hak ihlalleri ve saldırıların \"endişe verici oranda\" arttığını söyledi",
-      "url": "https://www.aa.com.tr/tr/guncel/bm-yetkilisi-isgal-altindaki-filistin-topraklarina-saldirilarin-endise-verici-oranda-arttigini-belirtti/3877966",
-      "image": "",
-      "date": "2026-03-24T22:37:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İstanbul'daki uyuşturucu soruşturmasında Fikret Orman gözaltına alındı",
-      "description": "İstanbul'daki uyuşturucu ve fuhuş soruşturmasında iş insanı Fikret Orman gözaltına alındı.",
-      "url": "https://www.aa.com.tr/tr/guncel/istanbuldaki-uyusturucu-sorusturmasinda-fikret-orman-gozaltina-alindi/3877962",
-      "image": "",
-      "date": "2026-03-24T22:31:37.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/politik/beitrag/2026/03/berlin-senat-queerfeindliche-gewalt-notrufsaeulen-polizei.html",
       "image": "",
       "date": "2026-03-24T19:14:49.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Razzien nach Anschlag auf Stromnetz in Berlin-Adlershof",
-      "description": "An mehreren Orten in Berlin und Brandenburg gab es am Dienstag Durchsuchungen im Zusammenhang mit dem Anschlag auf das Stromnetz im September 2025 in Berlin-Adlershof. Im Visier der Ermittler stehen laut Polizei vier Personen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/durchsuchungen-berlin-strom-anschlag-polizei.html",
-      "image": "",
-      "date": "2026-03-24T18:07:34.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
