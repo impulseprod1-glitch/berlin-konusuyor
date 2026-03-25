@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-03-25T05:17:41.393Z",
+  "lastUpdated": "2026-03-25T08:06:43.339Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İçme suyu barajlarındaki doluluk oranı son yağışlarla yüzde 56'ya ulaştı",
+      "description": "Türkiye genelinde Ekim 2025'ten itibaren görülen yağışların hem uzun yıllar ortalamasına hem de geçen yıla göre artış göstermesiyle içme suyu barajlarında doluluk oranı 23 Mart itibarıyla yüzde 56'ya yükseldi.",
+      "url": "https://www.aa.com.tr/tr/guncel/icme-suyu-barajlarindaki-doluluk-orani-son-yagislarla-yuzde-56ya-ulasti/3878303",
+      "image": "",
+      "date": "2026-03-25T08:02:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran'ın İslamabad Büyükelçisi: Trump'ın iddiasının aksine iki ülke arasında hiçbir görüşme yapılmadı",
+      "description": "İran'ın İslamabad Büyükelçisi Rıza Emiri Mukaddem, ABD Başkanı Donald Trump'ın iddialarının aksine İran ile ABD arasında şu ana kadar doğrudan veya dolaylı herhangi bir görüşme gerçekleşmediğini söyledi.",
+      "url": "https://www.aa.com.tr/tr/guncel/iranin-islamabad-buyukelcisi-trumpin-iddiasinin-aksine-iki-ulke-arasinda-hicbir-gorusme-yapilmadi/3878299",
+      "image": "",
+      "date": "2026-03-25T08:01:21.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Feuerwehr löscht Waldbrand in Kloster Lehnin",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/kloster-lehnin-waldbrand-potsdam-mittelmark.html",
+      "image": "",
+      "date": "2026-03-25T08:00:37.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Gürlek: e-Avukat uygulamasıyla hükümlü ve tutuklular avukatlarıyla görüntülü görüşebilecek",
+      "description": "Adalet Bakanı Akın Gürlek, kullanıma açılacak e-Avukat uygulamasıyla hükümlü ve tutukluların avukatlarıyla görüntülü görüşebileceğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/guncel/bakan-gurlek-e-avukat-uygulamasiyla-hukumlu-ve-tutuklular-avukatlariyla-goruntulu-gorusebilecek/3878288",
+      "image": "",
+      "date": "2026-03-25T07:57:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Darphane'den UTTS iddialarına yönelik açıklama",
+      "description": "Darphane ve Damga Matbaası Genel Müdürlüğü, Ulusal Taşıt Tanıma Sistemi (UTTS) kapsamında kullanılan donanımların İsrail menşeli olduğu yönündeki iddiaların asılsız olduğunu bildirdi.",
+      "url": "https://www.aa.com.tr/tr/guncel/darphaneden-utts-iddialarina-yonelik-aciklama/3878270",
+      "image": "",
+      "date": "2026-03-25T07:52:21.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kızılırmak Deltası Kuş Cenneti baharın gelişiyle hareketlenmeye başladı",
+      "description": "Kızılırmak Deltası Kuş Cenneti, baharın gelişiyle yeşilin tonlarına hakim olmaya başladı.",
+      "url": "https://www.aa.com.tr/tr/guncel/kizilirmak-deltasi-kus-cenneti-baharin-gelisiyle-hareketlenmeye-basladi/3878267",
+      "image": "",
+      "date": "2026-03-25T07:51:27.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Brandenburger Haushalt: Hierhin soll das Geld fließen",
+      "description": "Das neue Kabinett hat sich dem Brandenburger Haushalt befasst. Thema sind auch konkrete Maßnahmen, die noch mit dem Haushalt des Jahres 2026 umgesetzt werden sollen. Nicht immer sind die betreffenden Verbände einverstanden.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/03/brandenburg-haushalt-2027-2028-etat-landesregierung.html",
+      "image": "",
+      "date": "2026-03-25T07:18:07.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Brandenburger Polizei kontrolliert verstärkt E-Scooter-Fahrer",
       "description": "",
@@ -11,61 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "AYM'nin siyasi parti mali denetim kararları Resmi Gazete'de",
-      "description": "Anayasa Mahkemesinin (AYM) 10 siyasi partinin mali denetimlerine ilişkin kararları, Resmi Gazete'de yayımlandı.",
-      "url": "https://www.aa.com.tr/tr/guncel/aymnin-siyasi-parti-mali-denetim-kararlari-resmi-gazetede/3878018",
-      "image": "",
-      "date": "2026-03-25T00:26:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Tahran'da art arda patlamalar meydana geldi",
-      "description": "ABD-İsrail saldırılarının sürdüğü İran'ın başkenti Tahran'da art arda patlamalar meydana geldi.",
-      "url": "https://www.aa.com.tr/tr/guncel/tahranda-art-arda-patlamalar-meydana-geldi/3878000",
-      "image": "",
-      "date": "2026-03-24T23:16:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan, Katar Emiri Al Sani ile telefonda görüştü",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Katar Emiri Şeyh Temim bin Hamed Al Sani ile telefonda görüştü.",
-      "url": "https://www.aa.com.tr/tr/guncel/cumhurbaskani-erdogan-katar-emiri-al-sani-ile-telefonda-gorustu/3877990",
-      "image": "",
-      "date": "2026-03-24T22:56:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Irak'ın Erbil kentinde birden fazla noktaya kamikaze İHA saldırısı düzenlendi",
-      "description": "Irak'ın Erbil kentinde birden fazla noktaya kamikaze tipindeki insansız hava araçlarıyla (İHA) saldırı düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/guncel/irakin-erbil-kentinde-birden-fazla-noktaya-kamikaze-iha-saldirisi-duzenlendi/3877987",
-      "image": "",
-      "date": "2026-03-24T22:52:16.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran'dan atılan füzeler nedeniyle İsrail'de geniş bir alanda sirenler çaldı",
-      "description": "ABD-İsrail'in ortak saldırılar düzenlediği İran'dan atılan füzeler nedeniyle işgal altındaki Batı Şeria'dan İsrail'in liman kenti Aşdod'a kadar geniş bir alanda sirenler çaldı.",
-      "url": "https://www.aa.com.tr/tr/guncel/irandan-atilan-fuzeler-nedeniyle-israilde-genis-bir-alanda-sirenler-caldi/3877972",
-      "image": "",
-      "date": "2026-03-24T22:40:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/03/leichenumbetter-posttraumatische-belastungsstoerung-ptbs-berufskrankheit.html",
       "image": "",
       "date": "2026-03-24T21:39:06.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Keine Einigung im Streit um Rettungsfahrten in Brandenburg",
-      "description": "In einigen Städten und Landkreisen Brandenburgs drohten die Verwaltungen mit Gebühren für Rettungsfahrten. Nach einer Krisensitzung am Dienstag wird auf die geplanten Gebührenbescheide verzichtet - vorerst. Eine endgültige Lösung gibt es noch nicht.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/03/brandenburg-rettungsdienst-krankentransporte-gebuehren-rene-wilke.html",
-      "image": "",
-      "date": "2026-03-24T20:06:40.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Neue Landesstrategie: Senat will Berlin für queere Menschen sicherer machen",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/03/berlin-senat-queerfeindliche-gewalt-notrufsaeulen-polizei.html",
-      "image": "",
-      "date": "2026-03-24T19:14:49.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
