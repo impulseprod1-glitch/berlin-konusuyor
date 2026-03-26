@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-03-26T21:05:47.387Z",
+  "lastUpdated": "2026-03-26T22:59:59.174Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Ein Mensch bei Brand in Berlin-Neukölln lebensgefährlich verletzt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-neukoelln-feuerwehr-wohnungsbrand.html",
+      "image": "",
+      "date": "2026-03-26T22:24:59.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Darts-Party in Berlin: Luke Littler siegt vor 12.000 Fans",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/darts-premier-league-berlin-uber-arena-littler-humphries-van-gerwen.html",
+      "image": "",
+      "date": "2026-03-26T22:15:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Washington Post: Pentagon, Ukrayna'ya yapılacak askeri yardımı Orta Doğu'ya yönlendirmeyi değerlendiriyor",
+      "description": "ABD Savunma Bakanlığının (Pentagon), Ukrayna'ya yapılacak askeri yardımların Orta Doğu'ya yönlendirip yönlendirmemeyi tartıştığı ileri sürüldü.",
+      "url": "https://www.aa.com.tr/tr/guncel/washington-post-pentagon-ukraynaya-yapilacak-askeri-yardimi-orta-doguya-yonlendirmeyi-degerlendiriyor/3881014",
+      "image": "",
+      "date": "2026-03-26T21:45:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berliner Eiskunstlauf-Duo Hase/Volodin holt erstmals WM-Gold",
+      "description": "Das Berliner Duo Minerva Hase und Nikita Volodin hat in Prag erstmals Gold bei Eiskunstlauf-Weltmeisterschaften gewonnen. Fünf Wochen nach Olympia-Bronze siegte das Duo im Paarlauf-Wettbewerb und holte damit den ersten WM-Titel für Deutschland seit 2018.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/eiskunstlauf-wm-weltmeisterschaft-prag-volodin-hase-hocke-kunkel-kuer.html",
+      "image": "",
+      "date": "2026-03-26T21:42:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "A Milli Futbol Takımı'nın play-off turu finalindeki rakibi Kosova oldu",
+      "description": "A Milli Futbol Takımı'nın 2026 FIFA Dünya Kupası Avrupa Elemeleri play-off turu finalindeki rakibi Kosova oldu.",
+      "url": "https://www.aa.com.tr/tr/guncel/a-milli-futbol-takiminin-play-off-turu-finalindeki-rakibi-kosova-oldu/3881009",
+      "image": "",
+      "date": "2026-03-26T21:40:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fransa Eğitim Bakanı Geffray, TikTok algoritması hakkında suç duyurusunda bulundu",
+      "description": "Fransa Eğitim Bakanı Edouard Geffray, intihara teşvik ettiği gerekçesiyle Çinli sosyal paylaşım platformu TikTok'un algoritması hakkında suç duyurusunda bulunduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/guncel/fransa-egitim-bakani-geffray-tiktok-algoritmasi-hakkinda-suc-duyurusunda-bulundu/3881005",
+      "image": "",
+      "date": "2026-03-26T21:38:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail askerleri, Batı Şeria'daki Ayrım Duvarı yakınlarında 2 Filistinliyi yaraladı",
+      "description": "İsrail askerlerinin, Batı Şeria’nın kuzeyindeki Tulkerim kentinde bulunan Ayrım (Utanç) Duvarı yakınlarında 2 Filistinliyi yaraladığı belirtildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/israil-askerleri-bati-seriadaki-ayrim-duvari-yakinlarinda-2-filistinliyi-yaraladi/3881004",
+      "image": "",
+      "date": "2026-03-26T21:37:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tarım ve ormana yönelik düzenlemeleri de içeren kanun teklifi komisyonda kabul edildi",
+      "description": "TBMM Tarım, Orman ve Köyişleri Komisyonunda, tarım ve ormana yönelik düzenlemeleri de içeren Toprak Koruma ve Arazi Kullanımı Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifi kabul edildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/tarim-ve-ormana-yonelik-duzenlemeleri-de-iceren-kanun-teklifi-komisyonda-kabul-edildi/3880984",
+      "image": "",
+      "date": "2026-03-26T21:13:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Volle Klassen, leere Lehrerzimmer: Brandenburgs Bildungsminister Hoffmann befürchtet Unterrichtsausfall",
       "description": "In Brandenburg wurden zuletzt Lehrerstellen gestrichen, gleichzeitig ist die Zahl der Schülerinnen und Schüler gestiegen. Der neue Bildungsminister Hoffmann ist skeptisch, ob im nächsten Schuljahr der volle Unterrichtsumfang abgesichert werden kann.",
@@ -14,99 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Trump, \"İran'ın elektrik santrallerini hedef alma\" kararını 6 Nisan'a kadar ertelediğini açıkladı",
-      "description": "ABD Başkanı Donald Trump, \"İran'ın elektrik santrallerini hedef alma\" kararını 6 Nisan'a kadar durdurduğunu ve müzakerelerin \"çok iyi gittiğini\" belirtti.",
-      "url": "https://www.aa.com.tr/tr/guncel/trump-iranin-elektrik-santrallerini-hedef-alma-kararini-6-nisana-kadar-erteledigini-acikladi/3880935",
-      "image": "",
-      "date": "2026-03-26T20:33:55.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fars Haber Ajansı: 350’den fazla tanker Hürmüz Boğazı'ndan geçiş için İran’dan izin bekliyor",
-      "description": "İran basını, Umman Denizi ile Basra Körfezi'nde 350’den fazla tankerin Hürmüz Boğazı’ndan geçiş yapabilmek için İran’dan izin beklediğini yazdı.",
-      "url": "https://www.aa.com.tr/tr/guncel/fars-haber-ajansi-350-den-fazla-tanker-hurmuz-bogazindan-gecis-icin-iran-dan-izin-bekliyor/3880929",
-      "image": "",
-      "date": "2026-03-26T20:29:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AP Milletvekili Botenga, Avrupa'nın \"İsrail yanlısı yaklaşımına\" sert eleştirilerde bulundu",
-      "description": "Botenga, İsrail'de meclis komitesinde Filistinli mahkumlara yönelik idam cezası tasarısının onaylandığı gün AP'de İran'daki idam cezalarıyla alakalı oturum düzenlenmesini sert şekilde eleştirdi.",
-      "url": "https://www.aa.com.tr/tr/guncel/ap-milletvekili-botenga-avrupanin-israil-yanlisi-yaklasimina-sert-elestirilerde-bulundu/3880925",
-      "image": "",
-      "date": "2026-03-26T20:27:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Yemen'deki Husiler, gerekirse ABD-İsrail ile İran arasındaki savaşa müdahil olacaklarını açıkladı",
-      "description": "Yemen’deki Husilerin lideri Abdulmelik el-Husi, ülkesinin ABD ve İsrail’in İran’a yönelik saldırıları karşısında tarafsız olmadığını belirterek, gelişmelere bağlı olarak gerekirse askeri müdahalede bulunabileceklerini söyledi.",
-      "url": "https://www.aa.com.tr/tr/guncel/yemendeki-husiler-gerekirse-abd-israil-ile-iran-arasindaki-savasa-mudahil-olacaklarini-acikladi/3880911",
-      "image": "",
-      "date": "2026-03-26T20:10:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Maduro, New York'ta ikinci kez hakim karşısına çıkarıldı",
-      "description": "ABD'nin 3 Ocak'ta Venezuela'da askeri müdahaleyle alıkoyduğu Devlet Başkanı Nicolas Maduro ve eşi Cilia Flores, ikinci kez hakim karşısına çıktı.",
-      "url": "https://www.aa.com.tr/tr/guncel/maduro-new-yorkta-ikinci-kez-hakim-karsisina-cikarildi/3880906",
-      "image": "",
-      "date": "2026-03-26T20:09:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Newcastle-Krankheit: Rund 310.000 weitere Tiere werden getötet",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/03/newcastle-krankheit-dahme-spreewald-oder-spree-ausbrueche.html",
       "image": "",
       "date": "2026-03-26T19:55:27.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Psychotherapeuten demonstrieren in Berlin gegen Honorarkürzungen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-demonstration-psychotherapie-honorarkuerzungen.html",
-      "image": "",
-      "date": "2026-03-26T19:55:24.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Sechs Verletzte bei Brand in Berlin-Neukölln",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-neukoelln-feuerwehr-wohnungsbrand.html",
-      "image": "",
-      "date": "2026-03-26T19:45:16.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Neuer Nachtzug zwischen Berlin und Paris gestartet",
-      "description": "An drei Tagen in der Woche fährt jetzt wieder ein Nachtzug zwischen Paris und Berlin. Nachdem die nächtliche Verbindung im Dezember eingestellt worden war, hat ein privates Unternehmen am Donnerstagabend den Betrieb wiederaufgenommen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/nachtzug-berlin-paris-bahn-bruessel-european-sleepers.html",
-      "image": "",
-      "date": "2026-03-26T19:10:41.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
