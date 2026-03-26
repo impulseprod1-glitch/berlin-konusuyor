@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-03-25T23:00:47.528Z",
+  "lastUpdated": "2026-03-26T05:52:13.903Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Trump, İran'ın anlaşma yapmak istediğini ancak bunu açıklamaktan çekindiğini savundu",
+      "description": "ABD Başkanı Donald Trump, İran'ın anlaşma yapmak istediğini ancak bunu kamuoyuna açıklamaktan çekindiğini ileri sürdü.",
+      "url": "https://www.aa.com.tr/tr/guncel/trump-iranin-anlasma-yapmak-istedigini-ancak-bunu-aciklamaktan-cekindigini-savundu/3879579",
+      "image": "",
+      "date": "2026-03-26T05:24:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran'ın misillemesinin ardından İsrail'in birçok bölgesinde sirenler çaldı",
+      "description": "İran'ın yeni misillemesinin ardından başta Tel Aviv olmak üzere İsrail'in birçok bölgesinde sirenler çaldı.",
+      "url": "https://www.aa.com.tr/tr/guncel/iranin-misillemesinin-ardindan-israilin-bircok-bolgesinde-sirenler-caldi/3879572",
+      "image": "",
+      "date": "2026-03-26T05:18:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fallbeispiel für jahrelangen Leerstand: ein Haus in Schöneberg",
+      "description": "Ein Eckhaus in Schöneberg steht seit Jahren still. Von Außen betrachtet passiert nichts, hinter den Kulissen sollen Gespräche laufen. Worin die Hürden für Bezirke liegen, bei Leerstand Sanktionen zu verhängen.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/03/berlin-schoeneberg-potsdamer-strasse-165-leerstand-beispiel.html",
+      "image": "",
+      "date": "2026-03-26T05:13:11.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Jandarma Genel Komutanlığı GÖKBEY helikopteri için kısa film hazırladı",
+      "description": "Jandarma Genel Komutanlığınca GÖKBEY helikopterinin başrolde yer aldığı kısa film hazırlandı.",
+      "url": "https://www.aa.com.tr/tr/guncel/jandarma-genel-komutanligi-gokbey-helikopteri-icin-kisa-film-hazirladi/3879566",
+      "image": "",
+      "date": "2026-03-26T04:59:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "AYM'nin siyasi parti mali denetim kararları Resmi Gazete'de",
+      "description": "Anayasa Mahkemesinin (AYM) 9 siyasi partinin mali denetimlerine ilişkin kararları, Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/guncel/aymnin-siyasi-parti-mali-denetim-kararlari-resmi-gazetede/3879553",
+      "image": "",
+      "date": "2026-03-26T03:22:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran medyası: Suudi Arabistan ve Kuveyt'in stratejik altyapı haritası İran ordusunun masasında",
+      "description": "ABD-İsrail ile İran arasındaki savaş sürerken, Suudi Arabistan ve Kuveyt'in stratejik altyapı konumlarının yer aldığı haritanın İran Silahlı Kuvvetlerinin masasında olduğu bildirildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/iran-medyasi-suudi-arabistan-ve-kuveytin-stratejik-altyapi-haritasi-iran-ordusunun-masasinda/3879534",
+      "image": "",
+      "date": "2026-03-26T01:23:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Eiskunstlauf-WM: Berliner Paarlauf-Duo Hase/Volodin auf Goldkurs",
+      "description": "Minerva Hase und Nikita Volodin sind in Prag auf dem Weg zu ihrem ersten WM-Gold. Der Vorsprung auf die Verfolger ist allerdings hauchdünn. Bei Annika Hocke und Robert Kunkel verhinderte ein Sturz eine einstellige Platzierung.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/03/eiskunstlauf-wm-prag-volodin-hase-hocke-kunkel-kurzprogramm.html",
+      "image": "",
+      "date": "2026-03-25T23:13:58.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Verwaltungsgericht Berlin urteilt gegen Eigentümer von Mietshäusern",
       "description": "",
@@ -11,50 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Eiskunstlauf-WM: Berliner Paarlauf-Duo Hase/Volodin auf Goldkurs",
-      "description": "Minerva Hase und Nikita Volodin sind in Prag auf dem Weg zu ihrem ersten WM-Gold. Der Vorsprung auf die Verfolger ist allerdings hauchdünn. Bei Annika Hocke und Robert Kunkel verhinderte ein Sturz eine einstellige Platzierung.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/03/eiskunstlauf-wm-prag-volodin-hase-hocke-kunkel-kurzprogramm.html",
-      "image": "",
-      "date": "2026-03-25T22:24:14.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Şanlıurfa'da sağanak nedeniyle 4 ilçede eğitime ara verildi",
-      "description": "Şanlıurfa Valiliği, sağanak nedeniyle Haliliye, Eyyübiye, Ceylanpınar ve Viranşehir ilçelerinin kırsal mahallelerinde eğitime bir gün ara verildiğini duyurdu.",
-      "url": "https://www.aa.com.tr/tr/guncel/sanliurfada-saganak-nedeniyle-4-ilcede-egitime-ara-verildi/3879464",
-      "image": "",
-      "date": "2026-03-25T22:23:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Rusya, ABD ve İsrail'e İran'ın nükleer altyapısına saldırıları durdurma çağrısı yaptı",
-      "description": "Rusya Dışişleri Bakanlığı, ABD ile İsrail'e, İran'ın nükleer altyapısına saldırıları durdurma çağrısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/guncel/rusya-abd-ve-israile-iranin-nukleer-altyapisina-saldirilari-durdurma-cagrisi-yapti/3879454",
-      "image": "",
-      "date": "2026-03-25T21:56:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "A Milli Futbol Takımı'nın Romanya karşılaşması öncesinde resmi maç yemeği düzenlendi",
-      "description": "A Milli Futbol Takımı'nın 2026 FIFA Dünya Kupası Avrupa Elemeleri play-off turu yarı finalinde Romanya ile yapacağı karşılaşma öncesinde resmi maç yemeği organizasyonu düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/guncel/a-milli-futbol-takiminin-romanya-karsilasmasi-oncesinde-resmi-mac-yemegi-duzenlendi/3879443",
-      "image": "",
-      "date": "2026-03-25T21:40:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -69,44 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Axios: Trump, Netanyahu'nun İranlıları rejime karşı sokağa çağırma teklifini reddetti",
-      "description": "ABD Başkanı Donald Trump'ın İsrail Başbakanı Binyamin Netanyahu'nun İranlıları rejime karşı sokağa çağırma önerisini geri çevirdiği iddia edildi.",
-      "url": "https://www.aa.com.tr/tr/guncel/axios-trump-netanyahunun-iranlilari-rejime-karsi-sokaga-cagirma-teklifini-reddetti/3879426",
-      "image": "",
-      "date": "2026-03-25T21:02:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran Dışişleri Bakanı Erakçi: ABD ile müzakere yok",
-      "description": "İran Dışişleri Bakanı Abbas Erakçi, ABD’nin, İsrail çıkarları için bölge ülkelerini feda ettiğini söyleyerek, “Şu anki siyasetimiz ülkeyi savunmaya devam etmektir ve ABD ile müzakere yok.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/iran-disisleri-bakani-erakci-abd-ile-muzakere-yok/3879423",
-      "image": "",
-      "date": "2026-03-25T20:53:59.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Berlin-Spandau: Pkw prallt mit BVG-Bus zusammen - sieben Verletzte",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-spandau-bvg-bus-unfall-mehrere-verletzte.html",
       "image": "",
       "date": "2026-03-25T20:44:40.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Potsdam beschließt mit Haushalt auch Verpackungssteuer ",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/03/potsdam-svv-beschluss-preiserhoehung-verpackung-steuer-wasser.html",
-      "image": "",
-      "date": "2026-03-25T20:18:21.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
