@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-03-27T17:39:49.967Z",
+  "lastUpdated": "2026-03-27T19:53:39.242Z",
   "count": 10,
   "articles": [
     {
-      "title": "Volkswagen'in Üst Yöneticisi Blume, Osnabrück fabrikasının askeri üretime geçeceğini teyit etti",
-      "description": "Alman otomotiv üreticisi Volkswagen'in Üst Yöneticisi (CEO) Oliver Blume, şirketin Osnabrück'teki fabrikasını, İsrail'in \"Demir Kubbe\" hava savunma sistemi için parça üretmek üzere dönüştürme çalışmaları yürüttüklerini teyit etti.",
-      "url": "https://www.aa.com.tr/tr/guncel/volkswagenin-ust-yoneticisi-blume-osnabruck-fabrikasinin-askeri-uretime-gececegini-teyit-etti/3882213",
+      "title": "Irak ile ABD, \"Irak topraklarının saldırılarda kullanılmaması” yönünde anlaşmaya vardı",
+      "description": "Irak ile ABD, Irak topraklarının sivillere, güvenlik güçlerine, stratejik tesislere, ABD personeline ve diplomatik misyonlara yönelik saldırılar için kullanılmaması konusunda mutabakat imzaladı.",
+      "url": "https://www.aa.com.tr/tr/guncel/irak-ile-abd-irak-topraklarinin-saldirilarda-kullanilmamasi-yonunde-anlasmaya-vardi/3882328",
       "image": "",
-      "date": "2026-03-27T17:32:04.000Z",
+      "date": "2026-03-27T19:42:28.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Almanya Başbakanı Merz: İsrail ve Amerika'nın yaptıklarının başarıya ulaşacağına ikna olmadım",
+      "description": "Almanya Başbakanı Friedrich Merz, ABD ve İsrail’in İran’daki askeri saldırılarının başarıya ulaşacağına ikna olmadığını söyledi.",
+      "url": "https://www.aa.com.tr/tr/guncel/almanya-basbakani-merz-israil-ve-amerikanin-yaptiklarinin-basariya-ulasacagina-ikna-olmadim/3882323",
+      "image": "",
+      "date": "2026-03-27T19:37:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Portekiz hükümeti akaryakıt indiriminde süresiz devam kararı aldı",
+      "description": "Portekiz'de azınlık sağ hükümeti, ABD ve İsrail'in İran'a yönelik saldırılarının ardından Orta Doğu'daki çatışmaların etkisiyle başlayan küresel enerji ve ekonomik krizin etkilerini hafifletebilmek için bir dizi önlem paketi açıkladı.",
+      "url": "https://www.aa.com.tr/tr/guncel/portekiz-hukumeti-akaryakit-indiriminde-suresiz-devam-karari-aldi/3882311",
+      "image": "",
+      "date": "2026-03-27T19:24:42.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran Dışişleri Bakanı, Trump’ın altyapılara saldırmama sözüne sadık kalmadığını söyledi",
+      "description": "İran Dışişleri Bakanı Abbas Erakçi, İran’ın altyapısına yönelik son saldırılarla ABD Başkanı Donald Trump'ın bu yönde verdiği sözü tutmadığını belirtti.",
+      "url": "https://www.aa.com.tr/tr/guncel/iran-disisleri-bakani-trump-in-altyapilara-saldirmama-sozune-sadik-kalmadigini-soyledi/3882310",
+      "image": "",
+      "date": "2026-03-27T19:24:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "A100 in Richtung Treptow auf einer Spur befahrbar - Sperrung nach Brand aufgehoben",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/a100-stau-sperrung.html",
+      "image": "",
+      "date": "2026-03-27T19:13:52.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Rusya, 1 Nisan’dan itibaren benzin ihracatını yasaklayacak",
+      "description": "Rusya Başbakan Yardımcısı Aleksandr Novak’ın 1 Nisan’dan itibaren benzin ihracatının yasaklanması talimatı verdiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/rusya-1-nisan-dan-itibaren-benzin-ihracatini-yasaklayacak/3882284",
+      "image": "",
+      "date": "2026-03-27T18:45:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Neues Stadtquartier in Berlin-Pankow: Siegerentwurf für Elisabeth-Aue gekürt",
+      "description": "",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/03/neues-stadtquartier-elisabeth-aue-siegerentwurf-gekuert.html",
+      "image": "",
+      "date": "2026-03-27T18:42:06.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Wölfe stehen jetzt als jagdbare Art im Gesetz",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/woelfe-abschuss-jagdgesetz-bund-bundesrat-beschluss.html",
+      "image": "",
+      "date": "2026-03-27T18:33:29.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Axios: Rubio, mevkidaşlarına İran savaşının 2 ila 4 hafta daha süreceğini söyledi ",
-      "description": "ABD Dışişleri Bakanı Marco Rubio'nun, mevkidaşlarına İran'a yönelik saldırıların 2 ila 4 hafta daha süreceğini söylediği ileri sürüldü.",
-      "url": "https://www.aa.com.tr/tr/guncel/axios-rubio-mevkidaslarina-iran-savasinin-2-ila-4-hafta-daha-surecegini-soyledi-/3882209",
-      "image": "",
-      "date": "2026-03-27T17:29:16.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "TBMM Başkanı Kurtulmuş: Barışın, istikrarın, huzurun ve insani değerlerin yanında olmaya devam edeceğiz",
-      "description": "TBMM Başkanı Kurtulmuş, \"(Orta Doğu’daki çatışmalar) Türkiye olarak tarih boyunca olduğu gibi bu dönemde de barışın, istikrarın, huzurun ve insani değerlerin yanında olduk, olmaya devam edeceğiz.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/tbmm-baskani-kurtulmus-barisin-istikrarin-huzurun-ve-insani-degerlerin-yaninda-olmaya-devam-edecegiz/3882206",
-      "image": "",
-      "date": "2026-03-27T17:25:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AA Genel Müdür Yardımcısı Peru, \"1920 Koşusu\"nun anlam ve önemine vurgu yaptı",
-      "description": "AA Genel Müdür Yardımcısı ve Anadolu Ajansı Spor Kulübü Başkan Yardımcısı Peru, yerli ve yabancı sporcuların katılımıyla 5 Nisan'da Ankara'da düzenlenecek 10 kilometrelik \"1920 Koşusu\"na büyük bir ilgi olduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/guncel/aa-genel-mudur-yardimcisi-peru-1920-kosusunun-anlam-ve-onemine-vurgu-yapti/3882186",
-      "image": "",
-      "date": "2026-03-27T17:17:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Kulturstaatsminister Weimer: Kritik von Länder-Kulturminister ",
       "description": "Mehrere Kulturminister stellen sich gegen Kulturstaatsminister Wolfram Weimer: Sie warnen vor Eingriffen in unabhängige Jury-Entscheidungen bei Fördermitteln. Auch Brandenburgs Ministerin Manja Schüle kritisiert dies. Berlin trägt die Erklärung hingegen nicht mit.",
       "url": "https://www.rbb24.de/politik/beitrag/2026/03/weimer-kuklturstaatsminster-kritik-von-mehreren-laender-kulturminiister.html",
       "image": "",
       "date": "2026-03-27T17:11:02.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan: Bu anlamsız, hukuksuz savaşın faturasını çatışmaların tarafları kadar tüm insanlık da ödüyor",
-      "description": "Cumhurbaşkanı Erdoğan, \"Bir aydır bölgemizi derinden sarsan bu anlamsız, hukuksuz ve gereksiz savaşın faturasını çatışmaların tarafları kadar tüm insanlık da ödüyor.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/cumhurbaskani-erdogan-bu-anlamsiz-hukuksuz-savasin-faturasini-catismalarin-taraflari-kadar-tum-insanlik-da-oduyor/3882157",
-      "image": "",
-      "date": "2026-03-27T17:09:17.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Lehrermangel in Brandenburg: Eltern und Gewerkschaft fordern neuen Bildungsminister zum Handeln auf",
-      "description": "In Brandenburg fehlen seit Jahren Lehrkräfte. Der neue Bildungsminister Gordon Hoffmann befürchtet, dass sich das Problem sogar noch verschärft. Eltern und Gewerkschaft fordern ihn auf, etwas gegen weitere Unterrichtsausfälle zu tun.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/03/brandenburg-lehrermangel-bildungsminister-eltern-gew.html",
-      "image": "",
-      "date": "2026-03-27T16:57:44.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Tödliche Messerattacke: 19-Jähriger wegen Mordes zu sechs Jahren Jugendstrafe verurteilt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-toedliche-messerattacke-urteil-jugendstrafe-haft.html",
-      "image": "",
-      "date": "2026-03-27T16:41:57.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Brandenburgs Behindertenbeauftragte zieht Anträge auf Beschäftigung zurück",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/03/behindertenbeauftragte-brandenburg-janny-armbruster-keine-beschaeftigung.html",
-      "image": "",
-      "date": "2026-03-27T15:54:51.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
