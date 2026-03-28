@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-03-28T19:46:19.085Z",
+  "lastUpdated": "2026-03-28T21:00:54.567Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Sanatçı Suzan Kardeş, CSO Ada Ankara'da 30 Mart'ta sahne alacak",
+      "description": "CSO Ada Ankara, baharın gelişine özel düzenlenecek konserde sanatçı Suzan Kardeş'i ağırlayacak.",
+      "url": "https://www.aa.com.tr/tr/guncel/sanatci-suzan-kardes-cso-ada-ankarada-30-martta-sahne-alacak/3883476",
+      "image": "",
+      "date": "2026-03-28T20:48:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "\"Earth Hour\": Licht aus am Brandenburger Tor",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-earth-hour-licht-aus-brandenburger-tor.html",
+      "image": "",
+      "date": "2026-03-28T20:31:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Manisa'da etkili olan sağanak hayatı olumsuz etkiledi",
+      "description": "Manisa'nın Turgutlu ilçesinde etkili olan sağanak hayatı olumsuz etkiledi.",
+      "url": "https://www.aa.com.tr/tr/guncel/manisada-etkili-olan-saganak-hayati-olumsuz-etkiledi/3883457",
+      "image": "",
+      "date": "2026-03-28T20:06:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Pakistan: İran, 20 Pakistan gemisinin Hürmüz Boğazı'ndan geçişine izin verdi",
+      "description": "Pakistan Dışişleri Bakanı Muhammed İshak Dar, İran'ın Pakistan bayraklı 20 geminin daha Hürmüz Boğazı'ndan geçişine izin verdiğini ve günlük 2 geminin boğazdan geçeceğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/guncel/pakistan-iran-20-pakistan-gemisinin-hurmuz-bogazindan-gecisine-izin-verdi/3883453",
+      "image": "",
+      "date": "2026-03-28T19:54:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Albas Basketballerinnen sichern Heimvorteil für 1. Playoff-Runde",
       "description": "",
@@ -47,39 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Kosova-Türkiye maçını İngiliz hakem Michael Oliver yönetecek",
-      "description": "A Milli Futbol Takımı'nın 2026 FIFA Dünya Kupası Avrupa Elemeleri play-off turu finalinde 31 Mart Salı günü Kosova'ya konuk olacağı maçta İngiliz hakem Michael Oliver düdük çalacak.",
-      "url": "https://www.aa.com.tr/tr/guncel/kosova-turkiye-macini-ingiliz-hakem-michael-oliver-yonetecek/3883410",
-      "image": "",
-      "date": "2026-03-28T18:38:11.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "13. Uluslararası Türkiye Açık Tekvando Turnuvası'nın beşinci gününde Türk sporcular, 19 madalya kazandı",
-      "description": "Antalya'da düzenlenen 13. Uluslararası Türkiye Açık Tekvando Turnuvası'nın beşinci gününde Türk sporcular, 19 madalya kazandı.",
-      "url": "https://www.aa.com.tr/tr/guncel/13-uluslararasi-turkiye-acik-tekvando-turnuvasinin-besinci-gununde-turk-sporcular-19-madalya-kazandi/3883388",
-      "image": "",
-      "date": "2026-03-28T18:04:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Avrupa'da İsrail'in Gazze, İran ve Lübnan'a yönelik saldırıları protesto edildi ",
-      "description": "Avrupa’nın farklı şehirlerinde düzenlenen gösterilerde, İsrail’in Gazze, İran ve Lübnan’a yönelik saldırıları protesto edildi.",
-      "url": "https://www.aa.com.tr/tr/guncel/avrupada-israilin-gazze-iran-ve-lubnana-yonelik-saldirilari-protesto-edildi-/3883386",
-      "image": "",
-      "date": "2026-03-28T18:02:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Trotz Siebenmeter-Held Milosavljev: Füchse verlieren Spitzenspiel in Magdeburg",
       "description": "Im Spitzenspiel in Magdeburg hatten die Füchse lange die Nase vorne. Auch dank eines grandiosen Keepers, der in der ersten Hälfte zum Siebenmeterkiller wurde. Am Ende setzte sich dennoch der Tabellenführer durch.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/03/handball-bundesliga-sc-magdeburg-fuechse-berlin-spielbericht.html",
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/03/polizeiauto-gerammt-verfolgung-berlin-westend.html",
       "image": "",
       "date": "2026-03-28T17:25:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Landespokal: Energie Cottbus nach Sieg beim BSC Preußen im Finale",
-      "description": "Der Drittligist FC Energie Cottbus hat seine Pflichtaufgabe im Halbfinale des Brandenburger Landespokals gelöst und sich beim BSC Preußen mit 5:0 durchgesetzt. Tattermusch schoss das Team von Trainer \"Pele\" Wollitz mit einem Doppelpack früh auf die Siegerstraße.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/03/fussball-landespokal-brandenburg-halbfinale-bsc-preussen-energie-cottbus-rsv-eintracht-krieschow-spielbericht.html",
-      "image": "",
-      "date": "2026-03-28T16:32:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
