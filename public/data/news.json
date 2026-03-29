@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-03-28T23:01:57.744Z",
+  "lastUpdated": "2026-03-29T05:54:30.975Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İran'ın Körfez ülkelerine saldırıları sürüyor",
+      "description": "İran'ın, ABD üslerinin bulunduğu Körfez ülkelerine yönelik saldırıları sürüyor.",
+      "url": "https://www.aa.com.tr/tr/guncel/iranin-korfez-ulkelerine-saldirilari-suruyor/3883601",
+      "image": "",
+      "date": "2026-03-29T05:38:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD ile İsrail'in, İran'ın güneyindeki Benderpol İskelesi'ne düzenledikleri saldırıda 5 kişi öldü",
+      "description": "ABD ile İsrail'in, İran'ın güneyinde yer alan Hürmüzgan eyaletindeki Benderpol İskelesi'ne düzenledikleri saldırıda 5 kişinin yaşamını yitirdiği, 4 kişinin yaralandığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/abd-ile-israilin-iranin-guneyindeki-benderpol-iskelesine-duzenledikleri-saldirida-5-kisi-oldu/3883595",
+      "image": "",
+      "date": "2026-03-29T05:11:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Toprak Razgatlıoğlu, MotoGP'nin sprint yarışını motosikletindeki arıza nedeniyle tamamlayamadı",
+      "description": "MotoGP Dünya Şampiyonası'nın 3. etabı olan ABD Grand Prix sprint yarışında Prima Pramac Yamaha takımının milli sporcusu Toprak Razgatlıoğlu, motosikletindeki mekanik problem nedeniyle yarışı bıraktı.",
+      "url": "https://www.aa.com.tr/tr/guncel/toprak-razgatlioglu-motogpnin-sprint-yarisini-motosikletindeki-ariza-nedeniyle-tamamlayamadi/3883594",
+      "image": "",
+      "date": "2026-03-29T05:05:29.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "İletişim Başkanı Duran: Bu mühim buluşmaya ev sahipliği yapmaktan duyduğum derin memnuniyeti ifade etmek isterim",
       "description": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, 5. Uluslararası Stratejik İletişim Zirvesi (STRATCOM Zirvesi) 2026'nın iki gün süren yoğun ve verimli panellerin ardından başarıyla tamamlanmasının gururunu yaşadıklarını belirtti.",
@@ -25,17 +58,6 @@
       "type": "rss"
     },
     {
-      "title": "Sanatçı Suzan Kardeş, CSO Ada Ankara'da 30 Mart'ta sahne alacak",
-      "description": "CSO Ada Ankara, baharın gelişine özel düzenlenecek konserde sanatçı Suzan Kardeş'i ağırlayacak.",
-      "url": "https://www.aa.com.tr/tr/guncel/sanatci-suzan-kardes-cso-ada-ankarada-30-martta-sahne-alacak/3883476",
-      "image": "",
-      "date": "2026-03-28T20:48:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "\"Earth Hour\": Licht aus am Brandenburger Tor",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-earth-hour-licht-aus-brandenburger-tor.html",
@@ -44,28 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Manisa ve İzmir'de etkili olan sağanak hayatı olumsuz etkiledi",
-      "description": "Manisa'nın Turgutlu ve Salihli ilçeleri ile İzmir'de etkili olan sağanak hayatı olumsuz etkiledi.",
-      "url": "https://www.aa.com.tr/tr/guncel/manisa-ve-izmirde-etkili-olan-saganak-hayati-olumsuz-etkiledi/3883457",
-      "image": "",
-      "date": "2026-03-28T20:06:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Pakistan: İran, 20 Pakistan gemisinin Hürmüz Boğazı'ndan geçişine izin verdi",
-      "description": "Pakistan Dışişleri Bakanı Muhammed İshak Dar, İran'ın Pakistan bayraklı 20 geminin daha Hürmüz Boğazı'ndan geçişine izin verdiğini ve günlük 2 geminin boğazdan geçeceğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/guncel/pakistan-iran-20-pakistan-gemisinin-hurmuz-bogazindan-gecisine-izin-verdi/3883453",
-      "image": "",
-      "date": "2026-03-28T19:54:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
