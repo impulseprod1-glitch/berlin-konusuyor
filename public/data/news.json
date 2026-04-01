@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-04-01T17:39:35.064Z",
+  "lastUpdated": "2026-04-01T20:07:39.626Z",
   "count": 10,
   "articles": [
     {
-      "title": "Akdeniz'de 4,7 büyüklüğünde deprem",
-      "description": "Akdeniz açıklarında saat 20.11'de 4,7 büyüklüğünde deprem meydana geldi.",
-      "url": "https://www.aa.com.tr/tr/guncel/akdenizde-4-7-buyuklugunde-deprem/3888543",
+      "title": "İran Cumhurbaşkanı Pezeşkiyan, ABD halkına hitaben açık mektup yayımladı",
+      "description": "İran Cumhurbaşkanı Mesud Pezeşkiyan, ABD halkına hitaben açık bir mektup yayımlayarak, İran halkının, Amerika, Avrupa ve komşu ülkeler de dahil olmak üzere hiçbir millete karşı düşmanlık beslemediğini söyledi.",
+      "url": "https://www.aa.com.tr/tr/guncel/iran-cumhurbaskani-pezeskiyan-abd-halkina-hitaben-acik-mektup-yayimladi/3888610",
       "image": "",
-      "date": "2026-04-01T17:27:25.000Z",
+      "date": "2026-04-01T19:32:13.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Suriye'nin başkenti Şam’da İsrail’in Filistinlilere yönelik idam cezası yasası protesto edildi",
+      "description": "Suriye’nin başkenti Şam’da, İsrail Meclisinin onayladığı, Filistinlileri hedef alan tartışmalı idam yasasının iptal edilmesi talebiyle gösteri yapıldı.",
+      "url": "https://www.aa.com.tr/tr/guncel/suriyenin-baskenti-sam-da-israil-in-filistinlilere-yonelik-idam-cezasi-yasasi-protesto-edildi/3888606",
+      "image": "",
+      "date": "2026-04-01T19:23:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Hizbullah'ın roketleri nedeniyle ön uyarı alarmı gelmeden çalan sirenler Tel Aviv'de paniğe yol açtı",
+      "description": "Lübnan'daki Hizbullah'ın İsrail'in merkezine yönelik roket ve insansız hava aracı (İHA) saldırıları sonrası başta başkent Tel Aviv olmak üzere İsrail'in birçok kentinde ön uyarı alarmları gelmeden çalan sirenler paniğe yol açtı.",
+      "url": "https://www.aa.com.tr/tr/guncel/hizbullahin-roketleri-nedeniyle-on-uyari-alarmi-gelmeden-calan-sirenler-tel-avivde-panige-yol-acti/3888603",
+      "image": "",
+      "date": "2026-04-01T19:10:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Hollanda ordusu, 600 dron uzmanı alacak",
+      "description": "Hollanda ordusunun, muharebe gücünü artırmak için dronlara ağırlık vereceği ve ilk etapta 600 \"dron uzmanı\" istihdam edeceği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/hollanda-ordusu-600-dron-uzmani-alacak/3888602",
+      "image": "",
+      "date": "2026-04-01T19:09:38.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin \"İran'a saldırıların başlatılmasından beri 16 adet MQ-9 Reaper İHA kaybettiği\" iddiası",
+      "description": "ABD ordusunun, 28 Şubat'tan bu yana İran'a yönelik saldırılarda 16 adet MQ-9 Reaper tipi insansız hava aracını (İHA) kaybettiği ileri sürüldü.",
+      "url": "https://www.aa.com.tr/tr/guncel/abdnin-irana-saldirilarin-baslatilmasindan-beri-16-adet-mq-9-reaper-iha-kaybettigi-iddiasi/3888600",
+      "image": "",
+      "date": "2026-04-01T19:01:09.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rettungs-Leerfahrten: Märkisch-Oderland droht mit Gebühren",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-112-lehrfahrten-gebuehren-mol.html",
+      "image": "",
+      "date": "2026-04-01T18:47:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Polizisten und Justizvertreter bedroht: Berliner zu Haft verurteilt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-beleidung-bedrohung-polizei-justiz-haftstrafe.html",
+      "image": "",
+      "date": "2026-04-01T18:37:47.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "RAW-Gelände: Neue Bürgerinitiative gründet sich gegen Bebauung",
+      "description": "Ein Investor will das RAW-Gelände in Berlin-Friedrichshain grundlegend neugestalten. Mit Senat und Bezirk hat man einen Kompromiss gefunden. Eine neue Bürgerbewegung formiert sich gegen die Pläne.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-raw-gelaende-friedrichshain-initiative-protest-bebauung-plaene-investor.html",
+      "image": "",
+      "date": "2026-04-01T17:43:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "TBMM Suça Sürüklenen Çocuklara İlişkin Araştırma Komisyonu toplandı",
-      "description": "Cumhurbaşkanlığı Sağlık Politikaları Kurulu ve Yeşilay Bilim Kurulu Üyesi Prof. Dr. Toker Ergüder, \"Suça sürüklenen çocukların yüzde 51'i okulu bırakmış çocuklardır. Çocukların yüzde 47,9'u okula gitmeyen çocuklardır.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/tbmm-suca-suruklenen-cocuklara-iliskin-arastirma-komisyonu-toplandi/3888528",
-      "image": "",
-      "date": "2026-04-01T16:49:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Ostsee, Spreewald, Seenplatte: VBB setzt Verstärkerzüge ein",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/03/berlin-brandenburg-vbb-ausflug-bahn-tourismus-ziele-fahrrad.html",
       "image": "",
-      "date": "2026-04-01T16:46:51.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kardan kapanan Ardahan-Ardanuç kara yolu yaklaşık 4 ay sonra ulaşıma açılıyor",
-      "description": "Kar nedeniyle yaklaşık 4 aydır kapalı bulunan Ardahan-Ardanuç kara yolunun, yürütülen çalışmaların ardından yarın araç geçişine açılması planlanıyor.",
-      "url": "https://www.aa.com.tr/tr/guncel/kardan-kapanan-ardahan-ardanuc-kara-yolu-yaklasik-4-ay-sonra-ulasima-aciliyor/3888522",
-      "image": "",
-      "date": "2026-04-01T16:38:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İstanbul'da akşam saatlerinde trafik yoğunluğu yüzde 83'e yükseldi",
-      "description": "İstanbul'da haftanın üçüncü iş günü bazı bölgelerde trafik yoğunluğu yaşanırken, Anadolu Yakası'nda trafik yoğunluğu yüzde 89'a kadar çıktı.",
-      "url": "https://www.aa.com.tr/tr/guncel/istanbulda-aksam-saatlerinde-trafik-yogunlugu-yuzde-83e-yukseldi/3888521",
-      "image": "",
-      "date": "2026-04-01T16:37:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "TBMM Başkanı Kurtulmuş, PAB Genel Sekreteri Chungong'u Meclis'te kabul etti",
-      "description": "TBMM Başkanı Numan Kurtulmuş, Parlamentolar Arası Birlik (PAB) Genel Sekreteri Martin Chungong'u kabul etti.",
-      "url": "https://www.aa.com.tr/tr/guncel/tbmm-baskani-kurtulmus-pab-genel-sekreteri-chungongu-mecliste-kabul-etti/3888518",
-      "image": "",
-      "date": "2026-04-01T16:26:35.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Stefan Ustorf: \"Eisbären sind vom Halbfinale noch weit entfernt\"",
-      "description": "Nach dem Debakel zum Auftakt der Serie gegen Straubing sind die Eisbären mittlerweile voll im Playoff-Modus angekommen. Doch eine Vereinslegende mahnt zur Vorsicht: Für Stefan Ustorf ist an eine Titelverteidigung noch lange nicht zu denken.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/eishockey-del-eisbaeren-berlin-playoffs-viertelfinale-straubing-meisterschaft-stefan-ustorf-interview.html",
-      "image": "",
-      "date": "2026-04-01T16:10:47.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kommission soll Vorgänge um Neuköllner Jugendzentrum untersuchen",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/berlin-neukoelln-jugendzentrum-vergewaltigung-kommission.html",
-      "image": "",
-      "date": "2026-04-01T15:38:01.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin-Charlottenburg: Polizei findet Pistole und Bargeld in sechsstelliger Höhe bei Kontrolle",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-polizei-bargeld-fund-kontrolle.html",
-      "image": "",
-      "date": "2026-04-01T15:09:11.000Z",
+      "date": "2026-04-01T16:46:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
