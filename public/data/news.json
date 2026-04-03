@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-04-03T19:55:15.662Z",
+  "lastUpdated": "2026-04-03T21:50:39.848Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Dışişleri Bakanı Fidan, İranlı ve Mısırlı mevkidaşları ile ABD'li yetkililerle telefonda görüştü",
+      "description": "Dışişleri Bakanı Hakan Fidan, İran Dışişleri Bakanı Abbas Erakçi, Mısır Dışişleri Bakanı Bedr Abdulati ve Amerikalı yetkililerle telefonda, savaşın gidişatını ve savaşı durdurmaya yönelik çabaları ele aldı.",
+      "url": "https://www.aa.com.tr/tr/guncel/disisleri-bakani-fidan-iranli-ve-misirli-mevkidaslari-ile-abdli-yetkililerle-telefonda-gorustu/3891133",
+      "image": "",
+      "date": "2026-04-03T20:16:42.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump, İran tarafından savaş uçaklarının düşürülmesinin olası müzakereleri etkilemeyeceğini belirtti",
+      "description": "ABD Başkanı Donald Trump, İran tarafından savaş uçaklarının düşürülmesinin Tahran yönetimiyle olası müzakereleri etkilemeyeceğini belirtti.",
+      "url": "https://www.aa.com.tr/tr/guncel/trump-iran-tarafindan-savas-ucaklarinin-dusurulmesinin-olasi-muzakereleri-etkilemeyecegini-belirtti/3891118",
+      "image": "",
+      "date": "2026-04-03T20:05:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Irak’ın Erbil kentinde etkili olan yağış hayatı olumsuz etkiledi",
+      "description": "Irak’ın Erbil kentinde etkili olan sağanak yağış, hayatı olumsuz etkiledi. Kentin birçok noktasında yollar su altında kalırken, bazı araçlar suda mahsur kaldı.",
+      "url": "https://www.aa.com.tr/tr/guncel/irak-in-erbil-kentinde-etkili-olan-yagis-hayati-olumsuz-etkiledi/3891101",
+      "image": "",
+      "date": "2026-04-03T19:51:49.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Volleyball-Bundesliga: BR Volleys erreichen Halbfinale",
       "description": "Die BR Volleys haben im Playoff-Viertelfinale der Volleyball-Bundesliga die Netzhoppers KW besiegt. Die Berliner gewannen auch das zweite Spiel und entschieden die Best-of-three-Serie so vorzeitig für sich.",
@@ -30,39 +63,6 @@
       "url": "https://www.aa.com.tr/tr/guncel/abd-savunma-bakanligi-iran-ile-savasta-su-ana-kadar-13-abd-askeri-oldu-365-asker-yaralandi/3891083",
       "image": "",
       "date": "2026-04-03T19:30:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "DSÖ: Orta Doğu'da çatışmalar 4 milyondan fazla yerinden edilmeye ve 3 bin 300 can kaybına neden oldu",
-      "description": "DSÖ Genel Direktörü Ghebreyesus, Orta Doğu'da devam eden saldırıların 4 milyondan fazla kişinin yerinden edilmesine, 3 bin 300 kişinin hayatını kaybetmesine ve 30 bin kişinin yaralanmasına neden olduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/guncel/dso-orta-doguda-catismalar-4-milyondan-fazla-yerinden-edilmeye-ve-3-bin-300-can-kaybina-neden-oldu/3891078",
-      "image": "",
-      "date": "2026-04-03T19:23:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran’ın Fars Haber Ajansı: ABD, üçüncü ülke aracılığıyla İran’a 48 saatlik geçici ateşkes önerdi",
-      "description": "Fars Haber Ajansı, İranlı üst düzey bir yetkiliye atıfta bulunarak, \"ABD’nin üçüncü bir ülke aracılığı ile İran’a 48 saatlik geçici ateşkes teklifinde bulunduğunu\" belirtti.",
-      "url": "https://www.aa.com.tr/tr/guncel/iran-in-fars-haber-ajansi-abd-ucuncu-ulke-araciligiyla-iran-a-48-saatlik-gecici-ateskes-onerdi/3891072",
-      "image": "",
-      "date": "2026-04-03T19:16:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Adalet Bakanlığından \"İmamoğlu çıkar amaçlı suç örgütü davasında delilsiz tutuklama\" iddiasına yalanlama",
-      "description": "Adalet Bakanlığı, bazı basın yayın organlarında yer alan \"İmamoğlu çıkar amaçlı suç örgütü davasına ilişkin olarak bir hakimin 'Özür dilerim, tutuklamak zorundayım.' dediği ve delilsiz şekilde tutuklama kararı verdiği\" yönündeki iddiaları yalanladı.",
-      "url": "https://www.aa.com.tr/tr/guncel/adalet-bakanligindan-imamoglu-cikar-amacli-suc-orgutu-davasinda-delilsiz-tutuklama-iddiasina-yalanlama/3891067",
-      "image": "",
-      "date": "2026-04-03T19:12:28.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
