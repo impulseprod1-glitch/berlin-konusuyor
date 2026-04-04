@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-04-04T16:33:01.398Z",
+  "lastUpdated": "2026-04-04T17:28:00.003Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İtalya'da 4 havalimanında bazı uçuşlar için yakıt kısıtlaması yapılıyor",
+      "description": "İtalya'da Milano Linate, Bologna, Venedik ve Treviso havalimanlarında 9 Nisan'a kadar bazı uçuşlar için yakıt temini kısıtlamasının uygulamaya girdiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/guncel/italyada-4-havalimaninda-bazi-ucuslar-icin-yakit-kisitlamasi-yapiliyor/3892066",
+      "image": "",
+      "date": "2026-04-04T17:10:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Wie Vivantes in Berlin den Pflegenotstand entschärfte",
+      "description": "Kaum ein Beruf stand so sehr für Fachkräftemangel wie die Pflege. Beim landeseigenen Klinik-Konzern Vivantes in Berlin kommen auf 125 Ausbildungsplätze mittlerweile tausende Bewerbungen. Ist der Pflegenotstand also vorbei – oder täuscht der Boom?",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/berlin-vivantes-ausbildungsplaetze-pflegekraefte-pflegenotstand-pflege.html",
+      "image": "",
+      "date": "2026-04-04T17:10:35.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Kar ve tipi Ardahan'da bazı yollarda ulaşımı aksatıyor",
+      "description": "Ardahan'da aralıklarla etkili olan kar yağışı ve tipi, bazı yollarda ulaşımda aksamalara neden oluyor.",
+      "url": "https://www.aa.com.tr/tr/guncel/kar-ve-tipi-ardahanda-bazi-yollarda-ulasimi-aksatiyor/3892053",
+      "image": "",
+      "date": "2026-04-04T16:55:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan, İstanbul'da Hamas heyetini kabul etti",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, İstanbul'da Dolmabahçe Çalışma Ofisi'nde Hamas heyetini kabul etti.",
+      "url": "https://www.aa.com.tr/tr/guncel/cumhurbaskani-erdogan-istanbulda-hamas-heyetini-kabul-etti/3892052",
+      "image": "",
+      "date": "2026-04-04T16:54:23.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Beşiktaş, Fenerbahçe derbisine hazır",
+      "description": "Beşiktaş, Trendyol Süper Lig'in 28. haftasında yarın deplasmanda Fenerbahçe ile oynayacağı derbinin hazırlıklarını tamamlayarak kampa girdi.",
+      "url": "https://www.aa.com.tr/tr/guncel/besiktas-fenerbahce-derbisine-hazir/3892048",
+      "image": "",
+      "date": "2026-04-04T16:50:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Adalet Bakanı Gürlek'ten Diyarbakır ziyaretlerine ilişkin paylaşım",
+      "description": "Bakan Gürlek \"Şehrimizin yöneticileriyle, adalet teşkilatımızla, gençlerimizle ve kanaat önderlerimizle bir araya geldik. Terörsüz Türkiye'nin, ülkemize ve Diyarbakır'ımıza huzur, güven ve refah getireceğine yürekten inandığımızı vurguladık\" dedi.",
+      "url": "https://www.aa.com.tr/tr/guncel/adalet-bakani-gurlekten-diyarbakir-ziyaretlerine-iliskin-paylasim/3892041",
+      "image": "",
+      "date": "2026-04-04T16:45:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "AfD-Politiker an Infostand angegriffen",
       "description": "",
@@ -11,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Gazze’de ateşkes anlaşmasına ilişkin görüşmeler Kahire’de sürüyor",
-      "description": "Gazze Şeridi’nde ateşkes anlaşmasının uygulanmasına ilişkin görüşmelerin Mısır’ın başkenti Kahire’de sürdüğü bildirildi.",
-      "url": "https://www.aa.com.tr/tr/guncel/gazze-de-ateskes-anlasmasina-iliskin-gorusmeler-kahire-de-suruyor/3892030",
-      "image": "",
-      "date": "2026-04-04T16:20:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -36,47 +91,14 @@
       "type": "rss"
     },
     {
-      "title": "3. Liga: Energie Cottbus gewinnt beim TSV Havelse",
-      "description": "Energie Cottbus hat nach zuletzt drei Spielen ohne Sieg einen wichtigen Erfolg im Aufstiegsrennen gefeiert. Beim abstiegsbedrohten TSV Havelse gewann die Mannschaft von Claus-Dieter Wollitz verdient und deutlich.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-brandenburg-cottbus-energie-dritte-liga-tsv-havelse.html",
+      "title": "Mehrfamilienhaus in Berlin-Neukölln nach Brand unbewohnbar",
+      "description": "In den frühen Morgenstunden brennt am Samstag ein Haus in Neukölln lichterloh. Die Feuerwehr kann alle Bewohner in Sicherheit bringen. 17 von ihnen erleiden Verletzungen, einer schwer. Das Haus ist unbewohnbar.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-neukoelln-brand-haus-unbewohnbar-feuerwehr.html",
       "image": "",
-      "date": "2026-04-04T15:51:22.000Z",
+      "date": "2026-04-04T15:23:34.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Petrol Ofisi Maxima 2026 Türkiye Ralli Şampiyonası'nın 1. ayağı tamamlandı",
-      "description": "Petrol Ofisi Maxima 2026 Türkiye Ralli Şampiyonası'nın ilk ayağı Marmaris Ege Rallisi tamamlandı.",
-      "url": "https://www.aa.com.tr/tr/guncel/petrol-ofisi-maxima-2026-turkiye-ralli-sampiyonasinin-1-ayagi-tamamlandi/3891998",
-      "image": "",
-      "date": "2026-04-04T15:50:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kosova Cumhurbaşkanı Osmani'nin görev süresi sona erdi",
-      "description": "Kosova Cumhurbaşkanı Vjosa Osmani, 5 yıldır sürdürdüğü görevini Kosova Meclis Başkanı Albulena Haxhiu'ya devretti.",
-      "url": "https://www.aa.com.tr/tr/guncel/kosova-cumhurbaskani-osmaninin-gorev-suresi-sona-erdi/3891970",
-      "image": "",
-      "date": "2026-04-04T15:38:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Alaska semalarında ''Kuzey Işıkları'' görsel şölen sundu",
-      "description": "Yeryüzünün manyetik alanı ile Güneş'ten gelen yüklü parçacıkların etkileşimi sonucu ortaya çıkan Kuzey Işıkları (Aurora Borealis), Alaska'da görüntülendi.",
-      "url": "https://www.aa.com.tr/tr/guncel/alaska-semalarinda-kuzey-isiklari-gorsel-solen-sundu/3891965",
-      "image": "",
-      "date": "2026-04-04T15:34:14.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-regionalliga-nordost-jena-luckenwalde-babelsberg-hertha-zehlendorf.html",
       "image": "",
       "date": "2026-04-04T15:21:18.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Trump, Hürmüz Boğazı'nı açması için İran'a verdiği sürenin \"daraldığını\" söyledi",
-      "description": "ABD Başkanı Donald Trump, İran'a anlaşmaya yanaşarak Hürmüz Boğazı'nı açması için verdiği sürenin daraldığını bildirerek \"Üzerlerine kıyametin kopmasına 48 saat kaldı.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/guncel/trump-hurmuz-bogazini-acmasi-icin-irana-verdigi-surenin-daraldigini-soyledi/3891957",
-      "image": "",
-      "date": "2026-04-04T15:21:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ostermärsche in Berlin und Brandenburg: Teilnehmer demonstrieren gegen Kriege und Wehrpflicht",
-      "description": "Traditionell geht die Friedensbewegung an Ostern auf die Straße - so auch in Berlin und Brandenburg. Angesichts aktueller Kriege waren neben Friedenstauben auch iranische und Palästina-Flaggen zu sehen.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/ostermarsch-berlin-brandenburg-frieden-demonstrationen.html",
-      "image": "",
-      "date": "2026-04-04T15:19:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
