@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-04-04T10:31:03.107Z",
+  "lastUpdated": "2026-04-04T11:27:16.952Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Weiterer Fall der Newcastle-Krankheit in Spreenhagen aufgetreten",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-newcastle-krankheit-spreenhagen-oder-spree.html",
+      "image": "",
+      "date": "2026-04-04T11:04:32.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Büyükçekmece Gölü'nde su seviyesinin ani yükselip çekilmesi balık ölümlerine neden oldu",
+      "description": "Yoğun yağışların ardından Büyükçekmece Gölü'nde su tahliye vanalarının açılmasıyla oluşan akıntıya yüzen İsrail sazanları, suların çekilmesiyle kıyıda mahsur kaldı.",
+      "url": "https://www.aa.com.tr/tr/guncel/buyukcekmece-golunde-su-seviyesinin-ani-yukselip-cekilmesi-balik-olumlerine-neden-oldu/3891630",
+      "image": "",
+      "date": "2026-04-04T11:03:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "UAEA Başkanı Grossi, İran'ın Buşehr Nükleer Enerji Santrali'ne saldırıdan derin endişe duyduğunu belirtti",
+      "description": "UAEA Başkanı Rafael Mariano Grossi, İran'daki Buşehr Nükleer Enerji Santrali'ne yapılan saldırıdan derin endişe duyduğunu belirterek nükleer enerji santrali sahaları ve çevresindeki alanların asla hedef alınmaması gerektiğini vurguladı.",
+      "url": "https://www.aa.com.tr/tr/guncel/uaea-baskani-grossi-iranin-busehr-nukleer-enerji-santraline-saldiridan-derin-endise-duydugunu-belirtti/3891623",
+      "image": "",
+      "date": "2026-04-04T10:54:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kazakistan'da Hoca Ahmet Yesevi mirasının yaygınlaştırılmasına yönelik eylem planı onaylandı",
+      "description": "Kazakistan hükümeti, Hoca Ahmet Yesevi mirasının tanıtımı ve yaygınlaştırılmasına yönelik 2026-2028 dönemini kapsayan eylem planını onayladı.",
+      "url": "https://www.aa.com.tr/tr/guncel/kazakistanda-hoca-ahmet-yesevi-mirasinin-yayginlastirilmasina-yonelik-eylem-plani-onaylandi/3891613",
+      "image": "",
+      "date": "2026-04-04T10:40:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Avusturya Başbakan Yardımcısı Babler: Biz Trump'ın kaotik politikalarının bir parçası değiliz",
+      "description": "Avusturya Başbakan Yardımcısı ve koalisyon hükümetindeki Sosyal Demokrat Parti (SPÖ) Genel Başkanı Andreas Babler, \"ABD Başkanı Donald Trump'ın kaotik politikalarının bir parçası olmadıklarını\" vurguladı.",
+      "url": "https://www.aa.com.tr/tr/guncel/avusturya-basbakan-yardimcisi-babler-biz-trumpin-kaotik-politikalarinin-bir-parcasi-degiliz/3891610",
+      "image": "",
+      "date": "2026-04-04T10:38:49.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Osman Aşkın Bak: Etnosporu, gençlik politikalarının kesişim noktasında stratejik bir alan olarak görüyoruz",
+      "description": "Gençlik ve Spor Bakanı Osman Aşkın Bak, etnosporu, spor, kültür, eğitim ve gençlik politikalarının kesişim noktasında stratejik bir alan olarak gördüklerini belirterek, \"Gençlerimizin ata sporlarımızla buluşmasını sağlamak için çalışıyoruz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/guncel/bakan-osman-askin-bak-etnosporu-genclik-politikalarinin-kesisim-noktasinda-stratejik-bir-alan-olarak-goruyoruz/3891602",
+      "image": "",
+      "date": "2026-04-04T10:32:04.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Berlin-Zehlendorf: Patientin stirbt nach Brand in Krankenhaus",
       "description": "",
@@ -14,58 +80,14 @@
       "type": "rss"
     },
     {
-      "title": "İletişim Başkanı Duran, Alparslan Türkeş'i andı",
-      "description": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Milliyetçi Hareket Partisinin Kurucu Genel Başkanı Alparslan Türkeş'i vefatının 29. yılında andı.",
-      "url": "https://www.aa.com.tr/tr/guncel/iletisim-baskani-duran-alparslan-turkesi-andi/3891591",
+      "title": "Gastronomie in Brandenburg: Betreiber erzählt, wie er Herausforderungen meistert",
+      "description": "Es liegt mitten in der Natur und ist mit dem Auto nicht erreichbar: Das Traditionsrestaurant Wotschofska im Spreewald. Trotzdem läuft der Laden - und Personal ist auch genug da. Wirt Torsten Teichert setzt dabei auch auf Mitarbeiter aus den Bergen.",
+      "url": "https://www.rbb24.de/panorama/thema/wiegehtesuns/brandenburg-luebbenau-gastronomie-krise-energie-personalmangel.html",
       "image": "",
-      "date": "2026-04-04T10:21:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "8. Etnospor Forumu Antalya'da başladı",
-      "description": "Dünya Etnospor Birliği Başkanı Necmeddin Bilal Erdoğan, \"Ethnosports 2027, geleneksel sporların yeniden yükselişinin simgesi olacak, barış ve dayanışmayı güçlendiren küresel bir hareketin kilometre taşı olarak tarihe geçecektir.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/guncel/8-etnospor-forumu-antalyada-basladi/3891577",
-      "image": "",
-      "date": "2026-04-04T10:05:34.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ankara'da yarın bazı yollar trafiğe kapatılacak",
-      "description": "Anadolu Ajansının (AA) kuruluşunun 106. yılı etkinlikleri kapsamında düzenlenecek \"1920 Koşusu\" nedeniyle Ankara'da yarın bazı yollar trafiğe kapatılacak.",
-      "url": "https://www.aa.com.tr/tr/guncel/ankarada-yarin-bazi-yollar-trafige-kapatilacak/3891570",
-      "image": "",
-      "date": "2026-04-04T10:04:28.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran'ın İsrail'e misillemesinde füze parçaları Tel Aviv ve çevresine isabet etti",
-      "description": "İran'ın İsrail'in merkez bölgesini hedef alan misillemesinde füze parçaları başkent Tel Aviv ve çevresinde birçok noktaya isabet etti.",
-      "url": "https://www.aa.com.tr/tr/guncel/iranin-israile-misillemesinde-fuze-parcalari-tel-aviv-ve-cevresine-isabet-etti/3891569",
-      "image": "",
-      "date": "2026-04-04T10:04:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Dünya Etnospor Birliği Başkanı Bilal Erdoğan ile AA Genel Müdür Yardımcısı Oğuz Enis Peru bir araya geldi",
-      "description": "Dünya Etnospor Birliği Başkanı Necmeddin Bilal Erdoğan ile Anadolu Ajansı (AA) Genel Müdür Yardımcısı Oğuz Enis Peru, Antalya'da bir araya geldi.",
-      "url": "https://www.aa.com.tr/tr/guncel/dunya-etnospor-birligi-baskani-bilal-erdogan-ile-aa-genel-mudur-yardimcisi-oguz-enis-peru-bir-araya-geldi/3891553",
-      "image": "",
-      "date": "2026-04-04T09:57:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
+      "date": "2026-04-04T09:18:45.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/cottbus-brand-deponie-gruenabfaelle-feuerwehr.html",
       "image": "",
       "date": "2026-04-04T07:02:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "\"La Belle\"-Attentat: Überlebender Heino Möhring erinnert sich",
-      "description": "Gegen 1:45 Uhr explodiert am 5. April 1986 eine Bombe in der Diskothek \"La Belle\" in Berlin-Friedenau. Bei dem Anschlag sterben drei Menschen, mehr als 200 werden teils schwer verletzt, unter ihnen Heino Möhring - der heute noch an den Spätfolgen leidet.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/40-jahre-attentat-la-belle-bombe-diskothek-opfer-zeitzeuge-westberlin.html",
-      "image": "",
-      "date": "2026-04-04T06:22:20.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Volleyball-Bundesliga: BR Volleys erreichen Halbfinale",
-      "description": "Die BR Volleys haben im Playoff-Viertelfinale der Volleyball-Bundesliga die Netzhoppers KW besiegt. Die Berliner gewannen auch das zweite Spiel und entschieden die Best-of-three-Serie so vorzeitig für sich.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/volleyball-berlin-brandenburg-br-volleys-netzhoppers-bundesliga-viertelfinale.html",
-      "image": "",
-      "date": "2026-04-03T19:42:24.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
