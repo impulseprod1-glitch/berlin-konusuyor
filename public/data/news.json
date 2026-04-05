@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-05T13:53:31.860Z",
+  "lastUpdated": "2026-04-05T14:33:47.151Z",
   "count": 10,
   "articles": [
     {
@@ -33,6 +33,17 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "60 saniyede bugün (05 Nisan 2026)",
+      "description": "Türkiye ve dünya gündeminin 60 saniyelik özeti. AJet'in katkılarıyla...",
+      "url": "https://www.aa.com.tr/tr/guncel/60-saniyede-bugun-05-nisan-2026/3892716",
+      "image": "",
+      "date": "2026-04-05T13:24:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -74,17 +85,6 @@
       "url": "https://www.aa.com.tr/tr/guncel/israil-ordusu-ust-duzey-bir-devrim-muhafizlari-ordusu-komutaninin-oldugunu-iddia-etti/3892705",
       "image": "",
       "date": "2026-04-05T13:11:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Fidan, Suriye'de Cumhurbaşkanı Şara ve Ukrayna Devlet Başkanı Zelenskiy ile görüşecek",
-      "description": "Dışişleri Bakanı Hakan Fidan, bugünkü Suriye ziyareti kapsamında, Ukrayna Devlet Başkanı Volodimir Zelenskiy ve Suriye Cumhurbaşkanı Ahmed Şara ile üçlü görüşmede bir araya gelecek.",
-      "url": "https://www.aa.com.tr/tr/guncel/bakan-fidan-suriyede-cumhurbaskani-sara-ve-ukrayna-devlet-baskani-zelenskiy-ile-gorusecek/3892689",
-      "image": "",
-      "date": "2026-04-05T12:48:53.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
