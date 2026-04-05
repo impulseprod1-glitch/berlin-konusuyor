@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-04-05T14:33:47.151Z",
+  "lastUpdated": "2026-04-05T15:30:39.947Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Union hält St. Pauli im Kampf um den Klassenerhalt auf Distanz",
+      "description": "Der 1. FC Union hat gegen den abstiegsbedrohten FC St. Pauli einen Sieg verpasst. Die Köpenicker lagen nach einem Traumtor zurück, kamen nach der Pause aber per Standard noch zurück.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-1-fc-union-berlin-st-pauli-spielbericht.html",
+      "image": "",
+      "date": "2026-04-05T15:29:04.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "PSV, Eredivisie'de bitime 5 hafta kala şampiyonluğunu ilan etti",
+      "description": "Hollanda Birinci Futbol Ligi'nde (Eredivisie) lider PSV, en yakın takipçisi Feyenoord'un puan kaybetmesiyle şampiyonluğunu ilan etti.",
+      "url": "https://www.aa.com.tr/tr/guncel/psv-eredivisiede-bitime-5-hafta-kala-sampiyonlugunu-ilan-etti/3892837",
+      "image": "",
+      "date": "2026-04-05T15:05:11.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Handball: Füchse Berlin überrollen überforderte Leipziger",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/handball-bundesliga-fuechse-berlin-dhfk-leipzig-spielbericht.html",
+      "image": "",
+      "date": "2026-04-05T15:03:54.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Flatten the Curve gewinnt Saisoneröffnung in Hoppegarten",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/pferdesport-hoppegarten-galopprennbahn-hammer-hansen-saisoneroeffnung.html",
+      "image": "",
+      "date": "2026-04-05T14:46:45.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Ostermärsche in Berlin und Brandenburg: Teilnehmer demonstrieren gegen Kriege und Wehrpflicht",
+      "description": "Traditionell geht die Friedensbewegung an Ostern auf die Straße - so auch in Berlin und Brandenburg. Angesichts aktueller Kriege waren neben Friedenstauben auch iranische und Palästina-Flaggen zu sehen.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/04/ostermarsch-berlin-brandenburg-frieden-demonstrationen.html",
+      "image": "",
+      "date": "2026-04-05T14:40:18.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Waldbrandgefahr in Brandenburg angestiegen",
       "description": "",
@@ -25,17 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Jetzt live: Lässt Union gegen St. Pauli Abstiegssorgen hinter sich?",
-      "description": "Mit einem Sieg gegen den FC St. Pauli könnte der 1. FC Union wohl endgültig einen Haken an die Aufgabe Klassenerhalt machen. Für drei Köpenicker Punkte spricht auch die Heimbilanz von Union gegen St. Pauli.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-1-fc-union-berlin-st-pauli-spielbericht.html",
-      "image": "",
-      "date": "2026-04-05T13:26:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "60 saniyede bugün (05 Nisan 2026)",
       "description": "Türkiye ve dünya gündeminin 60 saniyelik özeti. AJet'in katkılarıyla...",
       "url": "https://www.aa.com.tr/tr/guncel/60-saniyede-bugun-05-nisan-2026/3892716",
@@ -44,17 +88,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin-Spandau: Ein Toter bei Wohnungsbrand",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-spandau-wohnungsbrand-person-tot.html",
-      "image": "",
-      "date": "2026-04-05T13:20:50.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     },
     {
@@ -77,39 +110,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ordusu, üst düzey bir Devrim Muhafızları Ordusu komutanının öldüğünü iddia etti",
-      "description": "İsrail ordusu, İran'ın başkenti Tahran'a düzenlenen hava saldırısında Devrim Muhafızları Ordusu'nun üst düzey komutanlarından olduğunu ileri sürdüğü Muhammed Rıza Eşrefi Eşrefkahi'nin öldüğünü savundu.",
-      "url": "https://www.aa.com.tr/tr/guncel/israil-ordusu-ust-duzey-bir-devrim-muhafizlari-ordusu-komutaninin-oldugunu-iddia-etti/3892705",
-      "image": "",
-      "date": "2026-04-05T13:11:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Werden künftig alle Bibliotheken sonntags öffnen dürfen?",
-      "description": "Bibliotheken sollen künftig auch sonntags öffnen dürfen – doch in Berlin und Brandenburg fehlt es dafür an Personal und Geld. Während Politik und Leitung Reformen fordern, warnen Beschäftigte vor zusätzlicher Belastung.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/04/bibliothek-berlin-sonntagsoeffnung-bundesregierung.html",
-      "image": "",
-      "date": "2026-04-05T09:34:36.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kolumne: Was war das denn? | Eine ehrliche Haut",
-      "description": "Sie schmerzen und sind für immer: Tätowierungen. Doch warum lassen sich Menschen tätowieren? Welche Entscheidungen stehen hinter der Tinte unter der Haut?",
-      "url": "https://www.rbb24.de/panorama/thema/was-war-das-denn/ehrliche-haut-tattoos-als-zeichen-der-zeit.html",
-      "image": "",
-      "date": "2026-04-05T08:33:48.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     }
   ],
