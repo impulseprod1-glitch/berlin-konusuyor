@@ -1,35 +1,68 @@
 {
-  "lastUpdated": "2026-04-06T11:47:43.707Z",
+  "lastUpdated": "2026-04-06T13:05:35.525Z",
   "count": 10,
   "articles": [
     {
-      "title": "Rekabet Kurulu, sağlık sigortası sektöründe faaliyet gösteren 19 teşebbüse soruşturma açtı",
-      "description": "Rekabet Kurulu, sağlık sigortası pazarında faaliyet gösteren 19 teşebbüs hakkında soruşturma açılmasına karar verdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/rekabet-kurulu-saglik-sigortasi-sektorunde-faaliyet-gosteren-19-tesebbuse-sorusturma-acti/3894784",
+      "title": "Türkiye'nin Bakü Büyükelçisi Akgün: Anadolu Ajansı geniş bir coğrafyada güvenilir bir haber kaynağı konumundadır",
+      "description": "Türkiye'nin Bakü Büyükelçisi Akgün, AA'nın Azerbaycan-Türkiye ilişkilerinde en güvenilir haber kaynaklarından biri olduğunu belirterek \"Anadolu Ajansı başta Türk dünyası olmak üzere geniş bir coğrafyada güvenilir bir haber kaynağı konumundadır\" dedi.",
+      "url": "https://www.aa.com.tr/tr/kurumsal-haberler/turkiyenin-baku-buyukelcisi-akgun-aanin-106-kurulus-yil-donumunu-kutladi/3894882",
       "image": "",
-      "date": "2026-04-06T11:34:07.000Z",
+      "date": "2026-04-06T12:59:55.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "İstanbul'da, kentsel dönüşüm kredisine başvurular başladı",
-      "description": "Yeni kentsel dönüşüm kredisine ilişkin proje kapsamında vatandaşlara bir yıl geri ödemesiz, 180 ay vadeli ve aylık yüzde 0,69 faiz oranıyla finansman sağlanacak.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/istanbulda-kentsel-donusum-kredisine-basvurular-basladi/3894762",
+      "title": "Meteorolojiden Marmara Bölgesi için zirai don uyarısı",
+      "description": "Marmara Bölgesi'nin 8 Nisan Çarşamba günü öğle saatlerinden itibaren kuzeyden gelen soğuk havanın etkisi altına girmesinin beklendiği belirtilerek, zirai don riskine ilişkin uyarıda bulunuldu.",
+      "url": "https://www.aa.com.tr/tr/gundem/meteorolojiden-marmara-bolgesi-icin-zirai-don-uyarisi/3894868",
       "image": "",
-      "date": "2026-04-06T11:17:11.000Z",
+      "date": "2026-04-06T12:51:25.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Uluslararası Helal Akreditasyon Kongresi'nin ilki Ankara'da yapıldı",
-      "description": "Ticaret Bakanı Ömer Bolat, 2024 yılında 2,3 trilyon dolar, geçen yıl 2,5 trilyon dolar hacme sahip helal sektörünün, 2028'de 3,5 trilyon dolara ulaşmasının beklendiğini belirtti.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/uluslararasi-helal-akreditasyon-kongresinin-ilki-ankarada-yapildi/3894744",
+      "title": "3. Liga: Erneut Spektakel zwischen Cottbus und 1860 München?",
+      "description": "Nach dem Osterfest geht es für den FC Energie Cottbus in der 3. Liga mit einer Englischen Woche weiter. Am Dienstagabend kommt der TSV 1860 München in die Lausitz. Beide Teams dürfen von der Rückkehr in die 2. Bundesliga träumen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-dritte-liga-fc-energie-cottbus-1860-muenchen-vorbericht.html",
       "image": "",
-      "date": "2026-04-06T11:00:17.000Z",
+      "date": "2026-04-06T12:43:34.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Suudi Arabistan'ın Ankara Büyükelçisi: Türkiye ile ilişkilerimizde hızlı ve nitelikli bir gelişme yaşanıyor",
+      "description": "Suudi Arabistan’ın Ankara Büyükelçisi Fahad bin Assaad bin Abdulkareem Abualnasr, ülkesi ile Türkiye arasındaki ilişkilerin liderler düzeyindeki karşılıklı ziyaretler ve ortak vizyonlar çerçevesinde güçlenerek stratejik bir ivme kazandığını belirtti.",
+      "url": "https://www.aa.com.tr/tr/gundem/suudi-arabistanin-ankara-buyukelcisi-turkiye-ile-iliskilerimizde-hizli-ve-nitelikli-bir-gelisme-yasaniyor/3894838",
+      "image": "",
+      "date": "2026-04-06T12:19:38.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Dışişleri Bakanı Fidan, ABD'nin Ankara Büyükelçisi Barrack'ı kabul etti",
+      "description": "Dışişleri Bakanı Hakan Fidan, ABD'nin Ankara Büyükelçisi ve Suriye Özel Temsilcisi Tom Barrack'ı, Ankara'da kabul etti.",
+      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakani-fidan-abdnin-ankara-buyukelcisi-barracki-kabul-etti/3894835",
+      "image": "",
+      "date": "2026-04-06T12:17:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ayhan Bora Kaplan suç örgütüne yönelik yeni davada sanıkların yargılanmasına başlandı",
+      "description": "Ayhan Bora Kaplan suç örgütüne ilişkin istinafın bozma kararının ardından 76 sanık hakim karşısına çıktı.",
+      "url": "https://www.aa.com.tr/tr/gundem/ayhan-bora-kaplan-suc-orgutune-yonelik-yeni-davada-saniklarin-yargilanmasina-baslandi/3894830",
+      "image": "",
+      "date": "2026-04-06T12:09:39.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -58,17 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Bakan Uraloğlu:  Zaman ve akaryakıttan sağlanan tasarruf her yıl 405 milyar liralık fayda olarak ülkemize geri dönüyor",
-      "description": "Ulaştırma ve Altyapı Bakanı Uraloğlu \"Bölünmüş yollarımıza yaptığımız yatırım her yılı kazanca dönüştüren altyapı yatırımı olmuştur. Zaman ve akaryakıttan sağlanan tasarruf her yıl 405 milyar liralık ekonomik fayda olarak ülkemize geri dönüyor\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-uraloglu-karayollari-bolge-mudurleri-toplantisi-acilis-toreninde-konustu/3894607",
-      "image": "",
-      "date": "2026-04-06T09:44:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Wetter am Ostermontag: Sturmböen im Norden Brandenburgs",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/wetter-berlin-brandenburg-sturmboeen-ostermontag.html",
@@ -80,33 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Afrika'da spor, ekonomik büyüme ve istihdamın yeni itici gücüne dönüşüyor",
-      "description": "Dünyanın en genç nüfusuna sahip Afrika kıtasında spor, yalnızca rekabet alanı olmanın ötesine geçerek ekonomik büyüme, istihdam ve yatırım açısından stratejik sektör olarak öne çıkıyor.",
-      "url": "https://www.aa.com.tr/tr/spor/afrikada-spor-ekonomik-buyume-ve-istihdamin-yeni-itici-gucune-donusuyor/3894401",
-      "image": "",
-      "date": "2026-04-06T07:59:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Angebotsmieten in Berlin fast 70 Prozent teurer als vor zehn Jahren",
       "description": "",
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/angebots-mieten-berlin-teurer-bestandsmieten.html",
       "image": "",
       "date": "2026-04-06T07:17:17.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ostermärsche in Berlin und Brandenburg: Teilnehmer demonstrieren gegen Kriege und Wehrpflicht",
-      "description": "Traditionell geht die Friedensbewegung an Ostern auf die Straße - so auch in Berlin und Brandenburg. Angesichts aktueller Kriege waren neben Friedenstauben auch iranische und Palästina-Flaggen zu sehen.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/ostermarsch-berlin-brandenburg-frieden-demonstrationen.html",
-      "image": "",
-      "date": "2026-04-06T06:05:02.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
