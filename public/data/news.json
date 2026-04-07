@@ -1,7 +1,106 @@
 {
-  "lastUpdated": "2026-04-07T15:06:01.487Z",
+  "lastUpdated": "2026-04-07T16:56:05.616Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Mann vor seinem Wohnhaus von Blumenkübel erschlagen",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/mann-blumenkuebel-toedlich-verunglueckt-erschlagen-gesundbrunnen.html",
+      "image": "",
+      "date": "2026-04-07T16:55:09.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Afganistan'da şiddetli yağışların yol açtığı afetlerde ölenlerin sayısı 132'ye çıktı",
+      "description": "Afganistan'da şiddetli yağışların yol açtığı sel ve heyelanlarda hayatını kaybedenlerin sayısının 132'ye yükseldiği, 192 kişinin de yaralandığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/afganistanda-siddetli-yagislarin-yol-actigi-afetlerde-olenlerin-sayisi-132ye-cikti/3896521",
+      "image": "",
+      "date": "2026-04-07T16:47:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Antalya Büyükşehir Belediyesi şirketi ALDAŞ'a yönelik soruşturmada Muhittin Böcek hakkında tutuklama kararı",
+      "description": "Antalya Büyükşehir Belediyesine bağlı ALDAŞ şirketine yönelik soruşturma kapsamında, başka suçlardan tutuklu yargılanan ve belediye başkanlığı görevinden uzaklaştırılan Muhittin Böcek hakkında tutuklama kararı verildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/antalya-buyuksehir-belediyesi-sirketi-aldasa-yonelik-sorusturmada-muhittin-bocek-hakkinda-tutuklama-karari/3896520",
+      "image": "",
+      "date": "2026-04-07T16:47:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Landgericht Potsdam: Fast zehn Jahre Haft für Tötung von Ex-Frau ",
+      "description": "Nach Messerattacke: Ein 51-Jähriger ist vom Landgericht Potsdam zu fast zehn Jahren Haft verurteilt worden. Er hat laut Gericht seine Ex-Frau in einem Rathenower Imbiss mit mehreren Messerstichen getötet.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-justiz-landgericht-potsdam-urteil-toetung-exfrau-haft.html",
+      "image": "",
+      "date": "2026-04-07T16:13:32.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "IMF'den gelişmekte olan ekonomilere \"banka dışı finansman\" uyarısı",
+      "description": "Uluslararası Para Fonu (IMF), gelişmekte olan piyasalara yönelik portföy akışlarının küresel finansal krizden bu yana banka dışı finansal yatırımcıların etkisiyle keskin bir şekilde arttığını belirtti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/imfden-gelismekte-olan-ekonomilere-banka-disi-finansman-uyarisi/3896469",
+      "image": "",
+      "date": "2026-04-07T15:59:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fransa'dan İsrail'e son 3 yılda 525'ten fazla askeri ekipman sevkiyatı yapıldı",
+      "description": "Fransa ve ABD merkezli 2 Filistin destekçisi hareketin hazırladığı rapor, Ekim 2023-Mart 2026 döneminde, Fransa'dan İsrail'e 525'ten fazla askeri ekipman sevkiyatı yapıldığını ortaya koydu.",
+      "url": "https://www.aa.com.tr/tr/dunya/rapor-fransadan-israile-son-3-yilda-525ten-fazla-askeri-ekipman-sevkiyati-yapildi/3896466",
+      "image": "",
+      "date": "2026-04-07T15:57:12.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mutmaßliche Vergewaltigung in Jugendclub: Mitarbeiterin von Jugendamt freigestellt ",
+      "description": "Nach der mutmaßlichen Vergewaltigung in einem Jugendzentrum in Berlin-Neukölln gibt es nun personelle Konsequenzen. Der Fall war vom zuständigen Jugendamt nicht der Polizei gemeldet worden.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/04/berlin-neukoelln-jugendzentrum-vergewaltigung-jugendamt-mitarbeiterin-freigestellt.html",
+      "image": "",
+      "date": "2026-04-07T15:54:37.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Kars'ta kar yağışı etkili oldu",
+      "description": "Kars'ın Sarıkamış ilçesinde kar yağışı etkisini gösterdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/karsta-kar-yagisi-etkili-oldu/3896454",
+      "image": "",
+      "date": "2026-04-07T15:44:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berlin-Kreuzberg: Osterhasen-Protest gegen nächtliche Schließung des Görlitzer Parks",
+      "description": "Trotz Protest wird der \"Görli\" seit etwa fünf Wochen nachts geschlossen. Eine Initiative klagt dagegen. Und es gibt immer neue Aktionen. Nun machen auch Osterhasen mit.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-kreuzberg-goerlitzer-park-schliessung-protest-osterhasen.html",
+      "image": "",
+      "date": "2026-04-07T15:17:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Mann in S-Bahn schwer verletzt: Gruppe belästigt Frauen und schlägt Helfer zusammen",
       "description": "",
@@ -11,105 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail saldırısıyla koltuk değneğine mahkum kalan Gazzeli Yasir, yeniden oyun oynama hayali kuruyor",
-      "description": "İsrail ordusunun, Gazze kentine düzenlediği saldırıda leğen kemiğine saplanan kurşunla yaralanan ve sol bacağını kullanamaz hale gelen 11 yaşındaki Yasir el-Beşaş, kaybettiği çocukluğuna yeniden kavuşmak için tedavi olmak istiyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/-israil-saldirisiyla-koltuk-degnegine-mahkum-kalan-gazzeli-yasir-yeniden-oyun-oynama-hayali-kuruyor/3896420",
-      "image": "",
-      "date": "2026-04-07T14:59:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BSR nutzt in Berlin inzwischen 300 Transportüberwege",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berliner-stadtreinigung-bsr-transportueberwege.html",
-      "image": "",
-      "date": "2026-04-07T14:58:52.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Gazze'de sağlık sistemi çöküşün eşiğinde",
-      "description": "İsrail'in ağır saldırıları ve yıkımına maruz kalan Gazze Şeridi'nde sağlık durumunun çöküşün eşiğine geldiği; işgal altındaki Batı Şeria'da ise endişe verici bir durumun söz konusu olduğu belirtiliyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/gazzede-saglik-sistemi-cokusun-esiginde/3896412",
-      "image": "",
-      "date": "2026-04-07T14:50:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "\"ROKETSAN Üretim Tesisleri Açılışı ve Temel Atma Töreni\" yapıldı",
-      "description": "Cumhurbaşkanlığı Savunma Sanayii Başkanı Haluk Görgün, açılışını yaptıkları, teslimatını gerçekleştirdikleri ve temelini attıkları her yatırımın, Türkiye'nin savunma sanayisindeki kararlı yükselişinin güçlü bir ifadesi olduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/savunma-sanayisi/roketsan-uretim-tesisleri-acilisi-ve-temel-atma-toreni-yapildi/3896401",
-      "image": "",
-      "date": "2026-04-07T14:38:31.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Türkiye, mesleki yeterlilik alanındaki tecrübesini Kazakistan ile paylaşıyor",
-      "description": "Türkiye, mesleki yeterlilik sistemi alanında edindiği kurumsal tecrübe ve bilgi birikimini Kazakistan ile paylaşarak iki ülke arasındaki işbirliğini güçlendirmeyi hedefliyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/turkiye-mesleki-yeterlilik-alanindaki-tecrubesini-kazakistan-ile-paylasiyor/3896400",
-      "image": "",
-      "date": "2026-04-07T14:37:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Pfarrer als Wehrdienstberater: \"Die Bundeswehr ist sowas wie eine Blackbox\"",
-      "description": "Seit Januar gilt das Gesetz für den neuen Wehrdienst, junge Männer werden gemustert und stehen vor einer Gewissensentscheidung. Pfarrer Jan Kingreen berät sie zum Thema Wehrdienst – ergebnisoffen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/jan-kingreen-pfarrer-wehrdienst-bundeswehr-interview.html",
-      "image": "",
-      "date": "2026-04-07T14:27:24.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ausschreitungen in Dresden: Polizei setzt Ermittlungsgruppe ein",
-      "description": "Nach den Ausschreitungen beim Zweitliga-Spiel zwischen Dynamo Dresden und Hertha BSC läuft die Aufarbeitung der Geschehnisse. Die Polizei setzt nun eine Ermittlungsgruppe ein, setzt dabei auf Super-Recognizer und umfangreiches Videomaterial.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-zweite-bundesliga-dynamo-dresden-hertha-bsc-fans-ausschreitungen-krawalle-ermittlungsgruppe-polizei.html",
-      "image": "",
-      "date": "2026-04-07T14:21:06.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Nationalsozialismus: Luckenwalde erinnert an Bücherverbrennung ",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/luckenwalde-buecherverbrennung-gedenken-bodenplatte.html",
-      "image": "",
-      "date": "2026-04-07T14:12:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ticaret Bakanı Bolat, \"Türkiye-Suriye İş ve Yatırım Forumu\"nda konuştu",
-      "description": "Ticaret Bakanı Ömer Bolat, transit ticaretin Suriye üzerinden bütün Orta Doğu'ya ve Körfez'e mümkün hale geldiğini belirtti.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/ticaret-bakani-bolat-turkiye-suriye-is-ve-yatirim-forumunda-konustu/3896323",
-      "image": "",
-      "date": "2026-04-07T13:40:10.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
