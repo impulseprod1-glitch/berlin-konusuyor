@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-04-08T10:14:13.995Z",
+  "lastUpdated": "2026-04-08T11:53:47.573Z",
   "count": 10,
   "articles": [
     {
-      "title": "Hollanda Dışişleri Bakanı Berendsen, yarın Türkiye'yi ziyaret edecek",
-      "description": "Hollanda Dışişleri Bakanı Tom Berendsen, yarın Türkiye'ye çalışma ziyaretinde bulunacak.",
-      "url": "https://www.aa.com.tr/tr/gundem/hollanda-disisleri-bakani-berendsen-yarin-turkiyeyi-ziyaret-edecek/3897620",
+      "title": "Welche Rolle Ernährung und Bewegung von Senioren spielt",
+      "description": "Viele Pflegeheime in Deutschland bieten zu wenig gesunde Ernährung und Bewegung – dabei ist beides entscheidend für die Lebensqualität im Alter. Ein Heim in Oranienburg zeigt, wie es besser geht.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/gesundheit-pflegeheim-oranienburg-ernaehrung.html",
       "image": "",
-      "date": "2026-04-08T10:01:45.000Z",
+      "date": "2026-04-08T11:51:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Süper Lig'den 10 kulüp, PFDK'ye sevk edildi",
+      "description": "Türkiye Futbol Federasyonu (TFF) Hukuk Müşavirliği, Süper Lig'den 10 kulübü Profesyonel Futbol Disiplin Kuruluna (PFDK) sevk etti.",
+      "url": "https://www.aa.com.tr/tr/spor/super-ligden-10-kulup-pfdkye-sevk-edildi/3897838",
+      "image": "",
+      "date": "2026-04-08T11:37:22.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rusya Dışişleri Bakanı Lavrov, 5. Antalya Diplomasi Forumu'na katılacak",
+      "description": "Rusya Dışişleri Bakanlığı Sözcüsü Mariya Zaharova, Dışişleri Bakanı Sergey Lavrov'un, 17-19 Nisan tarihlerinde Türkiye'nin ev sahipliğinde düzenlenecek 5. Antalya Diplomasi Forumu'na (ADF) katılacağını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/rusya-disisleri-bakani-lavrov-5-antalya-diplomasi-forumuna-katilacak/3897831",
+      "image": "",
+      "date": "2026-04-08T11:34:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump: İran ile gümrük vergileri ve yaptırımların hafifletilmesi konusunda görüşüyoruz",
+      "description": "ABD Başkanı Donald Trump, “İran ile gümrük vergileri ve yaptırımların hafifletilmesi konusunda görüşüyoruz ve görüşmeye devam edeceğiz. 15 maddenin çoğu üzerinde zaten anlaşmaya varıldı.” ifadesini kullandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-trump-iran-ile-gumruk-vergileri-ve-yaptirimlarin-hafifletilmesi-konusunda-gorusuyoruz-ve-gorusmeye-devam-edecegiz-15-maddenin-cogu-uzerinde-zaten-anlasmaya-varildi-/3897820",
+      "image": "",
+      "date": "2026-04-08T11:31:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ziya Gökalp'in \"Türkleşmek, İslamlaşmak, Muasırlaşmak\" eseri Türk dünyasıyla buluştu",
+      "description": "Türk Dil Kurumu (TDK) ve Uluslararası Türk Kültürü Teşkilatı (TÜRKSOY) işbirliğiyle Ziya Gökalp'in \"Türkleşmek, İslamlaşmak, Muasırlaşmak\" eserinin 5 dilde hazırlanan kitabı için tanıtım toplantısı düzenlendi.",
+      "url": "https://www.aa.com.tr/tr/kultur/ziya-gokalpin-turklesmek-islamlasmak-muasirlasmak-eseri-turk-dunyasiyla-bulustu/3897807",
+      "image": "",
+      "date": "2026-04-08T11:22:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye'den İran'a tıbbi malzeme yardımı ",
+      "description": "Sağlık Bakanı Kemal Memişoğlu, tıbbi malzeme ve cihazlarla yüklü yardım tırlarının İran'a doğru yola çıktığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/turkiyeden-irana-tibbi-malzeme-yardimi-/3897782",
+      "image": "",
+      "date": "2026-04-08T11:10:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Storkow: Drohnen-Demo bei der Bundeswehr",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/drohnen-demo-day-storkow.html",
+      "image": "",
+      "date": "2026-04-08T11:03:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Neue Babylotsen unterstützen Eltern in Ostprignitz-Ruppin",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/babylotsen-ostprignitz-ruppin-neugeborene-eltern.html",
+      "image": "",
+      "date": "2026-04-08T10:38:58.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,50 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "Ernährung im Pflegeheim: Gesundheit geht durch den Magen ",
-      "description": "Viele Pflegeheime in Deutschland bieten zu wenig gesunde Ernährung und Bewegung – dabei ist beides entscheidend für die Lebensqualität im Alter. Ein Heim in Oranienburg zeigt, wie es besser geht.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/gesundheit-pflegeheim-oranienburg-ernaehrung.html",
-      "image": "",
-      "date": "2026-04-08T09:52:59.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail-İran gerilimi Suriye'nin güneyinde binlerce öğrenciyi okullarından mahrum etti",
-      "description": "İsrail ile İran arasında yaşanan çatışmalar nedeniyle Suriye'nin güneyindeki Kuneytra ve Dera illerine düşen roket ve İHA'lar sonucu okullar geçici olarak kapatıldı, binlerce öğrenci eğitimden uzak kaldı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-iran-gerilimi-suriyenin-guneyinde-binlerce-ogrenciyi-okullarindan-mahrum-etti/3897596",
-      "image": "",
-      "date": "2026-04-08T09:52:17.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kuşadası'na iki kruvaziyerle 2 bin 723 turist geldi",
-      "description": "Kruvaziyer turizminin önemli noktalarından Aydın'ın Kuşadası ilçesi, iki kruvaziyerle 2 bin 723 turisti ağırladı.",
-      "url": "https://www.aa.com.tr/tr/gundem/kusadasina-iki-kruvaziyerle-2-bin-723-turist-geldi/3897594",
-      "image": "",
-      "date": "2026-04-08T09:51:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "IATA'dan \"jet yakıtı piyasasının normale dönmesi aylar sürecek\" uyarısı",
-      "description": "Uluslararası Hava Taşımacılığı Birliği (IATA), İran ile ABD arasındaki geçici ateşkes kapsamında Hürmüz Boğazı'nın yeniden açılması halinde dahi jet yakıtı arzının normale dönmesinin aylar süreceğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/iatadan-jet-yakiti-piyasasinin-normale-donmesi-aylar-surecek-uyarisi/3897582",
-      "image": "",
-      "date": "2026-04-08T09:47:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Blumenkübel erschlägt Mann in Berlin: Obduktion angeordnet",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/blumenkuebel-erschlaegt-mann-obduktion-angeordnet.html",
@@ -77,39 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Mann bei Messerangriff in Strausberg getötet",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/messerangriff-strausberg-mann-tot.html",
-      "image": "",
-      "date": "2026-04-08T09:26:30.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner SPD-Spitzenkandidat Krach bei Wahlkampf-Aktion bedroht",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/berlin-spd-spitzenkandidat-krach-bedroht-wahlkampf.html",
-      "image": "",
-      "date": "2026-04-08T09:20:29.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "WP: Bakanı Hegseth'in ABD/İsrail-İran Savaşı'na ilişkin ifadeleri gerçeği yansıtmıyor",
-      "description": "ABD Savunma Bakanı Pete Hegseth'in ABD ve İsrail'in İran'a yönelik saldırılarıyla başlayan savaşa ilişkin değerlendirmelerinin gerçekle örtüşmediği ve kamuoyu ile Başkan Donald Trump'ı yanlış yönlendirdiği öne sürüldü.",
-      "url": "https://www.aa.com.tr/tr/dunya/wp-bakani-hegsethin-abd-israil-iran-savasina-iliskin-ifadeleri-gercegi-yansitmiyor/3897474",
-      "image": "",
-      "date": "2026-04-08T09:07:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
