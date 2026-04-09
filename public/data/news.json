@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-04-09T02:03:49.035Z",
+  "lastUpdated": "2026-04-09T05:07:41.409Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Mehr Smart Stores: Gesetzesänderung in Brandenburg geplant",
+      "description": "Brandenburg soll mehr automatisierte Geschäfte ohne Personal bekommen. Damit soll die Lebensmittelversorgung und Teilhabe auf dem Land gesichert werden - so zumindest die Hoffnung der Landesregierung.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/brandenburg-smartstores-automaten-laden-lebensmittel.html",
+      "image": "",
+      "date": "2026-04-09T04:53:55.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Unions 16-jähriges Top-Talent Linus Güther könnte bald in der Bundesliga debütieren",
+      "description": "Der 1. FC Union Berlin hat eines der Top-Talente im deutschen Fußball in seinen Reihen: Linus Güther. Der Offensivspieler feierte am Mittwoch seinen 16. Geburtstag und könnte bald für die Profis debütieren. Cheftrainer Baumgart ist begeistert - und wirbt dennoch um Geduld.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-union-berlin-linus-guether-talent-16-jahre-profi-debuet-rekord.html",
+      "image": "",
+      "date": "2026-04-09T04:10:39.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'in savaş bahanesiyle kapattığı Mescid-i Aksa, 41 gün sonra ibadete açıldı",
+      "description": "İsrail'in, ABD ile birlikte İran’a yönelik saldırıları nedeniyle kapattığı Mescid-i Aksa'nın 41 gün aradan sonra Müslümanların ibadetine açıldığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-savas-bahanesiyle-kapattigi-mescid-i-aksa-41-gun-sonra-ibadete-acildi/3898881",
+      "image": "",
+      "date": "2026-04-09T03:00:33.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Yetkili kuruluş tarafından basılan standartlara aykırı araç plakaları ücretsiz yenilenecek",
       "description": "Adalet ve İçişleri bakanlıklarınca hazırlanan \"Araçların Satış, Devir ve Tescil Hizmetlerinin Yürütülmesi Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik\", Resmi Gazete'de yayımlandı.",
@@ -47,17 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Sosyal medyaya ve doğum iznine yönelik düzenlemeleri de içeren kanun teklifi TBMM Genel Kurulunda",
-      "description": "TBMM Genel Kurulunda, sosyal medyaya ve doğum iznine yönelik düzenlemeleri de içeren Sosyal Hizmetler Kanunu ve Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifinin ilk 6 maddesi kabul edildi.",
-      "url": "https://www.aa.com.tr/tr/politika/sosyal-medyaya-ve-dogum-iznine-yonelik-duzenlemeleri-de-iceren-kanun-teklifi-tbmm-genel-kurulunda/3898814",
-      "image": "",
-      "date": "2026-04-08T21:55:34.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Basketball-CL: Alba Berlin scheidet nach Viertelfinal-Krimi gegen Malaga aus",
       "description": "Alba Berlin hat im Viertelfinale der Champions League gegen Malaga auch das zweite Spiel verloren und ist damit ausgeschieden. Eine Aufholjagd brachte noch einmal Hoffnung, doch in der Verlängerung verloren die Berliner mit 85:88.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/04/basketball-champions-league-cl-alba-berlin-unicaja-malaga-spiel-zwei-spielbericht-reportage.html",
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/04/eishockey-del-playoffs-halbfinale-eisbaeren-berlin-koelner-haie-spiel-eins-spielbericht.html",
       "image": "",
       "date": "2026-04-08T19:29:26.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Newcastle in Brandenburg: Knapp 200.000 Tiere werden getötet",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-newcastle-krankheit-ausbruch-oder-spree-dahme-spreewald.html",
-      "image": "",
-      "date": "2026-04-08T19:14:13.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kabinenpersonal der Lufthansa für Freitag zu Streik aufgerufen",
-      "description": "Wer eine Reise mit der Lufthansa plant, muss am Freitag mit Ausfällen und Verspätungen rechnen. Die Gewerkschaft Verdi hat das Kabinenpersonal an den Drehkreuzen Frankfurt und München zum Streik aufgerufen. Dies dürfte auch enorme Auswirkungen am BER haben.",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/lufthansa-kabinenpersonal-ufo-streik-freitag.html",
-      "image": "",
-      "date": "2026-04-08T17:45:29.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
