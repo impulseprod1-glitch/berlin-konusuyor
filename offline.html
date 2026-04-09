@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berlin Konuşuyor — Bağlantı Yok</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #050505;
+      --accent: #E50914;
+      --text: #fcfcfc;
+      --muted: #666666;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+    .offline-container {
+      padding: 40px;
+      max-width: 400px;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin-bottom: 40px;
+    }
+    .logo span { color: var(--accent); }
+    
+    .icon-wrapper {
+      font-size: 4rem;
+      color: var(--accent);
+      margin-bottom: 30px;
+      opacity: 0.8;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    
+    h1 { font-size: 1.5rem; margin-bottom: 16px; font-weight: 300; }
+    p { color: var(--muted); line-height: 1.6; margin-bottom: 32px; font-size: 0.9rem; }
+    
+    .btn {
+      display: inline-block;
+      padding: 12px 32px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 99px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.3s;
+    }
+    .btn:hover { background: white; color: black; }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.6; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="logo">BERLIN <span>KONUŞUYOR</span></div>
+    <div class="icon-wrapper">
+      <i class="fas fa-wifi-slash"></i>
+    </div>
+    <h1>Bağlantı Kesildi</h1>
+    <p>Berlin'in nabzını tutmaya devam etmek istiyoruz ancak şu an internete bağlı değilsiniz. Lütfen bağlantınızı kontrol edip tekrar deneyin.</p>
+    <a href="/" class="btn">Tekrar Dene</a>
+  </div>
+</body>
+</html>

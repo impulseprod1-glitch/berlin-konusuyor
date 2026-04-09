@@ -10,11 +10,14 @@
   <meta name="keywords" content="Berlin haberleri, Berlin Türk toplumu, gurbetçi rehberi, Berlin sokak röportajları, Berlin yaşam, Berlin etkinlik rehberi">
   <meta name="author" content="Antigravity">
 
-  <!-- PWA Metadata -->
+  <!-- PWA Metadata & iOS Enhancements -->
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Berlin">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -93,6 +96,7 @@
       <a href="#haberler" data-i18n="nav_news">Haberler</a>
       <a href="#roportajlar" data-i18n="nav_interviews">Röportajlar</a>
       <a href="#rehber" data-i18n="nav_guide">Rehber</a>
+      <a href="#topluluk" data-i18n="nav_community">Topluluk</a>
       <a href="#iletisim" data-i18n="nav_contact">İletişim</a>
 
       <div class="mobile-menu-footer">
@@ -182,12 +186,25 @@
         <span class="section-tag" data-i18n="section_news">Gündem</span>
         <h2 class="section-title" data-i18n="news_title">Berlin'de Neler Oluyor?</h2>
 
+        <!-- ── GÜNÜN YORUMU (SHORTS) ──────────────── -->
+        <div class="daily-shorts-container reveal" style="margin-top: 30px;">
+          <div class="shorts-video-wrapper">
+            <iframe src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A" title="Berlin Konuşuyor - Günün Yorumu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div class="shorts-info">
+            <div class="live-badge"><span class="pulsate-dot"></span> BERLİN GÜNDEMİ</div>
+            <h3 class="shorts-title">Bugün Berlin'de Neler Oldu?</h3>
+            <p class="shorts-desc">Kısa ve öz: Berlin'deki önemli gelişmeleri ve haberlerin perde arkasını sizin için 1 dakikada özetledim.</p>
+            <a href="#newsEngine" class="magnetic-btn shorts-btn" aria-label="Haberi Oku">Haberlere Göz At <i class="fas fa-arrow-down"></i></a>
+          </div>
+        </div>
+
         <!-- ── Berlin Pulse (AI Focus) ──────────────── -->
-        <div class="berlin-pulse-container" id="berlinPulse">
+        <div class="berlin-pulse-container" id="berlinPulse" style="margin-top: 40px;">
           <!-- AI bubbles will be injected here -->
         </div>
 
-        <div class="news-filters-wrapper">
+        <div class="news-filters-wrapper" style="margin-top: 20px;">
           <div class="news-filters" id="newsFilters">
             <button class="filter-btn active" data-category="all" data-i18n="filter_all">Tümü</button>
             <button class="filter-btn" data-category="politics" data-i18n="filter_politics">Siyaset</button>
@@ -196,32 +213,17 @@
             <button class="filter-btn" data-category="lifestyle" data-i18n="filter_lifestyle">Yaşam</button>
           </div>
         </div>
-        <div class="news-meta-info">
+        <div class="news-meta-info" style="margin-top: 10px;">
           <span class="news-count" id="newsCount"></span>
-          <span class="news-badge" id="newsSource">TRT Haber</span>
+          <span class="news-badge" id="newsSource">Öne Çıkanlar</span>
         </div>
       </div>
 
-      <!-- ── GÜNÜN YORUMU (SHORTS) ──────────────── -->
-      <div class="daily-shorts-container reveal">
-        <div class="shorts-video-wrapper">
-          <!-- Varsayılan olarak sizin YouTube kanalınızı gösterir. Shorts linklerinizi (ör: embed/ID_BURAYA ) buraya ekleyebilirsiniz -->
-          <iframe src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A" title="Berlin Konuşuyor - Günün Yorumu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="shorts-info">
-          <div class="live-badge"><span class="pulsate-dot"></span> BERLİN GÜNDEMİ</div>
-          <h3 class="shorts-title">Bugün Berlin'de Neler Oldu?</h3>
-          <p class="shorts-desc">Kısa ve öz: Berlin'deki önemli gelişmeleri ve haberlerin perde arkasını sizin için 1 dakikada özetledim. Berlin'in kalbini dinlemeye devam edin.</p>
-          <a href="#newsGrid" class="magnetic-btn shorts-btn" aria-label="Haberi Oku">Detayları Oku <i class="fas fa-arrow-down"></i></a>
-        </div>
-      </div>
-
-      <div class="news-grid" id="newsGrid">
+      <div class="news-catalog-grid" id="newsEngine">
         <!-- Skeleton loaders initially -->
-        <div class="skeleton-card"></div>
-        <div class="skeleton-card"></div>
-        <div class="skeleton-card"></div>
-        <div class="skeleton-card"></div>
+        <div class="skeleton-card" style="width: 100%; height: 400px; border-radius: 24px;"></div>
+        <div class="skeleton-card" style="width: 100%; height: 400px; border-radius: 24px;"></div>
+        <div class="skeleton-card" style="width: 100%; height: 400px; border-radius: 24px;"></div>
       </div>
     </div>
   </section>
@@ -265,6 +267,7 @@
             title="Berlin Konuşuyor TV"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            loading="lazy"
             allowfullscreen
           ></iframe>
         </div>
@@ -324,7 +327,7 @@
         </div>
 
         <!-- Widget 2: AI Haber Özeti -->
-        <div class="widget widget-brief">
+        <div class="widget widget-brief ai-summary-card">
           <div class="widget-glow"></div>
           <div class="widget-header">
             <span class="widget-icon">🧠</span>
@@ -334,7 +337,7 @@
             <p class="ai-brief-text" id="aiBriefText">Günün öne çıkan gelişmeleri analiz ediliyor...</p>
           </div>
           <div class="widget-footer">
-            <span class="widget-badge">GPT Powered</span>
+            <span class="widget-badge">Powered by Gemini AI</span>
           </div>
           <div class="widget-shimmer"></div>
         </div>
@@ -408,7 +411,7 @@
           <button class="job-filter-btn" data-type="Yarı Zamanlı">Yarı Zamanlı</button>
           <button class="job-filter-btn" data-type="Minijob">Minijob</button>
         </div>
-        <button class="post-job-btn magnetic-btn" onclick="openJobModal()">İlan Ver</button>
+        <button class="post-job-btn magnetic-btn" data-action="open-job-modal">İlan Ver</button>
       </div>
 
       <div class="jobs-grid" id="jobsGrid">
@@ -439,36 +442,59 @@
       <span class="section-tag" data-i18n="guide_tag">Rehber</span>
       <h2 class="section-title" data-i18n="guide_title">Berlin Rehberi</h2>
     </div>
-    <div class="guide-grid reveal reveal-stagger">
-      <a href="#" class="guide-item">
-        <div class="guide-icon">🏠</div>
-        <h3 class="guide-label" data-i18n="guide_housing">Ev Bulma</h3>
-        <p class="guide-desc" data-i18n="guide_housing_desc">Kiralık ev arama, başvuru süreci ve ipuçları.</p>
+    <div class="bento-grid reveal">
+      <a href="#" class="bento-item bento-large group">
+        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" loading="lazy"></div>
+        <div class="bento-content">
+          <div class="bento-icon"><i class="fas fa-home"></i></div>
+          <h3 class="bento-title" data-i18n="guide_housing">Ev Bulma</h3>
+          <p class="bento-desc" data-i18n="guide_housing_desc">Kiralık ev arama, başvuru süreci ve ipuçları.</p>
+        </div>
       </a>
-      <a href="#" class="guide-item">
-        <div class="guide-icon">📋</div>
-        <h3 class="guide-label" data-i18n="guide_official">Resmi İşlemler</h3>
-        <p class="guide-desc" data-i18n="guide_official_desc">Anmeldung, vize, çalışma izni ve daha fazlası.</p>
+      
+      <a href="#" class="bento-item bento-tall group">
+        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1560969184-10fe8719e047?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="bento-content">
+          <div class="bento-icon"><i class="fas fa-file-signature"></i></div>
+          <h3 class="bento-title" data-i18n="guide_official">Resmi İşlemler</h3>
+          <p class="bento-desc" data-i18n="guide_official_desc">Anmeldung, vize, çalışma izni ve vatandaşlık süreçleri detaylı rehber.</p>
+        </div>
       </a>
-      <a href="#" class="guide-item">
-        <div class="guide-icon">🎭</div>
-        <h3 class="guide-label" data-i18n="guide_events">Etkinlikler</h3>
-        <p class="guide-desc" data-i18n="guide_events_desc">Haftalık kültür, sanat ve sosyal etkinlikler.</p>
+
+      <a href="#" class="bento-item group">
+        <div class="bento-bg" style="background-color: var(--accent);"></div>
+        <div class="bento-content">
+          <div class="bento-icon"><i class="fas fa-calendar-alt"></i></div>
+          <h3 class="bento-title" data-i18n="guide_events">Etkinlikler</h3>
+          <p class="bento-desc">Haftalık kültür ve sanat ajandası.</p>
+        </div>
       </a>
-      <a href="#" class="guide-item">
-        <div class="guide-icon">🚇</div>
-        <h3 class="guide-label" data-i18n="guide_transport">Ulaşım</h3>
-        <p class="guide-desc" data-i18n="guide_transport_desc">U-Bahn, S-Bahn, bilet çeşitleri ve rotalar.</p>
+
+      <a href="#" class="bento-item bento-wide group">
+        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1587396677465-98317351dfdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="bento-content">
+          <div class="bento-icon"><i class="fas fa-train"></i></div>
+          <h3 class="bento-title" data-i18n="guide_transport">Ulaşım</h3>
+          <p class="bento-desc" data-i18n="guide_transport_desc">U-Bahn, S-Bahn, bilet çeşitleri ve rotalar hakkında ihtiyacınız olan her şey.</p>
+        </div>
       </a>
-      <a href="#" class="guide-item">
-        <div class="guide-icon">💼</div>
-        <h3 class="guide-label" data-i18n="guide_jobs">İş Bulmak</h3>
-        <p class="guide-desc" data-i18n="guide_jobs_desc">İş arama, CV hazırlama ve mülakat ipuçları.</p>
+
+      <a href="#" class="bento-item group">
+        <div class="bento-bg" style="background-color: var(--card-bg);"></div>
+        <div class="bento-content">
+          <div class="bento-icon"><i class="fas fa-briefcase"></i></div>
+          <h3 class="bento-title" data-i18n="guide_jobs">İş Bulmak</h3>
+          <p class="bento-desc">Mülakat teknikleri ve staj.</p>
+        </div>
       </a>
-      <a href="#" class="guide-item">
-        <div class="guide-icon">🍽️</div>
-        <h3 class="guide-label" data-i18n="guide_food">Yeme & İçme</h3>
-        <p class="guide-desc" data-i18n="guide_food_desc">En iyi restoranlar, kafeler ve gece hayatı.</p>
+
+      <a href="#" class="bento-item group">
+        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="bento-content">
+          <div class="bento-icon"><i class="fas fa-utensils"></i></div>
+          <h3 class="bento-title">Yeme & İçme</h3>
+          <p class="bento-desc">Nerede ne yenir?</p>
+        </div>
       </a>
     </div>
 
@@ -491,14 +517,45 @@
   </div>
 
 
-  <!-- ═══════════════ TOPLULUK FORUMU ═══════════════ -->
-  <section class="section" id="topluluk">
+  <!-- ═══════════════ TOPLULUK FORUMU & SOHBET ═══════════════ -->
+  <section class="section section-padding" id="topluluk" style="background: var(--bg-tertiary);">
     <div class="section-header reveal">
       <span class="section-tag">Topluluk</span>
-      <h2 class="section-title">Soru & Cevap</h2>
-      <p class="news-auto-badge">Berlinliler yardımlaşıyor</p>
+      <h2 class="section-title">Canlı Sohbet & Soru-Cevap</h2>
+      <p class="news-auto-badge">Berlinliler Yardımlaşıyor ve Konuşuyor</p>
     </div>
-    <div class="qa-container reveal">
+    
+    <div class="community-grid container reveal">
+      
+      <!-- ── CHAT ROOMS COMPONENT ──────────────── -->
+      <div class="chat-container glass-panel">
+        <div class="chat-header">
+          <div class="chat-tabs" id="chatTabs">
+            <button class="chat-tab-btn active" data-room="genel">Genel</button>
+            <button class="chat-tab-btn" data-room="kreuzberg">Kreuzberg</button>
+            <button class="chat-tab-btn" data-room="mitte">Mitte</button>
+            <button class="chat-tab-btn" data-room="neukolln">Neukölln</button>
+          </div>
+          <div class="chat-status"><span class="pulsate-dot"></span> <span id="chatRoomStatus">Genel Odası Canlı</span></div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-empty-state">
+            <i class="fas fa-comments"></i>
+            <p>Seçili odaya bağlanılıyor...</p>
+          </div>
+        </div>
+        
+        <form class="chat-input-area" id="chatForm">
+          <input type="file" id="chatFileInput" accept="image/*" style="display: none;" onchange="handleChatImage(event)">
+          <button type="button" class="chat-attach-btn" onclick="document.getElementById('chatFileInput').click()"><i class="fas fa-image"></i></button>
+          <input type="text" id="chatInput" placeholder="Mesajınızı yazın..." autocomplete="off">
+          <button type="submit" class="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="chat-auth-barrier hidden" id="chatAuthBarrier">
+          Sohbete katılmak için <button data-action="open-login" style="background:transparent; border:none; color:var(--accent); font-weight:bold; cursor:pointer;">Giriş Yapmalısınız</button>
+        </div>
+      </div>
       <div class="qa-toolbar">
         <div class="qa-filters" id="qaFilters">
           <button class="qa-filter-btn active" data-category="all">Tümü</button>
@@ -546,6 +603,12 @@
           <button type="submit" class="newsletter-btn magnetic-btn" data-i18n="newsletter_btn">Abone Ol</button>
         </form>
         <p id="newsletterMessage" class="newsletter-message"></p>
+        <div class="newsletter-push-cta reveal-small" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05);">
+          <p style="font-size: 0.85rem; color: #aaa; margin-bottom: 12px;">Yeni haberleri anlık bildirim olarak almak ister misiniz?</p>
+          <button type="button" class="btn-push-subscribe" id="pushSubscribeBtn">
+            <i class="fas fa-bell"></i> Bildirimleri Aç
+          </button>
+        </div>
         <p class="newsletter-privacy" data-i18n="newsletter_privacy">Gizliliğinize saygı duyuyoruz. İstediğiniz zaman abonelikten çıkabilirsiniz.</p>
       </div>
     </div>
@@ -571,10 +634,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Berlin Konuşuyor. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></p>
+      <p>© <span id="footerYear">2026</span> Berlin Konuşuyor. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></p>
       <div class="footer-legal">
-        <a href="#" onclick="openLegal('impressum')" data-i18n="legal_impressum">Impressum</a>
-        <a href="#" onclick="openLegal('privacy')" data-i18n="legal_privacy">Gizlilik Politikası</a>
+        <a href="#" data-action="open-legal" data-legal="impressum" data-i18n="legal_impressum">Impressum</a>
+        <a href="#" data-action="open-legal" data-legal="privacy" data-i18n="legal_privacy">Gizlilik Politikası</a>
       </div>
     </div>
   </footer>
@@ -582,7 +645,7 @@
   <!-- ═══════════════ LEGAL MODAL ═══════════════ -->
   <div id="legalModal" class="modal">
     <div class="modal-content">
-      <span class="modal-close" onclick="closeLegal()">&times;</span>
+      <span class="modal-close" data-action="close-legal-modal">&times;</span>
       <div id="legalContent" class="legal-text">
         <!-- JS ile doldurulurk -->
       </div>
@@ -592,13 +655,13 @@
   <!-- ═══════════════ LOGIN MODAL ═══════════════ -->
   <div id="loginModal" class="modal login-modal">
     <div class="modal-content glass-panel login-modal-content">
-      <span class="modal-close" onclick="closeLoginModal()">&times;</span>
+      <span class="modal-close" data-action="close-login-modal">&times;</span>
       
       <div id="loginView">
         <h2 class="login-modal-title">Giriş Yap</h2>
         <p class="login-modal-subtitle">Eyleminize devam etmek için Google hesabınızla güvenle giriş yapın.</p>
 
-        <button class="magnetic-btn login-google-btn" onclick="login(); closeLoginModal();" aria-label="Google ile Giriş Yap">
+        <button class="magnetic-btn login-google-btn" data-action="login-google" aria-label="Google ile Giriş Yap">
           <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20" height="20" alt="Google" aria-hidden="true"> Google ile Giriş Yap
         </button>
 
@@ -612,7 +675,7 @@
   <!-- ═══════════════ JOB MODAL ═══════════════ -->
   <div id="jobModal" class="modal login-modal">
     <div class="modal-content glass-panel login-modal-content">
-      <span class="modal-close" onclick="closeJobModal()">&times;</span>
+      <span class="modal-close" data-action="close-job-modal">&times;</span>
       <h2 class="login-modal-title" style="margin-bottom: 10px;">Yeni İş İlanı Ver</h2>
       <p class="login-modal-subtitle">Berlin topluluğuyla ücretsiz iş ilanı paylaşın.</p>
       
@@ -640,9 +703,9 @@
   <div id="newsModal" class="news-modal">
     <div class="news-modal-progress" id="modalProgress"></div>
     <div class="news-modal-content">
-      <button class="news-modal-close" onclick="closeNewsModal()">&times;</button>
+      <button class="news-modal-close" data-action="close-news-modal">&times;</button>
       <div class="news-modal-header-actions">
-          <button id="ttsBtn" class="tts-btn" onclick="toggleTTS()" title="Sesli Dinle">
+          <button id="ttsBtn" class="tts-btn" data-action="toggle-tts" title="Sesli Dinle">
             <i class="fas fa-volume-up"></i> <span data-i18n="listen_news">Dinle</span>
           </button>
       </div>
@@ -661,7 +724,7 @@
 
   <!-- ═══════════════ PODCAST AUDIO PLAYER ═══════════════ -->
   <div id="podcastPlayer" class="podcast-player glass-panel">
-    <button class="player-close" onclick="closePodcast()" aria-label="Kapat">&times;</button>
+    <button class="player-close" data-action="close-podcast" aria-label="Kapat">&times;</button>
     <div class="player-info">
       <div id="playerThumb" class="player-thumb"></div>
       <div class="player-text">
@@ -670,9 +733,9 @@
       </div>
     </div>
     <div class="player-controls">
-      <button class="player-btn" onclick="skipPodcast(-10)" aria-label="Geri Sarı 10s" title="10s Geri"><i class="fas fa-undo-alt"></i></button>
-      <button class="player-btn play-pause-btn" id="playPauseBtn" onclick="togglePlay()" aria-label="Oynat/Durdur" title="Oynat/Durdur"><i class="fas fa-play"></i></button>
-      <button class="player-btn" onclick="skipPodcast(30)" aria-label="İleri Sarı 30s" title="30s İleri"><i class="fas fa-redo-alt"></i></button>
+      <button class="player-btn" data-action="skip-podcast" data-skip="-10" aria-label="Geri Sarı 10s" title="10s Geri"><i class="fas fa-undo-alt"></i></button>
+      <button class="player-btn play-pause-btn" id="playPauseBtn" data-action="toggle-play" aria-label="Oynat/Durdur" title="Oynat/Durdur"><i class="fas fa-play"></i></button>
+      <button class="player-btn" data-action="skip-podcast" data-skip="30" aria-label="İleri Sarı 30s" title="30s İleri"><i class="fas fa-redo-alt"></i></button>
     </div>
     <div class="player-progress-container">
       <span class="player-time" id="currentTime">0:00</span>
@@ -686,7 +749,7 @@
 
 
   <!-- ═══════════════ AI CHATBOT WIDGET ═══════════════ -->
-  <button id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Berlin Asistanı" onclick="toggleChatbot()">
+  <button id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Berlin Asistanı" data-action="toggle-chatbot">
     <i class="fas fa-robot"></i>
   </button>
 
@@ -699,7 +762,7 @@
           <span>Yapay Zeka Destekli</span>
         </div>
       </div>
-      <button class="chatbot-close" onclick="toggleChatbot()">&times;</button>
+      <button class="chatbot-close" data-action="toggle-chatbot">&times;</button>
     </div>
 
     <div class="chatbot-messages" id="chatbotMessages">
@@ -725,10 +788,10 @@
 
   <!-- ── History Portal Modal (Shake Feature) ───── -->
   <div class="modal" id="historyModal">
-    <div class="modal-overlay" onclick="closeHistoryModal()"></div>
+    <div class="modal-overlay" data-action="close-history-modal"></div>
     <div class="modal-container history-portal-container">
       <div class="history-flare"></div>
-      <button class="modal-close" onclick="closeHistoryModal()">&times;</button>
+      <button class="modal-close" data-action="close-history-modal">&times;</button>
       <div class="history-content">
         <div class="history-date-tag" id="historyDate">16 MART 1920</div>
         <div class="history-newspaper-header">BERLINER ZEITUNG</div>
@@ -783,18 +846,18 @@
       <i class="fas fa-cookie-bite cookie-icon"></i>
       <div class="cookie-text">
         <p><strong>Çerez Onayı / Cookie Consent</strong></p>
-        <p>Size en iyi deneyimi sunmak için çerezler kullanıyoruz. <a href="#" onclick="openLegal('privacy'); return false;">Gizlilik Politikasını</a> inceleyebilirsiniz.</p>
+        <p>Size en iyi deneyimi sunmak için çerezler kullanıyoruz. <a href="#" data-action="open-legal" data-legal="privacy">Gizlilik Politikasını</a> inceleyebilirsiniz.</p>
       </div>
       <div class="cookie-actions">
-        <button class="cookie-btn secondary" onclick="closeCookieBanner()">Reddet</button>
-        <button class="cookie-btn primary" onclick="acceptCookies()">Kabul Et</button>
+        <button class="cookie-btn secondary" data-action="reject-cookies">Reddet</button>
+        <button class="cookie-btn primary" data-action="accept-cookies">Kabul Et</button>
       </div>
     </div>
   </div>
 
   <!-- ═══════════════ MOBILE BOTTOM NAV ═══════════════ -->
   <nav class="mobile-bottom-nav">
-    <a href="#" class="bottom-nav-item active" onclick="window.scrollToTop(event)">
+    <a href="#" class="bottom-nav-item active" data-action="scroll-to-top">
       <i class="fas fa-home"></i>
       <span>Keşfet</span>
     </a>

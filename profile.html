@@ -93,13 +93,15 @@
     <div id="profileAvatar" class="profile-avatar-large">BK</div>
     <h1 id="userName" class="profile-name">Yükleniyor...</h1>
     <p id="userEmail" class="profile-email">---</p>
-    <button class="action-btn" onclick="logout()" style="margin-top: -15px; margin-bottom: 20px; font-size: 0.9rem; border: 1px solid var(--border); padding: 8px 20px; border-radius: 20px; cursor: pointer; color: var(--text-secondary); background: transparent;">
+    <div id="gamificationContainer" style="margin-bottom: 25px; display: flex; justify-content: center;"></div>
+
+    <button class="action-btn" data-action="logout" style="margin-top: -15px; margin-bottom: 20px; font-size: 0.9rem; border: 1px solid var(--border); padding: 8px 20px; border-radius: 20px; cursor: pointer; color: var(--text-secondary); background: transparent;">
       <i class="fas fa-sign-out-alt"></i> Çıkış Yap
     </button>
 
     <div class="profile-tabs">
-      <div class="profile-tab active" onclick="switchTab('bookmarks')">Favorilerim</div>
-      <div class="profile-tab" onclick="switchTab('my-posts')">Paylaşımlarım</div>
+      <div class="profile-tab active" data-action="switch-tab" data-tab="bookmarks">Favorilerim</div>
+      <div class="profile-tab" data-action="switch-tab" data-tab="my-posts">Paylaşımlarım</div>
     </div>
   </section>
 
@@ -107,88 +109,11 @@
     <div id="tabContent">
       <div class="empty-state">
         <i class="fas fa-bookmark"></i>
-        <p>Favorilerinize eklediğiniz haberler yakında burada görünecek.</p>
+        <p>Yükleniyor...</p>
       </div>
     </div>
   </section>
 
-  <script type="module">
-    import { auth, db, onAuthStateChanged, collection, query, where, getDocs, signOut } from './src/firebase-config.js';
-
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        document.getElementById('userName').innerText = user.displayName || 'İsimsiz Kullanıcı';
-        document.getElementById('userEmail').innerText = user.email;
-        if (user.photoURL) {
-          document.getElementById('profileAvatar').innerHTML = `<img src="${user.photoURL}" style="width:100%; height:100%; border-radius:50%">`;
-        } else {
-          document.getElementById('profileAvatar').innerText = (user.displayName || 'B K').split(' ').map(n => n[0]).join('');
-        }
-        loadBookmarks(user.uid);
-      } else {
-        window.location.href = '/';
-      }
-    });
-
-    window.logout = () => {
-      signOut(auth).then(() => {
-        window.location.href = '/';
-      });
-    };
-
-    window.switchTab = (tab) => {
-      document.querySelectorAll('.profile-tab').forEach(t => t.classList.remove('active'));
-      event.target.classList.add('active');
-      
-      const content = document.getElementById('tabContent');
-      if (tab === 'bookmarks') {
-         if (auth.currentUser) loadBookmarks(auth.currentUser.uid);
-      } else {
-         content.innerHTML = `
-          <div class="empty-state">
-            <i class="fas fa-pen"></i>
-            <p>Henüz bir paylaşım yapmadınız.</p>
-          </div>
-         `;
-      }
-    };
-
-    async function loadBookmarks(uid) {
-      const content = document.getElementById('tabContent');
-      content.innerHTML = '<div style="text-align: center;"><i class="fas fa-spinner fa-spin"></i> Yükleniyor...</div>';
-      
-      try {
-        const q = query(collection(db, "bookmarks"), where("userId", "==", uid));
-        const querySnapshot = await getDocs(q);
-        
-        if (querySnapshot.empty) {
-          content.innerHTML = `
-            <div class="empty-state">
-              <i class="fas fa-bookmark"></i>
-              <p>Henüz bir haber kaydetmediniz.</p>
-            </div>
-          `;
-          return;
-        }
-
-        let html = '<div class="news-grid">';
-        querySnapshot.forEach((docSnap) => {
-          const data = docSnap.data();
-          html += `
-            <article class="news-card glass-panel" style="padding: 15px; cursor: pointer;">
-              <h3 style="font-size: 1.1rem; margin-bottom: 10px;">${data.title}</h3>
-              <p style="font-size: 0.9rem; color: var(--text-secondary);"><i class="fas fa-newspaper"></i> Kaynak: ${data.source}</p>
-            </article>
-          `;
-        });
-        html += '</div>';
-        content.innerHTML = html;
-
-      } catch (err) {
-        console.error("Favoriler yüklenirken hata:", err);
-        content.innerHTML = '<p class="text-danger" style="text-align:center;">Favoriler yüklenirken bir hata oluştu.</p>';
-      }
-    }
-  </script>
+  <script type="module" src="/src/features/profile.js"></script>
 </body>
 </html>

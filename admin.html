@@ -259,6 +259,7 @@
         <button class="nav-tab" data-tab="tab-events">Etkinlikler</button>
         <button class="nav-tab" data-tab="tab-community">Topluluk & Onay</button>
         <button class="nav-tab" data-tab="tab-polls">Anketler</button>
+        <button class="nav-tab" data-tab="tab-notifications">Bildirimler</button>
         <button class="nav-tab" data-tab="tab-subscribers">Aboneler</button>
     </nav>
 
@@ -323,8 +324,11 @@
                         <input type="text" id="newsSource">
                     </div>
                     <div class="form-group">
-                        <label>Görsel URL</label>
-                        <input type="text" id="newsImg" placeholder="https://...">
+                        <label>Resim (URL veya Dosya Yükle)</label>
+                        <div class="flex-col-gap">
+                            <input type="text" id="newsImg" placeholder="https://...">
+                            <input type="file" id="newsImgFile" accept="image/*" style="font-size: 0.8rem; background: none; border: none; padding: 0;">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>İçerik/Özet (TR)</label>
@@ -430,6 +434,47 @@
             <h2>Bülten Aboneleri</h2>
             <div id="subscribersList" class="data-list">
                 <p class="empty-list">Yükleniyor...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab: Bildirimler -->
+    <div id="tab-notifications" class="tab-content">
+        <div class="admin-grid">
+            <div class="admin-card">
+                <h2>Push Bildirim Gönder</h2>
+                <form id="pushForm">
+                    <div class="form-group">
+                        <label>Bildirim Başlığı</label>
+                        <input type="text" id="pushTitle" placeholder="Örn: Berlin'den Son Dakika!" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mesaj İçeriği</label>
+                        <textarea id="pushBody" rows="3" placeholder="Bildirim metnini yazın..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Bildirim Tipi</label>
+                        <select id="pushType">
+                            <option value="normal">Standart Haber</option>
+                            <option value="breaking">🚨 Son Dakika</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Tıklanınca Gidilecek URL (Opsiyonel)</label>
+                        <input type="text" id="pushUrl" placeholder="https://berlin-konusuyor.vercel.app/news/...">
+                    </div>
+                    <button type="submit" class="admin-btn" id="pushSubmitBtn">Bildirimi Gönder</button>
+                </form>
+            </div>
+            <div class="admin-card">
+                <h2>Cihaz İstatistikleri</h2>
+                <div class="stat-box">
+                    <div class="stat-num" id="statTokens">0</div>
+                    <div>Abone Cihaz (Token)</div>
+                </div>
+                <p class="empty-list" style="padding: 20px; font-size: 0.8rem;">
+                    Bildirimler tüm aktif tarayıcı ve mobil yüklü cihazlara anında iletilir.
+                </p>
             </div>
         </div>
     </div>

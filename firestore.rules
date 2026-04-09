@@ -1,8 +1,42 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+    
+    // Admin check function
+    function isAdmin() {
+      return request.auth != null && (request.auth.token.email == 'test@admin.com' || request.auth.token.email == 'oarslanerbln@gmail.com'); 
+      // NOT: 'test@admin.com' kısmını kendi admin mailinizle değiştirin
+    }
+
+    // Haberler, Etkinlikler, Anketler, Aboneler
+    match /news/{doc} { allow read: if true; allow write: if isAdmin(); }
+    match /events/{doc} { allow read: if true; allow write: if isAdmin(); }
+    match /polls/{doc} { allow read: if true; allow write: if isAdmin(); }
+    match /subscribers/{doc} { allow read: if isAdmin(); allow create: if true; }
+
+    // Chat / Forum (Kullanıcılar okuyabilir, giriş yapanlar yazabilir)
+    match /chat_rooms/{room}/messages/{msg} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow delete, update: if isAdmin();
+    }
+
+    // İş İlanları & Forum (Kullanıcılar ekleyebilir, Admin onaylar)
+    match /jobs/{doc} {
+      allow read: if true;
+      allow create: if true; // veya auth
+      allow update, delete: if isAdmin();
+    }
+    match /forum/{doc} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if isAdmin();
+    }
+
+    // Varsayılan: Giriş yapanlar her şeyi görebilir
     match /{document=**} {
-      allow read, write: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
     }
   }
 }

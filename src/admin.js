@@ -1,12 +1,35 @@
 import {
   db, auth, collection, addDoc, getDocs, getDoc, query, orderBy, onSnapshot, serverTimestamp,
-  doc, updateDoc, deleteDoc, where
+  doc, updateDoc, deleteDoc, where, onAuthStateChanged
 } from './firebase-config.js';
+import { uploadMedia } from './utils/media-upload.js';
+
+// --- ADMIN AUTH BARRIER ---
+const ALLOWED_ADMINS = ['test@admin.com', 'oarslanerbln@gmail.com']; // Kendi e-postanızı buraya yazıp yetki alabilirsiniz
+
+onAuthStateChanged(auth, (user) => {
+  if (!user) {
+    document.body.innerHTML = `
+      <div style="display:flex; height:100vh; align-items:center; justify-content:center; flex-direction:column; background:#050505; color:white; font-family:sans-serif;">
+        <h2>Lütfen Giriş Yapın</h2>
+        <p>Admin paneline erişmek için oturum açmalısınız.</p>
+        <a href="/" style="color:#e50914; margin-top:20px; text-decoration:none;">Ana Sayfaya Dön</a>
+      </div>
+    `;
+    return;
+  }
+  
+  // Güvenlik uyarısı (Konsolda)
+  if(ALLOWED_ADMINS.length > 0 && !ALLOWED_ADMINS.includes(user.email)) {
+    console.warn(`[GÜVENLİK UYARISI] ${user.email} admin yetkisine sahip değil. firebase.rules devreye girdiğinde verileri değiştiremeyeceksiniz.`);
+  }
+});
 
 // Elements
 const statNews = document.getElementById('statNews');
 const statEvents = document.getElementById('statEvents');
 const statSubs = document.getElementById('statSubs');
+const statTokens = document.getElementById('statTokens');
 
 // Tab Logic
 const tabs = document.querySelectorAll('.nav-tab');
@@ -21,11 +44,9 @@ tabs.forEach(tab => {
     document.getElementById(target).classList.add('active');
 
     // Auto-load data if needed
-    if (target === 'tab-news') loadNewsList();
-    if (target === 'tab-events') loadEventsList();
-    if (target === 'tab-polls') loadPollsList();
     if (target === 'tab-subscribers') loadSubscribersList();
     if (target === 'tab-community') loadVerificationList();
+    if (target === 'tab-notifications') loadTokenStats();
   });
 });
 
@@ -33,6 +54,7 @@ const updateStats = () => {
   onSnapshot(collection(db, "news"), snap => { if (statNews) statNews.textContent = snap.size; });
   onSnapshot(collection(db, "events"), snap => { if (statEvents) statEvents.textContent = snap.size; });
   onSnapshot(collection(db, "subscribers"), snap => { if (statSubs) statSubs.textContent = snap.size; });
+  onSnapshot(collection(db, "fcm_tokens"), snap => { if (statTokens) statTokens.textContent = snap.size; });
 };
 
 // --- NEWS MANAGEMENT ---
@@ -41,17 +63,27 @@ const newsSubmitBtn = document.getElementById('newsSubmitBtn');
 
 if (addNewsForm) {
   addNewsForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
     const id = document.getElementById('newsId').value;
+    const fileInput = document.getElementById('newsImgFile');
     const btn = newsSubmitBtn;
+    
     btn.disabled = true;
     btn.textContent = id ? 'Güncelleniyor...' : 'Yayınlanıyor...';
+
+    let imageUrl = document.getElementById('newsImg').value;
+    
+    // Media Management: Handle file upload if present
+    if (fileInput && fileInput.files[0]) {
+      const file = fileInput.files[0];
+      const fileName = `${Date.now()}_${file.name}`;
+      imageUrl = await uploadMedia(file, `news/${fileName}`);
+    }
 
     const newsData = {
       title: document.getElementById('newsTitle').value,
       category: document.getElementById('newsCat').value,
       source: document.getElementById('newsSource').value || 'Berlin Konuşuyor',
-      image: document.getElementById('newsImg').value || 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800',
+      image: imageUrl || 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800',
       summary_tr: document.getElementById('newsSummary').value,
       updatedAt: serverTimestamp()
     };
@@ -402,6 +434,42 @@ document.getElementById('exportData')?.addEventListener('click', async () => {
   } catch (err) {
     console.error('[Admin] Export Error:', err);
     alert('Yedekleme sırasında hata oluştu.');
+  }
+});
+
+// --- PUSH NOTIFICATIONS ---
+async function loadTokenStats() {
+  const snap = await getDocs(collection(db, "fcm_tokens"));
+  if (statTokens) statTokens.textContent = snap.size;
+}
+
+document.getElementById('pushForm')?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('pushSubmitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Gönderiliyor...';
+
+  const pushData = {
+    title: document.getElementById('pushTitle').value,
+    body: document.getElementById('pushBody').value,
+    url: document.getElementById('pushUrl').value || '/',
+    type: document.getElementById('pushType').value,
+    createdAt: serverTimestamp()
+  };
+
+  try {
+    // Note: To send a real FCM push from the client, we usually need a Cloud Function.
+    // Here we save the notification to a 'notifications_queue' collection.
+    // A background trigger (or a script) will process this queue.
+    await addDoc(collection(db, "notifications_queue"), pushData);
+    alert('Bildirim kuyruğa alındı! Yakında tüm cihazlara iletilecek.');
+    e.target.reset();
+  } catch (err) {
+    console.error(err);
+    alert('Bildirim gönderilirken hata oluştu.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Bildirimi Gönder';
   }
 });
 

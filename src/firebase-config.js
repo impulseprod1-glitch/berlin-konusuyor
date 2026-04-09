@@ -6,6 +6,8 @@ import {
 import {
   getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged
 } from "firebase/auth";
+import { getMessaging, getToken, onMessage } from "firebase/messaging";
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD6gKsqI-JaxsRqMdB3UDayb2bvNKfpU3A",
@@ -19,11 +21,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
+const messaging = getMessaging(app);
+const storage = getStorage(app);
 const googleProvider = new GoogleAuthProvider();
 
 export {
-  db, auth, googleProvider,
+  db, auth, messaging, storage, googleProvider,
   collection, query, where, orderBy, onSnapshot, addDoc, setDoc,
   serverTimestamp, doc, updateDoc, increment, getDocs, getDoc, deleteDoc,
-  signInWithPopup, signOut, onAuthStateChanged
+  signInWithPopup, signOut, onAuthStateChanged,
+  getToken, onMessage, ref, uploadBytes, getDownloadURL
 };
