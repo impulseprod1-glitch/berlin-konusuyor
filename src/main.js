@@ -36,6 +36,11 @@ window.revealObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+function startGlobalObserving() {
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    reveals.forEach(el => window.revealObserver.observe(el));
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Basic UI Setup
     initLenis();
@@ -48,6 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileDock();
     initSearch();
     
+    // Start observing existing elements
+    startGlobalObserving();
+    
     // Core Features
     initAuthListener();
     initDashboardUtils();
@@ -58,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initQAForum();
     initJobBoard();
     initChat();
+    initServiceWorker();
     
     // Extra UI / Interactions
     initParallax();

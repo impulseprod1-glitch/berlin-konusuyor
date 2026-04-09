@@ -1,27 +1,71 @@
 {
-  "lastUpdated": "2026-04-09T11:56:19.457Z",
-  "count": 10,
+  "lastUpdated": "2026-04-09T12:40:51.152Z",
+  "count": 20,
   "articles": [
     {
-      "title": "Mersin Uluslararası Bisiklet Turu başladı",
-      "description": "Mersin Büyükşehir Belediyesi tarafından 8. kez organize edilen Mersin Uluslararası Bisiklet Turu (Tour of Mersin), Anamur-Bozyazı-Aydıncık etabıyla başladı.",
-      "url": "https://www.aa.com.tr/tr/spor/mersin-uluslararasi-bisiklet-turu-basladi/3899482",
+      "title": "Türkşeker Genel Müdürü Şahin'den \"Pancar şekerinde arz güvenliği sorunu yok\" açıklaması",
+      "description": "Türkiye Şeker Fabrikaları (Türkşeker) Genel Müdürü Muhiddin Şahin, \"Hem ihracatta hem de içeride Türkiye'nin hiçbir şekilde ithal şekere ihtiyacı olmadığı gibi ihraç şekerlik ürünü de var. Bir arz güvenliği sorunu yok.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/turkseker-genel-muduru-sahinden-pancar-sekerinde-arz-guvenligi-sorunu-yok-aciklamasi/3899554",
       "image": "",
-      "date": "2026-04-09T11:53:40.000Z",
+      "date": "2026-04-09T12:37:30.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "İranlı bağlantılı hacker grubu, eski İsrail Genelkurmay Başkanı'nın gizli belgelerini yayımladı",
-      "description": "İran bağlantılı \"Hanzala (Handala)\" adlı hacker grubu, eski İsrail Genelkurmay Başkanı Herzi Halevi'nin elektronik cihazlarına sızarak ele geçirdiği gizli fotoğraf ve videolarını yayımladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/iranli-baglantili-hacker-grubu-eski-israil-genelkurmay-baskaninin-gizli-belgelerini-yayimladi/3899480",
+      "title": "ABD ekonomisi 2025'in dördüncü çeyreğinde yüzde 0,5 büyüdü",
+      "description": "ABD ekonomisi 2025'in dördüncü çeyreğinde yüzde 0,5 büyüdü.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abd-ekonomisi-2025in-dorduncu-ceyreginde-yuzde-0-5-buyudu/3899552",
       "image": "",
-      "date": "2026-04-09T11:53:18.000Z",
+      "date": "2026-04-09T12:34:53.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Organize suç örgütlerine yönelik operasyonlarda 49 şüpheli tutuklandı",
+      "description": "İçişleri Bakanlığı, suç örgütlerine yönelik 12 ilde düzenlenen operasyonlarda gözaltına alınan 83 şüpheliden 49'unun tutuklandığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/organize-suc-orgutlerine-yonelik-operasyonlarda-49-supheli-tutuklandi/3899542",
+      "image": "",
+      "date": "2026-04-09T12:27:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İTÜ'den kız yurduna giren kişinin uygunsuz davranışlarda bulunmasına ilişkin açıklama",
+      "description": "İstanbul Teknik Üniversitesi (İTÜ) Ayazağa Yerleşkesi'ndeki kız yurduna giren kişinin uygunsuz davranışlarda bulunmasına ilişkin üniversite genelinde inceleme başlatıldığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ituden-kiz-yurduna-giren-kisinin-uygunsuz-davranislarda-bulunmasina-iliskin-aciklama/3899538",
+      "image": "",
+      "date": "2026-04-09T12:24:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İçişleri Bakanlığından sel, su baskını ve çığ uyarısı",
+      "description": "İçişleri Bakanlığı, bugün ve yarın bazı illerde beklenen kuvvetli sağanak ile kar yağışları nedeniyle sel, su baskını, yüksek kar örtüsüne sahip eğimli ve dik yamaçlarda çığ riskine karşı uyarıda bulundu.",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakanligindan-sel-su-baskini-ve-cig-uyarisi/3899519",
+      "image": "",
+      "date": "2026-04-09T12:14:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Pflegeheim in Neuenhagen muss vorerst nicht schließen",
+      "description": "Nach ausbleibenden Gehältern hat der Träger eines Pflegeheims in Märkisch-Oderland einen Insolvenzantrag gestellt. Ein Verwalter sichert nun die Bezahlung – die Gemeinde hofft auf einen neuen Betreiber ab Mai.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/pflegeheim-neuenhagen-insolvenzverwalter-sorgen-bewohner.html",
+      "image": "",
+      "date": "2026-04-09T12:03:42.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fransız hükümeti İsrail'e silah sattıkları iddialarını yalanladı",
-      "description": "Fransa hükümeti, İsrail'e silah satıldığına dair iddiaları reddederek bu ülkeye son 3 yılda ihraç edilen askeri ekipmanların \"savunma amaçlı\" parçalardan oluştuğunu savundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransiz-hukumeti-israile-silah-sattiklari-iddialarini-yalanladi/3899469",
-      "image": "",
-      "date": "2026-04-09T11:41:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -69,17 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "\"ASELSAN Akademi Mezuniyet Töreni ve ASELABS Açılışları\" programı düzenlendi",
-      "description": "\"ASELSAN Akademi Mezuniyet Töreni ve ASELABS Açılışları\" programı, Cumhurbaşkanı Yardımcısı Yılmaz, SSB Başkanı Görgün, ASELSAN Genel Müdürü Akyol, üniversite rektörleri ve akademisyenlerin katılımıyla gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/aselsan-akademi-mezuniyet-toreni-ve-aselabs-acilislari-programi-duzenlendi/3899464",
-      "image": "",
-      "date": "2026-04-09T11:37:11.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Pollen und Allergien: Umweltmedizinerin im Interview",
       "description": "Mehr als jede dritte Person in Deutschland leidet an einer ärztlich diagnostizierten Allergie: Am häufigsten an einer Pollenallergie. Und die Zahlen steigen.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/pollen-allergie-umweltmedizinerin-wetter-interview.html",
@@ -91,30 +113,118 @@
       "type": "rss"
     },
     {
-      "title": "Slawenburg Raddusch: Rund 1.700 Exponate bleiben vorerst",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/vetschau-slawenburg-raddusch-exponate-rueckgabe.html",
-      "image": "",
-      "date": "2026-04-09T10:28:35.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
+      "title": "DEL-Playoffs: Hochklassiger Start für Berlin und Mannheim im Halbfinale",
+      "description": "Kopieren Sie den aktuellen Link Zur Wunschliste hinzufügen Zum Auftakt der DEL-Halbfinalserie bieten die Teams ein Eishockey-Spektakel. Mannheim gewinnt knapp, Berlin siegt deutlich. Am Freitag geht es in München und Köln weiter. Titelverteidiger Eisbären Berlin startete mit einem spektakulären 6:3 (2:1, 3:1, 1:1) gegen Hauptrundensieger Kölner Haie ins Playoff-Halbfinale. In der anderen Serie holten sich ...",
+      "url": "https://lomazoma.com/del-playoffs-hochklassiger-start-fuer-berlin-und-mannheim-im-halbfinale/",
+      "image": "https://lomazoma.com/wp-content/uploads/2026/04/08-4xbvyqbpmlv4axs2048jpeg-a0f17a5fe3743269.jpg",
+      "date": "2026-04-09 00:28:21",
+      "source": "Loma News",
+      "lang": "german",
       "category": "berlin",
-      "type": "rss"
+      "type": "api"
     },
     {
-      "title": "BasınCup 2026 başlıyor",
-      "description": "Yıldız Teknik Üniversitesi sponsorluğunda düzenlenen BasınCup 2026, akşam saatlerinde oynanacak 2 müsabakayla başlıyor. Turnuvada medya kuruluşlarının oluşturduğu 21 takım yer alıyor.",
-      "url": "https://www.aa.com.tr/tr/spor/basincup-2026-basliyor/3899162",
+      "title": "Ärger zum Start von „Celebrity Taste“: TV-Moderatorin legt sich mit Starkoch an | Unterhaltung",
+      "description": "TTS-Player überspringen↵Lesen Sie den Artikel weiter Berlin – Jetzt geht es für die Stars um den Löffel... Während bei der beliebten Sat.1-Show „The Taste“ nur Hobby- und Profiköche antraten, können nun 12 bekannte TV-Gesichter mitmachen. Am Mittwochabend startete der VIP-Ableger „Promi Taste“. Unter anderem dabei: Sängerin Jeanette Biedermann (46), TV-Moderator Jochen Schropp (47) und Schauspielerin ...",
+      "url": "https://lomazoma.com/aerger-zum-start-von-celebrity-taste-tv-moderatorin-legt-sich-mit-starkoch-an-unterhaltung/",
+      "image": "https://lomazoma.com/wp-content/uploads/2026/04/d470699bd320927293f42d7bd0f757a43b1d172.jpeg",
+      "date": "2026-04-09 00:26:17",
+      "source": "Loma News",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "Nato habe „versagt“ – Trump droht mit Austritt und Truppenabzug als „Strafe“ für Nato-Partner",
+      "description": "Nach Kritik an der Nato erwägt US-Präsident Trump drastische Schritte: Laut Sprecherin Karoline Leavitt könnte ein Austritt aus dem Bündnis auf dem Tisch liegen. Außerdem erwägt Trump laut Bericht Truppenabzüge aus Staaten, die die US-Offensive im Iran nicht unterstützt haben. Mehr im Liveticker.",
+      "url": "https://www.welt.de/politik/ausland/article69cf05f2cdf80d124bb0cc45/krieg-in-nahost-nato-habe-versagt-trump-prueft-laut-bericht-truppenabzug-als-strafe-fuer-nato-partner-liveticker.html",
       "image": "",
-      "date": "2026-04-09T08:38:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
+      "date": "2026-04-09 00:11:00",
+      "source": "Welt",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "Aktuelle US-Nachrichten: Laut Rutte ist Trump von der NATO enttäuscht",
+      "description": "Nachrichtenblog über US-Politik Rutte: Trump ist „eindeutig enttäuscht“ von der NATO Aus M. Lattemann, J. Hartung, N. Breuer, C. Siemer, A. Janzen, C. Köln, M. Küper, T. Schibilla, M. Kloft, D. Schafbuch, J. Seiferth, J. Fischer, F. Michalski Aktualisiert am 9. April 2026 – 2:03 UhrLesezeit: 5 Minuten NATO-Generalsekretär Mark Rutte (l.) mit US-Präsident Donald ...",
+      "url": "https://lomazoma.com/aktuelle-us-nachrichten-laut-rutte-ist-trump-von-der-nato-enttaeuscht/",
+      "image": "https://lomazoma.com/wp-content/uploads/2026/04/nato-generalsekretaer-mark-rutte-l-bei-us-praesident-donald-trump-im-weissen-haus-archivfoto.jpg",
+      "date": "2026-04-09 00:06:02",
+      "source": "Loma News",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "Basketball CL: Alba Berlin scheidet nach einem Viertelfinal-Krimi gegen Malaga aus",
+      "description": "Die Nummer 14 im Grün-Lila-Trikot sei die Geringste von allen, meinen sie. Nihad Djedovic, wie immer mit Stirnband und schwarzem Spitzbart, setzt seinen Körper ein, lauert an der Grundlinie, stiehlt Bälle und versucht in einer kurzen Pause mit offenen Augen den Schiedsrichter davon zu überzeugen, dass das, was er gerade getan hat, wirklich ein Foul ...",
+      "url": "https://lomazoma.com/basketball-cl-alba-berlin-scheidet-nach-einem-viertelfinal-krimi-gegen-malaga-aus/",
+      "image": "https://lomazoma.com/wp-content/uploads/2026/04/1775693107_size1280x720.jpg",
+      "date": "2026-04-09 00:05:02",
+      "source": "Loma News",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "US-News aktuell: Trump laut Rutte enttäuscht über Nato",
+      "description": "Nato-Generalsekretär Rutte hat Trump besucht. Berlin und Washington streiten über eine Einmischung in die Ungarn-Wahl. Alle Entwicklungen im Newsblog.",
+      "url": "https://www.t-online.de/nachrichten/ausland/usa/id_101203158/us-news-aktuell-trump-laut-rutte-enttaeuscht-ueber-nato.html",
+      "image": "https://images.t-online.de/2026/04/UFeh1EtTRr4M/137x333:3628x2041/fit-in/1200x0/nato-generalsekretaer-mark-rutte-l-bei-us-praesident-donald-trump-im-weissen-haus-archivfoto.jpg",
+      "date": "2026-04-09 00:03:57",
+      "source": "T-online",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "Umfrage: Kernwählerschaft der SPD auf Rekordtief",
+      "description": "Die SPD liegt nicht nur in Umfragen zur Bundestagswahl hinten. Offenbar verliert sie auch ihre wichtigsten Unterstützer.",
+      "url": "https://www.t-online.de/nachrichten/deutschland/parteien/id_101204582/umfrage-kernwaehlerschaft-der-spd-auf-rekordtief.html",
+      "image": "https://images.t-online.de/2026/04/EG5tOMrP4J5z/0x209:4000x2250/fit-in/1200x0/georg-maier-auf-wahlkampftour-georg-maier-spd-thueringer-innenminister-macht-wahlkampf-am-markt-in-meiningen-am-infostand-der-spd-mit-coffee-bike-meiningen-thueringen-deutschland-georg-maier-on-the-campaign-trail-georg-maier-spd-thuringian-minister-of-the-interior-campaigns-at-the-spd-information-stand-in-meiningen-with-coffee-bike-meiningen-thuringia-germany.jpg",
+      "date": "2026-04-09 00:02:14",
+      "source": "T-online",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "Transformer Home: Authoritative Copper Wire Coil Winding Machine Manufacturer Preparing for CWIEME Berlin 2026",
+      "description": "As the global energy landscape undergoes a fundamental shift toward electrification and renewable energy integration, the demand for high-performance power",
+      "url": "https://www.einpresswire.com/article/904680521/transformer-home-authoritative-copper-wire-coil-winding-machine-manufacturer-preparing-for-cwieme-berlin-2026",
+      "image": "https://img.einnews.com/ampsize/1088889/process-transformer-home.png",
+      "date": "2026-04-09 00:00:00",
+      "source": "Ein Presswire",
+      "lang": "english",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "Ricarda Lang trainiert für den Halbmarathon: Ricarda Lang wird bald die Distanz laufen | Politik",
+      "description": "TTS-Player überspringen↵Lesen Sie den Artikel weiter Berlin – Sie rennt und rennt und rennt... Die ehemalige Grünen-Chefin Ricarda Lang (32) joggt seit Monaten. Jetzt hat sie angekündigt: Sie will bald ihren ersten Halbmarathon absolvieren! Der Weg dorthin war lang: Im Mai 2025 postete die Politikerin ihr erstes Lauffoto: In Goldegg im Pongau (Salzburger Land) war ...",
+      "url": "https://lomazoma.com/ricarda-lang-trainiert-fuer-den-halbmarathon-ricarda-lang-wird-bald-die-distanz-laufen-politik/",
+      "image": "https://lomazoma.com/wp-content/uploads/2026/04/d1da0f52e150da21d0ee3cd7ca1bd1397b3dab81.jpeg",
+      "date": "2026-04-08 23:44:52",
+      "source": "Loma News",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
+    },
+    {
+      "title": "Zoff beim „Promi Taste“-Start - TV-Moderator legt sich mit Starkoch an",
+      "description": "Bei „Promi Taste“ kracht es: Jochen Schropp gerät heftig mit Frank Rosin aneinander.",
+      "url": "https://www.bild.de/unterhaltung/tv-fernsehformate/zoff-beim-promi-taste-start-tv-moderator-legt-sich-mit-starkoch-an-69d6d6cf8b52f2de5d6b9664",
+      "image": "",
+      "date": "2026-04-08 23:39:24",
+      "source": "Bild",
+      "lang": "german",
+      "category": "berlin",
+      "type": "api"
     }
   ],
   "insights": {
-    "weatherAdvice": "Berlin'de güzel bir gün dileriz!",
-    "newsBrief": "Berlin gündemi her zaman hareketli."
+    "weatherAdvice": "Berlin'in tadını çıkarın!",
+    "newsBrief": "Haberleri takipte kalın."
   }
 }
