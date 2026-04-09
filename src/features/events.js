@@ -5,7 +5,6 @@ import { PLACEHOLDER_IMG } from './news.js';
 export let globalEvents = [];
 
 export async function fetchFallbackEvents() {
-  console.log('[Events] Fetching local fallback events...');
   try {
     const res = await fetch('/data/events.json');
     if (!res.ok) throw new Error('Events fallback fetch failed');
@@ -77,7 +76,6 @@ export async function loadEvents() {
   const track = document.getElementById('eventsTrack');
   if (track) track.innerHTML = '<div class="skeleton-event"></div>'.repeat(3);
 
-  console.log('[Events] loadEvents triggered with DB:', db);
   if (!db) {
     console.warn('[Events] DB not ready yet, retrying in 500ms...');
     setTimeout(loadEvents, 500);

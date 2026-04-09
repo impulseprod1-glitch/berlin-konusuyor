@@ -186,9 +186,7 @@ export function initQAForum() {
     try {
       const orgHtml = btn.innerHTML;
       btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gönderiliyor...';
-      console.log('[Forum] Soru gönderiliyor...', newQ);
       await addDoc(collection(db, "forum"), newQ);
-      console.log('[Forum] Soru başarıyla eklendi.');
 
       alert("Sorunuz alındı ve kontrol edildikten sonra yayına girecektir.");
 

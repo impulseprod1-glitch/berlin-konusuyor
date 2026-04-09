@@ -11,12 +11,10 @@ export async function initNotifications() {
   // Check if we already have permission or should ask
   if (Notification.permission === 'default') {
     // We could show a custom UI toast first to not be invasive
-    console.log('Bildirim izni bekliyor...');
   }
 
   // Handle foreground messages
   onMessage(messaging, (payload) => {
-    console.log('Mesaj alındı (Foreground): ', payload);
     showCustomNotification(payload.notification);
   });
 }
@@ -27,7 +25,6 @@ export async function requestNotificationPermission(userEmail = null) {
     if (permission === 'granted') {
       const token = await getToken(messaging, { vapidKey: VAPID_KEY });
       if (token) {
-        console.log('FCM Token:', token);
         await saveToken(token, userEmail);
         return true;
       }

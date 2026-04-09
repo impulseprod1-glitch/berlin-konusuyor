@@ -21,7 +21,6 @@ export async function initJobBoard() {
       snap.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
 
       if (jobs.length === 0) {
-        console.log('[Jobs] Firestore empty, showing demo jobs.');
         renderJobs(DEMO_JOBS);
       } else {
         renderJobs(jobs);

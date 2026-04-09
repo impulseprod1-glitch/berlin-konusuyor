@@ -94,7 +94,6 @@ export function acceptCookies() {
   localStorage.setItem('bk-cookies-accepted', 'true');
   const banner = document.getElementById('cookieBanner');
   if (banner) banner.classList.remove('active');
-  console.log('Cookies accepted');
 }
 
 export function closeCookieBanner() {

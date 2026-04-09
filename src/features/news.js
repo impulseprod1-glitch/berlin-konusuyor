@@ -146,7 +146,6 @@ export function renderHeroFeatured(article) {
 }
 
 export async function fetchFallbackNews() {
-  console.log('[News] Fetching local fallback news...');
   try {
     const res = await fetch('/data/news.json');
     if (!res.ok) throw new Error('News fallback fetch failed');
@@ -171,16 +170,13 @@ export async function loadNews() {
   const grid = document.getElementById('newsGrid');
   if (grid) grid.innerHTML = '<div class="skeleton-card"></div>'.repeat(4);
 
-  console.log('[News] loadNews triggered with DB:', db);
   if (!db) {
-    console.warn('[News] DB not ready yet, retrying in 500ms...');
     setTimeout(loadNews, 500);
     return;
   }
 
   try {
     let newsLoadingTimeout = setTimeout(() => {
-      console.warn('[News] Firestore timeout reaching 5s, using fallback');
       fetchFallbackNews();
     }, 5000);
 
@@ -254,10 +250,8 @@ export async function toggleBookmark(index, btnEl) {
         source: article.source || 'Haber',
         dateAdded: serverTimestamp()
       });
-      console.log('Bookmarked saved');
     } else {
       await deleteDoc(bookmarkRef);
-      console.log('Bookmark removed');
     }
   } catch (err) {
     console.error('Bookmark toggle DB error:', err);

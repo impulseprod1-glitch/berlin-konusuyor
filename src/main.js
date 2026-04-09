@@ -108,8 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal, .reveal-small, .reveal-left, .reveal-right').forEach((el) => {
         window.revealObserver.observe(el);
     });
-
-    console.log('[Berlin Konuşuyor] Modüler mimari başarıyla yüklendi!');
 });
 
 // ── Global Event Delegation (Data-Action) ──

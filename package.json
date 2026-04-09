@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/fetch-news.mjs && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "devDependencies": {
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.1",
     "typescript": "~5.9.3",
     "vite": "^6.0.0"
   },

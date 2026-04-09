@@ -1,0 +1,67 @@
+/* ── Light Theme ────────────────────────── */
+body.light-theme {
+  --bg-primary: #fafafa;
+  --bg-secondary: #f0f0f0;
+  --bg-card: rgba(255, 255, 255, 0.6);
+  --bg-card-hover: rgba(255, 255, 255, 0.9);
+  --text-primary: #121212;
+  --text-secondary: #444444;
+  --text-muted: #777777;
+  --border: rgba(0, 0, 0, 0.06);
+  --border-light: rgba(0, 0, 0, 0.12);
+  --glass: rgba(0, 0, 0, 0.02);
+  --accent: #D32F2F;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ── Search & Theme Toggle ────────────────── */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-toggle-btn, .theme-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.search-toggle-btn:hover, .theme-toggle-btn:hover {
+  color: var(--text-primary);
+  transform: scale(1.1);
+}
+
+.search-input-wrapper { display: none; } /* Deactivated old wrapper */

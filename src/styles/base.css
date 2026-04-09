@@ -1,0 +1,52 @@
+/* ── Reset & Base ────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #050505;
+  --bg-secondary: #0a0a0a;
+  --bg-card: rgba(15, 15, 15, 0.4);
+  --bg-card-hover: rgba(22, 22, 22, 0.6);
+  --text-primary: #fcfcfc;
+  --text-secondary: #b0b0b0;
+  --text-muted: #666666;
+  --accent: #E50914; /* Vibrant Crimson/Ruby */
+  --accent-dim: rgba(229, 9, 20, 0.4);
+  --accent-soft: rgba(229, 9, 20, 0.1);
+  --accent-glow: rgba(229, 9, 20, 0.6);
+  --success: #00e676;
+  --border: rgba(255, 255, 255, 0.05);
+  --border-light: rgba(255, 255, 255, 0.1);
+  --glass: rgba(255, 255, 255, 0.02);
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --nav-height: 80px;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-heavy: cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+/* ── Scrollbar ───────────────────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-light) var(--bg-primary);
+}
+
+/* Replaced redundant block with nothing to clean up the top of the file */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ── Custom Scrollbar Cleanup ────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-light) transparent;
+}
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }

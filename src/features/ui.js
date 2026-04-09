@@ -151,7 +151,6 @@ export function initLenis() {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-    console.log("Premium Feature: Lenis Smooth Scroll Initialized");
   }
 }
 
@@ -171,7 +170,7 @@ export function initServiceWorker() {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/service-worker.js')
         .then(registration => {
-          console.log('✅ SW Registered');
+          // SW Registered
         })
         .catch(err => {
           console.error('❌ SW Failed', err);

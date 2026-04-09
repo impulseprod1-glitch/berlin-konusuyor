@@ -23,7 +23,7 @@ export async function loadPodcasts() {
     globalPodcasts = data.podcasts;
     grid.innerHTML = html;
   } catch (err) {
-    console.log('Podcast listesi yüklenemedi:', err);
+    // console.log removed
   }
 }
 

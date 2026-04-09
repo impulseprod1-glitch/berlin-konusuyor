@@ -4,7 +4,6 @@ import { updateChatAuthState } from './chat.js';
 export async function loginWithGoogle() {
   try {
     const result = await signInWithPopup(auth, googleProvider);
-    console.log("User logged in:", result.user);
   } catch (error) {
     console.error("Login Error:", error);
   }
