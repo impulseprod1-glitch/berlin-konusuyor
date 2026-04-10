@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-04-10T19:41:55.907Z",
+  "lastUpdated": "2026-04-10T20:33:53.543Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Basketball: Alba-Frauen im ersten Halbfinal-Spiel in Keltern chancenlos",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/basketball-dbbl-keltern-alba-erstes-halbfinalspiel.html",
+      "image": "",
+      "date": "2026-04-10T20:27:20.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Anadolu Efes, Dubai Basketbol'u 85-69 mağlup etti",
+      "description": "Basketbol Avrupa Ligi'nin (EuroLeague) 37. haftasında Anadolu Efes, Birleşik Arap Emirlikleri temsilcisi Dubai Basketbol'u 85-69 mağlup etti.",
+      "url": "https://www.aa.com.tr/tr/spor/anadolu-efes-dubai-basketbolu-85-69-maglup-etti/3901469",
+      "image": "",
+      "date": "2026-04-10T20:15:13.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bücher-Box in Lichtenberg zerstört - Bezirk spricht von Brandanschlag",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/buecherbox-obersee-brandanschlag.html",
+      "image": "",
+      "date": "2026-04-10T20:01:40.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Regionalliga Nordost: Altglienicke siegt in Halle",
       "description": "",
@@ -14,11 +47,11 @@
       "type": "rss"
     },
     {
-      "title": "Pergamonalter soll ab Frühjahr 2027 wieder zu sehen sein",
+      "title": "Pergamonaltar soll ab Frühjahr 2027 wieder zu sehen sein",
       "description": "",
       "url": "https://www.rbb24.de/kultur/beitrag/2026/04/pergamon-altar-museum-bauarbeiten.html",
       "image": "",
-      "date": "2026-04-10T19:32:33.000Z",
+      "date": "2026-04-10T19:32:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
@@ -47,33 +80,11 @@
       "type": "rss"
     },
     {
-      "title": "Basketball: Alba-Frauen im ersten Halbfinal-Spiel in Keltern chancenlos",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/basketball-dbbl-keltern-alba-erstes-halbfinalspiel.html",
-      "image": "",
-      "date": "2026-04-10T19:09:47.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "ABD'de OpenAI Üst Yöneticisi Altman'ın evine molotofkokteyliyle saldırı düzenlendi, şüpheli gözaltına alındı",
       "description": "ABD'de yapay zeka teknolojileri üreten OpenAI şirketinin Üst Yöneticisi (CEO) Sam Altman'ın California eyaletindeki evine molotofkokteyliyle saldırı düzenlendiği, şüphelinin gözaltına alındığı bildirildi.",
       "url": "https://www.aa.com.tr/tr/dunya/abdde-openai-ust-yoneticisi-altmanin-evine-molotofkokteyliyle-saldiri-duzenlendi-supheli-gozaltina-alindi/3901424",
       "image": "",
       "date": "2026-04-10T18:56:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BM: Batı Şeria'da İsrail'in aldığı askeri kararlar, mülteci kamplarındaki Filistinlileri etkiliyor",
-      "description": "BM Genel Sekreter Sözcüsü Stephane Dujarric, işgal altındaki Batı Şeria'da İsrail ordusunun bazı askeri görevlerin süresini uzatmasının, mülteci kamplarındaki Filistinlilerin durumunu etkilediğine dikkati çekti.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-bati-seriada-israilin-aldigi-askeri-kararlar-multeci-kamplarindaki-filistinlileri-etkiliyor/3901415",
-      "image": "",
-      "date": "2026-04-10T18:41:50.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-heidenheim-angstgegner-union.html",
       "image": "",
       "date": "2026-04-10T17:25:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Missbrauch im Maßregelvollzug: Kündigung von Ärzten gestoppt",
-      "description": "Im Maßregelvollzug in Brandenburg an der Havel soll ein besuchendes Kind missbraucht worden sein. Fristlose Kündigungen der ärztlichen Leitung sind inzwischen vom Tisch - doch das letzte Wort hat das Land noch nicht ganz gesprochen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/missbrauch-massregelvollzug-kuendigun-aerzte-gestoppt-brandenburg-havel.html",
-      "image": "",
-      "date": "2026-04-10T17:21:15.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
