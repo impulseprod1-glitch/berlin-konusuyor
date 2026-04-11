@@ -3,481 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Paneli | Berlin Konuşuyor</title>
-    <link rel="stylesheet" href="src/style.css">
-    <style>
-        :root {
-            --admin-bg: #050505;
-            --admin-card: rgba(15, 15, 15, 0.4);
-            --admin-border: rgba(255, 255, 255, 0.1);
-        }
-        .btn-edit-cancel {
-            margin-top: 10px;
-            background: #222 !important;
-            color: #fff !important;
-            display: none;
-        }
-        .admin-poll-hint {
-            font-size: 0.8rem;
-            color: #666;
-            margin-bottom: 15px;
-        }
-        body.admin-body {
-            background-color: var(--admin-bg);
-            background-image: radial-gradient(circle at top right, rgba(229, 9, 20, 0.05), transparent 400px);
-            color: #fff;
-            padding: 40px;
-            font-family: 'Inter', sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-        .admin-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 40px;
-            border-bottom: 1px solid var(--admin-border);
-            padding-bottom: 20px;
-        }
-        .admin-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-        @media (max-width: 900px) { .admin-grid { grid-template-columns: 1fr; } }
-
-        .admin-card {
-            background: var(--admin-card);
-            -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-            padding: 32px;
-            border-radius: 24px;
-            border: 1px solid var(--admin-border);
-            margin-bottom: 30px;
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
-        .admin-card:hover {
-            box-shadow: 0 16px 40px rgba(0,0,0,0.4);
-            border-color: rgba(229, 9, 20, 0.3);
-        }
-        .admin-card h2 { margin-top: 0; color: var(--accent); margin-bottom: 24px; font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em; }
-
-        .form-group { margin-bottom: 20px; }
-        label { display: block; margin-bottom: 8px; font-size: 0.85rem; color: #aaa; font-weight: 500; }
-        input, textarea, select {
-            width: 100%;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--admin-border);
-            color: #fff;
-            padding: 14px;
-            border-radius: 12px;
-            box-sizing: border-box;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.06);
-            box-shadow: 0 0 10px rgba(229, 9, 20, 0.2);
-        }
-        button.admin-btn {
-            background: var(--accent);
-            color: #fff;
-            border: none;
-            padding: 14px 24px;
-            border-radius: 99px;
-            font-weight: 600;
-            cursor: pointer;
-            width: 100%;
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 12px rgba(229, 9, 20, 0.2);
-        }
-        button.admin-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(229, 9, 20, 0.4);
-            filter: brightness(1.1);
-        }
-
-        .admin-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .stat-box {
-            background: var(--admin-card);
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-            padding: 24px;
-            border-radius: 20px;
-            text-align: center;
-            border: 1px solid var(--admin-border);
-            transition: transform 0.3s;
-        }
-        .stat-box:hover { transform: translateY(-5px); }
-        .stat-num { font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 4px; line-height: 1; }
-
-        /* Tab Navigation */
-        .admin-nav {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--admin-border);
-            padding-bottom: 16px;
-            overflow-x: auto;
-        }
-        .nav-tab {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid transparent;
-            color: #aaa;
-            padding: 10px 24px;
-            cursor: pointer;
-            font-weight: 600;
-            border-radius: 99px;
-            transition: all 0.3s;
-            white-space: nowrap;
-        }
-        .nav-tab.active {
-            background: var(--accent);
-            color: #fff;
-            border-color: var(--accent);
-            box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
-        }
-        .nav-tab:hover:not(.active) {
-            color: #fff;
-            background: rgba(255, 255, 255, 0.08);
-            border-color: var(--admin-border);
-        }
-
-        .tab-content { display: none; margin-top: 20px; }
-        .tab-content.active { display: block; animation: fadeIn 0.4s ease; }
-
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-
-        /* List Management Styles */
-        .data-list { margin-top: 20px; }
-        .data-item {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--admin-border);
-            border-radius: 16px;
-            padding: 16px 20px;
-            margin-bottom: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 15px;
-            transition: all 0.3s;
-        }
-        .data-item:hover { background: rgba(255, 255, 255, 0.04); border-color: rgba(255, 255, 255, 0.2); transform: translateX(4px); }
-        .item-info { flex: 1; min-width: 0; }
-        .item-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .item-meta { font-size: 0.8rem; color: #888; }
-        .item-actions { display: flex; gap: 8px; }
-
-        .action-btn {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--admin-border);
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 99px;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .action-btn:hover { background: rgba(255, 255, 255, 0.1); }
-        .action-delete { color: #ff4d4d; border-color: rgba(255, 77, 77, 0.3); background: rgba(255, 77, 77, 0.05); }
-        .action-delete:hover { background: rgba(255, 77, 77, 0.2); color: #fff; }
-
-        .export-section { margin-top: 40px; text-align: center; }
-
-        /* Verification List Styles */
-        .verification-container { margin-top: 20px; }
-        .verification-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--admin-border);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            transition: transform 0.3s;
-        }
-        .verification-card:hover { transform: translateX(4px); border-color: rgba(255, 255, 255, 0.15); }
-        .verification-info { flex: 1; }
-        .verification-type {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--accent);
-            margin-bottom: 6px;
-            font-weight: 700;
-        }
-        .verification-title { font-weight: 600; margin-bottom: 8px; font-size: 1.1rem; }
-        .verification-body { font-size: 0.9rem; color: #bbb; line-height: 1.5; }
-        .verification-actions { display: flex; gap: 10px; }
-
-        .v-btn {
-            border: none;
-            padding: 10px 20px;
-            border-radius: 99px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .v-btn:hover { transform: translateY(-2px); filter: brightness(1.1); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-        .v-btn-approve { background: #10b981; color: #fff; }
-        .v-btn-reject { background: #ef4444; color: #fff; }
-        .empty-list { color: #666; text-align: center; padding: 40px; font-style: italic; }
-
-        .accent-text { color: var(--accent); }
-        .flex-row-gap { display: flex; gap: 15px; align-items: center; }
-        .back-link { color: #aaa; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
-        .back-link:hover { color: #fff; }
-        .mt-20 { margin-top: 20px; }
-        .flex-col-gap { display: flex; flex-direction: column; gap: 12px; }
-        .btn-dark { background: rgba(255, 255, 255, 0.05); color: #fff; border: 1px solid var(--admin-border); }
-        .btn-dark:hover { background: rgba(255, 255, 255, 0.1); }
-    </style>
+    <title>Admin Hub Pro | Berlin Konuşuyor</title>
+    <!-- Premium Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="src/styles/admin.css">
 </head>
 <body class="admin-body">
-    <div class="admin-header">
-        <h1>Berlin Konuşuyor <span class="accent-text">Admin</span></h1>
-        <div class="flex-row-gap">
-            <button class="action-btn" id="exportData">Yedekle (JSON)</button>
-            <a href="/" class="back-link">← Siteye Dön</a>
+
+    <!-- ── SIDEBAR ── -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-header">
+            <a href="/" class="sidebar-logo">BERLIN<span>KONUŞUYOR</span></a>
         </div>
-    </div>
+        
+        <nav class="sidebar-nav">
+            <button class="nav-item active" data-tab="tab-summary">
+                <i class="fas fa-chart-pie"></i> Özet Dashboard
+            </button>
+            <button class="nav-item" data-tab="tab-news">
+                <i class="fas fa-newspaper"></i> Haber Yönetimi
+            </button>
+            <button class="nav-item" data-tab="tab-events">
+                <i class="fas fa-calendar-alt"></i> Etkinlikler
+            </button>
+            <button class="nav-item" data-tab="tab-community">
+                <i class="fas fa-users-cog"></i> Topluluk & Onay
+            </button>
+            <button class="nav-item" data-tab="tab-polls">
+                <i class="fas fa-poll"></i> Anket Yönetimi
+            </button>
+            <button class="nav-item" data-tab="tab-notifications">
+                <i class="fas fa-bell"></i> Bildirimler
+            </button>
+            <button class="nav-item" data-tab="tab-subscribers">
+                <i class="fas fa-envelope-open-text"></i> Aboneler
+            </button>
+        </nav>
 
-    <nav class="admin-nav">
-        <button class="nav-tab active" data-tab="tab-summary">Özet</button>
-        <button class="nav-tab" data-tab="tab-news">Haberler</button>
-        <button class="nav-tab" data-tab="tab-events">Etkinlikler</button>
-        <button class="nav-tab" data-tab="tab-community">Topluluk & Onay</button>
-        <button class="nav-tab" data-tab="tab-polls">Anketler</button>
-        <button class="nav-tab" data-tab="tab-notifications">Bildirimler</button>
-        <button class="nav-tab" data-tab="tab-subscribers">Aboneler</button>
-    </nav>
-
-    <!-- Tab: Özet -->
-    <div id="tab-summary" class="tab-content active">
-        <div class="admin-stats">
-            <div class="stat-box">
-                <div class="stat-num" id="statNews">0</div>
-                <div>Haber</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-num" id="statEvents">0</div>
-                <div>Etkinlik</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-num" id="statSubs">0</div>
-                <div>Abone</div>
-            </div>
+        <div class="sidebar-footer">
+            <button class="nav-item" id="exportData">
+                <i class="fas fa-download"></i> Yedekle (JSON)
+            </button>
+            <a href="/" class="nav-item" style="margin-top: 10px;">
+                <i class="fas fa-arrow-left"></i> Siteye Dön
+            </a>
         </div>
+    </aside>
 
-        <div class="admin-grid">
-            <div class="admin-card">
-                <h2>Bekleyen Onaylar Özet</h2>
-                <div id="miniVerificationList">
-                    <p class="empty-list">Bekleyen onay yok.</p>
+    <!-- ── MAIN CONTENT ── -->
+    <main class="admin-main">
+        <header class="main-header">
+            <div>
+                <h1 id="pageTitle">Komuta Merkezi</h1>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">Berlin'in nabzını buradan yönetin.</p>
+            </div>
+            
+            <!-- Antigravity OS Connection Indicator -->
+            <div id="agAdminStatus" class="ag-dashboard-status">
+                <span class="ag-status-dot active"></span>
+                <span id="agStatusText">SYSTEM ACTIVE: V3.0</span>
+            </div>
+        </header>
+
+        <!-- Tab: Özet -->
+        <div id="tab-summary" class="tab-content active">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-label">Toplam Haber</div>
+                    <div class="stat-value" id="statNews">0</div>
                 </div>
-                <button class="admin-btn mt-20" onclick="document.querySelector('[data-tab=tab-community]').click()">Hepsini Yönet</button>
+                <div class="stat-card">
+                    <div class="stat-label">Etkinlikler</div>
+                    <div class="stat-value" id="statEvents">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Aboneler</div>
+                    <div class="stat-value" id="statSubs">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Cihaz Erişimi</div>
+                    <div class="stat-value" id="statTokens">0</div>
+                </div>
             </div>
-            <div class="admin-card">
-                <h2>Hızlı İşlemler</h2>
-                <div class="flex-col-gap">
-                    <button class="admin-btn" onclick="document.querySelector('[data-tab=tab-news]').click()">Yeni Haber Ekle</button>
-                    <button class="admin-btn" onclick="document.querySelector('[data-tab=tab-events]').click()">Yeni Etkinlik Kaydet</button>
-                    <button class="admin-btn btn-dark" onclick="document.querySelector('[data-tab=tab-polls]').click()">Anket Oluştur</button>
+
+            <div style="display: grid; grid-template-columns: 1fr 320px; gap: 30px;">
+                <div class="admin-card">
+                    <h2>Bekleyen Onaylar (Hızlı Bakış)</h2>
+                    <div id="miniVerificationList">
+                        <p class="empty-list">Bekleyen onay yok.</p>
+                    </div>
+                </div>
+                <div class="admin-card">
+                    <h2>Sistem Notları</h2>
+                    <div style="background: rgba(0,242,255,0.05); padding: 20px; border-radius: 16px; border-left: 3px solid #00f2ff;">
+                        <p style="font-size: 0.85rem; line-height: 1.6;">
+                            <strong>Guardian Notu:</strong><br>
+                            Sistem şu an <code>localhost:8080</code> üzerinden Antigravity OS'e bağlı. Tüm kritik değişiklikler otonom olarak izleniyor.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Tab: Haberler -->
-    <div id="tab-news" class="tab-content">
-        <div class="admin-grid">
-            <div class="admin-card">
-                <h2 id="newsFormTitle">Yeni Haber Ekle</h2>
-                <form id="addNewsForm">
-                    <input type="hidden" id="newsId">
-                    <div class="form-group">
-                        <label>Başlık</label>
-                        <input type="text" id="newsTitle" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Kategori</label>
-                        <select id="newsCat">
-                            <option value="Güncel">Güncel</option>
-                            <option value="Yaşam">Yaşam</option>
-                            <option value="Ekonomi">Ekonomi</option>
-                            <option value="Kültür">Kültür</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Kaynak</label>
-                        <input type="text" id="newsSource">
-                    </div>
-                    <div class="form-group">
-                        <label>Resim (URL veya Dosya Yükle)</label>
-                        <div class="flex-col-gap">
-                            <input type="text" id="newsImg" placeholder="https://...">
-                            <input type="file" id="newsImgFile" accept="image/*" style="font-size: 0.8rem; background: none; border: none; padding: 0;">
+        <!-- Tab: Haberler -->
+        <div id="tab-news" class="tab-content">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div class="admin-card">
+                    <h2 id="newsFormTitle">Yeni Haber Ekle</h2>
+                    <form id="addNewsForm">
+                        <input type="hidden" id="newsId">
+                        <div class="form-group">
+                            <label>Başlık</label>
+                            <input type="text" id="newsTitle" required>
                         </div>
+                        <div class="form-group">
+                            <label>Kategori</label>
+                            <select id="newsCat">
+                                <option value="Güncel">Güncel</option>
+                                <option value="Yaşam">Yaşam</option>
+                                <option value="Ekonomi">Ekonomi</option>
+                                <option value="Kültür">Kültür</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Kaynak</label>
+                            <input type="text" id="newsSource" placeholder="Berlin Konuşuyor">
+                        </div>
+                        <div class="form-group">
+                            <label>Görsel URL</label>
+                            <input type="text" id="newsImg" placeholder="https://...">
+                            <input type="file" id="newsImgFile" style="margin-top: 10px; font-size: 0.8rem;">
+                        </div>
+                        <div class="form-group">
+                            <label>İçerik/Özet (TR)</label>
+                            <textarea id="newsSummary" rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="admin-btn" id="newsSubmitBtn">Haberi Yayınla</button>
+                        <button type="button" id="cancelEditNews" class="admin-btn btn-secondary" style="display:none; margin-top:10px;">İptal Et</button>
+                    </form>
+                </div>
+                <div class="admin-card">
+                    <h2>Mevcut Haberler</h2>
+                    <div id="newsList" class="data-list">
+                        <p class="empty-list">Haberler yükleniyor...</p>
                     </div>
-                    <div class="form-group">
-                        <label>İçerik/Özet (TR)</label>
-                        <textarea id="newsSummary" rows="6"></textarea>
-                    </div>
-                    <button type="submit" class="admin-btn" id="newsSubmitBtn">Haberi Yayınla</button>
-                    <button type="button" id="cancelEditNews" class="admin-btn btn-secondary btn-edit-cancel">Düzenlemeyi İptal Et</button>
-                </form>
-            </div>
-            <div class="admin-card">
-                <h2>Mevcut Haberler</h2>
-                <div id="newsList" class="data-list">
-                    <p class="empty-list">Haberler yükleniyor...</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Tab: Etkinlikler -->
-    <div id="tab-events" class="tab-content">
-        <div class="admin-grid">
-            <div class="admin-card">
-                <h2 id="eventFormTitle">Yeni Etkinlik Ekle</h2>
-                <form id="addEventForm">
-                    <input type="hidden" id="eventId">
-                    <div class="form-group">
-                        <label>Etkinlik Adı</label>
-                        <input type="text" id="eventTitle" required>
+        <!-- Tab: Etkinlikler -->
+        <div id="tab-events" class="tab-content">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div class="admin-card">
+                    <h2 id="eventFormTitle">Yeni Etkinlik Ekle</h2>
+                    <form id="addEventForm">
+                        <input type="hidden" id="eventId">
+                        <div class="form-group">
+                            <label>Etkinlik Adı</label>
+                            <input type="text" id="eventTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Tarih</label>
+                            <input type="date" id="eventDate">
+                        </div>
+                        <div class="form-group">
+                            <label>Mekan</label>
+                            <input type="text" id="eventVenue">
+                        </div>
+                        <div class="form-group">
+                            <label>Kategori</label>
+                            <input type="text" id="eventCat" placeholder="Örn: Konser">
+                        </div>
+                        <button type="submit" class="admin-btn" id="eventSubmitBtn">Etkinliği Kaydet</button>
+                        <button type="button" id="cancelEditEvent" class="admin-btn btn-secondary" style="display:none; margin-top:10px;">İptal Et</button>
+                    </form>
+                </div>
+                <div class="admin-card">
+                    <h2>Gelecek Etkinlikler</h2>
+                    <div id="eventsList" class="data-list">
+                        <p class="empty-list">Etkinlikler yükleniyor...</p>
                     </div>
-                    <div class="form-group">
-                        <label>Tarih</label>
-                        <input type="date" id="eventDate">
-                    </div>
-                    <div class="form-group">
-                        <label>Mekan</label>
-                        <input type="text" id="eventVenue">
-                    </div>
-                    <div class="form-group">
-                        <label>Kategori</label>
-                        <input type="text" id="eventCat" placeholder="Örn: Konser">
-                    </div>
-                    <button type="submit" class="admin-btn" id="eventSubmitBtn">Etkinliği Kaydet</button>
-                    <button type="button" id="cancelEditEvent" class="admin-btn btn-secondary btn-edit-cancel">Düzenlemeyi İptal Et</button>
-                </form>
-            </div>
-            <div class="admin-card">
-                <h2>Gelecek Etkinlikler</h2>
-                <div id="eventsList" class="data-list">
-                    <p class="empty-list">Etkinlikler yükleniyor...</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Tab: Topluluk & Onay -->
-    <div id="tab-community" class="tab-content">
-        <div class="admin-card">
-            <h2>Doğrulama Listesi (Bekleyen Onaylar)</h2>
-            <div id="verificationList" class="verification-container">
-                <p class="empty-list">Yükleniyor...</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tab: Anketler -->
-    <div id="tab-polls" class="tab-content">
-        <div class="admin-grid">
+        <!-- Tab: Onaylar -->
+        <div id="tab-community" class="tab-content">
             <div class="admin-card">
-                <h2>Yeni Anket Oluştur</h2>
-                <p class="admin-poll-hint">Yeni anket oluşturulduğunda eskisi arşivlenir.</p>
-                <form id="addPollForm">
-                    <div class="form-group">
-                        <label>Soru</label>
-                        <input type="text" id="pollQuestion" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Seçenek 1</label>
-                        <input type="text" id="pollOpt1" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Seçenek 2</label>
-                        <input type="text" id="pollOpt2" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Seçenek 3 (Opsiyonel)</label>
-                        <input type="text" id="pollOpt3">
-                    </div>
-                    <button type="submit" class="admin-btn">Anketi Başlat</button>
-                </form>
-            </div>
-            <div class="admin-card">
-                <h2>Anket Geçmişi & Sonuçlar</h2>
-                <div id="pollsList" class="data-list">
-                    <p class="empty-list">Anketler yükleniyor...</p>
+                <h2>Doğrulama Havuzu</h2>
+                <div id="verificationList" class="verification-container">
+                    <p class="empty-list">Yükleniyor...</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Tab: Aboneler -->
-    <div id="tab-subscribers" class="tab-content">
-        <div class="admin-card">
-            <h2>Bülten Aboneleri</h2>
-            <div id="subscribersList" class="data-list">
-                <p class="empty-list">Yükleniyor...</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tab: Bildirimler -->
-    <div id="tab-notifications" class="tab-content">
-        <div class="admin-grid">
-            <div class="admin-card">
-                <h2>Push Bildirim Gönder</h2>
-                <form id="pushForm">
-                    <div class="form-group">
-                        <label>Bildirim Başlığı</label>
-                        <input type="text" id="pushTitle" placeholder="Örn: Berlin'den Son Dakika!" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Mesaj İçeriği</label>
-                        <textarea id="pushBody" rows="3" placeholder="Bildirim metnini yazın..." required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>Bildirim Tipi</label>
-                        <select id="pushType">
-                            <option value="normal">Standart Haber</option>
-                            <option value="breaking">🚨 Son Dakika</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Tıklanınca Gidilecek URL (Opsiyonel)</label>
-                        <input type="text" id="pushUrl" placeholder="https://berlin-konusuyor.vercel.app/news/...">
-                    </div>
-                    <button type="submit" class="admin-btn" id="pushSubmitBtn">Bildirimi Gönder</button>
-                </form>
-            </div>
-            <div class="admin-card">
-                <h2>Cihaz İstatistikleri</h2>
-                <div class="stat-box">
-                    <div class="stat-num" id="statTokens">0</div>
-                    <div>Abone Cihaz (Token)</div>
+        <!-- Tab: Anketler -->
+        <div id="tab-polls" class="tab-content">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div class="admin-card">
+                    <h2>Yeni Anket Oluştur</h2>
+                    <form id="addPollForm">
+                        <div class="form-group">
+                            <label>Soru</label>
+                            <input type="text" id="pollQuestion" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Seçenek 1</label>
+                            <input type="text" id="pollOpt1" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Seçenek 2</label>
+                            <input type="text" id="pollOpt2" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Option 3 (Opsiyonel)</label>
+                            <input type="text" id="pollOpt3">
+                        </div>
+                        <button type="submit" class="admin-btn">Anketi Başlat</button>
+                    </form>
                 </div>
-                <p class="empty-list" style="padding: 20px; font-size: 0.8rem;">
-                    Bildirimler tüm aktif tarayıcı ve mobil yüklü cihazlara anında iletilir.
-                </p>
+                <div class="admin-card">
+                    <h2>Anket Geçmişi</h2>
+                    <div id="pollsList" class="data-list"></div>
+                </div>
             </div>
         </div>
-    </div>
+
+        <!-- Tab: Aboneler -->
+        <div id="tab-subscribers" class="tab-content">
+            <div class="admin-card">
+                <h2>Bülten Aboneleri (Toplu Liste)</h2>
+                <div id="subscribersList" class="data-list"></div>
+            </div>
+        </div>
+
+        <!-- Tab: Bildirimler -->
+        <div id="tab-notifications" class="tab-content">
+            <div style="display: grid; grid-template-columns: 1fr 400px; gap: 30px;">
+                <div class="admin-card">
+                    <h2>Push Bildirim Gönder</h2>
+                    <form id="pushForm">
+                        <div class="form-group">
+                            <label>Bildirim Başlığı</label>
+                            <input type="text" id="pushTitle" placeholder="Berlin'den Son Dakika!" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mesaj İçeriği</label>
+                            <textarea id="pushBody" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Bildirim Tipi</label>
+                            <select id="pushType">
+                                <option value="normal">Standart Haber</option>
+                                <option value="breaking">🚨 Son Dakika</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="admin-btn" id="pushSubmitBtn">Bildirimi Gönder</button>
+                    </form>
+                </div>
+                <div class="admin-card">
+                    <h2>Erişim Analizi</h2>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">Bildirim gönderildiğinde aşağıdaki cihazlara anında iletilecek.</p>
+                    <div style="text-align: center; padding: 30px; background: rgba(255,255,255,0.02); border-radius: 20px;">
+                        <i class="fas fa-mobile-alt" style="font-size: 2rem; color: var(--accent); margin-bottom: 10px;"></i>
+                        <div style="font-size: 2rem; font-weight: 800;" id="statTokens">0</div>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Aktif Token</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="src/admin.js"></script>
+</body>
+</html>
+>
 
     <script type="module" src="src/admin.js"></script>
 </body>

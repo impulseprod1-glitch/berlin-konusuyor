@@ -3,19 +3,57 @@ import { translations, currentLang } from '../utils/i18n.js';
 import { renderAIDashboard } from './dashboard.js';
 
 export const CATEGORY_IMAGES = {
-  politics: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80',
-  culture: 'https://images.unsplash.com/photo-1580655653885-65763b2597ad?w=800&q=80',
-  economy: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80',
-  lifestyle: 'https://images.unsplash.com/photo-1559564484-e484c2076b46?w=800&q=80',
-  default: 'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80'
+  politics: [
+    'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80',
+    'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&q=80',
+    'https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=800&q=80',
+    'https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?w=800&q=80'
+  ],
+  culture: [
+    'https://images.unsplash.com/photo-1580655653885-65763b2597ad?w=800&q=80',
+    'https://images.unsplash.com/photo-1499364615650-ec38552f4ba8?w=800&q=80',
+    'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80',
+    'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80'
+  ],
+  economy: [
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80',
+    'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=800&q=80'
+  ],
+  lifestyle: [
+    'https://images.unsplash.com/photo-1559564484-e484c2076b46?w=800&q=80',
+    'https://images.unsplash.com/photo-1444491741275-3747c53d95c4?w=800&q=80',
+    'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80',
+    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80'
+  ],
+  default: [
+    'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80',
+    'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+    'https://images.unsplash.com/photo-1502899576159-f224dc2349fa?w=800&q=80',
+    'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=80'
+  ]
 };
 
-export const PLACEHOLDER_IMG = CATEGORY_IMAGES.default;
+export const PLACEHOLDER_IMG = CATEGORY_IMAGES.default[0];
 export let globalNews = [];
 
 export function getNewsImage(article) {
   if (article.image && article.image.startsWith('http')) return article.image;
-  return CATEGORY_IMAGES[article.category] || CATEGORY_IMAGES.default;
+  
+  // Gelişmiş Keyword Eşleme
+  const title = (article.title || '').toLowerCase();
+  let category = article.category || 'default';
+  
+  if (title.includes('ekonomi') || title.includes('enflasyon') || title.includes('euro')) category = 'economy';
+  if (title.includes('sinema') || title.includes('sergi') || title.includes('konser')) category = 'culture';
+  if (title.includes('grev') || title.includes('siyaset') || title.includes('scholz')) category = 'politics';
+  if (title.includes('mekan') || title.includes('restoran') || title.includes('gezi')) category = 'lifestyle';
+
+  const categoryPool = CATEGORY_IMAGES[category] || CATEGORY_IMAGES.default;
+  const str = article.title || article.summary_tr || article.id || "berlin";
+  const index = Array.from(str).reduce((acc, char) => acc + char.charCodeAt(0), 0) % categoryPool.length;
+  return categoryPool[index];
 }
 
 export function formatDate(isoDate) {
@@ -49,67 +87,133 @@ export let currentEngineIndex = 0;
 export let currentEngineArticles = [];
 
 export function renderNews(articles, category = 'all') {
-  const container = document.getElementById('newsEngine') || document.getElementById('newsGrid');
+  const dashboardContainer = document.getElementById('newsEngine') || document.getElementById('newsGrid');
+  const premiumContainer = document.getElementById('premiumNewsEngine');
   const countSpan = document.getElementById('newsCount');
-  if (!container) return;
+  
+  if (!dashboardContainer) return;
 
   let filtered = category === 'all'
     ? articles
     : articles.filter(a => a.category === category);
     
-  // Limit to daily 10 headlines
-  filtered = filtered.slice(0, 10);
-  currentEngineArticles = filtered;
-  currentEngineIndex = 0;
+  // 1. Horizontal Dashboard (Metin Odaklı - Infinite Ticker)
+  const dashboardArticles = filtered.slice(0, 10);
+  
+  // Duplicate for seamless loop if enough articles
+  const tickerArticles = dashboardArticles.length > 3 
+    ? [...dashboardArticles, ...dashboardArticles] 
+    : dashboardArticles;
 
-  if (countSpan) {
-    countSpan.textContent = `Günün Öne Çıkan ${filtered.length} Haberi`;
+  dashboardContainer.innerHTML = tickerArticles.map((article, idx) => {
+    const rawTitle = article.summary_tr || article.title || '';
+    const globalIdx = globalNews.indexOf(article);
+    
+    return `
+      <article class="text-news-block reveal" data-action="open-news" data-index="${globalIdx}">
+        <div class="text-news-top">
+          <span class="text-news-category">${article.category || 'GÜNDEM'}</span>
+          <h3 class="text-news-title">${rawTitle}</h3>
+        </div>
+        <div class="text-news-footer">
+          <span class="text-news-source">${article.source}</span>
+          <a href="#" class="text-news-action">Oku <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  // Auto-scroll logic trigger
+  initTickerEngine(dashboardContainer);
+
+
+  // 2. Premium Discovery (Sonraki 6 haber)
+  if (premiumContainer) {
+    const premiumArticles = filtered.slice(10, 16);
+    renderPremiumNews(premiumArticles, premiumContainer);
   }
 
-  updateEngineUI();
+  if (countSpan) {
+    countSpan.textContent = `Berlin Rehberi: ${filtered.length} Aktif Gelişme`;
+  }
+
+  // Re-observe
+  if (window.revealObserver) {
+    dashboardContainer.querySelectorAll('.reveal').forEach(el => window.revealObserver.observe(el));
+  }
 }
 
-export function updateEngineUI() {
-  const container = document.getElementById('newsEngine') || document.getElementById('newsGrid');
-  if (!container || !currentEngineArticles) return;
-
-  if (currentEngineArticles.length === 0) {
-    container.innerHTML = `<div class="empty-state"><p>Bu kategoride haber bulunamadı.</p></div>`;
+export function renderPremiumNews(articles, container) {
+  if (articles.length === 0) {
+    container.innerHTML = `<div class="empty-state"><p>Bu bölümde henüz analiz bulunmuyor.</p></div>`;
     return;
   }
 
-  container.innerHTML = currentEngineArticles.map((article, index) => {
+  container.innerHTML = articles.map((article) => {
     const rawTitle = article.summary_tr || article.title || '';
     const safeTitle = rawTitle.replace(/"/g, '&quot;');
-    const timeAgo = getTimeAgo(article.date || new Date().toISOString());
     const globalIdx = globalNews.indexOf(article);
     const imgUrl = getNewsImage(article);
+    const readTime = calculateReadTime(article.content || rawTitle);
 
     return `
-      <article class="news-card" data-action="open-news" data-index="${globalIdx}">
-        <div class="news-card-img">
-          <img src="${imgUrl}" alt="${safeTitle}" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder.png';" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-        <div class="news-card-content">
-          <div class="news-meta">
-            <span class="news-source-tag">${article.source}</span>
-            <span class="news-read-time"><i class="far fa-clock"></i> ${timeAgo}</span>
-          </div>
-          <h3 class="news-card-title">${rawTitle}</h3>
-          <div class="news-card-actions">
-            <!-- Share button must stop propagation or be checked in event listener -->
-            <button class="action-btn share-trigger" style="z-index:10; position:relative;" data-action="share-news" data-title="${safeTitle}" title="Paylaş">
-              <i class="fas fa-share-alt"></i>
-            </button>
-            <button class="action-btn" title="Oku">
-              <i class="fas fa-arrow-right"></i>
-            </button>
+      <article class="premium-news-card reveal" data-action="open-news" data-index="${globalIdx}">
+        <div class="card-bg" style="background-image: url('${imgUrl}')"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <span class="card-category">${article.category || 'ANALİZ'}</span>
+          <h3 class="card-title">${rawTitle}</h3>
+          <p class="card-desc">${article.content || rawTitle}</p>
+          <div class="card-footer">
+            <div class="source-badge">
+              <div class="source-icon"><i class="fas fa-feather-alt"></i></div>
+              <span>${article.source}</span>
+            </div>
+            <span class="read-time"><i class="far fa-clock"></i> ${readTime} dk okuma</span>
           </div>
         </div>
       </article>
     `;
   }).join('');
+
+  // Re-observe elements if observer exists
+  if (window.revealObserver) {
+    container.querySelectorAll('.reveal').forEach(el => window.revealObserver.observe(el));
+  }
 }
+
+export function initTickerEngine(container) {
+  if (!container) return;
+  
+  let scrollPos = 0;
+  let isPaused = false;
+  let animationId = null;
+
+  function step() {
+    if (!isPaused) {
+      scrollPos += 0.8; // Speed of the ticker
+      
+      // Infinite loop check: if we scrolled half of the container content
+      if (scrollPos >= container.scrollWidth / 2) {
+        scrollPos = 0;
+      }
+      
+      container.style.transform = `translateX(-${scrollPos}px)`;
+    }
+    animationId = requestAnimationFrame(step);
+  }
+
+  // Cleanup previous
+  if (window._tickerId) cancelAnimationFrame(window._tickerId);
+  
+  container.addEventListener('mouseenter', () => isPaused = true);
+  container.addEventListener('mouseleave', () => isPaused = false);
+  
+  // Start engine
+  animationId = requestAnimationFrame(step);
+  window._tickerId = animationId;
+}
+
 
 
 export function renderTicker(articles) {
@@ -124,25 +228,7 @@ export function renderTicker(articles) {
 }
 
 export function renderHeroFeatured(article) {
-  const container = document.getElementById('heroFeaturedNews');
-  if (!container || !article) return;
-
-  container.innerHTML = `
-    <article class="news-card magnetic-card" data-action="open-news" data-index="0">
-      <div class="news-card-img" style="background-image: url('${getNewsImage(article)}')"></div>
-      <div class="news-card-content">
-        <div class="news-meta">
-          <span class="news-source-tag">${article.source}</span>
-          <span class="news-date">${formatDate(article.date)}</span>
-        </div>
-        <h3 class="news-card-title">${article.summary_tr || article.title}</h3>
-      </div>
-    </article>
-  `;
-
-  if (window.revealObserver) {
-    container.querySelectorAll('.reveal').forEach(el => window.revealObserver.observe(el));
-  }
+  // Hero featured kutusu kaldırıldı.
 }
 
 export async function fetchFallbackNews() {
@@ -154,7 +240,6 @@ export async function fetchFallbackNews() {
       globalNews = data.articles;
       renderNews(globalNews);
       renderTicker(globalNews);
-      renderHeroFeatured(globalNews[0]);
 
       if (data.insights && typeof renderAIDashboard === 'function') {
         renderAIDashboard(data.insights);
@@ -195,7 +280,6 @@ export async function loadNews() {
         globalNews = firestoreNews;
         renderNews(globalNews);
         renderTicker(globalNews);
-        if (globalNews.length > 0) renderHeroFeatured(globalNews[0]);
         if (window.initBerlinPulse) window.initBerlinPulse(globalNews);
       }
     }, (error) => {
@@ -258,6 +342,64 @@ export async function toggleBookmark(index, btnEl) {
   }
 }
 
+// ── Dynamic SEO Update ──
+function updateNewsMeta(article) {
+  if (!article) return;
+  const title = article.summary_tr || article.title;
+  const desc = (article.content || title).substring(0, 160);
+  const img = getNewsImage(article);
+  const url = `https://berlinkonusuyor.com/#!news/${article.id || ''}`;
+
+  document.title = `${title} — Berlin Konuşuyor`;
+  
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.setAttribute('content', desc);
+
+  // OG Tags
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute('content', title);
+
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.setAttribute('content', desc);
+
+  const ogImage = document.querySelector('meta[property="og:image"]');
+  if (ogImage) ogImage.setAttribute('content', img);
+
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  if (ogUrl) ogUrl.setAttribute('content', url);
+
+  // JSON-LD NewsArticle
+  let newsSchema = document.getElementById('newsEntrySchema');
+  if (!newsSchema) {
+    newsSchema = document.createElement('script');
+    newsSchema.id = 'newsEntrySchema';
+    newsSchema.type = 'application/ld+json';
+    document.head.appendChild(newsSchema);
+  }
+  
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": title,
+    "image": [img],
+    "datePublished": article.date || new Date().toISOString(),
+    "author": { "@type": "Organization", "name": "Berlin Konuşuyor" },
+    "publisher": { 
+      "@type": "Organization", 
+      "name": "Berlin Konuşuyor", 
+      "logo": { "@type": "ImageObject", "url": "https://berlinkonusuyor.com/icon-512.png" }
+    }
+  };
+  newsSchema.text = JSON.stringify(schemaData);
+
+  // Twitter Tags
+  const twTitle = document.querySelector('meta[property="twitter:title"]');
+  if (twTitle) twTitle.setAttribute('content', title);
+
+  const twImage = document.querySelector('meta[property="twitter:image"]');
+  if (twImage) twImage.setAttribute('content', img);
+}
+
 window.renderNews = renderNews;
 
 // ── Haber Modalı Mantığı & Deep Linking ──
@@ -277,8 +419,9 @@ window.openNewsModal = (index) => {
   document.getElementById('newsModalDesc').innerHTML = article.content || article.summary_tr || article.title;
   document.getElementById('newsModalImg').style.backgroundImage = `url('${getNewsImage(article)}')`;
   
-  const linkBtn = document.getElementById('newsModalLink');
   if (linkBtn) linkBtn.href = article.url || '#';
+
+  updateNewsMeta(article);
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -293,6 +436,13 @@ window.closeNewsModal = () => {
     // Deep Linking: Clear Hash
     if (window.location.hash.includes('!news/')) {
         window.history.pushState("", document.title, window.location.pathname + window.location.search);
+        // Reset Meta if needed (or let i18n handle it)
+        if (window.updateMeta && window.currentLang) {
+          window.updateMeta(window.currentLang);
+        }
+        // Remove article schema
+        const newsSchema = document.getElementById('newsEntrySchema');
+        if (newsSchema) newsSchema.remove();
     }
   }
 };

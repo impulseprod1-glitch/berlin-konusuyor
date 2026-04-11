@@ -20,10 +20,14 @@ import { initCookieBanner } from './features/legal.js';
 import { 
   initChatbot, initPolls, initShakeHistory, initSwipeToDismiss, 
   initCursorPremium, initParallax, initTiltEffects, initCounters, 
-  initMagneticButtons, initNewsletter, initMap, initPullToRefresh
+  initMagneticButtons, initNewsletter, initPullToRefresh
 } from './features/extras.js';
+import { initMap } from './features/map.js';
 import { initNotifications, requestNotificationPermission } from './features/notifications.js';
+import { auth } from './firebase-config.js';
+import { initBridge } from './features/bridge.js';
 import './features/pulse.js';
+
 
 // Setup Intersection Observer on global window object so modules can reuse it
 const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
@@ -42,8 +46,12 @@ function startGlobalObserving() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Phase 1: Bridge to Antigravity OS
+    initBridge();
+    
     // Basic UI Setup
     initLenis();
+
     initSplash();
     initTheme();
     initLangSwitcher();
@@ -167,8 +175,66 @@ document.addEventListener('click', (e) => {
     case 'reject-cookies':
       if (window.closeCookieBanner) window.closeCookieBanner();
       break;
+    case 'toggle-map-filter':
+      // This is now handled in map.js but kept here for potential future delegation
+      break;
     case 'scroll-to-top':
       if (window.scrollToTop) window.scrollToTop(e);
       break;
   }
+});
+
+// ── Premium Interactions (Magnetic & Tilt) ──────────
+function initPremiumInteractions() {
+  // Magnetic Buttons
+  document.addEventListener('mousemove', (e) => {
+    const magnets = document.querySelectorAll('.magnetic-btn');
+    magnets.forEach((btn) => {
+      const bound = btn.getBoundingClientRect();
+      const x = e.clientX - (bound.left + bound.width / 2);
+      const y = e.clientY - (bound.top + bound.height / 2);
+      
+      const distance = Math.sqrt(x * x + y * y);
+      const maxDistance = 80;
+
+      if (distance < maxDistance) {
+        const moveX = (x / maxDistance) * 15;
+        const moveY = (y / maxDistance) * 15;
+        btn.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.05)`;
+      } else {
+        btn.style.transform = '';
+      }
+    });
+  });
+
+  // 3D Tilt for Premium Cards
+  const tiltCards = document.querySelectorAll('.premium-news-card');
+  tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const bound = card.getBoundingClientRect();
+      const x = (e.clientX - bound.left) / bound.width;
+      const y = (e.clientY - bound.top) / bound.height;
+      
+      const tiltX = (y - 0.5) * 10;
+      const tiltY = (x - 0.5) * -10;
+      
+      card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-10px) scale(1.02)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+}
+
+// Re-init when news is rendered
+const originalRenderNews = window.renderNews;
+window.renderNews = (articles, category) => {
+  if (originalRenderNews) originalRenderNews(articles, category);
+  setTimeout(initPremiumInteractions, 100);
+};
+
+// Initial call
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(initPremiumInteractions, 2000); // Give time for first render
 });

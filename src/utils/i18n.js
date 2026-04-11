@@ -62,8 +62,15 @@ export const translations = {
     map_tag: "Keşfet",
     map_title: "İnteraktif Şehir Haritası",
     map_desc: "Önemli lokasyonları, konsoloslukları ve Berlin'in ikonik mekanlarını harita üzerinde inceleyin.",
+    cat_official: "Resmi",
+    cat_housing: "Konut",
+    cat_culture: "Kültür",
+    cat_food: "Yeme İçme",
+    cat_transit: "Ulaşım",
     events_cal_tag: "Takvim",
     events_cal_title: "Yaklaşan Etkinlikler",
+    section_deep_dive: "Derin Bakış",
+    deep_dive_title: "Haftalık Analiz & Görüşler",
     listen_news: "Dinle"
   },
   de: {
@@ -127,9 +134,16 @@ export const translations = {
     map_tag: "Entdecken",
     map_title: "Interaktiver Stadtplan",
     map_desc: "Entdecken Sie wichtige Orte, Konsulate und ikonische Berliner Schauplätze auf der Karte.",
+    cat_official: "Behörden",
+    cat_housing: "Wohnen",
+    cat_culture: "Kultur",
+    cat_food: "Essen",
+    cat_transit: "Verkehr",
     events_cal_tag: "Kalender",
     events_cal_title: "Anstehende Veranstaltungen",
     events_cal_desc: "Was ist dieses Wochenende in Berlin los?",
+    section_deep_dive: "Tiefer Einblick",
+    deep_dive_title: "Wöchentliche Analysen & Einblicke",
     listen_news: "Hören"
   },
   en: {
@@ -193,9 +207,16 @@ export const translations = {
     map_tag: "Explore",
     map_title: "Interactive City Map",
     map_desc: "Explore important locations, consulates, and iconic Berlin spots on the map.",
+    cat_official: "Official",
+    cat_housing: "Housing",
+    cat_culture: "Culture",
+    cat_food: "Food & Drink",
+    cat_transit: "Transit",
     events_cal_tag: "Calendar",
     events_cal_title: "Upcoming Events",
     events_cal_desc: "What's happening in Berlin this weekend?",
+    section_deep_dive: "Deep Dive",
+    deep_dive_title: "Weekly Analysis & Insights",
     listen_news: "Listen"
   },
 };
@@ -244,7 +265,19 @@ export function updateMeta(lang) {
 
   const ogDesc = document.querySelector('meta[property="og:description"]');
   if (ogDesc) ogDesc.setAttribute('content', t.meta_desc);
+
+  // hreflang updates
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => {
+    const lang = link.getAttribute('hreflang');
+    if (lang === 'x-default') {
+      link.setAttribute('href', 'https://berlinkonusuyor.com/');
+    } else {
+      link.setAttribute('href', `https://berlinkonusuyor.com/?lang=${lang}`);
+    }
+  });
 }
 
 // Global register for HTML inline events
 window.setLanguage = setLanguage;
+window.updateMeta = updateMeta;
+window.currentLang = currentLang;

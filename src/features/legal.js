@@ -4,7 +4,7 @@ export const legalDocs = {
       <h2>Impressum (Künye)</h2>
       <p><strong>Site Sahibi / Sorumlu:</strong> [İSİM/ŞİRKET ADI]</p>
       <p><strong>Adres:</strong> [ADRES - ALMANYA]</p>
-      <p><strong>İletişim:</strong> E-posta: hello@berlinkonusuyor.com | Tel: [TELEFON]</p>
+      <p><strong>İletişim:</strong> E-posta: berlinkonusuyor@outlook.de | Tel: [TELEFON]</p>
       <h3>Hukuki Sorumluluk (Haftung für Inhalte)</h3>
       <p>Hizmet sağlayıcı olarak TMG § 7 Abs.1 uyarınca kendi içeriklerimizden sorumluyuz. TMG §§ 8 ila 10 uyarınca, iletilen veya saklanan yabancı bilgileri izlemek veya yasa dışı faaliyete işaret eden durumları araştırmakla yükümlü değiliz.</p>
       <h3>Telif Hakkı</h3>
@@ -14,7 +14,7 @@ export const legalDocs = {
       <h2>Gizlilik Politikası (DSGVO)</h2>
       <p>Veri koruma önceliğimizdir. Verileriniz AB Veri Koruma Yönetmeliği (GDPR/DSGVO) uyarınca işlenmektedir.</p>
       <h3>1. Veri Sorumlusu</h3>
-      <p>[İSİM/ŞİRKET ADI], Berlin, E-posta: hello@berlinkonusuyor.com</p>
+      <p>[İSİM/ŞİRKET ADI], Berlin, E-posta: berlinkonusuyor@outlook.de</p>
       <h3>2. Firebase & Barındırma</h3>
       <p>Sitemiz Firebase (Google Cloud) altyapısını kullanmaktadır. Veriler güvenli Google sunucularında saklanmaktadır. Auth (Giriş) ve Firestore (Veritabanı) işlemleri bu kapsamdadır.</p>
       <h3>3. Çerezler (Cookies)</h3>
@@ -29,7 +29,7 @@ export const legalDocs = {
       <p><strong>Angaben gemäß § 5 TMG</strong></p>
       <p>[NAME/FIRMA]</p>
       <p>[STRASSE, PLZ, BERLIN]</p>
-      <p><strong>Kontakt:</strong> E-Mail: hello@berlinkonusuyor.com | Tel: [TELEFON]</p>
+      <p><strong>Kontakt:</strong> E-Mail: berlinkonusuyor@outlook.de | Tel: [TELEFON]</p>
       <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
       <p>[NAME DER PERSON]</p>
       <h3>Streitschlichtung</h3>
@@ -50,7 +50,7 @@ export const legalDocs = {
       <p><strong>According to § 5 TMG (Germany)</strong></p>
       <p>[NAME/COMPANY]</p>
       <p>[ADDRESS, BERLIN]</p>
-      <p><strong>Contact:</strong> Email: hello@berlinkonusuyor.com | Tel: [PHONE]</p>
+      <p><strong>Contact:</strong> Email: berlinkonusuyor@outlook.de | Tel: [PHONE]</p>
       <h3>Copyright</h3>
       <p>The contents of these pages are subject to German copyright law. Reproduction, processing, distribution, or any form of commercialization requires written consent.</p>
     `,

@@ -2,10 +2,8 @@ name: Otomatik Haber Guncelleme
 
 on:
   schedule:
-    # Her saat başı 0. dakikada çalışır (Cron formatı)
-    # Örnek: '0 * * * *' = Her saat başı
-    # Örnek: '*/30 * * * *' = Her 30 dakikada bir
-    - cron: '0 * * * *'
+    # Her 2 Saatte Bir Çalışır
+    - cron: '0 */2 * * *'
   
   # İhtiyaç duyduğunuzda GitHub arayüzünden manuel bir butona basarak da çalıştırabilmenizi sağlar
   workflow_dispatch:
@@ -34,6 +32,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NEWSDATA_API_KEY: ${{ secrets.NEWSDATA_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: node scripts/fetch-news.mjs
 
       - name: Değişiklikleri Kaydet ve Repoya Gönder (Commit & Push)

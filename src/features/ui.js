@@ -166,17 +166,7 @@ export function initServiceWorker() {
     }
   }
 
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(registration => {
-          // SW Registered
-        })
-        .catch(err => {
-          console.error('❌ SW Failed', err);
-        });
-    });
-  }
+  // Service worker is now automatically registered by vite-plugin-pwa (injectRegister: 'auto')
 }
 
 export function initTheme() {

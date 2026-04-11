@@ -50,9 +50,9 @@ export function initPodcastsUI() {
     mainAudio.addEventListener('timeupdate', () => {
       const cur = mainAudio.currentTime;
       const dur = mainAudio.duration;
-      currentTimeEl.innerText = formatTime(cur);
-      if (dur) {
-        totalTimeEl.innerText = formatTime(dur);
+      if (currentTimeEl) currentTimeEl.innerText = formatTime(cur);
+      if (dur && progressFill) {
+        if (totalTimeEl) totalTimeEl.innerText = formatTime(dur);
         progressFill.style.width = `${(cur / dur) * 100}%`;
       }
     });
@@ -65,7 +65,9 @@ export function initPodcastsUI() {
     progressBg?.addEventListener('click', (e) => {
       const rect = progressBg.getBoundingClientRect();
       const pos = (e.clientX - rect.left) / rect.width;
-      mainAudio.currentTime = pos * mainAudio.duration;
+      if (mainAudio.duration) {
+        mainAudio.currentTime = pos * mainAudio.duration;
+      }
     });
   }
 }
@@ -115,10 +117,10 @@ function updatePlayBtnIcon() {
   if(!playPauseBtn) return;
   if (isCurrentlyPlaying) {
     playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
-    playPauseBtn.classList.add('playing');
+    podcastPlayer?.classList.add('is-playing');
   } else {
     playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
-    playPauseBtn.classList.remove('playing');
+    podcastPlayer?.classList.remove('is-playing');
   }
 }
 

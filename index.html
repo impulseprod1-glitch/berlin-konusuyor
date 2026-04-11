@@ -9,6 +9,7 @@
   <meta name="description" id="metaDesc" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için profesyonel dijital medya platformu.">
   <meta name="keywords" content="Berlin haberleri, Berlin Türk toplumu, gurbetçi rehberi, Berlin sokak röportajları, Berlin yaşam, Berlin etkinlik rehberi">
   <meta name="author" content="Antigravity">
+  <link rel="canonical" href="https://berlinkonusuyor.com/">
 
   <!-- PWA Metadata & iOS Enhancements -->
   <link rel="manifest" href="/manifest.json">
@@ -21,23 +22,23 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" id="ogUrl" content="https://berlin-konusuyor.vercel.app/">
+  <meta property="og:url" id="ogUrl" content="https://berlinkonusuyor.com/">
   <meta property="og:title" id="ogTitle" content="Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz">
   <meta property="og:description" id="ogDescription" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi.">
-  <meta property="og:image" id="ogImage" content="https://berlin-konusuyor.vercel.app/icon-512.png">
+  <meta property="og:image" id="ogImage" content="https://berlinkonusuyor.com/icon-512.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" id="twitterUrl" content="https://berlin-konusuyor.vercel.app/">
+  <meta property="twitter:url" id="twitterUrl" content="https://berlinkonusuyor.com/">
   <meta property="twitter:title" id="twitterTitle" content="Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz">
   <meta property="twitter:description" id="twitterDescription" content="Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi.">
-  <meta property="twitter:image" id="twitterImage" content="https://berlin-konusuyor.vercel.app/icon-512.png">
+  <meta property="twitter:image" id="twitterImage" content="https://berlinkonusuyor.com/icon-512.png">
 
   <!-- Multilingual (hreflang) -->
-  <link rel="alternate" hreflang="tr" href="https://berlin-konusuyor.vercel.app/?lang=tr" />
-  <link rel="alternate" hreflang="de" href="https://berlin-konusuyor.vercel.app/?lang=de" />
-  <link rel="alternate" hreflang="en" href="https://berlin-konusuyor.vercel.app/?lang=en" />
-  <link rel="alternate" hreflang="x-default" href="https://berlin-konusuyor.vercel.app/" />
+  <link rel="alternate" hreflang="tr" href="https://berlinkonusuyor.com/?lang=tr" />
+  <link rel="alternate" hreflang="de" href="https://berlinkonusuyor.com/?lang=de" />
+  <link rel="alternate" hreflang="en" href="https://berlinkonusuyor.com/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://berlinkonusuyor.com/" />
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -45,14 +46,50 @@
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     "name": "Berlin Konuşuyor",
-    "url": "https://berlin-konusuyor.vercel.app/",
-    "logo": "https://berlin-konusuyor.vercel.app/icon-512.png",
+    "url": "https://berlinkonusuyor.com/",
+    "logo": "https://berlinkonusuyor.com/icon-512.png",
     "sameAs": [
       "https://youtube.com/@berlinkonusuyortv",
       "https://www.instagram.com/berlin.konusuyor/",
       "https://www.tiktok.com/@berlinkonusuyor"
     ],
     "description": "Berlin'deki Türk toplumu için bağımsız dijital medya platformu."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://berlinkonusuyor.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://berlinkonusuyor.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Haberler",
+      "item": "https://berlinkonusuyor.com/#haberler"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Rehber",
+      "item": "https://berlinkonusuyor.com/#rehber"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Topluluk",
+      "item": "https://berlinkonusuyor.com/#topluluk"
+    }]
   }
   </script>
 
@@ -83,6 +120,11 @@
 
   <!-- ═══════════════ PREMIUM BACKGROUND ═══════════════ -->
   <div class="ambient-bg" id="ambientBg"></div>
+  <div class="ambient-backdrops" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
   <!-- ═══════════════ CURSOR GLOW ═══════════════ -->
   <div class="cursor-glow" id="cursorGlow"></div>
@@ -136,7 +178,13 @@
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
       <button id="loginBtn" class="nav-login-btn magnetic-btn">Giriş Yap</button>
+      <!-- Antigravity OS Connection Indicator -->
+      <div id="agConnectionIndicator" class="ag-status-badge" title="Antigravity OS Bağlı">
+        <span class="ag-status-dot"></span>
+        <span class="ag-status-text">AG-V3.0</span>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
+
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -155,17 +203,19 @@
   <!-- ═══════════════ HERO ═══════════════ -->
   <section class="hero" id="hero">
     <div class="hero-container">
-      <div class="hero-content">
-        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Dijital Medya Platformu</p>
-        <h1 class="hero-title">
-          <span class="hero-line" data-i18n="hero_line1">Berlin'in Nabzı:</span>
-          <span class="hero-line hero-line-accent" data-i18n="hero_line2">Gerçek Hikayeler.</span>
-        </h1>
-        <p class="hero-sub" data-i18n="hero_sub">Sokak röportajları, güncel haberler ve şehir rehberi — hepsi bir arada.</p>
-        <a href="#haberler" class="hero-cta magnetic-btn" data-i18n="hero_cta">Keşfet</a>
-      </div>
-      <div class="hero-featured-wrapper reveal" id="heroFeaturedNews">
-        <!-- JS tarafından doldurulacak -->
+      <div class="hero-glass-core reveal-small">
+        <div class="hero-content">
+          <p class="hero-eyebrow" data-i18n="hero_eyebrow">Bağımsız Dijital Medya Hub</p>
+          <h1 class="hero-title">
+            <span class="hero-line" data-i18n="hero_line1">Berlin'in Nabzı:</span>
+            <span class="hero-line hero-line-accent" data-i18n="hero_line2">Kayıpsız Yayın.</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero_sub">Sokak röportajları, derinlemesine analizler ve modern şehir rehberi.</p>
+          <div class="hero-actions">
+            <a href="#haberler" class="hero-cta magnetic-btn" data-i18n="hero_cta">Keşfet</a>
+            <a href="#roportajlar" class="hero-secondary-cta magnetic-btn"><i class="fas fa-play"></i> İzle</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="hero-scroll-indicator">
@@ -174,421 +224,406 @@
   </section>
 
 
+
   <!-- Section Wave Divider -->
   <div class="section-wave">
     <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1440,40 L1440,60 L0,60 Z" fill="var(--bg-primary)"/></svg>
   </div>
+
+  <!-- ═══════════════ YAKLAŞAN ETKİNLİKLER (ÖNE ÇIKAN) ═══════════════ -->
+  <section class="upcoming-event-section section-padding" id="yaklasan-etkinlikler" style="padding-top: 0; padding-bottom: 20px;">
+    <div class="upcoming-event-container reveal">
+      <div class="upcoming-event-glass">
+        <div class="ue-badge"><i class="fas fa-star"></i> Öne Çıkan Etkinlik</div>
+        <div class="ue-content">
+          <div class="ue-text-content">
+            <h2 class="ue-title"><span class="highlight">BERLİN & HAMBURG</span><br>TEKNOLOJİ VE YETKİNLİK BULUŞMALARI</h2>
+            <p class="ue-desc">Savunma Sanayii Başkanlığı ve Savunma Sanayii Akademi liderliğinde Türkiye’nin önde gelen Savunma Sanayi şirketleriyle tanışma fırsatı! Staj, iş imkanları ve sektörel gelişmeler sizi bekliyor.</p>
+            <div class="ue-details">
+              <div class="ue-detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="ue-detail-text">
+                  <strong>18 Nisan 2026 - Berlin</strong>
+                  <span>Hotel Berlin, Lützowpl. 17, 10785</span>
+                </div>
+              </div>
+              <div class="ue-detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="ue-detail-text">
+                  <strong>19 Nisan 2026 - Hamburg</strong>
+                  <span>Radisson Blu, Congressplatz 2, D-20355</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ue-action-panel">
+            <div class="ue-deadline">
+              <i class="fas fa-hourglass-half"></i> Son Başvuru: <strong>15 Nisan 2026</strong>
+            </div>
+            <a href="https://forms.gle/gDgMJ36m3Hqj85jg7" target="_blank" rel="noopener" class="ue-cta magnetic-btn">
+              Hemen Kayıt Ol <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Decorative Glow -->
+        <div class="ue-glow-1"></div>
+        <div class="ue-glow-2"></div>
+      </div>
+    </div>
+  </section>
 
   <!-- ═══════════════ SON HABERLER (Dinamik) ═══════════════ -->
-  <section class="news-section section-padding" id="haberler">
-    <div class="container">
-      <div class="section-header reveal">
+  <section class="news-dashboard-section section-padding" id="haberler">
+    <div class="news-dashboard-container">
+      
+      <!-- DASHBOARD HEADER -->
+      <div class="dashboard-header reveal">
         <span class="section-tag" data-i18n="section_news">Gündem</span>
         <h2 class="section-title" data-i18n="news_title">Berlin'de Neler Oluyor?</h2>
-
-        <!-- ── GÜNÜN YORUMU (SHORTS) ──────────────── -->
-        <div class="daily-shorts-container reveal" style="margin-top: 30px;">
-          <div class="shorts-video-wrapper">
-            <iframe src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A" title="Berlin Konuşuyor - Günün Yorumu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
-          </div>
-          <div class="shorts-info">
-            <div class="live-badge"><span class="pulsate-dot"></span> BERLİN GÜNDEMİ</div>
-            <h3 class="shorts-title">Bugün Berlin'de Neler Oldu?</h3>
-            <p class="shorts-desc">Kısa ve öz: Berlin'deki önemli gelişmeleri ve haberlerin perde arkasını sizin için 1 dakikada özetledim.</p>
-            <a href="#newsEngine" class="magnetic-btn shorts-btn" aria-label="Haberi Oku">Haberlere Göz At <i class="fas fa-arrow-down"></i></a>
-          </div>
-        </div>
-
-        <!-- ── Berlin Pulse (AI Focus) ──────────────── -->
-        <div class="berlin-pulse-container" id="berlinPulse" style="margin-top: 40px;">
-          <!-- AI bubbles will be injected here -->
-        </div>
-
-        <div class="news-filters-wrapper" style="margin-top: 20px;">
-          <div class="news-filters" id="newsFilters">
-            <button class="filter-btn active" data-category="all" data-i18n="filter_all">Tümü</button>
-            <button class="filter-btn" data-category="politics" data-i18n="filter_politics">Siyaset</button>
-            <button class="filter-btn" data-category="culture" data-i18n="filter_culture">Kültür</button>
-            <button class="filter-btn" data-category="economy" data-i18n="filter_economy">Ekonomi</button>
-            <button class="filter-btn" data-category="lifestyle" data-i18n="filter_lifestyle">Yaşam</button>
-          </div>
-        </div>
-        <div class="news-meta-info" style="margin-top: 10px;">
-          <span class="news-count" id="newsCount"></span>
-          <span class="news-badge" id="newsSource">Öne Çıkanlar</span>
-        </div>
+        <p class="dashboard-subtitle">Önemli başlıklar, yapay zeka özetleri ve canlı yorumlar.</p>
       </div>
 
-      <div class="news-catalog-grid" id="newsEngine">
-        <!-- Skeleton loaders initially -->
-        <div class="skeleton-card" style="width: 100%; height: 400px; border-radius: 24px;"></div>
-        <div class="skeleton-card" style="width: 100%; height: 400px; border-radius: 24px;"></div>
-        <div class="skeleton-card" style="width: 100%; height: 400px; border-radius: 24px;"></div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════ ISTATISTIKLER ═══════════════ -->
-  <section class="section" id="statsBar">
-    <div class="stats-grid reveal">
-      <div class="stat-item glass-panel">
-        <h3 class="stat-number" data-target="150000" data-suffix="+">0</h3>
-        <p class="stat-label" data-i18n="stat_reach">Aylık Erişim</p>
-      </div>
-      <div class="stat-item glass-panel">
-        <h3 class="stat-number" data-target="500" data-suffix="">0</h3>
-        <p class="stat-label" data-i18n="stat_videos">Video</p>
-      </div>
-      <div class="stat-item glass-panel">
-        <h3 class="stat-number" data-target="45000" data-suffix="+">0</h3>
-        <p class="stat-label" data-i18n="stat_subscribers">Abone</p>
-      </div>
-      <div class="stat-item glass-panel">
-        <h3 class="stat-number" data-target="3" data-suffix="">0</h3>
-        <p class="stat-label" data-i18n="stat_languages">Dil</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ YOUTUBE KANALI ═══════════════ -->
-  <section class="section section-dark" id="roportajlar">
-    <div class="section-header reveal">
-      <span class="section-tag" data-i18n="interviews_tag">Video</span>
-      <h2 class="section-title" data-i18n="interviews_title">Röportajlar</h2>
-    </div>
-    <div class="youtube-section reveal">
-      <div class="yt-main-grid">
-        <div class="yt-player-container reveal">
-          <div class="yt-player-glow"></div>
-          <iframe
-            id="ytPlayer"
-            src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A"
-            title="Berlin Konuşuyor TV"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            loading="lazy"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="yt-info-card glass-panel reveal">
-          <div class="yt-card-header">
-            <div class="live-badge">
-              <span class="pulsate-dot"></span> LIVE
+      <!-- BENTO GRID LAYOUT -->
+      <div class="dashboard-bento-grid">
+        
+        <!-- LEFT COLUMN: NEWS FEED -->
+        <div class="bento-main-feed reveal">
+          <div class="news-filters-wrapper">
+            <div class="news-filters" id="newsFilters">
+              <button class="filter-btn active" data-category="all" data-i18n="filter_all">Tümü</button>
+              <button class="filter-btn" data-category="politics" data-i18n="filter_politics">Siyaset</button>
+              <button class="filter-btn" data-category="culture" data-i18n="filter_culture">Kültür</button>
+              <button class="filter-btn" data-category="economy" data-i18n="filter_economy">Ekonomi</button>
+              <button class="filter-btn" data-category="lifestyle" data-i18n="filter_lifestyle">Yaşam</button>
             </div>
-            <span class="yt-channel-meta">24/7 Berlin Info</span>
+            <div class="news-meta-info glass-badge">
+              <span class="news-count" id="newsCount"></span>
+              <span class="news-badge" id="newsSource">✓ Doğrulanmış Kaynaklar</span>
+            </div>
           </div>
-          <h3 class="yt-title"><i class="fab fa-youtube color-red"></i> Berlin Konuşuyor TV</h3>
-          <p class="yt-desc" data-i18n="yt_desc">Sokak röportajları, Berlin yaşamı ve kişisel deneyimlerimi paylaştığım kanalıma hoş geldiniz.</p>
 
-          <a href="https://www.youtube.com/@BerlinKonusuyor" target="_blank" rel="noopener" class="yt-subscribe-btn magnetic-btn">
-            <span data-i18n="yt_subscribe">KANALIMA ABONE OLUN</span> <i class="fas fa-arrow-right"></i>
-          </a>
+          <div class="horizontal-flow-wrapper">
+            <div class="news-horizontal-track" id="newsEngine">
+              <!-- JS tarafından metin odaklı haber blokları buraya basılacak -->
+            </div>
+            <div class="horizontal-nav-hint">
+              <span><i class="fas fa-arrow-left"></i> Kaydır</span>
+              <span>Sürükle <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
         </div>
+
+        <!-- RIGHT COLUMN: SHORTS & AI PULSE -->
+        <div class="bento-sidebar reveal">
+          
+          <!-- GÜNÜN YORUMU (SHORTS) WIDGET -->
+          <div class="shorts-widget glass-panel">
+            <div class="widget-header">
+              <div class="live-badge"><span class="pulsate-dot"></span> LIVE GÜNDEM</div>
+            </div>
+            <div class="shorts-phone-frame">
+              <iframe src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A" title="Berlin Konuşuyor - Günün Yorumu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <div class="shorts-widget-info">
+              <h3 class="shorts-widget-title">Bugün Neler Oldu?</h3>
+              <p class="shorts-widget-desc">Berlin gündeminin arka planını 1 dakikada özetliyorum.</p>
+              <a href="#roportajlar" class="shorts-btn">Tüm Videolar <i class="fas fa-play"></i></a>
+            </div>
+          </div>
+
+          <!-- AI PULSE WIDGET -->
+          <div class="berlin-pulse-widget glass-panel">
+            <div class="widget-header">
+              <h4><i class="fas fa-bolt color-accent"></i> AI Berlin Insight</h4>
+            </div>
+            
+            <div class="compact-dashboard">
+              <div class="compact-weather">
+                <span class="weather-temp" id="berlinTemp">—</span> | <span class="weather-desc" id="weatherDesc">...</span>
+              </div>
+              <div class="compact-clock">
+                <i class="far fa-clock"></i> <span id="berlinClock">--:--:--</span>
+              </div>
+            </div>
+            <div class="compact-brief">
+              <p id="aiBriefText" class="text-sm color-secondary">Gelişmeler analiz ediliyor...</p>
+            </div>
+
+            <div class="berlin-pulse-container" id="berlinPulse" style="margin-top: 15px;">
+              <!-- AI bubbles will be injected here -->
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- ═══════════════ BERLİN DERİN BAKIŞ (Premium Discovery) ═══════════════ -->
+  <section class="premium-discovery-section section-padding" id="kesfet">
+    <div class="container overflow-hidden">
+      <div class="section-header reveal text-center" style="max-width: 800px; margin: 0 auto 50px;">
+        <span class="section-tag" data-i18n="section_deep_dive">Derin Bakış</span>
+        <h2 class="section-title" data-i18n="deep_dive_title">Haftalık Analiz & Görüşler</h2>
+        <p class="section-desc">Berlin'in kültürel dokusu, yaşam tarzı ve ekonomi dünyasına daha yakından bir bakış.</p>
       </div>
 
-      <!-- Discovery Ribbon (Dinamik) -->
-      <div class="yt-discovery-ribbon" id="podcastGrid">
-        <!-- Podcast kartları main.js loadPodcasts() tarafından buraya yüklenir -->
+      <div class="premium-magazine-grid" id="premiumNewsEngine">
+        <!-- JS tarafından Cinematic kartlar buraya yüklenecek -->
+        <div class="skeleton-card-premium"></div>
+        <div class="skeleton-card-premium"></div>
+        <div class="skeleton-card-premium"></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ AI DASHBOARD WIDGETS ═══════════════ -->
-  <section class="ai-dashboard" id="dashboard">
-    <div class="dashboard-container">
-      <div class="dashboard-header reveal">
-        <div class="ai-pulse"></div>
-        <h2 class="dashboard-title" data-i18n="ai_dashboard_title">Berlin AI Insight</h2>
-        <div class="dashboard-status">
-          <span class="status-dot"></span>
-          <span class="status-text">LIVE</span>
+
+
+  <!-- ═══════════════ ŞEHİR & KEŞİF BÖLÜMÜ (City Life) ═══════════════ -->
+  <div id="sehir-kesif">
+    <!-- ISTATISTIKLER -->
+    <section class="section" id="statsBar">
+      <div class="stats-grid reveal">
+        <div class="stat-item glass-panel">
+          <h3 class="stat-number" data-target="150000" data-suffix="+">0</h3>
+          <p class="stat-label" data-i18n="stat_reach">Aylık Erişim</p>
+        </div>
+        <div class="stat-item glass-panel">
+          <h3 class="stat-number" data-target="500" data-suffix="">0</h3>
+          <p class="stat-label" data-i18n="stat_videos">Video</p>
+        </div>
+        <div class="stat-item glass-panel">
+          <h3 class="stat-number" data-target="45000" data-suffix="+">0</h3>
+          <p class="stat-label" data-i18n="stat_subscribers">Abone</p>
+        </div>
+        <div class="stat-item glass-panel">
+          <h3 class="stat-number" data-target="3" data-suffix="">0</h3>
+          <p class="stat-label" data-i18n="stat_languages">Dil</p>
         </div>
       </div>
-      <div class="dashboard-grid reveal">
+    </section>
 
-        <!-- Widget 1: Hava Durumu & Vibe -->
-        <div class="widget widget-weather">
-          <div class="widget-glow"></div>
-          <div class="widget-header">
-            <span class="widget-icon">🌤️</span>
-            <span class="widget-title" data-i18n="widget_weather_title">Hava Durumu & Vibe</span>
-          </div>
-          <div class="widget-content">
-            <div class="weather-main">
-              <span class="weather-temp" id="berlinTemp">—</span>
-              <span class="weather-temp weather-pipe">|</span>
-              <span class="weather-desc" id="weatherDesc">Yükleniyor...</span>
-            </div>
-            <div class="ai-advice" id="aiWeatherAdvice">Berlin'in nabzını hissediyoruz...</div>
-          </div>
-          <div class="widget-shimmer"></div>
-        </div>
-
-        <!-- Widget 2: AI Haber Özeti -->
-        <div class="widget widget-brief ai-summary-card">
-          <div class="widget-glow"></div>
-          <div class="widget-header">
-            <span class="widget-icon">🧠</span>
-            <span class="widget-title" data-i18n="widget_brief_title">AI Haber Özeti</span>
-          </div>
-          <div class="widget-content">
-            <p class="ai-brief-text" id="aiBriefText">Günün öne çıkan gelişmeleri analiz ediliyor...</p>
-          </div>
-          <div class="widget-footer">
-            <span class="widget-badge">Powered by Gemini AI</span>
-          </div>
-          <div class="widget-shimmer"></div>
-        </div>
-
-        <!-- Widget 3: Berlin Saati -->
-        <div class="widget widget-time">
-          <div class="widget-glow"></div>
-          <div class="widget-header">
-            <span class="widget-icon">⏰</span>
-            <span class="widget-title" data-i18n="widget_time_title">Berlin Saati</span>
-          </div>
-          <div class="widget-content">
-            <div class="clock-display">
-              <span class="clock-time" id="berlinClock">--:--:--</span>
-              <span class="clock-zone">CET · Europe/Berlin</span>
-            </div>
-            <p class="clock-vibe" data-i18n="widget_time_desc">Berlin'de hayat devam ediyor.</p>
-          </div>
-          <div class="widget-shimmer"></div>
-        </div>
-
+    <!-- BERLİN REHBERİ -->
+    <section class="section" id="rehber">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="guide_tag">Rehber</span>
+        <h2 class="section-title" data-i18n="guide_title">Berlin Rehberi</h2>
       </div>
-    </div>
-  </section>
+      <div class="bento-grid reveal">
+        <a href="#" class="bento-item bento-large group" aria-label="Berlin Ev Bulma Rehberi">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" loading="lazy" role="img" aria-label="Berlin'de tipik bir bina ve sokak görünümü"></div>
+          <div class="bento-content">
+            <div class="bento-icon"><i class="fas fa-home"></i></div>
+            <h3 class="bento-title" data-i18n="guide_housing">Ev Bulma</h3>
+            <p class="bento-desc" data-i18n="guide_housing_desc">Kiralık ev arama, başvuru süreci ve ipuçları.</p>
+          </div>
+        </a>
+        <a href="#" class="bento-item bento-tall group" aria-label="Berlin Resmi İşlemler Rehberi">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1560969184-10fe8719e047?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Berlin'in resmi binaları ve Türk konsolosluğu"></div>
+          <div class="bento-content">
+            <div class="bento-icon"><i class="fas fa-file-signature"></i></div>
+            <h3 class="bento-title" data-i18n="guide_official">Resmi İşlemler</h3>
+            <p class="bento-desc" data-i18n="guide_official_desc">Anmeldung, vize, çalışma izni ve vatandaşlık süreçleri.</p>
+          </div>
+        </a>
+        <a href="#" class="bento-item group">
+          <div class="bento-bg" style="background-color: var(--accent);"></div>
+          <div class="bento-content">
+            <div class="bento-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h3 class="bento-title" data-i18n="guide_events">Etkinlikler</h3>
+            <p class="bento-desc">Haftalık kültür ve sanat ajandası.</p>
+          </div>
+        </a>
+        <a href="#" class="bento-item bento-wide group" aria-label="Berlin Ulaşım Rehberi">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1587396677465-98317351dfdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Berlin metrosu (U-Bahn) sarı treni"></div>
+          <div class="bento-content">
+            <div class="bento-icon"><i class="fas fa-train"></i></div>
+            <h3 class="bento-title" data-i18n="guide_transport">Ulaşım</h3>
+            <p class="bento-desc" data-i18n="guide_transport_desc">U-Bahn, S-Bahn bilet çeşitleri ve rotalar.</p>
+          </div>
+        </a>
+        <a href="#" class="bento-item group">
+          <div class="bento-bg" style="background-color: var(--card-bg);"></div>
+          <div class="bento-content">
+            <div class="bento-icon"><i class="fas fa-briefcase"></i></div>
+            <h3 class="bento-title" data-i18n="guide_jobs">İş Bulmak</h3>
+            <p class="bento-desc">Mülakat teknikleri ve staj.</p>
+          </div>
+        </a>
+        <a href="#" class="bento-item group" aria-label="Berlin Yeme İçme Rehberi">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Berlin'de popüler bir restoran ve yemek masası"></div>
+          <div class="bento-content">
+            <div class="bento-icon"><i class="fas fa-utensils"></i></div>
+            <h3 class="bento-title">Yeme & İçme</h3>
+            <p class="bento-desc">Nerede ne yenir?</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Interactive City Map Section -->
+      <div class="map-container reveal" style="margin-top: 40px;">
+        <div class="map-header">
+          <span class="section-tag" data-i18n="map_tag">Keşfet</span>
+          <h3 class="map-title" data-i18n="map_title">İnteraktif Şehir Haritası</h3>
+          <p class="map-desc" data-i18n="map_desc">Resmi kurumları, konut bölgelerini ve sosyal mekanları kategori bazlı keşfedin.</p>
+        </div>
+        
+        <div class="map-filters-container reveal">
+          <button class="map-filter-btn" data-action="locate-me" id="locateMeBtn" style="color:var(--accent);" aria-label="Konumumu Bul" title="Konumumu Bul"><i class="fas fa-location-arrow"></i></button>
+          <button class="map-filter-btn active" data-filter="all">Tümü</button>
+          <button class="map-filter-btn" data-filter="official"><i class="fas fa-file-signature"></i> <span data-i18n="cat_official">Resmi</span></button>
+          <button class="map-filter-btn" data-filter="housing"><i class="fas fa-home"></i> <span data-i18n="cat_housing">Konut</span></button>
+          <button class="map-filter-btn" data-filter="culture"><i class="fas fa-landmark"></i> <span data-i18n="cat_culture">Kültür</span></button>
+          <button class="map-filter-btn" data-filter="food"><i class="fas fa-utensils"></i> <span data-i18n="cat_food">Yeme İçme</span></button>
+          <button class="map-filter-btn" data-filter="transit"><i class="fas fa-train"></i> <span data-i18n="cat_transit">Ulaşım</span></button>
+        </div>
+
+        <div class="map-wrapper glass-panel">
+          <div id="berlinMap"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETKİNLİKLER -->
+    <section class="section" id="etkinlikler">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="events_cal_tag">Takvim</span>
+        <h2 class="section-title" data-i18n="events_cal_title">Yaklaşan Etkinlikler</h2>
+        <p class="news-auto-badge" data-i18n="events_cal_desc">Berlin'de bu hafta sonu neler var?</p>
+      </div>
+      <div class="events-carousel reveal">
+        <div class="events-track" id="eventsTrack">
+          <!-- Events main.js tarafından dinamik olarak yüklenir -->
+        </div>
+      </div>
+    </section>
+
+    <!-- İŞ İLANLARI (JOB BOARD) -->
+    <section class="section" id="is-ilanlari">
+      <div class="section-header reveal">
+        <span class="section-tag">Kariyer</span>
+        <h2 class="section-title">Berlin İş İlanları</h2>
+        <p class="news-auto-badge">Topluluk tarafından paylaşılan güncel ilanlar</p>
+      </div>
+
+      <div class="jobs-container reveal">
+        <div class="jobs-toolbar">
+          <div class="jobs-filters" id="jobFilters">
+            <button class="job-filter-btn active" data-type="all">Tümü</button>
+            <button class="job-filter-btn" data-type="Tam Zamanlı">Tam Zamanlı</button>
+            <button class="job-filter-btn" data-type="Yarı Zamanlı">Yarı Zamanlı</button>
+            <button class="job-filter-btn" data-type="Minijob">Minijob</button>
+          </div>
+          <button class="post-job-btn magnetic-btn" data-action="open-job-modal">İlan Ver</button>
+        </div>
+
+        <div class="jobs-grid" id="jobsGrid">
+          <!-- JS Skeleton -->
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- Section Wave Divider -->
   <div class="section-wave section-wave-up">
     <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
   </div>
 
-  <!-- ═══════════════ HAFTALIK ANKET (POLLS) ═══════════════ -->
-  <section class="section section-dark" id="anket">
-    <div class="section-header reveal">
-      <span class="section-tag">Topluluk</span>
-      <h2 class="section-title">Haftalık Berlin Anketi</h2>
-      <p class="news-auto-badge">Sesinizi duyurun, sonuçları anında görün</p>
-    </div>
-
-    <div class="poll-container reveal">
-      <div class="poll-card glass-panel" id="pollCard">
-        <h3 class="poll-question" id="pollQuestion">Yükleniyor...</h3>
-        <div class="poll-options" id="pollOptions">
-          <!-- Dinamik seçenekler buraya gelecek -->
-        </div>
-        <div class="poll-footer">
-          <span class="poll-total" id="pollTotal">Toplam 0 oy</span>
-          <button class="poll-reset-btn hidden" id="pollReset">Tekrar Oy Ver</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Wave Divider -->
-  <div class="section-wave">
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1440,40 L1440,60 L0,60 Z" fill="var(--bg-primary)"/></svg>
-  </div>
-
-  <!-- ═══════════════ İŞ İLANLARI (JOB BOARD) ═══════════════ -->
-  <section class="section" id="is-ilanlari">
-    <div class="section-header reveal">
-      <span class="section-tag">Kariyer</span>
-      <h2 class="section-title">Berlin İş İlanları</h2>
-      <p class="news-auto-badge">Topluluk tarafından paylaşılan güncel ilanlar</p>
-    </div>
-
-    <div class="jobs-container reveal">
-      <div class="jobs-toolbar">
-        <div class="jobs-filters" id="jobFilters">
-          <button class="job-filter-btn active" data-type="all">Tümü</button>
-          <button class="job-filter-btn" data-type="Tam Zamanlı">Tam Zamanlı</button>
-          <button class="job-filter-btn" data-type="Yarı Zamanlı">Yarı Zamanlı</button>
-          <button class="job-filter-btn" data-type="Minijob">Minijob</button>
-        </div>
-        <button class="post-job-btn magnetic-btn" data-action="open-job-modal">İlan Ver</button>
-      </div>
-
-      <div class="jobs-grid" id="jobsGrid">
-        <div class="skeleton-job"></div>
-        <div class="skeleton-job"></div>
-        <div class="skeleton-job"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ ETKİNLİKLER ═══════════════ -->
-  <section class="section" id="etkinlikler">
-    <div class="section-header reveal">
-      <span class="section-tag" data-i18n="events_cal_tag">Takvim</span>
-      <h2 class="section-title" data-i18n="events_cal_title">Yaklaşan Etkinlikler</h2>
-      <p class="news-auto-badge" data-i18n="events_cal_desc">Berlin'de bu hafta sonu neler var?</p>
-    </div>
-    <div class="events-carousel reveal">
-      <div class="events-track" id="eventsTrack">
-        <!-- Events main.js tarafından dinamik olarak yüklenir -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ BERLİN REHBERİ ═══════════════ -->
-  <section class="section" id="rehber">
-    <div class="section-header reveal">
-      <span class="section-tag" data-i18n="guide_tag">Rehber</span>
-      <h2 class="section-title" data-i18n="guide_title">Berlin Rehberi</h2>
-    </div>
-    <div class="bento-grid reveal">
-      <a href="#" class="bento-item bento-large group">
-        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" loading="lazy"></div>
-        <div class="bento-content">
-          <div class="bento-icon"><i class="fas fa-home"></i></div>
-          <h3 class="bento-title" data-i18n="guide_housing">Ev Bulma</h3>
-          <p class="bento-desc" data-i18n="guide_housing_desc">Kiralık ev arama, başvuru süreci ve ipuçları.</p>
-        </div>
-      </a>
-      
-      <a href="#" class="bento-item bento-tall group">
-        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1560969184-10fe8719e047?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-        <div class="bento-content">
-          <div class="bento-icon"><i class="fas fa-file-signature"></i></div>
-          <h3 class="bento-title" data-i18n="guide_official">Resmi İşlemler</h3>
-          <p class="bento-desc" data-i18n="guide_official_desc">Anmeldung, vize, çalışma izni ve vatandaşlık süreçleri detaylı rehber.</p>
-        </div>
-      </a>
-
-      <a href="#" class="bento-item group">
-        <div class="bento-bg" style="background-color: var(--accent);"></div>
-        <div class="bento-content">
-          <div class="bento-icon"><i class="fas fa-calendar-alt"></i></div>
-          <h3 class="bento-title" data-i18n="guide_events">Etkinlikler</h3>
-          <p class="bento-desc">Haftalık kültür ve sanat ajandası.</p>
-        </div>
-      </a>
-
-      <a href="#" class="bento-item bento-wide group">
-        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1587396677465-98317351dfdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-        <div class="bento-content">
-          <div class="bento-icon"><i class="fas fa-train"></i></div>
-          <h3 class="bento-title" data-i18n="guide_transport">Ulaşım</h3>
-          <p class="bento-desc" data-i18n="guide_transport_desc">U-Bahn, S-Bahn, bilet çeşitleri ve rotalar hakkında ihtiyacınız olan her şey.</p>
-        </div>
-      </a>
-
-      <a href="#" class="bento-item group">
-        <div class="bento-bg" style="background-color: var(--card-bg);"></div>
-        <div class="bento-content">
-          <div class="bento-icon"><i class="fas fa-briefcase"></i></div>
-          <h3 class="bento-title" data-i18n="guide_jobs">İş Bulmak</h3>
-          <p class="bento-desc">Mülakat teknikleri ve staj.</p>
-        </div>
-      </a>
-
-      <a href="#" class="bento-item group">
-        <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');"></div>
-        <div class="bento-content">
-          <div class="bento-icon"><i class="fas fa-utensils"></i></div>
-          <h3 class="bento-title">Yeme & İçme</h3>
-          <p class="bento-desc">Nerede ne yenir?</p>
-        </div>
-      </a>
-    </div>
-
-    <!-- Interactive City Map Section -->
-    <div class="map-container reveal">
-      <div class="map-header">
-        <span class="section-tag" data-i18n="map_tag">Keşfet</span>
-        <h3 class="map-title" data-i18n="map_title">İnteraktif Şehir Haritası</h3>
-        <p class="map-desc" data-i18n="map_desc">Önemli lokasyonları, konsoloslukları ve Berlin'in ikonik mekanlarını harita üzerinde inceleyin.</p>
-      </div>
-      <div class="map-wrapper glass-panel">
-        <div id="berlinMap"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Wave Divider -->
-  <div class="section-wave section-wave-up">
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z" fill="var(--bg-primary)"/></svg>
-  </div>
-
-
-  <!-- ═══════════════ TOPLULUK FORUMU & SOHBET ═══════════════ -->
-  <section class="section section-padding" id="topluluk" style="background: var(--bg-tertiary);">
-    <div class="section-header reveal">
-      <span class="section-tag">Topluluk</span>
-      <h2 class="section-title">Canlı Sohbet & Soru-Cevap</h2>
-      <p class="news-auto-badge">Berlinliler Yardımlaşıyor ve Konuşuyor</p>
-    </div>
+  <!-- ═══════════════ TOPLULUK MERKEZİ (Community Hub) ═══════════════ -->
+  <div id="topluluk-merkezi" style="background: var(--bg-tertiary);">
     
-    <div class="community-grid container reveal">
+    <!-- HAFTALIK ANKET (POLLS) -->
+    <section class="section section-dark" id="anket">
+      <div class="section-header reveal">
+        <span class="section-tag">Topluluk Görüşü</span>
+        <h2 class="section-title">Haftalık Berlin Anketi</h2>
+        <p class="news-auto-badge">Sesinizi duyurun, sonuçları anında görün</p>
+      </div>
+      <div class="poll-container reveal">
+        <div class="poll-card glass-panel" id="pollCard">
+          <h3 class="poll-question" id="pollQuestion">Yükleniyor...</h3>
+          <div class="poll-options" id="pollOptions">
+            <!-- Dinamik seçenekler buraya gelecek -->
+          </div>
+          <div class="poll-footer">
+            <span class="poll-total" id="pollTotal">Toplam 0 oy</span>
+            <button class="poll-reset-btn hidden" id="pollReset">Tekrar Oy Ver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOHBET VEYA FORUM (Soru Cevap) -->
+    <section class="section section-padding" id="topluluk">
+      <div class="section-header reveal">
+        <span class="section-tag">Forum</span>
+        <h2 class="section-title">Canlı Sohbet & Soru-Cevap</h2>
+        <p class="news-auto-badge">Berlinliler Yardımlaşıyor ve Konuşuyor</p>
+      </div>
       
-      <!-- ── CHAT ROOMS COMPONENT ──────────────── -->
-      <div class="chat-container glass-panel">
-        <div class="chat-header">
-          <div class="chat-tabs" id="chatTabs">
-            <button class="chat-tab-btn active" data-room="genel">Genel</button>
-            <button class="chat-tab-btn" data-room="kreuzberg">Kreuzberg</button>
-            <button class="chat-tab-btn" data-room="mitte">Mitte</button>
-            <button class="chat-tab-btn" data-room="neukolln">Neukölln</button>
+      <div class="community-grid container reveal">
+        <!-- ── CHAT ROOMS COMPONENT ──────────────── -->
+        <div class="chat-container glass-panel">
+          <div class="chat-header">
+            <div class="chat-tabs" id="chatTabs">
+              <button class="chat-tab-btn active" data-room="genel">Genel</button>
+              <button class="chat-tab-btn" data-room="kreuzberg">Kreuzberg</button>
+              <button class="chat-tab-btn" data-room="mitte">Mitte</button>
+              <button class="chat-tab-btn" data-room="neukolln">Neukölln</button>
+            </div>
+            <div class="chat-status"><span class="pulsate-dot"></span> <span id="chatRoomStatus">Genel Odası Canlı</span></div>
           </div>
-          <div class="chat-status"><span class="pulsate-dot"></span> <span id="chatRoomStatus">Genel Odası Canlı</span></div>
-        </div>
-        
-        <div class="chat-messages" id="chatMessages">
-          <div class="chat-empty-state">
-            <i class="fas fa-comments"></i>
-            <p>Seçili odaya bağlanılıyor...</p>
+          
+          <div class="chat-messages" id="chatMessages">
+            <div class="chat-empty-state">
+              <i class="fas fa-comments"></i>
+              <p>Seçili odaya bağlanılıyor...</p>
+            </div>
+          </div>
+          
+          <form class="chat-input-area" id="chatForm">
+            <input type="file" id="chatFileInput" accept="image/*" style="display: none;" onchange="handleChatImage(event)">
+            <button type="button" class="chat-attach-btn" onclick="document.getElementById('chatFileInput').click()"><i class="fas fa-image"></i></button>
+            <input type="text" id="chatInput" placeholder="Mesajınızı yazın..." autocomplete="off">
+            <button type="submit" class="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="chat-auth-barrier hidden" id="chatAuthBarrier">
+            Sohbete katılmak için <button data-action="open-login" style="background:transparent; border:none; color:var(--accent); font-weight:bold; cursor:pointer;">Giriş Yapmalısınız</button>
           </div>
         </div>
-        
-        <form class="chat-input-area" id="chatForm">
-          <input type="file" id="chatFileInput" accept="image/*" style="display: none;" onchange="handleChatImage(event)">
-          <button type="button" class="chat-attach-btn" onclick="document.getElementById('chatFileInput').click()"><i class="fas fa-image"></i></button>
-          <input type="text" id="chatInput" placeholder="Mesajınızı yazın..." autocomplete="off">
-          <button type="submit" class="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
-        </form>
-        <div class="chat-auth-barrier hidden" id="chatAuthBarrier">
-          Sohbete katılmak için <button data-action="open-login" style="background:transparent; border:none; color:var(--accent); font-weight:bold; cursor:pointer;">Giriş Yapmalısınız</button>
+
+        <div class="qa-wrapper">
+          <div class="qa-toolbar">
+            <div class="qa-filters" id="qaFilters">
+              <button class="qa-filter-btn active" data-category="all">Tümü</button>
+              <button class="qa-filter-btn" data-category="Ev & Kira">🏠 Ev</button>
+              <button class="qa-filter-btn" data-category="Vize">🛂 Vize</button>
+              <button class="qa-filter-btn" data-category="Ulaşım">🚇 Ulaşım</button>
+              <button class="qa-filter-btn" data-category="İş">💼 İş</button>
+            </div>
+          </div>
+          <form id="qaForm" class="qa-form glass-panel" style="margin-bottom: 20px;">
+            <input type="text" id="qaName" class="qa-input" placeholder="İsminiz (İsteğe bağlı)" />
+            <textarea id="qaQuestion" class="qa-textarea" placeholder="Topluluğa bir soru sorun..." required></textarea>
+            <div class="qa-form-footer" style="display:flex; justify-content:space-between; align-items:center;">
+              <select id="qaCategory" class="qa-category-select" aria-label="Kategori Seçimi">
+                <option value="Genel">💬 Genel</option>
+                <option value="Ev & Kira">🏠 Ev & Kira</option>
+                <option value="Vize">🛂 Vize</option>
+                <option value="Ulaşım">🚇 Ulaşım</option>
+                <option value="İş">💼 İş</option>
+              </select>
+              <button type="submit" class="qa-submit magnetic-btn">Soruyu Gönder</button>
+            </div>
+          </form>
+          <div id="qaFeed" class="qa-feed">
+            <!-- JS ile doldurulacak -->
+          </div>
         </div>
       </div>
-      <div class="qa-toolbar">
-        <div class="qa-filters" id="qaFilters">
-          <button class="qa-filter-btn active" data-category="all">Tümü</button>
-          <button class="qa-filter-btn" data-category="Ev & Kira">🏠 Ev</button>
-          <button class="qa-filter-btn" data-category="Vize">🛂 Vize</button>
-          <button class="qa-filter-btn" data-category="Ulaşım">🚇 Ulaşım</button>
-          <button class="qa-filter-btn" data-category="İş">💼 İş</button>
-          <button class="qa-filter-btn" data-category="Genel">💬 Genel</button>
-        </div>
-        <div class="qa-sort">
-          <button class="qa-sort-btn active" data-sort="newest"><i class="fas fa-clock"></i> Yeni</button>
-          <button class="qa-sort-btn" data-sort="popular"><i class="fas fa-fire"></i> Popüler</button>
-        </div>
-      </div>
-      <form id="qaForm" class="qa-form glass-panel">
-        <input type="text" id="qaName" class="qa-input" placeholder="İsminiz (İsteğe bağlı)" />
-        <textarea id="qaQuestion" class="qa-textarea" placeholder="Topluluğa bir soru sorun..." required></textarea>
-        <div class="qa-form-footer">
-          <select id="qaCategory" class="qa-category-select" aria-label="Kategori Seçimi">
-            <option value="Genel">💬 Genel</option>
-            <option value="Ev & Kira">🏠 Ev & Kira</option>
-            <option value="Vize">🛂 Vize</option>
-            <option value="Ulaşım">🚇 Ulaşım</option>
-            <option value="İş">💼 İş</option>
-          </select>
-          <button type="submit" class="qa-submit magnetic-btn">Soruyu Gönder</button>
-        </div>
-      </form>
-      <div id="qaFeed" class="qa-feed">
-        <!-- JS ile doldurulacak -->
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- ═══════════════ NEWSLETTER ═══════════════ -->
   <section class="newsletter-section" id="newsletter">
@@ -598,7 +633,7 @@
         <span class="newsletter-tag" data-i18n="newsletter_tag">Bülten</span>
         <h2 class="newsletter-title" data-i18n="newsletter_title">Berlin'den haberdar ol</h2>
         <p class="newsletter-desc" data-i18n="newsletter_desc">En güncel haberler, etkinlikler ve rehber içeriklerini doğrudan e-postanıza gönderin.</p>
-        <form class="newsletter-form" id="newsletterForm" action="https://formsubmit.co/hello@berlinkonusuyor.com" method="POST">
+        <form class="newsletter-form" id="newsletterForm" action="https://formsubmit.co/berlinkonusuyor@outlook.de" method="POST">
           <input type="email" name="email" class="newsletter-input" placeholder="E-posta adresiniz" data-i18n-placeholder="newsletter_placeholder" required />
           <button type="submit" class="newsletter-btn magnetic-btn" data-i18n="newsletter_btn">Abone Ol</button>
         </form>
@@ -619,6 +654,10 @@
     <div class="footer-top">
       <div class="footer-brand">
         <span class="nav-logo">BERLIN<span class="logo-accent">KONUŞUYOR</span></span>
+        <address class="footer-address">
+          <p><i class="fas fa-envelope"></i> berlinkonusuyor@outlook.de</p>
+          <p><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
+        </address>
         <p class="footer-tagline" data-i18n="footer_tagline">Berlin'in nabzını tutan dijital medya platformu.</p>
       </div>
       <div class="footer-socials">
@@ -722,29 +761,28 @@
     </div>
   </div>
 
-  <!-- ═══════════════ PODCAST AUDIO PLAYER ═══════════════ -->
-  <div id="podcastPlayer" class="podcast-player glass-panel">
+  <!-- ═══════════════ PODCAST FLOATING ISLAND PLAYER ═══════════════ -->
+  <div id="podcastPlayer" class="podcast-floating-island glass-panel">
+    <div class="island-progress-bar" id="progressBg">
+      <div class="island-progress-fill" id="progressFill"></div>
+    </div>
     <button class="player-close" data-action="close-podcast" aria-label="Kapat">&times;</button>
     <div class="player-info">
       <div id="playerThumb" class="player-thumb"></div>
       <div class="player-text">
-        <span class="player-title" id="playerTitle">Yükleniyor...</span>
-        <span class="player-desc" id="playerDesc">Berlin Konuşuyor</span>
+        <h4 id="playerTitle">Yükleniyor...</h4>
+        <p id="playerDesc">Berlin Konuşuyor</p>
       </div>
     </div>
     <div class="player-controls">
-      <button class="player-btn" data-action="skip-podcast" data-skip="-10" aria-label="Geri Sarı 10s" title="10s Geri"><i class="fas fa-undo-alt"></i></button>
-      <button class="player-btn play-pause-btn" id="playPauseBtn" data-action="toggle-play" aria-label="Oynat/Durdur" title="Oynat/Durdur"><i class="fas fa-play"></i></button>
-      <button class="player-btn" data-action="skip-podcast" data-skip="30" aria-label="İleri Sarı 30s" title="30s İleri"><i class="fas fa-redo-alt"></i></button>
+      <button class="player-btn" onclick="window.skipPodcast(-10)" title="10s Geri"><i class="fas fa-undo-alt"></i></button>
+      <button class="player-btn main-play-btn" id="playPauseBtn" onclick="window.togglePlay()"><i class="fas fa-play"></i></button>
+      <button class="player-btn" onclick="window.skipPodcast(30)" title="30s İleri"><i class="fas fa-redo-alt"></i></button>
     </div>
-    <div class="player-progress-container">
-      <span class="player-time" id="currentTime">0:00</span>
-      <div class="player-progress-bg" id="progressBg">
-        <div class="player-progress-fill" id="progressFill"></div>
-      </div>
-      <span class="player-time" id="totalTime">0:00</span>
+    <div class="player-time">
+      <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
     </div>
-    <audio id="mainAudio" src=""></audio>
+    <audio id="mainAudio"></audio>
   </div>
 
 
@@ -767,7 +805,7 @@
 
     <div class="chatbot-messages" id="chatbotMessages">
       <div class="chat-msg bot-msg">
-        Merhaba 👋 Ben Berlin Konuşuyor Asistanı. Şu an geliştirme aşamasındayım. İhtiyaçlarınız için doğrudan <a href="mailto:hello@berlinkonusuyor.com" class="chatbot-email-link">hello@berlinkonusuyor.com</a> adresinden bize yazabilirsiniz.
+        Merhaba 👋 Ben Berlin Konuşuyor Asistanı. Şu an geliştirme aşamasındayım. İhtiyaçlarınız için doğrudan <a href="mailto:berlinkonusuyor@outlook.de" class="chatbot-email-link">berlinkonusuyor@outlook.de</a> adresinden bize yazabilirsiniz.
       </div>
       <!-- Messages will appear here -->
     </div>

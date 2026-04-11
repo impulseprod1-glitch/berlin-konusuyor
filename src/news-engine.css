@@ -113,8 +113,113 @@
   animation: pulseOpacity 2s infinite;
 }
 
+/* ═══════════════ TICKER MINIMALIST (NEW) ═══════════════ */
+.horizontal-flow-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  background: rgba(0,0,0,0.02);
+  border-radius: 20px;
+}
+
+.news-horizontal-track {
+  display: flex;
+  gap: 30px;
+  padding: 0 50px;
+  transition: transform 0.1s linear; /* Smooth linear move */
+  white-space: nowrap;
+}
+
+.text-news-block {
+  flex: 0 0 320px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.dark-mode .text-news-block {
+  background: rgba(255,255,255,0.03);
+}
+
+.text-news-block:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-xl);
+}
+
+.text-news-category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.text-news-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+  white-space: normal; /* Allow wrap inside cards */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-news-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 12px;
+}
+
+.dark-mode .text-news-footer {
+  border-top-color: rgba(255,255,255,0.05);
+}
+
+.text-news-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.text-news-action {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.horizontal-nav-hint {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
 @keyframes pulseOpacity {
   0% { opacity: 0.5; }
   50% { opacity: 1; }
   100% { opacity: 0.5; }
 }
+

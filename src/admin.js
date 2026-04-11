@@ -31,24 +31,55 @@ const statEvents = document.getElementById('statEvents');
 const statSubs = document.getElementById('statSubs');
 const statTokens = document.getElementById('statTokens');
 
-// Tab Logic
-const tabs = document.querySelectorAll('.nav-tab');
+// Sidebar Tab Logic
+const navItems = document.querySelectorAll('.nav-item');
 const contents = document.querySelectorAll('.tab-content');
+const pageTitle = document.getElementById('pageTitle');
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.tab;
-    tabs.forEach(t => t.classList.remove('active'));
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const target = item.dataset.tab;
+    if (!target) return; // For non-tab items (export, etc)
+
+    navItems.forEach(t => t.classList.remove('active'));
     contents.forEach(c => c.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById(target).classList.add('active');
+    
+    item.classList.add('active');
+    const targetEl = document.getElementById(target);
+    if (targetEl) targetEl.classList.add('active');
+    
+    // Update Page Title
+    if (pageTitle) {
+      pageTitle.textContent = item.innerText.trim();
+    }
 
     // Auto-load data if needed
     if (target === 'tab-subscribers') loadSubscribersList();
     if (target === 'tab-community') loadVerificationList();
     if (target === 'tab-notifications') loadTokenStats();
+    if (target === 'tab-news') loadNewsList();
+    if (target === 'tab-events') loadEventsList();
+    if (target === 'tab-polls') loadPollsList();
   });
 });
+
+/**
+ * Antigravity OS Status Monitor (Admin Hub)
+ */
+async function monitorAGStatus() {
+  const statusDot = document.querySelector('.ag-status-dot');
+  const statusText = document.getElementById('agStatusText');
+  
+  try {
+    // Check if local dev server is up
+    const response = await fetch('http://localhost:8080/api/status', { mode: 'no-cors' });
+    if (statusDot) statusDot.style.background = '#00ff88';
+    if (statusText) statusText.textContent = 'SYSTEM ACTIVE: V3.0';
+  } catch (e) {
+    if (statusDot) statusDot.style.background = '#666';
+    if (statusText) statusText.textContent = 'DISCONNECTED';
+  }
+}
 
 const updateStats = () => {
   onSnapshot(collection(db, "news"), snap => { if (statNews) statNews.textContent = snap.size; });
@@ -56,6 +87,7 @@ const updateStats = () => {
   onSnapshot(collection(db, "subscribers"), snap => { if (statSubs) statSubs.textContent = snap.size; });
   onSnapshot(collection(db, "fcm_tokens"), snap => { if (statTokens) statTokens.textContent = snap.size; });
 };
+
 
 // --- NEWS MANAGEMENT ---
 const addNewsForm = document.getElementById('addNewsForm');
@@ -476,4 +508,7 @@ document.getElementById('pushForm')?.addEventListener('submit', async (e) => {
 // Init
 updateStats();
 loadVerificationList();
+monitorAGStatus();
+setInterval(monitorAGStatus, 10000); // Poll every 10s
+
 
