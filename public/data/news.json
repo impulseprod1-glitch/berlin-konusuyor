@@ -1,38 +1,82 @@
 {
-  "lastUpdated": "2026-04-11T11:28:30.224Z",
+  "lastUpdated": "2026-04-11T12:53:35.335Z",
   "count": 10,
   "articles": [
     {
-      "title": "İspanya Başbakanı Sanchez: Lübnan'da yeni bir Gazze'ye izin vermeyelim",
-      "description": "İspanya Başbakanı Pedro Sanchez, Lübnan'ın yeni bir Gazze olmasına izin vermemeleri gerektiğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/ispanya-basbakani-sanchez-lubnanda-yeni-bir-gazzeye-izin-vermeyelim/3901880",
+      "title": "Zwischen Berlin und Leipzig: Oberleitung fällt auf ICE",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-ice-zug-oberleitungsschaden.html",
       "image": "",
-      "date": "2026-04-11T11:04:34.000Z",
+      "date": "2026-04-11T12:42:59.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Diyanet İşleri Başkanlığı 3 bin 209 din görevlisi alacak",
+      "description": "Diyanet İşleri Başkanlığı, taşra teşkilatında açık bulunan alanlara sözlü sınav sonucuna göre 3 bin 209 aday imam hatip ve Kur'an kursu öğreticisi alacak.",
+      "url": "https://www.aa.com.tr/tr/gundem/diyanet-isleri-baskanligi-3-bin-209-din-gorevlisi-alacak/3901966",
+      "image": "",
+      "date": "2026-04-11T12:38:51.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Sinop'ta çam kese zararlısına karşı 10 bin avcı böcekle mücadele edilecek",
-      "description": "Yüzde 68'i ormanlarla kaplı olan Sinop'ta ağaçları zayıf düşürerek gelişimini engelleyen çam kese zararlısını bertaraf edebilmek için doğaya avcı böcekler salınıyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/sinopta-cam-kese-zararlisina-karsi-10-bin-avci-bocekle-mucadele-edilecek/3901872",
+      "title": "Hacda hizmet verecek ekip ve sağlık personelinin gidiş tarihleri belli oldu",
+      "description": "Bu yıl hac organizasyonunda hizmet verecek ekip ve sağlık personelinin gidiş tarihleri belli oldu.",
+      "url": "https://www.aa.com.tr/tr/saglik/hacda-hizmet-verecek-ekip-ve-saglik-personelinin-gidis-tarihleri-belli-oldu/3901964",
       "image": "",
-      "date": "2026-04-11T10:59:59.000Z",
+      "date": "2026-04-11T12:37:56.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Bakan Kacır: Türk savunma sanayisi dünyada ilk 5 ülke arasına girmiş oldu",
-      "description": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, Türk savunma sanayisinin harp paradigmasını değiştiren pek çok unsurda dünyada ilk 5 ülke arasına girdiğini belirtti.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-kacir-turk-savunma-sanayisi-dunyada-ilk-5-ulke-arasina-girmis-oldu/3901868",
+      "title": "Kültür ve Turizm Bakanı Ersoy, oyuncu Görkem Sevindik ile bir araya geldi",
+      "description": "Kültür ve Turizm Bakanı Mehmet Nuri Ersoy, İsrail'in, Filistinli esirlerin idamına ilişkin yasasına gösterdiği tepkinin ardından İsrailli bakanın hedef aldığı oyuncu Görkem Sevindik'in insani duruşunun yanında olduklarını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/kultur/kultur-ve-turizm-bakani-ersoy-oyuncu-gorkem-sevindik-ile-bir-araya-geldi/3901963",
       "image": "",
-      "date": "2026-04-11T10:56:57.000Z",
+      "date": "2026-04-11T12:35:59.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Suriye'nin başkenti Şam’da bombalı saldırı girişimi engellendi",
+      "description": "Suriye İçişleri Bakanlığı, başkent Şam’da planlanan bir saldırı girişiminin engellendiğini ve 5 kişinin gözaltına alındığını duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/suriyenin-baskenti-sam-da-bombali-saldiri-girisimi-engellendi/3901951",
+      "image": "",
+      "date": "2026-04-11T12:23:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Yardımcısı Yılmaz: Sahada gördüğümüz olumlu tablo, umutların büyüdüğünü açık biçimde göstermektedir",
+      "description": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, \"Bugün sahada gördüğümüz olumlu tablo, terörün gölgesinin çekildiği yerde üretimin canlandığını, şehirlerin nefes aldığını, umutların büyüdüğünü açık biçimde göstermektedir.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-yardimcisi-yilmaz-sahada-gordugumuz-olumlu-tablo-umutlarin-buyudugunu-acik-bicimde-gostermektedir/3901948",
+      "image": "",
+      "date": "2026-04-11T12:21:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Syrische Arbeitskräfte: Unternehmer warnen vor Rückkehr",
+      "description": "Bundeskanzler Merz fordert, ein Großteil der syrischen Geflüchteten solle zurückkehren. Doch zwei Drittel der Syrer, die in Berlin einen Job haben, arbeiten in systemrelevanten Berufen. Unternehmen kritisieren die Debatte daher.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/unternehmen-verband-gefluechtete-syrien-rueckkehr.html",
+      "image": "",
+      "date": "2026-04-11T12:09:28.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -44,28 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Pakistan Hava Kuvvetlerine ait savaş uçakları ve teknik ekipten oluşan bir birlik Suudi Arabistan’a ulaştı",
-      "description": "Suudi Arabistan Savunma Bakanlığı, savaş uçakları ve destek unsurlarının yanı sıra teknik ekipler ve operasyonel personelden oluşan Pakistanlı bir birliğin stratejik savunma anlaşması kapsamında Kral Abdulaziz Hava Üssü’ne ulaştığını duyurdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/pakistan-hava-kuvvetlerine-ait-savas-ucaklari-ve-teknik-ekipten-olusan-bir-birlik-suudi-arabistan-a-ulasti/3901863",
-      "image": "",
-      "date": "2026-04-11T10:53:14.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cibuti Cumhurbaşkanı Guelleh, yüzde 97,81 oyla yeniden seçildi",
-      "description": "Cibuti Cumhurbaşkanı İsmail Ömer Guelleh, dün düzenlenen cumhurbaşkanı seçiminde oyların yüzde 97,81'ini alarak altıncı kez yeniden seçildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/cibuti-cumhurbaskani-guelleh-yuzde-97-81-oyla-yeniden-secildi/3901853",
-      "image": "",
-      "date": "2026-04-11T10:43:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/berlin-raketenstart-weltraum-start-up-exolaunch-tu-berlin.html",
       "image": "",
       "date": "2026-04-11T09:39:57.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Wolfram Weimer will's nicht wissen - Diskussion an der Volksbühne",
-      "description": "Die Berliner Volksbühne hat Kulturstaatsminister Wolfram Weimer zu einer Diskussion geladen – gemeinsam mit der Autorin Nora Bossong, den Journalisten Ronen Steinke und Friedrich Küppersbusch und dem Verleger Sebastian Guggolz. Sie fand ohne ihn statt.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/04/berlin-kultur-volksbuehne-kritik-zensur-zynismus-kulturkampf-weimer.html",
-      "image": "",
-      "date": "2026-04-11T08:51:13.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Lachgas-Verkauf ab Sonntag verboten - Fragen und Antworten",
-      "description": "Ab Sonntag ist bundesweit der Verkauf von großen Lachgas-Kartuschen verboten. Die Änderung ist Folge einer Berliner Gesetzesinitiative im Bundesrat. In den vergangenen Jahren wurde das sedierende Gas zunehmend als Partydroge missbraucht.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-brandenburg-lachgas-verkaufsverbot-minderjaehrige-faq-gesundheit-umwelt-bsr.html",
-      "image": "",
-      "date": "2026-04-11T08:39:05.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
