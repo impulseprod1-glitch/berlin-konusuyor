@@ -231,6 +231,11 @@ export function setLanguage(lang) {
     if (t[key]) el.textContent = t[key];
   });
 
+  // Re-trigger Hero animations if active
+  if (typeof window.initTextReveal === 'function') {
+    window.initTextReveal();
+  }
+
   document.documentElement.lang = lang === 'tr' ? 'tr' : lang === 'de' ? 'de' : 'en';
 
   document.querySelectorAll('.lang-btn').forEach((btn) => {

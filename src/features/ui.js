@@ -25,17 +25,21 @@ export function initScrollProgress() {
 export function initTextReveal() {
   const heroLines = document.querySelectorAll('.hero-line');
   heroLines.forEach((line) => {
-    const text = line.textContent;
-    const words = text.split(' ');
-    line.innerHTML = '';
-    line.style.animation = 'none';
-    line.style.opacity = '1';
+    // Fail-safe: if i18n updated textContent, we need to handle it
+    const text = line.textContent.trim();
+    if (!text) return;
 
+    line.innerHTML = '';
+    line.style.opacity = '1';
+    line.classList.add('visible'); // Force visibility if observer is slow
+
+    const words = text.split(' ');
     words.forEach((word, i) => {
       const span = document.createElement('span');
       span.className = 'word-span';
       span.textContent = word;
-      span.style.animationDelay = `${0.4 + (line.classList.contains('hero-line-accent') ? 0.3 : 0) + i * 0.12}s`;
+      // Staggered animation
+      span.style.animationDelay = `${0.2 + (line.classList.contains('hero-line-accent') ? 0.4 : 0) + i * 0.1}s`;
       line.appendChild(span);
       if (i < words.length - 1) {
         line.appendChild(document.createTextNode(' '));
@@ -43,6 +47,7 @@ export function initTextReveal() {
     });
   });
 }
+window.initTextReveal = initTextReveal;
 
 export function initNavbar() {
   const navbar = document.getElementById('navbar');

@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSplash();
     initTheme();
     initLangSwitcher();
+    initTextReveal(); // Prioritized
     initCookieBanner();
     initNavbar();
     initMobileMenu();
@@ -79,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Extra UI / Interactions
     initParallax();
     initScrollProgress();
-    initTextReveal();
     initCursorPremium();
     initTiltEffects();
     initCounters();
