@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-04-11T04:52:49.169Z",
+  "lastUpdated": "2026-04-11T05:59:12.572Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Bürgermeisterwahl in Fürstenwalde: Sieben Kandidaten treten an",
+      "description": "Fürstenwalde wählt am Sonntag ein neues Stadtoberhaupt. Sieben Kandidaten treten an, zentrale Themen sind Sicherheit, Wohnraum und ein geplantes Gewerbegebiet. Erreicht niemand die Mehrheit, folgt am 26. April eine Stichwahl.",
+      "url": "https://www.rbb24.de/politik/wahl/brandenburg-buergermeisterwahlen/2026/fuerstenwalde-oder-spree-kandidaten-wahl.html",
+      "image": "",
+      "date": "2026-04-11T05:20:11.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Lachgas-Verkaufsverbot ab Sonntag: Was die neue Regel bedeutet",
+      "description": "Ab Sonntag ist bundesweit der Verkauf von großen Lachgas-Kartuschen verboten. Die Änderung ist Folge einer Berliner Gesetzesinitiative im Bundesrat. In den vergangenen Jahren wurde das sedierende Gas zunehmend als Partydroge missbraucht.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-brandenburg-lachgas-verkaufsverbot-minderjaehrige-faq-gesundheit-umwelt-bsr.html",
+      "image": "",
+      "date": "2026-04-11T05:14:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Berliner Weltraumwirtschaft: Per Anhalter ins All",
+      "description": "Wieder musste der Start verschoben werden: Am Donnerstag sollte erstmals die Rakete eines privaten, deutschen Unternehmens Nutzlast ins Weltall befördern. Eine Berliner Firma ist an der Mission beteiligt. Auf einen Erfolg hofft eine ganze Branche.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/berlin-raketenstart-weltraum-start-up-exolaunch-tu-berlin.html",
+      "image": "",
+      "date": "2026-04-11T05:12:55.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "İsrail'in Gazze'de düzenlediği saldırıda 6 kişi hayatını kaybetti",
       "description": "İsrail ordusunun Gazze Şeridi'nin orta kesiminde yer alan Bureyc Mülteci Kampı'nda bir polis merkezine düzenlediği hava saldırısında 6 kişinin hayatını kaybettiği, çok sayıda kişinin yaralandığı bildirildi.",
@@ -14,9 +47,9 @@
       "type": "rss"
     },
     {
-      "title": "Lübnan'dan İsrail'in kuzeyine atılan roket ve İHA'lar nedeniyle sık sık sirenler çaldı",
-      "description": "İsrail ordusunun saldırılarını sürdürdüğü Lübnan'dan İsrail'in kuzeyine düzenlenen roket ve insansız hava aracı (İHA) saldırıları nedeniyle bölgede sık sık sirenlerin çaldığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/live-blog/lubnandan-israilin-kuzeyine-atilan-roket-ve-ihalar-nedeniyle-sik-sik-sirenler-caldi/713",
+      "title": "İsrail'in gece boyu Lübnan'a düzenlediği saldırılarda 3 kişi hayatını kaybetti",
+      "description": "İsrail ordusunun gece saatlerinden bu yana Lübnan'ın güneyine düzenlediği saldırılarda 3 kişi hayatını kaybetti.",
+      "url": "https://www.aa.com.tr/tr/live-blog/israilin-gece-boyu-lubnana-duzenledigi-saldirilarda-3-kisi-hayatini-kaybetti/713",
       "image": "",
       "date": "2026-04-11T01:53:10.000Z",
       "source": "Anadolu Ajansı",
@@ -47,9 +80,9 @@
       "type": "rss"
     },
     {
-      "title": "Bolu Belediyesine yönelik \"irtikap\" soruşturmasında 4 şüpheli mahkemeye çıkarıldı",
-      "description": "Bolu Belediyesine yönelik \"irtikap\" soruşturması kapsamında gözaltına alınan 2 kişi ile Bolu Belediye Başkanlığı görevinden uzaklaştırılan Tanju Özcan ve BolSev Yönetim Kurulu Başkanı Ali Sarıyıldız, nöbetçi mahkemeye sevk edildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bolu-belediyesine-yonelik-irtikap-sorusturmasinda-4-supheli-mahkemeye-cikarildi/3901540",
+      "title": "Bolu Belediyesine yönelik \"irtikap\" soruşturmasında \"nitelikli dolandırıcılık\" suçundan 4 tutuklama",
+      "description": "Bolu Belediyesine yönelik \"irtikap\" soruşturmasında Leyla Beykoz ve Aydan Özdemir ile Belediye Başkanlığı görevinden uzaklaştırılan Tanju Özcan ve BolSev Yönetim Kurulu Başkanı Ali Sarıyıldız, \"nitelikli dolandırıcılık\" suçundan tutuklandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/bolu-belediyesine-yonelik-irtikap-sorusturmasinda-nitelikli-dolandiricilik-sucundan-4-tutuklama/3901540",
       "image": "",
       "date": "2026-04-10T22:15:49.000Z",
       "source": "Anadolu Ajansı",
@@ -74,39 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/buecherbox-obersee-brandanschlag.html",
       "image": "",
       "date": "2026-04-10T20:01:40.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Regionalliga Nordost: Altglienicke siegt in Halle",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-regionalliga-nordost-hallescher-fc-vsg-altglienicke.html",
-      "image": "",
-      "date": "2026-04-10T19:33:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Pergamonaltar soll ab Frühjahr 2027 wieder zu sehen sein",
-      "description": "",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/04/pergamon-altar-museum-bauarbeiten.html",
-      "image": "",
-      "date": "2026-04-10T19:32:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fußball: Unions fast unerklärlicher Angstgegner Heidenheim",
-      "description": "Seit zehn Jahren hat der 1. FC Union kein Ligaspiel mehr gewonnen gegen den 1. FC Heidenheim. Bei der Suche nach Erklärungen geht es in die Höhe. Und bleibt schwierig.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-heidenheim-angstgegner-union.html",
-      "image": "",
-      "date": "2026-04-10T17:25:37.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
