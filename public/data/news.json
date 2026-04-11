@@ -1,38 +1,71 @@
 {
-  "lastUpdated": "2026-04-11T09:38:20.617Z",
+  "lastUpdated": "2026-04-11T10:31:55.745Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İspanya Başbakanı Sanchez, Çin'i ziyaret ediyor",
+      "description": "İspanya Başbakanı Pedro Sanchez, ABD Başkanı Donald Trump'ın tarife politikası ve tek taraflı siyasi adımlarının transatlantik ittifakında çatlaklara yol açtığı, Avrupa'nın Orta Doğu'daki savaşa tavrının değiştiği bir dönemde Çin’i ziyaret ediyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/ispanya-basbakani-sanchez-cini-ziyaret-ediyor/3901843",
+      "image": "",
+      "date": "2026-04-11T10:26:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye'nin sulama ve taşkın önleme altyapısına 500 milyon dolar dış finansman",
+      "description": "Türkiye, Devlet Su İşleri Genel Müdürlüğü (DSİ) tarafından yürütülen sulama ve taşkın önleme projelerinin desteklenmesi amacıyla Asya Altyapı Yatırım Bankasından (AAYB) 500 milyon dolar tutarında uzun vadeli ve uygun koşullu finansman temin etti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/turkiyenin-sulama-ve-taskin-onleme-altyapisina-500-milyon-dolar-dis-finansman/3901823",
+      "image": "",
+      "date": "2026-04-11T10:08:40.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Zelenskiy: \"Paskalya'da ateşkes, gerçek bir barış hareketinin başlangıcı olabilir\"",
+      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, Ortodoksların Paskalya Bayramı vesilesiyle geçici ateşkes ilan edilmesinin barışın sağlanma sürecinin başlatılması için bir adım olabileceğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-paskalyada-ateskes-gercek-bir-baris-hareketinin-baslangici-olabilir/3901822",
+      "image": "",
+      "date": "2026-04-11T10:06:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Feuerwehreinsatz: Brand in Mehrfamilienhaus in Guben (Lausitz)",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-lausitz-guben-brand-mehrfamilienhaus.html",
       "image": "",
-      "date": "2026-04-11T09:34:39.000Z",
+      "date": "2026-04-11T09:57:49.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "Filistin lideri Abbas, İsrail'in Kudüs'teki kutsal mekanların statüsünü değiştiremeyeceğini belirtti",
-      "description": "Filistin Devlet Başkanı Mahmud Abbas, İsrail'in saldırılarının Kudüs'teki İslami ve Hristiyan kutsal mekanlarının tarihi ve hukuki statüsünü değiştirmeyi başaramayacağını belirterek, Filistin halkının ve dünyanın buna izin vermeyeceğini vurguladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-lideri-abbas-israilin-kudusteki-kutsal-mekanlarin-statusunu-degistiremeyecegini-belirtti/3901789",
+      "title": "Türkiye Karting Şampiyonası'nda sezon Kocaeli'de start aldı",
+      "description": "MOTUL 2026 Türkiye Karting Şampiyonası'nda sezon, Kocaeli'de düzenlenen birinci ayak yarışlarıyla başladı.",
+      "url": "https://www.aa.com.tr/tr/spor/turkiye-karting-sampiyonasinda-sezon-kocaelide-start-aldi/3901807",
       "image": "",
-      "date": "2026-04-11T09:21:33.000Z",
+      "date": "2026-04-11T09:50:33.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Parkinson'da erken tanı ve fizik tedavi hastalığın ilerlemesini yavaşlatıyor",
-      "description": "Uzmanlar, Parkinson'un erken döneminde ilaç ve fizik tedavi yöntemlerinin birlikte uygulanmasıyla hastalığın ilerlemesinin ciddi oranda yavaşlatıldığını belirtti.",
-      "url": "https://www.aa.com.tr/tr/saglik/parkinsonda-erken-tani-ve-fizik-tedavi-hastaligin-ilerlemesini-yavaslatiyor/3901788",
+      "title": "Berliner Weltraumwirtschaft: Per Anhalter ins All",
+      "description": "Wieder musste der Start verschoben werden: Am Donnerstag sollte erstmals die Rakete eines privaten, deutschen Unternehmens Nutzlast ins Weltall befördern. Eine Berliner Firma ist an der Mission beteiligt. Auf einen Erfolg hofft eine ganze Branche.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/berlin-raketenstart-weltraum-start-up-exolaunch-tu-berlin.html",
       "image": "",
-      "date": "2026-04-11T09:20:31.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
+      "date": "2026-04-11T09:39:57.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -44,6 +77,17 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Türksat AŞ'nin fiber altyapı yatırımlarına uluslararası ödül",
+      "description": "TÜRKSAT AŞ, Global Brands Magazine tarafından, \"Kablolu TV ve Genişbant Hizmetlerinde Mükemmellik\" ödülüne layık görüldü.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/turksat-asnin-fiber-altyapi-yatirimlarina-uluslararasi-odul/3901752",
+      "image": "",
+      "date": "2026-04-11T08:45:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -66,50 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "AKSUNGUR İHA ve yerli helikopterler Emniyetin gökyüzündeki gücüne güç katacak",
-      "description": "İçişleri Bakanlığı Emniyet Genel Müdürlüğü (EGM), 13 Nisan Pazartesi teslimatı yapılacak Türk Havacılık ve Uzay Sanayii (TUSAŞ) tarafından üretilen yerli hava araçlarıyla operasyonel gücünü artıracak.",
-      "url": "https://www.aa.com.tr/tr/gundem/aksungur-iha-ve-yerli-helikopterler-emniyetin-gokyuzundeki-gucune-guc-katacak/3901726",
-      "image": "",
-      "date": "2026-04-11T08:17:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Wassersportsaison startet: Wasserschutzpolizei verstärkt Kontrollen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/wassersportsaison-start-brandenburg-wasserschutzpolizei-kontrollen.html",
-      "image": "",
-      "date": "2026-04-11T08:17:22.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fon yatırımlarının portföy değeri yıllık bazda yüzde 75 arttı",
-      "description": "Türkiye'de toplam fon büyüklüğü yılın ilk çeyreği itibarıyla geçen yılın aynı dönemine göre yaklaşık yüzde 75 artışla 8 trilyon 718 milyar lira oldu.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/fon-yatirimlarinin-portfoy-degeri-yillik-bazda-yuzde-75-artti/3901705",
-      "image": "",
-      "date": "2026-04-11T08:05:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "NASA'nın Artemis II misyonuyla insanlı uzay görevleri hız kazanıyor",
-      "description": "NASA'nın Artemis II misyonu ile yaklaşık yarım yüzyıl sonra insanlı Ay yolculukları yeniden ivme kazanırken görev kapsamında elde edilen verilerin gelecekteki iniş planlarına yön vermesi bekleniyor.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/nasanin-artemis-ii-misyonuyla-insanli-uzay-gorevleri-hiz-kazaniyor/3901698",
-      "image": "",
-      "date": "2026-04-11T08:03:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
