@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-04-11T20:32:43.523Z",
+  "lastUpdated": "2026-04-11T22:32:14.463Z",
   "count": 10,
   "articles": [
+    {
+      "title": "ABD Başkanı Trump: İran’la çok yoğun müzakereler içindeyiz",
+      "description": "ABD Başkanı Donald Trump, İran'la devam eden doğrudan müzakerelerin sonucu ne olursa olsun \"askeri açıdan kazandıklarını\" savunarak, \"İran’la çok yoğun müzakereler içindeyiz. Neler olacağını göreceğiz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/live-blog/abd-baskani-trump-iran-la-cok-yogun-muzakereler-icindeyiz/797",
+      "image": "",
+      "date": "2026-04-11T21:58:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Zwei Verletzte in ICE: Oberleitung reißt und zerschlägt Fenster",
       "description": "Auf der Bahnstrecke zwischen Berlin und Halle ist am Samstag ein ICE liegengeblieben: Eine Oberleistung riss und zerschlug Zugfenster. Zwei Menschen wurden leicht verletzt.",
@@ -58,17 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "İsrail Başbakanı Netanyahu İran'a saldırı tehdidini sürdürdü",
-      "description": "İsrail Başbakanı Binyamin Netanyahu, ABD-İran arasında sağlanan ve İsrail'i de kapsayan geçici ateşkese rağmen İran'a karşı saldırı tehdidini sürdürdü.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-basbakani-netanyahu-irana-saldiri-tehdidini-surdurdu/3902358",
-      "image": "",
-      "date": "2026-04-11T19:20:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Hinrichtungs-Darstellungen bei Demos in Berlin ab sofort verboten",
       "description": "",
       "url": "https://www.rbb24.de/politik/beitrag/2026/04/verbot-darstellung-hinrichtung-demonstration.html",
@@ -77,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İrlanda'da bir şahıs Amerikan askeri uçağına baltayla saldırdı",
-      "description": "İrlanda'nın Shannon Havalimanı'nda park halinde bulunan Amerikan askeri uçağına tırmanan bir kişi, uçağın gövdesine ve kanadına baltayla zarar verdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/irlandada-bir-sahis-amerikan-askeri-ucagina-baltayla-saldirdi/3902354",
-      "image": "",
-      "date": "2026-04-11T19:11:16.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -110,6 +99,17 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": " İsrail'in Lübnan'a düzenlediği saldırılar sürüyor",
+      "description": "İsrail ordusunun Lübnan'ın güneyindeki Tuffahta beldesine düzenlediği saldırıda 13 kişi yaşamını yitirdi.",
+      "url": "https://www.aa.com.tr/tr/live-blog/-israilin-lubnana-duzenledigi-saldirilar-suruyor/713",
+      "image": "",
+      "date": "2026-04-11T01:53:10.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     }
   ],
