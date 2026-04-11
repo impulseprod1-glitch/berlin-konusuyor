@@ -46,6 +46,11 @@ export function initTextReveal() {
       }
     });
   });
+
+  // Ensure CTA buttons are also visible
+  document.querySelectorAll('.hero-cta, .hero-secondary-cta').forEach(btn => {
+    btn.classList.add('visible');
+  });
 }
 window.initTextReveal = initTextReveal;
 
