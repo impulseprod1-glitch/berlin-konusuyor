@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-04-11T05:59:12.572Z",
+  "lastUpdated": "2026-04-11T07:13:01.926Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Wolfram Weimer will's nicht wissen - Diskussion an der Volksbühne",
+      "description": "Die Berliner Volksbühne hat Kulturstaatsminister Wolfram Weimer zu einer Diskussion geladen – gemeinsam mit der Autorin Nora Bossong, den Journalisten Ronen Steinke und Friedrich Küppersbusch und dem Verleger Sebastian Guggolz. Sie fand ohne ihn statt.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/04/berlin-kultur-volksbuehne-kritik-zensur-zynismus-kulturkampf-weimer.html",
+      "image": "",
+      "date": "2026-04-11T07:00:35.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bazı illerde nisanda kar etkili oldu",
+      "description": "Erzurum, Kars, Ardahan ve Tunceli'de ilkbaharda kar etkili oluyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/bazi-illerde-nisanda-kar-etkili-oldu/3901643",
+      "image": "",
+      "date": "2026-04-11T06:40:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Feuerwehreinsatz: Brand in Mehrfamilienhaus in Guben (Lausitz)",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-lausitz-guben-brand-mehrfamilienhaus.html",
+      "image": "",
+      "date": "2026-04-11T06:36:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Lider Galatasaray, Süper Lig'de Kocaelispor'u konuk edecek",
+      "description": "Lider Galatasaray, Trendyol Süper Lig'in 29. haftasında yarın sahasında Kocaelispor'u ağırlayacak.",
+      "url": "https://www.aa.com.tr/tr/spor/lider-galatasaray-super-ligde-kocaelisporu-konuk-edecek/3901625",
+      "image": "",
+      "date": "2026-04-11T06:22:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "A Milli Kadın Hentbol Takımı, yarın Danimarka'ya konuk olacak",
+      "description": "A Milli Kadın Hentbol Takımı, 2026 EHF Avrupa Kupası 2. Grup'taki 6. ve son maçında deplasmanda Danimarka ile karşılaşacak.",
+      "url": "https://www.aa.com.tr/tr/spor/a-milli-kadin-hentbol-takimi-yarin-danimarkaya-konuk-olacak/3901621",
+      "image": "",
+      "date": "2026-04-11T06:18:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Vodafone Sultanlar Ligi'nde play-off 5-8 etabı ikinci maçları oynanacak",
+      "description": "Voleybol Vodafone Sultanlar Ligi'nde play-off 5-8 etabı ikinci maçları yarın yapılacak.",
+      "url": "https://www.aa.com.tr/tr/spor/vodafone-sultanlar-liginde-play-off-5-8-etabi-ikinci-maclari-oynanacak/3901620",
+      "image": "",
+      "date": "2026-04-11T06:17:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Bürgermeisterwahl in Fürstenwalde: Sieben Kandidaten treten an",
       "description": "Fürstenwalde wählt am Sonntag ein neues Stadtoberhaupt. Sieben Kandidaten treten an, zentrale Themen sind Sicherheit, Wohnraum und ein geplantes Gewerbegebiet. Erreicht niemand die Mehrheit, folgt am 26. April eine Stichwahl.",
@@ -44,72 +110,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in gece boyu Lübnan'a düzenlediği saldırılarda 3 kişi hayatını kaybetti",
-      "description": "İsrail ordusunun gece saatlerinden bu yana Lübnan'ın güneyine düzenlediği saldırılarda 3 kişi hayatını kaybetti.",
-      "url": "https://www.aa.com.tr/tr/live-blog/israilin-gece-boyu-lubnana-duzenledigi-saldirilarda-3-kisi-hayatini-kaybetti/713",
-      "image": "",
-      "date": "2026-04-11T01:53:10.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Artemis II mürettebatı, 10 günlük Ay görevini tamamlayarak Dünya'ya döndü",
-      "description": "ABD Havacılık ve Uzay Ajansının (NASA) 50 yılı aşkın sürenin ardından Ay’a gönderdiği ilk insanlı uzay aracı, sorunsuz şekilde Dünya'ya dönüş yaptı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/artemis-ii-murettebati-10-gunluk-ay-gorevini-tamamlayarak-dunyaya-dondu/3901580",
-      "image": "",
-      "date": "2026-04-11T01:04:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran Meclis Başkanı Kalibaf: (ABD'yle müzakerelerde) İyi niyetimiz var ama güvenimiz yok",
-      "description": "İran Meclis Başkanı Muhammed Bakır Kalibaf, ABD'yle yürütülecek müzakerelere ilişkin, \"İyi niyetimiz var ama güvenimiz yok.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/live-blog/iran-meclis-baskani-kalibaf-abdyle-muzakerelerde-iyi-niyetimiz-var-ama-guvenimiz-yok/711",
-      "image": "",
-      "date": "2026-04-10T22:28:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bolu Belediyesine yönelik \"irtikap\" soruşturmasında \"nitelikli dolandırıcılık\" suçundan 4 tutuklama",
-      "description": "Bolu Belediyesine yönelik \"irtikap\" soruşturmasında Leyla Beykoz ve Aydan Özdemir ile Belediye Başkanlığı görevinden uzaklaştırılan Tanju Özcan ve BolSev Yönetim Kurulu Başkanı Ali Sarıyıldız, \"nitelikli dolandırıcılık\" suçundan tutuklandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/bolu-belediyesine-yonelik-irtikap-sorusturmasinda-nitelikli-dolandiricilik-sucundan-4-tutuklama/3901540",
-      "image": "",
-      "date": "2026-04-10T22:15:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Basketball: Alba-Frauen im ersten Halbfinal-Spiel in Keltern chancenlos",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/basketball-dbbl-keltern-alba-erstes-halbfinalspiel.html",
-      "image": "",
-      "date": "2026-04-10T20:27:20.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bücher-Box in Lichtenberg zerstört - Bezirk spricht von Brandanschlag",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/buecherbox-obersee-brandanschlag.html",
-      "image": "",
-      "date": "2026-04-10T20:01:40.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     }
   ],
