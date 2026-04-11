@@ -51,6 +51,14 @@ export function initTextReveal() {
   document.querySelectorAll('.hero-cta, .hero-secondary-cta').forEach(btn => {
     btn.classList.add('visible');
   });
+
+  // Force hero glass container visible (reveal-small might not trigger fast enough)
+  const heroGlass = document.querySelector('.hero-glass-core');
+  if (heroGlass) {
+    heroGlass.classList.add('visible');
+    heroGlass.style.opacity = '1';
+    heroGlass.style.transform = 'translateY(0)';
+  }
 }
 window.initTextReveal = initTextReveal;
 

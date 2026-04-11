@@ -234,7 +234,25 @@ export function setLanguage(lang) {
 
   elements.forEach((el) => {
     const key = el.getAttribute('data-i18n');
-    if (t[key]) el.textContent = t[key];
+    if (!t[key]) return;
+
+    // For hero-line elements, just set textContent — initTextReveal will rebuild them
+    if (el.classList.contains('hero-line')) {
+      el.textContent = t[key];
+      return;
+    }
+
+    // For elements with child elements (icons etc.), only update the text portion
+    const hasChildElements = el.querySelector('*');
+    if (hasChildElements) {
+      // Find the last text node and update it
+      const textNodes = Array.from(el.childNodes).filter(n => n.nodeType === Node.TEXT_NODE);
+      if (textNodes.length > 0) {
+        textNodes[textNodes.length - 1].textContent = ' ' + t[key];
+      }
+    } else {
+      el.textContent = t[key];
+    }
   });
 
   // Re-trigger Hero animations if active
