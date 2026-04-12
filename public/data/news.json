@@ -1,35 +1,57 @@
 {
-  "lastUpdated": "2026-04-12T18:49:47.271Z",
+  "lastUpdated": "2026-04-12T20:35:57.197Z",
   "count": 10,
   "articles": [
     {
-      "title": "Milli cimnastikçi Ferhat Arıcan, Hırvatistan'da bronz madalya kazandı",
-      "description": "Milli sporcu Ferhat Arıcan, Artistik Cimnastik Dünya Kupası'nın Hırvatistan ayağında bronz madalya elde etti.",
-      "url": "https://www.aa.com.tr/tr/spor/milli-cimnastikci-ferhat-arican-hirvatistanda-bronz-madalya-kazandi/3903086",
+      "title": "Malatya'da maden işçilerini taşıyan servis minibüsünün devrilmesi sonucu 2 kişi öldü, 10 kişi yaralandı",
+      "description": "Malatya'nın Hekimhan ilçesinde maden işçilerini taşıyan servis minibüsünün şarampole devrilmesi sonucu 2 kişi öldü, 10 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/malatyada-maden-iscilerini-tasiyan-servis-minibusunun-devrilmesi-sonucu-2-kisi-oldu-10-kisi-yaralandi/3903163",
       "image": "",
-      "date": "2026-04-12T18:46:10.000Z",
+      "date": "2026-04-12T19:57:44.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Lübnan Başbakanı Selam, Lübnan'ın güneyinin \"yalnızlığa terk edilmeyeceğini\" belirtti",
-      "description": "Lübnan Başbakanı Nevvaf Selam, İsrail saldırılarını durdurmak ve yerinden edilenlerin topraklarına geri dönmesi için ulusal birliğin zorunluluk olduğunu belirterek, \"Lübnan'ın güneyinin bir daha yalnızlığa terk edilmeyeceğini\" söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/lubnan-basbakani-selam-lubnanin-guneyinin-yalnizliga-terk-edilmeyecegini-belirtti/3903085",
+      "title": "MHP Genel Başkanı Bahçeli'den \"Dünya Barış Konseyi\" önerisi",
+      "description": "MHP Genel Başkanı Bahçeli, \"BM Genel Sekreteri Antonio Guterres'in çağrısıyla, ABD, Rusya, Çin, Türkiye ve AB'nin, 'Dünya Barış Konseyi' mekanizmasıyla yeni bir tedbir geliştirmeleri önerisinde bulunuyoruz.\" ifadelerini kullandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/mhp-genel-baskani-bahceliden-dunya-baris-konseyi-onerisi/3903144",
       "image": "",
-      "date": "2026-04-12T18:45:57.000Z",
+      "date": "2026-04-12T19:39:42.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Milli bilardocu Tayfun Taşdemir, Kolombiya'da bronz madalya kazandı",
-      "description": "Milli bilardocu Tayfun Taşdemir, 3 Bant Bilardo Dünya Kupası'nda bronz madalya elde etti.",
-      "url": "https://www.aa.com.tr/tr/spor/milli-bilardocu-tayfun-tasdemir-kolombiyada-bronz-madalya-kazandi/3903081",
+      "title": "Macaristan'da genel seçimi kaybeden Orban: Kazanan partiyi tebrik ettim",
+      "description": "Macaristan'da yapılan genel seçimlerde ilk sonuçlara göre yarışı kaybeden Başbakan Viktor Orban, seçimi büyük farkla önde götüren Saygı ve Özgürlük Partisi lideri Peter Magyar'ı telefonla arayarak seçimi kazanmasından dolayı tebrik ettiğini belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/macaristanda-genel-secimi-kaybeden-orban-kazanan-partiyi-tebrik-ettim/3903141",
       "image": "",
-      "date": "2026-04-12T18:41:26.000Z",
+      "date": "2026-04-12T19:38:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail Başbakanı Netanyahu'nun askeri sekreteri Roman Goffman, Mossad Direktörü olarak atandı",
+      "description": "İsrail Başbakanı Binyamin Netanyahu'nun askeri sekreteri Tümgeneral Roman Goffman'ın, İsrail istihbarat servisi Mossad'ın direktörlüğüne atandığı duyuruldu.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basbakani-netanyahunun-askeri-sekreteri-roman-goffman-mossad-direktoru-olarak-atandi/3903125",
+      "image": "",
+      "date": "2026-04-12T19:27:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Nijerya'da ordunun yanlışlıkla düzenlediği hava saldırısında 56 sivil öldü",
+      "description": "Nijerya ordusunun, yanlışlıkla düzenlediği hava operasyonunda 56 sivilin öldüğü bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/nijeryada-ordunun-yanlislikla-duzenledigi-hava-saldirisinda-56-sivil-oldu/3903120",
+      "image": "",
+      "date": "2026-04-12T19:23:43.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -44,17 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Çağrı Bey Sondaj Gemisi, CURAD-1 kuyusuna doğru yola çıktı",
-      "description": "Türkiye'nin yurt dışındaki ilk derin deniz arama sondajını Somali'de gerçekleştirecek Çağrı Bey Ultra Derin Deniz Sondaj Gemisi'nin, Mogadişu Limanı'ndan ayrılarak sondaj yapacağı CURAD-1 kuyusuna doğru hareket ettiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/cagri-bey-sondaj-gemisi-curad-1-kuyusuna-dogru-yola-cikti/3903076",
-      "image": "",
-      "date": "2026-04-12T18:27:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -77,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Yardımcısı Yılmaz'dan ABD-İran müzakerelerine ilişkin açıklama",
-      "description": "Cumhurbaşkanı Yardımcısı Yılmaz, \"Bölgemizde sağlanan ateşkesin etkili ve kapsamlı şekilde uygulanmasını, müzakerelere yeterli fırsatın verilmesini ve başlayan müzakere sürecinin kalıcı barış ile sonuçlanmasını diliyoruz.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-yardimcisi-yilmazdan-abd-iran-muzakerelerine-iliskin-aciklama/3903067",
-      "image": "",
-      "date": "2026-04-12T17:57:05.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
