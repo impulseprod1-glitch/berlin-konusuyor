@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-04-14T17:06:14.581Z",
+  "lastUpdated": "2026-04-14T19:14:40.676Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Lufthansa: Nach Piloten sollen auch Flugbegleiter streiken",
+      "description": "Seit Montag sind die Lufthansa-Piloten zu einem Warnstreik aufgerufen - jetzt bis Freitag. Auch am BER fallen deshalb Flüge aus. Und ein weiterer Streik steht der Airline schon bevor.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/streik-lufthansa-cockpitpersonal.html",
+      "image": "",
+      "date": "2026-04-14T18:58:47.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Playoffs im Profisport: Beste Zeit oder bitte abschaffen?",
+      "description": "Spätestens im Frühsommer geht's im Sport rund. Es werden Titel verteilt und Pokale in die Höhe gereckt. Ein Weg zu diesem Ziel aller Sportler: Playoffs. Für manche das Größte, für andere unnötig bis unfair. Ein Pro und Contra.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/meinung-playoffs-pro-und-contra-lieben-oder-abschaffen.html",
+      "image": "",
+      "date": "2026-04-14T18:44:19.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "\"Transpiz\": Berlin startet Hospizdienst für junge Erwachsene ",
+      "description": "In Berlin startet ein einzigartiges Modellprojekt: Erstmals kümmert sich ein ambulanter Hospizdienst gezielt um junge Erwachsene mit lebensverkürzenden Krankheiten – und schließt damit eine bislang bundesweite Versorgungslücke.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-start-hospiz-dienst-junge-erwachsene.html",
+      "image": "",
+      "date": "2026-04-14T18:38:47.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Polonyalı milletvekili Berkowicz, parlamentoda Nazi sembollü İsrail bayrağı açtı",
+      "description": "Polonyalı milletvekili Konrad Berkowicz, parlamentoda yaptığı konuşma sırasında Nazilerin kullandığı gamalı haç sembolü içeren İsrail bayrağı açarak, \"İsrail, gözlerimizin önünde büyük bir acımasızlıkla soykırım yapıyor.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/polonyali-milletvekili-berkowicz-parlamentoda-nazi-sembollu-israil-bayragi-acti/3905680",
+      "image": "",
+      "date": "2026-04-14T18:32:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Hatay'da yapımı tamamlanan 28 köy evi depremzedelere teslim edildi",
+      "description": "Hatay'ın Kırıkhan ilçesinde yapımı tamamlanan 28 köy evi, hak sahibi depremzedelere teslim edildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/hatayda-yapimi-tamamlanan-28-koy-evi-depremzedelere-teslim-edildi/3905677",
+      "image": "",
+      "date": "2026-04-14T18:31:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM Genel Sekreteri Guterres, Orta Doğu'da müzakerelere devam edilmesi çağrısı yaptı",
+      "description": "Birleşmiş Milletler (BM) Genel Sekreteri Antonio Guterres, dünyada uluslararası hukuka saygının ayaklar altına alındığını belirterek, ABD/İsrail-İran Savaşı için müzakerelere ciddi olarak yeniden devam edilmesi çağrısında bulundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-genel-sekreteri-guterres-orta-doguda-muzakerelere-devam-edilmesi-cagrisi-yapti/3905666",
+      "image": "",
+      "date": "2026-04-14T18:17:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'den Meksika merkezli suç örgütüne yaptırım kararı",
+      "description": "ABD Dışişleri Bakanlığı, ABD-Meksika sınırında faaliyet gösteren Meksika merkezli suç örgütü Cartel del Noreste ile bağlantılı kumarhanelere ve üst düzey yöneticilere yaptırım uygulanacağını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdden-meksika-merkezli-suc-orgutune-yaptirim-karari/3905662",
+      "image": "",
+      "date": "2026-04-14T18:12:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Brand in ehemaligem Supermarkt in Berlin-Buckow ausgebrochen - Warnung wegen Rauch",
       "description": "",
@@ -25,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "28. Yapı Kredi Afife Tiyatro Ödülleri'nin adayları açıklandı",
-      "description": "28. Yapı Kredi Afife Tiyatro Ödülleri'nin adayları ile özel ödülleri kazanan isimler belli oldu.",
-      "url": "https://www.aa.com.tr/tr/kultur/28-yapi-kredi-afife-tiyatro-odullerinin-adaylari-aciklandi/3905590",
+      "title": "Cumhurbaşkanı Yardımcısı Yılmaz: Her yatırım Türkiye ve Kazakistan'ın refahına yapılmış bir katkıdır",
+      "description": "Cumhurbaşkanı Yardımcısı Yılmaz, Astana'da Türk iş insanlarına seslenerek, \"Gerçekleştirdiğiniz her yatırım, her proje sadece sizlerin değil, hem Türkiye'nin hem de kardeş Kazakistan'ın refahına yapılmış bir katkıdır.\" ifadelerini kullandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-yardimcisi-yilmaz-her-yatirim-turkiye-ve-kazakistanin-refahina-yapilmis-bir-katkidir/3905566",
       "image": "",
-      "date": "2026-04-14T16:34:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Brand mit Toten in Marzahn: Mann zu lebenslanger Haft verurteilt",
-      "description": "Bei einem Brand in einer Monteursunterkunft in Berlin-Marzahn kamen im vergangenen September zwei Männer ums Leben, weitere wurden verletzt. Einer der Bewohner wurde nun verurteilt. Aus Rache soll er das Feuer gelegt haben.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/lebenslange-haft-brandstiftung-berlin-marzahn-zwei-tote.html",
-      "image": "",
-      "date": "2026-04-14T16:32:14.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Finanzen: Brandenburgs Landesregierung will 700 Stellen einsparen",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/brandenburg-landesregierung-einsparung-700-stellen.html",
-      "image": "",
-      "date": "2026-04-14T16:30:34.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Trabzonspor'da Başakşehir maçının bilet fiyatlarına \"temsili\" düzenleme",
-      "description": "Trabzonspor Kulübü Genel Sekreteri Sami Karaman, Trendyol Süper Lig'in 30. haftasında Papara Park'ta oynanacak Başakşehir maçında, bilet fiyatlarını \"temsili\" düzenlediklerini belirtti.",
-      "url": "https://www.aa.com.tr/tr/spor/trabzonsporda-basaksehir-macinin-bilet-fiyatlarina-temsili-duzenleme/3905580",
-      "image": "",
-      "date": "2026-04-14T16:24:29.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Reserve-Soldat aus Berlin klagt erfolglos gegen Bundeswehr",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-verwaltungsgericht-entscheidung-rechtsanwalt-reservesoldat-bundeswehr.html",
-      "image": "",
-      "date": "2026-04-14T16:20:12.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Güneş ve Sağlam'dan A Milli Futbol Takımı değerlendirmesi",
-      "description": "Teknik direktörler Şenol Güneş ile Ertuğrul Sağlam, A Milli Futbol Takımının Dünya Kupası mücadelesindeki başarısıyla ilgili değerlendirmelerde bulundu.",
-      "url": "https://www.aa.com.tr/tr/spor/gunes-ve-saglamdan-a-milli-futbol-takimi-degerlendirmesi/3905574",
-      "image": "",
-      "date": "2026-04-14T16:16:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ODTÜ Öğretim Üyesi Prof. Dr. Demirköz, AA'nın \"360 Konuşmaları\" programına konuk oldu",
-      "description": "ODTÜ Öğretim Üyesi  Prof. Dr. Melahat Bilge Demirköz, Anadolu Ajansı (AA) tarafından düzenlenen \"360 Konuşmaları\" programına konuk oldu.",
-      "url": "https://www.aa.com.tr/tr/kurumsal-haberler/odtu-ogretim-uyesi-prof-dr-demirkoz-aanin-360-konusmalari-programina-konuk-oldu/3905382",
-      "image": "",
-      "date": "2026-04-14T14:40:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Sigorta şirketleri 5G teknolojisiyle \"hasarı önleyen sisteme\" dönüşüyor",
-      "description": "IBS Sigorta ve Reasürans Brokerliği CEO'su Çiftçi, \"5G dünya genelinde standart bir ürün olduğu için reasürans modellemeleri de bu küresel ölçeğe göre yapılıyor. Sektör ve reasürans piyasası bu teknolojiye tam hazırlıklı. \" dedi.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/sigorta-sirketleri-5g-teknolojisiyle-hasari-onleyen-sisteme-donusuyor/3904862",
-      "image": "",
-      "date": "2026-04-14T08:51:54.000Z",
+      "date": "2026-04-14T16:08:50.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
