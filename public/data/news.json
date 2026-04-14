@@ -1,16 +1,71 @@
 {
-  "lastUpdated": "2026-04-14T02:30:50.852Z",
+  "lastUpdated": "2026-04-14T06:00:21.938Z",
   "count": 10,
   "articles": [
     {
-      "title": "Diyanet İşleri Başkanlığı 3 bin 209 sözleşmeli imam hatip ve Kur'an kursu öğreticisi alacak",
-      "description": "Diyanet İşleri Başkanlığının, Diyanet Akademisine aday din görevlisi olarak 3 bin 209 sözleşmeli imam hatip ve Kur'an kursu öğreticisi alımına ilişkin ilanı Resmi Gazete'de yayımlandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/diyanet-isleri-baskanligi-3-bin-209-sozlesmeli-imam-hatip-ve-kuran-kursu-ogreticisi-alacak/3904546",
+      "title": "İstanbul merkezli 7 ildeki tefecilik operasyonunda 34 şüpheli yakalandı",
+      "description": "İstanbul merkezli 7 ilde düzenlenen tefecilik operasyonunda 34 şüpheli gözaltına alındı.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbul-merkezli-7-ildeki-tefecilik-operasyonunda-34-supheli-yakalandi/3904594",
       "image": "",
-      "date": "2026-04-13T22:56:20.000Z",
+      "date": "2026-04-14T05:57:00.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Hazine ve Maliye Bakanı Şimşek, Washington temaslarına başlıyor",
+      "description": "Hazine ve Maliye Bakanı Mehmet Şimşek, New York'un ardından bugünden itibaren Washington'da yoğun toplantı trafiği gerçekleştirecek.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/hazine-ve-maliye-bakani-simsek-washington-temaslarina-basliyor/3904586",
+      "image": "",
+      "date": "2026-04-14T05:24:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kayıp üniversite öğrencisi Gülistan Doku soruşturmasında 12 şüpheli gözaltına alındı",
+      "description": "Tunceli'de 5 Ocak 2020'den itibaren kendisinden haber alınamayan üniversite öğrencisi Gülistan Doku'nun kaybolmasına ilişkin süren soruşturmada 12 şüpheli gözaltına alındı.",
+      "url": "https://www.aa.com.tr/tr/gundem/kayip-universite-ogrencisi-gulistan-doku-sorusturmasinda-12-supheli-gozaltina-alindi/3904584",
+      "image": "",
+      "date": "2026-04-14T05:06:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Akaryakıt fiyatlarındaki artış sonrası Avrupa'da elektrikli araç satışları martta rekor kırdı",
+      "description": "Avrupa'da, Orta Doğu'daki savaş nedeniyle artan akaryakıt fiyatları ve sübvansiyon programlarının etkisiyle elektrikli araç satışları martta yarım milyonu aşarak rekor kırdı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/akaryakit-fiyatlarindaki-artis-sonrasi-avrupada-elektrikli-arac-satislari-martta-rekor-kirdi/3904583",
+      "image": "",
+      "date": "2026-04-14T05:04:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Juniorenfußball-Experte: \"Unions U19 ist stärker als Herthas\"",
+      "description": "Am Mittwoch treffen Union und Hertha BSC im Halbfinale des Berliner Landespokals aufeinander - wenn auch nur die A-Junioren. Dafür ab 19 Uhr im rbb|24-Livestream. Wer der Favorit ist, erklärt Experte Zeljko Ristic.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-nachwuchs-u19-union-berlin-hertha-bsc-interview-zeljko-ristic.html",
+      "image": "",
+      "date": "2026-04-14T04:10:38.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Illegale Abfallentsorgung in Brandenburgs Wäldern",
+      "description": "Illegal abgeladener Müll in den Wäldern rund um Berlin verursacht jedes Jahr hohe Kosten und belastet die Umwelt. Bodenproben von den Fundorten können zu den Tätern führen. Doch die Ermittlungen sind schwierig.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-wald-illegal-muell-entsorgen-bauschutt-abfall-umwelt.html",
+      "image": "",
+      "date": "2026-04-14T04:08:26.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -22,50 +77,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Peru'da devlet başkanlığı seçiminde sağcı Fujimori önde gidiyor",
-      "description": "Peru’da 12 Nisan’da düzenlenen devlet başkanlığı seçimlerinde sağcı aday Keiko Fujimori’nin yarışı önde götürdüğü bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/peruda-devlet-baskanligi-seciminde-sagci-fujimori-onde-gidiyor/3904542",
-      "image": "",
-      "date": "2026-04-13T22:34:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Premier Lig'de Leeds United, 45 yıl aradan sonra Old Trafford'da galip geldi",
-      "description": "İngiltere Premier Lig'de Leeds United, Manchester United'ı 2-1 yenerek 45 yıl aradan sonra Old Trafford'da galip geldi.",
-      "url": "https://www.aa.com.tr/tr/spor/premier-ligde-leeds-united-45-yil-aradan-sonra-old-traffordda-galip-geldi/3904534",
-      "image": "",
-      "date": "2026-04-13T21:30:19.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BM, İsrail'in işgali altındaki Batı Şeria'da 34 yeni yerleşim yeri kurma kararından \"son derece\" endişeli",
-      "description": "Birleşmiş Milletler (BM) İnsan Hakları Ofisi, İsrail'in işgal altındaki Batı Şeria'da 34 yeni yerleşim yeri kurma kararından \"son derece\" endişeli olduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-israilin-isgali-altindaki-bati-seriada-34-yeni-yerlesim-yeri-kurma-kararindan-son-derece-endiseli/3904530",
-      "image": "",
-      "date": "2026-04-13T21:14:31.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Wahlabend in Ungarn: \"Die Leute haben angefangen zu weinen\"",
-      "description": "Als in Ungarn am Sonntagabend Amtsinhaber Victor Orbán abgewählt wurde und sein Kontrahent, Péter Magyar, gewann, war unsere rbb-Kollegin Rafaela Roza vor Ort in Budapest. Sie berichtet von einem historischen und emotionalen Wahlabend.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/wahlsieg-peter-magyar-ungarn-interview.html",
-      "image": "",
-      "date": "2026-04-13T20:57:38.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     },
     {
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/streik-lufthansa-cockpitpersonal.html",
       "image": "",
       "date": "2026-04-13T17:21:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Serie: \"Bau fällig\": Was aus Märkischem Museum und Marinehaus werden soll ",
-      "description": "Mitten in Berlin steht Berlins Stadtmuseum auf einer riesigen Baustelle. Für knapp 100 Millionen Euro wird der Gebäudekomplex gerade saniert. Der bisher hohle Turm wird den Besuchern als Aussichtspunkt geöffnet - und das Märkische Museum neu erfunden.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/maerkisches-museum-stadtmuseum-marinehaus-baustelle-sanierung.html",
-      "image": "",
-      "date": "2026-04-13T17:14:06.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
