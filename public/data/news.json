@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-04-15T02:29:03.481Z",
+  "lastUpdated": "2026-04-15T06:00:04.716Z",
   "count": 10,
   "articles": [
+    {
+      "title": "80 Jahre Kunsthochschule in Berlin Weißensee ",
+      "description": "Die Weltzeituhr, der Schriftzug am Kino International und Züge der U-Bahn: Viele Objekte des Berliner Stadtbilds kommen von Menschen, die an der Weißensee Kunsthochschule tätig waren. Die stand teilweise unter politischem Druck, wie Präsidentin Angelika Richter erzählt.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/04/kunsthochschule-weissensee-berlin-weltzeituhr-angelika-richter.html",
+      "image": "",
+      "date": "2026-04-15T05:47:45.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Rüstung: Drohnen-Abfangsysteme made in Brandenburg (Havel)",
+      "description": "Seit 1991 produziert Heidelberger Druckmaschinen in Brandenburg an der Havel – nun könnte der Standort Teil einer neuen Rüstungskooperation werden. Ein Joint Venture mit einem US-israelischen Konzern soll Drohnenabwehrsysteme entwickeln und fertigen.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/brandenburg-heidelberger-druckmaschinen-produktion-drohnen-abfangsysteme-joint-venture.html",
+      "image": "",
+      "date": "2026-04-15T04:05:20.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Fördermittel-Streit in Berlin: SPD-Abgeordneter fordert Entlassung von CDU-Staatssekretär",
+      "description": "Wegen der Fördergeld-Affäre in der Kulturverwaltung knirscht es auch innerhalb der schwarz-roten Berliner Koalition. Nun wirft ein SPD-Abgeordneter einem Staatssekretärs von der CDU Arbeitsverweigerung vor.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/04/foerdermittel-streit-spd-forderung-entlassung-cdu-staatssekretaer.html",
+      "image": "",
+      "date": "2026-04-15T04:04:45.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Filistin direnişinin sembol ismi Bergusi'nin İsrail hapishanesinde işkencelere maruz kaldığı belirtildi",
       "description": "Filistin direnişinin sembol isimlerinden Mervan Bergusi'nin, İsrail hapishanesinde \"acımasız işkencelere maruz kaldığı\" öne sürüldü.",
@@ -47,9 +80,9 @@
       "type": "rss"
     },
     {
-      "title": "İsrail ordusunun Lübnan'ın güneyine saldırılarında 1 kişi öldü",
-      "description": "İsrail ordusunun Lübnan'ın güneyine gerçekleştirdiği saldırılarda 1 kişinin hayatını kaybettiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/live-blog/israil-ordusunun-lubnanin-guneyine-saldirilarinda-1-kisi-oldu/1051",
+      "title": "İsrail ordusunun Lübnan'ın güneyine düzenlediği saldırılarda 9 kişi hayatını kaybetti",
+      "description": "İsrail ordusunun Lübnan'ın güneyine gece saatlerinden bu yana gerçekleştirdiği saldırılarda 9 kişi hayatını kaybetti.",
+      "url": "https://www.aa.com.tr/tr/live-blog/israil-ordusunun-lubnanin-guneyine-duzenledigi-saldirilarda-9-kisi-hayatini-kaybetti/1051",
       "image": "",
       "date": "2026-04-14T21:23:28.000Z",
       "source": "Anadolu Ajansı",
@@ -74,39 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/04/meinung-playoffs-pro-und-contra-lieben-oder-abschaffen.html",
       "image": "",
       "date": "2026-04-14T18:44:19.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Neues Hospizprojekt für junge Erwachsene: \"Ich sollte keine Angst haben müssen, älter zu werden\"",
-      "description": "Mit 27 endet für viele junge Menschen die Begleitung durch die Kinder- und Jugendhospizarbeit. Für die Erwachsenenversorgung passen sie oft noch nicht. Sabrina Lorenz spricht im Interview darüber, was das für ihr Leben bedeutet – und was sie sich vom Projekt \"TransPiz\" erhofft.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-startet-hospizprojekt-fuer-junge-erwachsene.html",
-      "image": "",
-      "date": "2026-04-14T18:40:09.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "\"Transpiz\": Berlin startet Hospizdienst für junge Erwachsene ",
-      "description": "In Berlin startet ein einzigartiges Modellprojekt: Erstmals kümmert sich ein ambulanter Hospizdienst gezielt um junge Erwachsene mit lebensverkürzenden Krankheiten – und schließt damit eine bislang bundesweite Versorgungslücke.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-start-hospiz-dienst-junge-erwachsene.html",
-      "image": "",
-      "date": "2026-04-14T18:38:47.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Brand in ehemaligem Supermarkt in Berlin-Buckow ausgebrochen - Warnung wegen Rauch",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-buckow-brand-ehemaliger-supermarkt.html",
-      "image": "",
-      "date": "2026-04-14T17:00:57.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
