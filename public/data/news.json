@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-04-17T06:02:45.109Z",
+  "lastUpdated": "2026-04-17T09:17:21.982Z",
   "count": 10,
   "articles": [
     {
-      "title": "Basketbolda haftanın programı",
-      "description": "Türkiye Sigorta Basketbol Süper Ligi'nde 27, Türkiye Sigorta Türkiye Basketbol Ligi'nde ise 34. ve son hafta müsabakaları oynanacak.",
-      "url": "https://www.aa.com.tr/tr/spor/basketbolda-haftanin-programi/3908768",
+      "title": "Avrupa’da çocukların korunmasına yönelik sosyal medya düzenlemeleri gittikçe yaygınlaşıyor",
+      "description": "Avrupa genelinde birçok ülke, çocuk ve gençlerin dijital platformlarda denetimsiz şekilde vakit geçirmesinin yol açtığı riskleri azaltmak amacıyla sosyal medya kullanımına yönelik yeni düzenlemeler hazırlıyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/avrupa-da-cocuklarin-korunmasina-yonelik-sosyal-medya-duzenlemeleri-gittikce-yayginlasiyor/3909067",
       "image": "",
-      "date": "2026-04-17T05:57:32.000Z",
+      "date": "2026-04-17T09:13:27.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Judo Milli Takımı Başantrenörü Giorgio Vismara, milli judocuların gelişiminden memnun",
+      "description": "Judo Milli Takımı'nın İtalyan başantrenörü Giorgio Vismara, milli sporcuların gelişiminden memnun olduğunu belirterek, \"Biz bu takımı, 2028 Los Angeles Olimpiyatları'na hazırlıyoruz, hedefimiz 2028 Los Angeles\" dedi.",
+      "url": "https://www.aa.com.tr/tr/spor/judo-milli-takimi-basantrenoru-giorgio-vismara-milli-judocularin-gelisiminden-memnun/3909055",
+      "image": "",
+      "date": "2026-04-17T09:10:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye-Mısır-Pakistan-Suudi Arabistan Dışişleri Bakanları 3. Toplantısı Antalya'da düzenlenecek",
+      "description": "Dışişleri Bakanı Hakan Fidan, Antalya Diplomasi Forumu (ADF) marjında düzenlenecek Türkiye-Mısır-Pakistan-Suudi Arabistan Dışişleri Bakanları Toplantısı’nın üçüncüsüne ev sahipliği yapacak.",
+      "url": "https://www.aa.com.tr/tr/gundem/turkiye-misir-pakistan-suudi-arabistan-disisleri-bakanlari-3-toplantisi-antalyada-duzenlenecek/3909051",
+      "image": "",
+      "date": "2026-04-17T09:04:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistin Esirler Heyeti Başkanı, İsrail hapishanelerindeki Filistinlilerin \"sessiz soykırıma\" uğradığını söyledi",
+      "description": "Filistin Esirler ve Serbest Bırakılanlar Heyeti Başkanı Raid Ebu el-Hums, İsrail hapishanelerindeki Filistinli esirlerin Ekim 2023'ten bu yana \"sessiz soykırıma\" uğradığını belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistin-esirler-heyeti-baskani-israil-hapishanelerindeki-filistinlilerin-sessiz-soykirima-ugradigini-soyledi/3909047",
+      "image": "",
+      "date": "2026-04-17T09:03:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mann stirbt nach Messerangriff in Berlin-Gesundbrunnen",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/mann-gesundbrunnen-messer-streit-gestorben.html",
+      "image": "",
+      "date": "2026-04-17T08:01:08.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Güvenlik güçleri inci kefalini korumak için nöbette",
+      "description": "Van'da güvenlik güçleri, Van Gölü'nde yaşayan ve 15 Nisan-15 Temmuz tarihlerinde avlanması yasaklanan inci kefalinin neslinin korunabilmesi için göç yolunda nöbet tutuyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/guvenlik-gucleri-inci-kefalini-korumak-icin-nobette/3908910",
+      "image": "",
+      "date": "2026-04-17T07:37:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Quartier 206 in der Friedrichstraße wird zwangsversteigert",
+      "description": "",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/ehemaliges-luxus-kaufhaus-versteigerung-hammer-immobilie-friedrichstrasse-quartier-206-berlin-amtsgericht-mitte.html",
+      "image": "",
+      "date": "2026-04-17T06:22:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -36,80 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "Dışişleri Bakanı Fidan, Suriye Cumhurbaşkanı Şara ile Antalya'da görüştü",
-      "description": "Dışişleri Bakanı Hakan Fidan, Antalya'da Suriye Cumhurbaşkanı Ahmed Şara ile bir araya geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakani-fidan-suriye-cumhurbaskani-sara-ile-antalyada-gorustu/3908758",
-      "image": "",
-      "date": "2026-04-17T05:33:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Çin'in uzay istasyonundaki Şıncou-21 taykonot ekibi üçüncü uzay yürüyüşünü yaptı",
-      "description": "Çin'in Dünya yörüngesinde kurduğu Tiengong (Gök Sarayı) Uzay İstasyonu'nda göreve başlayan Şıncou-21 taykonot ekibinin, üçüncü uzay yürüyüşünü yaptığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/cinin-uzay-istasyonundaki-sincou-21-taykonot-ekibi-ucuncu-uzay-yuruyusunu-yapti/3908754",
-      "image": "",
-      "date": "2026-04-17T05:05:35.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bahnhof Greifswalder Straße: Bezirk will neues Wohngebiet im Turbo-Verfahren genehmigen",
+      "title": "Bezirk will neues Wohngebiet im Turbo-Verfahren genehmigen",
       "description": "Seit 15 Jahren will ein Investor am Ernst-Thälmann-Park in Berlin-Pankow ein neues Wohngebiet bauen. Bisher scheiterte es an der Baugenehmigung. Nun haben sich Bezirk und Investor geeinigt. Und alles soll ganz schnell gehen.",
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/berlin-pankow-prenzlauer-berg-ernst-thaelmann-park-wohnprojekt.html",
       "image": "",
-      "date": "2026-04-17T04:51:12.000Z",
+      "date": "2026-04-17T04:51:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kinderschutzambulanz für Hilfe bei Gewalt gegen Kinder",
-      "description": "In Potsdam arbeitet seit April eine von zwei Kinderschutzambulanzen in Brandenburg. Oberärztin Beatrix Schwarz erklärt, wann ein Verdacht aufkommt - und wieso ihr Team Kinder notfalls auch vor ihren engsten Bezugspersonen schützen muss.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/potsdam-kinderschutzambulanz-ernst-von-bergmann-klinikum-interview-aerztin.html",
-      "image": "",
-      "date": "2026-04-17T04:31:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Filistin topraklarını gasbeden İsraillilerin Batı Şeria'daki saldırısında bir Filistinli yaralandı",
-      "description": "Filistin topraklarını gasbeden İsraillilerin, işgal altındaki Batı Şeria'nın Selfit kenti kırsalında düzenlediği saldırıda bir Filistinlinin yaralandığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israillilerin-bati-seriadaki-saldirisinda-bir-filistinli-yaralandi/3908718",
-      "image": "",
-      "date": "2026-04-17T00:12:11.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Beschlagnahmte Remmo-Immobilien gehen ans Land Berlin über",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-immobilien-beschlagnahmt-grossfamilie-organisierte-kriminalitaet.html",
-      "image": "",
-      "date": "2026-04-16T19:49:06.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": " Endonezya'dan getirilen 80 karatlık pırlantayı Kapalıçarşı'da satmaya çalışan 6 şüpheli tutuklandı",
-      "description": "Endonezya'dan kaçak yollarla ülkeye soktukları 80 karatlık pırlantayı, Kapalıçarşı'da satmaya çalışan 6 şüpheli tutuklandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/-endonezyadan-getirilen-80-karatlik-pirlantayi-kapalicarsida-satmaya-calisan-6-supheli-tutuklandi/3908488",
-      "image": "",
-      "date": "2026-04-16T18:28:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
