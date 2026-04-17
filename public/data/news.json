@@ -1,13 +1,57 @@
 {
-  "lastUpdated": "2026-04-17T20:42:46.713Z",
+  "lastUpdated": "2026-04-17T22:38:19.877Z",
   "count": 10,
   "articles": [
     {
-      "title": "İletişim Başkanı Duran, Azerbaycan Cumhurbaşkanı Müşaviri Hacıyev ile bir araya geldi",
-      "description": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Azerbaycan Cumhurbaşkanı Müşaviri Hikmet Hacıyev ile görüştü.",
-      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskani-duran-azerbaycan-cumhurbaskani-musaviri-haciyev-ile-bir-araya-geldi/3910137",
+      "title": "S&P Türkiye'nin kredi notunu teyit etti",
+      "description": "Uluslararası kredi derecelendirme kuruluşu Standard & Poor's (S&P), Türkiye'nin kredi notlarını \"BB-/B\" olarak teyit etti, not görünümünü \"durağan\" olarak tuttu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/sp-turkiyenin-kredi-notunu-teyit-etti/3910210",
       "image": "",
-      "date": "2026-04-17T20:29:42.000Z",
+      "date": "2026-04-17T21:45:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'de ICE'ın hukuksuzca gözaltına aldığı Rümeysa Öztürk, doktorasını tamamlayıp Türkiye'ye döndü",
+      "description": "ABD'de Göçmenlik ve Gümrük Muhafaza Dairesi (ICE) tarafından hukuka aykırı bir şekilde gözaltına alınan Rümeysa Öztürk, Tufts Üniversitesi'ndeki doktorasını tamamlayarak Türkiye'ye döndü.",
+      "url": "https://www.aa.com.tr/tr/gundem/abdde-icein-hukuksuzca-gozaltina-aldigi-rumeysa-ozturk-doktorasini-tamamlayip-turkiyeye-dondu/3910209",
+      "image": "",
+      "date": "2026-04-17T21:44:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail, ateşkesin yürürlüğe girmesine kısa süre kala Lübnan'ın güneyinde bir tepeyi işgal ettiğini duyurdu",
+      "description": "İsrail ordusu, geçici ateşkesin yürürlüğe girmesine kısa süre kala Lübnan'ın güneyindeki işgalini Suriye'deki Cebel eş-Şeyh (Hermon) Dağı'na doğru genişlettiğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/live-blog/israil-ateskesin-yururluge-girmesine-kisa-sure-kala-lubnanin-guneyinde-bir-tepeyi-isgal-ettigini-duyurdu/1272",
+      "image": "",
+      "date": "2026-04-17T21:30:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "UNSMIL Başkanı Tetteh: Afrika'nın rekabet gücünü artırmada en büyük zorluklardan biri orta ve uzun vadeli yatırımlardır",
+      "description": "Birleşmiş Milletler (BM) Genel Sekreteri'nin Libya Özel Temsilcisi ve Libya'daki BM Destek Misyonu (UNSMIL) Başkanı Hanna Serwaa Tetteh, Afrika'nın henüz yeterince fark edilmemiş büyük bir fırsat sunduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/gundem/unsmil-baskani-tetteh-afrikanin-rekabet-gucunu-artirmada-en-buyuk-zorluklardan-biri-orta-ve-uzun-vadeli-yatirimlardir/3910192",
+      "image": "",
+      "date": "2026-04-17T21:23:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Suudi Arabistan, bu yılki hacı adaylarını karşılamaya hazır olduğunu açıkladı",
+      "description": "Suudi Arabistan, bu yılki Hac mevsimi için tüm uluslararası limanlarının hacıları karşılamaya hazır olduğunu ve ülkeye girişlerini kolaylaştırmak için en son teknolojilerin ve personelin görevlendirildiğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/suudi-arabistan-bu-yilki-haci-adaylarini-karsilamaya-hazir-oldugunu-acikladi/3910172",
+      "image": "",
+      "date": "2026-04-17T21:05:37.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -22,50 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Galatasaray, FIBA Kadınlar Avrupa Ligi'nde finale yükselerek Fenerbahçe'nin rakibi oldu",
-      "description": "Galatasaray Çağdaş Faktoring, FIBA Kadınlar Avrupa Ligi yarı finalinde İspanya'nın Casademont Zaragoza takımını 63-56 yenerek finale yükseldi.",
-      "url": "https://www.aa.com.tr/tr/spor/galatasaray-cagdas-faktoring-fiba-kadinlar-avrupa-liginde-finale-yukseldi-ve-fenerbahce-opetin-rakibi-oldu/3910133",
-      "image": "",
-      "date": "2026-04-17T20:25:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Fidan, Türkiye-Mısır-Pakistan-Suudi Arabistan Dışişleri Bakanları 3. Toplantısı'na ev sahipliği yaptı",
-      "description": "Dışişleri Bakanı Hakan Fidan, Antalya'da Türkiye-Mısır-Pakistan-Suudi Arabistan Dışişleri Bakanları 3. Toplantısı'na ev sahipliği yaptı.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-fidan-turkiye-misir-pakistan-suudi-arabistan-disisleri-bakanlari-3-toplantisina-ev-sahipligi-yapti/3910122",
-      "image": "",
-      "date": "2026-04-17T20:12:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ticaret Bakanlığından \"ayakkabıda domuz derisi bulunduğu\" iddialarına ilişkin açıklama",
-      "description": "Ticaret Bakanlığı, bir marketler zincirinde satışa sunulduğu iddia edilen ayakkabıda domuz derisi bulunduğuna ilişkin \"Söz konusu ürünün satışına rastlanmamış olup, ilgili ürünün güncel satışta bulunmadığı tespit edilmiştir. ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/ticaret-bakanligindan-ayakkabida-domuz-derisi-bulundugu-iddialarina-iliskin-aciklama/3910121",
-      "image": "",
-      "date": "2026-04-17T20:08:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İlk hac kafilesi kutsal topraklara uğurlandı",
-      "description": "İstanbul'da 120 hacı adayından oluşan ilk hac kafilesi, İstanbul Havalimanı'ndan dualar eşliğinde kutsal topraklara uğurlandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/ilk-hac-kafilesi-kutsal-topraklara-ugurlandi/3910119",
-      "image": "",
-      "date": "2026-04-17T20:08:04.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
