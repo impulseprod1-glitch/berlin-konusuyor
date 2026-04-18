@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-04-18T02:22:23.962Z",
+  "lastUpdated": "2026-04-18T05:40:55.412Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Brandenburgs hohe Öko-Stromproduktion soll für günstigere Energiepreise sorgen",
+      "description": "Brandenburg produziert von allen Bundesländern am meisten Öko-Strom - pro Einwohner gerechnet. Trotzdem ist der Strompreis hier höher als etwa in Bayern. Ministerpräsident Woidke hat eine Lösung - zumindest um Brandenburger Verbraucher zu entlasten.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/brandenburg-windraeder-oeko-strom-produktion-preis-vergleich-bayern.html",
+      "image": "",
+      "date": "2026-04-18T05:15:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Gazze Barış Kurulu temsilcisinden \"İsrail kısıtlamaları yardımları engelliyor\" açıklaması",
       "description": "Gazze Barış Kurulu Yüksek Temsilcisi Nikolay Mladenov, İsrail’in sınır kapıları üzerindeki geniş kapsamlı kısıtlamalarının insani yardımların Gazze Şeridi'ne girişinin önündeki başlıca engel olduğunu belirtti.",
@@ -36,22 +47,11 @@
       "type": "rss"
     },
     {
-      "title": "Gülistan Doku soruşturmasında adliyeye sevk edilen zanlılardan 4'ü tutuklandı",
-      "description": "Tunceli'de 5 Ocak 2020'den itibaren kendisinden haber alınamayan üniversite öğrencisi Gülistan Doku ile ilgili yürütülen soruşturmada adliyeye sevk edilen zanlılardan 4'ü tutuklandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/gulistan-doku-sorusturmasinda-adliyeye-sevk-edilen-zanlilardan-4u-tutuklandi/3910235",
+      "title": "Gülistan Doku soruşturmasında 8 kişi tutuklandı",
+      "description": "Tunceli'de 5 Ocak 2020'den itibaren haber alınamayan üniversite öğrencisi Gülistan Doku ile ilgili yürütülen soruşturmada tutuklu sayısı 8 oldu.",
+      "url": "https://www.aa.com.tr/tr/gundem/gulistan-doku-sorusturmasinda-8-kisi-tutuklandi/3910235",
       "image": "",
       "date": "2026-04-17T23:00:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Basketbol Avrupa Ligi'nde normal sezonun \"perdesi\" kapandı",
-      "description": "Basketbol Avrupa Ligi'nde (EuroLeague) normal sezonun \"perdesi\" kapandı.",
-      "url": "https://www.aa.com.tr/tr/spor/basketbol-avrupa-liginde-normal-sezonun-perdesi-kapandi/3910233",
-      "image": "",
-      "date": "2026-04-17T22:46:30.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -63,6 +63,17 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/ostfriesland-berlin-protest-hohe-spritpreise-auto-konvoi-bundestag.html",
       "image": "",
       "date": "2026-04-17T20:26:44.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Nach Erfolg gegen Köln: Eisbären noch einen Sieg vom Finale entfernt",
+      "description": "Matchball für die Eisbären! Nach dem dritten Heimsieg im dritten Heimspiel der Halbfinal-Serie gegen die Kölner Haie brauchen die Berliner noch einen Sieg, um abermals ins Finale einzuziehen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/eishockey-del-halbfinale-spiel-fuenf-eisbaeren-koelner-haie.html",
+      "image": "",
+      "date": "2026-04-17T20:14:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
@@ -91,25 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "Trichinellenfunde bei Wildschweinen in Brandenburg nachgewiesen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/wildschweine-trichinellen-brandenburg.html",
+      "title": "Dijital oyunlarda 'İslamofobi' tehlikesi",
+      "description": "Gençlik ve Spor Bakanı Kılıç, dijital oyunlardaki İslamofobi tehlikesine ilişkin, \"Dünya çapında online olarak oynanan bazı oyunlarda İslam'a karşı kara propaganda olarak nitelendirilebilecek imgeler tespit ediliyor.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/dijital-oyunlarda-islamofobi-tehlikesi/660381",
       "image": "",
-      "date": "2026-04-17T19:28:22.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fördermittel-Vergabe: Untersuchungsausschuss befragt Zeugen",
-      "description": "Hat die CDU unzulässigen Einfluss auf die Vergabe von Fördergeldern an Projekte gegen Antisemitismus genommen? Diese Frage steht im Zentrum eines Untersuchungsausschusses im Berliner Abgeordnetenhaus. Nun werden wichtige Zeugen befragt.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/berlin-foerdergeld-untersuchungsausschuss-abgeordnetenhaus-kulturverwaltung.html",
-      "image": "",
-      "date": "2026-04-17T18:26:47.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
+      "date": "2016-10-07T13:02:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     }
   ],
