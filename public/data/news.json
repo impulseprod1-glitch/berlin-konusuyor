@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-04-18T08:50:29.228Z",
+  "lastUpdated": "2026-04-18T10:39:49.411Z",
   "count": 10,
   "articles": [
+    {
+      "title": "MSÜ Askeri Öğrenci Aday Belirleme Sınavı'na ilişkin kamu spotu yayımlandı",
+      "description": "Milli Savunma Üniversitesine (MSÜ) bağlı Harp Okulları ve Astsubay Meslek Yüksekokulları için 2026-MSÜ tercih sürecinin 24 Nisan'da son bulacağını hatırlatan kamu spotu yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/msu-askeri-ogrenci-aday-belirleme-sinavina-iliskin-kamu-spotu-yayimlandi/3910505",
+      "image": "",
+      "date": "2026-04-18T10:34:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bulgaristan'da vatandaşlar son 5 yılda 8'inci kez sandık başına gidecek",
+      "description": "Son 5 yıldır devam eden siyasi istikrarsızlık döngüsünden çıkmak isteyen Bulgaristan'da seçmenler yarın sandık başına gidecek.",
+      "url": "https://www.aa.com.tr/tr/dunya/bulgaristanda-vatandaslar-son-5-yilda-8inci-kez-sandik-basina-gidecek/3910502",
+      "image": "",
+      "date": "2026-04-18T10:32:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "14-Jährige auf E-Scooter von Auto in Berlin erfasst - tot",
+      "description": "Tödlicher Unfall in Berlin-Buckow: Eine 14-Jährige wird auf ihrem Roller angefahren – und stirbt später an ihren Verletzungen.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-verkehr-unfall-buckow-escooter-maedchen-tot.html",
+      "image": "",
+      "date": "2026-04-18T10:30:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Lübnan Cumhurbaşkanı ve Başbakanı ateşkes sonrası dönemi görüştü",
+      "description": "Lübnan Cumhurbaşkanı Joseph Avn ve Başbakan Nevvaf Selam Lübnan'da ateşkes sonrası dönem ve İsrail ile doğrudan müzakereler konusunu değerlendirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/lubnan-cumhurbaskani-ve-basbakani-ateskes-sonrasi-donemi-gorustu/3910497",
+      "image": "",
+      "date": "2026-04-18T10:27:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Dışişleri Bakanı Fidan, Rus mevkidaşı Lavrov ile görüştü",
+      "description": "Dışişleri Bakanı Hakan Fidan, Antalya'da Rusya Dışişleri Bakanı Sergey Lavrov ile bir araya geldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakani-fidan-rus-mevkidasi-lavrov-ile-gorustu/3910493",
+      "image": "",
+      "date": "2026-04-18T10:24:21.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'in Gazze'ye saldırılarında can kaybı 72 bin 549'a yükseldi",
+      "description": "İsrail ordusunun Ekim 2023'ten beri Gazze Şeridi'ne düzenlediği saldırılarda yaşamını yitirenlerin sayısı 72 bin 549'a ulaştı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-gazzeye-saldirilarinda-can-kaybi-72-bin-549a-yukseldi/3910488",
+      "image": "",
+      "date": "2026-04-18T10:21:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Brandenburgs hohe Öko-Stromproduktion soll für günstigere Energiepreise sorgen",
+      "description": "Brandenburg produziert bundesweit am meisten Öko-Strom - pro Einwohner gerechnet. Trotzdem ist der Strompreis hier höher als etwa in Bayern. Ministerpräsident Woidke hat eine Lösung - zumindest um Verbraucher zu entlasten.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/brandenburg-windraeder-oeko-strom-produktion-preis-vergleich-bayern.html",
+      "image": "",
+      "date": "2026-04-18T09:27:44.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Post-Filialnetz hat in Brandenburg und Berlin Lücken",
       "description": "",
@@ -11,61 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "MEB, Şanlıurfa ve Kahramanmaraş'ta psikososyal destek çalışmalarına devam ediyor",
-      "description": "Milli Eğitim Bakanlığı (MEB), Şanlıurfa ve Kahramanmaraş'ta yaşanan okul saldırılarının ardından rehber öğretmen ile psikolojik danışmanların görev aldığı psikososyal destek çalışmalarını aralıksız sürdürüyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/meb-sanliurfa-ve-kahramanmarasta-psikososyal-destek-calismalarina-devam-ediyor/3910418",
-      "image": "",
-      "date": "2026-04-18T08:47:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Hürmüz krizi fosil yakıt temelli enerji sistemlerinin kırılganlığını ortaya çıkardı",
-      "description": "Uluslararası Yenilenebilir Enerji Ajansı (IRENA) Genel Direktörü Francesco La Camera, ABD, İsrail ve İran arasındaki savaşın, fosil yakıtlara dayalı enerji sistemlerinin enerji güvenliğini sağlamada yetersiz kaldığını ortaya koyduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/hurmuz-krizi-fosil-yakit-temelli-enerji-sistemlerinin-kirilganligini-ortaya-cikardi/3910414",
-      "image": "",
-      "date": "2026-04-18T08:43:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Sosyal medyada şiddet içeriklerinin paylaşımı saldırganların görünürlük kazanma riskini artırıyor",
-      "description": "Uzmanlar, Şanlıurfa ve Kahramanmaraş'ta okullarda yaşanan saldırı olaylarına ait görüntülerin sosyal medyada hızla yayılmasının, hem yanlış bilgi dolaşımını artırdığı hem de saldırganların görünürlük elde etmesine yol açabileceği uyarısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/gundem/sosyal-medyada-siddet-iceriklerinin-paylasimi-saldirganlarin-gorunurluk-kazanma-riskini-artiriyor/3910407",
-      "image": "",
-      "date": "2026-04-18T08:39:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran, Hürmüz Boğazı’nı yeniden kapattığını duyurdu",
-      "description": "",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-hurmuz-bogazi-ni-yeniden-kapattigini-duyurdu/3910402",
-      "image": "",
-      "date": "2026-04-18T08:36:17.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Milli güreşçi Osman Göçen için \"altın\" zamanı",
-      "description": "Serbest Güreş Milli Takımı'nın en tecrübeli ismi Osman Göçen, kariyerindeki 3 Avrupa üçüncülüğünü, altın madalyayla taçlandırmayı hedefliyor.",
-      "url": "https://www.aa.com.tr/tr/spor/milli-guresci-osman-gocen-icin-altin-zamani/3910400",
-      "image": "",
-      "date": "2026-04-18T08:35:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/04/zecken-berlin-brandenburg-saison-fsme-borreliose-menschen-tiere.html",
       "image": "",
       "date": "2026-04-18T08:08:21.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Brandenburgs hohe Öko-Stromproduktion soll für günstigere Energiepreise sorgen",
-      "description": "Brandenburg produziert von allen Bundesländern am meisten Öko-Strom - pro Einwohner gerechnet. Trotzdem ist der Strompreis hier höher als etwa in Bayern. Ministerpräsident Woidke hat eine Lösung - zumindest um Brandenburger Verbraucher zu entlasten.",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/brandenburg-windraeder-oeko-strom-produktion-preis-vergleich-bayern.html",
-      "image": "",
-      "date": "2026-04-18T05:15:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Nach Erfolg gegen Köln: Eisbären noch einen Sieg vom Finale entfernt",
-      "description": "Matchball für die Eisbären! Nach dem dritten Heimsieg im dritten Heimspiel der Halbfinal-Serie gegen die Kölner Haie brauchen die Berliner noch einen Sieg, um abermals ins Finale einzuziehen.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/eishockey-del-halbfinale-spiel-fuenf-eisbaeren-koelner-haie.html",
-      "image": "",
-      "date": "2026-04-17T20:14:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
