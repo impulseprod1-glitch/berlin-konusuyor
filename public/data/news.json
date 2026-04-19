@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-18T22:34:29.079Z",
+  "lastUpdated": "2026-04-19T02:36:24.583Z",
   "count": 10,
   "articles": [
     {
@@ -33,6 +33,17 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Nach Stromausfall in Berlin-Nikolassee: Haushalte wieder am Netz",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-stromausfall-nikolassee-behoben.html",
+      "image": "",
+      "date": "2026-04-18T21:50:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -85,17 +96,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-berlin-regionalliga-nordost-hertha-bsc-vsg-altglienicke-magdeburg-chemie-leipzig.html",
       "image": "",
       "date": "2026-04-18T17:00:06.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Union Berlin verliert bei historischem Eta-Debüt gegen Wolfsburg",
-      "description": "Beim historischen Debüt von Marie-Louise Eta als Bundesliga-Trainerin hat der 1. FC Union Berlin verloren. Die \"Eisernen\" unterlagen dem abstiegsbedrohten, am Samstag aber effektiven VfL Wolfsburg.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-1-fc-union-berlin-vfl-wolfsburg-audio-stream-liveticker-spielbericht.html",
-      "image": "",
-      "date": "2026-04-18T16:29:01.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
