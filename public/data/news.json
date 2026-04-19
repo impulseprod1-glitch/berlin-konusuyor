@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-04-19T10:38:24.034Z",
+  "lastUpdated": "2026-04-19T13:00:24.933Z",
   "count": 10,
   "articles": [
     {
-      "title": "Zigana Dağı safari yapmak isteyenleri ağırlıyor",
-      "description": "Doğu Karadeniz'in önemli kış turizmi destinasyonlarından Zigana Kış Sporları Turizm Merkezi, ATV başta olmak üzere doğaseverlere keyifli vakit geçirme imkanı sağlıyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/zigana-dagi-safari-yapmak-isteyenleri-agirliyor/3911281",
+      "title": "Bodrum'a \"Marella Discovery\" kruvaziyeriyle 1752 turist geldi",
+      "description": "Muğla'nın Bodrum ilçesine, \"Marella Discovery\" adlı kruvaziyer 1752 yolcu getirdi.",
+      "url": "https://www.aa.com.tr/tr/kultur/bodruma-marella-discovery-kruvaziyeriyle-1752-turist-geldi/3911366",
       "image": "",
-      "date": "2026-04-19T10:35:49.000Z",
+      "date": "2026-04-19T12:57:27.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Yurt genelinde hafta boyunca aralıklı yağış görülecek",
+      "description": "Yurt genelinde hafta boyunca aralıklı yağış görülecek, sıcaklık mevsim normallerinin altında seyredecek.",
+      "url": "https://www.aa.com.tr/tr/gundem/yurt-genelinde-hafta-boyunca-aralikli-yagis-gorulecek/3911365",
+      "image": "",
+      "date": "2026-04-19T12:56:21.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "AK Parti Gençlik Kolları Dış İlişkiler Başkanı Aydemir: Türkiye çözümleri masaya getirebilen bir ülke",
+      "description": "AK Parti Gençlik Kolları Dış İlişkiler Başkanı ve Ankara Milletvekili Zehranur Aydemir, Türkiye'nin sadece sorunları konuşan değil, çözümleri masaya getirebilen bir ülke olduğunu, Antalya Diplomasi Forumu'nda bir kez daha gösterdiğini söyledi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ak-parti-genclik-kollari-dis-iliskiler-baskani-aydemir-turkiye-cozumleri-masaya-getirebilen-bir-ulke/3911364",
+      "image": "",
+      "date": "2026-04-19T12:53:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistin topraklarını gasbeden İsrailliler, Mescid-i Aksa'ya baskın düzenledi",
+      "description": "İsrail polisinin korumasındaki 150 fanatik Yahudi, işgal altındaki Doğu Kudüs'te bulunan Mescid-i Aksa'ya baskın düzenledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israilliler-mescid-i-aksaya-baskin-duzenledi/3911355",
+      "image": "",
+      "date": "2026-04-19T12:41:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Was war das denn? | Uni-Abschluss und dann Job-Center?",
+      "description": "Uni-Abschluss und dann? Studierende erleben gerade Absagenhagel statt eines Berufsstarts im Traumjob. Oft gibt es nicht mal eine Einladung zum Vorstellungsgespräch – dafür aber zu Terminen beim Jobcenter.",
+      "url": "https://www.rbb24.de/panorama/thema/was-war-das-denn/berufsstart-akademiker-studierende-arbeitslos.html",
+      "image": "",
+      "date": "2026-04-19T12:36:44.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "BM Genel Sekreteri'nin Libya Özel Temsilcisi Tetteh'den Türkiye'nin istikrar sağlayıcı rolüne övgü",
+      "description": "Birleşmiş Milletler (BM) Genel Sekreteri'nin Libya Özel Temsilcisi ve ülkedeki BM Destek Misyonunun (UNSMIL) Başkanı Hanna Serwaa Tetteh, Türkiye'nin bölgede önemli istikrar sağlayıcı rol oynadığını söyledi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bm-genel-sekreterinin-libya-ozel-temsilcisi-tettehden-turkiyenin-istikrar-saglayici-rolune-ovgu/3911312",
+      "image": "",
+      "date": "2026-04-19T11:34:25.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fußball: Wahrt Hertha in Braunschweig Restchance auf Aufstieg?",
+      "description": "Hertha BSC hat nur noch minimale Restchancen auf den Bundesliga-Aufstieg. Gegen Braunschweig müssten die Berliner dafür dreifach punkten. Gelingt Hertha eine Antwort auf die Kaiserslautern-Niederlage?",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-2-liga-eintracht-braunschweig-hertha-bsc-audio-stream-liveticker-spielbericht.html",
+      "image": "",
+      "date": "2026-04-19T11:25:21.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "3. Liga: Cottbus empfängt Rot-Weiss Essen zum Topspiel",
+      "description": "Der FC Energie Cottbus hat am Sonntagnachmittag Rot-Weiss Essen zu Gast. Mit einem Sieg im Topspiel könnten die Lausiter in der Tabelle zum zweitplatzierten Ruhrgebietsklub aufschließen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-brandenburg-energie-cottbus-dritte-liga-rot-weiss-essen.html",
+      "image": "",
+      "date": "2026-04-19T10:54:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,83 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Dışişleri Bakanı Fidan: Antalya Diplomasi Forumu'nda 23 devlet ve hükümet başkanı ağırlandı",
-      "description": "Dışişleri Bakanı Hakan Fidan, Antalya Diplomasi Forumu'nda 23 devlet ve hükümet başkanı, 13 devlet ve hükümet başkan yardımcısı ve 50 bakanın ağırlandığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakani-fidan-antalya-diplomasi-forumunda-23-devlet-ve-hukumet-baskani-agirlandi/3911269",
-      "image": "",
-      "date": "2026-04-19T10:18:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gazze'deki soykırıma katılan İsrail askerlerinden \"canavar gibi hissediyoruz\" itirafı",
-      "description": "İsrail'in Gazze Şeridi'nde Ekim 2023'te başlattığı soykırımda, masum Filistinlilerin öldürüldüğü ya da işkenceye maruz bırakıldığı anlara tanıklık eden İsrail askerleri, Gazze'de yaşananları aktarırken bir \"canavar\" gibi davrandıklarını itiraf etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/gazzedeki-soykirima-katilan-israil-askerlerinden-canavar-gibi-hissediyoruz-itirafi/3911247",
-      "image": "",
-      "date": "2026-04-19T10:02:16.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Buch \"Arm aber sexy\": Interview mit Autor Stefan Wolle",
-      "description": "Eigentlich beschäftigt sich der Historiker Stefan Wolle mit der DDR. In seinem neuen Buch geht es aber um das Berlin der Nachwendezeit. Ein Gespräch darüber, wie viel Wahrheit in \"Arm aber sexy\" steckt - und warum Berlin in seinen Augen merkwürdig ist.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/04/interview-stefan-wolle-buch-berlin-wende-ddr-nachwendezeit.html",
-      "image": "",
-      "date": "2026-04-19T09:35:28.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Nach Stromausfall in Berlin-Nikolassee: Haushalte wieder am Netz",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-stromausfall-nikolassee-behoben.html",
-      "image": "",
-      "date": "2026-04-19T09:09:48.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Die Uckermark wählt zwischen CDU-Landrätin und AfD-Herausförderer",
-      "description": "Rund 100.000 Wahlberechtigte bestimmen am Sonntag in der Uckermark, wer den größten Landkreis Brandenburgs künftig führt. Amtsinhaberin Karina Dörk tritt gegen AfD-Kandidat Felix Teichner an – im Fokus stehen Nahverkehr, Wirtschaft und medizinische Versorgung.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/04/uckermark-landratswahl-cdu-karina-doerk-afd-felix-teichner.html",
-      "image": "",
-      "date": "2026-04-19T09:02:41.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İİT Genel Sekreter Yardımcısı Khokher: Türkiye, ADF platformu aracılığıyla mükemmel bir fırsat sunuyor",
-      "description": "İİT Bilim ve Teknolojiden Sorumlu Genel Sekreter Yardımcısı Khokher, \"Türkiye, ADF platformu aracılığıyla yalnızca İslam ülkeleri için değil, tüm kıtalardan katılımın sağlandığı mükemmel bir fırsat sunuyor.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/iit-genel-sekreter-yardimcisi-khokher-turkiye-adf-platformu-araciligiyla-mukemmel-bir-firsat-sunuyor/3910910",
-      "image": "",
-      "date": "2026-04-18T17:16:04.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gine-Bissau Dışişleri Bakanı Viera II, Türkiye ile ilişkileri \"olumlu\" olarak niteledi",
-      "description": "Gine-Bissau Dışişleri Bakanı Joao Bernardo Viera II, Türkiye'nin önemli bir ortak olduğuna işaret ederek uluslararası düzeyde Türkiye ile pozisyonlarını uyumlu hale getirmek için de işbirliğini güçlendirmeyi hedeflediklerini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/gine-bissau-disisleri-bakani-viera-ii-turkiye-ile-iliskileri-olumlu-olarak-niteledi/3910603",
-      "image": "",
-      "date": "2026-04-18T12:19:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
