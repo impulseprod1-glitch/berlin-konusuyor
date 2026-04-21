@@ -1,38 +1,82 @@
 {
-  "lastUpdated": "2026-04-21T17:01:02.494Z",
+  "lastUpdated": "2026-04-21T19:10:49.385Z",
   "count": 10,
   "articles": [
     {
-      "title": "Etwas weniger Angriffe auf Lehrkräfte in Berlin und Brandenburg - bundesweit steigende Zahlen",
-      "description": "Zahlen der Bundesregierung zeigen, dass die Gewalt gegen Lehrerinnen und Lehrer in Deutschland zunimmt. Berlin und Brandenburg verzeichneten im vergangenen Jahr immerhin einen leichten Rückgang.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/polizeistatistik-schulen-gewalt-gegen-lehrer-.html",
+      "title": "Dışişleri, İsrailli yasa dışı yerleşimcilerin Batı Şeria'daki saldırılarını en güçlü biçimde kınadı",
+      "description": "Dışişleri Bakanlığı, İsrailli yasa dışı yerleşimcilerin, Batı Şeria'da farklı noktalardaki terör saldırılarını ve Filistinli sivilleri katletmelerini en güçlü biçimde kınadıklarını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/disisleri-israilli-yasa-disi-yerlesimcilerin-bati-seriadaki-saldirilarini-en-guclu-bicimde-kinadi/3913887",
       "image": "",
-      "date": "2026-04-21T16:57:56.000Z",
+      "date": "2026-04-21T18:53:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye ile Zambiya arasındaki KEK toplantısı Ankara'da yapıldı",
+      "description": "Çalışma ve Sosyal Güvenlik Bakanlığı ev sahipliğinde Türkiye ile Zambiya arasında Karma Ekonomik Komisyonu (KEK) II. Dönem Toplantısı gerçekleştirildi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/turkiye-ile-zambiya-arasindaki-kek-toplantisi-ankarada-yapildi/3913869",
+      "image": "",
+      "date": "2026-04-21T18:36:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rıza Kayaalp'ten Arnavutluk'ta tarihi şampiyonluk",
+      "description": "Milli sporcu Rıza Kayaalp, Avrupa güreş şampiyonalarında 13'üncü altın madalyasını kazanarak rekor kırdı.",
+      "url": "https://www.aa.com.tr/tr/spor/riza-kayaalpten-arnavutlukta-tarihi-sampiyonluk/3913857",
+      "image": "",
+      "date": "2026-04-21T18:26:13.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türk Yıldızları'ndan 57'nci Alay'a saygı uçuşu",
+      "description": "Türk Hava Kuvvetlerinin akrobasi timi Türk Yıldızları, 57'nci Alay Şehitliği üzerinde 5 ve 7 numaralı uçakların yan yana geldiği saygı uçuşu gerçekleştirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/turk-yildizlarindan-57nci-alaya-saygi-ucusu/3913855",
+      "image": "",
+      "date": "2026-04-21T18:25:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Deutsche Basketballerinnen mit Losglück vor der Heim-WM in Berlin",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/basketball-frauen-wm-berlin-2026-auslosung-deutsche-nationalmannschaft-dbb-team-usa.html",
+      "image": "",
+      "date": "2026-04-21T17:33:42.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "Milli halterci Yusuf Fehmi Genç, erkekler 71 kiloda Avrupa şampiyonu oldu",
+      "title": "BVG: Tram-Linien M1 und 12 ab August monatelang unterbrochen",
       "description": "",
-      "url": "https://www.aa.com.tr/tr/spor/milli-halterci-yusuf-fehmi-genc-erkekler-71-kiloda-avrupa-sampiyonu-oldu/3913749",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-bvg-tram-linien-bauarbeiten-m1-12-ersatzverkehr-busse-vier-monate.html",
       "image": "",
-      "date": "2026-04-21T16:54:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
+      "date": "2026-04-21T17:18:52.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "A Milli Kadın Basketbol Takımı'nın 2026 Dünya Kupası'ndaki rakipleri Avustralya, Belçika ve Porto Riko oldu",
-      "description": "A Milli Kadın Basketbol Takımı'nın 2026 Dünya Kupası'ndaki rakipleri Avustralya, Belçika ve Porto Riko oldu",
-      "url": "https://www.aa.com.tr/tr/spor/a-milli-kadin-basketbol-takiminin-2026-dunya-kupasindaki-rakipleri-avustralya-belcika-ve-porto-riko-oldu/3913739",
+      "title": "Angriffe auf Lehrer: Beleidungen und Bedrohung sind Problem",
+      "description": "Bundesweit hat die Gewalt gegen Lehrerinnen und Lehrer zugenommen. Berlin und Brandenburg verzeichneten im vergangenen Jahr zwar einen leichten Rückgang - doch bestimmte Delikte steigen.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/polizeistatistik-schulen-gewalt-gegen-lehrer-.html",
       "image": "",
-      "date": "2026-04-21T16:50:35.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
+      "date": "2026-04-21T16:57:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -47,17 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Zelenskiy, Drujba petrol boru hattının onarıldığını bildirdi ",
-      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, Avrupa'ya Rus petrolü taşıyan \"Drujba\" petrol boru hattının onarıldığını belirterek, \"Petrol boru hattı tekrar faaliyete geçebilir.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-drujba-petrol-boru-hattinin-onarildigini-bildirdi-/3913726",
-      "image": "",
-      "date": "2026-04-21T16:32:23.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Sanierungsstau an Berliner Hochschulen: Senat legt Gesetz für Hochschulbaugesellschaft vor",
       "description": "",
       "url": "https://www.rbb24.de/politik/beitrag/2026/04/berlin-hochschulen-baugesellschaft-senat-gesetzentwurf.html",
@@ -69,47 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "AP Türkiye Raportörü'nden von der Leyen'in Türkiye açıklamasına tepki",
-      "description": "Avrupa Parlamentosunun Türkiye Raportörü Nacho Sanchez Amor, AB Komisyonu Başkanı von der Leyen'in Avrupa'nın Rus, Türk veya Çin etkisine bırakılmaması gerektiğine ilişkin değerlendirmesinin jeopolitik açıdan hatalı bir analiz olduğunu ifade etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/ap-turkiye-raportorunden-von-der-leyenin-turkiye-aciklamasina-tepki/3913717",
+      "title": "Filistinli Hristiyanlar, İsrail askerinin İsa heykelini kırmasını \"kışkırtıcı\" olarak niteleyip tepki gösterdi",
+      "description": "Filistinli Hristiyanlar, Lübnan'ın güneyindeki Deyr Seryan beldesinde bir İsrail askerinin Hz İsa'yı simgeleyen heykeli parçalamasını \"kışkırtıcı bir eylem\" olarak nitelendirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistinli-hristiyanlar-israil-askerinin-isa-heykelini-kirmasini-kiskirtici-olarak-niteleyip-tepki-gosterdi/3913484",
       "image": "",
-      "date": "2026-04-21T16:14:19.000Z",
+      "date": "2026-04-21T13:00:09.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AB: İsrail ile Ortaklık Anlaşması'nı askıya alma konusunda anlaşma sağlanamadı",
-      "description": "AB Dış İlişkiler ve Güvenlik Politikası Yüksek Temsilcisi Kaja Kallas, bazı üye ülkelerin, İsrail'le olan Ortaklık Anlaşması'nın ya tümü ya da bir kısmını askıya alma önerisinde bulunduğunu belirterek, bu konuda oy birliği sağlanamadığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/ab-israil-ile-ortaklik-anlasmasini-askiya-alma-konusunda-anlasma-saglanamadi/3913714",
-      "image": "",
-      "date": "2026-04-21T16:09:10.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Mega-Rechenzentrum in der Ostprignitz? Freyensteiner sträuben sich gegen geplantes Milliardenprojekt",
-      "description": "In der Nähe des 800-Einwohner-Ortes Freyenstein bei Wittstock soll auf 144 Hektar ein Rechenzentrum-Campus entstehen. Bei einer Einwohnerversammlung wurde deutlich: Die Anwohner fürchten um die Landschaft und ihre Identität.",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/ostprignitz-ruppin-rechenzentrum-geplant-freyenstein-protest.html",
-      "image": "",
-      "date": "2026-04-21T16:05:05.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Eintritt in Potsdamer Schwimmbäder wird teurer",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-potsdam-schwimmbaeder-eintritt-teurer-tickets.html",
-      "image": "",
-      "date": "2026-04-21T16:00:38.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     }
   ],
