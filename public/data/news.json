@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-04-24T18:51:04.330Z",
+  "lastUpdated": "2026-04-24T20:47:47.875Z",
   "count": 10,
   "articles": [
+    {
+      "title": "7:3 in Mannheim: Effektive Eisbären machen ersten Schritt zum Titel",
+      "description": "Die Eisbären Berlin gewinnen deutlich in Mannheim und brauchen nur noch drei Siege zur Titelverteidigung. Wie das erste Duell der Finalserie gelaufen ist.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/eishockey-del-playoffs-finale-adler-mannheim-eisbaeren-berlin.html",
+      "image": "",
+      "date": "2026-04-24T20:32:11.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Suriye'nin BM Daimi Temsilcisi Olabi'den Esed dönemi savaş suçlularının yakalanması için çağrı",
+      "description": "Suriye'nin Birleşmiş Milletler (BM) Daimi Temsilcisi İbrahim Olabi, devrik Beşşar Esed dönemi savaş suçlularının adaletten kurtulamayacaklarını belirterek, yakalanmaları konusunda uluslararası topluma yardımcı olmaları çağrısında bulundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/suriyenin-bm-daimi-temsilcisi-olabiden-esed-donemi-savas-suclularinin-yakalanmasi-icin-cagri/3917389",
+      "image": "",
+      "date": "2026-04-24T20:26:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Kacır: Türkiye, teknoloji girişimciliğinde küresel bir merkeze dönüşecek",
+      "description": "Sanayi ve Teknoloji Bakanı Kacır, \"Cumhurbaşkanımız Recep Tayyip Erdoğan'ın açıkladığı adımlarla Türkiye, teknoloji girişimciliğinde küresel bir merkeze dönüşecek.\" ifadelerini kullandı.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-turkiye-teknoloji-girisimciliginde-kuresel-bir-merkeze-donusecek/3917388",
+      "image": "",
+      "date": "2026-04-24T20:25:27.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bundesliga: Fehlerhaftes Union verliert klar bei RB Leipzig",
+      "description": "Der 1. FC Union Berlin hat auch das zweite Spiel unter Interims-Trainer Marie-Louise Eta verloren. Beim 1:3 in Leipzig waren die Berliner dabei in allen Belangen unterlegen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-rb-leipzig-union-berlin-spielbericht-audiostream-liveticker.html",
+      "image": "",
+      "date": "2026-04-24T20:24:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Bolat: Transit ticaret ve yurt dışı alım-satım kazançlarındaki vergi indirimini yüzde 100'e çıkarıyoruz",
+      "description": "Ticaret Bakanı Bolat, İstanbul Finans Merkezi'ndeki vergi avantajlarını genişletildiğini, transit ticaret ve yurt dışı alım-satım kazançlarındaki yüzde 50 vergi indiriminin yüzde 100'e çıktığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-bolat-transit-ticaret-ve-yurt-disi-alim-satim-kazanclarindaki-vergi-indirimini-yuzde-100e-cikariyoruz/3917385",
+      "image": "",
+      "date": "2026-04-24T20:20:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Süper Lig'de 32. haftanın programı belli oldu",
+      "description": "Trendyol Süper Lig'de 32. haftanın programı açıklandı.",
+      "url": "https://www.aa.com.tr/tr/spor/super-ligde-32-haftanin-programi-belli-oldu/3917379",
+      "image": "",
+      "date": "2026-04-24T20:09:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'in seçimler öncesi Gazze'ye yeniden saldırılara başlamak için hazırlık yaptığı iddia edildi",
+      "description": "İsrail hükümetinin, İran ve Lübnan'daki ateşkeslerin devam etmesi durumunda, ülkede yapılacak genel seçimler öncesinde Gazze Şeridi'ne yönelik yeniden saldırılara başlamak için hazırlık yaptığı öne sürüldü.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-secimler-oncesi-gazzeye-yeniden-saldirilara-baslamak-icin-hazirlik-yaptigi-iddia-edildi/3917376",
+      "image": "",
+      "date": "2026-04-24T20:01:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fußball: Altglienicke verliert in Greifswald, Dynamo gegen Lok",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-regionalliga-nordost-greifswald-altglienicke-bfc-dynamo-lok-leipzig.html",
+      "image": "",
+      "date": "2026-04-24T19:33:07.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Fördergeld-Affäre: Berliner Kultursenatorin Wedl-Wilson zurückgetreten",
       "description": "Berlins Kultursenatorin Wedl-Wilson ist in Folge der Fördergeld-Affäre zurückgetreten. Die parteilose Senatorin hat den Regierenden Bürgermeister Wegner um ihre Entlassung gebeten - auch um Schaden vom Kampf gegen Antisemitismus abzuwenden.",
@@ -14,99 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Fußball-Bundesliga: Union Berlin bei RB Leipzig",
-      "description": "Im zweiten Spiel unter Interims-Trainerin Marie-Louise Eta tritt der 1. FC Union Berlin bei RB Leipzig an. Und trifft dabei auf ein äußerst formstarkes Team. Das gegen die Berliner zuletzt aber immer wieder Probleme hatte.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-rb-leipzig-union-berlin-spielbericht-audiostream-liveticker.html",
-      "image": "",
-      "date": "2026-04-24T18:35:36.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Google, Anthropic'e 40 milyar dolara kadar yatırım yapmayı planlıyor",
-      "description": "BD'li teknoloji devi Google'ın, yapay zeka girişimi Anthropic'e 10 milyar dolarlık bir yatırım yapacağı, bunu 30 milyar dolarlık ek bir yatırımın daha takip edebileceği belirtild",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/google-anthropice-40-milyar-dolara-kadar-yatirim-yapmayi-planliyor/3917316",
-      "image": "",
-      "date": "2026-04-24T18:25:33.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "TFF Tahkim Kurulu, Galatasaray'a verilen para cezasını onadı",
-      "description": "Türkiye Futbol Federasyonu (TFF) Tahkim Kurulu, Profesyonel Futbol Disiplin Kurulu (PFDK) tarafından Galatasaray'a verilen 1 milyon 460 bin liralık para cezasını onadı.",
-      "url": "https://www.aa.com.tr/tr/spor/tff-tahkim-kurulu-galatasaraya-verilen-para-cezasini-onadi/3917314",
-      "image": "",
-      "date": "2026-04-24T18:24:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Pep Guardiola'dan 2026 Dünya Kupası bilet ve seyahat fiyatlarına tepki",
-      "description": "İngiltere'nin Manchester City takımının teknik direktörü Pep Guardiola; ABD, Kanada ve Meksika’nın ortak düzenleyeceği 2026 Dünya Kupası'nı statlardan izleyecek taraftarlar için bilet ve seyahat fiyatlarının yüksek olmasını eleştirdi.",
-      "url": "https://www.aa.com.tr/tr/spor/pep-guardioladan-2026-dunya-kupasi-bilet-ve-seyahat-fiyatlarina-tepki/3917311",
-      "image": "",
-      "date": "2026-04-24T18:20:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "New York Belediye Başkanı Mamdani, Belediye Meclisinin protestoları sınırlayan tasarısını veto etti",
-      "description": "New York Belediye Başkanı Zohran Mamdani, New York Polis Departmanının (NYPD) okullar ve eğitim kurumları çevresinde protestolar için tampon bölge oluşturmasına izin veren Belediye Meclisi tasarısını veto etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/new-york-belediye-baskani-mamdani-belediye-meclisinin-protestolari-sinirlayan-tasarisini-veto-etti/3917291",
-      "image": "",
-      "date": "2026-04-24T17:59:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İtalya Başbakanı Meloni: \"ABD ile İspanya arasında NATO konusunda yaşanan gerilimi olumlu bulmuyorum\"",
-      "description": "İtalya Başbakanı Giorgia Meloni, ABD ile İspanya arasında NATO konusunda yaşanan gerilimi olumlu bulmadığını, Atlantik İttifakının Avrupa ayağının güçlendirilmesi için çalışmaları gerektiğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/italya-basbakani-meloni-abd-ile-ispanya-arasinda-nato-konusunda-yasanan-gerilimi-olumlu-bulmuyorum/3917283",
-      "image": "",
-      "date": "2026-04-24T17:48:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Flughafen BER: Ryanair kündigt Rückzug vom BER an",
       "description": "Der irische Billigflieger Ryanair will sämtliche Flugzeuge seiner Basis am BER in andere europäische Länder verlagern und insgesamt 50 Prozent weniger Flüge von und zum Flughafen Berlin-Brandenburg anbieten. Grund sind laut Ryanair hohe Kosten.",
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/flughafen-ber-ryanair-rueckzug-weniger-fluege-schliessung-basis.html",
       "image": "",
       "date": "2026-04-24T16:59:19.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Sedlitzer See im Lausitzer Seenland freigegeben  ",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/brandenburg-lausitz-seenland-sedlitzer-see-freigegeben.html",
-      "image": "",
-      "date": "2026-04-24T15:52:53.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fahrschulen in Berlin plötzlich zu: Fahrschüler bangen um Geld",
-      "description": "Gerade waren sie noch dabei, ihre Theorie- und Fahrstunden zu leisten. Plötzlich ist Schluss - weil zwei Berliner Fahrschulen überraschend dicht gemacht haben. Viele Schüler hatten vorher Pakete von 1.000 Euro und mehr gebucht. Nun könnte das Geld verloren sein.",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/04/fahrschulen-berlin-schueler-pakete-buchungen-geld.html",
-      "image": "",
-      "date": "2026-04-24T15:52:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
