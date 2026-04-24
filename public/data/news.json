@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-04-24T20:47:47.875Z",
+  "lastUpdated": "2026-04-24T22:38:07.487Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Bundesliga: Fehlerhaftes Union verliert klar bei RB Leipzig",
+      "description": "Der 1. FC Union Berlin hat auch das zweite Spiel unter Interims-Trainer Marie-Louise Eta verloren. Beim 1:3 in Leipzig waren die Berliner dabei in allen Belangen unterlegen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-rb-leipzig-union-berlin-spielbericht-audiostream-liveticker.html",
+      "image": "",
+      "date": "2026-04-24T21:06:08.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan: Tarihten husumet çıkarmak isteyenlere cevabı diyalog dilini üstün tutan bir yaklaşımla veriyoruz",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, İstanbul Ermeni Patrikhanesi'nde gerçekleştirilen dini törene mesaj gönderdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-tarihten-husumet-cikarmak-isteyenlere-cevabi-diyalog-dilini-ustun-tutan-bir-yaklasimla-veriyoruz/3917409",
+      "image": "",
+      "date": "2026-04-24T20:58:25.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İletişim Başkanı Duran: Türkiye'de yasal düzenlemelerle siber egemenliğe sahip çıkmak durumundayız",
+      "description": "İletişim Başkanı Duran, her ülkenin artık siber alanı bir egemenlik alanı olarak gördüğünü ve buna dair tedbirler aldığını belirterek, \"Türkiye'de de yapılan ve yapılacak olan yasal düzenlemelerle bu egemenliğe sahip çıkmak durumundayız.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskani-duran-turkiyede-yasal-duzenlemelerle-siber-egemenlige-sahip-cikmak-durumundayiz/3917401",
+      "image": "",
+      "date": "2026-04-24T20:50:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD \"İran bağlantısı\" iddiasıyla 344 milyon dolarlık kripto varlığı dondurdu",
+      "description": "ABD Hazine Bakanı Scott Bessent, \"İran ile bağlantılı\" çok sayıda kripto para cüzdanına yaptırım uygulanmasıyla 344 milyon dolar değerinde kripto paranın dondurulduğunu bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-iran-baglantisi-iddiasiyla-344-milyon-dolarlik-kripto-varligi-dondurdu/3917399",
+      "image": "",
+      "date": "2026-04-24T20:46:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "7:3 in Mannheim: Effektive Eisbären machen ersten Schritt zum Titel",
       "description": "Die Eisbären Berlin gewinnen deutlich in Mannheim und brauchen nur noch drei Siege zur Titelverteidigung. Wie das erste Duell der Finalserie gelaufen ist.",
@@ -25,61 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "Bakan Kacır: Türkiye, teknoloji girişimciliğinde küresel bir merkeze dönüşecek",
-      "description": "Sanayi ve Teknoloji Bakanı Kacır, \"Cumhurbaşkanımız Recep Tayyip Erdoğan'ın açıkladığı adımlarla Türkiye, teknoloji girişimciliğinde küresel bir merkeze dönüşecek.\" ifadelerini kullandı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-turkiye-teknoloji-girisimciliginde-kuresel-bir-merkeze-donusecek/3917388",
-      "image": "",
-      "date": "2026-04-24T20:25:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bundesliga: Fehlerhaftes Union verliert klar bei RB Leipzig",
-      "description": "Der 1. FC Union Berlin hat auch das zweite Spiel unter Interims-Trainer Marie-Louise Eta verloren. Beim 1:3 in Leipzig waren die Berliner dabei in allen Belangen unterlegen.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-bundesliga-rb-leipzig-union-berlin-spielbericht-audiostream-liveticker.html",
-      "image": "",
-      "date": "2026-04-24T20:24:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Bolat: Transit ticaret ve yurt dışı alım-satım kazançlarındaki vergi indirimini yüzde 100'e çıkarıyoruz",
-      "description": "Ticaret Bakanı Bolat, İstanbul Finans Merkezi'ndeki vergi avantajlarını genişletildiğini, transit ticaret ve yurt dışı alım-satım kazançlarındaki yüzde 50 vergi indiriminin yüzde 100'e çıktığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-bolat-transit-ticaret-ve-yurt-disi-alim-satim-kazanclarindaki-vergi-indirimini-yuzde-100e-cikariyoruz/3917385",
-      "image": "",
-      "date": "2026-04-24T20:20:53.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Süper Lig'de 32. haftanın programı belli oldu",
-      "description": "Trendyol Süper Lig'de 32. haftanın programı açıklandı.",
-      "url": "https://www.aa.com.tr/tr/spor/super-ligde-32-haftanin-programi-belli-oldu/3917379",
-      "image": "",
-      "date": "2026-04-24T20:09:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in seçimler öncesi Gazze'ye yeniden saldırılara başlamak için hazırlık yaptığı iddia edildi",
-      "description": "İsrail hükümetinin, İran ve Lübnan'daki ateşkeslerin devam etmesi durumunda, ülkede yapılacak genel seçimler öncesinde Gazze Şeridi'ne yönelik yeniden saldırılara başlamak için hazırlık yaptığı öne sürüldü.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilin-secimler-oncesi-gazzeye-yeniden-saldirilara-baslamak-icin-hazirlik-yaptigi-iddia-edildi/3917376",
-      "image": "",
-      "date": "2026-04-24T20:01:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Fußball: Altglienicke verliert in Greifswald, Dynamo gegen Lok",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-regionalliga-nordost-greifswald-altglienicke-bfc-dynamo-lok-leipzig.html",
@@ -88,6 +77,17 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İş dünyası temsilcileri Türkiye Yüzyılı Yatırım İçin Güçlü Merkez Programı'nı memnuniyetle karşıladı",
+      "description": "İş dünyası temsilcileri, Cumhurbaşkanı Recep Tayyip Erdoğan'ın \"Türkiye Yüzyılı Yatırım İçin Güçlü Merkez Programı\" kapsamında yaptığı açıklamaları memnuniyetle karşıladı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/is-dunyasi-temsilcileri-turkiye-yuzyili-yatirim-icin-guclu-merkez-programini-memnuniyetle-karsiladi/3917352",
+      "image": "",
+      "date": "2026-04-24T19:30:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
