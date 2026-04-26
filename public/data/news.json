@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-04-26T02:39:50.843Z",
+  "lastUpdated": "2026-04-26T06:06:25.328Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Bingöl'de 4,4 büyüklüğünde deprem",
+      "description": "Bingöl'ün Yedisu ilçesinde saat 08.01'de 4,4 büyüklüğünde deprem meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bingolde-4-4-buyuklugunde-deprem/3918205",
+      "image": "",
+      "date": "2026-04-26T05:27:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "1. Mai: Diese Demos und Veranstaltungen gibt es in Berlin",
+      "description": "Am 1. Mai sind in Berlin zahlreiche Demonstrationen und Veranstaltungen geplant: Die jährliche \"Revolutionäre 1. Mai\"-Demo in Kreuzberg, eine Gewerkschaftsdemo und mehrere Raves - unter anderem im Görlitzer Park.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-1-mai-demonstrationen-veranstaltungen-maidemo.html",
+      "image": "",
+      "date": "2026-04-26T05:19:16.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Streit um Gedenkstein für Kaiserliche Schutztruppe in Neukölln geht weiter",
+      "description": "Das einzige Denkmal in Berlin, das an die Kolonialzeit erinnert, ist Freiwilligen der deutschen Schutztruppe gewidmet. Seit Jahren gibt es in Neukölln Streit um den tonnenschweren Fels. Seine Versetzung ist längst bechlossen, aber noch nicht erfolgt.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/04/berlin-neukoelln-kolonialismus-columbiadamm-friedhof-schutztruppenstein-hererostein.html",
+      "image": "",
+      "date": "2026-04-26T05:18:42.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Vor 60 Jahren erfunden: Berliner Joseph Weizenbaum und sein weltweit erster Chatbot \"Eliza\"",
+      "description": "Vor 60 Jahren entstand am MIT ein Programm, das Gespräche zwischen Mensch und Maschine möglich machte: \"Eliza\", entwickelt vom Berliner Joseph Weizenbaum. \"Eliza\" löste bei vielen ein merkwürdiges Gefühl aus - und veränderte Weizenbaums Blick auf Technik vollständig.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/eliza-joseph-weizenbaum-computer-jubilum-berlin.html",
+      "image": "",
+      "date": "2026-04-26T05:17:39.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Mali'deki saldırılar kontrol altına alındı",
       "description": "Mali'de başta başkent Bamako olmak üzere birçok şehirde eş zamanlı başlatılan silahlı saldırılarda ordunun kontrolü ele geçirdiği bildirildi.",
@@ -25,9 +69,9 @@
       "type": "rss"
     },
     {
-      "title": "Kolombiya'da bombalı saldırıda 7 kişi öldü, 20 kişi yaralandı",
-      "description": "Kolombiya'nın güneybatısında düzenlenen bombalı saldırıda 7 kişi hayatını kaybetti, 20 kişi yaralandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/kolombiyada-bombali-saldirida-7-kisi-oldu-20-kisi-yaralandi/3918156",
+      "title": "Kolombiya'da bombalı saldırıda 14 kişi öldü, 38 kişi yaralandı",
+      "description": "Kolombiya'nın güneybatısında düzenlenen bombalı saldırıda 14 kişi hayatını kaybetti, 38 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/kolombiyada-bombali-saldirida-14-kisi-oldu-38-kisi-yaralandi/3918156",
       "image": "",
       "date": "2026-04-26T00:24:44.000Z",
       "source": "Anadolu Ajansı",
@@ -41,17 +85,6 @@
       "url": "https://www.aa.com.tr/tr/gundem/istanbulda-onarim-calismasi-nedeniyle-yildiz-mahmutbey-metro-hatti-seferlerine-duzenleme/3918154",
       "image": "",
       "date": "2026-04-26T00:17:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ordusu Batı Şeria'da 6 Filistinliyi yaraladı",
-      "description": "İsrail ordusunun, işgal altındaki Batı Şeria'da yerel seçimlerin yapıldığı bir oy verme merkezine düzenlediği saldırıda 6 Filistinlinin darbedilerek yaralandığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-bati-seriada-6-filistinliyi-yaraladi/3918151",
-      "image": "",
-      "date": "2026-04-25T23:42:23.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -74,39 +107,6 @@
       "url": "https://www.rbb24.de/politik/beitrag/2026/04/berlin-linke-landesparteitag-vorbereitung-wahlkampf.html",
       "image": "",
       "date": "2026-04-25T17:12:34.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Eisbären Berlin: Ticketfrust wegen digitaler Dauerkarte",
-      "description": "Sportlich träumen die Eisbären Berlin vom nächsten Meistertitel. Doch parallel zum Finalrausch sorgt die Abschaffung der physischen Dauerkarte für Unmut bei Teilen der Fans. Die Angst: Datenmissbrauch und einen Verlust an Fankultur.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/eisbaeren-eishockey-del-tickets-elektronisch-dauerkarte-axs-app.html",
-      "image": "",
-      "date": "2026-04-25T16:45:22.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner BSW beschließt Programm für Abgeordnetenhauswahl",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/wahl/abgeordnetenhaus/agh-2026/beitraege/berlin-bsw-parteitag-programm-beschluss-agh-wahl.html",
-      "image": "",
-      "date": "2026-04-25T15:32:30.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Hertha 03 taumelt nach 2:4 in Leipzig weiter Richtung Abstieg",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/04/fussball-regionalliga-nordost-chemie-leipzig-hertha-03-zehlendorf.html",
-      "image": "",
-      "date": "2026-04-25T15:24:04.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
