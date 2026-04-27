@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-04-27T21:01:11.887Z",
+  "lastUpdated": "2026-04-27T22:51:54.453Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail askerlerinin Batı Şeria'da düzenlediği baskınlarda 1 çocuk yaralandı, 2 kişi gözaltına alındı",
+      "description": "İsrail askerlerinin işgal altındaki Batı Şeria'nın güneyindeki El Halil kentinde düzenlediği baskınlarda 1 çocuk yaralandı, 2 kişi gözaltına alındı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-askerlerinin-bati-seriada-duzenledigi-baskinlarda-1-cocuk-yaralandi-2-kisi-gozaltina-alindi/3919912",
+      "image": "",
+      "date": "2026-04-27T22:32:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Geleneksel ve tamamlayıcı tıp uygulamalarında sağlık hizmetinin kapsamı genişletildi",
+      "description": "Sağlık Bakanlığınca yapılan düzenlemeyle geleneksel ve tamamlayıcı tıp uygulamalarının kapsamı genişletilirken, vatandaşların bu hizmetlere erişimi kolaylaştırıldı.",
+      "url": "https://www.aa.com.tr/tr/gundem/geleneksel-ve-tamamlayici-tip-uygulamalarinda-saglik-hizmetinin-kapsami-genisletildi/3919911",
+      "image": "",
+      "date": "2026-04-27T22:25:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu, ateşkese rağmen Lübnan'ın Bekaa Vadisi'ne hava saldırıları başlattığını duyurdu",
+      "description": "",
+      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abd-israil-iran-lubnan-savasi-ve-ateskes-sureci/1704",
+      "image": "",
+      "date": "2026-04-27T20:52:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "İsrail Genelkurmay Başkanı Zamir, 2026 boyunca tüm cephelerde saldırıların sürebileceğini söyledi",
       "description": "İsrail Genelkurmay Başkanı Eyal Zamir, İsrail ordusunun 2026 yılında muhtemelen tüm cephelerde saldırılarına devam edeceğini kaydetti.",
@@ -14,44 +47,11 @@
       "type": "rss"
     },
     {
-      "title": "Trump'ın katıldığı yemekteki silahlı saldırının şüphelisi, \"ABD Başkanı'na suikast girişimi\" suçlamasıyla yargılanacak",
-      "description": "ABD Başkanı Donald Trump'ın katıldığı yemekteki silahlı saldırı girişiminin şüphelisi Cole Tomas Allen'ın, \"ABD Başkanı'na suikast girişimi\" suçlamasıyla yargılanacağı ve ömür boyu hapis cezası alabileceği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/trumpin-katildigi-yemekteki-silahli-saldirinin-suphelisi-abd-baskanina-suikast-girisimi-suclamasiyla-yargilanacak/3919845",
-      "image": "",
-      "date": "2026-04-27T20:06:59.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Endonezya'da tren kazasında 4 kişi öldü, 38 kişi yaralandı",
       "description": "Endonezya'nın Batı Java bölgesinde meydana gelen tren kazasında 4 kişi öldü, 38 kişi yaralandı.",
       "url": "https://www.aa.com.tr/tr/dunya/endonezyada-tren-kazasinda-4-kisi-oldu-38-kisi-yaralandi/3919844",
       "image": "",
       "date": "2026-04-27T20:04:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ukrayna: İsrail'i çalıntı tahılı kabul etmemesi konusunda uyarıyoruz",
-      "description": "Ukrayna Dışişleri Bakanı Andrii Sybiha, \"İsrail'i çalıntı tahılı kabul etmemesi ve ilişkilerimize zarar vermemesi konusunda bir kez daha uyarıyoruz.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/ukrayna-israili-calinti-tahili-kabul-etmemesi-konusunda-uyariyoruz/3919843",
-      "image": "",
-      "date": "2026-04-27T20:03:38.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Trendyol Süper Lig'de görünüm",
-      "description": "Trendyol Süper Lig'de 31. haftanın perdesi kapandı. Derbide Fenerbahçe'yi 3-0 yenen Galatasaray, puanını 74 yaptı ve son 3 haftaya girilirken sarı-lacivertli ekiple arasındaki puan farkını 7'ye çıkardı.",
-      "url": "https://www.aa.com.tr/tr/spor/trendyol-super-ligde-gorunum/3919830",
-      "image": "",
-      "date": "2026-04-27T19:54:42.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
