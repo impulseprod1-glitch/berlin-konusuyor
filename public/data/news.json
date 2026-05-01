@@ -1,27 +1,93 @@
 {
-  "lastUpdated": "2026-05-01T11:05:16.062Z",
+  "lastUpdated": "2026-05-01T13:17:30.747Z",
   "count": 10,
   "articles": [
     {
-      "title": "1. Mai im Liveticker: ++ DGB-Demo startet verspätet ++",
+      "title": "Cumhurbaşkanı Erdoğan'dan 1 Mayıs Emek ve Dayanışma Günü paylaşımı",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, 1 Mayıs Emek ve Dayanışma Günü'nü kutladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogandan-1-mayis-emek-ve-dayanisma-gunu-paylasimi/3924296",
+      "image": "",
+      "date": "2026-05-01T13:10:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "1. Mai im Liveticker: Tausende bei \"MyGruni\"-Protest im Grunewald",
       "description": "Verschiedene Demonstrationen, Kundgebungen und Raves sind zum heutigen Tag der Arbeit angekündigt. Die Berliner Polizei begleitet den Tag mit rund 5.000 Einsatzkräften. Alle Infos im Liveticker",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/ticker-1-mai-feiertag-arbeit-demo-berlin-brandenburg.html",
       "image": "",
-      "date": "2026-05-01T11:02:18.000Z",
+      "date": "2026-05-01T13:08:29.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "Formula 1'de sıradaki durak Miami",
-      "description": "Formula 1 Dünya Şampiyonası'nda heyecan, sezonun 4. etabı Miami Grand Prix'siyle devam edecek.",
-      "url": "https://www.aa.com.tr/tr/spor/formula-1de-siradaki-durak-miami/3924144",
+      "title": "1. Mai in Berlin und Brandenburg: Gewerkschaften demonstrieren",
+      "description": "Mit Fahnen und Trillerpfeifen auf die Straße: In Berlin und Brandenburg demonstrieren am 1. Mai Tausende bei den traditionellen Gewerkschaftsdemos - aus Sorge vor Stellenabbau und Jobverlust.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-brandenburg-1-mai-demonstration-gewerkschaften.html",
       "image": "",
-      "date": "2026-05-01T10:57:09.000Z",
+      "date": "2026-05-01T13:00:22.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Hafta sonu yurt genelinde soğuk ve yağışlı hava etkili olacak",
+      "description": "Hafta sonu yurt genelinde soğuk ve yağışlı hava hakim olacak. Meteoroloji, sıcaklık düşüşüyle birlikte zirai don tehlikesine karşı vatandaşları uyardı.",
+      "url": "https://www.aa.com.tr/tr/gundem/hafta-sonu-yurt-genelinde-soguk-ve-yagisli-hava-etkili-olacak/3924278",
+      "image": "",
+      "date": "2026-05-01T12:51:33.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Milli para masa tenisçiler, Karadağ'daki turnuvada 6 madalya kazandı",
+      "description": "Dünya Para Challenger Masa Tenisi Serisi'nin Podgorica ayağına katılan milli sporcular, 1'i altın olmak üzere toplam 6 madalya elde etti.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-para-masa-tenisciler-karadagdaki-turnuvada-6-madalya-kazandi/3924274",
+      "image": "",
+      "date": "2026-05-01T12:49:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Elektrik santrallerine 1,11 milyar liralık kapasite mekanizması desteği",
+      "description": "Türkiye Elektrik İletim AŞ (TEİAŞ), 16 elektrik üretim santraline mart ayı için 1 milyar 110 milyon lira kapasite ödemesi yapacak.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/elektrik-santrallerine-1-11-milyar-liralik-kapasite-mekanizmasi-destegi/3924265",
+      "image": "",
+      "date": "2026-05-01T12:42:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İbn Haldun Üniversitesi Mütevelli Heyeti Başkan Vekili Bilal Erdoğan, Malezya'yı ziyaret etti",
+      "description": "İbn Haldun Üniversitesi Mütevelli Heyeti Başkan Vekili Bilal Erdoğan, eğitim oturumları ve stratejik temaslarda bulunmak üzere Malezya'yı ziyaret etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/ibn-haldun-universitesi-mutevelli-heyeti-baskan-vekili-bilal-erdogan-malezyayi-ziyaret-etti/3924262",
+      "image": "",
+      "date": "2026-05-01T12:40:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ex-Herthaner Preetz formt Duisburg zum Zweitliga-Anwärter",
+      "description": "Am Sonntag (13:30 Uhr) gastiert Energie Cottbus beim MSV Duisburg zum Aufstiegskracher in Liga drei. Wie Ex-Hertha-Manager Michael Preetz Duisburg vom Viertligisten zum Zweitliga-Anwärter geformt hat.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/berlin-brandenburg-fussball-energie-cottbus-msv-duisburg-michael-preetz-hertha-aufstieg.html",
+      "image": "",
+      "date": "2026-05-01T12:39:47.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -36,77 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "BM: Orta Doğu krizinin oluşturduğu domino etkisi, bölge dışındaki yardım çabalarını da zorluyor",
-      "description": "Birleşmiş Milletler Mülteciler Yüksek Komiserliği (BMMYK) Sözcüsü Carlotta Wolf, Orta Doğu krizinin oluşturduğu domino etkisinin, bölge dışındaki yardım çabalarını da zorladığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-orta-dogu-krizinin-olusturdugu-domino-etkisi-bolge-disindaki-yardim-cabalarini-da-zorluyor/3924127",
-      "image": "",
-      "date": "2026-05-01T10:42:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "1 Mayıs Emek ve Dayanışma Günü kutlanıyor",
-      "description": "1 Mayıs Emek ve Dayanışma Günü dolayısıyla çeşitli illerde sendikaların düzenlediği etkinliklerle kutlamalar yapıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/1-mayis-emek-ve-dayanisma-gunu-kutlaniyor/3924124",
-      "image": "",
-      "date": "2026-05-01T10:41:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Türk voleybol takımlarında görev yapan İtalyan antrenörlerin dörtlü final heyecanı",
-      "description": "Voleybolda yarın başlayacak Kadınlar CEV Zeren Group Şampiyonlar Ligi Dörtlü Finali'nde mücadele edecek Türk temsilcilerinde görev yapan İtalyan başantrenörler Giulio Cesare Bregoli ile Giovanni Guidetti, kupayı kazanmak istediklerini söyledi.",
-      "url": "https://www.aa.com.tr/tr/spor/turk-voleybol-takimlarinda-gorev-yapan-italyan-antrenorlerin-dortlu-final-heyecani/3924087",
-      "image": "",
-      "date": "2026-05-01T10:03:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "61. Cumhurbaşkanlığı Türkiye Bisiklet Turu'nda Antalya-Feslikan etabı başladı",
-      "description": "Bu yıl 61'incisi düzenlenen, Uluslararası Bisiklet Birliğinin (UCI) Avrupa Turları takviminde yer alan ve Türkiye'nin \"ProSeries\" kategorisindeki tek bisiklet yarışı olan Cumhurbaşkanlığı Türkiye Bisiklet Turu'nun 6. etabı Antalya-Feslikan başladı.",
-      "url": "https://www.aa.com.tr/tr/spor/61-cumhurbaskanligi-turkiye-bisiklet-turunda-antalya-feslikan-etabi-basladi/3924081",
-      "image": "",
-      "date": "2026-05-01T09:51:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Tierschutzkonferenz: Mähroboter verletzten immer mehr Igel",
       "description": "Igelstationen melden steigende Zahlen verletzter Tiere. Häufige Ursache: Mähroboter ohne zuverlässige Sensorik. Das Brandenburger Verbraucherschutzministerium will mit einer Kampagne über die Gefahren aufklären.",
       "url": "https://www.rbb24.de/politik/beitrag/2026/04/brandenburg-tierschutzkonferenz-maehroboter-viele-verletzte-igel.html",
       "image": "",
       "date": "2026-05-01T09:12:29.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Herthas Luca Schuler: \"War Stürmer Nummer drei in deren Köpfen\"",
-      "description": "Wie Hertha BSC hat auch Luca Schuler eine bewegte Saison hinter sich. Der Mittelstürmer kämpfte sich nach langer Verletzung vom dritten zum ersten Stürmer. Im Interview spricht er über seine Tischerausbildung, den Konkurrenzkampf und die enttäuschende Saison.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-hertha-bsc-luca-schuler-magdeburg-handwerk-interview.html",
-      "image": "",
-      "date": "2026-05-01T08:53:18.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Freibadsaison in Berlin startet am Freitag",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/04/berlin-freibad-saison-startet-baeder-betriebe-sommer-baeder.html",
-      "image": "",
-      "date": "2026-05-01T08:46:22.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
