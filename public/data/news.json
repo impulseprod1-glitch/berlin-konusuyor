@@ -1,13 +1,57 @@
 {
-  "lastUpdated": "2026-04-30T22:52:47.424Z",
+  "lastUpdated": "2026-05-01T02:57:04.802Z",
   "count": 10,
   "articles": [
     {
-      "title": "TCMB, firmaların döviz dönüşüm desteği süresini 3 ay uzattı",
-      "description": "Türkiye Cumhuriyet Merkez Bankası (TCMB), firmaların yurt dışı kaynaklı dövizlerinin Türk lirasına dönüşümünü destekleyen uygulamanın süresini 31 Temmuz 2026'ya kadar uzattı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-firmalarin-doviz-donusum-destegi-suresini-3-ay-uzatti/3923762",
+      "title": "İstanbul'da bazı yollar trafiğe kapatıldı",
+      "description": "İstanbul Valiliği, 1 Mayıs Emek ve Dayanışma Günü kapsamında alınan tedbirleri, kapatılacak yolları ve alternatif güzergahları duyurdu.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-bazi-yollar-trafige-kapatildi/3923783",
       "image": "",
-      "date": "2026-04-30T22:17:38.000Z",
+      "date": "2026-05-01T01:11:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rusya: Ukrayna'nın İHA saldırısı sonucu Tuapse kentindeki limanda yangın çıktı",
+      "description": "Rusya'nın Krasnodar bölgesinin Operasyonel Merkezi, Ukrayna'nın insansız hava araçlarıyla (İHA) düzenlediği saldırı sonucu Tuapse şehrindeki limanda yangın çıktığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/rusya-ukraynanin-iha-saldirisi-sonucu-tuapse-kentindeki-limanda-yangin-cikti/3923779",
+      "image": "",
+      "date": "2026-05-01T00:47:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": " TBMM'nin Okul Saldırılarının Nedenlerini Araştırma Komisyonu'nun üye seçimine dair kararı Resmi Gazete'de",
+      "description": "TBMM'nin, Okul Saldırılarının Nedenlerini Araştırma Komisyonu'nun üye seçimine dair kararı\" Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/-tbmmnin-okul-saldirilarinin-nedenlerini-arastirma-komisyonunun-uye-secimine-dair-karari-resmi-gazetede/3923777",
+      "image": "",
+      "date": "2026-04-30T23:45:05.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump'tan ABD ile Kanada arasındaki petrol boru hattı projesine izin",
+      "description": "ABD Başkanı Donald Trump, ABD ile Kanada arasındaki sınır bölgesinde petrol ve petrol ürünlerinin taşınmasına olanak sağlayacak boru hattı projesine izin verdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/trumptan-abd-ile-kanada-arasindaki-petrol-boru-hatti-projesine-izin/3923775",
+      "image": "",
+      "date": "2026-04-30T23:02:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistin topraklarını gasbeden İsrailliler,  Batı Şeria'da cami minaresine ve yola İsrail bayrağı astı",
+      "description": "Filistin topraklarını gasbeden İsrailliler, işgal altındaki Batı Şeria'nın güneyinde yer alan El Halil kentine bağlı Yatta beldesinin doğusunda bir cami minaresine ve yola İsrail bayrağı astı.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israilliler-bati-seriada-cami-minaresine-ve-yola-israil-bayragi-asti/3923774",
+      "image": "",
+      "date": "2026-04-30T22:56:45.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -22,50 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in Küresel Sumud Filosu'na silahlı müdahalesi hakkındaki TBMM Kararı Resmi Gazete'de",
-      "description": "Türkiye Büyük Millet Meclisinin (TBMM) \"Küresel Sumud Filosu'na İsrail Ordusu Tarafından Yapılan Silahlı Müdahale Hakkında Karar\"ı Resmi Gazete'de yayımlandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/israilin-kuresel-sumud-filosuna-silahli-mudahalesi-hakkindaki-tbmm-karari-resmi-gazetede/3923749",
-      "image": "",
-      "date": "2026-04-30T21:43:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Trump, Fed Başkanı Powell'ın yönetim kurulunda kalıp kalmamasını umursamadığını söyledi",
-      "description": "ABD Başkanı Donald Trump, ABD Merkez Bankası (Fed) Başkanı Jerome Powell'ın başkan olarak görev süresi dolduktan sonra bankanın yönetim kurulunda kalıp kalmasının umurunda olmadığını ifade etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/trump-fed-baskani-powellin-yonetim-kurulunda-kalip-kalmamasini-umursamadigini-soyledi/3923745",
-      "image": "",
-      "date": "2026-04-30T21:42:05.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Göktaş: Ailelerimizi güçlendiren, yaşam kalitesini artıran sosyal hizmetlerimizi hayata geçirmeye devam edeceğiz",
-      "description": "Sosyal Hizmetler Bakanı Göktaş, \"Ailelerimizi güçlendiren, annelerimizi destekleyen, çocuklarımızın güvenliğini önceleyen, yaşlılarımızın yaşam kalitesini artıran sosyal hizmetlerimizi kararlılıkla hayata geçirmeye devam edeceğiz.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-goktas-ailelerimizi-guclendiren-yasam-kalitesini-artiran-sosyal-hizmetlerimizi-hayata-gecirmeye-devam-edecegiz/3923739",
-      "image": "",
-      "date": "2026-04-30T21:37:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gazze'de 37 hasta ve yaralı İsrail kısıtlamaları altındaki Refah Sınır Kapısı'ndan tahliye edildi",
-      "description": "Gazze Şeridi'ndeki 37 hasta ve yaralının, İsrail'in sıkı kısıtlamalar uyguladığı Refah Sınır Kapısı'ndan tahliye edildiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/gazzede-37-hasta-ve-yarali-israil-kisitlamalari-altindaki-refah-sinir-kapisindan-tahliye-edildi/3923736",
-      "image": "",
-      "date": "2026-04-30T21:34:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
