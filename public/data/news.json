@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-05-02T02:38:10.915Z",
+  "lastUpdated": "2026-05-02T06:06:12.101Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Das deutsche KI-Paradox – starke Ideen, schwache Skalierung",
+      "description": "Der große Hoffnungsträger für KI \"made in Germany\", Aleph Alpha, steht nach der Übernahme durch die Kanadier beispielhaft für das deutsche KI-Paradox: starke Ideen, schwache Skalierung. Was das für globale Player aus Berlin wie Parloa bedeutet.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/05/berlin-deutsches-ki-paradox-parloa-skalierung-aleph-alpha.html",
+      "image": "",
+      "date": "2026-05-02T05:26:54.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Küba'da on binlerce kişi 1 Mayıs yürüyüşünde ABD'ye tepki gösterdi",
+      "description": "Küba'da 1 Mayıs Emek ve Dayanışma Günü yürüyüşüne katılan on binlerce kişi, ABD'nin ülkeye uyguladığı ambargoyu protesto etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/kubada-on-binlerce-kisi-1-mayis-yuruyusunde-abdye-tepki-gosterdi/3924666",
+      "image": "",
+      "date": "2026-05-02T05:17:06.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bolivya'da silahlı saldırıya uğrayan yargıç hayatını kaybetti",
+      "description": "Bolivya'nın Santa Cruz kentinde, aracıyla seyir halindeyken silahlı saldırıya uğrayan üst düzey bir yargıç yaşamını yitirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/bolivyada-silahli-saldiriya-ugrayan-yargic-hayatini-kaybetti/3924664",
+      "image": "",
+      "date": "2026-05-02T04:52:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Trump: İran'dan erken ayrılıp sorunun yeniden ortaya çıkmasına izin vermeyeceğiz",
       "description": "ABD Başkanı Donald Trump, İran'a karşı başlattıkları savaşa ilişkin, \"Erken ayrılıp sorunun yeniden ortaya çıkmasına izin vermeyeceğiz.\" dedi.",
@@ -69,44 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "İçişleri Bakanlığı: İstanbul'da kanuna aykırı eylem girişiminde bulunan 575 şahıs hakkında işlemler yürütülmektedir",
-      "description": "İçişleri Bakanlığı, 1 Mayıs Emek ve Dayanışma Günü'nde 88 bin 2 personelin görev aldığını, İstanbul'da kanuna aykırı eylem girişiminde bulunan 575 kişi hakkında gerekli işlemlerin yürütüldüğünü bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakanligi-istanbulda-kanuna-aykiri-eylem-girisiminde-bulunan-575-sahis-hakkinda-islemler-yurutulmektedir/3924622",
-      "image": "",
-      "date": "2026-05-01T21:24:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Real Madrid, sahasında Hapoel IBI Tel Aviv'i 102-75 mağlup etti",
-      "description": "Basketbol Avrupa Ligi play-off ikinci maçında İspanya ekibi Real Madrid, sahasında İsrail temsilcisi Hapoel IBI Tel Aviv'i 102-75 yenerek seride 2-0 öne geçti.",
-      "url": "https://www.aa.com.tr/tr/spor/real-madrid-sahasinda-hapoel-ibi-tel-avivi-102-75-maglup-etti/3924618",
-      "image": "",
-      "date": "2026-05-01T21:13:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Basketball: Alba verliert bei den Bayern, verkauft sich aber teuer",
       "description": "Im Duell der beiden wohl größten Erzrivalen im deutschen Basketball hat Alba Berlin bei Bayern München mit 79:85 verloren. Dabei leisteten sich die Hauptstädter zwar vor allem zu viele Ballverluste. Und zeigten doch viel Moral.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/05/basketball-bbl-bayern-muenchen-alba-berlin-spielbericht.html",
       "image": "",
       "date": "2026-05-01T19:15:39.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Wohnhausbrand in Guben: Ein Mensch tot, zwei im Krankenhaus",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/guben-brand-wohnhaus-eine-person-tot.html",
-      "image": "",
-      "date": "2026-05-01T18:45:28.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
