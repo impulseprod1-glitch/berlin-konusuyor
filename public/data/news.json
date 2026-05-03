@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-05-03T18:58:39.036Z",
+  "lastUpdated": "2026-05-03T20:41:43.337Z",
   "count": 10,
   "articles": [
     {
-      "title": "Gazze'deki ressamlar, çizdikleri duvar resmiyle Küresel Sumud Filosu'na destek verdi",
-      "description": "Gazze Şeridi'ndeki ressamlar, İsrail'in uluslararası sularda saldırdığı Küresel Sumud Filosu'na desteklerini çizdikleri duvar resmiyle gösterdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/gazzedeki-ressamlar-cizdikleri-duvar-resmiyle-kuresel-sumud-filosuna-destek-verdi/3925851",
+      "title": "İran, ülkeye girişlerde Lübnan vatandaşlarına vize uygulamasına geçiyor",
+      "description": "Lübnan'ın İran vatandaşlarına vize uygulaması getirmesinin ardından İran da Lübnan vatandaşlarına vize uygulanacağını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-ulkeye-girislerde-lubnan-vatandaslarina-vize-uygulamasina-geciyor/3925910",
       "image": "",
-      "date": "2026-05-03T18:30:39.000Z",
+      "date": "2026-05-03T20:23:59.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "RTÜK, Bosch'un Anneler Günü reklam filmine inceleme başlattı",
+      "description": "RTÜK Başkanı Mehmet Daniş, aile kavramı üzerinden ekranlarda bir değer erozyonuna hiçbir suretle izin vermeyeceklerini belirterek, Bosch'un Anneler Günü için hazırladığı reklam filmi hakkında inceleme başlatıldığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/rtuk-boschun-anneler-gunu-reklam-filmine-inceleme-baslatti/3925904",
+      "image": "",
+      "date": "2026-05-03T20:17:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrailli telekomünikasyon şirketlerinin küresel bir telefon takip ağına dönüştürüldüğü ortaya çıktı",
+      "description": "Kanada merkezli siber güvenlik araştırma grubu Citizen Lab, İsrail telekomünikasyon altyapısının son üç yılda ondan fazla ülkede telefon takibi için sistematik olarak kullanıldığını ortaya çıkardı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilli-telekomunikasyon-sirketlerinin-kuresel-bir-telefon-takip-agina-donusturuldugu-ortaya-cikti/3925903",
+      "image": "",
+      "date": "2026-05-03T20:15:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "EFE: İspanya Başbakanı Sanchez'i taşıyan uçak Ankara'ya acil iniş yaptı",
+      "description": "İspanya'nın resmi haber ajansı EFE, Avrupa Siyasi Topluluğu toplantısı için Madrid'den Ermenistan'ın başkenti Erivan'a giden İspanya Başbakanı Pedro Sanchez'i taşıyan uçağın, teknik bir sebepten dolayı Ankara'ya acil iniş yaptığını duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/efe-ispanya-basbakani-sanchezi-tasiyan-ucak-ankaraya-acil-inis-yapti/3925898",
+      "image": "",
+      "date": "2026-05-03T20:07:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Futbol: Trendyol Süper Lig'de görünüm",
+      "description": "Deplasmanda Samsunspor'a 4-1 mağlup olan Galatasaray, şampiyonluğunu ilan etme fırsatını kaçırdı.",
+      "url": "https://www.aa.com.tr/tr/spor/futbol-trendyol-super-ligde-gorunum/3925892",
+      "image": "",
+      "date": "2026-05-03T20:00:29.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Union Berlin hat den Bundesliga-Klassenerhalt vorzeitig sicher",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-bundesliga-fc-union-berlin-klassenerhalt-abstieg-mainz-st-pauli-wolfsburg.html",
+      "image": "",
+      "date": "2026-05-03T19:46:01.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Eisbären über 12. DEL-Titel: \"Wir haben eine brutal geile Truppe\"",
+      "description": "4:1 im fünften Final-Spiel und 4:1 in der entscheidenden Serie: Die Eisbären Berlin haben ihren zwölften Titel in der Deutschen Eishockey Liga (DEL) gewonnen. Trainer Serge Aubin ist \"glücklich, dass es vorbei ist.\" Spieler Andreas Eder erinnert an seinen an Krebs verstorbenen Bruder Tobias. Die Reaktionen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/eishockey-del-eisbaeren-berlin-adler-mannheim-finale-deutscher-meister-interviews-aubin-emotional.html",
+      "image": "",
+      "date": "2026-05-03T19:26:44.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Analyse zu Herthas 0:1 in Magdeburg: Die Fragen bleiben gleich",
+      "description": "Nach der 0:1‑Pleite in Magdeburg steht Hertha BSC einmal mehr vor unbequemen Fragen. Viel Aufwand, wenig Ertrag und ein Trainer, der ein Donnerwetter ankündigt: Warum die Niederlage mehr als nur ein Ausrutscher ist – und was sie über die Zukunft der Berliner sagt.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-zweite-bundesliga-fc-magdeburg-hertha-bsc-analyse-highlights-niederlage.html",
+      "image": "",
+      "date": "2026-05-03T19:12:17.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Edirne'de hakemi darbettiği iddiasıyla bir futbolcu gözaltına alındı",
-      "description": "Edirne’nin Keşan ilçesinde orta hakeme yumruk attığı iddia edilen futbolcu gözaltına alındı.",
-      "url": "https://www.aa.com.tr/tr/spor/edirnede-hakemi-darbettigi-iddiasiyla-bir-futbolcu-gozaltina-alindi/3925841",
-      "image": "",
-      "date": "2026-05-03T18:12:23.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Waldbrand bei Jüterbog: Mehr als Hundert Hektar in Flammen",
       "description": "Bei Jüterbog brennt es seit Freitag auf einem früheren Truppenübungsplatz in \"Altes Lager\". Mittlerweile stehen 116 Hektar in Flammen. Weil das Gelände munitionsbelastet ist, kann die Feuerwehr nur von Schutzstreifen aus löschen.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/waldbrand-ehemaliger-truppenuebungsplatz-jueterbog-altes-lager.html",
       "image": "",
       "date": "2026-05-03T18:01:56.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Filistin Gazeteciler Sendikası: Yıl başından bu yana gazetecilere yönelik 300 suç ve ihlal tespit edildi",
-      "description": "Filistin Gazeteciler Sendikası,  İsrail'in Gazze'ye yönelik başlattığı soykırımdan bu yana hayatını kaybeden gazeteci sayısının 262'ye yükseldiğini duyurdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-gazeteciler-sendikasi-yil-basindan-bu-yana-gazetecilere-yonelik-300-suc-ve-ihlal-tespit-edildi/3925827",
-      "image": "",
-      "date": "2026-05-03T17:51:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Titel-Hattrick: Eisbären nach 4:1 in Mannheim erneut DEL-Meister",
-      "description": "Titelverteidigung? Check. Die Eisbären Berlin haben das fünfte Final-Spiel um die DEL-Meisterschaft bei den Adler Mannheim gewonnen. Das Team von Trainer Serge Aubin ist somit neuer, alter Titelträger im deutschen Eishockey. Goalie Jonas Stettmer zeigte am Sonntag erneut eine überragende Leistung.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/eishockey-del-playoffs-finale-spiel-fuenf-adler-mannheim-eisbaeren-berlin-spielbericht-meister.html",
-      "image": "",
-      "date": "2026-05-03T17:47:58.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Gaziantep ve çevre illerde sağanak etkili oldu",
-      "description": "Gaziantep ve çevre illerde sağanak günlük yaşamı olumsuz etkiledi.",
-      "url": "https://www.aa.com.tr/tr/gundem/gaziantep-ve-cevre-illerde-saganak-etkili-oldu/3925815",
-      "image": "",
-      "date": "2026-05-03T17:34:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Hertha Zehlendorf steigt aus Regionalliga Nordost ab",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-regionalliga-nordost-altglienicke-chemnitz-hertha-zehlendorf-magdeburg-spielbericht.html",
-      "image": "",
-      "date": "2026-05-03T17:21:15.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Arnavutköy'de rüzgar nedeniyle minaresi sallanan caminin yakınındaki 2 bina boşaltıldı",
-      "description": "İstanbul'un Arnavutköy ilçesinde şiddetli rüzgar nedeniyle minaresi sallanan caminin yakınındaki 2 bina önlem amaçlı boşaltıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/arnavutkoyde-ruzgar-nedeniyle-minaresi-sallanan-caminin-yakinindaki-2-bina-bosaltildi/3925790",
-      "image": "",
-      "date": "2026-05-03T16:45:33.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "2. Frauen-Bundesliga: Turbine siegt und steht kurz vor dem Klassenerhalt, Viktoria punktet",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-zweite-frauen-bundesliga-turbine-potsdam-bayern-viktoria-berlin-gladbach.html",
-      "image": "",
-      "date": "2026-05-03T16:28:27.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
