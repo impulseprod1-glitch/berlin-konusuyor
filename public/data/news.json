@@ -1,16 +1,49 @@
 {
-  "lastUpdated": "2026-05-04T21:08:13.828Z",
+  "lastUpdated": "2026-05-04T22:56:57.595Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail'in alıkoyduğu Küresel Sumud Filosu aktivistlerinden Hüseyin Oral yurda döndü",
+      "description": "İsrail tarafından uluslararası sularda saldırıya uğrayıp alıkonulan Küresel Sumud Filosu aktivistlerinden Hüseyin Oral, İstanbul'a geldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/israilin-alikoydugu-kuresel-sumud-filosu-aktivistlerinden-huseyin-oral-yurda-dondu/3927202",
+      "image": "",
+      "date": "2026-05-04T22:12:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Körfez ülkeleri liderleri, BAE'ye yönelik İHA ve füze saldırılarını görüştü",
+      "description": "Suudi Arabistan Veliaht Prensi Muhammed bin Selman ve Bahreyn Kralı Hamed bin İsa Al Halife, Birleşik Arap Emirlikleri (BAE) Devlet Başkanı Muhammed bin Zayid ile \"İran'ın BAE'ye yönelik saldırılarını\" görüştü.",
+      "url": "https://www.aa.com.tr/tr/dunya/korfez-ulkeleri-liderleri-baeye-yonelik-iha-ve-fuze-saldirilarini-gorustu/3927183",
+      "image": "",
+      "date": "2026-05-04T21:24:11.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Chemikalienaustritt in Brieselang: Feuerwehr richtet Gefahrenbereich ein",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/brieselang-havelland-feuerwehr-gefahrguteinsatz.html",
       "image": "",
-      "date": "2026-05-04T20:55:45.000Z",
+      "date": "2026-05-04T21:19:04.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İran, Hürmüz Boğazı'nda ABD savaş gemileri ile ticari gemilere saldırdı",
+      "description": "ABD Merkez Kuvvetler Komutanlığı (CENTCOM), İran'ın Hürmüz Boğazı'nda ABD savaş gemileri ile boğazdan geçen ticari gemilere saldırdığını ve buna karşılık İran'a ait 6 botun batırıldığını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abd-israil-iran-lubnan-savasi-ve-ateskes-sureci/2147",
+      "image": "",
+      "date": "2026-05-04T21:07:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -30,39 +63,6 @@
       "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-6-mayistan-itibaren-gecici-ateskes-ilan-ettiklerini-belirtti/3927127",
       "image": "",
       "date": "2026-05-04T20:15:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Beyaz Saray yakınlarında silah sesleri duyuldu",
-      "description": "ABD'nin başkenti Washington'da Beyaz Saray yakınlarında silah sesleri duyulduğu ve güvenlik görevlilerinin kısa süreliğine alarma geçtiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/beyaz-saray-yakinlarinda-silah-sesleri-duyuldu/3927128",
-      "image": "",
-      "date": "2026-05-04T20:15:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BM, sınır geçişlerinin açılması üzerine Türkiye'den Suriye'ye sınır ötesi yardım operasyonlarını sonlandırdı",
-      "description": "Birleşmiş Milletler (BM), Suriye'de, 10 yılı aşkın sürenin ardından sınırların geçişlere açılması üzerine, Türkiye'den Suriye'ye sınır ötesi insani yardım operasyonlarını sonlandırdığını duyurdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-sinir-gecislerinin-acilmasi-uzerine-turkiyeden-suriyeye-sinir-otesi-yardim-operasyonlarini-sonlandirdi/3927112",
-      "image": "",
-      "date": "2026-05-04T19:41:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Dışişleri Bakanı Fidan, Katarlı mevkidaşı Al Sani ile telefonda görüştü",
-      "description": "Dışişleri Bakanı Hakan Fidan, Katar Başbakanı ve Dışişleri Bakanı Muhammed bin Abdurrahman Al Sani ile telefon görüşmesi gerçekleştirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakani-fidan-katarli-mevkidasi-al-sani-ile-telefonda-gorustu/3927111",
-      "image": "",
-      "date": "2026-05-04T19:37:20.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
