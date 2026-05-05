@@ -1,13 +1,46 @@
 {
-  "lastUpdated": "2026-05-04T22:56:57.595Z",
+  "lastUpdated": "2026-05-05T02:39:49.977Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İran Dışişleri Bakanı Erakçi, Pakistan görüşmelerindeki ilerlemeye işaret ederek ABD'yi uyardı",
+      "description": "İran Dışişleri Bakanı Abbas Erakçi, Pakistan’daki görüşmelerin ilerlediğine dikkati çekerek, ABD'ye \"kötü niyetliler tarafından bir kargaşaya çekilme\" konusunda uyarıda bulundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-disisleri-bakani-erakci-pakistan-gorusmelerindeki-ilerlemeye-isaret-ederek-abdyi-uyardi/3927209",
+      "image": "",
+      "date": "2026-05-04T23:57:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "İsrail'in alıkoyduğu Küresel Sumud Filosu aktivistlerinden Hüseyin Oral yurda döndü",
       "description": "İsrail tarafından uluslararası sularda saldırıya uğrayıp alıkonulan Küresel Sumud Filosu aktivistlerinden Hüseyin Oral, İstanbul'a geldi.",
       "url": "https://www.aa.com.tr/tr/gundem/israilin-alikoydugu-kuresel-sumud-filosu-aktivistlerinden-huseyin-oral-yurda-dondu/3927202",
       "image": "",
       "date": "2026-05-04T22:12:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Elon Musk ile SEC \"Twitter\" davasında uzlaşmaya gidiyor",
+      "description": "Milyarder iş insanı Elon Musk, ABD Menkul Kıymetler ve Borsa Komisyonunun (SEC) yeni adı \"X\" olan sosyal medya şirketi Twitter'da hisse alımlarının geç bildirilmesiyle ilgili açtığı davayı sonlandırmak için 1,5 milyon dolar ödemeyi kabul etti.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/elon-musk-ile-sec-twitter-davasinda-uzlasmaya-gidiyor/3927190",
+      "image": "",
+      "date": "2026-05-04T21:37:27.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türk-İtalyan üniversiteleri arasındaki işbirlikleri onuruna Roma'da resepsiyon verildi",
+      "description": "Türkiye'den Ankara Üniversitesinin, İtalya'dan Roma Sapienza Üniversitesi ve Unitelma Sapienza Üniversitesi ile arasında imzalanacak yeni işbirlikleri onuruna Türkiye’nin Roma Büyükelçiliğinde resepsiyon verildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/turk-italyan-universiteleri-arasindaki-isbirlikleri-onuruna-romada-resepsiyon-verildi/3927188",
+      "image": "",
+      "date": "2026-05-04T21:36:53.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -33,39 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İran, Hürmüz Boğazı'nda ABD savaş gemileri ile ticari gemilere saldırdı",
-      "description": "ABD Merkez Kuvvetler Komutanlığı (CENTCOM), İran'ın Hürmüz Boğazı'nda ABD savaş gemileri ile boğazdan geçen ticari gemilere saldırdığını ve buna karşılık İran'a ait 6 botun batırıldığını açıkladı.",
-      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abd-israil-iran-lubnan-savasi-ve-ateskes-sureci/2147",
-      "image": "",
-      "date": "2026-05-04T21:07:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Özgürlük Filosu Koalisyonu'na ait 4 teknenin etrafında askeri hareketlilik gözlemleniyor",
-      "description": "İtalya'nın Siracusa limanından 2 Mayıs'ta denize açılan Özgürlük Filosu Koalisyonu'na (Freedom Flotilla Coalition) ait 4 teknenin çevresinde askeri donanmaya ait gemi ve helikopter görüldü.",
-      "url": "https://www.aa.com.tr/tr/dunya/ozgurluk-filosu-koalisyonuna-ait-4-teknenin-etrafinda-askeri-hareketlilik-gozlemleniyor/3927154",
-      "image": "",
-      "date": "2026-05-04T20:43:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Zelenskiy, 6 Mayıs'tan itibaren geçici ateşkes ilan ettiklerini belirtti",
-      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, 6 Mayıs'ta yerel saatle 00.00'dan itibaren geçici ateşkes ilan ettiklerini belirterek, Rusya'nın da söz konusu karara uymasını istedi.",
-      "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-6-mayistan-itibaren-gecici-ateskes-ilan-ettiklerini-belirtti/3927127",
-      "image": "",
-      "date": "2026-05-04T20:15:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
