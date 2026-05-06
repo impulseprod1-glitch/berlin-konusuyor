@@ -1,24 +1,46 @@
 {
-  "lastUpdated": "2026-05-06T21:10:20.929Z",
+  "lastUpdated": "2026-05-06T22:53:03.098Z",
   "count": 10,
   "articles": [
     {
-      "title": "ABD Başkanı Trump, İran'ın \"askeri anlamda\" yenildiğini savundu",
-      "description": "ABD Başkanı Donald Trump, İran'ın askeri kapasitesini büyük ölçüde ortadan kaldırdıklarını öne sürerek, \"Askeri olarak yenilmiş durumdalar.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/live-blog/abd-baskani-trump-iranin-askeri-anlamda-yenildigini-savundu/2248",
+      "title": "Aile ve Sosyal Hizmetler Bakanlığı 680 sözleşmeli personel alacak",
+      "description": "Aile ve Sosyal Hizmetler Bakanlığı'nın merkez ve taşra teşkilatı birimlerinde çalıştırılmak üzere 680 sözleşmeli personel alım ilanı Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/aile-ve-sosyal-hizmetler-bakanligi-680-sozlesmeli-personel-alacak/3929572",
       "image": "",
-      "date": "2026-05-06T21:01:27.000Z",
+      "date": "2026-05-06T21:33:17.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Hakkari merkezli soruşturmada \"20 milyar liralık suç ağının yönetim merkezi\" deşifre edildi",
-      "description": "Hakkari Valiliği, \"20 milyar liralık suç ağının yönetim merkezi\"nin deşifre edildiğini, Interpol Daire Başkanlığı aracılığıyla \"kırmızı bülten\"le aranan ve Bosna Hersek'te yakalanarak Türkiye'ye getirilen şüphelinin tutuklandığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/hakkari-merkezli-sorusturmada-20-milyar-liralik-suc-aginin-yonetim-merkezi-desifre-edildi/3929535",
+      "title": "Ankara Devlet Konservatuvarı, kuruluşunun 90. yılını konser programıyla kutladı",
+      "description": "Türkiye'nin ilk konservatuvarı Hacettepe Üniversitesi Ankara Devlet Konservatuvarı, kuruluşunun 90. yılını geniş bir konser programıyla kutladı.",
+      "url": "https://www.aa.com.tr/tr/kultur/ankara-devlet-konservatuvari-kurulusunun-90-yilini-konser-programiyla-kutladi/3929558",
       "image": "",
-      "date": "2026-05-06T20:41:09.000Z",
+      "date": "2026-05-06T21:09:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "PSG, UEFA Şampiyonlar Ligi finalinde Arsenal'ın rakibi oldu",
+      "description": "UEFA Şampiyonlar Ligi'nde Paris Saint-Germain (PSG), 5-4 kazandığı ilk maçın rövanşında Bayern Münih ile 1-1 berabere kalarak finale yükseldi ve Arsenal'ın rakibi oldu.",
+      "url": "https://www.aa.com.tr/tr/spor/psg-uefa-sampiyonlar-ligi-finalinde-arsenalin-rakibi-oldu/3929557",
+      "image": "",
+      "date": "2026-05-06T21:09:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD Başkanı Trump, İran'ın \"askeri anlamda\" yenildiğini savundu",
+      "description": "ABD Başkanı Donald Trump, İran'ın askeri kapasitesini büyük ölçüde ortadan kaldırdıklarını öne sürerek, \"Askeri olarak yenilmiş durumdalar.\" ifadesini kullandı.",
+      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abd-israil-iran-lubnan-savasi-ve-baris-muzakereleri/2248",
+      "image": "",
+      "date": "2026-05-06T21:01:27.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -55,28 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "FIA Başkanı Ben Sulayem, bu sezon Türkiye Grand Prix'si için açık kapı bıraktı",
-      "description": "Uluslararası Otomobil Federasyonu (FIA) Başkanı Mohammed Ben Sulayem, Bahreyn ve Suudi Arabistan etaplarının düzenlenememesi halinde Türkiye Grand Prix'sinin bu sezonki Formula 1 takvimine dahil edilebileceğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/spor/fia-baskani-ben-sulayem-bu-sezon-turkiye-grand-prixsi-icin-acik-kapi-birakti/3929521",
-      "image": "",
-      "date": "2026-05-06T20:22:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "OpenAI'nin, ChatGPT'yi geliştirirken Kanada'nın gizlilik yasalarına uymadığı belirlendi",
-      "description": "Kanada'da yapılan ortak bir araştırmada, OpenAI şirketinin, ChatGPT'yi geliştirirken ülkenin gizlilik yasalarına uymadığı tespit edildi.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/openainin-chatgptyi-gelistirirken-kanadanin-gizlilik-yasalarina-uymadigi-belirlendi/3929518",
-      "image": "",
-      "date": "2026-05-06T20:20:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
