@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-05-08T05:56:09.594Z",
+  "lastUpdated": "2026-05-08T07:43:45.775Z",
   "count": 10,
   "articles": [
     {
-      "title": "Perakende ticaret belgelendirme süreçleriyle ilgili düzenlemeye gidildi",
-      "description": "Tüm e-belgelerin yeni nesil ödeme kaydedici cihazlardan (YN ÖKC) hazırlanabilmesi ve bilgi fişi uygulamasının kaldırılması gibi uygulamaları içeren bazı konularda düzenleme yapıldı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/perakende-ticaret-belgelendirme-surecleriyle-ilgili-duzenlemeye-gidildi/3930855",
+      "title": "Nach Abwahl des Bürgermeisters: Zehdenicker wählen erneut neues Stadtoberhaupt",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/wahl/brandenburg-buergermeisterwahlen/2026/zehdenick-oberhavel-buergermeister-stadtkewitz-hundelshausen-latzke-richardt.html",
       "image": "",
-      "date": "2026-05-08T05:46:08.000Z",
+      "date": "2026-05-08T07:36:40.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ABD vatandaşı Trump'ın politikalarına katılmadığı gerekçesiyle İspanya'dan sığınma istedi",
+      "description": "Bir ABD vatandaşı, NATO savunma harcamalarının artırılmasını reddettiği ve İran'a karşı saldırılarda askeri üslerinin kullanıma izin vermediği için ABD yönetimi ile gerginlik yaşayan İspanya'ya sığınma başvurusu yaptı.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-vatandasi-trumpin-politikalarina-katilmadigi-gerekcesiyle-ispanyadan-siginma-istedi/3930974",
+      "image": "",
+      "date": "2026-05-08T07:35:51.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ODTÜ Bahar Şenlikleri'nde çıkan olaylarla ilgili 6 kişi gözaltına alındı",
+      "description": "Orta Doğu Teknik Üniversitesi (ODTÜ) kampüsü içinde Bahar Şenlikleri kapsamında gerçekleştirilen konser sırasında olaylara karıştığı tespit edilen 6 şüphelinin gözaltına alındığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/odtu-bahar-senliklerinde-cikan-olaylarla-ilgili-6-kisi-gozaltina-alindi/3930972",
+      "image": "",
+      "date": "2026-05-08T07:34:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kocaelispor, Süper Lig'de yarın Fatih Karagümrük'ü konuk edecek",
+      "description": "Kocaelispor, Trendyol Süper Lig'in 33. haftasında yarın sahasında Mısırlı.com.tr Fatih Karagümrük ile karşılaşacak.",
+      "url": "https://www.aa.com.tr/tr/spor/kocaelispor-super-ligde-yarin-fatih-karagumruku-konuk-edecek/3930962",
+      "image": "",
+      "date": "2026-05-08T07:31:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Küba Dışişleri Bakanı, ABD'nin ülkede katliama yol açabilecek son derece tehlikeli bir yol seçtiğini belirtti",
+      "description": "Küba Dışişleri Bakanı Bruno Rodriguez, ABD'nin ülkede katliama yol açabilecek son derece tehlikeli bir yol seçtiğini ifade etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/kuba-disisleri-bakani-abdnin-ulkede-katliama-yol-acabilecek-son-derece-tehlikeli-bir-yol-sectigini-belirtti/3930959",
+      "image": "",
+      "date": "2026-05-08T07:30:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kuzey Kore lideri Kim, mühimmat üretim tesisinde yeni nesil obüs taşıyıcısını inceledi",
+      "description": "Kuzey Kore lideri Kim Jong-un, mühimmat üretim tesisini ziyaret ederek yeni nesil 155 milimetrelik kendinden güdümlü topçu obüsü taşıyıcısı hakkında bilgi aldı.",
+      "url": "https://www.aa.com.tr/tr/dunya/kuzey-kore-lideri-kim-muhimmat-uretim-tesisinde-yeni-nesil-obus-tasiyicisini-inceledi/3930929",
+      "image": "",
+      "date": "2026-05-08T07:06:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berlin: Schwarz-Rot will nicht mehr Radwege an allen Hauptstraßen",
+      "description": "CDU und SPD wollen das Berliner Mobilitätsgesetz deutlich ändern. Künftig sollen nicht mehr an allen Hauptstraßen verpflichtend breite Radstreifen gebaut werden müssen. Opposition und Verkehrsverbände warnen vor einem Rückschritt für die Sicherheit von Radfahrern.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/cdu-spd-gesetz-radwege-hauptstrassen.html",
+      "image": "",
+      "date": "2026-05-08T06:16:51.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -26,10 +92,10 @@
     },
     {
       "title": "Berlin bekommt Helmut-Kohl-Allee im Tiergarten",
-      "description": "Die bisherige Hofjägerallee südlich des Großen Sterns wird in Helmut-Kohl-Allee umbenannt. Beschlossen war das schon länger, jetzt wird der Akt vollzogen. Wieso der ehemalige Kanzler in Berlin gehuldigt wird und wen er verdrängt.",
+      "description": "Die bisherige Hofjägerallee südlich des Großen Sterns wird in Helmut-Kohl-Allee umbenannt. Beschlossen war das schon länger, jetzt wird der Akt vollzogen. Wieso dem ehemaligen Kanzler in Berlin gehuldigt wird und wen er verdrängt.",
       "url": "https://www.rbb24.de/politik/beitrag/2026/05/berlin-mitte-helmut-kohl-allee-festakt-umbenennung-hofjaegeralle.html",
       "image": "",
-      "date": "2026-05-08T04:33:27.000Z",
+      "date": "2026-05-08T04:33:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
@@ -44,72 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Vermisste 91-Jährige gefunden - dementer Senior ließ Ehefrau im Auto zurück",
-      "description": "Eine vermisste 91-jährige Frau aus Berlin ist in Brandenburg wohlbehalten gefunden worden. Die demente Seniorin saß offenbar die ganze Zeit in einem Auto, das nach einer großangelegten Suche per Hubschrauber im Raum Kremmen entdeckt wurde.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/senior-laesst-ehefrau-in-auto-zurueck-suche.html",
-      "image": "",
-      "date": "2026-05-07T19:37:25.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bauarbeiter durch Balkonplatte in Berlin-Staaken tödlich verletzt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-staaken-bauarbeiter-gestorben-balkonplatte-arbeitsunfall.html",
-      "image": "",
-      "date": "2026-05-07T19:08:24.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "SAHA 2026'da SSB ile HAVELSAN arasında imza törenleri yapıldı ",
-      "description": "Savunma Sanayii Başkanlığı (SSB) ile HAVELSAN arasında başta Barkan O-İKA 1 Seri Üretim Projesi Sözleşme Değişikliği anlaşması olmak üzere 5 sözleşme imzalandı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/saha-2026da-ssb-ile-havelsan-arasinda-imza-torenleri-yapildi-/3929161",
-      "image": "",
-      "date": "2026-05-06T14:33:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "SAHA 2026 kapsamında \"Savaşın Değişen Doğası\" konulu panel düzenlendi",
-      "description": "SAHA 2026 kapsamında düzenlenen \"Savaşın Değişen Doğası: Yeni Trendler ve Yeni Teknolojiler\" başlıklı panelde, yeni eğilimler ve yeni savaş teknolojileri ele alındı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/saha-2026-kapsaminda-savasin-degisen-dogasi-konulu-panel-duzenlendi/3929103",
-      "image": "",
-      "date": "2026-05-06T13:56:14.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Türkiye'deki yazılım odaklı üretim SAHA 2026'da ele alındı",
-      "description": "SAHA 2026 Uluslararası Savunma, Havacılık ve Uzay Sanayi Fuarı kapsamında Milli Teknoloji Hamlesi ve yazılım odaklı üretim masaya yatırıldı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/turkiyedeki-yazilim-odakli-uretim-saha-2026da-ele-alindi/3928996",
-      "image": "",
-      "date": "2026-05-06T12:59:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ASPİLSAN Enerji, SAHA 2026'da stratejik işbirliklerine imza attı",
-      "description": "SAHA 2026'da imzalanan anlaşmalarla ASPİLSAN Enerji, savunma, enerji ve denizcilik alanlarında yerli batarya teknolojileri, kritik alt bileşenler ve sürdürülebilir çözümler için stratejik işbirliklerini genişletti.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/aspilsan-enerji-saha-2026da-stratejik-isbirliklerine-imza-atti/3927893",
-      "image": "",
-      "date": "2026-05-05T14:06:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
