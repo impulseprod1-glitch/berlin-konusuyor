@@ -1,16 +1,104 @@
 {
-  "lastUpdated": "2026-05-08T15:21:51.830Z",
+  "lastUpdated": "2026-05-08T17:16:18.460Z",
   "count": 10,
   "articles": [
     {
-      "title": "\"Barış Anneleri\", AK Parti TBMM Grubu'nu ziyaret etti",
-      "description": "DEM Parti Sözcüsü ve Şırnak Milletvekili Ayşegül Doğan'ın eşlik ettiği \"Barış Anneleri\"nden oluşan heyet, AK Parti TBMM Grubu'nu ziyaret ederek, Grup Başkanı Abdullah Güler ve Grup Başkanvekili Abdulhamit Gül ile bir araya geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/baris-anneleri-ak-parti-tbmm-grubunu-ziyaret-etti/3931720",
+      "title": "İçişleri Bakanı Çiftçi'den SAHA 2026 paylaşımı",
+      "description": "İçişleri Bakanı Mustafa Çiftçi, \"Milletimizin huzuru, devletimizin bekası ve Türkiye Yüzyılı hedeflerimiz için yerli ve milli teknoloji vizyonumuzu daha da ileriye taşımaya devam edeceğiz.\" ifadesini kullandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftciden-saha-2026-paylasimi/3931816",
       "image": "",
-      "date": "2026-05-08T15:16:30.000Z",
+      "date": "2026-05-08T17:07:02.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Çekya'da, Ankara'daki NATO Zirvesi'ne kimin katılacağı konusundaki anlaşmazlık sürüyor",
+      "description": "Çekya'da, Ankara'da temmuzda düzenlenecek NATO Zirvesi'ne kimin katılacağına dair Cumhurbaşkanı Petr Pavel ​​​​​​​ile mevcut hükümet arasındaki anlaşmazlık devam ediyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/cekyada-ankaradaki-nato-zirvesine-kimin-katilacagi-konusundaki-anlasmazlik-suruyor/3931812",
+      "image": "",
+      "date": "2026-05-08T17:02:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tayvan meclisi, 24,8 milyar dolarlık ek savunma bütçesini kabul etti",
+      "description": "Çin ile egemenlik ihtilafı içinde olan Tayvan'da meclis, ABD'den silah alımında kullanılmak üzere 24,8 milyar dolar ek savunma bütçesine onay verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/tayvan-meclisi-24-8-milyar-dolarlik-ek-savunma-butcesini-kabul-etti/3931808",
+      "image": "",
+      "date": "2026-05-08T17:00:06.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rusya'nın güneyindeki havalimanlarına yönelik uçuş kısıtlaması kaldırıldı",
+      "description": "Rusya'nın güneyindeki 13 havalimanına, uçuşlara yönelik Ukrayna'nın insansız hava aracı (İHA) saldırısı nedeniyle bugün uygulanan kısıtlamanın kaldırıldığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/rusyanin-guneyindeki-havalimanlarina-yonelik-ucus-kisitlamasi-kaldirildi/3931805",
+      "image": "",
+      "date": "2026-05-08T16:58:24.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Stromausfall in Berliner Ortsteilen Grunewald und Westend",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/asdasdasd.html",
+      "image": "",
+      "date": "2026-05-08T16:41:31.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ASFAT'ın havadan su üretim sistemi günlük 25 tona kadar içme suyu üretiyor",
+      "description": "Milli Savunma Bakanlığına bağlı Askeri Fabrika ve Tersane İşletme Anonim Şirketi (ASFAT), havadan su üretim sistemiyle şebekeye bağlı olmadan günlük 25 tona kadar içme suyu üretilebiliyor.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/asfatin-havadan-su-uretim-sistemi-gunluk-25-tona-kadar-icme-suyu-uretiyor/3931789",
+      "image": "",
+      "date": "2026-05-08T16:40:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fußball-Bundesliga: Union Berlin spielt auswärts in Mainz",
+      "description": "Beim Gastspiel in Mainz trifft Union Berlin nicht nur auf seinen Ex-Trainer Urs Fischer, sondern wegen Fischer auch auf eine Mannschaft, die ganz ähnlich Fußball spielt wie sie selbst. Nur erfolgreicher. Immerhin die Statistik macht Mut.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-bundesliga-mainz-05-union-berlin-vorbericht.html",
+      "image": "",
+      "date": "2026-05-08T16:36:16.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Staatsanwaltschaft zieht Belohnung im Fall Büttner zurück",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/brandenburg-anschlag-antisemitismus-beauftragter-buettner-keine-belohnung.html",
+      "image": "",
+      "date": "2026-05-08T16:30:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Jugendliche in Berlin und Brandenburg protestieren gegen Wehrpflicht",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/schueler-protest-wehrpflicht.html",
+      "image": "",
+      "date": "2026-05-08T15:23:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -22,94 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan, BAE Devlet Başkan Yardımcısı Şeyh Mansur'u kabul etti",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Birleşik Arap Emirlikleri (BAE) Devlet Başkan Yardımcısı Şeyh Mansur bin Zayid Al Nahyan'ı kabul etti.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-bae-devlet-baskan-yardimcisi-seyh-mansuru-kabul-etti/3931714",
-      "image": "",
-      "date": "2026-05-08T15:10:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Revision im Verfahren um getöteten Polizisten von Lauchhammer",
-      "description": "Zehn Jahre und sechs Monate Haft: Nach diesem Urteil im Prozess um den getöteten Polizisten in Lauchhammer haben sowohl die Staatsanwaltschaft als auch die Verteidigung Revision eingelegt. Damit geht der Fall nun an den Bundesgerichtshof.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/prozess-lauchhammer-getoeteter-polizist-revision.html",
-      "image": "",
-      "date": "2026-05-08T15:10:50.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "SosyalFest 2026'nın tanıtım toplantısı İstanbul'da yapıldı",
-      "description": "Karabük Üniversitesince 2024'te hayata geçirilen, bu yıl İstanbul Üniversitesinin ev sahipliği ve ortaklığıyla düzenlenecek Sosyal Bilimler Festivali 2026'nın (SosyalFest) tanıtım toplantısı gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/sosyalfest-2026nin-tanitim-toplantisi-istanbulda-yapildi/3931712",
-      "image": "",
-      "date": "2026-05-08T15:07:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gazze'de İsrail saldırılarıyla artan yanık mağdurlarının ızdırabı 3D maskeyle hafifletiliyor",
-      "description": "İsrail saldırılarında vücutlarında ciddi yanıklar oluşan çok sayıda Gazzeli, bedenlerindeki deformasyon ve şekil bozukluklarının psikolojik etkisinden 3D baskılı plastik maskeyle kurtulmaya çalışıyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/gazzede-israil-saldirilariyla-artan-yanik-magdurlarinin-izdirabi-3d-maskeyle-hafifletiliyor/3931705",
-      "image": "",
-      "date": "2026-05-08T14:59:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Hertha will Fans mit Sieg gegen abstiegsbedrohte Fürther versöhnen",
-      "description": "Nach vier Spielen ohne Sieg ist die Stimmung bei Hertha BSC angespannt. Im letzten Heimspiel der Saison sollen wieder drei Punkte eingefahren werden - und es wird sich verabschiedet. Für Gegner Greuther Fürth geht es allerdings um alles.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-hertha-bsc-greuther-fuerth-2-bundesliga-vorbericht-olympiastadion.html",
-      "image": "",
-      "date": "2026-05-08T14:40:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Neuer Rinderdiebstahl in Brandenburg - diesmal 48 Tiere aus Vetschau",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/brandenburg-vetschau-50-rinder-gestohlen.html",
-      "image": "",
-      "date": "2026-05-08T14:23:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Eishockey: Acht Abgänge bei den Eisbären - sechs Profis verlängern",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/eishockey-del-eisbaeren-berlin-verabschieden-spieler-und-verlaengern-vertraege.html",
-      "image": "",
-      "date": "2026-05-08T14:17:02.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İçişleri Bakanı Çiftçi, SAHA 2026'yı ziyaret etti",
-      "description": "İçişleri Bakanı Mustafa Çiftçi, SAHA 2026 Uluslararası Savunma, Havacılık ve Uzay Sanayi Fuarı'nı ziyaret etti.",
-      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-saha-2026yi-ziyaret-etti/3931511",
-      "image": "",
-      "date": "2026-05-08T13:11:11.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
