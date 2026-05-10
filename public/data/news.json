@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-05-10T20:45:37.659Z",
+  "lastUpdated": "2026-05-10T22:45:37.242Z",
   "count": 9,
   "articles": [
+    {
+      "title": "El Clasico'yu kazanan Barcelona, LaLiga'da şampiyon",
+      "description": "İspanya 1. Futbol Ligi'nin (LaLiga) 35. haftasında Barcelona, sahasında Real Madrid'i 2-0 mağlup ederek şampiyon oldu.",
+      "url": "https://www.aa.com.tr/tr/spor/el-clasicoyu-kazanan-barcelona-laligada-sampiyon/3933342",
+      "image": "",
+      "date": "2026-05-10T21:29:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump, İran'ın saldırıların sonlandırılması için ABD'ye verdiği yanıtı \"kabul edilemez\" buldu",
+      "description": "ABD Başkanı Donald Trump, yaptığı paylaşımda, \"İran'ın sözde temsilcilerinden gelen yanıtı az önce okudum. Hiç hoşuma gitmedi. Kesinlikle kabul edilemez.\" ifadelerini kullandı.",
+      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abd-israil-iran-lubnan-savasi-ve-baris-muzakereleri/2434",
+      "image": "",
+      "date": "2026-05-10T21:22:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fas, kaybolan ABD askerlerinden birinin cansız bedenine ulaşıldığını açıkladı",
+      "description": "Fas ordusu, \"Afrika Aslanı 2026\" tatbikatı sırasında kaybolan 2 ABD askerinden birinin cansız bedenine ulaşıldığını, diğer asker için arama çalışmalarının sürdüğünü bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/fas-kaybolan-abd-askerlerinden-birinin-cansiz-bedenine-ulasildigini-acikladi/3933326",
+      "image": "",
+      "date": "2026-05-10T20:48:29.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Eta schlägt Fischer: Union schießt sich in Mainz spät zum Sieg",
       "description": "In Mainz begann der 1. FC Union überraschend offensiv und ging nach einer Tennisball-Protestaktion verdient in Führung. Nachdem ein Ex-Unioner für den Ausgleich sorgte, blieben die Berliner wachsam und schossen sich spät zum Auswärtssieg.",
@@ -58,28 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Londra derbisini kazanan Arsenal, şampiyonluğa çok yakın",
-      "description": "İngiltere Premier Lig'de büyük heyecana sahne olan maçta Arsenal, deplasmanda West Ham United'ı 1-0 yenerek şampiyonluğa bir adım daha yaklaştı.",
-      "url": "https://www.aa.com.tr/tr/spor/londra-derbisini-kazanan-arsenal-sampiyonluga-cok-yakin/3933257",
-      "image": "",
-      "date": "2026-05-10T18:17:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Şehit ve gazi anneleri, Anneler Günü programında buluştu",
-      "description": "Şehit annesi Kezban Eldemir Gültepe,  \"Şehit annesi olmanın vermiş olduğu bir gurur var. Bunu unutmayan bir devlet ve sivil toplum kuruluşları var. Hepsine teşekkür ediyorum.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/sehit-ve-gazi-anneleri-anneler-gunu-programinda-bulustu/3933253",
-      "image": "",
-      "date": "2026-05-10T18:15:18.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Panketal: Maximilian Wonke bleibt nach Stichwahl Bürgermeister",
       "description": "",
       "url": "https://www.rbb24.de/politik/wahl/brandenburg-buergermeisterwahlen/2026/panketal-buergermeister-stichwahl-ergebnis-wonke-spd-john-afd-brandenburg.html",
@@ -88,17 +99,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in 10 gün alıkoyduktan sonra serbest bıraktığı aktivist Seyf Ebu Kişk Barselona'ya ulaştı",
-      "description": "Seyf Ebu Kişk, \"Yolculuğumuz daha yeni başladı. Yakında çantamı yeniden hazırlayıp, Türkiye'deki arkadaşlarıma katılacağım.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilin-10-gun-alikoyduktan-sonra-serbest-biraktigi-aktivist-seyf-ebu-kisk-barselonaya-ulasti/3933229",
-      "image": "",
-      "date": "2026-05-10T17:14:26.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
