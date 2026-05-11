@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-05-10T22:45:37.242Z",
+  "lastUpdated": "2026-05-11T03:26:59.751Z",
   "count": 9,
   "articles": [
+    {
+      "title": "ABD Başkanı Donald Trump, 13-15 Mayıs'ta Çin'i ziyaret edecek",
+      "description": "ABD Başkanı Donald Trump'ın 13-15 Mayıs tarihlerinde Çin'i ziyaret edeceği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-donald-trump-13-15-mayista-cini-ziyaret-edecek/3933362",
+      "image": "",
+      "date": "2026-05-11T03:08:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'in ateşkese rağmen Lübnan'ın güneyine düzenlediği saldırılarda 2 kişi hayatını kaybetti",
+      "description": "İsrail ordusunun, Lübnan'ın güneyindeki köy ve kasabalara düzenlediği hava ve topçu saldırılarında 2 kişinin daha yaşamını yitirdiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-ateskese-ragmen-lubnanin-guneyine-duzenledigi-saldirilarda-2-kisi-hayatini-kaybetti/3933354",
+      "image": "",
+      "date": "2026-05-11T00:03:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'de Netanyahu, Oslo Anlaşması'nın iptali için verilen kanun teklifinin görüşülmesini erteledi",
+      "description": "İsrail Başbakanı Binyamin Netanyahu'nun talebiyle, Filistin yönetimiyle 1993 yılında imzalanan Oslo Anlaşması'nın iptal edilmesini öngören kanun teklifinin görüşülmesinin ertelendiği belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilde-netanyahu-oslo-anlasmasinin-iptali-icin-verilen-kanun-teklifinin-gorusulmesini-erteledi/3933353",
+      "image": "",
+      "date": "2026-05-10T23:55:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "El Clasico'yu kazanan Barcelona, LaLiga'da şampiyon",
       "description": "İspanya 1. Futbol Ligi'nin (LaLiga) 35. haftasında Barcelona, sahasında Real Madrid'i 2-0 mağlup ederek şampiyon oldu.",
@@ -16,20 +49,9 @@
     {
       "title": "Trump, İran'ın saldırıların sonlandırılması için ABD'ye verdiği yanıtı \"kabul edilemez\" buldu",
       "description": "ABD Başkanı Donald Trump, yaptığı paylaşımda, \"İran'ın sözde temsilcilerinden gelen yanıtı az önce okudum. Hiç hoşuma gitmedi. Kesinlikle kabul edilemez.\" ifadelerini kullandı.",
-      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abd-israil-iran-lubnan-savasi-ve-baris-muzakereleri/2434",
+      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abd-israil-iran-savasi-ve-baris-muzakereleri/2434",
       "image": "",
       "date": "2026-05-10T21:22:16.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fas, kaybolan ABD askerlerinden birinin cansız bedenine ulaşıldığını açıkladı",
-      "description": "Fas ordusu, \"Afrika Aslanı 2026\" tatbikatı sırasında kaybolan 2 ABD askerinden birinin cansız bedenine ulaşıldığını, diğer asker için arama çalışmalarının sürdüğünü bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/fas-kaybolan-abd-askerlerinden-birinin-cansiz-bedenine-ulasildigini-acikladi/3933326",
-      "image": "",
-      "date": "2026-05-10T20:48:29.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -47,17 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "Gazze'de anneler bir Anneler Günü'nü daha evlat özlemiyle geçirdi",
-      "description": "Gazze Şeridi’ndeki Filistinli anneler, bir Anneler Günü'nü daha İsrail tarafından öldürülen ya da esir alınan evlatlarından ayrı geçirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/gazzede-anneler-bir-anneler-gununu-daha-evlat-ozlemiyle-gecirdi/3933305",
-      "image": "",
-      "date": "2026-05-10T20:15:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Hantavirus: Eine Person soll in Berliner Charité gebracht werden",
       "description": "Nach dem Hantavirus-Ausbruch auf einem Kreuzfahrtschiff bereitet sich Berlin auf die Rückkehr einer Person vor. Bislang ist sie nach Angaben der Behörden ohne Symptome.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-charite-hantavirus-kreuzfahrtschiff-hondius-quarantaene.html",
@@ -66,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fransa Cumhurbaşkanı Macron, Cezayir ile ülkesi arasındaki ilişkilerin yeniden başlamasını istiyor",
-      "description": "Fransa Cumhurbaşkanı Emmanuel Macron, Cezayir ile ülkesi arasındaki ilişkilerin yeniden başlamasını umduğunu dile getirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransa-cumhurbaskani-macron-cezayir-ile-ulkesi-arasindaki-iliskilerin-yeniden-baslamasini-istiyor/3933280",
-      "image": "",
-      "date": "2026-05-10T19:10:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
