@@ -1,27 +1,82 @@
 {
-  "lastUpdated": "2026-05-12T20:03:05.510Z",
+  "lastUpdated": "2026-05-12T23:00:15.575Z",
   "count": 10,
   "articles": [
     {
-      "title": "Süper Lig'den 11 kulüp PFDK'ye sevk edildi",
-      "description": "Türkiye Futbol Federasyonu (TFF) Hukuk Müşavirliği, Trendyol Süper Lig'den 11 kulübü, Profesyonel Futbol Disiplin Kuruluna (PFDK) sevk etti.",
-      "url": "https://www.aa.com.tr/tr/spor/super-ligden-11-kulup-pfdkye-sevk-edildi/3935553",
+      "title": "Samsun'un Havza ilçesinde eğitime bir gün ara verildi",
+      "description": "Samsun'un Havza ilçesinde sağanak sonrası meydana gelen taşkın ve sel nedeniyle ilçe genelinde eğitime bir gün ara verildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/samsunun-havza-ilcesinde-egitime-bir-gun-ara-verildi/3935637",
       "image": "",
-      "date": "2026-05-12T19:54:18.000Z",
+      "date": "2026-05-12T21:59:35.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Brüksel'de İsrail'in katılımına tepki için Eurovision'a alternatif konser düzenlendi",
-      "description": "Belçika'nın başkenti Brüksel’de İsrail'in Eurovision Şarkı Yarışması'na katılımını protesto etmek amacıyla \"Filistin için Birlik-Soykırıma Sahne Yok\" başlıklı alternatif konser düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/dunya/brukselde-israilin-katilimina-tepki-icin-eurovisiona-alternatif-konser-duzenlendi/3935551",
+      "title": "Eurovision'un ilk yarı finalinde İsrail sahneye çıkınca salonda \"soykırımı durdurun\" sesleri yükseldi",
+      "description": "İsrail'in katılımına tepki gösteren 5 ülkenin boykot ettiği 2026 Eurovision Şarkı Yarışması'nın ilk yarı finalinde sahne alan İsrailli şarkıcı Noam Bettan, \"soykırımı durdurun\" sloganıyla protesto edildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/eurovisionun-ilk-yari-finalinde-israil-sahneye-cikinca-salonda-soykirimi-durdurun-sesleri-yukseldi/3935630",
       "image": "",
-      "date": "2026-05-12T19:50:57.000Z",
+      "date": "2026-05-12T21:38:30.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'in Lübnan'ın güneyindeki 4 bölgeye düzenlediği hava saldırılarında 15 kişi hayatını kaybetti",
+      "description": "İsrail ordusunun, ateşkese rağmen Lübnan'ın güneyindeki 4 bölgeye gerçekleştirdiği hava saldırılarında 15 kişinin yaşamını yitirdiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-lubnanin-guneyindeki-4-bolgeye-duzenledigi-hava-saldirilarinda-15-kisi-hayatini-kaybetti/3935623",
+      "image": "",
+      "date": "2026-05-12T21:33:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Çorum'da sağanak hayatı olumsuz etkiledi",
+      "description": "Çorum'un Alaca ilçesinde etkili olan sağanak nedeniyle yaklaşık 1000 dekar tarım arazisi zarar gördü.",
+      "url": "https://www.aa.com.tr/tr/gundem/corumda-saganak-hayati-olumsuz-etkiledi/3935616",
+      "image": "",
+      "date": "2026-05-12T21:21:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mercedes-Benz verkauft Autohäuser in Berlin und Brandenburg - Britische Holding übernimmt",
+      "description": "",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/05/mercedes-benz-verkauf-autohaeuser-berlin-brandenburg.html",
+      "image": "",
+      "date": "2026-05-12T21:17:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Trump'tan ABD medyasına İran konusunda \"vatana ihanet\" suçlaması",
+      "description": "ABD Başkanı Donald Trump, İran'ın askeri açıdan başarılı olduğu yönünde haberler yapan Amerikan medyasının \"vatana ihanet\" ettiğini savundu.",
+      "url": "https://www.aa.com.tr/tr/live-blog/trumptan-abd-medyasina-iran-konusunda-vatana-ihanet-suclamasi/2518",
+      "image": "",
+      "date": "2026-05-12T21:12:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rheinsbergs Bürgermeister Schwochow muss Geldbuße zahlen",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/rheinsberg-buergermeister-frank-rudi-schwochow-geldbusse-1-500-e.html",
+      "image": "",
+      "date": "2026-05-12T19:58:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Konya'da bir kişiyi ısıran köpeğin sahibine 108 bin lira ceza ",
-      "description": "Konya'nın Akşehir ilçesinde köpeğin sokakta dolaşırken bir kişiyi ısırması üzerine hayvanın sahibine 108 bin lira idari para cezası uygulandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/konyada-bir-kisiyi-isiran-kopegin-sahibine-108-bin-lira-ceza-/3935527",
-      "image": "",
-      "date": "2026-05-12T19:19:26.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -66,50 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Insolvenzverwalter: Investor für Domo-Werk in Premnitz gefunden",
-      "description": "",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/05/brandenburg-premnitz-domo-kunststoff-veredler-neuer-investor-lone-star-funds.html",
-      "image": "",
-      "date": "2026-05-12T18:54:13.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bosna Hersek Yüksek Temsilcisi Christian Schmidt, ülkedeki \"yıkıcı gerilimlere\" dikkati çekti",
-      "description": "Bosna Hersek Yüksek Temsilcisi Christian Schmidt, ülkedeki \"yıkıcı gerilimler\" konusunda uyarıda bulunurken, istifa kararını da Birleşmiş Milletler Güvenlik Konseyi (BMGK) üyeleriyle paylaştı.",
-      "url": "https://www.aa.com.tr/tr/dunya/bosna-hersek-yuksek-temsilcisi-christian-schmidt-ulkedeki-yikici-gerilimlere-dikkati-cekti/3935516",
-      "image": "",
-      "date": "2026-05-12T18:48:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner Senatorin Kiziltepe begrüßt Kompromiss bei Integrationskursen",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/05/berlin-integrationskurse-kompromiss-senatorin-kiziltepe.html",
-      "image": "",
-      "date": "2026-05-12T18:46:54.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İngiltere, Hürmüz Boğazı'na ek savaş uçağı ve dronlar sevk edecek",
-      "description": "İngiltere Savunma Bakanlığı, Hürmüz Boğazı'nda güvenliği sağlamak ve bölgedeki İngiltere çıkarları ve müttefiklerini savunmak için bölgeye savaş gemisine ek olarak dron avlama sistemleri, Eurofighter Typhoon jetleri göndereceğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/ingiltere-hurmuz-bogazina-ek-savas-ucagi-ve-dronlar-sevk-edecek/3935513",
-      "image": "",
-      "date": "2026-05-12T18:45:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
