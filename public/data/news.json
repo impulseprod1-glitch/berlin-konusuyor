@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-05-12T23:00:15.575Z",
+  "lastUpdated": "2026-05-13T02:57:04.310Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Bartın'da şiddetli fırtına nedeniyle çatı uçtu, 6 araç hasar gördü",
+      "description": "Bartın'da etkili olan fırtına nedeniyle bir binanın çatısı uçtu, 6 araç hasar gördü.",
+      "url": "https://www.aa.com.tr/tr/gundem/bartinda-siddetli-firtina-nedeniyle-cati-uctu-6-arac-hasar-gordu/3935638",
+      "image": "",
+      "date": "2026-05-12T22:07:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Samsun'un Havza ilçesinde eğitime bir gün ara verildi",
       "description": "Samsun'un Havza ilçesinde sağanak sonrası meydana gelen taşkın ve sel nedeniyle ilçe genelinde eğitime bir gün ara verildi.",
@@ -55,17 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Trump'tan ABD medyasına İran konusunda \"vatana ihanet\" suçlaması",
-      "description": "ABD Başkanı Donald Trump, İran'ın askeri açıdan başarılı olduğu yönünde haberler yapan Amerikan medyasının \"vatana ihanet\" ettiğini savundu.",
-      "url": "https://www.aa.com.tr/tr/live-blog/trumptan-abd-medyasina-iran-konusunda-vatana-ihanet-suclamasi/2518",
-      "image": "",
-      "date": "2026-05-12T21:12:17.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
