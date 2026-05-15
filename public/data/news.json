@@ -1,24 +1,68 @@
 {
-  "lastUpdated": "2026-05-15T19:28:03.030Z",
+  "lastUpdated": "2026-05-15T20:59:37.836Z",
   "count": 10,
   "articles": [
     {
-      "title": "Milli kadın güreşçilerden 17 Yaş Altı Avrupa Şampiyonası'nda 2 altın madalya",
-      "description": "Milli kadın güreşçiler Kıymet Rümeysa Tezcan ile Özdenur Özmez, Bulgaristan'daki 17 Yaş Altı Avrupa Şampiyonası'nda altın madalyanın sahibi oldu.",
-      "url": "https://www.aa.com.tr/tr/spor/milli-kadin-gurescilerden-17-yas-alti-avrupa-sampiyonasinda-2-altin-madalya/3939040",
+      "title": "Lübnan heyeti: ABD'deki müzakerelerde ülke lehine somut diplomatik ilerleme sağlandı",
+      "description": "Lübnan heyeti, ABD'de İsrail ile yürütülen müzakerelerde ülke lehine somut diplomatik ilerleme sağlandığını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/lubnan-heyeti-abddeki-muzakerelerde-ulke-lehine-somut-diplomatik-ilerleme-saglandi/3939137",
       "image": "",
-      "date": "2026-05-15T18:46:39.000Z",
+      "date": "2026-05-15T20:49:42.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "New York'ta 43. Türk Günü Yürüyüşü için bayrak çekme töreni düzenlendi",
-      "description": "ABD'nin New York kentinde Cumhurbaşkanlığı İletişim Başkanlığı himayelerinde, Türk Amerikan Dernekleri Federasyonu (TADF) koordinasyonunda yarın yapılacak 43. Türk Günü Yürüyüşü öncesi bayrak çekme töreni düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/dunya/new-yorkta-43-turk-gunu-yuruyusu-icin-bayrak-cekme-toreni-duzenlendi/3939039",
+      "title": "Lübnan Başbakanı Selam'dan İsrail ile yürütülen müzakereler için Arap ve uluslararası destek çağrısı",
+      "description": "Lübnan Başbakanı Nevvaf Selam, ABD arabuluculuğunda İsrail ile yürütülen müzakereler için Arap ve uluslararası destek çağrısında bulundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/lubnan-basbakani-selamdan-israil-ile-yurutulen-muzakereler-icin-arap-ve-uluslararasi-destek-cagrisi/3939122",
       "image": "",
-      "date": "2026-05-15T18:44:09.000Z",
+      "date": "2026-05-15T20:25:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berliner Schauspielerin Angelica Domröse gestorben",
+      "description": "In \"Die Legende von Paul und Paula\" verzauberte sie nicht nur die Kinogänger in der DDR. Auch in anderen Rollen und auf der Bühne war Angelica Domröse erfolgreich. Nun ist sie im Alter von 85 Jahren gestorben.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/schauspielerin-angelica-domroese-gestorben-paul-und-paula.html",
+      "image": "",
+      "date": "2026-05-15T19:46:41.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Zonguldak'ta takla atan otomobilin akaryakıt istasyonundaki çocuklara çarpması sonucu 6 kişi yaralandı",
+      "description": "Zonguldak'ta takla atan otomobilin akaryakıt istasyonunda park halindeki araca ve bankta oturan çocuklara çarpması sonucu 6 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/zonguldakta-takla-atan-otomobilin-akaryakit-istasyonundaki-cocuklara-carpmasi-sonucu-6-kisi-yaralandi/3939078",
+      "image": "",
+      "date": "2026-05-15T19:25:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Viyana'da İsrail'in Eurovision'a katılımına karşı alternatif konser düzenlendi",
+      "description": "Avusturya’nın başkenti Viyana’da İsrail’in Eurovision Şarkı Yarışması’na katılımını protesto etmek amacıyla alternatif konser düzenlendi.",
+      "url": "https://www.aa.com.tr/tr/dunya/viyanada-israilin-eurovisiona-katilimina-karsi-alternatif-konser-duzenlendi/3939065",
+      "image": "",
+      "date": "2026-05-15T19:15:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İçişleri Bakan Yardımcısı Turan: Türkiye, savunma sanayisi ve güçlü ordusuyla bölgenin baş aktörlerinden bir tanesi ",
+      "description": "İçişleri Bakan Yardımcısı Turan, \"Orta Doğu'daki sorunları biliyorsunuz, her tarafta sorunlar var. Her gün gelişen savunma sanayisiyle daha güçlü ordusuyla caydırıcı güç olarak bölgenin baş aktörlerinden bir tanesi Türkiye yoluna devam edecek.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakan-yardimcisi-turan-turkiye-savunma-sanayisi-ve-guclu-ordusuyla-bolgenin-bas-aktorlerinden-bir-tanesi-/3939038",
+      "image": "",
+      "date": "2026-05-15T18:42:21.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -36,39 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Berliner Schauspielerin Angelica Domröse gestorben",
-      "description": "In \"Die Legende von Paul und Paula\" verzauberte sie nicht nur die Kinogänger in der DDR. Auch in anderen Rollen und auf der Bühne war Angelica Domröse erfolgreich. Nun ist sie im Alter von 85 Jahren gestorben.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/schauspielerin-angelica-domroese-gestorben-paul-und-paula.html",
-      "image": "",
-      "date": "2026-05-15T18:20:16.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Suriye'nin BM Daimi Temsilcisi Olabi, İsrail'i Suriye'deki istikrarı baltalamakla suçladı",
-      "description": "Suriye'nin Birleşmiş Milletler (BM) Daimi Temsilcisi İbrahim Olabi, yıllarca süren çatışmadan çıkmaya çalışan Suriye'ye saldırılarını sürdüren İsrail'i, bu ülkedeki istikrarı ve toparlanmayı baltalamakla suçladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/suriyenin-bm-daimi-temsilcisi-olabi-israili-suriyedeki-istikrari-baltalamakla-sucladi/3939013",
-      "image": "",
-      "date": "2026-05-15T18:17:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Beşiktaş, Trendyol Süper Lig'in son haftasında Çaykur Rizespor ile berabere kaldı",
-      "description": "Trendyol Süper Lig'in 34. ve son haftasındaki Çaykur Rizespor-Beşiktaş maçı, 2-2 berabere tamamlandı.",
-      "url": "https://www.aa.com.tr/tr/spor/besiktas-trendyol-super-ligin-son-haftasinda-caykur-rizespor-ile-berabere-kaldi/3939000",
-      "image": "",
-      "date": "2026-05-15T18:05:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Nach Verbandswechsel: Rani Khedira in Tunesiens WM-Kader",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-bundesliga-union-berlin-rani-khedira-in-tunesiens-wm-kader.html",
@@ -77,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Uraloğlu: Başta BM, Türk Devletleri Teşkilatı, İİT olmak üzere her zeminde dayanışma içinde hareket ediyoruz",
-      "description": "Ulaştırma ve Altyapı Bakanı Uraloğlu, BM, Türk ve İslam devletleriyle her zeminde dayanışma içinde hareket ettiklerini belirterek, \"Bölgemizde çatışmanın yerine uzlaşının, ayrışmanın yerine işbirliğinin hakim olduğu bir gelecek mümkündür.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-uraloglu-basta-bm-turk-devletleri-teskilati-iit-olmak-uzere-her-zeminde-dayanisma-icinde-hareket-ediyoruz/3938988",
-      "image": "",
-      "date": "2026-05-15T17:56:03.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
