@@ -1,11 +1,33 @@
 {
-  "lastUpdated": "2026-05-16T02:49:22.719Z",
-  "count": 10,
+  "lastUpdated": "2026-05-16T06:20:59.441Z",
+  "count": 9,
   "articles": [
+    {
+      "title": "E-Bike-Pendeln in Berlin scheitert oft an schlechten Radwegen ",
+      "description": "Das E-Bike macht Pendeln auch auf längeren Strecken durch Berlin möglich. Doch vielen Pendler:innen stehen Buckelpisten, Wurzeldellen und ein Flickenteppich von Radkilometern im Weg. Unterwegs im morgendlichen Berufsverkehr.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-e-bike-pendeln-radverkehr-radwege-gefahr.html",
+      "image": "",
+      "date": "2026-05-16T06:12:09.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Kürzungen: Wie sich der Sparzwang an Berlins Unis auswirkt",
+      "description": "Die neuen Hochschulverträge - seit Februar in Kraft - setzen Unis und Hochschulen unter Sparzwang. Alle müssen Studienplätze abbauen, manche planen, ganze Institute zu schließen. Viele Studierende besorgt das, einige haben sich bereits gewehrt.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/kuerzungen-hochschulen-sparzwang-berlin-unis-protest.html",
+      "image": "",
+      "date": "2026-05-16T06:09:59.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "ABD Başkanı Trump, İran'da \"her şeyi iki günde yerle bir edebileceklerini\" iddia etti",
       "description": "ABD Başkanı Donald Trump, Tahran'ın direncini hafife almadığını, ancak isterse İran'ın altyapısını \"iki günde yok edebileceklerini\" iddia etti.",
-      "url": "https://www.aa.com.tr/tr/live-blog/abd-baskani-trump-iranda-her-seyi-iki-gunde-yerle-bir-edebileceklerini-iddia-etti/2622",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-trump-iranda-her-seyi-iki-gunde-yerle-bir-edebileceklerini-iddia-etti/3939188",
       "image": "",
       "date": "2026-05-15T23:44:57.000Z",
       "source": "Anadolu Ajansı",
@@ -36,36 +58,14 @@
       "type": "rss"
     },
     {
-      "title": "TBMM Başkanı Kurtulmuş: TBMM, Türkiye Cumhuriyeti'nin en zor sorununu çözmek için irade ortaya koymuştur",
-      "description": "TBMM Başkanı Numan Kurtulmuş, \"Türkiye Büyük Millet Meclisi, Türkiye Cumhuriyeti'nin en zor sorununu çözmek için irade ortaya koymuş ve müşterek bir iradeyle bir rapor hazırlamıştır.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/tbmm-baskani-kurtulmus-tbmm-turkiye-cumhuriyetinin-en-zor-sorununu-cozmek-icin-irade-ortaya-koymustur/3939156",
+      "title": "ABD Dışişleri Bakanlığı: İsrail ile Lübnan arasındaki ateşkes 45 gün daha uzatıldı",
+      "description": "ABD Dışişleri Bakanlığı, Washington'daki görüşmeler sonucunda İsrail ile Lübnan arasındaki ateşkesin 45 gün daha uzatıldığını ve siyasi görüşmeler için tarafların 2-3 Haziran'da bir araya geleceğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-disisleri-bakanligi-israil-ile-lubnan-arasindaki-ateskes-45-gun-daha-uzatildi/3939046",
       "image": "",
-      "date": "2026-05-15T21:15:32.000Z",
+      "date": "2026-05-15T18:54:04.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bilal Erdoğan: Bütün halkımızı 21 Mayıs tarihinden itibaren İstanbul Atatürk Havalimanı'ndaki festivalimize bekliyoruz",
-      "description": "Dünya Etnospor Birliği Başkanı Necmeddin Bilal Erdoğan, tüm vatandaşları 8. Etnospor Kültür Festivali'ne davet ederek organizasyonun keyifli geçeceğini umduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/spor/bilal-erdogan-butun-halkimizi-21-mayis-tarihinden-itibaren-istanbul-ataturk-havalimanindaki-festivalimize-bekliyoruz/3939148",
-      "image": "",
-      "date": "2026-05-15T21:04:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner Schauspielerin Angelica Domröse gestorben",
-      "description": "In \"Die Legende von Paul und Paula\" verzauberte sie nicht nur die Kinogänger in der DDR. Auch in anderen Rollen und auf der Bühne war Angelica Domröse erfolgreich. Nun ist sie im Alter von 85 Jahren gestorben.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/schauspielerin-angelica-domroese-gestorben-paul-und-paula.html",
-      "image": "",
-      "date": "2026-05-15T19:46:41.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     },
     {
@@ -96,17 +96,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-dritte-liga-energie-cottbus-interview-praesident-sebastian-lemke.html",
       "image": "",
       "date": "2026-05-15T17:27:51.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Wenn Bus und Bahn zu früh abfahren - und das für Probleme sorgt",
-      "description": "Verspätungen sind ein Dauer-Ärgernis bei der BVG. Aber auch, wenn Bus und Bahn zu früh abfahren, kann das zum Problem werden.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/bvg-verfruehung-u-bahn-tram-bus-berlin.html",
-      "image": "",
-      "date": "2026-05-15T17:23:09.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
