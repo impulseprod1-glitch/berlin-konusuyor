@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-05-16T19:03:32.192Z",
+  "lastUpdated": "2026-05-16T20:45:16.347Z",
   "count": 10,
   "articles": [
     {
-      "title": "İstanbul'da UEFA Avrupa Ligi finali nedeniyle bazı yollar trafiğe kapatılacak",
-      "description": "İstanbul'da oynanacak 2026 UEFA Avrupa Ligi finali nedeniyle trafiğe kapatılacak yollar ve alternatif güzergahlar duyuruldu.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-uefa-avrupa-ligi-finali-nedeniyle-bazi-yollar-trafige-kapatilacak/3939819",
+      "title": "İspanya devlet televizyonu, Eurovision'un başlama saatinde \"Filistin için barış ve adalet\" çağrısı yaptı",
+      "description": "İspanya devlet televizyonu RTVE, İsrail'in katılmasından ötürü protesto edip bu yıl katılmadığı Eurovision 2026'nın başlangıcıyla eş zamanlı \"Filistin için barış ve adalet\" çağrısında bulundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/ispanya-devlet-televizyonu-eurovisionun-baslama-saatinde-filistin-icin-baris-ve-adalet-cagrisi-yapti/3939862",
       "image": "",
-      "date": "2026-05-16T18:57:54.000Z",
+      "date": "2026-05-16T20:15:24.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Güler, Türkiye ve ABD'nin NATO Daimi Temsilcilerini kabul etti",
+      "description": "Milli Savunma Bakanı Yaşar Güler, NATO Daimi Temsilcisi Büyükelçi Basat Öztürk'ü ve ABD'nin NATO Daimi Temsilcisi Büyükelçi Matthew G. Whitaker'ı kabul etti.",
+      "url": "https://www.aa.com.tr/tr/gundem/bakan-guler-turkiye-ve-abdnin-nato-daimi-temsilcilerini-kabul-etti/3939861",
+      "image": "",
+      "date": "2026-05-16T20:14:49.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Belçika, gelecek yıl Eurovision'a yarışmacı göndermemeyi değerlendiriyor",
+      "description": "Belçika'nın Flaman kamu yayıncısı VRT, Avrupa Yayın Birliğinin (EBU) Eurovision Şarkı Yarışması'na katılım politikalarına ilişkin tutumunu değiştirmemesi halinde gelecek yıl yarışmaya sanatçı göndermeme ihtimalinin bulunduğunu açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/belcika-gelecek-yil-eurovisiona-yarismaci-gondermemeyi-degerlendiriyor/3939858",
+      "image": "",
+      "date": "2026-05-16T20:10:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "FIFA Genel Sekreteri Grafström, Bakan Bak ve TFF Başkanı Hacıosmanoğlu ile bir araya geldi",
+      "description": "FIFA Genel Sekreteri Mattias Grafström, Gençlik ve Spor Bakanı Osman Aşkın Bak ve Türkiye Futbol Federasyonu Başkanı İbrahim Ethem Hacıosmanoğlu ile bir araya geldi.",
+      "url": "https://www.aa.com.tr/tr/spor/fifa-genel-sekreteri-grafstrom-bakan-bak-ve-tff-baskani-haciosmanoglu-ile-bir-araya-geldi/3939855",
+      "image": "",
+      "date": "2026-05-16T20:09:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM Raportörü Albanese'ye göre, İsrail'in Filistinlilere karşı işkenceleri soykırımın yapısal bir özelliği",
+      "description": "Albanese, İsrail'in Filistinli esirlere vecFilistin topraklarındaki halkın tamamınacişkence yöntemini kullandığını belirterek \"İşkence, devam eden soykırımın ve daha geniş yerleşimci-sömürgeci apartheid'ın yapısal bir özelliğidir\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-raportoru-albaneseye-gore-israilin-filistinlilere-karsi-iskenceleri-soykirimin-yapisal-bir-ozelligi/3939854",
+      "image": "",
+      "date": "2026-05-16T20:08:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mehrere Festnahmen bei Palästina-Demo in Berlin",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/polizei-vereinzelte-festnahmen-palaestina-demo-berlin.html",
+      "image": "",
+      "date": "2026-05-16T19:57:25.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Regionalliga Nordost: Babelsberg siegt zum Saisonabschluss, drei Elfmeter beim BFC Dynamo",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-regionalliga-nordost-bfc-dynamo-chemnitz-altglienicke-preussen-babelsberg-hertha-u23-meuselwitz-luckenwalde-zehlendorf-greifswald-spielbericht.html",
+      "image": "",
+      "date": "2026-05-16T18:55:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -22,50 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Küresel Sumud Filosu, Antalya açıklarında ilerliyor",
-      "description": "Gazze'deki ablukayı kırmayı ve insani yardım ulaştırmayı amaçlayan Küresel Sumud Filosu, Antalya açıklarında ilerlemeye devam ediyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/kuresel-sumud-filosu-antalya-aciklarinda-ilerliyor/3939788",
-      "image": "",
-      "date": "2026-05-16T18:27:22.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cannes kentinde \"Gazze Yaşıyor\" yazılı tekneyle sembolik eylem yapıldı",
-      "description": "Fransa'nın güneyinde Cannes kentinde \"Gaza Sunbirds (Gazze Güneş Kuşları)\" isimli belgeselin gösterimi kapsamında \"Gazze Yaşıyor\" mesajını taşıyan tekneyle sembolik eylem düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/dunya/cannes-kentinde-gazze-yasiyor-yazili-tekneyle-sembolik-eylem-yapildi/3939773",
-      "image": "",
-      "date": "2026-05-16T18:12:31.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Mehrere Festnahmen bei Palästina-Demo in Berlin",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/05/polizei-vereinzelte-festnahmen-palaestina-demo-berlin.html",
-      "image": "",
-      "date": "2026-05-16T18:04:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Eurovision'un düzenlendiği Viyana'da İsrail'in yarışmaya katılımı protesto edildi",
-      "description": "Avusturya'nın başkenti Viyana'da düzenlenen Eurovision Şarkı Yarışması'nın final gününde 1000'i aşkın kişi, İsrail'in yarışmaya katılmasına tepki gösterdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/eurovisionun-duzenlendigi-viyanada-israilin-yarismaya-katilimi-protesto-edildi/3939755",
-      "image": "",
-      "date": "2026-05-16T17:38:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-bundesliga-fc-union-berlin-fc-augsburg-spielbericht-liveticker-audiostream-saisonfinale.html",
       "image": "",
       "date": "2026-05-16T16:37:29.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan: En büyük yatırımı gençlerimize yaptık",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, \"Şehirli-köylü, Doğulu-Batılı ayırmadan bu ülkenin evlatları arasında fırsat eşitliğini, tam manasıyla biz sağladık. En büyük yatırımı gençlerimize yaptık.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-en-buyuk-yatirimi-genclerimize-yaptik/3939653",
-      "image": "",
-      "date": "2026-05-16T15:13:47.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Wie Claus-Dieter Wollitz aus Cottbus einen Zweitligisten formte",
-      "description": "Seit fast fünf Jahren ist Claus-Dieter Wollitz nun in seiner dritten Amtszeit Trainer bei Energie Cottbus. Währenddessen machte er aus einem strauchelnden Regionalligisten einen Zweitliga-Klub. Auch, weil er mehr als nur das Spiel im Blick hat.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-dritte-liga-energie-cottbus-aufstieg-pele-wollitz.html",
-      "image": "",
-      "date": "2026-05-16T14:27:58.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
