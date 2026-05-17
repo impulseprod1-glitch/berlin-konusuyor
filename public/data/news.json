@@ -1,38 +1,93 @@
 {
-  "lastUpdated": "2026-05-17T06:43:25.709Z",
+  "lastUpdated": "2026-05-17T09:46:19.376Z",
   "count": 10,
   "articles": [
     {
-      "title": "Ticaret Bakanlığı Kurban Bayramı öncesinde denetimlerini artırdı",
-      "description": "Ticaret Bakanlığı, yaklaşan Kurban Bayramı öncesinde piyasa denetimlerinin artırıldığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/ticaret-bakanligi-kurban-bayrami-oncesinde-denetimlerini-artirdi/3939931",
+      "title": "Milli pentatlet İlke Özyüksel, Dünya Kupası'ndaki ilk altın madalyasını kazandı",
+      "description": "Milli sporcu İlke Özyüksel Mihrioğlu, Modern Pentatlon Dünya Kupası'nın Bulgaristan'daki 2. ayağında kadınlarda altın madalyanın sahibi oldu.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-pentatlet-ilke-ozyuksel-dunya-kupasindaki-ilk-altin-madalyasini-kazandi/3940035",
       "image": "",
-      "date": "2026-05-17T06:28:22.000Z",
+      "date": "2026-05-17T09:36:07.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Milli okçular, Antalya'daki Avrupa Şampiyonası'nda yarışacak",
-      "description": "Antalya'da düzenlenecek 2026 Açık Hava Avrupa Okçuluk Şampiyonası, yarın resmi antrenman atışlarıyla başlayacak.",
-      "url": "https://www.aa.com.tr/tr/spor/milli-okcular-antalyadaki-avrupa-sampiyonasinda-yarisacak/3939927",
+      "title": "Haaretz: UCM, İsrailli 5 üst düzey isim hakkında gizlice yakalama kararı çıkardı",
+      "description": "Uluslararası Ceza Mahkemesi'nin (UCM) İsrailli 5 üst düzey isim hakkında gizlice yakalama kararı çıkardığı iddia edildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/haaretz-ucm-israilli-5-ust-duzey-isim-hakkinda-gizlice-yakalama-karari-cikardi/3940034",
       "image": "",
-      "date": "2026-05-17T06:13:57.000Z",
+      "date": "2026-05-17T09:35:54.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Sivas'ta taraftarları taşıyan midibüsün devrilmesi sonucu 25 kişi yaralandı",
-      "description": "Sivas'ın Gürün ilçesinde, maçtan dönen taraftarları taşıyan midibüsün devrilmesi sonucu 3'ü ağır 25 kişi yaralandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/sivasta-taraftarlari-tasiyan-midibusun-devrilmesi-sonucu-25-kisi-yaralandi/3939919",
+      "title": "İzmir'de deniz manzaralı boş alana moloz ve çöp dökülmesine tepki",
+      "description": "İzmir'in Konak ilçesindeki boş alana dökülen moloz ve çöpler, çevrede yaşayanların tepkisine neden oldu.",
+      "url": "https://www.aa.com.tr/tr/gundem/izmirde-deniz-manzarali-bos-alana-moloz-ve-cop-dokulmesine-tepki/3940032",
       "image": "",
-      "date": "2026-05-17T05:41:53.000Z",
+      "date": "2026-05-17T09:34:13.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu ateşkese rağmen Lübnan'daki saldırılarını sürdürdü",
+      "description": "İsrail ordusu, ateşkese rağmen Lübnan'ın güneyi ve doğusundaki beldelere hava saldırıları düzenledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnandaki-saldirilarini-surdurdu/3940031",
+      "image": "",
+      "date": "2026-05-17T09:29:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Wohngeld: 21 Wochen Wartezeit in Friedrichshain-Kreuzberg - acht in Spandau",
+      "description": "Bei der Wartezeit auf Termine in Bürgerämtern hat Berlin sich deutlich verbessert - bei der Wartezeit auf Wohngeld dagegen nicht. Mehr als 26.000 Anträge waren Ende 2025 unbearbeitet. Ein Bezirksamt konnte die Bearbeitungszeit deutlich verkürzen.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/berlin-wohngeld-antraege-wartezeiten-friedrichshain-kreuzberg-spandau.html",
+      "image": "",
+      "date": "2026-05-17T09:09:29.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Gefahr für Igel und Kleintiere: Cottbus erlässt Nachtfahrverbot für Mähroboter",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/cottbus-verbot-nachtfahrverbot-maehroboter-igel-kleintiere-garten.html",
+      "image": "",
+      "date": "2026-05-17T09:07:24.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Yol kenarındaki demirin İETT otobüsüne saplanması sonucu kadın yolcu yaralandı",
+      "description": "Fatih'te, yol kenarındaki inşaat demirinin İETT otobüsüne saplanması sonucunda yaralanan kadın yolcu hastaneye kaldırıldı.",
+      "url": "https://www.aa.com.tr/tr/gundem/yol-kenarindaki-demirin-iett-otobusune-saplanmasi-sonucu-kadin-yolcu-yaralandi/3939972",
+      "image": "",
+      "date": "2026-05-17T07:57:11.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Energie Cottbus feiert riesige Aufstiegsparty mit den Fans",
+      "description": "Cottbus ist nach zwölf Jahren zurück in der 2. Liga: Nach dem 1:0-Sieg gegen Regensburg am Samstag war Platz 2 gesichert. Noch in der Nacht empfingen Tausende Energie-Fans ihre \"Aufstiegshelden\" dann auf dem Altmarkt - und feierten eine riesige Party.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-energie-cottbus-aufstieg-party-feier-pele-wollitz.html",
+      "image": "",
+      "date": "2026-05-17T07:56:31.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -55,61 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "EFES-2026 Tatbikatı'nda motosikletli unsurlarca CH-47 helikopteri ile inme ve binme eğitimleri yapıldı",
-      "description": "Milli Savunma Bakanlığı (MSB), EFES-2026 Tatbikatı'nda motosikletli unsurlar tarafından CH-47 helikopteriyle inme ve binme eğitimlerinin icra edildiğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/efes-2026-tatbikatinda-motosikletli-unsurlarca-ch-47-helikopteri-ile-inme-ve-binme-egitimleri-yapildi/3939918",
-      "image": "",
-      "date": "2026-05-17T05:17:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Mehrere Festnahmen bei Palästina-Demo in Berlin",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/05/polizei-vereinzelte-festnahmen-palaestina-demo-berlin.html",
-      "image": "",
-      "date": "2026-05-16T19:57:25.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Regionalliga Nordost: Babelsberg siegt zum Saisonabschluss, drei Elfmeter beim BFC Dynamo",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-regionalliga-nordost-bfc-dynamo-chemnitz-altglienicke-preussen-babelsberg-hertha-u23-meuselwitz-luckenwalde-zehlendorf-greifswald-spielbericht.html",
-      "image": "",
-      "date": "2026-05-16T18:55:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Saisonrückblick: Das Jahr, in dem Union spät das Fußballspielen wiederfand",
-      "description": "Lange lebte Union Berlin in dieser Saison von Standards, Kampf und einzelnen Ausreißern nach oben. Erst unter Marie-Louise Eta fand die Mannschaft zu mutigerem Fußball und damit auch zu neuer Spielfreude.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-bundesliga-union-berlin-saisonrueckblick-baumgart-eta.html",
-      "image": "",
-      "date": "2026-05-16T18:30:15.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "AA'nın 29. Dönem Savaş Muhabirliği Eğitimi 6. gününde devam ediyor",
-      "description": "Anadolu Ajansı (AA), Türk İşbirliği ve Koordinasyon Ajansı (TİKA) Başkanlığı ve Polis Akademisi Başkanlığınca ortak düzenlenen \"29. Dönem Savaş Muhabirliği Sertifika Programı\"nda muhabirlerin zorlu eğitimi sürüyor.",
-      "url": "https://www.aa.com.tr/tr/kurumsal-haberler/aanin-29-donem-savas-muhabirligi-egitimi-6-gununde-devam-ediyor/3939785",
-      "image": "",
-      "date": "2026-05-16T18:24:55.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
