@@ -1,7 +1,106 @@
 {
-  "lastUpdated": "2026-05-19T15:18:54.227Z",
+  "lastUpdated": "2026-05-19T18:05:02.859Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Cumhurbaşkanı Erdoğan, AB Komisyonu Başkanı von der Leyen ile telefonda görüştü",
+      "description": "",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-ab-komisyonu-baskani-von-der-leyen-ile-telefonda-gorustu/3942438",
+      "image": "",
+      "date": "2026-05-19T18:00:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD Kongresi'nde CENTCOM Komutanı'ndan İran'daki ölümcül okul saldırısında sorumluluğun üstlenilmesi istendi",
+      "description": "ABD Kongresi'nde, Merkez Kuvvetler Komutanlığı (CENTCOM) Komutanı Amiral Brad Cooper'dan, İran'da 150'den fazla kız çocuğunun hayatını kaybettiği okul saldırısıyla ilgili sorumluluğun üstlenilmesi talep edildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-kongresinde-centcom-komutanindan-irandaki-olumcul-okul-saldirisinda-sorumlulugun-ustlenilmesi-istendi/3942430",
+      "image": "",
+      "date": "2026-05-19T17:47:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "43-Jähriger bei Streit in Berlin-Hellersdorf tödlich verletzt - Angreifer festgenommen",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-hellersdorf-mann-toedlich-verletzt-streit-wohnung.html",
+      "image": "",
+      "date": "2026-05-19T17:34:54.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "BM, küresel ekonomik büyüme tahminini düşürdü",
+      "description": "Birleşmiş Milletler (BM), Orta Doğu'daki çatışmaların görünümü gölgelemesiyle küresel ekonomiye dair büyüme tahminini bu yıl için yüzde 2,5'e, gelecek yıl için yüzde 2,8'e çekti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bm-kuresel-ekonomik-buyume-tahminini-dusurdu/3942421",
+      "image": "",
+      "date": "2026-05-19T17:25:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Lösemiyi yenip resimle hayata bağlanan Buğlem, ikinci sergisini açmaya hazırlanıyor",
+      "description": "Lösemiyle mücadelesi sırasında resimle hayata tutunan 14 yaşındaki Buğlem Yılmaz, ikinci sergisini açmaya hazırlanıyor.",
+      "url": "https://www.aa.com.tr/tr/kultur/losemiyi-yenip-resimle-hayata-baglanan-buglem-ikinci-sergisini-acmaya-hazirlaniyor/3942416",
+      "image": "",
+      "date": "2026-05-19T17:18:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM Genel Sekreteri San Diego İslam Merkezi'ne yönelik saldırıyı \"şiddetle\" kınadı",
+      "description": "Birleşmiş Milletler (BM) Genel Sekreteri Antonio Guterres, San Diego İslam Merkezi'ne düzenlenen, 3 kişinin hayatını kaybettiği saldırıyı şiddetle kınadı.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-genel-sekreteri-san-diego-islam-merkezine-yonelik-saldiriyi-siddetle-kinadi/3942403",
+      "image": "",
+      "date": "2026-05-19T17:04:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Senat beschließt Schutzmaßnahmen für kritische Infrastruktur",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/senat-schutzmassnahmen-kritische-infrastruktur-berlin.html",
+      "image": "",
+      "date": "2026-05-19T16:02:30.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Musen am Staatstheater Cottbus bekommen Gliedmaßen zurück",
+      "description": "",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/brandenburg-cottbus-staatstheater-rekonstruktion-musen.html",
+      "image": "",
+      "date": "2026-05-19T15:29:40.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Kritik an Sanierungsplänen auf der RE1: \"Für die Wirtschaft ist das schlicht eine Katastrophe\"",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/re1-regionalexpress-bauarbeiten-kritik-ihk-sev-bahn-ausfaelle-probahn.html",
+      "image": "",
+      "date": "2026-05-19T15:21:27.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Ebola-Ausbruch: Infizierter Patient wird in Berlin behandelt",
       "description": "Die Fallzahlen des tödlichen Ebola-Fiebers im Kongo steigen rasant. Auch ein Arzt aus den USA hat sich infiziert - er soll nun an der Berliner Charité auf einer speziellen Isolierstation behandelt werden.",
@@ -11,105 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "ABD donanması Hürmüz Boğazı'nda 88 geminin rotasını değiştirdi, 4 gemiyi etkisiz hale getirdi",
-      "description": "ABD Merkez Kuvvetler Komutanlığı, İran ile ateşkes ilan edilmesinin ardından Hürmüz Boğazı'nın çevresinde başlattığı abluka çerçevesinde bugüne kadar 88 ticari geminin rotasının değiştirildiğini, 4 geminin de \"etkisiz hale getirildiğini\" bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-donanmasi-hurmuz-bogazinda-88-geminin-rotasini-degistirdi-4-gemiyi-etkisiz-hale-getirdi/3942312",
-      "image": "",
-      "date": "2026-05-19T15:07:11.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fördergeld-Affäre: Chialo sagt vorerst nicht vor U-Ausschuss aus",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/05/untersuchungsausschuss-foerdermittel-joe-chialo-ladung-zu-spaet.html",
-      "image": "",
-      "date": "2026-05-19T15:02:45.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cybergrooming: Das perfide Vorgehen der Täter",
-      "description": "Caro war 15 Jahre alt als sie Opfer von Cybergrooming und sexuellem Missbrauch wurde. Im Interview erzählt ihre Mutter, was die Tat mit ihrer Tochter und mit der Familie gemacht hat.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/cyber-grooming-jugendliche-snapchat-sextortion-sexueller-uebergriff-interview.html",
-      "image": "",
-      "date": "2026-05-19T14:56:41.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "BM, yüksek enerji fiyatları nedeniyle küresel ekonomik büyümede yavaşlama bekliyor",
-      "description": "Birleşmiş Milletler Ticaret ve Kalkınma Kuruluşu (UNCTAD), küresel ekonomik büyümenin bu yıl yüzde 2,6 seviyesine yavaşlayacağını öngörürken, dünya ekonomisinin daha kırılgan bir döneme ilerlediği uyarısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/bm-yuksek-enerji-fiyatlari-nedeniyle-kuresel-ekonomik-buyumede-yavaslama-bekliyor/3942301",
-      "image": "",
-      "date": "2026-05-19T14:53:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Amateur-Eiskunstläufer: \"Mein Herz will ohne Ende weitermachen\"",
-      "description": "Auch mit 54 Jahren geht der Berliner Felix Warnholtz regelmäßig bei der inoffiziellen Amateur-WM aufs Eis. Der Erfolg gibt ihm Recht. Aber für seine Knie ist die Sportart nicht die beste Wahl.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/eiskunstlauf-amateur-erwachsene-wm-berlin-felix-warnholtz.html",
-      "image": "",
-      "date": "2026-05-19T14:53:18.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "NATO Askeri Komite Başkanı, Ankara Zirvesi yaklaşırken beklentilerin yüksek olduğunu söyledi",
-      "description": "NATO Askeri Komite Başkanı Amiral Giuseppe Cavo Dragone, Ankara Zirvesi yaklaşırken askeri yetkililerin beklentilerinin son derece yüksek olduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/dunya/nato-askeri-komite-baskani-ankara-zirvesi-yaklasirken-beklentilerin-yuksek-oldugunu-soyledi/3942300",
-      "image": "",
-      "date": "2026-05-19T14:52:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Dışişleri Bakanlığından Yunanistan'ın \"asılsız Pontus iddialarına\" yönelik tepki",
-      "description": "Dışişleri Bakanlığı, Yunanistan'da bugün düzenlenen bazı etkinlikler ve kullanılan ifadeler hakkında yazılı açıklama yaptı.",
-      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakanligindan-yunanistanin-asilsiz-pontus-iddialarina-yonelik-tepki/3942290",
-      "image": "",
-      "date": "2026-05-19T14:42:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Havelland: Feuerwehr löscht Brand auf Gelände einer Recyclingfirma in Döberitz",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/feuer-brand-premnitz-doeberitz-rauchwolke-warnung-havelland.html",
-      "image": "",
-      "date": "2026-05-19T14:09:22.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Yeşilırmak'ın taşkın riskine karşı Turhal'da 12 kilometre tahkimat yapıldı",
-      "description": "Tokat Valisi Abdullah Köklü, Yeşilırmak'taki taşkın riskine karşı Turhal ilçesinde incelemelerde bulundu.",
-      "url": "https://www.aa.com.tr/tr/gundem/yesilirmakin-taskin-riskine-karsi-turhalda-12-kilometre-tahkimat-yapildi/3942254",
-      "image": "",
-      "date": "2026-05-19T14:01:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
