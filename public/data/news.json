@@ -1,27 +1,82 @@
 {
-  "lastUpdated": "2026-05-19T18:05:02.859Z",
+  "lastUpdated": "2026-05-19T21:18:40.657Z",
   "count": 10,
   "articles": [
     {
-      "title": "Cumhurbaşkanı Erdoğan, AB Komisyonu Başkanı von der Leyen ile telefonda görüştü",
-      "description": "",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-ab-komisyonu-baskani-von-der-leyen-ile-telefonda-gorustu/3942438",
+      "title": "Arsenal, Premier Lig'de 22 yıl sonra şampiyon oldu",
+      "description": "İngiltere Premier Lig'de lider Arsenal, en yakın takipçisi Manchester City'nin puan kaybetmesiyle 22 yıllık şampiyonluk özlemine son verdi.",
+      "url": "https://www.aa.com.tr/tr/spor/arsenal-premier-ligde-22-yil-sonra-sampiyon-oldu/3942629",
       "image": "",
-      "date": "2026-05-19T18:00:20.000Z",
+      "date": "2026-05-19T21:12:31.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "ABD Kongresi'nde CENTCOM Komutanı'ndan İran'daki ölümcül okul saldırısında sorumluluğun üstlenilmesi istendi",
-      "description": "ABD Kongresi'nde, Merkez Kuvvetler Komutanlığı (CENTCOM) Komutanı Amiral Brad Cooper'dan, İran'da 150'den fazla kız çocuğunun hayatını kaybettiği okul saldırısıyla ilgili sorumluluğun üstlenilmesi talep edildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-kongresinde-centcom-komutanindan-irandaki-olumcul-okul-saldirisinda-sorumlulugun-ustlenilmesi-istendi/3942430",
+      "title": "Güney Kore'den Kuzey Kore ile ilişkilerde \"çatışma yerine barışçıl bir arada yaşama\" vurgusu",
+      "description": "Güney Kore hükümetinin yıllık raporunda, Kuzey Kore ile ilişkilerde baskı ve çatışma yerine barışçıl bir arada yaşama politikasına odaklanılacağı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/guney-koreden-kuzey-kore-ile-iliskilerde-catisma-yerine-bariscil-bir-arada-yasama-vurgusu/3942601",
       "image": "",
-      "date": "2026-05-19T17:47:34.000Z",
+      "date": "2026-05-19T20:48:03.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "FBI: San Diego İslam Merkezi saldırganlarıyla bağlantılı evlerde 30 silah ele geçirildi",
+      "description": "ABD Federal Soruşturma Bürosu (FBI), San Diego İslam Merkezi'ne yönelik silahlı saldırıyı gerçekleştiren iki saldırganın internette tanışarak nefret söylemlerini yaydıklarını ve saldırganlarla bağlantılı evlerde 30 silah ele geçirildiğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/fbi-san-diego-islam-merkezi-saldirganlariyla-baglantili-evlerde-30-silah-ele-gecirildi/3942600",
+      "image": "",
+      "date": "2026-05-19T20:45:40.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "TFF Yönetim Kurulu Üyesi Aküzüm, UEFA Gençlik ve Amatör Futbol Komitesi Toplantısı'na katıldı",
+      "description": "Türkiye Futbol Federasyonu (TFF) Yönetim Kurulu Üyesi Ural Aküzüm, 12 Mayıs Salı günü UEFA Gençlik ve Amatör Futbol Komitesi Toplantısı'na katıldı.",
+      "url": "https://www.aa.com.tr/tr/spor/tff-yonetim-kurulu-uyesi-akuzum-uefa-genclik-ve-amator-futbol-komitesi-toplantisina-katildi/3942598",
+      "image": "",
+      "date": "2026-05-19T20:43:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "UAEA: BAE'deki nükleer santralin yakınlarına yapılan saldırı \"son derece endişe verici\"",
+      "description": "Uluslararası Atom Enerjisi Ajansı (UAEA) Başkanı Rafael Mariano Grossi, Birleşik Arap Emirlikleri'ndeki (BAE) Barakah Nükleer Enerji Santrali yakınlarına 17 Mayıs'ta yapılan saldırının \"son derece endişe verici\" olduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/uaea-baedeki-nukleer-santralin-yakinlarina-yapilan-saldiri-son-derece-endise-verici/3942579",
+      "image": "",
+      "date": "2026-05-19T20:24:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BBL-Playoffs: Alba Berlin gleicht Viertelfinal-Serie gegen Vechta aus",
+      "description": "Die Basketballer von Alba Berlin haben sich nach der Auftaktniederlage in den BBL-Playoffs zurückgemeldet. Gegen Rasta Vechta führten die Albatrosse zwischenzeitlich mit 17 Punkten, am Ende wurde es dennoch knapp. Mit einem 90:85-Heimsieg glich Alba die Viertelfinal-Serie letztlich aus.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/basketball-bundesliga-bbl-playoffs-viertelfinale-alba-berlin-rasta-vechta-spiel-zwei-spielbericht-reportage.html",
+      "image": "",
+      "date": "2026-05-19T20:03:18.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Ebola-Ausbruch: Infizierter Patient wird in Berlin behandelt",
+      "description": "Die Fallzahlen des tödlichen Ebola-Fiebers im Kongo steigen rasant. Auch ein Arzt aus den USA hat sich infiziert - er soll nun im Virchow-Krankenhaus der Berliner Charité auf einer speziellen Isolierstation behandelt werden.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-charite-ebola-virus-patient-behandlung-kongo.html",
+      "image": "",
+      "date": "2026-05-19T19:46:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,39 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "BM, küresel ekonomik büyüme tahminini düşürdü",
-      "description": "Birleşmiş Milletler (BM), Orta Doğu'daki çatışmaların görünümü gölgelemesiyle küresel ekonomiye dair büyüme tahminini bu yıl için yüzde 2,5'e, gelecek yıl için yüzde 2,8'e çekti.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/bm-kuresel-ekonomik-buyume-tahminini-dusurdu/3942421",
-      "image": "",
-      "date": "2026-05-19T17:25:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Lösemiyi yenip resimle hayata bağlanan Buğlem, ikinci sergisini açmaya hazırlanıyor",
-      "description": "Lösemiyle mücadelesi sırasında resimle hayata tutunan 14 yaşındaki Buğlem Yılmaz, ikinci sergisini açmaya hazırlanıyor.",
-      "url": "https://www.aa.com.tr/tr/kultur/losemiyi-yenip-resimle-hayata-baglanan-buglem-ikinci-sergisini-acmaya-hazirlaniyor/3942416",
-      "image": "",
-      "date": "2026-05-19T17:18:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BM Genel Sekreteri San Diego İslam Merkezi'ne yönelik saldırıyı \"şiddetle\" kınadı",
-      "description": "Birleşmiş Milletler (BM) Genel Sekreteri Antonio Guterres, San Diego İslam Merkezi'ne düzenlenen, 3 kişinin hayatını kaybettiği saldırıyı şiddetle kınadı.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-genel-sekreteri-san-diego-islam-merkezine-yonelik-saldiriyi-siddetle-kinadi/3942403",
-      "image": "",
-      "date": "2026-05-19T17:04:03.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/kultur/beitrag/2026/05/brandenburg-cottbus-staatstheater-rekonstruktion-musen.html",
       "image": "",
       "date": "2026-05-19T15:29:40.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kritik an Sanierungsplänen auf der RE1: \"Für die Wirtschaft ist das schlicht eine Katastrophe\"",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/re1-regionalexpress-bauarbeiten-kritik-ihk-sev-bahn-ausfaelle-probahn.html",
-      "image": "",
-      "date": "2026-05-19T15:21:27.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ebola-Ausbruch: Infizierter Patient wird in Berlin behandelt",
-      "description": "Die Fallzahlen des tödlichen Ebola-Fiebers im Kongo steigen rasant. Auch ein Arzt aus den USA hat sich infiziert - er soll nun an der Berliner Charité auf einer speziellen Isolierstation behandelt werden.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-charite-ebola-virus-patient-behandlung-kongo.html",
-      "image": "",
-      "date": "2026-05-19T15:08:36.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
