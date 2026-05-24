@@ -1,38 +1,71 @@
 {
-  "lastUpdated": "2026-05-24T11:16:10.329Z",
+  "lastUpdated": "2026-05-24T13:24:17.927Z",
   "count": 9,
   "articles": [
     {
-      "title": "Akçakoca Belediye Başkanı Fikret Albayrak görevinden uzaklaştırıldı",
-      "description": "İçişleri Bakanlığı, tutuklanan Akçakoca Belediye Başkanı Fikret Albayrak'ın görevden uzaklaştırıldığını duyurdu.",
-      "url": "https://www.aa.com.tr/tr/gundem/akcakoca-belediye-baskani-fikret-albayrak-gorevinden-uzaklastirildi/3947361",
+      "title": "Bazı illerde sağanak etkili oldu",
+      "description": "Bazı illerde sağanak hayatı olumsuz etkiledi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bazi-illerde-saganak-etkili-oldu/3947448",
       "image": "",
-      "date": "2026-05-24T11:03:16.000Z",
+      "date": "2026-05-24T13:21:53.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Etnospor'da yetişkinler maziyi hatırlarken çocuklar yeni deneyimlerin heyecanını yaşıyor",
-      "description": "İstanbul'da devam eden 8. Etnospor Kültür Festivali'ne vatandaşların yoğun ilgisi sürüyor.",
-      "url": "https://www.aa.com.tr/tr/spor/etnosporda-yetiskinler-maziyi-hatirlarken-cocuklar-yeni-deneyimlerin-heyecanini-yasiyor/3947346",
+      "title": "İzmir'in 5 aydaki yağış miktarı uzun yıllar ortalamasını geçti",
+      "description": "Uzun yıllar yıllık yağış ortalaması metrekareye 730,5 kilogram olan İzmir'e ilk 5 ayda 734,6 kilogram yağış düştü.",
+      "url": "https://www.aa.com.tr/tr/gundem/izmirin-5-aydaki-yagis-miktari-uzun-yillar-ortalamasini-gecti/3947441",
       "image": "",
-      "date": "2026-05-24T10:31:10.000Z",
+      "date": "2026-05-24T13:06:53.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Filistin topraklarını gasbeden İsrailliler Mescid-i Aksa'ya baskın düzenledi",
-      "description": "Filistin topraklarını gasbeden İsrailliler, işgal altındaki Doğu Kudüs'te bulunan Mescid-i Aksa'ya polis korumasında baskın düzenledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israilliler-mescid-i-aksaya-baskin-duzenledi/3947343",
+      "title": "Suriye'nin kuzeydoğusunda Halk Meclisi seçimleri başladı",
+      "description": "Suriye'nin kuzeydoğusundaki Haseke ile Halep'in Aynularab ilçesinde, Suriye hükümeti ile terör örgütü YPG arasında varılan mutabakat kapsamında Halk Meclisi seçimleri başladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/suriyenin-kuzeydogusunda-halk-meclisi-secimleri-basladi/3947408",
       "image": "",
-      "date": "2026-05-24T10:21:08.000Z",
+      "date": "2026-05-24T12:16:51.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Küresel Sumud Filosu konvoyu Libya'nın doğusuna geçmek için Sirte'ye doğru hareket etti",
+      "description": "Gazze'deki ablukayı kırmak ve insani yardım ulaştırmak için karadan yola çıkan Küresel Sumud Filosu konvoyu, Sirte yakınlarındaki bir haftalık bekleyişinin ardından Gazze'ye doğru yeniden hareket etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/kuresel-sumud-filosu-konvoyu-libyanin-dogusuna-gecmek-icin-sirteye-dogru-hareket-etti/3947403",
+      "image": "",
+      "date": "2026-05-24T12:10:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tokat'taki Almus Baraj Gölü'nde dolusavaktan su tahliyesi sürüyor",
+      "description": "Tokat’ın Almus ilçesindeki yüzde 100 doluluk oranına ulaşan baraj gölünde dolusavaktan su tahliyesi devam ediyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/tokattaki-almus-baraj-golunde-dolusavaktan-su-tahliyesi-suruyor/3947398",
+      "image": "",
+      "date": "2026-05-24T12:05:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Alles neu im Tor von Energie: Funk geht, Sebald beendet Karriere",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-2-bundesliga-energie-cottbus-marius-funk-alexander-sebald.html",
+      "image": "",
+      "date": "2026-05-24T11:35:30.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -44,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bursa hızlı tren projesinde çalışmalar hız kesmiyor",
-      "description": "Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu, Bandırma-Bursa-Yenişehir-Osmaneli Hızlı Tren Projesi'nın Bursa-Osmaneli kesimindeki çalışmaları yılın ikinci yarısında tamamlamayı hedeflediklerini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/bursa-hizli-tren-projesinde-calismalar-hiz-kesmiyor/3947291",
-      "image": "",
-      "date": "2026-05-24T09:16:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -74,28 +96,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/05/eishockey-wm-deutschland-oesterreich.html",
       "image": "",
       "date": "2026-05-24T08:46:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Havza Atatürk Evi, Milli Mücadele'nin haberleşme hafızasını yaşatıyor",
-      "description": "Türkiye Cumhuriyeti'nin kurucusu Ulu Önder Mustafa Kemal Atatürk'ün Samsun'un Havza ilçesinde 107 yıl önce karargah olarak kullandığı Atatürk Evi Müzesi, Milli Mücadele'nin karar ve haberleşme hafızasını bugüne taşıyor.",
-      "url": "https://www.aa.com.tr/tr/kultur/havza-ataturk-evi-milli-mucadelenin-haberlesme-hafizasini-yasatiyor/3947240",
-      "image": "",
-      "date": "2026-05-24T08:24:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Das sind die Schwachpunkte, Ziele & Konkurrenten von Hase/Volodin",
-      "description": "Dass das Berliner Eiskunstlauf-Paar Minerva Hase und Nikita Volodin seine Karriere fortsetzt, dürfte viele Fans erfreuen. Was in den kommenden vier Jahren von den beiden zu erwarten ist, erzählt ARD-Experte Daniel Weiss im Interview.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/eiskunstlauf-minerva-hase-nikita-volodin-machen-weiter-interview-experte-daniel-weiss.html",
-      "image": "",
-      "date": "2026-05-24T08:19:12.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
