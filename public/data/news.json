@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-05-25T19:28:47.309Z",
+  "lastUpdated": "2026-05-25T21:05:44.870Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Eishockey-WM: DEB-Team trotz Pflichtsieg gegen Briten vor dem Aus",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/eishockey-wm-deutschland-grossbritannien-deb-eisbaeren.html",
+      "image": "",
+      "date": "2026-05-25T21:02:01.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Senegal'de yeni başbakan belli oldu",
+      "description": "Senegal'de yeni başbakan Ahmadou Al Aminou Lo oldu.",
+      "url": "https://www.aa.com.tr/tr/dunya/senegalde-yeni-basbakan-belli-oldu/3948438",
+      "image": "",
+      "date": "2026-05-25T20:46:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fenerbahçe'nin UEFA Şampiyonlar Ligi 2. eleme turundaki muhtemel rakipleri belli oldu",
+      "description": "Fenerbahçe'nin UEFA Şampiyonlar Ligi 2. eleme turundaki muhtemel rakipleri belli oldu.",
+      "url": "https://www.aa.com.tr/tr/spor/fenerbahcenin-uefa-sampiyonlar-ligi-2-eleme-turundaki-muhtemel-rakipleri-belli-oldu/3948408",
+      "image": "",
+      "date": "2026-05-25T19:35:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Rusya'dan ABD'ye \"diplomatik misyon çalışanlarını Kiev'den tahliye etme\" tavsiyesi",
       "description": "Rusya Dışişleri Bakanı Sergey Lavrov, ABD'li mevkidaşı Marco Rubio'ya diplomatik misyon çalışanlarını Ukrayna'nın başkenti Kiev'den tahliye etmeyi tavsiye etti.",
@@ -25,33 +58,11 @@
       "type": "rss"
     },
     {
-      "title": "Netanyahu, Lübnan'a saldırıların arttırılması talimatını verdiğini duyurdu",
-      "description": "İsrail Başbakanı Binyamin Netanyahu, orduya Lübnan'a yönelik saldırıların artırılması talimatını verdiğini açıkladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/netanyahu-lubnana-saldirilarin-arttirilmasi-talimatini-verdigini-duyurdu/3948381",
+      "title": "Hull City, Premier Lig'e çıkmasını taraftarlarıyla kutladı",
+      "description": "İngiltere Championship play-off finalinde Middlesbrough’yu 1-0 yenerek Premier Lig'e yükselen Hull City, tarihi başarısını taraftarıyla kutladı.",
+      "url": "https://www.aa.com.tr/tr/spor/hull-city-premier-lige-cikmasini-taraftarlariyla-kutladi/3948360",
       "image": "",
-      "date": "2026-05-25T18:40:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Siyasi partilerin bayramlaşma programı belli oldu",
-      "description": "Siyasi partilerin, Kurban Bayramı bayramlaşma programı belli oldu.",
-      "url": "https://www.aa.com.tr/tr/gundem/siyasi-partilerin-bayramlasma-programi-belli-oldu/3948377",
-      "image": "",
-      "date": "2026-05-25T18:33:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran Cumhurbaşkanı, internet kısıtlamalarının kaldırılmasına yönelik kararı onayladı",
-      "description": "İran Cumhurbaşkanı Mesud Pezeşkiyan'ın internetin uluslararası erişime açılması yönündeki kararı onayladığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-cumhurbaskani-internet-kisitlamalarinin-kaldirilmasina-yonelik-karari-onayladi/3948369",
-      "image": "",
-      "date": "2026-05-25T18:11:16.000Z",
+      "date": "2026-05-25T17:52:25.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/barnim-motorradfahrer-unfall-strasse.html",
       "image": "",
       "date": "2026-05-25T13:09:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Leiche beim Mähen in Potsdam-Mittelmark entdeckt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/leiche-maehen-wiese-golzow-potsdam-mittelmark.html",
-      "image": "",
-      "date": "2026-05-25T12:55:31.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
