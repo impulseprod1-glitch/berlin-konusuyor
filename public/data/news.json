@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-05-25T16:22:20.137Z",
+  "lastUpdated": "2026-05-25T19:28:47.309Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Rusya'dan ABD'ye \"diplomatik misyon çalışanlarını Kiev'den tahliye etme\" tavsiyesi",
+      "description": "Rusya Dışişleri Bakanı Sergey Lavrov, ABD'li mevkidaşı Marco Rubio'ya diplomatik misyon çalışanlarını Ukrayna'nın başkenti Kiev'den tahliye etmeyi tavsiye etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/rusyadan-abdye-diplomatik-misyon-calisanlarini-kievden-tahliye-etme-tavsiyesi/3948399",
+      "image": "",
+      "date": "2026-05-25T19:01:07.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Osmaniye'de 4,2 büyüklüğünde deprem",
+      "description": "Osmaniye'nin Sumbas ilçesinde saat 21.44'te 4,2 büyüklüğünde deprem meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/osmaniyede-4-2-buyuklugunde-deprem/3948397",
+      "image": "",
+      "date": "2026-05-25T18:59:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Netanyahu, Lübnan'a saldırıların arttırılması talimatını verdiğini duyurdu",
+      "description": "İsrail Başbakanı Binyamin Netanyahu, orduya Lübnan'a yönelik saldırıların artırılması talimatını verdiğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/netanyahu-lubnana-saldirilarin-arttirilmasi-talimatini-verdigini-duyurdu/3948381",
+      "image": "",
+      "date": "2026-05-25T18:40:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Siyasi partilerin bayramlaşma programı belli oldu",
+      "description": "Siyasi partilerin, Kurban Bayramı bayramlaşma programı belli oldu.",
+      "url": "https://www.aa.com.tr/tr/gundem/siyasi-partilerin-bayramlasma-programi-belli-oldu/3948377",
+      "image": "",
+      "date": "2026-05-25T18:33:09.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran Cumhurbaşkanı, internet kısıtlamalarının kaldırılmasına yönelik kararı onayladı",
+      "description": "İran Cumhurbaşkanı Mesud Pezeşkiyan'ın internetin uluslararası erişime açılması yönündeki kararı onayladığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-cumhurbaskani-internet-kisitlamalarinin-kaldirilmasina-yonelik-karari-onayladi/3948369",
+      "image": "",
+      "date": "2026-05-25T18:11:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Karneval der Kulturen in Berlin: Mehr als eine Million Besucher",
+      "description": "30. Jubiläum des Karnevals der Kulturen in Berlin: Am gesamten Pfingstwochenende feierte mehr als eine Million Menschen in den Straßen. Erstmals sammelten die Veranstalter Spenden.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/karneval-der-kulturen-2026-berlin-friedrichshain-umzug.html",
+      "image": "",
+      "date": "2026-05-25T16:57:32.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Handball-Experte: \"Anderssons Abgang tut den Füchsen Berlin extrem weh\"",
       "description": "Die Füchse Berlin stecken aktuell zwischen Bundesliga-Endspurt und Champions-League-Träumen. Eines passt da nicht so richtig ins Bild: der Abgang von Lasse Andersson. Mit all dem beschäftgit sich auch rbb-Reporter und Handball-Kenner Jens-Christian Gußmann.",
@@ -14,50 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Karneval der Kulturen in Berlin: Mehr als eine Million Besucher",
-      "description": "30. Jubiläum des Karnevals der Kulturen in Berlin: Am gesamten Pfingstwochenende feierte mehr als eine Million Menschen in den Straßen. Erstmals sammelten die Veranstalter Spenden.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/karneval-der-kulturen-2026-berlin-friedrichshain-umzug.html",
-      "image": "",
-      "date": "2026-05-25T16:03:56.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bazı illerde sağanak etkili oldu",
-      "description": "Bazı illerde sağanak hayatı olumsuz etkiledi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bazi-illerde-saganak-etkili-oldu/3948297",
-      "image": "",
-      "date": "2026-05-25T15:57:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Borsa günü yükselişle tamamladı",
-      "description": "Borsa İstanbul'da BIST 100 endeksi, günü yüzde 0,60 değer kazanarak 13.890,91 puandan tamamladı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/borsa-gunu-yukselisle-tamamladi/3948281",
-      "image": "",
-      "date": "2026-05-25T15:28:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İletişim Başkanı Duran, Afrika Günü'nü kutladı",
-      "description": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, 25 Mayıs Afrika Günü'nü kutladı.",
-      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskani-duran-afrika-gununu-kutladi/3948274",
-      "image": "",
-      "date": "2026-05-25T15:24:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Sommerliche Temperaturen erhöhen Waldbrandgefahr in Brandenburg",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/waldbrandgefahr-brandenburg-temperaturen-wetter.html",
@@ -66,28 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İstanbul'da bayram tatili dolayısıyla trafik yoğunluğu düşük seviyede kaldı",
-      "description": "İstanbul'da, 9 günlük Kurban Bayramı tatilinin üçüncü gününde trafik yoğunluğu gün boyunca düşük seviyelerde ölçüldü.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-bayram-tatili-dolayisiyla-trafik-yogunlugu-dusuk-seviyede-kaldi/3948235",
-      "image": "",
-      "date": "2026-05-25T14:30:18.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bahçelievler'de metrobüste çıkan yangın söndürüldü",
-      "description": "İstanbul Bahçelievler'de seyir halindeki metrobüsün motor kısmında çıkan yangın görevlilerin müdahalesiyle söndürüldü.",
-      "url": "https://www.aa.com.tr/tr/gundem/bahcelievlerde-metrobuste-cikan-yangin-sonduruldu/3948218",
-      "image": "",
-      "date": "2026-05-25T13:59:01.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
