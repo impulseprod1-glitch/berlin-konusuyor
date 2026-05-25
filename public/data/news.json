@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-05-25T13:28:32.719Z",
+  "lastUpdated": "2026-05-25T16:22:20.137Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Handball-Experte: \"Anderssons Abgang tut den Füchsen Berlin extrem weh\"",
+      "description": "Die Füchse Berlin stecken aktuell zwischen Bundesliga-Endspurt und Champions-League-Träumen. Eines passt da nicht so richtig ins Bild: der Abgang von Lasse Andersson. Mit all dem beschäftgit sich auch rbb-Reporter und Handball-Kenner Jens-Christian Gußmann.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/champions-league-handball-bundesliga-hbl-fuechse-berlin-lasse-andersson.html",
+      "image": "",
+      "date": "2026-05-25T16:04:34.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Karneval der Kulturen in Berlin: Mehr als eine Million Besucher",
+      "description": "30. Jubiläum des Karnevals der Kulturen in Berlin: Am gesamten Pfingstwochenende feierte mehr als eine Million Menschen in den Straßen. Erstmals sammelten die Veranstalter Spenden.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/karneval-der-kulturen-2026-berlin-friedrichshain-umzug.html",
+      "image": "",
+      "date": "2026-05-25T16:03:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bazı illerde sağanak etkili oldu",
+      "description": "Bazı illerde sağanak hayatı olumsuz etkiledi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bazi-illerde-saganak-etkili-oldu/3948297",
+      "image": "",
+      "date": "2026-05-25T15:57:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Borsa günü yükselişle tamamladı",
+      "description": "Borsa İstanbul'da BIST 100 endeksi, günü yüzde 0,60 değer kazanarak 13.890,91 puandan tamamladı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/borsa-gunu-yukselisle-tamamladi/3948281",
+      "image": "",
+      "date": "2026-05-25T15:28:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İletişim Başkanı Duran, Afrika Günü'nü kutladı",
+      "description": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, 25 Mayıs Afrika Günü'nü kutladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskani-duran-afrika-gununu-kutladi/3948274",
+      "image": "",
+      "date": "2026-05-25T15:24:24.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Sommerliche Temperaturen erhöhen Waldbrandgefahr in Brandenburg",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/waldbrandgefahr-brandenburg-temperaturen-wetter.html",
+      "image": "",
+      "date": "2026-05-25T15:00:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İstanbul'da bayram tatili dolayısıyla trafik yoğunluğu düşük seviyede kaldı",
+      "description": "İstanbul'da, 9 günlük Kurban Bayramı tatilinin üçüncü gününde trafik yoğunluğu gün boyunca düşük seviyelerde ölçüldü.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-bayram-tatili-dolayisiyla-trafik-yogunlugu-dusuk-seviyede-kaldi/3948235",
+      "image": "",
+      "date": "2026-05-25T14:30:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bahçelievler'de metrobüste çıkan yangın söndürüldü",
+      "description": "İstanbul Bahçelievler'de seyir halindeki metrobüsün motor kısmında çıkan yangın görevlilerin müdahalesiyle söndürüldü.",
+      "url": "https://www.aa.com.tr/tr/gundem/bahcelievlerde-metrobuste-cikan-yangin-sonduruldu/3948218",
+      "image": "",
+      "date": "2026-05-25T13:59:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Motorradfahrer kommt in Barnim von Straße ab und stirbt",
       "description": "",
@@ -14,99 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Cumhurbaşkanı Erdoğan, Afrika Günü ve Afrika Birliğinin kuruluş yıl dönümünü kutladı",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, 25 Mayıs Afrika Günü ile Afrika Birliğinin kuruluş yıl dönümünü kutladı.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-afrika-gunu-ve-afrika-birliginin-kurulus-yil-donumunu-kutladi/3948148",
-      "image": "",
-      "date": "2026-05-25T13:03:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan, Umman Sultanı Bin Tarık ile telefonda görüştü",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Umman Sultanı Heysem Bin Tarık'la telefon görüşmesi yaptı.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-umman-sultani-bin-tarik-ile-telefonda-gorustu/3948143",
-      "image": "",
-      "date": "2026-05-25T12:59:19.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Leiche beim Mähen in Potsdam-Mittelmark entdeckt",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/leiche-maehen-wiese-golzow-potsdam-mittelmark.html",
       "image": "",
       "date": "2026-05-25T12:55:31.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "DMM'den ekonomi üzerinden algı oluşturmaya yönelik paylaşımlara ilişkin açıklama",
-      "description": "Cumhurbaşkanlığı İletişim Başkanlığı Dezenformasyonla Mücadele Merkezi (DMM), Cumhurbaşkanı Recep Tayyip Erdoğan'ın sermaye piyasalarına yönelik açıklamalarının kasıtlı olarak bağlamından koparılarak dolaşıma sokulduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/dmmden-ekonomi-uzerinden-algi-olusturmaya-yonelik-paylasimlara-iliskin-aciklama/3948132",
-      "image": "",
-      "date": "2026-05-25T12:54:18.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran Meclisi ve Müzakere Heyeti Başkanı Kalibaf, beraberindeki heyetle Katar'a gitti",
-      "description": "İran Meclisi ve Müzakere Heyeti Başkanı Muhammed Bakır Kalibaf, çeşitli temaslarda bulunmak üzere beraberindeki heyetle Katar'a gitti.",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-meclisi-ve-muzakere-heyeti-baskani-kalibaf-beraberindeki-heyetle-katara-gitti/3948128",
-      "image": "",
-      "date": "2026-05-25T12:51:04.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İstanbullular bayram alışverişi için Tarihi Yarımada'yı tercih etti",
-      "description": "Kurban Bayramı'na iki gün kala eksiklerini gidermek için Mısır Çarşısı ve Kapalıçarşı'ya giden İstanbullular, özellikle şekerleme, lokum ve çikolata satılan tezgahlarda yoğunluk oluşturdu.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/istanbullular-bayram-alisverisi-icin-tarihi-yarimadayi-tercih-etti/3948114",
-      "image": "",
-      "date": "2026-05-25T12:30:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Frau in Berlin erschossen - 84-jähriger Ehemann festgenommen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-lichtenrade-frau-tot-wohnung-festnahme-ehemann.html",
-      "image": "",
-      "date": "2026-05-25T11:55:27.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Wildkamera führt Förster zu illegaler Party in Grünheide",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/illegale-party-wildtierkamera-polizei-brandenburg.html",
-      "image": "",
-      "date": "2026-05-25T10:23:32.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin: In 1.000 Fällen Bußgelder wegen illegalem Müll erhoben",
-      "description": "Seit Ende des vergangenen Jahres gelten in Berlin strengere Regeln für illegalen Müll. Die Bezirksämter berichten von Erfolgen und Problemen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/muell-strafe-bezirke-geld-berlin.html",
-      "image": "",
-      "date": "2026-05-25T09:04:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
