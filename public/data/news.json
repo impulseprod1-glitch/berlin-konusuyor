@@ -1,16 +1,104 @@
 {
-  "lastUpdated": "2026-05-27T17:18:24.157Z",
+  "lastUpdated": "2026-05-27T20:14:18.108Z",
   "count": 10,
   "articles": [
     {
-      "title": "Türkiye Sigorta Basketbol Süper Ligi play-off çeyrek finalinde Anadolu Efes seride 1-0 öne geçti",
-      "description": "Türkiye Sigorta Basketbol Süper Ligi play-off çeyrek final ilk maçında Anadolu Efes, Türk Telekom'u 86-75 mağlup ederek seride 1-0 öne geçti.",
-      "url": "https://www.aa.com.tr/tr/spor/turkiye-sigorta-basketbol-super-ligi-play-off-ceyrek-finalinde-anadolu-efes-seride-1-0-one-gecti/3949956",
+      "title": " İsrail'in, Gazze'ye düzenlediği saldırıda en az 4 Filistinli hayatını kaybetti, 15 kişi yaralandı",
+      "description": "İsrail ordusunun, Gazze Şeridi'nin merkezine düzenlediği saldırıda en az 4 Filistinli hayatını kaybetti, 15 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/-israilin-gazzeye-duzenledigi-saldirida-en-az-4-filistinli-hayatini-kaybetti-15-kisi-yaralandi/3950025",
       "image": "",
-      "date": "2026-05-27T17:07:19.000Z",
+      "date": "2026-05-27T19:59:49.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye Sigorta Basketbol Süper Ligi play-off çeyrek finalinde Fenerbahçe Beko seride durumu 1-0'a getirdi",
+      "description": "Türkiye Sigorta Basketbol Süper Ligi play-off çeyrek final ilk maçında Fenerbahçe Beko, konuk ettiği Safiport Erokspor'u 94-72 mağlup ederek seride durumu 1-0'a getirdi.",
+      "url": "https://www.aa.com.tr/tr/spor/turkiye-sigorta-basketbol-super-ligi-play-off-ceyrek-finalinde-fenerbahce-beko-seride-durumu-1-0a-getirdi/3950022",
+      "image": "",
+      "date": "2026-05-27T19:51:06.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Schauspielerin Swetlana Schönfeld gestorben",
+      "description": "",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/swetlana-schoenfeld-gestorben-schauspielerin-berlin.html",
+      "image": "",
+      "date": "2026-05-27T19:48:02.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan, Türk hacılar ile telefonda görüşerek bayramlarını kutladı",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, hac ibadetini yerine getirmek için kutsal topraklarda bulunan Türk hacılar ile telefonda görüşerek bayramlarını kutladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-turk-hacilar-ile-telefonda-goruserek-bayramlarini-kutladi/3950009",
+      "image": "",
+      "date": "2026-05-27T19:14:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Basketball-Bundesliga: Alba Berlin gewinnt gegen Vechta",
+      "description": "Am Mittwochabend stand für Alba Berlin die Saison auf dem Spiel. Die Albatrosse lieferten: Mit einem Heimsieg im entscheidenden fünften Viertelfinal-Duell gegen Rasta Vechta zogen sie ins Halbfinale ein. Nun wartet Bamberg.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/basketball-bundesliga-playoffs-alba-berlin-rasta-vechta.html",
+      "image": "",
+      "date": "2026-05-27T19:07:05.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bayramın ilk gününde kurban kesimi sırasında 13 bin 513 kişi yaralandı",
+      "description": "Sağlık Bakanı Kemal Memişoğlu, Kurban Bayramı'nın ilk gününde kurban kesimi sırasında yaşanan yaralanmalar sonucu 13 bin 513 kişinin sağlık tesislerine başvurduğunu bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bayramin-ilk-gununde-kurban-kesimi-sirasinda-13-bin-513-kisi-yaralandi/3950001",
+      "image": "",
+      "date": "2026-05-27T18:57:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump, İran’ın anlaşmaya yanaşmaması halinde savaşın sürebileceği mesajını verdi",
+      "description": "ABD Başkanı Donald Trump, İran’ın anlaşma konusunda istenen noktaya gelmemesi halinde \"saldırılara yeniden başlamak zorunda kalınabileceğini\" belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-iran-in-anlasmaya-yanasmamasi-halinde-savasin-surebilecegi-mesajini-verdi/3949998",
+      "image": "",
+      "date": "2026-05-27T18:50:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Haftstrafen nach Millionendiebstahl bei Geldtransport-Firma in Berlin",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/haftstrafen-millionen-diebstahl-geldtransport-firma-urteil-berlin-lichtenberg.html",
+      "image": "",
+      "date": "2026-05-27T17:26:46.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Ebola-Patient in der Charité geht es besser",
+      "description": "Der Zustand des an Ebola erkrankten Patient in Berlin hat sich nach Angaben der Charité deutlich verbessert. Auch seiner Frau und seinen Kindern gehe es gut, sie sind weiterhin in Quarantäne.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-charite-ebola-patient-gesundheitszustand-besser.html",
+      "image": "",
+      "date": "2026-05-27T17:23:53.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -22,94 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Filistin topraklarını gasbeden bir İsrailli, Filistinli anneyi çocuğunun yanında darbetti",
-      "description": "İşgal altındaki Batı Şeria’da yer alan El Halil kentinin güneyindeki Mesafir Yatta bölgesinde bir İsrailli, Filistinli anneye saldırarak çocuğuyla birlikte yere düşürürken, bir köpeği de sopayla darbetti.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-bir-israilli-filistinli-anneyi-cocugunun-yaninda-darbetti/3949947",
-      "image": "",
-      "date": "2026-05-27T16:43:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Keine Lebensgefahr: Autofahrer rammt E-Scooter-Fahrer in Berlin",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/autofahrer-rammt-e-scooter-berlin-lichtenrade.html",
-      "image": "",
-      "date": "2026-05-27T16:15:34.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "13 Jahre Haft für frühere RAF-Terroristin Daniela Klette ",
-      "description": "Nach Überfällen auf Geldtransporter und Supermärkte hat ein Gericht in Verden die frühere RAF-Terroristin Daniela Klette zu 13 Jahren Haft verurteilt. Ihr Anwalt hält das Urteil wegen schlechter Beweise für anfechtbar.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/prozess-urteil-daniela-klette.html",
-      "image": "",
-      "date": "2026-05-27T16:13:03.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Stellwerksausfall: Bahnverkehr zwischen Hamburg und Berlin gestört",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/bahn-strecke-berlin-hamburg-stellwerk-ausfall-stoerung.html",
-      "image": "",
-      "date": "2026-05-27T16:03:59.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bahnstrecke zwischen Joachimsthal und Templin wird wohl nicht wiederbelebt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/uckermark-barnim-templin-eberswalde-joachimstal-bahnstrecke-nicht-wirtschaftlich.html",
-      "image": "",
-      "date": "2026-05-27T15:52:38.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": " İsrail ordusu, Lübnan'ın güneyindeki Sur kenti ve çevresine hava saldırıları başlattı",
-      "description": "İsrail ordusu, ateşkese rağmen Lübnan'ın güneyindeki Sur kent merkezi ve çevresine hava saldırıları başlattı.",
-      "url": "https://www.aa.com.tr/tr/dunya/-israil-ordusu-lubnanin-guneyindeki-sur-kenti-ve-cevresine-hava-saldirilari-baslatti/3949928",
-      "image": "",
-      "date": "2026-05-27T15:47:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fransa, Rusya'nın Paris Büyükelçisi'ni Dışişleri Bakanlığına çağırdı",
-      "description": "Fransa, Rusya'nın yabancı diplomatların Ukrayna'nın başkenti Kiev'den ayrılmasını tavsiye etmesinin ardından bu ülkenin Paris Büyükelçisi Alexey Meshkov'u Dışişleri Bakanlığına çağırdığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransa-rusyanin-paris-buyukelcisini-disisleri-bakanligina-cagirdi/3949921",
-      "image": "",
-      "date": "2026-05-27T15:40:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Genç koleksiyonerin 27 Mayıs arşivi, Cumhuriyet tarihinin karanlık dönemine ışık tutuyor",
-      "description": "İstanbul'da 31 yaşındaki koleksiyoner Mert Tezcanlıol, Türk demokrasi tarihinin kara lekelerinden 27 Mayıs 1960 darbesine ilişkin lise yıllarından beri topladığı evrak, fotoğraf, mektup ve eşyalarla geniş bir arşiv oluşturdu.",
-      "url": "https://www.aa.com.tr/tr/kultur/genc-koleksiyonerin-27-mayis-arsivi-cumhuriyet-tarihinin-karanlik-donemine-isik-tutuyor/3949624",
-      "image": "",
-      "date": "2026-05-27T08:30:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
