@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-05-28T15:51:52.446Z",
+  "lastUpdated": "2026-05-28T18:35:39.336Z",
   "count": 10,
   "articles": [
     {
-      "title": "ABD Hazine Bakanı Bessent'ten Hürmüz Boğazı'nda \"geçiş ücreti\" girişimlerine yönelik uyarı",
-      "description": "ABD Hazine Bakanı Scott Bessent, İran'ın Hürmüz Boğazı'nda gemilerden geçiş ücreti talep etme girişimlerine hiçbir müsamaha gösterilmeyeceğini belirterek, sürece dahil olan ülke ve şirketlerin doğrudan hedef alınacağı uyarısı yaptı.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-hazine-bakani-bessentten-hurmuz-bogazinda-gecis-ucreti-girisimlerine-yonelik-uyari/3950647",
+      "title": "Putin, AEB ülkelerini yapay zeka alanında birlikte çalışmaya çağırdı",
+      "description": "Rusya Devlet Başkanı Vladimir Putin, Avrasya Ekonomi Birliği (AEB) ülkelerine yapay zeka alanında birlikte çalışma çağrısında bulunarak, \"Bu alandaki çabaların pekiştirilmesi gerekiyor. Bu, muazzam sonuçlar doğurabilir.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/putin-aeb-ulkelerini-yapay-zeka-alaninda-birlikte-calismaya-cagirdi/3950752",
       "image": "",
-      "date": "2026-05-28T15:38:52.000Z",
+      "date": "2026-05-28T18:22:13.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "2026 Ballon d'Or (Altın Top) ödül töreni, Londra'da yapılacak",
+      "description": "Futbol dünyasının en prestijli bireysel ödüllerinden Ballon d'Or (Altın Top), bu yıl İngiltere'nin başkenti Londra'da sahibini bulacak.",
+      "url": "https://www.aa.com.tr/tr/spor/2026-ballon-dor-altin-top-odul-toreni-londrada-yapilacak/3950740",
+      "image": "",
+      "date": "2026-05-28T17:50:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bahçeşehir Koleji, Türkiye Sigorta Basketbol Süper Ligi play-off yarı finaline yükseldi",
+      "description": "Türkiye Sigorta Basketbol Süper Ligi play-off çeyrek final ikinci maçında Bahçeşehir Koleji, Trabzonspor'u 94-78 mağlup ederek yarı finale yükseldi.",
+      "url": "https://www.aa.com.tr/tr/spor/bahcesehir-koleji-turkiye-sigorta-basketbol-super-ligi-play-off-yari-finaline-yukseldi/3950736",
+      "image": "",
+      "date": "2026-05-28T17:38:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trendsport Hyrox - Sportmediziner im Interview",
+      "description": "Hyrox boomt weltweit, Krankenkassen empfehlen die Sportart. Olympia-Arzt Bernd Wolfarth erklärt, wo Risiken liegen, wer profitieren kann und wie realistisch eine olympische Zukunft ist.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/hyrox-gefahr-verletzung-interview-sportarzt-olympische-spiele-bernd-wolfarth.html",
+      "image": "",
+      "date": "2026-05-28T17:15:54.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bel fıtığı nedeniyle yürüyemeyen hasta, kapalı fıtık ameliyatıyla sağlığına kavuştu",
+      "description": "İstanbul'da yaklaşık 6 aydır ileri derecede bel fıtığı sorunu yaşayan ve 1,5 aydır yürüyemeyen hasta, kapalı fıtık ameliyatıyla sağlığına kavuştu.",
+      "url": "https://www.aa.com.tr/tr/gundem/bel-fitigi-nedeniyle-yuruyemeyen-hasta-kapali-fitik-ameliyatiyla-sagligina-kavustu/3950716",
+      "image": "",
+      "date": "2026-05-28T17:10:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD uçakları İran savaşı için konuşlandıkları İsrail havalimanını iki ayda 248 milyon dolar zarara uğrattı",
+      "description": "İsrail Havalimanları Otoritesi, ABD ordusuna ait yakıt ikmal uçaklarının varlığı nedeniyle Tel Aviv'deki Ben Gurion Havalimanı'nın kapasitesinin yalnızca üçte birinin kullanılabildiğini ve son iki ayda 248 milyon dolar zarar ettiğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-ucaklari-iran-savasi-icin-konuslandiklari-israil-havalimanini-iki-ayda-248-milyon-dolar-zarara-ugratti/3950712",
+      "image": "",
+      "date": "2026-05-28T17:09:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Nach Störungen ist Forst wieder am Netz",
+      "description": "In der Lausitz sowie in Rathenow im Havelland gibt es Probleme mit dem Mobilfunknetz, teilweise ist auch das Internet ausgefallen. In Forst sind mittlerweile ein Teil der Haushalte wieder am Netz.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/ausfall-telefon-internet-forst.html",
+      "image": "",
+      "date": "2026-05-28T16:36:21.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Zweite Bundesliga: Hertha-Talent verlängert, bleibt aber in Cottbus",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/05/fussball-2-bundesliga-hertha-bsc-energie-cottbus-lukas-michelbrink.html",
+      "image": "",
+      "date": "2026-05-28T16:09:16.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Üreticilerin elinde kalan kurbanlıklar Et ve Süt Kurumu tarafından satın alınacak",
-      "description": "Tarım ve Orman Bakanı İbrahim Yumaklı, Kurban Bayramı'nda üreticilerin elinde kalan kurbanlıkların 1-7 Haziran tarihleri arasında Et ve Süt Kurumu (ESK) tarafından satın alınacağını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/ureticilerin-elinde-kalan-kurbanliklar-et-ve-sut-kurumu-tarafindan-satin-alinacak/3950641",
-      "image": "",
-      "date": "2026-05-28T15:31:31.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Großeinsatz beendet: Polizei gibt nach Alarm auf Tempelhofer Feld Entwarnung",
       "description": "100 Einsatzkräfte, Hubschrauber am Himmel: Ein angeblich bewaffneter Mann sorgt für Aufregung auf dem Tempelhofer Feld. Nach stundenlanger Suche sieht die Polizei keine Gefahrenlage mehr.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-polizei-suche-bewaffneter-tempelhofer-feld.html",
       "image": "",
       "date": "2026-05-28T15:13:05.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fransa'da Senato, nükleer denemeler sebebiyle zarar görenleri \"mağdur\" olarak tanıdı",
-      "description": "Fransa'da parlamentonun üst kanadı olan Senato, Fransız nükleer denemelerinin zarar verdiği kişilerin \"mağdur\" olarak tanınmasını sağlayan tasarıyı onayladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransada-senato-nukleer-denemeler-sebebiyle-zarar-gorenleri-magdur-olarak-tanidi/3950630",
-      "image": "",
-      "date": "2026-05-28T15:05:19.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Telefon- und Internetverbindungen in Teilen Brandenburgs ausgefallen",
-      "description": "In der Lausitzer Stadt Forst sowie in Rathenow im Havelland gibt es Probleme mit dem Mobilfunknetz, teilweise ist auch das Internet ausgefallen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/ausfall-telefon-internet-forst.html",
-      "image": "",
-      "date": "2026-05-28T15:02:34.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fahrplanwechsel bei Regiobus bringt Brandenburg an der Havel Nachteile",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/regiobus-verbindungen-gekappt-kreisgrenze-brandenburg-potsdam-mi.html",
-      "image": "",
-      "date": "2026-05-28T14:53:09.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "AB’den işgal altındaki Filistin topraklarını gaspeden İsraillilere yeni yaptırımlar",
-      "description": "",
-      "url": "https://www.aa.com.tr/tr/dunya/ab-den-isgal-altindaki-filistin-topraklarini-gaspeden-israillilere-yeni-yaptirimlar/3950608",
-      "image": "",
-      "date": "2026-05-28T14:43:55.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İstanbul'da bayramın ikinci gününde tarihi ve turistik yerlerde yoğunluk oluştu",
-      "description": "İstanbul'da Kurban Bayramı'nın ikinci gününde vatandaşlar, ağırlıklı olarak tarihi ve turistik yerlerde vakit geçirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-bayramin-ikinci-gununde-tarihi-ve-turistik-yerlerde-yogunluk-olustu/3950604",
-      "image": "",
-      "date": "2026-05-28T14:37:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Schwaneneier aus Branitzer Park in Cottbus gestohlen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/schwaneneier-gestohlen-park-branitz-cottbus.html",
-      "image": "",
-      "date": "2026-05-28T14:33:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
