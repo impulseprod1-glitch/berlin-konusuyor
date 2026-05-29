@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-05-29T21:51:23.373Z",
+  "lastUpdated": "2026-05-29T23:11:27.200Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail'in Lübnan'da Sur kentine bağlı beldelere düzenlediği saldırılarda 11 kişi öldü",
+      "description": "İsrail ordusunun, ateşkese rağmen Lübnan'ın güneyindeki Sur kentine bağlı beldelere dün düzenlediği hava saldırılarında biri sağlık çalışanı olmak üzere 11 kişi hayatını kaybetti, 8 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-lubnanda-sur-kentine-bagli-beldelere-duzenledigi-saldirilarda-11-kisi-oldu/3951575",
+      "image": "",
+      "date": "2026-05-29T22:13:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Deutscher Filmpreis 2026: \"In die Sonne schauen\" gewinnt zehn Lolas",
+      "description": "Mit zehn Lolas ist der Film \"In die Sonne schauen\" der große Gewinner des Abends. Der Favorit der diesjährigen Verleihung hat die goldene Lola als Bester Film gewonnen. Drei Preise sicherte sich der Film \"Ach, diese Lücke, diese entsetzliche Lücke\".",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/deutscher-filmpreis-preistraeger-lola-2026-berlin-messe-funkturm.html",
+      "image": "",
+      "date": "2026-05-29T21:55:22.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bildergalerie | Verleihung der Lola: So war der Deutsche Filmpreis 2026",
+      "description": "Der Deutscher Filmpreis, auch bekannt als \"Lola\", ist die renommierteste und wichtigste Auszeichnung für den deutschen Film. Seit seiner erstmaligen Verleihung im Jahr 1951 würdigt der Preis jährlich herausragende Leistungen kreativer Gewerke der Filmproduktion.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/05/lola-deutscher-film-preis-verleihung-messe-berlin.html",
+      "image": "",
+      "date": "2026-05-29T21:40:04.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "ABD ile Meksika, USMCA'nın gözden geçirilmesine dair ilk ikili turu tamamladı",
       "description": "ABD ile Meksika, ABD-Meksika-Kanada Anlaşması'nın (USMCA) Ortak Gözden Geçirme sürecine ilişkin ilk ikili görüşmeleri tamamladı.",
@@ -47,17 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Barcelona, İngiliz futbolcu Anthony Gordon'ı renklerine bağladı",
-      "description": "İspanya Birinci Futbol Ligi takımlarından Barcelona, İngiliz kanat oyuncusu Anthony Gordon'ı transfer etti.",
-      "url": "https://www.aa.com.tr/tr/spor/barcelona-ingiliz-futbolcu-anthony-gordoni-renklerine-bagladi/3951543",
-      "image": "",
-      "date": "2026-05-29T20:24:59.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Sieg in Eisenach: Füchse Berlin bleiben auf Champions-League-Kurs",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/05/berlin-sport-handball-fuechse-eisenach-spielbericht.html",
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/05/brandenburg-pflegefachkraefte-aus-indien-pilotprojekt-hoffbauer.html",
       "image": "",
       "date": "2026-05-29T17:52:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Streit zweier Gruppen in Berlin-Wilmersdorf - 18-Jähriger lebensgefährlich verletzt",
-      "description": "Zwei Gruppen sind in Berlin-Wilmersorf aneinandergeraten. Zwei Personen wurden dabei verletzt, eine von ihnen musste notoperiert werden. Die Täter flüchteten zunächst - ein Verdächter stellte sich aber später.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-wilmersdorf-polizeieinsatz-schulen-abgesichert.html",
-      "image": "",
-      "date": "2026-05-29T17:02:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Neuer Newscastle-Fall in Oder-Spree - 315.000 Hähnchen werden getötet",
-      "description": "Die Newcastle-Krankheit breitet sich in Brandenburg weiter aus: Im Landkreis Oder-Spree wurde die hochansteckende Geflügelseuche erneut in einem Storkower Masthähnchen-Betrieb nachgewiesen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/brandenburg-oder-spree-neuer-fall-newcastle-krankheit.html",
-      "image": "",
-      "date": "2026-05-29T16:52:22.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
