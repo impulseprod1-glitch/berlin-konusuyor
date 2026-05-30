@@ -1,7 +1,40 @@
 {
-  "lastUpdated": "2026-05-30T02:57:18.132Z",
+  "lastUpdated": "2026-05-30T06:44:10.020Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Berlin: Schussabgabe durch Polizisten nach Verfolgungsfahrt in Haselhorst",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/berlin-haselhorst-polizei-verfolgungsfahrt-schussabgabe.html",
+      "image": "",
+      "date": "2026-05-30T06:28:47.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Oranienburg: So geht es den Menschen, die auf Bomben leben",
+      "description": "Meldungen von Bombenfunden in Oranienburg sind in der Stadt Routine. Oft hat das große Konsequenzen, wie zuletzt in Lehnitz. Wie lebt es sich direkt hinter der meterhohen Splitterschutzwand, die dort aus Überseecontainern errichtet wurde?",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/leben-mit-bomben-oranienburg.html",
+      "image": "",
+      "date": "2026-05-30T05:32:37.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "BSW-Parteitag in Cottbus: Abrechnung oder Weiter-so",
+      "description": "Das erste Mal nach dem Bruch der Koalition kommt das Brandenburger BSW zum Parteitag zusammen. Friederike Benda will wieder kandidieren, bekommt aber Konkurrenz im Kampf um den Landesvorsitz. Droht der BSW-Chefin der Machtkampf?",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/05/brandenburg-bsw-parteitag-cottbus-konkurrenzkampf-parteispitze.html",
+      "image": "",
+      "date": "2026-05-30T05:31:05.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Küba: ABD Güney Saha Komutanlığından üst düzey kişilerle görüşme gerçekleştirildi",
       "description": "Küba Devrimci Silahlı Kuvvetleri Bakanlığı (MINFAR), ABD Güney Saha Komutanlığından üst düzey kişilerle görüşme yapıldığını bildirdi.",
@@ -77,39 +110,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Sieg in Eisenach: Füchse Berlin bleiben auf Champions-League-Kurs",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/05/berlin-sport-handball-fuechse-eisenach-spielbericht.html",
-      "image": "",
-      "date": "2026-05-29T20:09:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner Digitalstaatssekretär Hundt nimmt Bitte um Entlassung zurück",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/05/berlin-digital-staatssekretaer-hundt-nimmt-entlassung-zurueck.html",
-      "image": "",
-      "date": "2026-05-29T20:04:03.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Erste indische Pflegekräfte arbeiten in Seniorenheim am Schwielowsee",
-      "description": "Pflegekräfte dringend gesucht: Fünf Pflegeassistentinnen aus Indien arbeiten jetzt in Brandenburg – möglich macht das ein Pilotprojekt, bei dem Ausbildung und Deutschunterricht bereits im Heimatland starten.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/05/brandenburg-pflegefachkraefte-aus-indien-pilotprojekt-hoffbauer.html",
-      "image": "",
-      "date": "2026-05-29T17:52:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     }
   ],
