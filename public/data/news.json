@@ -1,57 +1,57 @@
 {
-  "lastUpdated": "2026-05-31T22:58:53.099Z",
+  "lastUpdated": "2026-06-01T03:58:12.836Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Kuveyt ordusu: Hava savunma sistemlerimiz füze ve İHA saldırılarına müdahale ediyor",
+      "description": "Kuveyt ordusu, ülkeye yönelik füze ve insansız hava araçları (İHA) saldırılarına karşı hava savunma sistemleriyle müdahale ettiklerini duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/kuveyt-ordusu-hava-savunma-sistemlerimiz-fuze-ve-iha-saldirilarina-mudahale-ediyor/3952593",
+      "image": "",
+      "date": "2026-06-01T03:45:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kolombiya'da cumhurbaşkanı seçimi ikinci tura kaldı",
+      "description": "Kolombiya’da düzenlenen cumhurbaşkanı seçiminin ilk turunda hiçbir adayın gerekli oy oranına ulaşamaması nedeniyle seçim ikinci tura kaldı.",
+      "url": "https://www.aa.com.tr/tr/dunya/kolombiyada-cumhurbaskani-secimi-ikinci-tura-kaldi/3952583",
+      "image": "",
+      "date": "2026-06-01T02:58:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "FKÖ: İsrail, Batı Şeria'da 2 bin 721 yeni yerleşim birimi inşa etmeyi planlıyor",
+      "description": "Filistin Kurtuluş Örgütü (FKÖ), İsrail'in işgal altındaki Batı Şeria'da 2 bin 721 yasa dışı yeni yerleşim birimi inşa etme planı yaptığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/fko-israil-bati-seriada-2-bin-721-yeni-yerlesim-birimi-insa-etmeyi-planliyor/3952578",
+      "image": "",
+      "date": "2026-06-01T00:02:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Yurt genelindeki heyelan, sel ve taşkınlara müdahalede 13 bin 342 personel görev aldı",
+      "description": "Afet ve Acil Durum Yönetimi Başkanlığı (AFAD), yurt genelinde meydana gelen heyelan, sel, su baskını ve taşkınlarla mücadelede 13 bin 342 personel ile 5 bin 656 araç ve iş makinesinin görev aldığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/yurt-genelindeki-heyelan-sel-ve-taskinlara-mudahalede-13-bin-342-personel-gorev-aldi/3952577",
+      "image": "",
+      "date": "2026-06-01T00:02:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "İsrail'in Beyrut'a hava saldırıları düzenlemek için ABD'den onay istediği iddia edildi",
       "description": "İsrail Başbakanı Binyamin Netanyahu'nun ateşkese rağmen Lübnan'ın başkenti Beyrut'a hava saldırıları düzenlemek için ABD yönetiminden izin istediği ileri sürüldü.",
       "url": "https://www.aa.com.tr/tr/dunya/israilin-beyruta-hava-saldirilari-duzenlemek-icin-abdden-onay-istedigi-iddia-edildi/3952554",
       "image": "",
       "date": "2026-05-31T20:35:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ordusu, \"araçla ezme\" girişiminde bulunduğu iddiasıyla Batı Şeria'da bir Filistinliyi öldürdü",
-      "description": "İsrail ordusu, işgali altındaki Batı Şeria'nın Beytüllahim kenti yakınlarında \"araçla ezme\" girişiminde bulunduğu iddiasıyla bir Filistinliyi öldürdü.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-aracla-ezme-girisiminde-bulundugu-iddiasiyla-bati-seriada-bir-filistinliyi-oldurdu/3952551",
-      "image": "",
-      "date": "2026-05-31T20:31:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran, olası mutabakat zaptında kendi değişikliklerini uygulayacak",
-      "description": "İran’ın ABD ile imzalanma ihtimali bulunan mutabakat zaptında kendi değişikliklerini uygulayacağı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-olasi-mutabakat-zaptinda-kendi-degisikliklerini-uygulayacak/3952542",
-      "image": "",
-      "date": "2026-05-31T20:07:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Almanya: İsrail'in Lübnan'ın güneyinde ilerlemesi büyük endişe kaynağı",
-      "description": "Almanya Dışişleri Bakanı Johann Wadephul, İsrail ordusunun Lübnan’ın güneyinde ilerlemesinin büyük endişe kaynağı olduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/almanya-israilin-lubnanin-guneyinde-ilerlemesi-buyuk-endise-kaynagi/3952538",
-      "image": "",
-      "date": "2026-05-31T19:57:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Suriye Cumhurbaşkanı Şara ile ABD Başkanı Trump, ikili ilişkileri ve bölgesel gelişmeleri görüştü",
-      "description": "Suriye Cumhurbaşkanı Ahmed Şara, ABD Başkanı Donald Trump ile ikili ilişkileri, bölgedeki siyasi ve güvenlikle ilgili gelişmeleri ele aldı.",
-      "url": "https://www.aa.com.tr/tr/dunya/suriye-cumhurbaskani-sara-ile-abd-baskani-trump-ikili-iliskileri-ve-bolgesel-gelismeleri-gorustu/3952531",
-      "image": "",
-      "date": "2026-05-31T19:46:34.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
