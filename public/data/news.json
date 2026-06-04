@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-06-04T16:53:43.926Z",
-  "count": 10,
+  "lastUpdated": "2026-06-04T20:05:05.254Z",
+  "count": 5,
   "articles": [
+    {
+      "title": "Berlin: Polizistin bei Festnahme von 16-Jährigem verletzt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/16-jaehriger-festnahme-angriff-gegen-polizei.html",
+      "image": "",
+      "date": "2026-06-04T18:38:12.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Basketball live: Macht Alba Berlin in Bamberg den Finaleinzug klar?",
+      "description": "Nur noch ein Sieg fehlt: Nach zwei starken Auftritten in eigener Halle stehen die Basketballer von Alba Berlin kurz vor dem Gewinn der Halbfinalserie gegen die Bamberg Baskets. Ob den Berlinern mit einem Auswärtserfolg der Finaleinzug gelingt, sehen Sie im rbb|24-Livestream.",
+      "url": "https://www.rbb24.de/sport/hintergrund/livestream/livestream-basketball-bbl-playoffs-halbfinale-spiel-3-bamberg-alba-berlin.html",
+      "image": "",
+      "date": "2026-06-04T18:30:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Wetterlage entspannt sich in Berlin und Brandenburg",
+      "description": "Vor Starkregen, Hagel und Orkanböen hatte der Deutsche Wetterdienst für die Region gewarnt - am Ende blieb es vergleichsweise ruhig - auch für die Einsatzkräfte.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-brandenburg-wetter-regen-gewitter-sommer-nass.html",
+      "image": "",
+      "date": "2026-06-04T17:29:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Oder-Spree: Zwei Elche bei Grünheide gesichtet",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/gruenheide-spreenhagen-elche-gesichtet.html",
+      "image": "",
+      "date": "2026-06-04T17:06:10.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Apple eröffnet Zentrum für App-Entwickler in Berlin-Mitte",
       "description": "",
@@ -11,105 +55,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ankara'da \"Türkiye Çevre Haftası\" kapsamında çocuklara yönelik etkinlik düzenlenecek",
-      "description": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığınca, \"Türkiye Çevre Haftası\" kapsamında yarın Ankara'da çocuklara yönelik etkinlikler düzenlenecek.",
-      "url": "https://www.aa.com.tr/tr/gundem/ankarada-turkiye-cevre-haftasi-kapsaminda-cocuklara-yonelik-etkinlik-duzenlenecek/3956865",
-      "image": "",
-      "date": "2026-06-04T16:49:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fitch, küresel ekonomik büyüme tahminini düşürdü ",
-      "description": "Fitch Ratings, ABD-İran Savaşı'nın tetiklediği petrol krizinin, küresel ekonomik büyüme görünümünü olumsuz etkilediğini belirterek, dünya ekonomisine ilişkin büyüme beklentisini bu yıl için yüzde 2,6'dan yüzde 2,4'e indirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/fitch-kuresel-ekonomik-buyume-tahminini-dusurdu-/3956861",
-      "image": "",
-      "date": "2026-06-04T16:46:14.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Frankfurt Havalimanı'nda Lufthansa uçağının burun kısmı apronun zeminine oturdu",
-      "description": "Almanya'daki Frankfurt Havalimanı'nda Lufthansa hava yolu şirketine ait \"Boeing 787-9\" tipi yolcu uçağının burun kısmı, ön iniş takımındaki sorun nedeniyle apronun zeminine oturdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/frankfurt-havalimaninda-lufthansa-ucaginin-burun-kismi-apronun-zeminine-oturdu/3956857",
-      "image": "",
-      "date": "2026-06-04T16:35:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "63. Uluslararası Antalya Altın Portakal Film Festivali 24 Ekim'de başlayacak",
-      "description": "63. Uluslararası Antalya Altın Portakal Film Festivali, 24- 31 Ekim'de sinemaseverlerle buluşacak.",
-      "url": "https://www.aa.com.tr/tr/kultur/63-uluslararasi-antalya-altin-portakal-film-festivali-24-ekimde-baslayacak/3956855",
-      "image": "",
-      "date": "2026-06-04T16:33:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Wetterdienst warnt teils vor starken Gewittern",
-      "description": "Starkregen und Hagel sind möglich: Der Deutsche Wetterdienst rechnet für den Donnerstagnachmittag mit schweren Gewittern in der Region.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-brandenburg-wetter-regen-gewitter-sommer-nass.html",
-      "image": "",
-      "date": "2026-06-04T16:17:43.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Offene Gärten Berlin-Brandenburg: So leben wie auf dem Ponyhof ",
-      "description": "An diesem Wochenende findet in Berlin und Brandenburg wieder die Aktion \"Offene Gärten\" statt. Mit dabei ist auch ein Ehepaar aus Elbe-Elster, das rund um ihren Dreiseitenhof Hundert Bäume pflanzten.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/brandenburg-offene-gaerten-2026-elbe-elster-kunschke.html",
-      "image": "",
-      "date": "2026-06-04T15:38:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kleine Festivals in Brandenburg haben finanzielle Probleme",
-      "description": "Mehr Kosten und weniger Besucher - vor allem kleinere, etablierte Festivals haben aktuell zu kämpfen. Auch das Wurzelfestival in Brandenburg steht vor einer ungewissen Zukunft.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/06/musik-festivals-weniger-besucher-wurzelfestival-niedergoersdorf-finanzen.html",
-      "image": "",
-      "date": "2026-06-04T15:25:54.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "\"Türkisch für Anfänger\"-Schauspieler Axel Schreiber ist gestorben",
-      "description": "",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/06/axel-schreiber-schauspieler-gestorben-luebben-brandenburg.html",
-      "image": "",
-      "date": "2026-06-04T15:15:01.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "3. Küresel İslami Ekonomi Zirvesi'nde \"Katılım Bankacılığı Grupları CEO Paneli\" düzenlendi",
-      "description": "3. Küresel İslami Ekonomi Zirvesi kapsamında düzenlenen \"Katılım Bankacılığı Grupları CEO Paneli\"nde İslami ekonomide sermayenin hangi ilkeler doğrultusunda şekillenmesi gerektiği ve toplumsal fayda üretmedeki rolü masaya yatırıldı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/3-kuresel-islami-ekonomi-zirvesinde-katilim-bankaciligi-gruplari-ceo-paneli-duzenlendi/3956744",
-      "image": "",
-      "date": "2026-06-04T14:39:19.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
