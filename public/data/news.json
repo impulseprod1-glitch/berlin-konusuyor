@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-06-03T22:27:48.304Z",
-  "count": 5,
+  "lastUpdated": "2026-06-04T03:55:13.747Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "İsrail'in ateşkese rağmen Gazze'de düzenlediği saldırılarda 5'i aynı aileden 9 Filistinli hayatını kaybetti",
+      "description": "İsrail ordusunun ateşkese rağmen Gazze kentinin farklı bölgelerine gece saatlerinde düzenlediği hava saldırılarında, aynı aileden anne, baba ve 3 çocuk dahil en az 9 Filistinli hayatını kaybetti, 20 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-ateskese-ragmen-gazzede-duzenledigi-saldirilarda-5i-ayni-aileden-9-filistinli-hayatini-kaybetti/3955936",
+      "image": "",
+      "date": "2026-06-04T03:00:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "A Milli Futbol Takımı Miami'deki ilk antrenmanını yaptı",
+      "description": "A Milli Futbol Takımı, 2026 FIFA Dünya Kupası öncesinde hazırlıklarının ikinci etabında Miami'deki ilk antrenmanını gerçekleştirdi.",
+      "url": "https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-miamideki-ilk-antrenmanini-yapti/3955931",
+      "image": "",
+      "date": "2026-06-04T00:45:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Sıfır Atık Haftası kapsamında Galata Kulesi'nde mapping gösterisi yapıldı",
+      "description": "İstanbul'un simge yapılarından Galata Kulesi'nde 1-7 Haziran Sıfır Atık Haftası kapsamında, \"Sıfır Atık\" temalı mapping gösterisi yapıldı.",
+      "url": "https://www.aa.com.tr/tr/gundem/sifir-atik-haftasi-kapsaminda-galata-kulesinde-mapping-gosterisi-yapildi/3955908",
+      "image": "",
+      "date": "2026-06-03T21:22:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump, İran'la müzakerelerin \"çok iyi gittiğini\" ve hafta sonu anlaşma sağlanabileceğini belirtti",
+      "description": "ABD Başkanı Donald Trump, İran'la devam eden müzakerelere ilişkin, \"Müzakerelerin çok çok iyi gittiğini ilettiler. Eğer (anlaşma) olursa, olmayabilir de, ama olursa mesela bu hafta sonu olabilir.\" değerlendirmesini yaptı.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-iranla-muzakerelerin-cok-iyi-gittigini-ve-hafta-sonu-anlasma-saglanabilecegini-belirtti/3955905",
+      "image": "",
+      "date": "2026-06-03T21:10:23.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "\"Staatsoper für alle\" in Berlin bis 2030 verlängert",
       "description": "",
@@ -11,6 +55,17 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Efes Antik Kenti'nde gece müzeciliği başladı",
+      "description": "UNESCO Dünya Miras Listesi'nde yer alan Efes Antik Kenti, gece müzeciliği uygulaması kapsamında ışıklarla aydınlatılarak ziyaretçilerine yeniden gece saatlerinde kapılarını açtı.",
+      "url": "https://www.aa.com.tr/tr/kultur/efes-antik-kentinde-gece-muzeciligi-basladi/3955854",
+      "image": "",
+      "date": "2026-06-03T20:12:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
