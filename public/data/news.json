@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T23:07:54.772Z",
+  "lastUpdated": "2026-06-05T03:39:33.274Z",
   "count": 10,
   "articles": [
     {
@@ -11,6 +11,28 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İşgal altındaki Batı Şeria’da İsrail askerlerinin saldırısında bir Filistinli öldü",
+      "description": "İsrail askerlerinin işgal altındaki Batı Şeria'da, Ramallah'ın doğusundaki Bettin beldesine düzenlediği baskında bir Filistinli gencin hayatını kaybettiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/isgal-altindaki-bati-seria-da-israil-askerlerinin-saldirisinda-bir-filistinli-oldu/3957090",
+      "image": "",
+      "date": "2026-06-04T22:05:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Putin: Kiev, iç siyasetteki durumdan dolayı krizi çözmeye hazır değil",
+      "description": "Rusya Devlet Başkanı Vladimir Putin, Kiev yönetiminin, iç siyasetteki durumdan dolayı krizi çözmeye hazır olmadığını belirterek \"Ukrayna ile barış anlaşmasını meşru yönetimle imzalamak istiyoruz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/putin-kiev-ic-siyasetteki-durumdan-dolayi-krizi-cozmeye-hazir-degil/3957089",
+      "image": "",
+      "date": "2026-06-04T22:05:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -41,28 +63,6 @@
       "url": "https://www.aa.com.tr/tr/dunya/abd-ve-kuveytten-savunma-koordinasyonunu-surdurme-vurgusu/3957082",
       "image": "",
       "date": "2026-06-04T21:45:03.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Sıfır Atık Forumu'nun tanıtım toplantısı yapıldı",
-      "description": "İstanbul Valiliği himayelerinde, Sıfır Atık Vakfı koordinasyonunda düzenlenecek Sıfır Atık Forumu 2026'nın tanıtım toplantısı Atatürk Havalimanı'nda gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/sifir-atik-forumunun-tanitim-toplantisi-yapildi/3957074",
-      "image": "",
-      "date": "2026-06-04T21:35:05.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrailli analist, Netanyahu'nun Trump'ın Orta Doğu planı için engel teşkil edebileceğini düşünüyor",
-      "description": "ABD Başkanı Donald Trump'ın son görüşmelerinde, İsrail Başbakanı Binyamin Netanyahu'ya \"lanet olası deli\" demesi ve Lübnan'a yönelik saldırıları durdurmasını istemesi, iki lider arasındaki stratejik ortaklığın bozulduğu şeklinde yorumlandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilli-analist-netanyahunun-trumpin-orta-dogu-plani-icin-engel-teskil-edebilecegini-dusunuyor/3957070",
-      "image": "",
-      "date": "2026-06-04T21:28:53.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
