@@ -1,62 +1,7 @@
 {
-  "lastUpdated": "2026-06-05T23:07:59.108Z",
-  "count": 10,
+  "lastUpdated": "2026-06-06T03:23:31.367Z",
+  "count": 5,
   "articles": [
-    {
-      "title": "Fenerbahçe Kulübü Başkan Adayı Hakan Safi: 'Dünya yıldızlarını getireceğiz' dedik, getirmenin de keyfini yaşıyoruz",
-      "description": "Fenerbahçe Kulübü Başkan Adayı Hakan Safi, sarı-lacivertli kulübe dünya yıldızlarını getirecek olmanın keyfini yaşadıklarını söyledi.",
-      "url": "https://www.aa.com.tr/tr/spor/fenerbahce-kulubu-baskan-adayi-hakan-safi-dunya-yildizlarini-getirecegiz-dedik-getirmenin-de-keyfini-yasiyoruz/3958140",
-      "image": "",
-      "date": "2026-06-05T22:32:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Olympiakos'u yenen Panathinaikos, seride durumu 1-1 yaptı",
-      "description": "Yunanistan Basketbol Ligi play-off final serisi ikinci maçında Olympiakos'u 68-58 yenen Panathinaikos seride durumu 1-1 yaptı.",
-      "url": "https://www.aa.com.tr/tr/spor/olympiakosu-yenen-panathinaikos-seride-durumu-1-1-yapti/3958138",
-      "image": "",
-      "date": "2026-06-05T22:21:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Tarkan, Koç Holding'in 100. yıl kutlamaları kapsamında Ankara'da konser verdi",
-      "description": "Koç Holding'in 100. yıl kutlamaları kapsamında konser veren sanatçı Tarkan, yağmura rağmen alanı dolduran binlerce Başkentliye sevilen şarkılarını seslendirdi.",
-      "url": "https://www.aa.com.tr/tr/kultur/tarkan-koc-holdingin-100-yil-kutlamalari-kapsaminda-ankarada-konser-verdi/3958135",
-      "image": "",
-      "date": "2026-06-05T22:08:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD Başkanı Trump: İran'dan çok kısa sürede ayrılacağız",
-      "description": "ABD Başkanı Donald Trump, İran'la anlaşma sürecinde sona yaklaştıkları mesajını vererek \"İran'dan çok kısa sürede ayrılacağız, ister bir anlaşma yoluyla isterse çok sert bir yöntemle olsun, her halükarda bu gerçekleşecek.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/live-blog/dakika-dakika-gelismeler-abd-israil-iran-lubnan-savasi-ve-ateskes-sureci/3265",
-      "image": "",
-      "date": "2026-06-05T21:23:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Elazığ'da \"Ulusal Tütün Kontrolü Kongresi\" sürüyor ",
-      "description": "Sağlık Bakan Yardımcısı Şuayıp Birinci, \"2040'dan sonra Türkiye'nin sigara satışının olmadığı bir ülke olmasını arzu ediyoruz. Amacımız sağlıklı yaşam düzeylerini artırmak.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/elazigda-ulusal-tutun-kontrolu-kongresi-suruyor-/3958127",
-      "image": "",
-      "date": "2026-06-05T21:10:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
     {
       "title": "TU Berlin schließt Bibliotheksgebäude eine Woche lang für Reparaturen",
       "description": "Seit Wochen ist das Hauptgebäude der Technischen Universität Berlin geschlossen. Eine Taskforce prüft nun ein Uni-Gebäude nach dem anderen - und hat ein weiteres Problem entdeckt.",
