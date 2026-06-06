@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-06-06T15:14:31.656Z",
-  "count": 5,
+  "lastUpdated": "2026-06-06T17:13:11.827Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "DFB-Pokal: Union in Braunschweig gefordert - Hertha in Saarbrücken",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/06/fussball-dfb-pokal-auslosung-erste-runde-fc-union-hertha-bsc-energie-cottbus-vfb-krieschow-vsg-altglienicke.html",
+      "image": "",
+      "date": "2026-06-06T17:02:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İçişleri Bakanı Çiftçi: Türkiye, son 200 yılın en güçlü dönemini yaşıyor",
+      "description": "İçişleri Bakanı Mustafa Çiftçi, \"Türkiye, son 200 yılın en güçlü dönemini yaşıyor. Cumhurbaşkanımızın liderliğinde memleketimizin daha da güçlenip bölgesel güçten küresel güce dönüşeceğine inancım tamdır.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-turkiye-son-200-yilin-en-guclu-donemini-yasiyor/3958704",
+      "image": "",
+      "date": "2026-06-06T16:54:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Devlet Bahçeli'den Rahmi Koç hakkında başlatılan soruşturmaya ilişkin açıklama",
+      "description": "MHP Genel Başkanı Devlet Bahçeli, iş insanı Rahmi Koç hakkında İzmir'deki bir hastane açılışında kullandığı ifade nedeniyle soruşturma başlatılmasının \"yanlış\" olduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/gundem/devlet-bahceliden-rahmi-koc-hakkinda-baslatilan-sorusturmaya-iliskin-aciklama/3958703",
+      "image": "",
+      "date": "2026-06-06T16:51:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "EGD 18. Ekonomi Basını Başarı Ödülleri sahiplerini buldu",
+      "description": "Ekonomi Gazetecileri Derneği (EGD) tarafından bu yıl 18'incisi düzenlenen Ekonomi Basını Başarı Ödülleri'nde, Nezih Demirkent Özel Ödülü'nü \"Portre/Zirvedeki Türkler - Onur Genç\" haberi ile AA Finans Haberleri Başmuhabiri Nuran Erkul Kaya aldı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/egd-18-ekonomi-basini-basari-odulleri-sahiplerini-buldu/3958698",
+      "image": "",
+      "date": "2026-06-06T16:42:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Formula 1 Monaco Grand Prix'sinde pole pozisyonu Kimi Antonelli'nin",
+      "description": "Formula 1 Dünya Şampiyonası'nda sezonun 6. yarışı Monaco Grand Prix'sine Mercedes pilotu Kimi Antonelli ilk sıradan başlayacak.",
+      "url": "https://www.aa.com.tr/tr/spor/formula-1-monaco-grand-prixsinde-pole-pozisyonu-kimi-antonellinin/3958695",
+      "image": "",
+      "date": "2026-06-06T16:33:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Dünya Kupası'na katılacak İran Milli Futbol Takımı, Antalya'dan ayrıldı",
+      "description": "ABD, Kanada ve Meksika'da düzenlenecek 2026 FIFA Dünya Kupası'nda mücadele edecek İran Milli Takımı, kamp yaptığı Antalya'dan ayrıldı.",
+      "url": "https://www.aa.com.tr/tr/spor/dunya-kupasina-katilacak-iran-milli-futbol-takimi-antalyadan-ayrildi/3958674",
+      "image": "",
+      "date": "2026-06-06T15:56:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tausende Radfahrer bei Sternfahrt erwartet - Umleitungen für Autos",
+      "description": "Bei der Sternfahrt des ADFC am Sonntag werden auch zwei Autobahnabschnitte gesperrt. Womit Autofahrer rechnen müssen.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/sternfahrt-berlin-sperrungen-verkehr-fahrrad-adfc.html",
+      "image": "",
+      "date": "2026-06-06T15:16:29.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Expo 2035: Berlin und Brandenburg prüfen gemeinsame Bewerbung",
       "description": "Auf eine Bewerbung für die Expo 2035 drängten zuletzt vor allem Wirtschaftsvertreter in Berlin und Brandenburg. Nun wollen beide Länder ein gemeinsames Konzept erarbeiten, das in einer Bewerbung münden soll.",
@@ -30,28 +107,6 @@
       "url": "https://www.rbb24.de/kultur/beitrag/2026/06/taenzerinnen-brunnen-georg-kolbe-museum.html",
       "image": "",
       "date": "2026-06-06T12:45:09.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Unfall in Berlin-Niederschönhausen: 85-jährige Fußgängerin stirbt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-polizei-niederschoenhausen-verkehrsunfall-frau-tot.html",
-      "image": "",
-      "date": "2026-06-06T12:24:55.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ebola-Patient aus Berliner Charité entlassen",
-      "description": "Ein US-Mediziner steckte sich mit dem gefährlichen Ebola-Virus an. Er wurde unter besonderen Bedingungen an der Berliner Charité behandelt - mit Erfolg.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-ebola-patient-aus-charite-entlassen.html",
-      "image": "",
-      "date": "2026-06-06T12:22:14.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
