@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-06-06T21:03:27.598Z",
+  "lastUpdated": "2026-06-06T23:02:44.234Z",
   "count": 10,
   "articles": [
+    {
+      "title": "ABD'de haziranın ilk günlerindeki aile içi cinayetler endişeye neden oldu",
+      "description": "ABD’de “aile içi şiddet” olaylarında hızlı artış yaşanırken, haziran ayının ilk günlerinde işlenen cinayetlerin, Kovid-19 salgını sonrası dönemdeki yükselişe işaret ettiği belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdde-haziranin-ilk-gunlerindeki-aile-ici-cinayetler-endiseye-neden-oldu/3958806",
+      "image": "",
+      "date": "2026-06-06T21:21:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "ABD hazırlık maçında Almanya'ya 2-1 yenildi",
       "description": "2026 FIFA Dünya Kupası'nda A Milli Futbol Takımı ile D Grubu'nda yer alan ev sahibi ülkelerden ABD, turnuva öncesinde yaptığı hazırlık maçında Almanya'ya 2-1 mağlup oldu.",
@@ -99,17 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kırsal kalkınma ve sulama desteklerine ilişkin başvuru süresi 30 Haziran'a uzatıldı",
-      "description": "Tarım ve Orman Bakanı İbrahim Yumaklı, Kırsal Kalkınma Yatırım Programı ile tasarruflu tarımsal sulama sistemleri destekleri için başvuru sürelerinin 30 Haziran'a uzatıldığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/kirsal-kalkinma-ve-sulama-desteklerine-iliskin-basvuru-suresi-30-hazirana-uzatildi/3958329",
-      "image": "",
-      "date": "2026-06-06T08:53:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
