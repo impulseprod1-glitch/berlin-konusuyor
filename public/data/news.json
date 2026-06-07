@@ -1,16 +1,38 @@
 {
-  "lastUpdated": "2026-06-07T15:23:36.790Z",
-  "count": 5,
+  "lastUpdated": "2026-06-07T17:15:13.746Z",
+  "count": 10,
   "articles": [
     {
-      "title": "Sechsjähriger auf E-Scooter in Dahme-Spreewald unterwegs",
+      "title": "Amtsinhaber Schulz bleibt Bürgermeister von Wusterhausen/Dosse",
       "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/polizei-stoppt-sechsjaehrigen-e-scooter.html",
+      "url": "https://www.rbb24.de/politik/wahl/brandenburg-buergermeisterwahlen/2026/skambraks-schulz-buergermeister-wusterhausen-dosse-wahl.html",
       "image": "",
-      "date": "2026-06-07T15:21:20.000Z",
+      "date": "2026-06-07T17:04:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Yerel yönetimler için 6 beldede yapılan seçimde kesin olmayan sonuçlar açıklandı",
+      "description": "",
+      "url": "https://www.aa.com.tr/tr/gundem/yerel-yonetimler-icin-6-beldede-yapilan-secimde-kesin-olmayan-sonuclar-aciklandi/3959318",
+      "image": "",
+      "date": "2026-06-07T16:41:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Bayraktar, Bangladeşli bakanlarla enerji işbirliğini görüştü",
+      "description": "Enerji ve Tabii Kaynaklar Bakanı Alparslan Bayraktar, Bangladeşli bakanlarla arz güvenliği stratejileri, yenilenebilir ve nükleer enerji yatırımları ile hidrokarbon alanındaki potansiyel işbirliği fırsatlarını ele aldıklarını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-bayraktar-bangladesli-bakanlarla-enerji-isbirligini-gorustu/3959304",
+      "image": "",
+      "date": "2026-06-07T16:03:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -18,7 +40,29 @@
       "description": "Die Füchse Berlin haben am letzten Spieltag der HBL-Saison 2025/26 einen 43:38-Heimsieg gegen Flensburg gefeiert und sind erneut für die Champions League qualifiziert. Welthandballer Gidsel überragte vor allem in der ersten Hälfte.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/06/handball-bundesliga-fuechse-berlin-sg-flensburg-handewitt-spielbericht-saisonabschluss.html",
       "image": "",
-      "date": "2026-06-07T15:07:45.000Z",
+      "date": "2026-06-07T16:01:26.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bilal Erdoğan: (Vefa Yurdu) Yüksek lisans, doktora öğrencilerimizden evli olanlar için 8 tane dairemiz olacak",
+      "description": "İlim Yayma Vakfı Mütevelli Heyeti Başkanı Necmeddin Bilal Erdoğan, temeli atılan Vefa Yurdu'na ilişkin, \"Lisans öğrencisinin yanında yüksek lisans, doktora öğrencilerimizden evli olanlar için 8 tane dairemiz olacak.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bilal-erdogan-vefa-yurdu-yuksek-lisans-doktora-ogrencilerimizden-evli-olanlar-icin-8-tane-dairemiz-olacak/3959275",
+      "image": "",
+      "date": "2026-06-07T15:22:07.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Sechsjähriger auf E-Scooter in Dahme-Spreewald unterwegs",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/polizei-stoppt-sechsjaehrigen-e-scooter.html",
+      "image": "",
+      "date": "2026-06-07T15:21:20.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
@@ -36,6 +80,17 @@
       "type": "rss"
     },
     {
+      "title": "Atatürk Havalimanı'nda Sıfır Atık Festivali'nin dördüncü gününde çeşitli etkinlikler düzenleniyor",
+      "description": "Enerji verimliliğinden döngüsel ekonomiye, teknolojiden sanata uzanan kapsamlı içeriğiyle Atatürk Havalimanı'nda düzenlenen Sıfır Atık Festivali, dördüncü gününde de yoğun ilgi görüyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/ataturk-havalimaninda-sifir-atik-festivalinin-dorduncu-gununde-cesitli-etkinlikler-duzenleniyor/3959250",
+      "image": "",
+      "date": "2026-06-07T14:56:12.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
       "title": "AFDC-Sternfahrt in Berlin: Rund 30.000 Radfahrer beteiligen sich",
       "description": "Happening auch auf der Autobahn: Zehntausende Radler erobern Berlins Straßen bei der ADFC-Sternfahrt. Der Club fordert von der Politik unter anderem sichere Radwege.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/06/sternfahrt-berlin-sperrungen-verkehr-fahrrad-adfc.html",
@@ -47,14 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "Eichenprozessionsspinner: Nuthe-Urstromtal bittet um Hilfe",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/nuthe-urstromtal-hilfe-landkreis-raupe-eichenprozessionsspinner.html",
+      "title": "OPEC+ üyesi 7 ülke, temmuzda petrol üretimini günlük 188 bin varil artıracak",
+      "description": "Petrol İhraç Eden Ülkeler Örgütü (OPEC) ve OPEC dışı bazı üretici ülkelerden oluşan OPEC+ grubu üyesi 7 ülke, temmuzda üretimlerini beklentiler dahilinde günlük 188 bin varil artırma kararı aldı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/opec-uyesi-7-ulke-temmuzda-petrol-uretimini-gunluk-188-bin-varil-artiracak/3959182",
       "image": "",
-      "date": "2026-06-07T14:18:58.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
+      "date": "2026-06-07T13:52:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     }
   ],
