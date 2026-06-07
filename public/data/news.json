@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-06-07T03:50:25.329Z",
-  "count": 5,
+  "lastUpdated": "2026-06-07T07:54:07.093Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "İsrail ordusu Gazze açıklarında balıkçı teknelerine ateş açtı: 15 yaşındaki çocuk hayatını kaybetti",
+      "description": "İsrail donanmasının Gazze açıklarında avlanan balıkçı teknelerine açtığı ateş sonucu 15 yaşındaki bir Filistinli çocuk hayatını kaybetti.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-gazze-aciklarinda-balikci-teknelerine-ates-acti-15-yasindaki-cocuk-hayatini-kaybetti/3958889",
+      "image": "",
+      "date": "2026-06-07T07:37:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Gaziantep'teki \"AA Kent Ekonomileri Zirvesi\", Türkiye-Suriye ilişkilerinde yeni döneme odaklanacak",
+      "description": "Zirve kapsamında düzenlenecek oturumlarda iki ülke arasındaki ticari ilişkilerden bölgesel yatırım fırsatlarına kadar birçok konu ele alınacak.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/gaziantepteki-aa-kent-ekonomileri-zirvesi-turkiye-suriye-iliskilerinde-yeni-doneme-odaklanacak/3958888",
+      "image": "",
+      "date": "2026-06-07T07:34:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ermenistan'da halk, parlamento seçimleri için sandık başında",
+      "description": "Ermenistan'da 5 yıl boyunca görev yapacak parlamentoyu belirlemek üzere düzenlenen seçimlerde oy verme işlemi başladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/ermenistanda-halk-parlamento-secimleri-icin-sandik-basinda/3958886",
+      "image": "",
+      "date": "2026-06-07T07:34:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "\"Basitleştirilmiş Gümrük Beyannamesi Kapsamında İhracat Rotaları 2025\" raporu yayımlandı",
+      "description": "Ticaret Bakanlığı, Türkiye'nin mikro ihracat hacminin, son 10 yılda yaklaşık 15 kat büyüyerek üreticilerin, girişimcilerin ve e-ihracat ekosisteminin, küresel pazarlardaki etkinliğini önemli ölçüde artırdığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/basitlestirilmis-gumruk-beyannamesi-kapsaminda-ihracat-rotalari-2025-raporu-yayimlandi/3958884",
+      "image": "",
+      "date": "2026-06-07T07:28:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berlin: Massenschlägerei in Kreuzberg – drei Verletzte",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-kreuzberg-massenschlaegerei-drei-verletzte.html",
+      "image": "",
+      "date": "2026-06-07T06:12:06.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Yerel yönetimler için 6 beldede vatandaşlar sandık başında",
+      "description": "Tokat, Nevşehir ve Gümüşhane’deki 6 belde ile yurdun çeşitli bölgelerinden 362 mahallede yapılan ara seçimler için vatandaşlar sandık başına gitti.",
+      "url": "https://www.aa.com.tr/tr/gundem/yerel-yonetimler-icin-6-beldede-vatandaslar-sandik-basinda/3958840",
+      "image": "",
+      "date": "2026-06-07T05:59:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Geschäft mit Konzerttickets: So funktioniert die Zweitvermarktung",
+      "description": "Fans zahlen auf Zweitplattformen oft ein Vielfaches des ursprünglichen Ticketpreises. Künstler, Veranstalter und Verbraucherschützer fordern deshalb strengere Regeln. Doch wie funktioniert das Geschäft mit ausverkauften Konzerten - und was plant die Politik?",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/06/musik-konzert-ticket-zweitmarkt-verkauf-geschaeft-kritik.html",
+      "image": "",
+      "date": "2026-06-07T05:40:34.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "BBL-Halbfinale: Alba vergibt auch zweiten Matchball in Bamberg",
       "description": "Die Basketballer von Alba Berlin bangen um den Einzug ins Finale der BBL-Playoffs. Am Samstagabend verloren sie das vierte Halbfinal-Duell mit 67:81 in Bamberg. Das alles entscheidende fünfte Spiel findet Dienstag in Berlin statt.",
@@ -30,28 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/06/fussball-dfb-pokal-auslosung-erste-runde-fc-union-hertha-bsc-energie-cottbus-vfb-krieschow-vsg-altglienicke.html",
       "image": "",
       "date": "2026-06-06T18:25:59.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ausschreitungen im Olympiastadion: Polizei ermittelt gegen Polizisten",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/06/fussball-2-liga-hertha-bsc-schalke-04-fans-ausschreitungen-ermit.html",
-      "image": "",
-      "date": "2026-06-06T18:16:29.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Verfolgungsjagd der Polizei endet mit Festnahme eines Gesuchten",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/mann-flucht-auto-polizeikontrolle-kreuzberg-neukoelln-berlin.html",
-      "image": "",
-      "date": "2026-06-06T16:12:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
