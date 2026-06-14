@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-06-14T17:20:15.867Z",
-  "count": 5,
+  "lastUpdated": "2026-06-14T19:25:13.034Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "Arnavutluk'ta Zvernec'teki turizm projesine karşı gösteriler 15. gününde sürüyor",
+      "description": "Arnavutluk'un başkenti Tiran'da, Avlonya (Vlora) kentindeki Zvernec bölgesinde yapılması planlanan turizm projesine karşı başlatılan gösteriler, 15. gününde de devam ediyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/arnavutlukta-zvernecteki-turizm-projesine-karsi-gosteriler-15-gununde-suruyor/3966846",
+      "image": "",
+      "date": "2026-06-14T18:53:07.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin Missouri eyaletinde düşen uçakta 12 kişi hayatını kaybetti",
+      "description": "ABD'nin Missouri eyaletinde bir uçağın düşmesi sonucu 12 kişinin öldüğü belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdnin-missouri-eyaletinde-dusen-ucakta-12-kisi-hayatini-kaybetti/3966842",
+      "image": "",
+      "date": "2026-06-14T18:47:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berliner S-Bahnlinie S3 nach Blitzeinschlag stundenlang unterbrochen",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/sbahn-s3-blitzeinschlag-erkner-unterbrochen.html",
+      "image": "",
+      "date": "2026-06-14T18:35:48.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İsrailli analistlere göre, olası ABD-İran anlaşması Tahran için siyasi bir zafer",
+      "description": "İsrailli siyasi uzmanlar ve analistler, ABD ile İran arasında imzalanması beklenen anlaşmanın, Tahran için siyasi bir zafer olduğunu düşünüyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilli-analistlere-gore-olasi-abd-iran-anlasmasi-tahran-icin-siyasi-bir-zafer/3966828",
+      "image": "",
+      "date": "2026-06-14T18:14:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsviçre'de halk oylamasında, \"nüfusu 10 milyonla sınırlamayı öngören girişim\" reddedildi",
+      "description": "İsviçre'de, ülke gündeminde uzun süredir kapsamlı tartışmalara neden olan \"ülke nüfusunun 10 milyonla sınırlandırılmasını öngören girişim\" için yapılan halk oylamasında vatandaşların yüzde 54,8'i girişime \"Hayır\" oyu kullandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/isvicrede-halk-oylamasinda-nufusu-10-milyonla-sinirlamayi-ongoren-girisim-reddedildi/3966825",
+      "image": "",
+      "date": "2026-06-14T18:02:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kremlin: Putin ile Trump, İran ve Ukrayna'daki durumu telefonda görüştü",
+      "description": "Rusya Devlet Başkanı Vladimir Putin ile ABD Başkanı Donald Trump'ın, yaptıkları telefon görüşmesinde İran, Basra Körfezi ve Ukrayna'daki durumu ele aldıkları bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/kremlin-putin-ile-trump-iran-ve-ukraynadaki-durumu-telefonda-gorustu/3966821",
+      "image": "",
+      "date": "2026-06-14T17:52:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Neue Berliner S-Bahnlinie S15 ab Montag nimmt Betrieb auf",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-neue-s-bahnlinie-s15-nimmt-betrieb-auf.html",
+      "image": "",
+      "date": "2026-06-14T17:38:12.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Berliner HC gewinnt gegen Zehlendorfer Wespen und steigt in Bundesliga auf",
       "description": "",
@@ -30,28 +107,6 @@
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/06/brandenburger-landpartie-landwirtschaft-hanka-mittelstaedt.html",
       "image": "",
       "date": "2026-06-14T15:10:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kolumne: Was war das denn? Im Zeichen der Schlange",
-      "description": "Ob vor dem Berghain oder dem Bürgeramt, anstehen gehört zu den häufigsten Zeitvertreiben in Berlin. So unterschiedlich die Ziele sind, verrät das lineare Warten doch viel über die Stadt. Vielleicht sind Berlins Schlangen sogar die ehrlichste Statistik für gesellschaftliche Entwicklungen.",
-      "url": "https://www.rbb24.de/panorama/thema/was-war-das-denn/berlin-schlange-stehen-statussymbol-hype.html",
-      "image": "",
-      "date": "2026-06-14T14:31:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Hallen und Plätze buchen: Mehrzahl der Bezirke kann Berliner Sportstättenportal noch nicht nutzen",
-      "description": "Das neue Sportstättenportal des Senats sollte die Vergabe von Hallen- und Platzzeiten in Berlin für Vereine leichter und transparenter machen. Doch die Einführung kommt nur schleppend voran: Auch zwei Jahre nach dem Start ist die Mehrzahl der Bezirke nicht an Bord.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/06/berlin-bezirke-sportstaetten-portal-startet-schleppend.html",
-      "image": "",
-      "date": "2026-06-14T14:22:32.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
