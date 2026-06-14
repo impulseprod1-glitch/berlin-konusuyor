@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-06-14T11:56:59.324Z",
-  "count": 5,
+  "lastUpdated": "2026-06-14T14:10:04.573Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "Pakistan'ın Hayber Pahtunhva eyaletinde şiddetli rüzgar ve yağışlara bağlı olaylarda 7 kişi yaşamını yitirdi",
+      "description": "Pakistan'ın Hayber Pahtunhva eyaletinde etkili olan şiddetli rüzgar ve yağışların yol açtığı olaylarda, ilk belirlemelere göre 7 kişi hayatını kaybetti, 33 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/pakistanin-hayber-pahtunhva-eyaletinde-siddetli-ruzgar-ve-yagislara-bagli-olaylarda-7-kisi-yasamini-yitirdi/3966675",
+      "image": "",
+      "date": "2026-06-14T14:04:49.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD ordusuna ait savaş uçağı eğitim uçuşu sırasında düştü",
+      "description": "Pilot fırlatma koltuğu kullanarak kurtuldu.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-ordusuna-ait-savas-ucagi-egitim-ucusu-sirasinda-dustu/3966673",
+      "image": "",
+      "date": "2026-06-14T14:02:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Hindistan Hava Kuvvetlerine ait nakliye uçağı düştü",
+      "description": "Hindistan Hava Kuvvetlerine ait \"AN-32\" tipi nakliye uçağının, Assam eyaletinin Jorhat bölgesi yakınlarında düşmesi sonucu 5 asker hayatını kaybetti.",
+      "url": "https://www.aa.com.tr/tr/dunya/hindistan-hava-kuvvetlerine-ait-nakliye-ucagi-dustu/3966665",
+      "image": "",
+      "date": "2026-06-14T13:45:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "AFAD'dan bazı iller için \"sarı\" kodlu meteorolojik uyarı",
+      "description": "Afet ve Acil Durum Yönetimi Başkanlığı (AFAD), bazı iller için kuvvetli ve gök gürültülü sağanak uyarısında bulundu.",
+      "url": "https://www.aa.com.tr/tr/gundem/afaddan-bazi-iller-icin-sari-kodlu-meteorolojik-uyari/3966649",
+      "image": "",
+      "date": "2026-06-14T13:27:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "60 saniyede bugün (14 Haziran 2026)",
+      "description": "Türkiye ve dünya gündeminin 60 saniyelik özeti. AJet’in katkılarıyla...",
+      "url": "https://www.aa.com.tr/tr/gundem/60-saniyede-bugun-14-haziran-2026/3966643",
+      "image": "",
+      "date": "2026-06-14T13:14:21.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Wettbewerb um Bauprojekt Luisenblock Ost II am Schiffbauer Damm in Berlin entschieden",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/06/berlin-wettbewerb-gestopptes-neubau-projekt-lboII-entschieden.html",
+      "image": "",
+      "date": "2026-06-14T13:14:05.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Potsdamer Kajak-Duo Schopf und Lemke ist Europameister ",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/06/brandenburg-potsdam-berlin-kanu-em-kajak-gold.html",
+      "image": "",
+      "date": "2026-06-14T12:50:35.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "\"Mary Jane\": Cannabis-Messe in Berlin verzeichnet Besucherrekord von 75.000 Menschen",
       "description": "",
@@ -30,28 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/06/bahnstrecke-berlin-hamburg-generalsanierung-wiedereroeffnet.html",
       "image": "",
       "date": "2026-06-14T06:05:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Lagerplatz für ausgemusterte Telefonzellen in Michendorf wird aufgelöst",
-      "description": "Der bundesweit einzige Lagerplatz für ausgemusterte Telefonzellen in Michendorf wird aufgelöst. Seit 2013 wurden dort Häuschen für den Verkauf aufbereitet. Die führen heute unter anderem als Bücherboxen oder Duschkabinen ein zweites Leben.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/telefonzelle-michendorf-potsdam-mittelmark-friedhof-schrott-ende-verkauf.html",
-      "image": "",
-      "date": "2026-06-14T05:10:45.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kohleausstieg in der Lausitz: Gas geben statt Kohle verfeuern",
-      "description": "Mit dem Aus der Lausitzer Braunkohleförderung endet eine 160-jährige Industriegeschichte. Die Region setzt Hoffnungen in ein wasserstofffähiges Gaskraftwerk. Ein Gesetzentwurf könnte die Region jedoch benachteiligen und den Strukturwandel erschweren.",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/06/braunkohle-revier-lausitz-brandenburg-gaswerk-wasserstoff-reportage.html",
-      "image": "",
-      "date": "2026-06-14T05:07:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
