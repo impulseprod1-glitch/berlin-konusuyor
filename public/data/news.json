@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-06-15T18:24:52.226Z",
-  "count": 5,
+  "lastUpdated": "2026-06-15T22:17:54.275Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "AA Yönetim Kurulu Başkanı ve Genel Müdürü Karagöz: Fotoğrafın sanat, estetik ve haberle buluşmasını amaçladık",
+      "description": "AA Yönetim Kurulu Başkanı ve Genel Müdürü Serdar Karagöz, \"Anadolu Ajansı olarak tam 12 yıldır büyük bir disiplinle bu amaç doğrultusunda dünyanın en iyi fotoğrafçılarını, dünyanın en iyi jürisiyle bir araya getirdik.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/aa-yonetim-kurulu-baskani-ve-genel-muduru-karagoz-fotografin-sanat-estetik-ve-haberle-bulusmasini-amacladik/3968086",
+      "image": "",
+      "date": "2026-06-15T21:45:04.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail basını: Tel Aviv yönetimi ABD-İran mutabakatından rahatsız",
+      "description": "İsrailli yetkililer, ABD ile İran arasında varılan mutabakatı “şok edici” olarak nitelendirerek bunun, Tel Aviv yönetiminin beklentilerinin aksi yönünde bir gelişme olduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-tel-aviv-yonetimi-abd-iran-mutabakatindan-rahatsiz/3968082",
+      "image": "",
+      "date": "2026-06-15T21:18:24.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": " Belçika ile Mısır 1-1 berabere kaldı",
+      "description": "2026 FIFA Dünya Kupası G Grubu'nda Belçika ile Mısır 1-1 berabere kaldı.",
+      "url": "https://www.aa.com.tr/tr/spor/-belcika-ile-misir-1-1-berabere-kaldi/3968080",
+      "image": "",
+      "date": "2026-06-15T21:05:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Netanyahu, Tahran yönetiminin devrilmesini savaş hedefi olarak belirlemediğini ileri sürdü",
+      "description": "İsrail Başbakanı Binyamin Netanyahu, İran'a saldırıların hedeflerine ulaşılamadığı eleştirilerine karşı Tahran yönetiminin devrilmesini savaş hedefi olarak belirlemediğini iddia etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/netanyahu-tahran-yonetiminin-devrilmesini-savas-hedefi-olarak-belirlemedigini-ileri-surdu/3968070",
+      "image": "",
+      "date": "2026-06-15T20:50:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM, ABD-İran mutabakatı duyurusu sonrası Lübnan'da şiddet olaylarında \"düşüş gözlendiğini\" açıkladı",
+      "description": "Birleşmiş Milletler (BM), ABD ile İran'ın müzakerelerde son aşamaya gelindiğini duyurmasının ardından Lübnan'daki çatışmalarda \"düşüş gözlendiği\" bilgisini paylaştı.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-abd-iran-mutabakati-duyurusu-sonrasi-lubnanda-siddet-olaylarinda-dusus-gozlendigini-acikladi/3968066",
+      "image": "",
+      "date": "2026-06-15T20:45:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mit Flammen und Hubschrauber gegen den Eichenprozessionsspinner",
+      "description": "Der Eichenprozessionsspinner hat sich in Berlin und Brandenburg erneut ausgebreitet: Zahlreiche Parks und Waldgebiete sind von den Raupen befallen. Die Behörden setzen jetzt auf verschiedene Maßnahmen, um die Ausbreitung einzudämmen.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/eichenprozessionsspinner-eps-berlin-brandenburg-bekaempfung.html",
+      "image": "",
+      "date": "2026-06-15T18:24:49.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "WM-Kolumne: Politiker, die auf Bälle starren",
       "description": "Bei sportlichen Großveranstaltungen und erst recht bei Fußball-Weltmeisterschaften heißt es immer auch, sich vor den Anbiederungsversuchen der Politik in Deckung zu bringen. Wer es nicht schafft, könnte nachhaltig verstört werden.",
@@ -41,17 +107,6 @@
       "url": "https://www.rbb24.de/kultur/beitrag/2026/06/ddr-elektro-auto-elsist-trebus-ifa-freunde.html",
       "image": "",
       "date": "2026-06-15T16:41:59.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Amateurfußball: Berliner Verband ändert umstrittene Passfoto-Regel",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/06/fussball-berlin-verband-aendert-umstrittene-fotoregelung.html",
-      "image": "",
-      "date": "2026-06-15T16:33:15.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
