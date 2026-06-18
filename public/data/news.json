@@ -1,35 +1,57 @@
 {
-  "lastUpdated": "2026-06-18T20:25:28.912Z",
+  "lastUpdated": "2026-06-18T23:44:16.751Z",
   "count": 10,
   "articles": [
     {
-      "title": "Cumhurbaşkanlığı İletişim Başkanlığı destekleriyle, Dünya Kupası için ABD'de özel etkinlik alanı kuruldu",
-      "description": "Cumhurbaşkanlığı İletişim Başkanlığı, 2026 FIFA Dünya Kupası kapsamında ABD'nin Los Angeles kentinde \"Türkiye is Here\" (Türkiye burada) sloganıyla \"Turkish Vibe Zone\" etkinlik ve deneyim alanını hayata geçirdi.",
-      "url": "https://www.aa.com.tr/tr/spor/cumhurbaskanligi-iletisim-baskanligi-destekleriyle-dunya-kupasi-icin-abdde-ozel-etkinlik-alani-kuruldu/3971416",
+      "title": "İsrailli bakanlar, ABD Başkan Yardımcısı Vance'in ifadelerine tepki gösterdi",
+      "description": "İsrailli bakanlar, ABD Başkan Yardımcısı JD Vance'in ABD Başkanı Donald Trump'ı eleştiren İsrailli siyasilere ilişkin yaptığı açıklamalara tepki gösterdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilli-bakanlar-abd-baskan-yardimcisi-vancein-ifadelerine-tepki-gosterdi/3971482",
       "image": "",
-      "date": "2026-06-18T20:15:52.000Z",
+      "date": "2026-06-18T23:33:29.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Macron'dan Netanyahu'ya Lübnan'daki tutumunda sorumlu davranması çağrısı",
-      "description": "Fransa Cumhurbaşkanı Emmanuel Macron, Lübnan’a saldırılarını sürdüren İsrail'in Başbakanı Binyamin Netanyahu’ya \"sorumlu davranma\" çağrısı yaptı.",
-      "url": "https://www.aa.com.tr/tr/dunya/macrondan-netanyahuya-lubnandaki-tutumunda-sorumlu-davranmasi-cagrisi/3971409",
+      "title": "AB Konseyi Başkanı Costa, ekibine Rusya ile diplomatik kanal açılması talimatı verdi",
+      "description": "Avrupa Konseyi (AB) Başkanı Antonio Costa'nın ekibine Rusya ile diplomatik kanal açılması talimatı verdiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/ab-konseyi-baskani-costa-ekibine-rusya-ile-diplomatik-kanal-acilmasi-talimati-verdi/3971481",
       "image": "",
-      "date": "2026-06-18T20:03:23.000Z",
+      "date": "2026-06-18T23:21:41.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Arnavutluk'ta Zvernec'teki turizm projesine karşı gösteriler 19. gününde sürüyor",
-      "description": "Arnavutluk'un başkenti Tiran'da, Avlonya (Vlora) kentindeki Zvernec bölgesinde yapılması planlanan turizm projesine karşı başlatılan gösteriler, 19. gününde de devam ediyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/arnavutlukta-zvernecteki-turizm-projesine-karsi-gosteriler-19-gununde-suruyor/3971406",
+      "title": "Irak Başbakanı Zeydi’den sınır kapıları ve gümrüklerde kapsamlı değişiklik talimatı",
+      "description": "Irak Başbakanı ve Silahlı Kuvvetler Komutanı Ali ez-Zeydi, sınır kapıları ve gümrüklerde kaçakçılık ile yasa dışı geçişlerin önlenmesine yönelik bir dizi yeni talimat yayımladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/irak-basbakani-zeydi-den-sinir-kapilari-ve-gumruklerde-kapsamli-degisiklik-talimati/3971475",
       "image": "",
-      "date": "2026-06-18T19:57:27.000Z",
+      "date": "2026-06-18T23:00:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistin'in BM Daimi Temsilcisi Mansur: Gazze konusunda harekete geçmek için davet beklenmemeli",
+      "description": "Filistin'in Birleşmiş Milletler (BM) Daimi Temsilcisi Riyad Mansur, Gazze'de mutabık kalınan hususları uygulamaya geçirmek için kimsenin \"davet beklememesi\" gerektiğini söyledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistinin-bm-daimi-temsilcisi-mansur-gazze-konusunda-harekete-gecmek-icin-davet-beklenmemeli/3971474",
+      "image": "",
+      "date": "2026-06-18T22:58:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "A Milli Futbol Takımı Teknik Direktörü Montella: Futbolcuların yeniden sahaya çıkmak için istekli olduklarını görüyorum",
+      "description": "2026 FIFA Dünya Kupası D Grubu 2. maçında yarın Paraguay'la karşılaşacak A Milli Futbol Takımı'nda teknik direktör Vincenzo Montella, futbolcuların Paraguay maçı için sabırsızlandıklarını söyledi.",
+      "url": "https://www.aa.com.tr/tr/spor/a-milli-futbol-takimi-teknik-direktoru-montella-futbolcularin-yeniden-sahaya-cikmak-icin-istekli-olduklarini-goruyorum/3971469",
+      "image": "",
+      "date": "2026-06-18T22:42:10.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -47,17 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "Çekya ile Güney Afrika berabere kaldı",
-      "description": "2026 FIFA Dünya Kupası A Grubu'nun 2. haftasındaki Çekya-Güney Afrika maçı, 1-1 berabere sona erdi.",
-      "url": "https://www.aa.com.tr/tr/spor/cekya-ile-guney-afrika-berabere-kaldi/3971391",
-      "image": "",
-      "date": "2026-06-18T19:29:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Wahrenbrück (Elbe-Elster) soll bis Ende 2027 eine neue Brücke bekommen",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/06/brueckensperrung-wahrenbrueck-elbe-elster-loesung.html",
@@ -66,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "ABD-İran görüşmelerinin yapılması planlanan Bürgenstock'ta geniş güvenlik önlemleri alındı",
-      "description": "ABD ile İran arasında imzalanan mutabakata dair ilk teknik görüşmelerin yapılması planlanan İsviçre'nin Nidwalden kantonuna bağlı Bürgenstock kasabasında geniş güvenlik önlemleri alındı.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-iran-gorusmelerinin-yapilmasi-planlanan-burgenstockta-genis-guvenlik-onlemleri-alindi/3971353",
-      "image": "",
-      "date": "2026-06-18T18:43:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
