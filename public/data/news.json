@@ -1,38 +1,93 @@
 {
-  "lastUpdated": "2026-06-20T17:25:51.307Z",
+  "lastUpdated": "2026-06-20T19:24:45.907Z",
   "count": 10,
   "articles": [
     {
-      "title": "Isparta'da tur otobüsünün devrildiği kazada 4 kişi hayatını kaybetti, 15 kişi yaralandı",
-      "description": "Isparta'nın Gelendost ilçesinde tur otobüsünün devrilmesi sonucu ilk belirlemelere göre 4 kişi hayatını kaybetti, 3'ü ağır 15 kişi yaralandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/ispartada-tur-otobusunun-devrildigi-kazada-4-kisi-hayatini-kaybetti-15-kisi-yaralandi/3973250",
+      "title": "A Milli Kadın Voleybol Takımı, Almanya'yı 3-2 yendi ",
+      "description": "A Milli Kadın Voleybol Takımı, 2026 FIVB Milletler Ligi'nin (VNL) ikinci haftasındaki üçüncü maçında Almanya'yı 3-2 yendi.",
+      "url": "https://www.aa.com.tr/tr/spor/a-milli-kadin-voleybol-takimi-almanyayi-3-2-yendi-/3973312",
       "image": "",
-      "date": "2026-06-20T16:57:44.000Z",
+      "date": "2026-06-20T19:20:57.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "İsrailli yetkili, Hizbullah'tan karşılık gelmesi halinde İsrail ordusunun şiddetle saldıracağı tehdidinde bulundu",
-      "description": "İsrail ordusu, AA muhabirinin Netanyahu'nun İsrail ordusuna Lübnan'da ateşkes talimatı yöneltip yöneltmediğine ilişkin sorusuna, \"yorum yapmayacakları\" yanıtını iletti.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilli-yetkili-hizbullahtan-karsilik-gelmesi-halinde-israil-ordusunun-siddetle-saldiracagi-tehdidinde-bulundu/3973247",
+      "title": "Nando De Colo, aktif basketbolculuk kariyerini sonlandırdı",
+      "description": "Fenerbahçe Beko'nun Fransız oyun kurucusu Nando De Colo, aktif basketbolculuk kariyerini noktaladı.",
+      "url": "https://www.aa.com.tr/tr/spor/nando-de-colo-aktif-basketbolculuk-kariyerini-sonlandirdi/3973303",
       "image": "",
-      "date": "2026-06-20T16:50:29.000Z",
+      "date": "2026-06-20T19:04:44.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "İstanbul'da yamaç paraşütü yapan 2 kişi kayalıklara çarparak yaralandı",
-      "description": "Çatalca'da yamaç paraşütü yaparken rüzgarın etkisiyle kayalıklara çarpan 1'i çocuk 2 kişi yaralandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-yamac-parasutu-yapan-2-kisi-kayaliklara-carparak-yaralandi/3973244",
+      "title": "Bakan Fidan, Kahire'de düzenlenen Libya dahil bölgesel konuların ele alındığı toplantıya katıldı",
+      "description": "Dışişleri Bakanı Hakan Fidan, Mısır'ın başkenti Kahire’de düzenlenen ve Libya dahil bölgesel konuların ele alındığı toplantıya katıldı.",
+      "url": "https://www.aa.com.tr/tr/gundem/bakan-fidan-kahirede-duzenlenen-libya-dahil-bolgesel-konularin-ele-alindigi-toplantiya-katildi/3973297",
       "image": "",
-      "date": "2026-06-20T16:43:39.000Z",
+      "date": "2026-06-20T18:46:44.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Potsdam verschiebt neue Verpackungssteuer um drei Monate",
+      "description": "",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/06/potsdam-verschiebt-verpackungssteuer.html",
+      "image": "",
+      "date": "2026-06-20T18:43:50.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu: Lübnan'da işgal altındaki bölgeler dışında saldırıları durdurma talimatı aldık ",
+      "description": "İsrail ordusu, Başbakan Binyamin Netanyahu'dan Lübnan'a saldırıları durdurması için talimat aldığını ancak işgal ettiği bölgelerde saldırı ve yıkımı sürdüreceğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-lubnanda-isgal-altindaki-bolgeler-disinda-saldirilari-durdurma-talimati-aldik-/3973294",
+      "image": "",
+      "date": "2026-06-20T18:37:12.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BBL-Finale: Das spricht für eine Alba-Meisterschaft gegen Bayern",
+      "description": "Nach dem spektakulären Comeback gegen den FC Bayern hat Alba Berlin im fünften Finale die Chance auf die überraschendste BBL-Meisterschaft der Vereinsgeschichte. Diese fünf Argumente sprechen für die Erfüllung des Berliner Titeltraums.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/06/bbl-finale-playoffs-basketball-alba-berlin-fc-bayern-andreas-obst-sap-garden-pesic.html",
+      "image": "",
+      "date": "2026-06-20T18:27:44.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Çiftçi, Ayasofya-i Kebir Cami-i Şerifi'ndeki restorasyon çalışmalarını inceledi",
+      "description": "İçişleri Bakanı Mustafa Çiftçi, Ayasofya-i Kebir Cami-i Şerifi'nde yürütülen restorasyon çalışmalarını yerinde inceledi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bakan-ciftci-ayasofya-i-kebir-cami-i-serifindeki-restorasyon-calismalarini-inceledi/3973283",
+      "image": "",
+      "date": "2026-06-20T18:09:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berlin Tennis Open: Philippinerin Eala besiegt auch Svitolina ",
+      "description": "Bei der sechsten Auflage seit dem Comeback als Rasenturnier haben die Berlin Tennis Open wieder ein Weltklasse-Starterfeld beisammen. Inklusive der besten Spielerin der Geschichte. Hier alle wichtigen Ereignisse ab dem Achtelfinale.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/06/tennis-wta-turnier-berlin-open-liveticker-gauff-sabalenka-williams.html",
+      "image": "",
+      "date": "2026-06-20T17:20:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -47,28 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "Kolombiya lideri Petro'dan Trump'a \"İsrail'in Lübnan'a saldırılarını durdurun\" çağrısı",
-      "description": "Kolombiya Cumhurbaşkanı Gustavo Petro, ateşkese rağmen Lübnan'a yönelik saldırılarını sürdüren İsrail'in durdurulması için ABD Başkanı Donald Trump'a çağrıda bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/kolombiya-lideri-petrodan-trumpa-israilin-lubnana-saldirilarini-durdurun-cagrisi/3973240",
-      "image": "",
-      "date": "2026-06-20T16:37:04.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin Tennis Open: Philippinerin Eala besiegt auch Svitolina ",
-      "description": "Bei der sechsten Auflage seit dem Comeback als Rasenturnier haben die Berlin Tennis Open wieder ein Weltklasse-Starterfeld beisammen. Inklusive der besten Spielerin der Geschichte. Hier alle wichtigen Ereignisse ab dem Achtelfinale.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/06/tennis-wta-turnier-berlin-open-liveticker-gauff-sabalenka-williams.html",
-      "image": "",
-      "date": "2026-06-20T16:25:51.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "Berlin-Wilmersdorf: Feuerwehr stößt mit Auto zusammen - mehrere Verletzte",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/06/feuerwehr-auto-kollision-verletzte-berlin.html",
@@ -77,39 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Italiener Mapelli feiert ersten DTM-Sieg auf dem Lausitzring",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/06/motorsport-dtm-lausitzring-sieger-marco-mapelli.html",
-      "image": "",
-      "date": "2026-06-20T15:37:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin wirbt bei Fachverbänden für Olympia-Bewerbung",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/06/olympia-berlin-delegation-dosb-sportverbaende-politik.html",
-      "image": "",
-      "date": "2026-06-20T15:34:47.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Filistin ve Lübnan'a saldırılarını sürdüren İsrail, İsveç'te protesto edildi",
-      "description": "İsrail'in Gazze Şeridi ve Lübnan'a saldırılarını sürdürmesi, İsveç'in başkenti Stockholm'de protesto edildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-ve-lubnana-saldirilarini-surduren-israil-isvecte-protesto-edildi/3973081",
-      "image": "",
-      "date": "2026-06-20T13:59:14.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
