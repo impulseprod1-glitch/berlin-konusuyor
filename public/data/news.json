@@ -1,16 +1,60 @@
 {
-  "lastUpdated": "2026-06-21T15:50:00.208Z",
+  "lastUpdated": "2026-06-21T17:26:47.110Z",
   "count": 10,
   "articles": [
     {
-      "title": "Berlin Tennis Open: Anlage nach Unwetter wieder geöffnet",
+      "title": "Berlin Tennis Open: Finale geht in den dritten Satz",
       "description": "Bei der sechsten Auflage seit dem Comeback als Rasenturnier haben die Berlin Tennis Open wieder ein Weltklasse-Starterfeld beisammen. Inklusive der besten Spielerin der Geschichte. Hier alle wichtigen Ereignisse ab dem Achtelfinale.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/06/tennis-wta-turnier-berlin-open-liveticker-gauff-sabalenka-williams.html",
       "image": "",
-      "date": "2026-06-21T15:41:26.000Z",
+      "date": "2026-06-21T17:08:14.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Finalsieg in München: Alba Berlin ist deutscher Basketball-Meister ",
+      "description": "Mit einem überragenden Comeback hat sich Alba Berlin die Deutsche Meisterschaft im Basketball gesichert. Die Berliner lagen im entscheidenden Finalspiel in München bereits deutlich zurück – und entrissen den Münchnern dann noch den Titel.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/06/basketball-playoffs-finale-bayern-muenchen-alba-berlin-spiel-5-deutsche-meisterschaft.html",
+      "image": "",
+      "date": "2026-06-21T16:56:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan: Tüm imkanlarını evlatlarına adayan kahraman babalarımızın Babalar Günü'nü tebrik ediyorum",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Babalar Günü'nü tebrik etti.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-tum-imkanlarini-evlatlarina-adayan-kahraman-babalarimizin-babalar-gununu-tebrik-ediyorum/3973841",
+      "image": "",
+      "date": "2026-06-21T16:27:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Liveticker: Hitze-Wochenende mit Gewittern, Starkregen und Sturmböen",
+      "description": "In Berlin und Brandenburg ist es weiter heiß - und es hat teils heftig gekracht und geregnet. Die Entwicklungen im Liveticker.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-brandenburg-hitze-wetter-ticker.html",
+      "image": "",
+      "date": "2026-06-21T15:56:34.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "St. Petersburg’da akaryakıt satışına sınırlama uygulanıyor",
+      "description": "Rusya’nın St. Petersburg kentindeki çok sayıda akaryakıt istasyonunda benzin ve motorin satışına araç başına 20 ila 100 litre arasında değişen sınırlamalar uygulanıyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/st-petersburg-da-akaryakit-satisina-sinirlama-uygulaniyor/3973821",
+      "image": "",
+      "date": "2026-06-21T15:46:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -22,17 +66,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Liveticker: Hitze-Wochenende mit Gewittern, Starkregen und Sturmböen",
-      "description": "In Berlin und Brandenburg ist es weiter heiß - und es kann heftig krachen. Für den Süden Brandenburgs gibt bereits eine amtliche Unwetterwarnung. Die Entwicklungen im Liveticker.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-brandenburg-hitze-wetter-ticker.html",
-      "image": "",
-      "date": "2026-06-21T14:50:46.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     },
     {
@@ -69,44 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "ABD Başkan Yardımcısı Vance, İran ile görüşmelerde \"büyük ilerleme\" kaydedildiğini belirtti",
-      "description": "ABD Başkan Yardımcısı JD Vance, İran ile görüşmelerde \"sadece son birkaç saat içinde büyük ilerleme görüldüğünü\" ve \"daha fazla ilerleme\" kaydedilmesinin beklendiğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-baskan-yardimcisi-vance-iran-ile-gorusmelerde-buyuk-ilerleme-kaydedildigini-belirtti/3973759",
-      "image": "",
-      "date": "2026-06-21T14:13:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Belçika'da aşırı sıcaklar nedeniyle tren seferleri iptal edilecek",
-      "description": "Belçika, hafta başından itibaren etkisini artırması beklenen yeni sıcak hava dalgasına hazırlanırken, demir yolu işletmecisi SNCB aşırı sıcaklar nedeniyle bazı tren seferlerinin iptal edileceğini duyurdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/belcikada-asiri-sicaklar-nedeniyle-tren-seferleri-iptal-edilecek/3973756",
-      "image": "",
-      "date": "2026-06-21T14:10:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Weniger Hürden für Open-Airs in Berlin? Mitte wagt einen neuen Ansatz",
       "description": "Open Air Kultur hat an Bedeutung gewonnen. Doch für Veranstalter ist es in Berlin schwerer geworden, solche Events zu organisieren. Der Bezirk Mitte will es ihnen nun einfacher machen.",
       "url": "https://www.rbb24.de/kultur/beitrag/2026/06/berlin-open-air-veranstaltungen-genehmigung-fete-de-la-musique.html",
       "image": "",
       "date": "2026-06-21T13:55:07.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin-Charlottenburg: Mann soll Passanten beleidigt und angegriffen haben",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berin-antisemitische-angriff-charlottenburg-uhlandstrasse.html",
-      "image": "",
-      "date": "2026-06-21T13:38:51.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
