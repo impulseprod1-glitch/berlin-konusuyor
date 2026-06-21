@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-06-21T19:28:19.403Z",
+  "lastUpdated": "2026-06-21T21:12:39.087Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Suriye Cumhurbaşkanı Şara: Suriye'nin geçmişte Lübnan'a yaptığı askeri müdahale anlayışına dönmek istemiyoruz",
+      "description": "Suriye Cumhurbaşkanı Ahmed Şara, ABD Başkanı Donald Trump’ın Suriye’nin Lübnan’a müdahale edeceği yönündeki sözlerinin yanlış anlaşıldığını belirterek, \"Suriye'nin geçmişte Lübnan'a yaptığı askeri müdahale anlayışına dönmek istemiyoruz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/suriye-cumhurbaskani-sara-suriyenin-gecmiste-lubnana-yaptigi-askeri-mudahale-anlayisina-donmek-istemiyoruz/3973992",
+      "image": "",
+      "date": "2026-06-21T20:46:11.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Göktaş: Aileyi değersizleştiren kültüre karşı güçlü bir sosyal bilinç oluşturmak zorundayız",
+      "description": "Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, \"Ailelerin yanında olmaya devam edeceğiz ama aynı zamanda aileyi değersizleştiren kültüre karşı da güçlü bir sosyal bilinç oluşturmak zorundayız.\" ifadelerini kullandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/bakan-goktas-aileyi-degersizlestiren-kulture-karsi-guclu-bir-sosyal-bilinc-olusturmak-zorundayiz/3973979",
+      "image": "",
+      "date": "2026-06-21T20:25:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Katar'da bir fabrikada patlama meydana geldi",
+      "description": "Katar'ın başkenti Doha'nın kuzeyindeki Ras Laffan Sanayi Bölgesi'nde bir fabrikada patlama meydana geldiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/katarda-bir-fabrikada-patlama-meydana-geldi/3973973",
+      "image": "",
+      "date": "2026-06-21T20:15:33.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berlin: Mehr als 80.000 Menschen beim Tag der offenen Tür der Bundesregierung",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-tag-der-offenen-tuer-bundesregierung-80000-besucher.html",
+      "image": "",
+      "date": "2026-06-21T19:38:05.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "A Milli Kadın Voleybol Takımı, VNL'nin ikinci haftasında 4'te 4 yaptı",
+      "description": "A Milli Kadın Voleybol Takımı, 2026 FIVB Milletler Ligi'nin (VNL) ikinci haftasındaki dördüncü ve son maçında Çin'i 3-2 yendi.",
+      "url": "https://www.aa.com.tr/tr/spor/a-milli-kadin-voleybol-takimi-vnlnin-ikinci-haftasinda-4te-4-yapti/3973944",
+      "image": "",
+      "date": "2026-06-21T19:31:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Finalsieg in München: Alba Berlin ist deutscher Basketball-Meister ",
       "description": "Mit einem überragenden Comeback hat sich Alba Berlin die Deutsche Meisterschaft im Basketball gesichert. Die Berliner lagen im entscheidenden Finalspiel in München bereits deutlich zurück – und entrissen den Münchnern dann noch den Titel.",
@@ -14,17 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "Baba adayları, Babalar Günü'nde doğum ve bebek bakımı eğitimi aldı",
-      "description": "Ankara Bilkent Şehir Hastanesi Kadın Doğum Hastanesi'nde Babalar Günü dolayısıyla düzenlenen \"Bebeğimizi Bekliyoruz\" etkinliğinde, gebelere ve baba adaylarına doğum ve bebek bakımı eğitim verildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/baba-adaylari-babalar-gununde-dogum-ve-bebek-bakimi-egitimi-aldi/3973929",
-      "image": "",
-      "date": "2026-06-21T18:46:03.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Hunderte Konzerte bei Fête de la Musique in Berlin & Brandenburg",
       "description": "",
       "url": "https://www.rbb24.de/kultur/beitrag/2026/06/fete-de-la-musique-berlin-2026-hunderte-konzerte.html",
@@ -33,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İspanya, H Grubu'ndaki ikinci maçında Suudi Arabistan'ı 4-0 mağlup etti",
-      "description": "2026 FIFA Dünya Kupası'nda İspanya, H Grubu'ndaki ikinci maçında Suudi Arabistan'ı 4-0 mağlup etti.",
-      "url": "https://www.aa.com.tr/tr/spor/ispanya-h-grubundaki-ikinci-macinda-suudi-arabistani-4-0-maglup-etti/3973918",
-      "image": "",
-      "date": "2026-06-21T18:36:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -69,44 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Fransa'da aşırı sıcak hava nedeniyle yarın 845 okul kapalı olacak",
-      "description": "Fransa'da etkili olan aşırı sıcak hava nedeniyle yarın 845 okulun kapalı olacağı belirtildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransada-asiri-sicak-hava-nedeniyle-yarin-845-okul-kapali-olacak/3973882",
-      "image": "",
-      "date": "2026-06-21T17:32:59.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan: Tüm imkanlarını evlatlarına adayan kahraman babalarımızın Babalar Günü'nü tebrik ediyorum",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Babalar Günü'nü tebrik etti.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-tum-imkanlarini-evlatlarina-adayan-kahraman-babalarimizin-babalar-gununu-tebrik-ediyorum/3973841",
-      "image": "",
-      "date": "2026-06-21T16:27:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Liveticker: Hitze-Wochenende mit Gewittern, Starkregen und Sturmböen",
       "description": "In Berlin und Brandenburg ist es weiter heiß - und es hat teils heftig gekracht und geregnet. Die Entwicklungen im Liveticker.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/06/berlin-brandenburg-hitze-wetter-ticker.html",
       "image": "",
       "date": "2026-06-21T15:56:34.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Hertha-Frauen krönen Saison mit Aufstieg in die 2. Liga",
-      "description": "Der Aufstieg ist perfekt: Die Frauen von Hertha BSC spielen in der kommenden Saison in der 2. Liga. Nach dem Sieg in Hinspiel konnten sich die Berlinerinnen im Rückspiel gegen den 1. FC Saarbrücken sogar eine späte Niederlage leisten.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/06/fussball-aufstieg-zweite-liga-hertha-bsc-saarbruecken-frauen-spielbericht.html",
-      "image": "",
-      "date": "2026-06-21T14:36:40.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
