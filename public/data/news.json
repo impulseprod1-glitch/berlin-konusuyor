@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-06-27T19:18:59.259Z",
+  "lastUpdated": "2026-06-27T21:01:59.375Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Türkiye, FIBA 17 Yaş Altı Dünya Kupası'na galibiyetle başladı",
+      "description": "Basketbol FIBA 17 Yaş Altı Dünya Kupası C Grubu ilk maçında Türkiye, 25 sayı geriye düştüğü ve iki kez uzatmaya giden karşılaşmada Yeni Zelanda'yı 112-100 yendi.",
+      "url": "https://www.aa.com.tr/tr/spor/turkiye-fiba-17-yas-alti-dunya-kupasina-galibiyetle-basladi/3980098",
+      "image": "",
+      "date": "2026-06-27T20:46:42.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump, ABD Göçmenlik ve Gümrük Muhafaza Dairesi için direktör adayını açıkladı",
+      "description": "ABD Başkanı Donald Trump, Göçmenlik ve Gümrük Muhafaza Dairesi (ICE) için yeni direktör adayının Lance Schroyer olduğunu bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-abd-gocmenlik-ve-gumruk-muhafaza-dairesi-icin-direktor-adayini-acikladi/3980094",
+      "image": "",
+      "date": "2026-06-27T20:32:27.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İbn Haldun Üniversitesi 8'inci mezunlarını uğurladı",
+      "description": "İbn Haldun Üniversitesi 8. Mezuniyet Töreni, üniversitenin Başakşehir Külliyesi'nde gerçekleştirildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ibn-haldun-universitesi-8inci-mezunlarini-ugurladi/3980092",
+      "image": "",
+      "date": "2026-06-27T20:31:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "+++ Gewitter: Unwetterwarnung für Berlin und Teile Brandenburgs +++ Über 40 Grad in Brandenburg gemessen +++",
+      "description": "Die Hitzewelle soll am Wochenende in Berlin und Brandenburg ihren Höhepunkt erreichen. Gewarnt wird vor einer extremen Wärmebelastung. Die Entwicklungen im Liveticker.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/liveticker-hitze-berlin-brandenburg-sommer-wetter-.html",
+      "image": "",
+      "date": "2026-06-27T20:23:10.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Energie Cottbus gewinnt auch zweites Testspiel gegen unterklassigen Gegner",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/06/fussball-zweite-bundesliga-fc-energie-cottbus-testspiel-lok-calau-bittencourt.html",
+      "image": "",
+      "date": "2026-06-27T20:16:26.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Arnavutluk'ta Zvernec'teki turizm projesine karşı gösteriler sürüyor",
+      "description": "Arnavutluk'un başkenti Tiran'da, Avlonya (Vlora) kentindeki Zvernec bölgesinde yapılması planlanan turizm projesine karşı başlatılan gösteriler devam ediyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/arnavutlukta-zvernecteki-turizm-projesine-karsi-gosteriler-suruyor/3980072",
+      "image": "",
+      "date": "2026-06-27T19:29:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Sırbistan Cumhurbaşkanı Vucic, birkaç hafta içerisinde görevinden istifa edeceğini duyurdu",
+      "description": "Sırbistan Cumhurbaşkanı Aleksandar Vucic, birkaç hafta içerisinde görevinden istifa ederek, erken seçim tarihini açıklayacağını söyledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/sirbistan-cumhurbaskani-vucic-birkac-hafta-icerisinde-gorevinden-istifa-edecegini-duyurdu/3980070",
+      "image": "",
+      "date": "2026-06-27T19:23:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Neuer Brandenburger Temperaturrekord: Über 40 Grad in Brandenburg",
       "description": "Am Samstag wurden an mehreren Wetterstationen in Berlin und Brandenburg bisherige Temperaturrekorde übertroffen. In Berlin wurden am Nachmittag 39,9 Grad gemessen, im brandenburgischen Baruth sogar 40,8 Grad.",
@@ -11,72 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bosna Hersek'teki 516. Ayvaz Dede Şenlikleri öncesi düzenlenen geçit törenine yüzlerce atlı katıldı",
-      "description": "Bosna Hersek'te bu yıl 516'ncısı düzenlenen Ayvaz Dede Şenlikleri kapsamında, yarınki merkezi programa katılacak yaklaşık 320 atlıyla Donji Vakuf kentinde geçit töreni yapıldı.",
-      "url": "https://www.aa.com.tr/tr/dunya/bosna-hersekteki-516-ayvaz-dede-senlikleri-oncesi-duzenlenen-gecit-torenine-yuzlerce-atli-katildi/3980056",
-      "image": "",
-      "date": "2026-06-27T19:01:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Rize'de denizde çıkan iki hortum cep telefonuyla görüntülendi",
-      "description": "Rize'nin Ardeşen ilçesinde denizde iki hortum meydana geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/rizede-denizde-cikan-iki-hortum-cep-telefonuyla-goruntulendi/3980045",
-      "image": "",
-      "date": "2026-06-27T18:47:28.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "+++ Gewitter: Unwetterwarnung für Westen und Nordwesten Brandenburgs +++ Temperaturrekorde übertroffen +++  ",
-      "description": "Die Hitzewelle soll am Wochenende in Berlin und Brandenburg ihren Höhepunkt erreichen. Gewarnt wird vor einer extremen Wärmebelastung. Die Entwicklungen im Liveticker.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/06/liveticker-hitze-berlin-brandenburg-sommer-wetter-.html",
-      "image": "",
-      "date": "2026-06-27T18:07:56.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Filistin Devlet Başkanı Abbas'tan Kudüs'teki kiliselere \"İsrail'in emlak vergisine karşı durun\" çağrısı",
-      "description": "Filistin Devlet Başkanı Mahmud Abbas, İsrail'in Kudüs Belediyesi aracılığıyla kiliselere dayattığı emlak vergisini reddetmeleri ve bu yöndeki icraatları kabul etmemeleri çağrısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-devlet-baskani-abbastan-kudusteki-kiliselere-israilin-emlak-vergisine-karsi-durun-cagrisi/3980016",
-      "image": "",
-      "date": "2026-06-27T17:42:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gençlerbirliği'nde olağanüstü genel kurul kararı",
-      "description": "Gençlerbirliği Kulübü Genel Sekreteri Kaynar, kulübün 18 Temmuz'da olağanüstü genel kurula gideceğini, ilk toplantıda çoğunluk sağlanamaması halinde genel kurulun 25 Temmuz'da yapılacağını söyledi.",
-      "url": "https://www.aa.com.tr/tr/spor/genclerbirliginde-olaganustu-genel-kurul-karari/3980014",
-      "image": "",
-      "date": "2026-06-27T17:40:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Yardımcısı Yılmaz: Bilgiyi, bilimi, teknolojiyi ahlak, hukuk, merhamet, hikmetle buluşturmamız lazım",
-      "description": "Cumhurbaşkanı Yardımcısı Yılmaz, \"Tek başına bilim ve teknoloji yeterli olsaydı, Gazze'deki bu soykırımı görmezdik, bu soykırım yaşanmazdı. Bilgiyi, bilimi, teknolojiyi ahlak, hukuk, merhamet, hikmetle buluşturmamız lazım.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-yardimcisi-yilmaz-bilgiyi-bilimi-teknolojiyi-ahlak-hukuk-merhamet-hikmetle-bulusturmamiz-lazim/3979991",
-      "image": "",
-      "date": "2026-06-27T16:59:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/06/brandenburg-autobahn-a24-toedlicher-unfall-motorroller-ostprignitz-ruppin.html",
       "image": "",
       "date": "2026-06-27T13:09:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Zwischen Schweiß und Tränen: Bruno Mars im Olympiastadion Berlin",
-      "description": "Ventilatoren, Fächer und viel Wasser – gegen die Hitze gewappnet erleben die Fans im Berliner Olympiastadion eine musikalische Zeitreise durch die größten Hits von Bruno Mars. Ein Abend voller Emotionen.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/06/konzert-bruno-mars-olympiastadion-berlin-hitzewelle.html",
-      "image": "",
-      "date": "2026-06-27T08:23:23.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
