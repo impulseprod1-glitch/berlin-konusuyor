@@ -1,49 +1,71 @@
 {
-  "lastUpdated": "2026-06-27T21:01:59.375Z",
+  "lastUpdated": "2026-06-27T23:01:15.295Z",
   "count": 10,
   "articles": [
     {
-      "title": "Türkiye, FIBA 17 Yaş Altı Dünya Kupası'na galibiyetle başladı",
-      "description": "Basketbol FIBA 17 Yaş Altı Dünya Kupası C Grubu ilk maçında Türkiye, 25 sayı geriye düştüğü ve iki kez uzatmaya giden karşılaşmada Yeni Zelanda'yı 112-100 yendi.",
-      "url": "https://www.aa.com.tr/tr/spor/turkiye-fiba-17-yas-alti-dunya-kupasina-galibiyetle-basladi/3980098",
+      "title": "ABD ordusu, \"ticari taşımacılığa yönelik saldırıları\" gerekçesiyle İran’da bazı hedeflere saldırılar düzenledi",
+      "description": "ABD Merkez Kuvvetler Komutanlığı CENTCOM, Hürmüz Boğazı'nda İran'ın “ticari taşımacılığa yönelik saldırılarını” gerekçe göstererek, ülkedeki bazı hedeflere saldırılar düzenlediğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-ordusu-ticari-tasimaciliga-yonelik-saldirilari-gerekcesiyle-iran-da-bazi-hedeflere-saldirilar-duzenledi/3980136",
       "image": "",
-      "date": "2026-06-27T20:46:42.000Z",
+      "date": "2026-06-27T22:30:14.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Trump, ABD Göçmenlik ve Gümrük Muhafaza Dairesi için direktör adayını açıkladı",
-      "description": "ABD Başkanı Donald Trump, Göçmenlik ve Gümrük Muhafaza Dairesi (ICE) için yeni direktör adayının Lance Schroyer olduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/trump-abd-gocmenlik-ve-gumruk-muhafaza-dairesi-icin-direktor-adayini-acikladi/3980094",
-      "image": "",
-      "date": "2026-06-27T20:32:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İbn Haldun Üniversitesi 8'inci mezunlarını uğurladı",
-      "description": "İbn Haldun Üniversitesi 8. Mezuniyet Töreni, üniversitenin Başakşehir Külliyesi'nde gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/ibn-haldun-universitesi-8inci-mezunlarini-ugurladi/3980092",
-      "image": "",
-      "date": "2026-06-27T20:31:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "+++ Gewitter: Unwetterwarnung für Berlin und Teile Brandenburgs +++ Über 40 Grad in Brandenburg gemessen +++",
+      "title": "+++ Gewitter zieht über Westen Berlins und Brandenburgs +++ Orchester muss in Waldbühne Konzert leicht verkürzen +++",
       "description": "Die Hitzewelle soll am Wochenende in Berlin und Brandenburg ihren Höhepunkt erreichen. Gewarnt wird vor einer extremen Wärmebelastung. Die Entwicklungen im Liveticker.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/06/liveticker-hitze-berlin-brandenburg-sommer-wetter-.html",
       "image": "",
-      "date": "2026-06-27T20:23:10.000Z",
+      "date": "2026-06-27T22:17:39.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ABD ordusu, İran'da bazı hedeflere saldırılar düzenlediğini duyurdu",
+      "description": "",
+      "url": "https://www.aa.com.tr/tr/live-blog/abd-ordusu-iranda-bazi-hedeflere-saldirilar-duzenledigini-duyurdu/4420",
+      "image": "",
+      "date": "2026-06-27T21:56:38.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Lübnan Cumhurbaşkanı Avn ile ABD Başkanı Trump, Lübnan-İsrail çerçeve anlaşmasını görüştü",
+      "description": "Lübnan Cumhurbaşkanı Joseph Avn ile ABD Başkanı Donald Trump, ABD'nin arabuluculuğunda Lübnan ile İsrail arasında varılan çerçeve anlaşmasının uygulanmasına ilişkin son gelişmeleri ele aldı.",
+      "url": "https://www.aa.com.tr/tr/dunya/lubnan-cumhurbaskani-avn-ile-abd-baskani-trump-lubnan-israil-cerceve-anlasmasini-gorustu/3980112",
+      "image": "",
+      "date": "2026-06-27T21:29:04.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Japonya'da 5,9 büyüklüğünde deprem",
+      "description": "Japonya'da 5,9 büyüklüğünde deprem meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/dunya/japonyada-5-9-buyuklugunde-deprem/3980108",
+      "image": "",
+      "date": "2026-06-27T21:12:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Aleksandrov Rus Kızılordu Korosu ve Hayko Cepkin Harbiye'de aynı sahnede buluştu",
+      "description": "Dünyanın önde gelen müzik toplulukları arasında gösterilen Aleksandrov Rus Kızılordu Korosu ve Dans Topluluğu, Türkiye turnesi kapsamında Türk rock müziğinin sevilen isimlerinden Hayko Cepkin ile aynı sahneyi paylaştı.",
+      "url": "https://www.aa.com.tr/tr/kultur/aleksandrov-rus-kizilordu-korosu-ve-hayko-cepkin-harbiyede-ayni-sahnede-bulustu/3980107",
+      "image": "",
+      "date": "2026-06-27T21:09:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -55,28 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Arnavutluk'ta Zvernec'teki turizm projesine karşı gösteriler sürüyor",
-      "description": "Arnavutluk'un başkenti Tiran'da, Avlonya (Vlora) kentindeki Zvernec bölgesinde yapılması planlanan turizm projesine karşı başlatılan gösteriler devam ediyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/arnavutlukta-zvernecteki-turizm-projesine-karsi-gosteriler-suruyor/3980072",
-      "image": "",
-      "date": "2026-06-27T19:29:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Sırbistan Cumhurbaşkanı Vucic, birkaç hafta içerisinde görevinden istifa edeceğini duyurdu",
-      "description": "Sırbistan Cumhurbaşkanı Aleksandar Vucic, birkaç hafta içerisinde görevinden istifa ederek, erken seçim tarihini açıklayacağını söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/sirbistan-cumhurbaskani-vucic-birkac-hafta-icerisinde-gorevinden-istifa-edecegini-duyurdu/3980070",
-      "image": "",
-      "date": "2026-06-27T19:23:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
