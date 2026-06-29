@@ -1,57 +1,57 @@
 {
-  "lastUpdated": "2026-06-28T23:00:56.675Z",
+  "lastUpdated": "2026-06-29T03:48:23.603Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail basını: Netanyahu seçimlere bağımsız listeyle girme sinyali verdi",
+      "description": "İsrail Başbakanı Binyamin Netanyahu'nun, liderliğini yaptığı Likud Partisi içinde seçim listesinin oluşturulma yöntemine ilişkin yaşanan derin anlaşmazlıklar nedeniyle bir sonraki meclis seçimlerine bağımsız bir listeyle katılabileceği iddia edildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-netanyahu-secimlere-bagimsiz-listeyle-girme-sinyali-verdi/3980705",
+      "image": "",
+      "date": "2026-06-29T01:05:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail, Gazze'deki Filistinlileri tehcir planının adını \"serbest hareket\" olarak değiştirdi",
+      "description": "İsrail yönetiminin, Gazze’deki Filistinlileri tehcir planına yönelik tepkileri azaltmak ve diplomatik kabul sağlamak için “gönüllü göç” ifadesini “serbest hareket planı” olarak değiştirdiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-gazzedeki-filistinlileri-tehcir-planinin-adini-serbest-hareket-olarak-degistirdi/3980704",
+      "image": "",
+      "date": "2026-06-29T00:57:13.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusunun, anlaşmaya rağmen Lübnan'ın güneyindeki 2 pilot bölgeden çekilmediği öne sürüldü",
+      "description": "İsrail ordusunun, Lübnan ile ABD arabuluculuğunda varılan çerçeve anlaşma kapsamında çekilmesi gereken iki pilot bölgeden \"hazırlıkların tamamlanmamasını\" gerekçe göstererek çekilmediği iddia edildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusunun-anlasmaya-ragmen-lubnanin-guneyindeki-2-pilot-bolgeden-cekilmedigi-one-suruldu/3980700",
+      "image": "",
+      "date": "2026-06-29T00:07:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'de Cumhuriyetçi Parti'nin İsrail'e karşı tavır almaya başladığı öne sürüldü",
+      "description": "ABD'de Cumhuriyetçi Parti içinde, Gazze'ye düzenlediği ağır saldırılar nedeniyle İsrail'e karşı \"giderek artan olumsuz bir tavır oluştuğu\" ileri sürüldü.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdde-cumhuriyetci-partinin-israile-karsi-tavir-almaya-basladigi-one-suruldu/3980699",
+      "image": "",
+      "date": "2026-06-28T23:20:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Putin, ABD ile Anchorage’de bir anlaşma imzalanmadığını bildirdi",
       "description": "Rusya Devlet Başkanı Vladimir Putin, ABD Başkanı Donald Trump ile Anchorage’de gerçekleşen görüşmede Ukrayna’daki çatışmaların sona ermesi için hiçbir anlaşma imzalanmadığını, ancak kendilerine önerilen uzlaşma teklifini kabul ettiklerini söyledi.",
       "url": "https://www.aa.com.tr/tr/dunya/putin-abd-ile-anchorage-de-bir-anlasma-imzalanmadigini-bildirdi/3980696",
       "image": "",
       "date": "2026-06-28T22:01:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İletişim Başkanı Duran'dan İsrail'in 1915 olaylarına ilişkin Ermeni iddialarıyla ilgili kararına tepki",
-      "description": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, \"İsrail yönetiminin, tarihi olayları siyasi bir silah olarak kullanmaya cüret etmesi tek kelimeyle ikiyüzlülüktür.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskani-durandan-israilin-1915-olaylarina-iliskin-ermeni-iddialariyla-ilgili-kararina-tepki/3980691",
-      "image": "",
-      "date": "2026-06-28T21:23:33.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Türkiye'den Suudi Arabistan'daki helikopter kazasında ölenler için başsağlığı mesajı",
-      "description": "Dışişleri Bakanlığı, Suudi Arabistan'ın Ras Tanura şehrinde dün yaşanan helikopter kazasında hayatını kaybedenler için taziye dileğinde bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/turkiyeden-suudi-arabistandaki-helikopter-kazasinda-olenler-icin-bassagligi-mesaji/3980688",
-      "image": "",
-      "date": "2026-06-28T21:22:05.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD basını: İran ve ABD, karşılıklı saldırılarını durdurarak bu hafta teknik görüşmelere başlayacak",
-      "description": "İran ve ABD'nin, Hürmüz Boğazı çevresinde karşılıklı saldırılarını durdurarak bu hafta teknik görüşmelere başlama kararı aldığı iddia edildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-basini-iran-ve-abd-karsilikli-saldirilarini-durdurarak-bu-hafta-teknik-gorusmelere-baslayacak/3980685",
-      "image": "",
-      "date": "2026-06-28T21:13:11.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kanada, son 16 turuna yükselen ilk takım oldu",
-      "description": "2026 FIFA Dünya Kupası son 32 turu ilk maçında, turnuvanın ev sahiplerinden Kanada, Güney Afrika'yı 1-0 mağlup ederek adını son 16 turuna yazdırdı.",
-      "url": "https://www.aa.com.tr/tr/spor/kanada-son-16-turuna-yukselen-ilk-takim-oldu/3980680",
-      "image": "",
-      "date": "2026-06-28T20:59:59.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
