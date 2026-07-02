@@ -1,57 +1,57 @@
 {
-  "lastUpdated": "2026-07-01T23:14:08.376Z",
+  "lastUpdated": "2026-07-02T03:29:14.761Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Kiev Belediye Başkanı Kliçko, kentin hava saldırısı altında olduğunu açıkladı ",
+      "description": "Ukrayna'nın başkenti Kiev'in Belediye Başkanı Vitaliy Kliçko, Rus ordusunun gece yarısından beri kente yönelik hava saldırısını sürdürdüğünü bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/kiev-belediye-baskani-klicko-kentin-hava-saldirisi-altinda-oldugunu-acikladi-/3983835",
+      "image": "",
+      "date": "2026-07-02T03:04:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD, Bosna Hersek'i yenerek son 16 turuna yükseldi",
+      "description": "2026 FIFA Dünya Kupası son 32 turunda, şampiyonanın ev sahiplerinden ABD, Bosna Hersek'i 2-0 yendi ve son 16 turuna yükseldi.",
+      "url": "https://www.aa.com.tr/tr/spor/abd-bosna-herseki-yenerek-son-16-turuna-yukseldi/3983832",
+      "image": "",
+      "date": "2026-07-02T02:12:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Belçika, uzatmalarda attığı penaltı golüyle son 16'ya yükseldi",
+      "description": "2026 FIFA Dünya Kupası'nda normal süresi 2-2 biten maçta, Senegal'i uzatma bölümünde bulduğu golle 3-2 yenen Belçika, son 16 turuna yükseldi.",
+      "url": "https://www.aa.com.tr/tr/spor/belcika-uzatmalarda-attigi-penalti-goluyle-son-16ya-yukseldi/3983830",
+      "image": "",
+      "date": "2026-07-02T01:24:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistinli kaleci Salim Al-Ashqar, İsrail askerleri tarafından öldürüldü",
+      "description": "Filistinli kaleci Salim Al-Ashqar'ın İsrail askerleri tarafından açılan ateş sonucu öldürüldüğü duyuruldu.",
+      "url": "https://www.aa.com.tr/tr/spor/filistinli-kaleci-salim-al-ashqar-israil-askerleri-tarafindan-olduruldu/3983825",
+      "image": "",
+      "date": "2026-07-01T23:22:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Beşiktaş'ın prensip anlaşmasına vardığı Kassoum Ouattara, İstanbul'a geldi",
       "description": "Beşiktaş'ın prensip anlaşmasına varıldığını duyurduğu Fransız futbolcu Kassoum Ouattara, İstanbul'a geldi.",
       "url": "https://www.aa.com.tr/tr/spor/besiktasin-prensip-anlasmasina-vardigi-kassoum-ouattara-istanbula-geldi/3983818",
       "image": "",
       "date": "2026-07-01T22:06:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "FIFA'dan 2026 Dünya Kupası sırasında sosyal medyada artan \"ırkçılık\" uyarısı",
-      "description": "FIFA Sosyal Medya Koruma Servisi (SMPS), 2026 FIFA Dünya Kupası grup aşamasında 89 bin \"saldırgan paylaşım\" tespit ettiğini ve bunların onda birinden fazlasının \"ırkçı\" içerikli olduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/spor/fifadan-2026-dunya-kupasi-sirasinda-sosyal-medyada-artan-irkcilik-uyarisi/3983816",
-      "image": "",
-      "date": "2026-07-01T21:53:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "TSK ile ilgili düzenlemeleri de içeren kanun teklifi TBMM Genel Kurulunda ",
-      "description": "TBMM Genel Kurulunda, Türk Silahlı Kuvvetleri (TSK) ile ilgili düzenlemeleri de içeren Uzman Erbaş Kanunu ile Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifi'nin ilk 8 maddesi kabul edildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/tsk-ile-ilgili-duzenlemeleri-de-iceren-kanun-teklifi-tbmm-genel-kurulunda-/3983815",
-      "image": "",
-      "date": "2026-07-01T21:53:17.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD Başkanı Trump: İspanya NATO üyesi, ama iyi NATO üyesi değil",
-      "description": "ABD Başkanı Donald Trump, NATO müttefiki İspanya’ya yönelik sert eleştirilerde bulunarak, \"İspanya NATO üyesi, ama iyi NATO üyesi değil.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-trump-ispanya-nato-uyesi-ama-iyi-nato-uyesi-degil/3983814",
-      "image": "",
-      "date": "2026-07-01T21:53:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Hakim ve savcıların görevde yükselme kararları Resmi Gazete'de",
-      "description": "Çeşitli derecelerdeki görev sürelerini tamamlayan adli yargı hakimi, cumhuriyet başsavcısı ve savcıları ile idari yargı hakimlerinin isim listelerinden oluşan Hakimler ve Savcılar Kurulu (HSK) kararları, Resmi Gazete'de yayımlandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/hakim-ve-savcilarin-gorevde-yukselme-kararlari-resmi-gazetede/3983808",
-      "image": "",
-      "date": "2026-07-01T21:25:01.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
