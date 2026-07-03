@@ -1,57 +1,57 @@
 {
-  "lastUpdated": "2026-07-02T23:05:14.940Z",
+  "lastUpdated": "2026-07-03T02:51:50.156Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Turnuvada son 16 turuna yükselen Portekiz, İspanya ile eşleşti",
+      "description": "2026 FIFA Dünya Kupası'nda Hırvatistan'ı 2-1 yenen Portekiz, son 16 turuna yükseldi. Portekiz, bu turda İspanya ile eşleşti.",
+      "url": "https://www.aa.com.tr/tr/spor/turnuvada-son-16-turuna-yukselen-portekiz-ispanya-ile-eslesti/3984841",
+      "image": "",
+      "date": "2026-07-03T02:02:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusundan Gazze'de Filistinli esire işkence yapıldığı itirafı",
+      "description": "İsrail ordusu, Gazze Şeridi'nde alıkonulan Filistinli bir esire İsrail askerleri tarafından işkence yapıldığını gösteren ve sosyal medyada büyük tepki çeken fotoğrafın gerçek olduğunu kabul etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusundan-gazzede-filistinli-esire-iskence-yapildigi-itirafi/3984831",
+      "image": "",
+      "date": "2026-07-03T00:00:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu: Givati Tugayı Lübnan'ın güneyindeki görevini tamamladı",
+      "description": "İsrail ordusu, yaklaşık 8 aydır Lübnan'ın güneyinde konuşlu olan \"Givati Tugayı\"nın bölgedeki operasyonlarını sonlandırdığını duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-givati-tugayi-lubnanin-guneyindeki-gorevini-tamamladi/3984830",
+      "image": "",
+      "date": "2026-07-03T00:00:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump: (İran) Sanırım ihtiyaç duyduğumuz şeylerin neredeyse hepsini kabul ettiler",
+      "description": "ABD Başkanı Donald Trump, İran tarafıyla görüşmelere ilişkin, \"Sanırım ihtiyaç duyduğumuz şeylerin neredeyse hepsini kabul ettiler.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-iran-sanirim-ihtiyac-duydugumuz-seylerin-neredeyse-hepsini-kabul-ettiler/3984825",
+      "image": "",
+      "date": "2026-07-02T23:22:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Cezayir'deki parlamento seçimlerinde katılım yüzde 20,79'da kaldı",
       "description": "Cezayir Ulusal Bağımsız Seçim Kurulu, Ulusal Halk Meclisi üyelerini belirlemek amacıyla yapılan genel seçimlerde yurt içi katılım oranının yüzde 20,79 olarak gerçekleştiğini duyurdu.",
       "url": "https://www.aa.com.tr/tr/dunya/cezayirdeki-parlamento-secimlerinde-katilim-yuzde-20-79da-kaldi/3984819",
       "image": "",
       "date": "2026-07-02T22:43:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Karayolları Trafik Yönetmeliği'nde Değişiklik Yapılmasına Dair Yönetmelik Resmi Gazete'de",
-      "description": "Karayolları Trafik Yönetmeliği'nde Değişiklik Yapılmasına Dair Yönetmelik Resmi Gazete'de yayımlandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/karayollari-trafik-yonetmeliginde-degisiklik-yapilmasina-dair-yonetmelik-resmi-gazetede/3984807",
-      "image": "",
-      "date": "2026-07-02T22:02:59.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "NYT: ABD, müzakereler sırasında İsrail'in İran temsilcilerine suikast planladığına kanaat getirdi",
-      "description": "ABD yönetiminin, İran ile müzakereler sırasında İsrail'in İran Dışişleri Bakanı Abbas Erakçi ile İran Meclis ve Müzakere Heyeti Başkanı Muhammed Bakır Kalibaf'a suikast düzenlemeyi planladığına kanaat getirdiği ileri sürüldü.",
-      "url": "https://www.aa.com.tr/tr/dunya/nyt-abd-muzakereler-sirasinda-israilin-iran-temsilcilerine-suikast-planladigina-kanaat-getirdi/3984801",
-      "image": "",
-      "date": "2026-07-02T21:47:29.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD Presbiteryan Kilisesi, İsrail'in Gazze'ye saldırılarını \"soykırım\" olarak tanımladı",
-      "description": "ABD Presbiteryen Kilisesi yönetimi (PCUSA) İsrail'in Gazze'ye yönelik saldırısını soykırım olarak nitelendirdi ve silah ambargosu uygulanması çağrısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-presbiteryan-kilisesi-israilin-gazzeye-saldirilarini-soykirim-olarak-tanimladi/3984792",
-      "image": "",
-      "date": "2026-07-02T21:30:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İspanya, son 16 turuna yükseldi",
-      "description": "2026 FIFA Dünya Kupası son 32 turunda İspanya, Avusturya'yı 3-0 mağlup ederek son 16 turuna kaldı.",
-      "url": "https://www.aa.com.tr/tr/spor/ispanya-son-16-turuna-yukseldi/3984789",
-      "image": "",
-      "date": "2026-07-02T21:10:42.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
