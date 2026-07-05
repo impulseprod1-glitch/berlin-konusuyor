@@ -1,35 +1,57 @@
 {
-  "lastUpdated": "2026-07-04T22:56:45.798Z",
+  "lastUpdated": "2026-07-05T02:58:38.256Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Washington'da 4 Temmuz Bağımsızlık Günü etkinlikleri şiddetli fırtına nedeniyle yarıda kesildi",
+      "description": "ABD'nin başkenti Washington DC'de, ülkenin kuruluşunun 250. yılı ve 4 Temmuz Bağımsızlık Günü kutlamaları şiddetli fırtına nedeniyle yarıda kesildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/washingtonda-4-temmuz-bagimsizlik-gunu-etkinlikleri-siddetli-firtina-nedeniyle-yarida-kesildi/3986402",
+      "image": "",
+      "date": "2026-07-05T01:52:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail basını: Bakan Ben-Gvir \"gözaltına alınma\" korkusuyla New York ziyaretini iptal etti",
+      "description": "İsrail basını, aşırı sağcı Ulusal Güvenlik Bakanı Itamar Ben-Gvir'in, Filistinlilere yönelik politika ve uygulamaları nedeniyle \"gözaltına alınma\" endişesiyle bu hafta New York'a yapacağı ziyareti iptal ettiğini ileri sürdü.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-bakan-ben-gvir-gozaltina-alinma-korkusuyla-new-york-ziyaretini-iptal-etti/3986400",
+      "image": "",
+      "date": "2026-07-05T01:12:25.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Euro-Med Başkanı Abdu, İsrail hapishanelerindeki Filistinli doktorların hayatlarının tehlikede olduğunu belirtti",
+      "description": "Avrupa-Akdeniz İnsan Hakları Örgütü'nün (Euro-Med) Başkanı Rami Abdu, İsrail hapishanelerinde tutuklu bulunan Filistinli doktorlar Husam Ebu Safiyye ve Mervan el-Hams'ın şiddetli işkenceye maruz kaldığını ve hayatlarının tehlikede olduğunu duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/euro-med-baskani-abdu-israil-hapishanelerindeki-filistinli-doktorlarin-hayatlarinin-tehlikede-oldugunu-belirtti/3986397",
+      "image": "",
+      "date": "2026-07-05T00:58:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Turnuvada çeyrek finale çıkan Fransa, bu turda Fas ile eşleşti",
+      "description": "2026 FIFA Dünya Kupası'nda Paraguay'ı 1-0 yenen Fransa, çeyrek finale yükseldi. Fransa, bu turda Fas ile eşleşti.",
+      "url": "https://www.aa.com.tr/tr/spor/turnuvada-ceyrek-finale-cikan-fransa-bu-turda-fas-ile-eslesti/3986394",
+      "image": "",
+      "date": "2026-07-04T23:55:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Kremlin: Putin ve Trump telefonda yaklaşık 1,5 saat görüştü",
       "description": "Kremlin Dış Politika Danışmanı Yuriy Uşakov, Rusya Devlet Başkanı Vladimir Putin'in ABD Başkanı Donald Trump ile telefonda görüşme yaptığını bildirdi.",
       "url": "https://www.aa.com.tr/tr/dunya/kremlin-putin-ve-trump-telefonda-yaklasik-1-5-saat-gorustu/3986391",
       "image": "",
       "date": "2026-07-04T22:21:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AFAD: Hak sahibi olup konutu henüz teslim edilmemiş vatandaşlarımız için konteyner barınma desteği devam etmektedir",
-      "description": "Hatay İl Afet ve Acil Durum Müdürlüğü (AFAD), hak sahibi olup konutu henüz teslim edilmemiş ya da yapılan incelemeler sonucunda barınma ihtiyacının devam ettiği saptanan vatandaşlar için konteyner desteğinin sürdüğünü bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/afad-hak-sahibi-olup-konutu-henuz-teslim-edilmemis-vatandaslarimiz-icin-konteyner-barinma-destegi-devam-etmektedir/3986390",
-      "image": "",
-      "date": "2026-07-04T22:14:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Wimbledon'da Iga Swiatek elendi, Alexander Zverev son 16 turuna kaldı",
-      "description": "Sezonun üçüncü grand slam tenis turnuvası Wimbledon'da tek kadınlarda Iga Swiatek elenirken, tek erkeklerde Alexander Zverev, adını son 16 turuna yazdırdı.",
-      "url": "https://www.aa.com.tr/tr/spor/wimbledonda-iga-swiatek-elendi-alexander-zverev-son-16-turuna-kaldi/3986388",
-      "image": "",
-      "date": "2026-07-04T21:09:38.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -88,28 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail saldırılarının gölgesinde büyüyen Gazzeli çocuklar, Türkiye'nin desteğiyle yaz kamplarında umut buluyor",
-      "description": "İsrail'in saldırıları ve ağır insani koşulların gölgesindeki Gazze Şeridi'nde, Türkiye'nin desteğiyle yaklaşık 8 bin çocuğa ulaşmayı hedefleyen \"Umut Pınarları 2026\" yaz kampları başladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-saldirilarinin-golgesinde-buyuyen-gazzeli-cocuklar-turkiyenin-destegiyle-yaz-kamplarinda-umut-buluyor/3986229",
-      "image": "",
-      "date": "2026-07-04T15:32:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail güçleri ve Filistin topraklarını gasbeden İsrailliler, Batı Şeria'da 5 Filistinliyi yaraladı",
-      "description": "İsrail ordusu ve Filistin topraklarını gasbeden İsraillilerin, işgal altındaki Batı Şeria'nın Ramallah ve Beytüllahim kentlerinde düzenledikleri saldırılarda 5 Filistinli yaralandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-gucleri-ve-filistin-topraklarini-gasbeden-israilliler-bati-seriada-5-filistinliyi-yaraladi/3986082",
-      "image": "",
-      "date": "2026-07-04T12:56:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
