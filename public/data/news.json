@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-07-05T17:09:02.736Z",
+  "lastUpdated": "2026-07-05T19:16:19.146Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Liseliler Srebrenitsa Soykırımı anma etkinliklerine katılmak üzere Bosna Hersek'e gitti",
+      "description": "İslam Toplumu Milli Görüş (İGMG) Srebrenitsa Soykırımı anma etkinliklerine katılması için 200 liseliyi Bosna Hersek'e dualarla uğurladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/liseliler-srebrenitsa-soykirimi-anma-etkinliklerine-katilmak-uzere-bosna-herseke-gitti/3986836",
+      "image": "",
+      "date": "2026-07-05T18:55:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Wimbledon'da Aryna Sabalenka elenirken Novak Djokovic çeyrek finale yükseldi",
+      "description": "Sezonun üçüncü grand slam tenis turnuvası Wimbledon'da tek kadınlarda Aryna Sabalenka elendi, Novak Djokovic ise çeyrek finale yükseldi.",
+      "url": "https://www.aa.com.tr/tr/spor/wimbledonda-aryna-sabalenka-elenirken-novak-djokovic-ceyrek-finale-yukseldi/3986834",
+      "image": "",
+      "date": "2026-07-05T18:50:23.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Netanyahu, Trump ile ilişkilerinde \"çatlak\" olmadığını savundu",
+      "description": "İsrail Başbakanı Binyamin Netanyahu, kendisi hakkında \"Patronun kim olduğunu biliyor.\" açıklaması yapan ABD Başkanı Donald Trump ile ilişkilerinde \"çatlak\" olmadığını ileri sürdü.",
+      "url": "https://www.aa.com.tr/tr/dunya/netanyahu-trump-ile-iliskilerinde-catlak-olmadigini-savundu/3986828",
+      "image": "",
+      "date": "2026-07-05T18:30:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Radsport: Startet die Tour de France 2029 in Berlin?",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/radsport-tour-de-france-deutsche-bewerbung-berlin.html",
+      "image": "",
+      "date": "2026-07-05T18:22:50.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Halle in Oranienburger Gewerbegebiet niedergebrannt - Warnung wegen Rauch",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brand-lagerhalle-gewerbegebiet-oranienburg-feuerwehr.html",
+      "image": "",
+      "date": "2026-07-05T17:50:15.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Sağlık Bakanlığından son 2 yıldaki uygulamalara ilişkin açıklama",
+      "description": "Sağlık Bakanlığı, son 2 yılda \"Sağlıklı Türkiye Yüzyılı\" vizyonu doğrultusunda sağlık sistemini güçlendirmek için hayata geçirdiği kapsamlı uygulamaları açıkladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakanligindan-son-2-yildaki-uygulamalara-iliskin-aciklama/3986810",
+      "image": "",
+      "date": "2026-07-05T17:48:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail hükümeti, ülke tarihinde ilk defa Yüksek Mahkeme kararını reddetti",
+      "description": "İsrail hükümeti, özel televizyon ve bölgesel radyo yayınlarını denetleyen İkinci Otorite Konseyi’nin çalışmalarını sürdürmesine hükmeden Yüksek Mahkeme kararını reddederek ilk kez yüksek yargının bağlayıcı bir kararını uygulamayacağını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-hukumeti-ulke-tarihinde-ilk-defa-yuksek-mahkeme-kararini-reddetti/3986799",
+      "image": "",
+      "date": "2026-07-05T17:26:13.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Fußball: Union feiert nächstes Schützenfest bei Test in Lübben",
       "description": "",
@@ -11,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Formula 1'de sezonun 9. yarışı Büyük Britanya Grand Prix'sini Charles Leclerc kazandı",
-      "description": "Formula 1 Dünya Şampiyonası'nda sezonun 9. etabı Büyük Britanya Grand Prix'sini Ferrari'nin Monakolu pilotu Charles Leclerc kazandı.",
-      "url": "https://www.aa.com.tr/tr/spor/formula-1de-sezonun-9-yarisi-buyuk-britanya-grand-prixsini-charles-leclerc-kazandi/3986787",
-      "image": "",
-      "date": "2026-07-05T16:49:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -36,77 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "FIBA 17 Yaş Altı Basketbol Dünya Kupası'nda Türkiye, Avustralya'ya mağlup oldu",
-      "description": "FIBA 17 Yaş Altı Basketbol Dünya Kupası'nın üçüncülük maçında Türkiye, Avustralya'ya 77-69 mağlup oldu.",
-      "url": "https://www.aa.com.tr/tr/spor/fiba-17-yas-alti-basketbol-dunya-kupasinda-turkiye-avustralyaya-maglup-oldu/3986768",
-      "image": "",
-      "date": "2026-07-05T16:10:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "665. Tarihi Kırkpınar Yağlı Güreşleri'nde başpehlivan Erkan Taş oldu",
-      "description": "665. Tarihi Kırkpınar Yağlı Güreşleri'nde başpehlivanlığı, finalde Feyzullah Aktürk'ü yenen Erkan Taş kazandı.",
-      "url": "https://www.aa.com.tr/tr/spor/665-tarihi-kirkpinar-yagli-gureslerinde-baspehlivan-erkan-tas-oldu/3986761",
-      "image": "",
-      "date": "2026-07-05T15:48:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Türk balerin Nilay Tahiroğlu, Bolşoy Sahnesi'nde \"özel diploma\"yla ödüllendirildi",
-      "description": "Devlet Opera ve Balesi (DOB) sanatçısı Nilay Tahiroğlu, bale dünyasının en prestijli organizasyonlarından biri olarak gösterilen 15. Uluslararası Moskova Bale Yarışması finalinde \"özel diploma ödülü\"ne layık görüldü.",
-      "url": "https://www.aa.com.tr/tr/kultur/turk-balerin-nilay-tahiroglu-bolsoy-sahnesinde-ozel-diplomayla-odullendirildi/3986746",
-      "image": "",
-      "date": "2026-07-05T15:28:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Halle in Oranienburger Gewerbegebiet niedergebrannt - Warnung wegen Rauch",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brand-lagerhalle-gewerbegebiet-oranienburg-feuerwehr.html",
-      "image": "",
-      "date": "2026-07-05T15:28:08.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "Erdgeschoss in Bürogebäude in Britz komplett ausgebrannt",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-bitz-brand-buerogebaeude.html",
       "image": "",
       "date": "2026-07-05T15:07:58.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Hamas: İsrail, Gazze'ye saldırılarını meşrulaştırmak için aleyhimizde propaganda yürütüyor",
-      "description": "Hamas, İsrail'in hareketin (Hamas'ın) askeri kapasitesini hızla inşa ettiği iddiasını öne sürerek Gazze Şeridi'nde ateşkese rağmen devam eden saldırılarını meşrulaştırmayı amaçladığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/hamas-israil-gazzeye-saldirilarini-mesrulastirmak-icin-aleyhimizde-propaganda-yurutuyor/3986680",
-      "image": "",
-      "date": "2026-07-05T13:37:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Auch am Sonntag Stau auf westlichem Berliner Ring wegen Sperrung",
-      "description": "Die vergangene Hitzewelle hat bei mehreren Autobahnen Schäden verursacht, die nun repariert werden müssen. Dafür ist seit Freitagabend die A10 zwischen Potsdam und Spandau gesperrt - und viele Autofahrer stehen im Stau.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/a10-hitze-reperatur-arbeiten-berliner-ring-potsdam-nord-spandau-sperrung.html",
-      "image": "",
-      "date": "2026-07-05T12:47:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
