@@ -1,57 +1,79 @@
 {
-  "lastUpdated": "2026-07-05T13:29:02.610Z",
+  "lastUpdated": "2026-07-05T15:12:04.676Z",
   "count": 10,
   "articles": [
-    {
-      "title": "Halle in Oranienburger Gewerbegebiet brennt - Warnung wegen Rauch",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brand-lagerhalle-gewerbegebiet-oranienburg-feuerwehr.html",
-      "image": "",
-      "date": "2026-07-05T13:17:22.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail, haziranda Mescid-i Aksa'ya 26 baskın düzenledi, Harem-i İbrahim'de ezanı 84 kez engelledi",
-      "description": "Haziran ayı boyunca Filistin topraklarını gasbeden İsraillilerin, polis ve asker koruması altında Mescid-i Aksa’ya 26 kez baskın düzenlediği, El Halil’deki Harem-i İbrahim Camisi’nde ise ezan okunmasının 84 kez engellendiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-haziranda-mescid-i-aksaya-26-baskin-duzenledi-harem-i-ibrahimde-ezani-84-kez-engelledi/3986659",
-      "image": "",
-      "date": "2026-07-05T13:08:52.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kurtulmuş: Terör örgütünün silahlarını bırakması ve tasfiyesiyle, çıkarılacak yasalarla bu iş tamamen geride kalacak",
-      "description": "TBMM Başkanı Numan Kurtulmuş, \"Terör örgütünün silahlarını bırakması ve tasfiyesiyle, TBMM'de çıkarılacak yasalarla artık bu iş tamamen geride kalacak, ülkede birlik, beraberlik hakim olacak.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/kurtulmus-teror-orgutunun-silahlarini-birakmasi-ve-tasfiyesiyle-cikarilacak-yasalarla-bu-is-tamamen-geride-kalacak/3986658",
-      "image": "",
-      "date": "2026-07-05T13:07:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
     {
       "title": "Erdgeschoss in Bürogebäude in Britz komplett ausgebrannt",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-bitz-brand-buerogebaeude.html",
       "image": "",
-      "date": "2026-07-05T13:03:04.000Z",
+      "date": "2026-07-05T15:07:58.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "Rodos Adası'nda orman yangını çıktı",
-      "description": "Rodos Adası'ndaki Ammudes bölgesinde orman yangını çıktığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/rodos-adasinda-orman-yangini-cikti/3986646",
+      "title": "İsrail medyası: Netanyahu, Trump ile görüşmesini seçim avantajına çevirmek istiyor",
+      "description": "İsrail Başbakanı Binyamin Netanyahu'nun, ABD Başkanı Donald Trump ile yapacağı görüşmeyi seçimlerde avantaj sağlamak için kullanacağı belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-medyasi-netanyahu-trump-ile-gorusmesini-secim-avantajina-cevirmek-istiyor/3986720",
       "image": "",
-      "date": "2026-07-05T12:55:16.000Z",
+      "date": "2026-07-05T14:48:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Beykoz'da 1071 hak sahibi tapusuna kavuştu",
+      "description": "Bakan Kurum, \"2/B kapsamında bakanlığımızın yetki alanlarında bulunan 25 mahallemizdeki taşınmazların Beykoz Belediyemize devir işlemlerini tamamladık. 1071 hak sahibi kardeşimize tapularını teslim ediyoruz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/beykozda-1071-hak-sahibi-tapusuna-kavustu/3986717",
+      "image": "",
+      "date": "2026-07-05T14:43:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran Meclis Başkanı Kalibaf: ABD ile barışımız yok ve İsrail’i resmi olarak tanımayacağız",
+      "description": "İran Meclis ve Müzakere Heyeti Başkanı Muhammed Bakır Kalibaf, Hamas Şura Meclisi Başkanı Muhammed Derviş ile yaptığı görüşmede, \"ABD ile barışımız yok ve İsrail’i resmi olarak tanımayacağız.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-meclis-baskani-kalibaf-abd-ile-barisimiz-yok-ve-israil-i-resmi-olarak-tanimayacagiz/3986714",
+      "image": "",
+      "date": "2026-07-05T14:37:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Urumçi olaylarına ilişkin İstanbul'da basın açıklaması yapıldı",
+      "description": "İstanbul'da, Urumçi kentinde 5 Temmuz 2009'da yaşanan olaylarla ilgili basın açıklaması düzenlendi.",
+      "url": "https://www.aa.com.tr/tr/gundem/urumci-olaylarina-iliskin-istanbulda-basin-aciklamasi-yapildi/3986706",
+      "image": "",
+      "date": "2026-07-05T14:22:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Halle in Oranienburger Gewerbegebiet brennt - Warnung wegen Rauch",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brand-lagerhalle-gewerbegebiet-oranienburg-feuerwehr.html",
+      "image": "",
+      "date": "2026-07-05T14:18:03.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Hamas: İsrail, Gazze'ye saldırılarını meşrulaştırmak için aleyhimizde propaganda yürütüyor",
+      "description": "Hamas, İsrail'in hareketin (Hamas'ın) askeri kapasitesini hızla inşa ettiği iddiasını öne sürerek Gazze Şeridi'nde ateşkese rağmen devam eden saldırılarını meşrulaştırmayı amaçladığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/hamas-israil-gazzeye-saldirilarini-mesrulastirmak-icin-aleyhimizde-propaganda-yurutuyor/3986680",
+      "image": "",
+      "date": "2026-07-05T13:37:20.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -69,17 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Bakan Kurum: 5'inci günde DOA ile topladığımız ambalaj sayısı 7 milyon 600 bine ulaştı",
-      "description": "Çevre, Şehircilik ve İklim Değişikliği Bakanı Murat Kurum, Depozitosu Olan Ambalajlar (DOA) sistemi ile 5 günde 7 milyon 600 bin ambalaj toplandığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-kurum-5inci-gunde-doa-ile-topladigimiz-ambalaj-sayisi-7-milyon-600-bine-ulasti/3986633",
-      "image": "",
-      "date": "2026-07-05T12:27:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Streit in Jugendzentrum in Hellersdorf beschäftigt Polizei",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-hellersdorf-streit-jugendzentrum-linke-gruppen.html",
@@ -88,17 +99,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Uraloğlu, Sivas'ta Çamlıbel Tüneli Temel Atma Töreni'nde konuştu",
-      "description": "Bakan Uraloğlu, Çamlıbel Tüneli ile ulaşım kotunu 286 metre aşağı çekip 1684 metreden 1398 metreye indireceklerini ve 13 keskin virajı baypas edeceklerini belirterek, \"Güzergahı 2,3 kilometre kısaltarak seyahat süresini 5 dakikaya düşüreceğiz.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-uraloglu-sivasta-camlibel-tuneli-temel-atma-toreninde-konustu/3986606",
-      "image": "",
-      "date": "2026-07-05T11:45:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
