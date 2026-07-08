@@ -1,27 +1,93 @@
 {
-  "lastUpdated": "2026-07-08T17:27:54.401Z",
+  "lastUpdated": "2026-07-08T19:23:10.946Z",
   "count": 10,
   "articles": [
     {
-      "title": "Cumhurbaşkanı Yardımcısı Yılmaz: Zirve, hem içerik hem de organizasyon kalitesi bakımından başarıyla icra edildi",
-      "description": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, \"Ülkemizde düzenlenen bu önemli zirve, hem içerik hem de organizasyon kalitesi bakımından başarıyla icra edildi.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-yardimcisi-yilmaz-zirve-hem-icerik-hem-de-organizasyon-kalitesi-bakimindan-basariyla-icra-edildi/3991765",
+      "title": "UEFA Şampiyonlar Liginde birinci eleme turu ilk maçları tamamlandı",
+      "description": "UEFA Şampiyonlar Ligi'nde birinci eleme turu ilk maçları, oynanan 4 mücadeleyle sona erdi.",
+      "url": "https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-birinci-eleme-turu-ilk-maclari-tamamlandi/3992268",
       "image": "",
-      "date": "2026-07-08T17:01:05.000Z",
+      "date": "2026-07-08T19:11:17.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Yunanistan Başbakanı Miçotakis: Cumhurbaşkanı Erdoğan’la yapıcı bir ilişki yönünde işbirliğine devam edeceğim",
-      "description": "Yunanistan Başbakanı Kiryakos Miçotakis, Türkiye ve Yunanistan arasında yapıcı bir ilişki kurmak için Cumhurbaşkanı Recep Tayyip Erdoğan ile işbirliğine devam edeceğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/yunanistan-basbakani-micotakis-cumhurbaskani-erdogan-la-yapici-bir-iliski-yonunde-isbirligine-devam-edecegim/3991728",
+      "title": "Polonya Cumhurbaşkanı Nawrocki, NATO’nun birlik içinde ve güçlü olduğunu belirtti",
+      "description": "Polonya Cumhurbaşkanı Karol Nawrocki, Ankara'da düzenlenen NATO Zirvesi'nin ardından NATO'nun \"birlik içinde, güçlü ve kendi değerlerini savunma konusunda kararlı\" olduğunu söyledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/polonya-cumhurbaskani-nawrocki-nato-nun-birlik-icinde-ve-guclu-oldugunu-belirtti/3992253",
       "image": "",
-      "date": "2026-07-08T16:46:17.000Z",
+      "date": "2026-07-08T19:04:35.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Landgericht Berlin: Höchststrafe für Mordserie von Berliner Palliativarzt",
+      "description": "Ein Palliativarzt ist wegen 15-fachen Mordes von Patienten zur Höchststrafe verurteilt worden. Das Landgericht Berlin verhängte gegen den 41-jährigen eine lebenslange Freiheitsstrafe und stellte die besondere Schwere der Schuld fest.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-landgericht-berlin-urteil-lebenslang-schwere-schuld-palliativarzt.html",
+      "image": "",
+      "date": "2026-07-08T19:02:37.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan, AB Konseyi Başkanı Costa ve AB Komisyonu Başkanı von der Leyen ile görüştü",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Avrupa Birliği (AB) Konseyi Başkanı Antonio Costa ve AB Komisyonu Başkanı Ursula von der Leyen ile çalışma yemeğinde bir araya geldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-ab-konseyi-baskani-costa-ve-ab-komisyonu-baskani-von-der-leyen-ile-gorustu/3992244",
+      "image": "",
+      "date": "2026-07-08T18:58:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail basını: Cumhurbaşkanı Erdoğan, Türkiye'yi bölgesel süper güce dönüştürmeye başladı",
+      "description": "İsrail basını, Cumhurbaşkanı Recep Tayyip Erdoğan'ın Türkiye'yi bölgesel bir süper güce dönüştürmeye başladığını yazdı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-cumhurbaskani-erdogan-turkiyeyi-bolgesel-super-guce-donusturmeye-basladi/3992238",
+      "image": "",
+      "date": "2026-07-08T18:52:25.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "\"Kalbin Mührü\" sergisi, Türk ve İslam Eserleri Müzesi'nde açıldı",
+      "description": "\"Kalbin Mührü: Reisülküttap Hacı Mustafa Efendi Yazma Eserler Koleksiyonu ve Aile Mirası\" sergisi, Türk ve İslam Eserleri Müzesi'nde açıldı.",
+      "url": "https://www.aa.com.tr/tr/kultur/kalbin-muhru-sergisi-turk-ve-islam-eserleri-muzesinde-acildi/3992224",
+      "image": "",
+      "date": "2026-07-08T18:35:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bromat-Belastung: Menschen in Zehdenick können Trinkwasser wieder nutzen",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brandenburg-zehdenick-trinkwasser-bromat-nutzbar.html",
+      "image": "",
+      "date": "2026-07-08T17:57:04.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Wegner wegen Krisenmanagement beim Stromausfall weiter unter Druck",
+      "description": "Tennis spielen, während Stadtteile ohne Strom dastehen? - Berlins Regierender Wegner erklärt seine späte Telefonreaktion nach dem Blackout. Steffen Krach, Spitzenkandidat vom Koalitionspartner SPD, schließt eine Zusammenarbeit mit Wegner nach der Wahl aus.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/07/berlin-wegner-stromausfall-telefonate-vormittag-tennis.html",
+      "image": "",
+      "date": "2026-07-08T17:41:53.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -36,28 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "Fransa, daha önce ödünç verilen 23 tarihi eseri Şam Ulusal Müzesi’ne iade etti",
-      "description": "Fransa, Cumhurbaşkanı Emmanuel Macron’un Şam ziyaretiyle eş zamanlı olarak daha önce ödünç verilen 23 tarihi eseri Suriye’ye teslim etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransa-daha-once-odunc-verilen-23-tarihi-eseri-sam-ulusal-muzesi-ne-iade-etti/3991699",
-      "image": "",
-      "date": "2026-07-08T16:32:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AB Komisyonu Başkanı von der Leyen, Ukrayna Devlet Başkanı Zelenskiy ile görüştü",
-      "description": "Avrupa Birliği (AB) Komisyonu Başkanı Ursula von der Leyen, NATO Ankara Zirvesi kapsamında Ukrayna Devlet Başkanı Volodimir Zelenskiy ile bir araya geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/ab-komisyonu-baskani-von-der-leyen-ukrayna-devlet-baskani-zelenskiy-ile-gorustu/3991693",
-      "image": "",
-      "date": "2026-07-08T16:29:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Kanter verpasst Etappensieg bei der Tour de France nur knapp",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/07/cottbus-radsport-tour-de-france-max-kanter-sprint-etappe-platz-zwei.html",
@@ -66,50 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Mietenkataster in Berlin: Fragen und Antworten",
-      "description": "Es soll ein scharfes Schwert sein, um gegen überteuerte Mieten vorzugehen: Tatsächlich geht das Mietenkataster mit Verpflichtungen für Vermieter einher. Aber welche genau und gibt es Schwachstellen? Die wichtigsten Fragen und Antworten.",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/07/berlin-mietenkataster-gesetz-vermieter-fragen-antworten.html",
-      "image": "",
-      "date": "2026-07-08T15:54:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Vermisste Neunjährige in Adlershof am Mittwoch unversehrt wieder im Unterricht",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/vermisst-neunjaehrige-adlershof-schuelerin-wieder-da.html",
-      "image": "",
-      "date": "2026-07-08T15:46:01.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Totes Baby in Hinterhof in Berlin-Lichterfelde entdeckt",
-      "description": "In einem Berliner Hinterhof ist die Leiche eines Neugeborenen entdeckt worden. Die Polizei hat den Fundort in Lichterfelde weiträumig abgesperrt.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/totes-baby-gefunden-berlin-lichterfelde-polizei.html",
-      "image": "",
-      "date": "2026-07-08T15:24:50.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "CANLI - Cumhurbaşkanı Erdoğan konuşuyor",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, 36. NATO Devlet ve Hükümet Başkanları Zirvesi’ne ilişkin basın toplantısı düzenliyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/canli-cumhurbaskani-erdogan-konusuyor/3991133",
-      "image": "",
-      "date": "2026-07-08T13:21:19.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
