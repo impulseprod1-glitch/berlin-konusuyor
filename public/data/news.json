@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-07-09T19:44:13.693Z",
+  "lastUpdated": "2026-07-09T21:21:46.875Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Bakan Gürlek: Zirve, \"Türkiye Yüzyılı\" vizyonunun dış politikadaki güçlü karşılığını dünyaya gösteren bir zemin olmuştur",
+      "description": "Adalet Bakanı Akın Gürlek, \"Zirve, Cumhurbaşkanımız Sayın Recep Tayyip Erdoğan'ın liderliğinde şekillenen \"Türkiye Yüzyılı\" vizyonunun dış politikadaki güçlü karşılığını tüm dünyaya gösteren önemli bir diplomatik zemin olmuştur.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bakan-gurlek-zirve-turkiye-yuzyili-vizyonunun-dis-politikadaki-guclu-karsiligini-dunyaya-gosteren-bir-zemin-olmustur/3993745",
+      "image": "",
+      "date": "2026-07-09T21:13:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İletişim Başkanı Duran: Yürütülen yoğun diplomasi trafiği, Türkiye'nin uluslararası rolünü bir kez daha ortaya koymuştur",
+      "description": "Cumhurbaşkanlığı İletişim Başkanı Duran, \"Yürütülen yoğun diplomasi trafiği, Türkiye'nin Cumhurbaşkanımız Sayın Erdoğan'ın liderliğinde uluslararası barış, güvenlik ve istikrarın güçlendirilmesindeki etkin rolünü bir kez daha ortaya koymuştur.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskani-duran-yurutulen-yogun-diplomasi-trafigi-turkiyenin-uluslararasi-rolunu-bir-kez-daha-ortaya-koymustur/3993741",
+      "image": "",
+      "date": "2026-07-09T21:08:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Zelenskiy, yakında ABD'den Patriot füzeleri alacaklarını söyledi",
+      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, kısa bir süre içerisinde ABD'den Patriot hava savunma sistemlerine ait PAC-3 tipi füzeleri alacaklarını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-yakinda-abdden-patriot-fuzeleri-alacaklarini-soyledi/3993734",
+      "image": "",
+      "date": "2026-07-09T21:03:04.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fed, para politikasının yürütülmesini inceleyecek çalışma gruplarının liderlerini açıkladı",
+      "description": "ABD Merkez Bankası (Fed), para politikasının yürütülmesini geliştirmek amacıyla oluşturulan 5 çalışma grubunun liderini ve hedeflerini duyurdu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/fed-para-politikasinin-yurutulmesini-inceleyecek-calisma-gruplarinin-liderlerini-acikladi/3993722",
+      "image": "",
+      "date": "2026-07-09T20:42:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Bolat: Otomotiv sektöründe dünyada 13’üncü büyük üretim üssü konumuna ulaştık",
+      "description": "Ticaret Bakanı Ömer Bolat, \"Otomotiv sektöründe dünyada 13’üncü büyük üretim üssü konumuna ulaştık. Avrupa'da 5’inci, dünyada 13’üncü konumdayız.\" diye konuştu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-bolat-otomotiv-sektorunde-dunyada-13-uncu-buyuk-uretim-ussu-konumuna-ulastik/3993710",
+      "image": "",
+      "date": "2026-07-09T20:32:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Triathletin Lindemann will nach Pause \"zurück an die Weltspitze\"",
+      "description": "Die Triathletin Laura Lindemann ist nach ihrem überstandenem \"Motivationsloch\" zurück im Wettkampfmodus. Nach den ersten Weltcup-Erfolgen richtet sich ihr Fokus auf die Sommerspiele 2028 in Los Angeles. Dort will die gebürtige Berlinerin ihre erste olympische Einzel-Medaille gewinnen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/triathlon-laura-lindemann-pause-comeback-olympische-spiele-2028-los-angeles.html",
+      "image": "",
+      "date": "2026-07-09T19:44:20.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Testspiel: Union Berlin trennt sich vom Chemnitzer FC nur mit 1:1",
       "description": "",
@@ -11,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "BM: Dün Lübnan hava sahasında İsrail uçaklarının 41'den fazla ihlali tespit edildi",
-      "description": "Birleşmiş Milletler (BM), ateşkes görüşmelerinin devam ettiği Lübnan'ın hava sahasını dün İsrail uçaklarının \"41 defadan fazla ihlal ettiği\" tespitini paylaştı.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-dun-lubnan-hava-sahasinda-israil-ucaklarinin-41den-fazla-ihlali-tespit-edildi/3993672",
-      "image": "",
-      "date": "2026-07-09T19:19:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -36,17 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Milano'da bir kişi, Filistin bayrağı renklerindeki paraşütüyle Duomo Katedrali'nden atlayış yaptı",
-      "description": "İtalya'nın Milano kentinde bir kişinin, Duomo Katedrali'nin üstünden Filistin bayrağı rengindeki paraşütüyle atlayış yaptığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/milanoda-bir-kisi-filistin-bayragi-renklerindeki-parasutuyle-duomo-katedralinden-atlayis-yapti/3993669",
-      "image": "",
-      "date": "2026-07-09T19:16:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Brückenbau: Berliner Ringbahn ab Freitagmittag gesperrt",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/wochenende-sperrungen-ringbahn-feuerwehr.html",
@@ -58,58 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "MSB, Türk Yıldızları'nın selamlama uçuşu esnasındaki kokpit görüntülerini paylaştı",
-      "description": "Milli Savunma Bakanlığı (MSB), ABD Başkanı Donald Trump'ın Cumhurbaşkanlığı Külliyesi'ne gelişindeki Türk Yıldızları'nın gerçekleştirdiği selamlama uçuşunun kokpit görüntülerini paylaştı.",
-      "url": "https://www.aa.com.tr/tr/gundem/msb-turk-yildizlarinin-selamlama-ucusu-esnasindaki-kokpit-goruntulerini-paylasti/3993657",
+      "title": "Berlin: Medicana-Gruppe übernimmt Jüdisches Krankenhaus",
+      "description": "Im vergangenen Jahr hatte das Jüdische Krankenhaus in Berlin-Gesundbrunnen Insolvenz angemeldet - nun hat es einen neuen Träger. Das türkische Krankenhausunternehmen Medicana übernimmt das Haus.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/07/juedische-krankenhaus-wedding-traeger-tuerkei-medicana.html",
       "image": "",
-      "date": "2026-07-09T19:03:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "YÖK'ten İstanbul'da özel bir üniversitenin mezuniyet töreninde ayet yazılı pankartın kapatılmasına soruşturma",
-      "description": "YÖK , İstanbul'da özel bir üniversitenin mezuniyet töreninde Kur'an-ı Kerim'den ayetin yer aldığı pankartın bir grup öğrenci tarafından kapatılması ve buna alkışlarla destek verilmesiyle ilgili soruşturma başlattı.",
-      "url": "https://www.aa.com.tr/tr/gundem/yokten-istanbulda-ozel-bir-universitenin-mezuniyet-toreninde-ayet-yazili-pankartin-kapatilmasina-sorusturma/3993644",
-      "image": "",
-      "date": "2026-07-09T18:49:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin: Haftstrafen wegen Diebstahl von Friedhofsskulpturen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/haftstrafen-diebstahl-friedhofsskulpturen.html",
-      "image": "",
-      "date": "2026-07-09T18:49:40.000Z",
+      "date": "2026-07-09T19:00:17.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin: Clan-Mitglied nach gescheiterter Gefangenenbefreiung verurteilt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/verurteilung-gefangenenbefreiung-versuch-haftstrafe.html",
-      "image": "",
-      "date": "2026-07-09T18:48:22.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Malatya'da 4 bin 359 deprem konutu ve 115 iş yeri hak sahiplerine teslim edildi",
-      "description": "Malatya'da yapımı tamamlanan 4 bin 359 deprem konutu ile 115 iş yeri düzenlenen törenle hak sahiplerine verildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/malatyada-4-bin-359-deprem-konutu-ve-115-is-yeri-hak-sahiplerine-teslim-edildi/3993322",
-      "image": "",
-      "date": "2026-07-09T14:01:06.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
