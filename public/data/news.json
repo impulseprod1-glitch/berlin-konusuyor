@@ -1,13 +1,79 @@
 {
-  "lastUpdated": "2026-07-12T11:08:56.061Z",
+  "lastUpdated": "2026-07-12T13:16:30.531Z",
   "count": 10,
   "articles": [
     {
-      "title": "Kültür ve Turizm Bakanı Ersoy, TDK'nin 94. kuruluş yıl dönümünü kutladı",
-      "description": "Kültür ve Turizm Bakanı Mehmet Nuri Ersoy, \"Dilimizin doğru kullanılması, korunması ve geliştirilmesi adına önemli bir sorumluluk üstlenen Türk Dil Kurumumuz, kuruluşundan beri bu alanda önemli katkılar sunmaya devam etmektedir.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/kultur/kultur-ve-turizm-bakani-ersoy-tdknin-94-kurulus-yil-donumunu-kutladi/3995654",
+      "title": "Brand auf Industriegelände in Berlin-Grünau",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-gruenau-industriegelaende-brand-grauammerpfad.html",
       "image": "",
-      "date": "2026-07-12T10:57:02.000Z",
+      "date": "2026-07-12T13:10:14.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "150 Jahre Rudern in Berlin: Ein Gentlemen-Sport in der Hauptstadt",
+      "description": "Die Vereinskultur im Rudern war eine der ersten im modernen Sport überhaupt, weit vor den ersten Olympischen Spielen der Neuzeit im Jahr 1896. Ein einstiger Zuschauermagnet zwischen Tradition, Kaiserpokalen und Geschlechterkämpfen.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/rudern-berlin-150-jahre-olympia-wannsee.html",
+      "image": "",
+      "date": "2026-07-12T12:32:22.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Zelenskiy, \"Ukrayna'nın yeni siyasi stratejisi\" için hükümette değişikliğe gidileceğini açıkladı",
+      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, ülkesinin siyasi stratejisini değiştirmeye ve bu kapsamda hükümette değişiklikler yapılmasına karar verdiklerini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-ukraynanin-yeni-siyasi-stratejisi-icin-hukumette-degisiklige-gidilecegini-acikladi/3995722",
+      "image": "",
+      "date": "2026-07-12T12:23:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Suriye’de Esed rejiminin devrilmesinin ardından ilk Halk Meclisi oturumu yapıldı",
+      "description": "Suriye'de Esed rejiminin devrilmesinin ardından ilk Halk Meclisi oturumu, Cumhurbaşkanı Ahmed Şara başkanlığında gerçekleştirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/suriye-de-esed-rejiminin-devrilmesinin-ardindan-ilk-halk-meclisi-oturumu-yapildi/3995700",
+      "image": "",
+      "date": "2026-07-12T11:56:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Sprach Wegner während Stromausfall mit Merz? Dissenz um Telefonat",
+      "description": "Hat Kai Wegner während des Berliner Stromausfalls mit Bundeskanzler Friedrich Merz telefoniert? Während der Berliner Senat ein Gespräch bestätigt, kann das Bundeskanzleramt es nicht nachvollziehen – und widerspricht der Darstellung.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/07/berlin-regierender-buergermeister-wegner-telefonat-kanzleramt-merz-stromausfall.html",
+      "image": "",
+      "date": "2026-07-12T11:30:05.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Trabzonspor, yeni sezon hazırlıklarına devam etti",
+      "description": "Trabzonspor, yeni sezon hazırlıklarını sürdürdü.",
+      "url": "https://www.aa.com.tr/tr/spor/trabzonspor-yeni-sezon-hazirliklarina-devam-etti/3995677",
+      "image": "",
+      "date": "2026-07-12T11:24:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Muğla ve Diyarbakır'da çıkan orman yangınlarına müdahale ediliyor",
+      "description": "Muğla'nın Hamursuz Tepesi mevkisinde ve Diyarbakır'ın Çüngüş ilçesi kırsalında çıkan orman yangınları kontrol altına alınmaya çalışılıyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/mugla-ve-diyarbakirda-cikan-orman-yanginlarina-mudahale-ediliyor/3995670",
+      "image": "",
+      "date": "2026-07-12T11:17:18.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -25,11 +91,11 @@
       "type": "rss"
     },
     {
-      "title": "Filistin topraklarını gasbeden İsrailliler Mescid-i Aksa'ya baskın düzenledi",
-      "description": "Filistin topraklarını gasbeden İsrailliler, işgal altındaki Doğu Kudüs'te bulunan Mescid-i Aksa'ya İsrail polisi korumasında baskın düzenledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israilliler-mescid-i-aksaya-baskin-duzenledi/3995636",
+      "title": "Gazze'de kavurucu sıcak ve susuzlukla mücadele eden Filistinliler: Çadırların içi ateş gibi, nefes alamıyoruz",
+      "description": "Gazze Şeridi'nde İsrail'in saldırıları nedeniyle yerlerinden edilen ve derme çatma çadırlarda hayatta kalmaya çalışan Filistinliler, kavurucu sıcaklar altında yaşadıkları zorlukları, \"Çadırların içi ateş gibi, nefes alamıyoruz.\" sözleriyle anlatıyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/gazzede-kavurucu-sicak-ve-susuzlukla-mucadele-eden-filistinliler-cadirlarin-ici-ates-gibi-nefes-alamiyoruz/3995643",
       "image": "",
-      "date": "2026-07-12T10:29:53.000Z",
+      "date": "2026-07-12T10:35:57.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -44,72 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Türk basın ve düşün hayatının nevi şahsına münhasır ismi: Mehmet Şevket Eygi",
-      "description": "Babıali’nin son temsilcilerinden gazeteci ve yazar Mehmet Şevket Eygi vefatının 7. yılında anılıyor.",
-      "url": "https://www.aa.com.tr/tr/kultur/turk-basin-ve-dusun-hayatinin-nevi-sahsina-munhasir-ismi-mehmet-sevket-eygi/3995630",
-      "image": "",
-      "date": "2026-07-12T10:17:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "4 yaşındaki Gazzeli Necva’nın hayata tutunması, İsrail ablukasının ardındaki bir ameliyata bağlı",
-      "description": "İsrail’in ağır saldırıları ve ablukası altında yaşam mücadelesi verilen Gazze Şeridi’nde, sağlık sisteminin çökmesi nedeniyle tedavi edilemeyen 4 yaşındaki Necva Haccac, yaşamak için yurt dışına tahliye edilmeyi bekliyor",
-      "url": "https://www.aa.com.tr/tr/dunya/4-yasindaki-gazzeli-necva-nin-hayata-tutunmasi-israil-ablukasinin-ardindaki-bir-ameliyata-bagli/3995609",
-      "image": "",
-      "date": "2026-07-12T10:00:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Brandenburger Feuerwehr bekämpft größere Feldbrände - auch Waldbrandgefahr steigt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brandenburg-feuerwehr-trockenheit-hitze-ernte-felder-waldbrand-gefahr.html",
-      "image": "",
-      "date": "2026-07-12T09:37:52.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Coli-Bakterien: Abkochgebot für Trinkwasser in Buckow angeordnet",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/abkochgebot-trinkwasser-in-buckow-maerkisch-oderland.html",
-      "image": "",
-      "date": "2026-07-12T09:23:36.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Die Toten Hosen lassen es im Olympiastadion zum Abschied noch mal krachen",
-      "description": "Die Toten Hosen sind auf Abschiedstournee und gaben im ausverkauften Berliner Olympiastadion vor über 70.000 Fans ihr größtes Deutschlandkonzert und ihr vielleicht letztes Berlin-Konzert unter dem Motto \"Trink aus, wir müssen gehen\".",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/07/berlin-olympiastation-die-toten-hosen-groesstes-deutschland-konzert.html",
-      "image": "",
-      "date": "2026-07-12T08:31:58.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Filistin topraklarını gasbeden İsrailliler, Batı Şeria'da CNN ekibinin de olduğu gazetecilere saldırdı",
-      "description": "Filistin topraklarını gasbeden İsrailliler, işgal altındaki Batı Şeria'nın Sincil beldesinde görev yapan CNN ekibinin de aralarında bulunduğu basın mensuplarına taş, sopa ve bıçaklarla saldırdı.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israilliler-bati-seriada-cnn-ekibinin-de-oldugu-gazetecilere-saldirdi/3995245",
-      "image": "",
-      "date": "2026-07-11T18:55:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
