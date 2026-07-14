@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-07-14T17:13:24.189Z",
+  "lastUpdated": "2026-07-14T19:17:48.490Z",
   "count": 10,
   "articles": [
     {
-      "title": "Yunanistan, Poros Adası'nda su sıkıntısı nedeniyle 3 aylık olağanüstü hal ilan etti",
-      "description": "Yunanistan, su sıkıntısı çekilen Poros Adası'nda 3 aylık olağanüstü hal ilan etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/yunanistan-poros-adasinda-su-sikintisi-nedeniyle-3-aylik-olaganustu-hal-ilan-etti/3998119",
+      "title": "Dışişlerinden Husilerin Suudi Arabistan'a füze saldırısına kınama",
+      "description": "Dışişleri Bakanlığı, Suudi Arabistan'ın güney bölgesine Husiler tarafından düzenlenen füze saldırısını en güçlü biçimde kınadı.",
+      "url": "https://www.aa.com.tr/tr/gundem/disislerinden-husilerin-suudi-arabistana-fuze-saldirisina-kinama/3998220",
       "image": "",
-      "date": "2026-07-14T17:05:06.000Z",
+      "date": "2026-07-14T19:04:33.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kahramanmaraş'ta 4,2 büyüklüğünde deprem",
+      "description": "Kahramanmaraş'ın Pazarcık ilçesinde saat 21.27'de 4,2 büyüklüğünde deprem meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/kahramanmarasta-4-2-buyuklugunde-deprem/3998216",
+      "image": "",
+      "date": "2026-07-14T19:02:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "AK Parti'li Yücel Arzen Hacıoğulları, 15 Temmuz için \"Davet\" şiirini besteledi",
+      "description": "AK Parti İstanbul Milletvekili, besteci ve söz yazarı Yücel Arzen Hacıoğulları, Nazım Hikmet Ran'ın \"Davet\" şiirini FETÖ'nün darbe girişiminin 10'uncu yılı nedeniyle besteleyerek seslendirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ak-partili-yucel-arzen-haciogullari-15-temmuz-icin-davet-siirini-besteledi/3998195",
+      "image": "",
+      "date": "2026-07-14T18:45:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistin direnişinin sembol ismi Bergusi'nin, İsrail hapishanesinde plastik mermiyle vurulduğu açıklandı",
+      "description": "Saldırıdan son hapishane ziyaretinde haberdar olan Bergusi’nin eşi avukat Fedva Bergusi, İsrailli gardiyanın plastik mermiyle sıfır mesafeden eşinin bacağına ateş açtığını belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistin-direnisinin-sembol-ismi-bergusinin-israil-hapishanesinde-plastik-mermiyle-vuruldugu-aciklandi/3998185",
+      "image": "",
+      "date": "2026-07-14T18:33:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'deki müzayedede T-rex iskeleti 50,1 milyon dolara satılarak rekor kırdı",
+      "description": "ABD'nin New York kentinde düzenlenen açık artırmada, neredeyse tam durumdaki bir Tyrannosaurus rex (T-rex) iskeleti 50,1 milyon dolara alıcı bularak müzayedede satılan en pahalı dinozor fosili oldu.",
+      "url": "https://www.aa.com.tr/tr/dunya/abddeki-muzayedede-t-rex-iskeleti-50-1-milyon-dolara-satilarak-rekor-kirdi/3998175",
+      "image": "",
+      "date": "2026-07-14T18:23:51.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Doekhi zu Lazio Rom: Ex-Unioner Verteidiger mit Italienern einig",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/ex-union-berlin-abwehrspieler-danilho-doekhi-lazio-rom.html",
+      "image": "",
+      "date": "2026-07-14T18:18:12.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Polizei Berlin bekommt neues Kriminaltechnisches Institut in Johannisthal",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/07/polizei-berlin-neues-kriminaltechnisches-institut-johannisthal.html",
+      "image": "",
+      "date": "2026-07-14T17:45:16.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -22,39 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "TRT 12 Punto'da yapay zekanın sinema ve animasyon sektöründeki geleceği masaya yatırıldı",
-      "description": "TRT'nin bu yıl 8. kez düzenlediği senaryo geliştirme ve ortak yapım platformu \"TRT 12 Punto\" kapsamında \"Hayalden Görsele: Yapay Zeka ile Üretimin Yeni Olanakları\" paneli, Sinema Feriye'de gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/kultur/trt-12-puntoda-yapay-zekanin-sinema-ve-animasyon-sektorundeki-gelecegi-masaya-yatirildi/3998102",
-      "image": "",
-      "date": "2026-07-14T16:47:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "\"Reel Sektör ve Finans Sektörü Diyalog Güçlendirme Toplantısı\" gerçekleştirildi",
-      "description": "TOBB Başkanı Rifat Hisarcıklıoğlu, Cumhurbaşkanı Recep Tayyip Erdoğan'ın müjdesini verdiği 1 trilyon liralık yeni imalat sanayi yatırım paketine ilişkin, \"Bu paket, devletimizin reel sektörün sesini duyduğunun en somut göstergesidir.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/reel-sektor-ve-finans-sektoru-diyalog-guclendirme-toplantisi-gerceklestirildi/3998078",
-      "image": "",
-      "date": "2026-07-14T16:37:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ile Lübnan arasındaki müzakerelerin 6. turu Roma'da başladı",
-      "description": "İsrail ile Lübnan arasındaki doğrudan müzakerelerin 6. turu, İtalya'nın başkenti Roma'da başladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ile-lubnan-arasindaki-muzakerelerin-6-turu-romada-basladi/3998060",
-      "image": "",
-      "date": "2026-07-14T16:29:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -77,39 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "XXL-Straßenbahn Urbanliner geht auf M4-Strecke in den Regelbetrieb",
-      "description": "",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/07/berlin-bvg-strassenbahn-m4-urbanliner-offizieller-start.html",
-      "image": "",
-      "date": "2026-07-14T15:29:52.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Am Späti in Berlin-Marienfelde: \"Ich wollte nicht im Dorf bleiben\"",
-      "description": "Die meisten Berliner wohnen außerhalb des Rings. Zwei rbb|24-Reporter sprechen dort Leute am Späti an und fragen, was sie umtreibt. Heute: eine junge Brandenburgerin, die nicht in ihr Dorf zurückkehren möchte.",
-      "url": "https://www.rbb24.de/panorama/thema/spaeti/berlin-marienfelde-am-spaeti-brandenburgerin-dorf.html",
-      "image": "",
-      "date": "2026-07-14T15:19:16.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İletişim Başkanlığından \"15 Temmuz'un 10. Yılında: İrade Bizim Zafer Bizim\" paneli",
-      "description": "Cumhurbaşkanlığı İletişim Başkanlığı ile Ankara Üniversitesi işbirliğiyle \"15 Temmuz'un 10. Yılında: İrade Bizim Zafer Bizim\" paneli düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskanligindan-15-temmuzun-10-yilinda-irade-bizim-zafer-bizim-paneli/3997889",
-      "image": "",
-      "date": "2026-07-14T14:37:28.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
