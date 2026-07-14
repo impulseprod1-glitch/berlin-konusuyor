@@ -1,57 +1,57 @@
 {
-  "lastUpdated": "2026-07-13T22:55:08.079Z",
+  "lastUpdated": "2026-07-14T02:24:10.744Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail, Batı Şeria'daki Yahudi yerleşim birimlerine 12 bin yeni konut yapacak",
+      "description": "İsrail hükümeti, işgal altındaki Batı Şeria'daki çok sayıda yasa dışı Yahudi yerleşim biriminin genişletilmesi kapsamında 12 bin yeni konutun yapılması ve alt yapı yatırımları için 8,5 milyar şekellik bir \"çatı anlaşmasına\" imza attı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-bati-seriadaki-yahudi-yerlesim-birimlerine-12-bin-yeni-konut-yapacak/3997096",
+      "image": "",
+      "date": "2026-07-14T01:44:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BAE, Hürmüz Boğazı'nda iki petrol tankerini hedef alan İran saldırısını kınadı",
+      "description": "Birleşik Arap Emirlikleri (BAE), Hürmüz Boğazı'nda ulusal petrol tankerleri \"Mombasa\" ve \"Al Bahiyah\"ı hedef alan İran saldırısını şiddetle kınadı.",
+      "url": "https://www.aa.com.tr/tr/dunya/bae-hurmuz-bogazinda-iki-petrol-tankerini-hedef-alan-iran-saldirisini-kinadi/3997085",
+      "image": "",
+      "date": "2026-07-14T00:16:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Venezuela'daki depremlerde hayatını kaybedenlerin sayısı 4 bin 561'e yükseldi",
+      "description": "Venezuela'da, 24 Haziran'da meydana gelen iki büyük depremde yaşamını yitirenlerin sayısının 4 bin 561'e çıktığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/venezueladaki-depremlerde-hayatini-kaybedenlerin-sayisi-4-bin-561e-yukseldi/3997075",
+      "image": "",
+      "date": "2026-07-13T23:18:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BAE: İran Hürmüz Boğazı'nda 2 tankerimize füze saldırısı düzenledi, 1 ölü, 8 yaralı",
+      "description": "Birleşik Arap Emirlikleri (BAE) Savunma Bakanlığı, Hürmüz Boğazı'nın güney koridorunda ülkeye ait 2 tankerin İran'a ait seyir füzeleriyle hedef alındığını, 1 mürettebatın hayatını kaybettiğini, 8 personelin yaralandığını duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/bae-iran-hurmuz-bogazinda-2-tankerimize-fuze-saldirisi-duzenledi-1-olu-8-yarali/3997074",
+      "image": "",
+      "date": "2026-07-13T23:15:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Trump, İran'a yönelik saldırıların süreceğini ve anlaşmanın mümkün olduğunu belirtti",
       "description": "ABD Başkanı Donald Trump, İran'a yönelik saldırıların süreceğini belirterek, müzakerelerden tamamen vazgeçmediğini, anlaşmanın halen mümkün olduğunu söyledi.",
       "url": "https://www.aa.com.tr/tr/dunya/trump-irana-yonelik-saldirilarin-surecegini-ve-anlasmanin-mumkun-oldugunu-belirtti/3997071",
       "image": "",
       "date": "2026-07-13T22:50:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AB ve KİK'ten Hürmüz Boğazı'nı açık tutması için İran'a ortak çağrı",
-      "description": "Avrupa Birliği (AB) ile Körfez İşbirliği Konseyi (KİK), İran'a deniz ulaşımına yönelik müdahaleleri durdurması ve Hürmüz Boğazı'nı herhangi bir koşul, geçiş ücreti veya harç uygulamaksızın uluslararası deniz trafiğine açık tutması çağrısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/ab-ve-kikten-hurmuz-bogazini-acik-tutmasi-icin-irana-ortak-cagri/3997054",
-      "image": "",
-      "date": "2026-07-13T21:52:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD Başkanı Trump, İran'a yönelik ABD saldırılarının devam edeceğini duyurdu",
-      "description": "ABD Başkanı Donald Trump, İran'a yönelik operasyonların süreceğini belirterek, \"Bu gece onları çok sert vuracağız, yarın da çok sert vuracağız.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-trump-irana-yonelik-abd-saldirilarinin-devam-edecegini-duyurdu/3997049",
-      "image": "",
-      "date": "2026-07-13T21:42:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanlığına Cevdet Yılmaz vekalet edecek",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan'ın Katar Devleti'ne ziyareti dolayısıyla Cumhurbaşkanlığına, Cumhurbaşkanı Yardımcısı Cevdet Yılmaz vekalet edecek.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskanligina-cevdet-yilmaz-vekalet-edecek/3997043",
-      "image": "",
-      "date": "2026-07-13T21:23:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fransa'da orman yangını çıkaran 59 kişi gözaltına alındı",
-      "description": "Fransa İçişleri Bakanı Laurent Nunez, ülkede kasıtlı şekilde veya kazayla orman yangını çıkaran 59 kişinin gözaltına alındığını belirtti.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransada-orman-yangini-cikaran-59-kisi-gozaltina-alindi/3997036",
-      "image": "",
-      "date": "2026-07-13T21:01:03.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
