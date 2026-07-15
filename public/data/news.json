@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-07-15T02:22:12.215Z",
+  "lastUpdated": "2026-07-15T06:12:26.957Z",
   "count": 10,
   "articles": [
+    {
+      "title": "E-Scooter-Fahrer stirbt bei Unfall in Berlin-Kreuzberg",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-kreuzberg-e-scooter-fahrer-stirbt-unfall-auto.html",
+      "image": "",
+      "date": "2026-07-15T05:50:13.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "\"Ahbap Derneği adına toplanan bağışların şüphelilerin hesaplarına aktarıldığı\" iddiasına ilişkin 23 şüpheli adliyede",
+      "description": "\"Ahbap Derneği adına toplanan bağışların şüphelilerin hesaplarına aktarıldığı\" iddiasına yönelik yürütülen soruşturmada gözaltına alınan 23 şüpheli adliyeye sevk edildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ahbap-dernegi-adina-toplanan-bagislarin-suphelilerin-hesaplarina-aktarildigi-iddiasina-iliskin-23-supheli-adliyede/3998448",
+      "image": "",
+      "date": "2026-07-15T05:44:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "15-16 Temmuz: Milli Demokratik Halk Devrimi",
+      "description": "15-16 Temmuz, dünya siyasal tarihinin gördüğü en büyük barışçı devrimdir. 15 Temmuz’da siyasal gerici ve faşist hareketin devirme amaçlı kalkışmasıyla antidemokratik sistem ve demokratik merkez arasında çok büyük bir çatışma ve yüzleşme yaşanmıştır.",
+      "url": "https://www.aa.com.tr/tr/analiz/15-16-temmuz-milli-demokratik-halk-devrimi/3998447",
+      "image": "",
+      "date": "2026-07-15T05:39:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "EGM'den 15 Temmuz Demokrasi ve Milli Birlik Günü'ne özel video",
+      "description": "Emniyet Genel Müdürlüğü (EGM), 15 Temmuz Demokrasi ve Milli Birlik Günü'ne özel hazırladığı videoyu paylaştı.",
+      "url": "https://www.aa.com.tr/tr/gundem/egmden-15-temmuz-demokrasi-ve-milli-birlik-gunune-ozel-video/3998433",
+      "image": "",
+      "date": "2026-07-15T03:03:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": " Öğrenci affına ve yükseköğretime ilişkin düzenlemeleri içeren kanun teklifi komisyonda kabul edildi ",
       "description": "AK Parti milletvekillerinin imzasını taşıyan öğrenci affına ve yükseköğretime ilişkin düzenlemeleri içeren Yükseköğretim Kanunu ve Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifi, komisyonda kabul edildi.",
@@ -19,39 +63,6 @@
       "url": "https://www.aa.com.tr/tr/gundem/-cankaya-belediye-baskani-gunerin-de-aralarinda-bulundugu-24-supheli-tutuklandi/3998424",
       "image": "",
       "date": "2026-07-15T01:33:04.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Venezuela'daki depremlerde hayatını kaybedenlerin sayısı 4 bin 734'e çıktı",
-      "description": "Venezuela'da, 24 Haziran'da meydana gelen iki büyük depremde yaşamını yitirenlerin sayısının 4 bin 734'e yükseldiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/venezueladaki-depremlerde-hayatini-kaybedenlerin-sayisi-4-bin-734e-cikti/3998419",
-      "image": "",
-      "date": "2026-07-15T00:52:53.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "15 Temmuz Şehitler Köprüsü trafiğe kapatıldı",
-      "description": "15 Temmuz Şehitler Köprüsü, 15 Temmuz Demokrasi ve Milli Birlik Günü etkinlikleri dolayısıyla saat 03.00 itibarıyla trafiğe kapatıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/15-temmuz-sehitler-koprusu-trafige-kapatildi/3998416",
-      "image": "",
-      "date": "2026-07-15T00:45:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Trump, İran'ın müzakere etmemesi halinde tüm enerji santrallerini ve köprülerini yıkacaklarını söyledi",
-      "description": "ABD Başkanı Donald Trump, İran'ın müzakere masasına oturmaması durumunda tüm enerji santrallerini ve köprülerini yıkacaklarını ifade etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/trump-iranin-muzakere-etmemesi-halinde-tum-enerji-santrallerini-ve-koprulerini-yikacaklarini-soyledi/3998389",
-      "image": "",
-      "date": "2026-07-14T23:00:51.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-brandenburg-gruen-feucht-kuehl-index-econics-institut-niedrige-werte.html",
       "image": "",
       "date": "2026-07-14T16:21:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kinderschutzambulanz am Klinikum Frankfurt (Oder) eröffnet",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/frankfurt-oder-kinderschutz-ambulanz-eroeffnet-Kinder-Gewalt.html",
-      "image": "",
-      "date": "2026-07-14T15:52:40.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
