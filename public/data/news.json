@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-07-16T15:37:50.624Z",
+  "lastUpdated": "2026-07-16T17:14:00.156Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İspanya Başbakanı Sanchez'in eşi Gomez, pasaportunu geri alsa da yargılanma süreci devam edecek",
+      "description": "İspanya Başbakanı Pedro Sanchez'in eşi Begona Gomez'in geçici olarak el konulan pasaportunun iadesine karar verilirken, hakkındaki yargılamanın devam edeceği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/ispanya-basbakani-sanchezin-esi-gomez-pasaportunu-geri-alsa-da-yargilanma-sureci-devam-edecek/4000638",
+      "image": "",
+      "date": "2026-07-16T17:05:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM Genel Sekreteri Guterres, 27-29 Temmuz’da Kıbrıs'ı ziyaret edecek ve liderlerle görüşecek",
+      "description": "Birleşmiş Milletler (BM) Genel Sekreteri Antonio Guterres'in, 27-29 Temmuz'da Kıbrıs'ı ziyaret ederek liderlerle görüşmeler yapacağı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-genel-sekreteri-guterres-27-29-temmuz-da-kibrisi-ziyaret-edecek-ve-liderlerle-gorusecek/4000637",
+      "image": "",
+      "date": "2026-07-16T17:03:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Bolat'tan Brüksel'de AB'ye ticaret ve yatırım politikası mesajı",
+      "description": "Ticaret Bakanı Ömer Bolat, Avrupa Birliği’nin (AB) yeni ticaret ve yatırım politikalarının Türkiye ile Birlik arasındaki derin ekonomik entegrasyonu yansıtacak şekilde şekillendirilmesi gerektiğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-bolattan-brukselde-abye-ticaret-ve-yatirim-politikasi-mesaji/4000628",
+      "image": "",
+      "date": "2026-07-16T16:56:24.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BerlinTrend: CDU legt nach Spitzenkandidat-Wechsel zu, Linke führt Umfrage an",
+      "description": "Nachdem die Berliner CDU ihren Spitzenkandidaten Kai Wegner durch Stefan Evers ausgetauscht hat, kann die Partei in der Wählergunst zulegen. Auch Die Linke kann weiter zulegen.",
+      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-trend-sonntagsfrage-abgeordnetenhaus-wahl.html",
+      "image": "",
+      "date": "2026-07-16T16:54:44.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "TRT 12 Punto'da Türkiye ve Slovenya'nın çocuk sineması deneyimleri ele alındı",
+      "description": "TRT'nin bu yıl 8. kez düzenlediği senaryo geliştirme ve ortak yapım platformu \"TRT 12 Punto\" kapsamında \"Çocuklar İçin Sinema: Türkiye ve Slovenya'dan Deneyimler\" paneli, Sinema Feriye'de gerçekleştirildi.",
+      "url": "https://www.aa.com.tr/tr/kultur/trt-12-puntoda-turkiye-ve-slovenyanin-cocuk-sinemasi-deneyimleri-ele-alindi/4000599",
+      "image": "",
+      "date": "2026-07-16T16:19:27.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Illegales Drogenlabor in Ludwigsfelde zur Herstellung von Crystal Meth genutzt",
+      "description": "Nach einer Großrazzia am Mittwoch in Berlin und Brandenburg analysieren Experten die Chemikalien in einem entdeckten Drogenlabor. Mehrere Verdächtige wurden festgenommen.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/drogen-labor-ludwigsfelde-produktion-crystal-meth-mehrere-festnahmen.html",
+      "image": "",
+      "date": "2026-07-16T15:38:07.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Balıkesir'de çıkan orman yangınına müdahale ediliyor",
+      "description": "Balıkesir'in Savaştepe ilçesinde çıkan orman yangınına müdahale ediliyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/balikesirde-cikan-orman-yanginina-mudahale-ediliyor/4000572",
+      "image": "",
+      "date": "2026-07-16T15:36:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Berlin bekommt 350 neue S-Bahnen",
       "description": "Die drei Unternehmen S-Bahn, Siemens Mobility und Stadler haben im Vergabeverfahren für den Betrieb der Berliner S-Bahn den Zuschlag erhalten. 350 neue Züge dann in den kommenden Jahren beschafft und eingesetzt werden.",
@@ -11,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Borsa günü yükselişle tamamladı",
-      "description": "Borsa İstanbul'da BIST 100 endeksi, günü yüzde 1,22 değer kazanarak 14.251,29 puandan tamamladı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/borsa-gunu-yukselisle-tamamladi/4000561",
-      "image": "",
-      "date": "2026-07-16T15:21:33.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -36,17 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "İsrail İç İstihbarat Teşkilatı, Başbakan Netanyahu'nun eşine ömür boyu koruma sağlayacak",
-      "description": "İsrail'de Başbakan Binyamin Netanyahu'nun eşi Sara Netanyahu'ya ömür boyu, çocukları Yair ve Avner Netanyahu'ya ise 5 yıl boyunca İsrail iç istihbarat teşkilatı Şin-Bet (Şabak) tarafından devlet koruması sağlanması kararı onaylandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ic-istihbarat-teskilati-basbakan-netanyahunun-esine-omur-boyu-koruma-saglayacak/4000553",
-      "image": "",
-      "date": "2026-07-16T15:16:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Mann legt Feuer in Behörde in Finsterwalde - mehrere Mitarbeiter verletzt",
       "description": "In einer Außenstelle der Kreisverwaltung Elbe-Elster in Finsterwalde hat es einen Angriff gegeben, ein Mann soll ein Feuer gelegt haben. Mehrere Mitarbeiter wurden verletzt. Es laufen Ermittlungen wegen des Verdachts auf versuchte Tötung.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/angriff-kreisverwaltung-elbe-elster-finsterwalde-mitarbeiter-verletzt.html",
@@ -55,61 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fenerbahçe'nin yeni transferi Mason Greenwood, İstanbul'a geldi",
-      "description": "Fenerbahçe'nin Fransa temsilcisi Olimpik Marsilya'dan kadrosuna kattığı İngiliz futbolcu Mason Greenwood, İstanbul'a geldi.",
-      "url": "https://www.aa.com.tr/tr/spor/fenerbahcenin-yeni-transferi-mason-greenwood-istanbula-geldi/4000531",
-      "image": "",
-      "date": "2026-07-16T14:47:38.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Avrupa otomotiv sektörü, Türkiye'nin \"Made in EU\"ya dahil edilmesini destekliyor",
-      "description": "Ticaret Bakanı Ömer Bolat, Avrupa otomobil üreticilerinin temsilcileriyle yaptığı görüşmede, Türkiye'nin Avrupa Birliği'nin (AB) \"Made in EU\" politikasına tam ve koşulsuz dahil edilmesine yönelik ortak yaklaşımın memnuniyet verici olduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/avrupa-otomotiv-sektoru-turkiyenin-made-in-euya-dahil-edilmesini-destekliyor/4000521",
-      "image": "",
-      "date": "2026-07-16T14:30:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Rettungsdienste während Hitzewelle sehr stark belastet ",
-      "description": "Die Freie Universität hat Rettungsdienst-Daten aus der Zeit der Hitzewelle im Juni ausgewertet und festgestellt: Während und kurz nach der Hitze kam es zu einem deutlichen Anstieg der Einsätze in Berlin.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/studie-hitzewelle-rettungsdienste-freie-universitaet-berlin.html",
-      "image": "",
-      "date": "2026-07-16T14:26:16.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner CSD wird erstmals an zwei Tagen gefeiert",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/csd-christopher-street-day-berlin.html",
-      "image": "",
-      "date": "2026-07-16T14:25:05.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "T3 Vakfı Afrika'daki ilk bilim merkezini Moritanya'da açtı",
-      "description": "Türkiye Teknoloji Takımı Vakfı (T3 Vakfı), Afrika'daki ilk bilim merkezini Moritanya'nın başkenti Nuakşot'ta hizmete açtı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/t3-vakfi-afrikadaki-ilk-bilim-merkezini-moritanyada-acti/4000504",
-      "image": "",
-      "date": "2026-07-16T14:12:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
