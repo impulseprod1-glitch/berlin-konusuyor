@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-07-17T19:05:38.697Z",
+  "lastUpdated": "2026-07-17T20:53:02.875Z",
   "count": 10,
   "articles": [
     {
-      "title": "Wetter: Schwere Gewitter ziehen über Brandenburg und Berlin",
-      "description": "Ein schweres Unwetter ist am Freitagmittag über Berlin und Brandenburg gezogen. Inzwischen hat sich Lage beruhigt. Auch die Feuerwehr meldet keine wetterbedingten Einsätze.",
+      "title": "Umgestürzte Bäume nach Gewitter über Brandenburg und Berlin",
+      "description": "Ein schweres Unwetter ist am Freitagmittag über Berlin und Brandenburg gezogen. Besonders betroffen war der Süden Brandenburgs. Laut Feuerwehr gab es keine größeren Einsätzen oder Verletzte.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-brandenburg-gewitter-wetter-starkregen-freitag.html",
       "image": "",
-      "date": "2026-07-17T18:31:47.000Z",
+      "date": "2026-07-17T20:36:35.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye ile AB arasındaki araç ticareti 2025'te 37 milyar avroyu buldu ",
+      "description": "Avrupa Otomobil Üreticileri Birliği (ACEA), Türkiye'nin 2025'te Avrupa Birliği'nin (AB) yeni araç ihracatında üçüncü büyük pazar olduğunu ve karşılıklı yeni araç ticaret hacminin 37 milyar avroya ulaştığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/turkiye-ile-ab-arasindaki-arac-ticareti-2025te-37-milyar-avroyu-buldu-/4001828",
+      "image": "",
+      "date": "2026-07-17T20:22:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump Kanada'yı orman yangınlarına karşı önlem almamakla suçladı",
+      "description": "ABD Başkanı Donald Trump, Kanada hükümetini, ormanların bakımını yeterince yapmadığı gerekçesiyle çıkan büyük orman yangınları ve bu yangınların ABD'de yol açtığı hava kirliliğinden sorumlu tuttu.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-kanadayi-orman-yanginlarina-karsi-onlem-almamakla-sucladi/4001826",
+      "image": "",
+      "date": "2026-07-17T20:22:23.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "1:1 gegen Winterthur: Union zum dritten Mal in Serie sieglos",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/fussball-bundesliga-union-berlin-testspiel-winterthur.html",
+      "image": "",
+      "date": "2026-07-17T19:16:23.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Fußball: Hertha siegt dank doppeltem Sessa gegen Tirol",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/fussball-zweite-bundesliga-hertha-bsc-testspiel-wsg-tirol.html",
+      "image": "",
+      "date": "2026-07-17T19:16:02.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Sondereinheiten \"Ferrum\" und \"Telum\": Drei Festnahmen nach Schüssen auf Haus in Berlin-Spandau im Mai",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-polizei-ferrum-telum-festnahme.html",
+      "image": "",
+      "date": "2026-07-17T19:10:20.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "TRT 12 Punto'da \"Hind Rajab'ın Sesi\" filminin yapım süreci anlatıldı",
+      "description": "Senaryo geliştirme ve ortak yapım platformu TRT 12 Punto kapsamında gerçekleştirilen \"Filistin Sineması Özel Gösterimi\"nde, Kaouther Ben Hania'nın yönettiği \"Hind Rajab'ın Sesi\" filmi izleyicilerle buluştu.",
+      "url": "https://www.aa.com.tr/tr/kultur/trt-12-puntoda-hind-rajabin-sesi-filminin-yapim-sureci-anlatildi/4001741",
+      "image": "",
+      "date": "2026-07-17T18:18:33.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -25,91 +91,25 @@
       "type": "rss"
     },
     {
-      "title": "Türkiye, FIVB Erkekler Milletler Ligi'nde Ukrayna'yı mağlup etti",
-      "description": "A Milli Erkek Voleybol Takımı, 2026 FIVB Milletler Ligi'nin (VNL) Sırbistan'da düzenlenen üçüncü haftasındaki ikinci maçında Ukrayna'yı 2-0 geriden gelerek 3-2 yendi",
-      "url": "https://www.aa.com.tr/tr/spor/turkiye-fivb-erkekler-milletler-liginde-ukraynayi-maglup-etti/4001711",
+      "title": "Trabzonspor'un yeni transferlerinden Sidny Lopes Cabral, Trabzon'a geldi",
+      "description": "Trabzonspor'un 5 yıllığına renklerine bağladığı Yeşil Burun Adalı savunma oyuncusu Sidny Lopes Cabral, Trabzon'a geldi.",
+      "url": "https://www.aa.com.tr/tr/spor/trabzonsporun-yeni-transferlerinden-sidny-lopes-cabral-trabzona-geldi/4001707",
       "image": "",
-      "date": "2026-07-17T17:23:28.000Z",
+      "date": "2026-07-17T17:12:46.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "ABD'nin İsrail'e ilave yakıt ikmal uçağı göndermeyi planladığı iddiası",
-      "description": "ABD yönetiminin, İran'a yönelik saldırıların kapsamının genişletilmesi olasılığı çerçevesinde İsrail'e onlarca ilave yakıt ikmal uçağı göndermeyi planladığı öne sürüldü.",
-      "url": "https://www.aa.com.tr/tr/dunya/abdnin-israile-ilave-yakit-ikmal-ucagi-gondermeyi-planladigi-iddiasi/4001708",
+      "title": "Cumhurbaşkanı Erdoğan'dan AK Parti İstanbul İl Başkanlığına ziyaret",
+      "description": "Cumhurbaşkanı ve AK Parti Genel Başkanı Recep Tayyip Erdoğan, partisinin İstanbul İl Başkanlığını ziyaret etti.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogandan-ak-parti-istanbul-il-baskanligina-ziyaret/4001638",
       "image": "",
-      "date": "2026-07-17T17:12:51.000Z",
+      "date": "2026-07-17T15:42:06.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "2026 FIFA Dünya Kupası'nda seyirci katılımı önceki iki turnuvanın toplamını aştı",
-      "description": "Beyaz Saray Görev Gücü İcra Direktörü Andrew Giuliani, 2026 FIFA Dünya Kupası'nda seyirci katılımının 6,5 milyonu aştığını ve bu sayının önceki iki Dünya Kupası'nın toplamından fazla olduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/spor/2026-fifa-dunya-kupasinda-seyirci-katilimi-onceki-iki-turnuvanin-toplamini-asti/4001703",
-      "image": "",
-      "date": "2026-07-17T16:55:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan, Hakkari'de şenliğe katılan kadınlara telefonda seslendi",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, AK Parti Genel Merkez Kadın Kolları Başkanlığınca Hakkari'nin 3 bin 300 rakımlı Berçelan Yaylası'nda düzenlenen \"Kadın Şenliği\"ne katılanlara telefonda seslenerek, İstanbul'dan selam ve sevgilerini iletti.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-hakkaride-senlige-katilan-kadinlara-telefonda-seslendi/4001685",
-      "image": "",
-      "date": "2026-07-17T16:38:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Brandenburg muss Schadenersatz für Schließung von Haasenburg-Heimen zahlen",
-      "description": "2013 hatte das Brandenburger Jugendministerium drei Heime für schwer erziehbare Kinder und Jugendliche geschlossen. Sie sah das Kindeswohl in den Einrichtungen akut gefährdet. Jetzt muss das Land dem Betreiber Schadenersatz zahlen.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/07/brandenburg-schliessung-haasenburg-schadensersatz.html",
-      "image": "",
-      "date": "2026-07-17T16:23:49.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Sondereinheiten \"Ferrum\" und \"Telum\": Drei Festnahmen nach Schüssen auf Haus in Berlin-Spandau im Mai",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-polizei-ferrum-telum-festnahme.html",
-      "image": "",
-      "date": "2026-07-17T16:17:45.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Dünya Etnospor Birliği Başkanı Bilal Erdoğan: Türkiye, izcilikte dünyada müstesna bir yere sahip",
-      "description": "Dünya Etnospor Birliği Başkanı Bilal Erdoğan, \"Türkiye, izcilikte dünyada müstesna bir yere sahip ve çok daha iyi noktalara da gelecek.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/spor/dunya-etnospor-birligi-baskani-bilal-erdogan-turkiye-izcilikte-dunyada-mustesna-bir-yere-sahip/4001661",
-      "image": "",
-      "date": "2026-07-17T16:09:55.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Debatte über ZDF-Ausladung von Danger Dan",
-      "description": "",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/07/danger-dan-zdf-die-anstalt-ausladung.html",
-      "image": "",
-      "date": "2026-07-17T15:40:27.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     }
   ],
