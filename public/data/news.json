@@ -1,38 +1,71 @@
 {
-  "lastUpdated": "2026-07-17T20:53:02.875Z",
+  "lastUpdated": "2026-07-17T22:48:39.655Z",
   "count": 10,
   "articles": [
     {
-      "title": "Umgestürzte Bäume nach Gewitter über Brandenburg und Berlin",
-      "description": "Ein schweres Unwetter ist am Freitagmittag über Berlin und Brandenburg gezogen. Besonders betroffen war der Süden Brandenburgs. Laut Feuerwehr gab es keine größeren Einsätzen oder Verletzte.",
+      "title": "Fitch, Türkiye'nin kredi notunu teyit etti",
+      "description": "Uluslararası kredi derecelendirme kuruluşu Fitch Ratings, Türkiye'nin kredi notunu \"BB-\" olarak teyit ederken, kredi notu görünümünü \"durağan\" olarak korudu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/fitch-turkiyenin-kredi-notunu-teyit-etti/4001881",
+      "image": "",
+      "date": "2026-07-17T22:19:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ibrahima Konate: 3'üncülük maçında Fransa Milli Takımı'nın oyuncuları olarak üzerimize düşen bir görevimiz var",
+      "description": "2026 FIFA Dünya Kupası'nda Fransa ile İngiltere arasında yapılacak 3'üncülük mücadelesi öncesinde Fransız futbolcu Ibrahima Konate, sonuna kadar ciddiyetle oynayacaklarını söyledi.",
+      "url": "https://www.aa.com.tr/tr/spor/ibrahima-konate-3unculuk-macinda-fransa-milli-takiminin-oyunculari-olarak-uzerimize-dusen-bir-gorevimiz-var/4001876",
+      "image": "",
+      "date": "2026-07-17T21:50:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu, bir grup İsraillinin işgal altındaki Golan Tepeleri'nden Suriye'ye girdiğini duyurdu",
+      "description": "İsrail ordusu, bir grup İsraillinin önceki gün işgal altında bulunan Golan Tepeleri'ndeki Mecdel Şems bölgesinden Suriye'ye girdiğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-bir-grup-israillinin-isgal-altindaki-golan-tepelerinden-suriyeye-girdigini-duyurdu/4001874",
+      "image": "",
+      "date": "2026-07-17T21:47:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Atama ve görevden alma kararları Resmi Gazete'de ",
+      "description": "Bazı bakanlık ve kamu kurumlarına ilişkin atama ve görevden alma kararları Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/atama-ve-gorevden-alma-kararlari-resmi-gazetede-/4001871",
+      "image": "",
+      "date": "2026-07-17T21:34:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ardahan Valiliğine Ömer Hilmi Yamlı atandı",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan'ın imzasıyla Resmi Gazete'de yayımlanan atama kararıyla Ardahan Valiliğine Ömer Hilmi Yamlı getirildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ardahan-valiligine-omer-hilmi-yamli-atandi/4001868",
+      "image": "",
+      "date": "2026-07-17T21:21:24.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Gewitter über Berlin und Brandenburg: S-Bahn prallt gegen Baum",
+      "description": "Ein schweres Unwetter ist am späten Freitag über Berlin und Brandenburg gezogen. In Berlin stieß eine S-Bahn mit einem umgestürzten Baum zusammen. In Brandenburg liefen Keller voll.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-brandenburg-gewitter-wetter-starkregen-freitag.html",
       "image": "",
-      "date": "2026-07-17T20:36:35.000Z",
+      "date": "2026-07-17T21:13:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Türkiye ile AB arasındaki araç ticareti 2025'te 37 milyar avroyu buldu ",
-      "description": "Avrupa Otomobil Üreticileri Birliği (ACEA), Türkiye'nin 2025'te Avrupa Birliği'nin (AB) yeni araç ihracatında üçüncü büyük pazar olduğunu ve karşılıklı yeni araç ticaret hacminin 37 milyar avroya ulaştığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/turkiye-ile-ab-arasindaki-arac-ticareti-2025te-37-milyar-avroyu-buldu-/4001828",
-      "image": "",
-      "date": "2026-07-17T20:22:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Trump Kanada'yı orman yangınlarına karşı önlem almamakla suçladı",
-      "description": "ABD Başkanı Donald Trump, Kanada hükümetini, ormanların bakımını yeterince yapmadığı gerekçesiyle çıkan büyük orman yangınları ve bu yangınların ABD'de yol açtığı hava kirliliğinden sorumlu tuttu.",
-      "url": "https://www.aa.com.tr/tr/dunya/trump-kanadayi-orman-yanginlarina-karsi-onlem-almamakla-sucladi/4001826",
-      "image": "",
-      "date": "2026-07-17T20:22:23.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -69,17 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "TRT 12 Punto'da \"Hind Rajab'ın Sesi\" filminin yapım süreci anlatıldı",
-      "description": "Senaryo geliştirme ve ortak yapım platformu TRT 12 Punto kapsamında gerçekleştirilen \"Filistin Sineması Özel Gösterimi\"nde, Kaouther Ben Hania'nın yönettiği \"Hind Rajab'ın Sesi\" filmi izleyicilerle buluştu.",
-      "url": "https://www.aa.com.tr/tr/kultur/trt-12-puntoda-hind-rajabin-sesi-filminin-yapim-sureci-anlatildi/4001741",
-      "image": "",
-      "date": "2026-07-17T18:18:33.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Hunderte Menschen protestieren in Potsdam gegen Kürzungen im Gesundheitswesen",
       "description": "",
       "url": "https://www.rbb24.de/politik/beitrag/2026/07/brandenburg-potsdam-protest-gesundheitswesen-kuerzungen.html",
@@ -88,28 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Trabzonspor'un yeni transferlerinden Sidny Lopes Cabral, Trabzon'a geldi",
-      "description": "Trabzonspor'un 5 yıllığına renklerine bağladığı Yeşil Burun Adalı savunma oyuncusu Sidny Lopes Cabral, Trabzon'a geldi.",
-      "url": "https://www.aa.com.tr/tr/spor/trabzonsporun-yeni-transferlerinden-sidny-lopes-cabral-trabzona-geldi/4001707",
-      "image": "",
-      "date": "2026-07-17T17:12:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan'dan AK Parti İstanbul İl Başkanlığına ziyaret",
-      "description": "Cumhurbaşkanı ve AK Parti Genel Başkanı Recep Tayyip Erdoğan, partisinin İstanbul İl Başkanlığını ziyaret etti.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogandan-ak-parti-istanbul-il-baskanligina-ziyaret/4001638",
-      "image": "",
-      "date": "2026-07-17T15:42:06.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
