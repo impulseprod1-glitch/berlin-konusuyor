@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-07-18T13:11:51.660Z",
+  "lastUpdated": "2026-07-18T14:51:14.781Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Berliner Leichtathlet Emil Agyekum mit neuem deutschen Rekord",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/berliner-emil-agyekum-knackt-44-jahre-alten-huerdenrekord.html",
+      "image": "",
+      "date": "2026-07-18T14:15:27.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "AK Parti Genel Başkan Yardımcısı Zorlu: Terörden arındırılmış bir coğrafyayı  inşa etmek için yolumuza devam edeceğiz",
+      "description": "AK Parti Genel Başkan Yardımcısı Zorlu, \"Sadece ülkemizde değil, bölgemizde ve gönül coğrafyamızda terörden arındırılmış bir coğrafyayı inşa etmek için el birliğiyle, güç birliğiyle yolumuza devam edeceğiz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ak-parti-genel-baskan-yardimcisi-zorlu-terorden-arindirilmis-bir-cografyayi-insa-etmek-icin-yolumuza-devam-edecegiz/4002365",
+      "image": "",
+      "date": "2026-07-18T14:13:42.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Göktaş: Her türlü bağımlılığın karşısında ortak bir mücadele ortaya koymalıyız",
+      "description": "Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, \"Her türlü bağımlılığın karşısında toplumun tüm kesimlerini kapsayan ortak bir mücadele ortaya koymalıyız.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/bakan-goktas-her-turlu-bagimliligin-karsisinda-ortak-bir-mucadele-ortaya-koymaliyiz/4002363",
+      "image": "",
+      "date": "2026-07-18T14:10:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Vatandaşlar, Türkiye'nin NATO Zirvesi'ndeki başarısına ilişkin memnuniyetini CİMER'e iletti",
+      "description": "Cumhurbaşkanlığı İletişim Merkezi'ne (CİMER) başvuran vatandaşlar, 36. NATO Devlet ve Hükümet Başkanları Zirvesi dolayısıyla Cumhurbaşkanı Recep Tayyip Erdoğan'a teşekkür mesajları iletti.",
+      "url": "https://www.aa.com.tr/tr/gundem/vatandaslar-turkiyenin-nato-zirvesindeki-basarisina-iliskin-memnuniyetini-cimere-iletti/4002359",
+      "image": "",
+      "date": "2026-07-18T14:03:04.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail iç istihbarat teşkilatının, sınır kapılarındaki yüz tanıma sistemlerine sınırsız erişim istediği iddiası",
+      "description": "İsrail İç İstihbarat Teşkilatı Şin-Bet'in (Şabak), yasal dayanağı olmamasına rağmen havalimanları ve sınır kapılarından geçenlerin fotoğraflarının yer aldığı veri tabanına sınırsız erişim istediği öne sürüldü.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ic-istihbarat-teskilatinin-sinir-kapilarindaki-yuz-tanima-sistemlerine-sinirsiz-erisim-istedigi-iddiasi/4002336",
+      "image": "",
+      "date": "2026-07-18T13:38:35.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Londra'da düzenlenen Filistin'e destek yürüyüşünde \"İsrail'e yaptırım uygulanması\" talep edildi",
+      "description": "İngiltere'nin başkenti Londra'da düzenlenen Filistin'e destek yürüyüşünde, başbakanlık koltuğuna oturmaya hazırlanan İşçi Partisi lideri Andy Burnham'a \"İsrail'e kapsamlı yaptırım uygulaması\" çağrısında bulunuldu.",
+      "url": "https://www.aa.com.tr/tr/dunya/londrada-duzenlenen-filistine-destek-yuruyusunde-israile-yaptirim-uygulanmasi-talep-edildi/4002335",
+      "image": "",
+      "date": "2026-07-18T13:38:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Geschäft und Wohnungen in Schöneberg wegen giftigen Dämpfen geräumt",
       "description": "",
@@ -14,17 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "ABD’den vatandaşlarına İsrail ve Lübnan’a seyahat etmeme uyarısı",
-      "description": "ABD, Orta Doğu’daki \"yüksek gerilim ve öngörülemeyen bir tırmanma” ihtimali nedeniyle vatandaşlarına İsrail ve Lübnan’a seyahat etmemeleri, bölgeye yönelik seyahat planlarını ise yeniden değerlendirmeleri çağrısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-den-vatandaslarina-israil-ve-lubnan-a-seyahat-etmeme-uyarisi/4002288",
-      "image": "",
-      "date": "2026-07-18T12:30:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Meisterschale der Füchse soll nur aus Jux geklaut worden sein",
       "description": "Die Füchse Berlin konnten 2025 erstmals den Gewinn der deutschen Meisterschaft feiern. Doch die silberne Trophäe wurde aus der Geschäftsstelle gestohlen - und landete in einem überraschenden Versteck. Nun hat sich der Angeklagte geäußert.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/07/meisterschale-der-fuechse-geklaut-anwalt-klaert-auf.html",
@@ -33,28 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Pakistan'da zirve tırmanışı yaparken düşen Çek dağcı hayatını kaybetti",
-      "description": "Pakistan'da Karakurum sıradağlarında bulunan Masherbrum zirvesine tırmanırken düşen Çek dağcının yaşamını yitirdiği belirtildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/pakistanda-zirve-tirmanisi-yaparken-dusen-cek-dagci-hayatini-kaybetti/4002256",
-      "image": "",
-      "date": "2026-07-18T11:35:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kütahya'da çıkan orman yangınına havadan ve karadan müdahale ediliyor",
-      "description": "Kütahya'nın Tavşanlı ilçesinde çıkan orman yangınına havadan ve karadan müdahale ediliyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/kutahyada-cikan-orman-yanginina-havadan-ve-karadan-mudahale-ediliyor/4002217",
-      "image": "",
-      "date": "2026-07-18T10:51:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -77,39 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Norveç'te 100'den fazla evin yandığı yangın kontrol altına alındı",
-      "description": "Norveç'in Drammen kentine bağlı Krokstadelva beldesinde bir sitede 100'den fazla evin yanmasına neden olan yangının kontrol altına alındığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/norvecte-100den-fazla-evin-yandigi-yangin-kontrol-altina-alindi/4002060",
-      "image": "",
-      "date": "2026-07-18T08:08:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Strompreiszone mit Polen: Woidke träumt von 5 statt 25 Cent pro Kilowattstunde ",
-      "description": "Ökostrom ist günstig. In Brandenburg wird er in Massen produziert. Verkauft werden muss er aber teuer, weil Strom in Deutschland überall gleich viel kostet. Ministerpräsident Woidke fordert deshalb verschiedene Strompreiszonen. Dafür hat er auch Polen ins Spiel gebracht. Die Idee stößt jedoch auf Widerstand.",
-      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/07/brandenburg-strompreiszone-polen-energie.html",
-      "image": "",
-      "date": "2026-07-18T05:24:39.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Gazze Mahkemesi heyeti, Uluslararası Ceza Mahkemesini ziyaret etti",
-      "description": "İsrail'in Gazze'de işlediği savaş suçlarını araştırmak üzere kurulan bağımsız girişim \"Gazze Mahkemesinin üyeleri, Lahey'de Uluslararası Ceza Mahkemesini (UCM) ziyaret etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/gazze-mahkemesi-heyeti-uluslararasi-ceza-mahkemesini-ziyaret-etti/4000506",
-      "image": "",
-      "date": "2026-07-16T14:14:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
