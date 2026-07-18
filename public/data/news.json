@@ -1,35 +1,57 @@
 {
-  "lastUpdated": "2026-07-18T11:02:06.040Z",
+  "lastUpdated": "2026-07-18T13:11:51.660Z",
   "count": 10,
   "articles": [
     {
-      "title": "Hava sıcaklığının 38 dereceye ulaştığı Antalya'nın sahillerinde yoğunluk yaşandı",
-      "description": "Antalya'da etkili olan sıcak havadan bunalan kent sakinleri ile yerli ve yabancı turistler sahilleri doldurdu.",
-      "url": "https://www.aa.com.tr/tr/gundem/hava-sicakliginin-38-dereceye-ulastigi-antalyanin-sahillerinde-yogunluk-yasandi/4002215",
+      "title": "Geschäft und Wohnungen in Schöneberg wegen giftigen Dämpfen geräumt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/schoeneberg-giftige-daempfe-haeuser-geraeumt.html",
       "image": "",
-      "date": "2026-07-18T10:49:35.000Z",
+      "date": "2026-07-18T12:38:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ABD’den vatandaşlarına İsrail ve Lübnan’a seyahat etmeme uyarısı",
+      "description": "ABD, Orta Doğu’daki \"yüksek gerilim ve öngörülemeyen bir tırmanma” ihtimali nedeniyle vatandaşlarına İsrail ve Lübnan’a seyahat etmemeleri, bölgeye yönelik seyahat planlarını ise yeniden değerlendirmeleri çağrısında bulundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-den-vatandaslarina-israil-ve-lubnan-a-seyahat-etmeme-uyarisi/4002288",
+      "image": "",
+      "date": "2026-07-18T12:30:27.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Bakan Fidan, Katar'ı ziyaret edecek",
-      "description": "Dışişleri Bakanı Hakan Fidan, Katar'a ziyarette bulunacak.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-fidan-katari-ziyaret-edecek/4002203",
+      "title": "Meisterschale der Füchse soll nur aus Jux geklaut worden sein",
+      "description": "Die Füchse Berlin konnten 2025 erstmals den Gewinn der deutschen Meisterschaft feiern. Doch die silberne Trophäe wurde aus der Geschäftsstelle gestohlen - und landete in einem überraschenden Versteck. Nun hat sich der Angeklagte geäußert.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/meisterschale-der-fuechse-geklaut-anwalt-klaert-auf.html",
       "image": "",
-      "date": "2026-07-18T10:36:29.000Z",
+      "date": "2026-07-18T11:45:13.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Pakistan'da zirve tırmanışı yaparken düşen Çek dağcı hayatını kaybetti",
+      "description": "Pakistan'da Karakurum sıradağlarında bulunan Masherbrum zirvesine tırmanırken düşen Çek dağcının yaşamını yitirdiği belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/pakistanda-zirve-tirmanisi-yaparken-dusen-cek-dagci-hayatini-kaybetti/4002256",
+      "image": "",
+      "date": "2026-07-18T11:35:46.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "AHBAP Derneği soruşturmasında ifade veren tutuklu şüpheli Alper Çelik: Söylendiği miktarlar kadar para kaybettik",
-      "description": "AHBAP Derneği kurucularından Alper Çelik \"Haluk Levent, bana genellikle 'Şu maçlara kupon yap.' diye yazıyordu. Ben de dediği şekilde oynuyordum. Gerçekten de söylendiği miktarlar kadar para kaybettik\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/ahbap-dernegi-sorusturmasinda-tutuklu-supheli-alper-celik-etkin-pismanlik-kapsaminda-ifade-verdi/4002178",
+      "title": "Kütahya'da çıkan orman yangınına havadan ve karadan müdahale ediliyor",
+      "description": "Kütahya'nın Tavşanlı ilçesinde çıkan orman yangınına havadan ve karadan müdahale ediliyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/kutahyada-cikan-orman-yanginina-havadan-ve-karadan-mudahale-ediliyor/4002217",
       "image": "",
-      "date": "2026-07-18T10:16:44.000Z",
+      "date": "2026-07-18T10:51:48.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -47,17 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "Yemen'de hükümet ile Husiler arasında \"İran uçağı kriziyle\" başlayan gerginlik karşılıklı tehditlerle sürüyor",
-      "description": "Yemen'de hükümet ile İran destekli Husiler arasında \"İran uçağı krizi\" ile başlayan gerilim, tarafların karşılıklı askeri hazırlık ve müdahale mesajlarıyla tırmanıyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/yemende-hukumet-ile-husiler-arasinda-iran-ucagi-kriziyle-baslayan-gerginlik-karsilikli-tehditlerle-suruyor/4002146",
-      "image": "",
-      "date": "2026-07-18T09:47:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Das 32. Lesbisch-schwule Stadtfest beginnt in Schöneberg",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/lesbisch-schwules-stadtfest-schoeneberg.html",
@@ -69,11 +80,11 @@
       "type": "rss"
     },
     {
-      "title": "Rum terör örgütü EOKA'nın toplu katliamları, Kıbrıslı Türklerin hafızalarındaki yerini koruyor",
-      "description": "Rum terör örgütü EOKA'nın 1955'ten 1974 yılına kadar işlediği toplu katliamlar, Kıbrıslı Türklerin hafızalarındaki canlılığını koruyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/rum-teror-orgutu-eokanin-toplu-katliamlari-kibrisli-turklerin-hafizalarindaki-yerini-koruyor/4002117",
+      "title": "Norveç'te 100'den fazla evin yandığı yangın kontrol altına alındı",
+      "description": "Norveç'in Drammen kentine bağlı Krokstadelva beldesinde bir sitede 100'den fazla evin yanmasına neden olan yangının kontrol altına alındığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/norvecte-100den-fazla-evin-yandigi-yangin-kontrol-altina-alindi/4002060",
       "image": "",
-      "date": "2026-07-18T09:09:01.000Z",
+      "date": "2026-07-18T08:08:07.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -91,25 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "Gesundheitsgefahr: Zehntausende landeseigene Wohnungen in Berlin wohl mit Asbest belastet",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/asbest-gesundheit-bau-berufskrankheit-todesursache.html",
+      "title": "Gazze Mahkemesi heyeti, Uluslararası Ceza Mahkemesini ziyaret etti",
+      "description": "İsrail'in Gazze'de işlediği savaş suçlarını araştırmak üzere kurulan bağımsız girişim \"Gazze Mahkemesinin üyeleri, Lahey'de Uluslararası Ceza Mahkemesini (UCM) ziyaret etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/gazze-mahkemesi-heyeti-uluslararasi-ceza-mahkemesini-ziyaret-etti/4000506",
       "image": "",
-      "date": "2026-07-18T05:19:43.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "1:1 gegen Winterthur: Union zum dritten Mal in Serie sieglos",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/07/fussball-bundesliga-union-berlin-testspiel-winterthur.html",
-      "image": "",
-      "date": "2026-07-17T19:16:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
+      "date": "2026-07-16T14:14:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     }
   ],
