@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-07-19T02:35:22.538Z",
+  "lastUpdated": "2026-07-19T06:28:56.360Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İran'ın Huzistan kentinde 5 büyüklüğünde deprem",
+      "description": "İran'ın Huzistan kenti yakınlarındaki Salend ilçesinde 5 büyüklüğünde deprem meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/dunya/iranin-huzistan-kentinde-5-buyuklugunde-deprem/4002586",
+      "image": "",
+      "date": "2026-07-19T06:00:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "PMDS: Wenn der Zyklus die Psyche aus dem Gleichgewicht bringt",
+      "description": "Die Prämenstruelle Dysphorische Störung (PMDS) ist die schwerste Form von PMS. Schätzungsweise drei bis acht Prozent der Frauen im gebärfähigen Alter leiden unter starken körperlichen und psychischen Beschwerden – doch viele erhalten keine ausreichende Hilfe.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/pmds-frauengesundheit-menstruation-zyklus-psyche.html",
+      "image": "",
+      "date": "2026-07-19T05:40:23.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Venezuela'daki depremlerde hayatını kaybedenlerin sayısı 5 bin 119'a çıktı",
       "description": "Venezuela'da, 24 Haziran'da meydana gelen iki büyük depremde yaşamını yitirenlerin sayısının 5 bin 119'a yükseldiği bildirildi.",
@@ -47,17 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "İran basını, ABD'nin Hürmüz Boğazı yakınlarındaki Sirik ve Hacıabad kentlerine saldırı düzenlediğini duyurdu",
-      "description": "ABD'nin, Hürmüz Boğazı yakınlarında İran'ın güneyindeki Sirik ve Hürmüzgan eyaletine bağlı Hacıabad kentlerine saldırı düzenlediği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/live-blog/iran-basini-abdnin-hurmuz-bogazi-yakinlarindaki-sirik-ve-haciabad-kentlerine-saldiri-duzenledigini-duyurdu/5564",
-      "image": "",
-      "date": "2026-07-18T22:32:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Frauen von Union Berlin in zwei Testspielen in Jena nur 0:0 ",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/07/doppelt-torlos--union-frauen-absolvieren-mini-turnier-in-jena.html",
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/toedlicher-motorradunfall-berlin-schoeneberg.html",
       "image": "",
       "date": "2026-07-18T16:18:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Das 32. Lesbisch-schwule Stadtfest beginnt in Schöneberg",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/lesbisch-schwules-stadtfest-schoeneberg.html",
-      "image": "",
-      "date": "2026-07-18T15:49:48.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
