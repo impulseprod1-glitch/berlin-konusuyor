@@ -1,13 +1,79 @@
 {
-  "lastUpdated": "2026-07-19T06:28:56.360Z",
+  "lastUpdated": "2026-07-19T09:51:59.326Z",
   "count": 10,
   "articles": [
     {
-      "title": "İran'ın Huzistan kentinde 5 büyüklüğünde deprem",
-      "description": "İran'ın Huzistan kenti yakınlarındaki Salend ilçesinde 5 büyüklüğünde deprem meydana geldi.",
-      "url": "https://www.aa.com.tr/tr/dunya/iranin-huzistan-kentinde-5-buyuklugunde-deprem/4002586",
+      "title": "KKTC Cumhurbaşkanı Erhürman, Milli Savunma Bakanı Güler'i kabul etti",
+      "description": "Kuzey Kıbrıs Türk Cumhuriyeti (KKTC) Cumhurbaşkanı Tufan Erhürman, Milli Savunma Bakanı Yaşar Güler'i kabul etti.",
+      "url": "https://www.aa.com.tr/tr/gundem/kktc-cumhurbaskani-erhurman-milli-savunma-bakani-guleri-kabul-etti/4002760",
       "image": "",
-      "date": "2026-07-19T06:00:03.000Z",
+      "date": "2026-07-19T09:48:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Elon Musk will Tesla-Werk in Grünheide weiter ausbauen",
+      "description": "Die Umsätze von Tesla waren zuletzt gesunken. Nicht so in diesem Jahr. Tesla erwartet Millionengewinne - vor allem aus der Produktion in seinem deutschen Werk in Grünheide. Dieses will Elon Musk nun weiter ausbauen.",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/07/tesla-will-in-deutschland-expandieren.html",
+      "image": "",
+      "date": "2026-07-19T09:46:21.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Mit Tanz-Therapie \"Booty Therapy\" gegen Traumata ankämpfen",
+      "description": "In ihrer Kindheit war es ihr verboten zu tanzen. Dennoch baute Maïmouna Coulibaly ihre Karriere auf Tanzen auf. Heute hilft sie Frauen, mit einem speziellen Tanzschritt Traumata zu verarbeiten.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/der-etwas-andere-tanzkurs--booty-therapy-.html",
+      "image": "",
+      "date": "2026-07-19T09:44:29.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Dikey Geçiş Sınavı yapıldı",
+      "description": "Ölçme, Seçme ve Yerleştirme Merkezince (ÖSYM), 2 yıllık üniversite eğitimlerini 4 yıla tamamlamak isteyenler için düzenlenen 2026 Dikey Geçiş Sınavı (2026-DGS) yapıldı.",
+      "url": "https://www.aa.com.tr/tr/gundem/dikey-gecis-sinavi-yapildi/4002754",
+      "image": "",
+      "date": "2026-07-19T09:39:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Erbil ve Süleymaniye'de gündelik işçiler kavurucu sıcak altında iş bekliyor",
+      "description": "Irak'ın Erbil ve Süleymaniye kentlerinde yaz mevsimiyle birlikte etkisini artıran kavurucu sıcaklar, özellikle açık alanda iş bekleyen gündelik işçilerin yaşamını her geçen gün daha da zorlaştırıyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/erbil-ve-suleymaniyede-gundelik-isciler-kavurucu-sicak-altinda-is-bekliyor/4002735",
+      "image": "",
+      "date": "2026-07-19T09:08:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistin topraklarını gasbeden İsrailliler, Batı Şeria'da bir cami ile iki evi kundakladı",
+      "description": "Filistin topraklarını gasbeden İsrailliler, işgal altındaki Batı Şeria'da bir cami ile iki evi kundakladı, Filistinlilerin mülklerine zarar verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israilliler-bati-seriada-bir-cami-ile-iki-evi-kundakladi/4002734",
+      "image": "",
+      "date": "2026-07-19T09:08:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Akrep zehri laboratuvarda hayat kurtaran seruma dönüşüyor",
+      "description": "Türkiye'de akrep sokmalarına bağlı zehirlenmelerin tedavisinde kullanılan panzehir, çok aşamalı biyolojik üretim sürecinin ardından hayat kurtaran seruma dönüşüyor.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/akrep-zehri-laboratuvarda-hayat-kurtaran-seruma-donusuyor/4002681",
+      "image": "",
+      "date": "2026-07-19T08:06:39.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -25,50 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Venezuela'daki depremlerde hayatını kaybedenlerin sayısı 5 bin 119'a çıktı",
-      "description": "Venezuela'da, 24 Haziran'da meydana gelen iki büyük depremde yaşamını yitirenlerin sayısının 5 bin 119'a yükseldiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/venezueladaki-depremlerde-hayatini-kaybedenlerin-sayisi-5-bin-119a-cikti/4002567",
-      "image": "",
-      "date": "2026-07-19T02:12:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Filistinli kadın, İsrail ordusunun ambulansı bekletmesi sonucu hayatını kaybetti",
-      "description": "İşgal altındaki Batı Şeria'nın Ramallah kentine bağlı Sincil Belde Belediye Başkanı Mutez Tavafişe, kalp krizi geçiren 30 yaşındaki Filistinli kadının, İsrail ordusunun ambulansı 30 dakikadan fazla bekletmesi sonucu hayatını kaybettiğini açıkladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistinli-kadin-israil-ordusunun-ambulansi-bekletmesi-sonucu-hayatini-kaybetti/4002559",
-      "image": "",
-      "date": "2026-07-18T23:35:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": " İngiltere dünya 3'üncüsü oldu",
-      "description": "2026 FIFA Dünya Kupası 3'üncülük mücadelesinde İngiltere, ilk yarısını 4-0 önde tamamladığı maçta Fransa'yı 6-4 mağlup ederek dünya 3'üncüsü oldu.",
-      "url": "https://www.aa.com.tr/tr/spor/-ingiltere-dunya-3uncusu-oldu/4002551",
-      "image": "",
-      "date": "2026-07-18T23:10:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail askeri güçleri Suriye'nin Kuneytra iline girdi",
-      "description": "İsrail ordusuna ait 6 askeri araçtan oluşan bir birliğin Suriye'nin güneybatısındaki Kuneytra iline girdiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-askeri-gucleri-suriyenin-kuneytra-iline-girdi/4002549",
-      "image": "",
-      "date": "2026-07-18T23:00:53.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Frauen von Union Berlin in zwei Testspielen in Jena nur 0:0 ",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/07/doppelt-torlos--union-frauen-absolvieren-mini-turnier-in-jena.html",
@@ -80,33 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Energie Cottbus kassierte deutliche Niederlage im Test gegen Salzburg",
+      "title": "Energie Cottbus kassiert deutliche Niederlage im Test gegen Salzburg",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/07/energie-cottbus-verliert-deutlich-im-test-gegen-salzburg.html",
       "image": "",
-      "date": "2026-07-18T18:14:16.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Strafstoß-Festival: Union Berlin verliert Testspiel gegen Aarau",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/07/union-berlin-verliert-testspiel-gegen-aarau.html",
-      "image": "",
-      "date": "2026-07-18T17:41:10.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Motorradfahrer kommt bei Unfall in Berlin-Schöneberg ums Leben",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/toedlicher-motorradunfall-berlin-schoeneberg.html",
-      "image": "",
-      "date": "2026-07-18T16:18:11.000Z",
+      "date": "2026-07-18T18:14:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
