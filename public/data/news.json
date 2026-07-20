@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-07-20T18:01:06.668Z",
+  "lastUpdated": "2026-07-20T21:11:22.570Z",
   "count": 10,
   "articles": [
     {
-      "title": "Aydın'da zeytinlik ve makilik alanda çıkan yangına müdahale ediliyor",
-      "description": "Aydın'ın Söke ilçesinde zeytinlik ve makilik alanda çıkan yangına havadan ve karadan müdahale ediliyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/aydinda-zeytinlik-ve-makilik-alanda-cikan-yangina-mudahale-ediliyor/4004028",
+      "title": "Arjantin'de FIFA Dünya Kupası finali sonrası çıkan olaylarda 15 kişi gözaltına alındı",
+      "description": "Arjantin'de taraftarlar, FIFA Dünya Kupası finalinde uzatmalarda İspanya'ya 1-0 mağlup olunmasının ardından polisle çatışırken, olaylarda 15 kişi gözaltına alındı.",
+      "url": "https://www.aa.com.tr/tr/spor/arjantinde-fifa-dunya-kupasi-finali-sonrasi-cikan-olaylarda-15-kisi-gozaltina-alindi/4004129",
       "image": "",
-      "date": "2026-07-20T17:54:15.000Z",
+      "date": "2026-07-20T20:37:43.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu ateşkese rağmen Lübnan'ın güneyine hava saldırısı düzenledi",
+      "description": "İsrail ordusu, Lübnan ile imzalanan çerçeve anlaşması ve ateşkese rağmen, Lübnan'ın güneyindeki Sur kentine bağlı Mansuri beldesine hava saldırısı düzenlerken, işgal altında tuttuğu Bint Cubeyl ilçesinde de yıkım faaliyetlerini sürdürdü.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnanin-guneyine-hava-saldirisi-duzenledi/4004123",
+      "image": "",
+      "date": "2026-07-20T20:32:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail basını: ABD ordusu, ilerleyen günlerde İran'a yönelik saldırıların kapsamını genişletmeye hazırlanıyor  ",
+      "description": "İsrail basınına göre, ABD ordusu ilerleyen günlerde İran'a yönelik saldırıların kapsamını genişletmeye hazırlanıyor ve ABD Başkanı Donald Trump'ın nihai kararını bekliyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-abd-ordusu-ilerleyen-gunlerde-irana-yonelik-saldirilarin-kapsamini-genisletmeye-hazirlaniyor-/4004115",
+      "image": "",
+      "date": "2026-07-20T20:25:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "KKTC Cumhurbaşkanlığında Barış ve Özgürlük Bayramı resepsiyonu düzenlendi",
+      "description": "Kuzey Kıbrıs Türk Cumhuriyeti (KKTC) Cumhurbaşkanı Tufan Erhürman ile eşi Nilden Bektaş Erhürman, Kıbrıs Barış Harekatı'nın 52. yıl dönümü ve 20 Temmuz Barış ve Özgürlük Bayramı dolayısıyla resepsiyon verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/kktc-cumhurbaskanliginda-baris-ve-ozgurluk-bayrami-resepsiyonu-duzenlendi/4004105",
+      "image": "",
+      "date": "2026-07-20T20:20:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Adalet Bakanlığından tüm illere \"Terör Suçları Soruşturma Bürosu\" kurulması yazısı",
+      "description": "Adalet Bakanlığınca, terör suçlarına ilişkin soruşturmaların daha etkin ve koordineli yürütülmesi amacıyla tüm illerde 175 ağır ceza mahkemesi Cumhuriyet başsavcılığı bünyesinde müstakil \"Terör Suçları Soruşturma Büroları\" kurulması kararlaştırıldı.",
+      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakanligindan-tum-illere-teror-suclari-sorusturma-burosu-kurulmasi-yazisi/4004091",
+      "image": "",
+      "date": "2026-07-20T19:47:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Basketball: Moses Wood verlässt Alba und wechselt nach Frankreich",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/basketball-bbl-alba-berlin-moses-wood-verlaesst-den-verein.html",
+      "image": "",
+      "date": "2026-07-20T19:43:47.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "16-jährige Fahrschülerin stirbt bei Unfall auf A24",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brandenburg-ostprignitz-ruppin-a24-fahrschuelerin-tot.html",
+      "image": "",
+      "date": "2026-07-20T19:19:31.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -22,50 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "ABD'de ortalama benzin fiyatı, Orta Doğu'daki gerilimle yeniden 4 dolara çıktı",
-      "description": "Orta Doğu'da artan gerilim ve petrol fiyatlarındaki dalgalanmaların etkisiyle ABD'de benzinin ortalama fiyatı yeniden galon başına 4 dolar seviyesini aştı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-ortalama-benzin-fiyati-orta-dogudaki-gerilimle-yeniden-4-dolara-cikti/4004008",
-      "image": "",
-      "date": "2026-07-20T17:17:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İçişleri Bakanı Çiftçi, Siber Güvenlik Toplantısı'na başkanlık etti",
-      "description": "İçişleri Bakanı Mustafa Çiftçi, Siber Güvenlik Toplantısı'na başkanlık etti.",
-      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-siber-guvenlik-toplantisina-baskanlik-etti/4004004",
-      "image": "",
-      "date": "2026-07-20T17:16:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bodrum'da Interpol tarafından kırmızı bültenle aranan zanlı yakalandı",
-      "description": "Muğla'nın Bodrum ilçesinde, Milli İstihbarat Teşkilatı (MİT) ve emniyet ekiplerinin ortak operasyonunda, İnterpol tarafından kırmızı bültenle aranan İran uyruklu Kasra Ashrafi gözaltına alındı.",
-      "url": "https://www.aa.com.tr/tr/gundem/bodrumda-interpol-tarafindan-kirmizi-bultenle-aranan-zanli-yakalandi/4004003",
-      "image": "",
-      "date": "2026-07-20T17:14:52.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Afganistan'da şiddetli yağışlar ve ani seller nedeniyle 20 kişi hayatını kaybetti",
-      "description": "Afganistan'ın Nuristan bölgesinde etkili olan şiddetli yağışlar ve ani seller nedeniyle 20 kişinin yaşamını yitirdiği, 80'i aşkın kişinin yaralandığı ve 100'den fazla kişinin kaybolduğu bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/afganistanda-siddetli-yagislar-ve-ani-seller-nedeniyle-20-kisi-hayatini-kaybetti/4003996",
-      "image": "",
-      "date": "2026-07-20T17:03:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/politik/beitrag/2026/07/berlin-foerdermittel-affaere-bilanz-u-ausschuss-abgeordnetenhaus-vorwurf-unzulaessig-einflussnahme.html",
       "image": "",
       "date": "2026-07-20T16:22:29.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ukraine-Tagebuch: \"Am Ende wird es vier Billionen Euro kosten und dreißig Jahre dauern\"",
-      "description": "Michael ist in den Sog geraten, in die Faszination von Kyjiw. Der Kanadier verdrängt die ewigen Luftalarme. Natalija Yefimkina erzählt er im Kriegstagebuch über seine Arbeit für die Nachkriegszeit, improvisierten Alltag und echtes Glück.",
-      "url": "https://www.rbb24.de/politik/thema/Ukraine/beitraege/ukraine-tagebuch-kyjiw-michael-kanada-wiederaufbau.html",
-      "image": "",
-      "date": "2026-07-20T16:11:30.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ausladung aus \"Die Anstalt\": Danger Dan in Berliner Columbiatheater",
-      "description": "",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/07/berlin-danger-dan-igor-levit-auftritt-columbiatheater-ausladung-zd-anstalt.html",
-      "image": "",
-      "date": "2026-07-20T15:33:08.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
