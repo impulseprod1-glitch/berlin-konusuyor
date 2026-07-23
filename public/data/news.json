@@ -1,57 +1,57 @@
 {
-  "lastUpdated": "2026-07-22T23:01:29.543Z",
+  "lastUpdated": "2026-07-23T02:36:52.318Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Venezuela'daki depremlerde can kaybı 5 bin 398'e yükseldi",
+      "description": "Venezuela'da 24 Haziran'da meydana gelen iki büyük depremde hayatını kaybedenlerin sayısının 5 bin 398'e yükseldiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/venezueladaki-depremlerde-can-kaybi-5-bin-398e-yukseldi/4006387",
+      "image": "",
+      "date": "2026-07-23T02:00:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "IBM'in geliri ikinci çeyrekte yüzde 1 arttı",
+      "description": "Amerikan teknoloji şirketi IBM'in geliri, bu yılın ikinci çeyreğinde yıllık bazda yüzde 1 artarak 17,2 milyar dolara yükseldi.",
+      "url": "https://www.aa.com.tr/tr/dunya/ibmin-geliri-ikinci-ceyrekte-yuzde-1-artti/4006377",
+      "image": "",
+      "date": "2026-07-23T00:01:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Atama kararları Resmi Gazete'de",
+      "description": "Yükseköğretim Kurulu (YÖK) üyelikleri ve bazı üniversite rektörlüklerine ilişkin atama kararları Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/atama-kararlari-resmi-gazetede/4006376",
+      "image": "",
+      "date": "2026-07-23T00:00:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tesla'nın karı ikinci çeyrekte azaldı ",
+      "description": "ABD'li elektrikli otomobil üreticisi Tesla'nın net karı, bu yılın ikinci çeyreğinde yıllık bazda yüzde 5 azalış kaydetti.",
+      "url": "https://www.aa.com.tr/tr/dunya/teslanin-kari-ikinci-ceyrekte-azaldi-/4006373",
+      "image": "",
+      "date": "2026-07-22T22:49:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "DMM, \"DOA uygulamasında vatandaşlara ödenen iade tutarlarının düşürüldüğü\" iddiasını yalanladı",
       "description": "Cumhurbaşkanlığı İletişim Başkanlığı Dezenformasyonla Mücadele Merkezi (DMM), \"Depozitosu Olan Ambalajlar (DOA) Uygulamasında vatandaşlara ödenen iade tutarlarının düşürüldüğü\" iddiasını yalanladı.",
       "url": "https://www.aa.com.tr/tr/gundem/dmm-doa-uygulamasinda-vatandaslara-odenen-iade-tutarlarinin-dusuruldugu-iddiasini-yalanladi/4006368",
       "image": "",
       "date": "2026-07-22T22:33:10.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Yemen'deki Husilerden Kızıldeniz'de Suudi Arabistan tankerlerine saldırı",
-      "description": "Yemen'deki İran destekli Husiler (Ensarullah Hareketi), Kızıldeniz'de Suudi Arabistan'a ait iki petrol tankerini insansız hava araçları (İHA) ve füzelerle hedef aldıklarını açıkladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/yemendeki-husilerden-kizildenizde-suudi-arabistan-tankerlerine-saldiri/4006354",
-      "image": "",
-      "date": "2026-07-22T21:37:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "En düşük emekli aylığının artırılmasına yönelik düzenlemeyi de içeren kanun teklifi TBMM Genel Kurulunda",
-      "description": "TBMM Genel Kurulunda, en düşük emekli aylığının artırılmasına yönelik düzenlemeyi de içeren Bazı Kanun ve Kanun Hükmünde Kararnamelerde Değişiklik Yapılmasına Dair Kanun Teklifi'nin ilk 7 maddesi kabul edildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/en-dusuk-emekli-ayliginin-artirilmasina-yonelik-duzenlemeyi-de-iceren-kanun-teklifi-tbmm-genel-kurulunda/4006350",
-      "image": "",
-      "date": "2026-07-22T21:32:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran basını: ABD tarafından Ahvaz, Ramşir ve Sirik kentlerine yönelik saldırı gerçekleştirildi",
-      "description": "ABD tarafından İran'ın Hürmüz Boğazı yakınındaki Hürmüzgan eyaletine bağlı Sirik kenti ile Irak sınırı yakınlarındaki Huzistan eyaletinde yer alan Ahvaz kentine yönelik saldırı gerçekleştirildiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/live-blog/son-gelismeler-abdnin-irana-yonelik-saldirilari-ve-iran-in-misillemeleri/5817",
-      "image": "",
-      "date": "2026-07-22T21:27:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Sağlık Bakanı Memişoğlu: 'Üreten Sağlık' dediğimiz anlayışı hayata geçiriyoruz",
-      "description": "Sağlık Bakanı Kemal Memişoğlu, \"Türkiye, sağlıkta üretimden çok hizmet odaklı çalıştı. Sizler ve bizler ilk defa 'Üreten Sağlık' dediğimiz anlayışı hayata geçiriyoruz.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakani-memisoglu-ureten-saglik-dedigimiz-anlayisi-hayata-geciriyoruz/4006309",
-      "image": "",
-      "date": "2026-07-22T20:50:59.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
