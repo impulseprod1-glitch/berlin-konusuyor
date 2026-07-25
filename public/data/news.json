@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-07-25T09:45:28.122Z",
-  "count": 9,
+  "lastUpdated": "2026-07-25T11:08:33.455Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "Mersin'de uydu takip cihazı takılan 2 yeşil deniz kaplumbağası denizle buluşturuldu",
+      "description": "Mersin'de göç yolları ve kışlama alanlarının öğrenilmesi amacıyla başlatılan proje kapsamında uydu takip cihazı takılan \"Göksu\" ve \"Mersin\" adlı yeşil deniz kaplumbağaları denize bırakıldı.",
+      "url": "https://www.aa.com.tr/tr/gundem/mersinde-uydu-takip-cihazi-takilan-2-yesil-deniz-kaplumbagasi-denizle-bulusturuldu/4009046",
+      "image": "",
+      "date": "2026-07-25T10:54:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "KKTC Başbakanı Üstel'den, Dışişleri Bakanı Fidan'ın Kıbrıs ile ilgili açıklamalarına destek",
+      "description": "KKTC Başbakanı Ünal Üstel, \"Dışişleri Bakanı Sayın Hakan Fidan'ın, BM Genel Sekreteri'nin Kıbrıs Şahsi Temsilcisi Sayın Maria Angela Holguin Cuellar ile gerçekleştirdiği görüşmede ortaya koyduğu duruşu memnuniyetle selamlıyoruz.\" ifadesini kullandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/kktc-basbakani-ustelden-disisleri-bakani-fidanin-kibris-ile-ilgili-aciklamalarina-destek/4009043",
+      "image": "",
+      "date": "2026-07-25T10:52:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berliner CSD am Samstag gestartet – Hunderttausende erwartet",
+      "description": "Am Samstagmittag ist die große Parade des Christopher Street Day in Berlin gestartet. Das Motto lautet: \"Haltung ist hot\". Die Polizei erwartet hunderttausende Menschen, aber auch rechte Gegenproteste.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-samstag-demo.html",
+      "image": "",
+      "date": "2026-07-25T10:48:05.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Fransa'nın güneybatısındaki yangınlarda 3 günde 140 binden fazla kişi tahliye edildi",
+      "description": "Fransa'nın güneybatısındaki iki vilayette şiddetini artıran yangınlar nedeniyle 22 Temmuz'dan bu yana 140 bini aşkın kişi tahliye edilirken hükümet askeri nakliye uçağının yangın söndürme çalışmalarına katılması talimatını verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/fransanin-guneybatisindaki-yanginlarda-3-gunde-140-binden-fazla-kisi-tahliye-edildi/4009036",
+      "image": "",
+      "date": "2026-07-25T10:44:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "TCG Turgutreis fırkateyni, Yavuz ve Abdülhamid Han sondaj gemilerine refakatini sürdürüyor",
+      "description": "Milli Savunma Bakanlığı (MSB), TCG Turgutreis fırkateyni tarafından, Karadeniz'de sondaj faaliyetleri devam eden Yavuz ve Abdülhamid Han sondaj gemilerine refakat görevinin sürdürüldüğünü bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/tcg-turgutreis-firkateyni-yavuz-ve-abdulhamid-han-sondaj-gemilerine-refakatini-surduruyor/4009035",
+      "image": "",
+      "date": "2026-07-25T10:42:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Jens Voigt: \"Der Asphalt ist unser Büro. Und das betritt man nicht.\"",
+      "description": "Tadej Pogacar steuert bei der Tour de France auf seinen fünften Gesamtsieg zu. Ex-Radprofi Jens Voigt analysiert die Machtdemonstration des Slowenen und verrät, warum Deutschland im Kampf um die nächsten Tour-Sieger noch immer ein strukturelles Problem hat.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/07/radsport-tour-de-france-jens-voigt-interview-pogacar-seixas-kanter.html",
+      "image": "",
+      "date": "2026-07-25T10:40:30.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İstanbul'da bir fabrikada kimyasal tepkime nedeniyle işçiler tahliye edildi",
+      "description": "Eyüpsultan'daki bir fabrikada kimyasal maddelerin tepkimeye girmesi nedeniyle çalışanlar tedbir amaçlı tahliye edildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-bir-fabrikada-kimyasal-tepkime-nedeniyle-isciler-tahliye-edildi/4009014",
+      "image": "",
+      "date": "2026-07-25T10:22:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Dahme-Spreewald: Drei Menschen bei Brand bei Calau schwer verletzt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brandenburg-dahme-spreewald-kreblitz-calau-haus-brand-verletzte.html",
+      "image": "",
+      "date": "2026-07-25T09:50:06.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Zwei Tote in Ortrand - weitere Person schwer verletzt",
       "description": "",
@@ -14,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "F-16 savaş uçakları Karadeniz'in batısında eğitim uçuşu yaptı",
-      "description": "Milli Savunma Bakanlığı (MSB), Hava Kuvvetleri Komutanlığına bağlı F-16 savaş uçakları tarafından Karadeniz'in batısında eğitim uçuşu yapıldığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/f-16-savas-ucaklari-karadenizin-batisinda-egitim-ucusu-yapti/4008971",
-      "image": "",
-      "date": "2026-07-25T09:32:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "\"Haltung ist hot\": Hunderttausende zum Berliner CSD erwartet",
-      "description": "Am Samstag wird mit einer großen Demonstration der Christopher Street Day in Berlin gefeiert. Das Motto lautet: \"Haltung ist hot\". Die Polizei erwartet rechte Gegenproteste.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-samstag-demo.html",
-      "image": "",
-      "date": "2026-07-25T09:17:30.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in son 48 saatte Gazze'de düzenlediği saldırılarda 6 kişi hayatını kaybetti",
-      "description": "İsrail ordusunun ateşkese rağmen Gazze Şeridi'ne düzenlediği saldırılarda son 48 saatte 6 Filistinli yaşamını yitirdi, 37 kişi yaralandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilin-son-48-saatte-gazzede-duzenledigi-saldirilarda-6-kisi-hayatini-kaybetti/4008967",
-      "image": "",
-      "date": "2026-07-25T09:16:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "LGS şampiyonları başarılarının sırrını anlattı",
-      "description": "Liselere Geçiş Sistemi (LGS) kapsamındaki merkezi sınavda 500 tam puan alarak Türkiye birincileri arasında yer alan öğrenciler, disiplinli çalışma, planlı hazırlık süreci, gördükleri desteğin başarılarında önemli rol oynadığını belirtti.",
-      "url": "https://www.aa.com.tr/tr/gundem/lgs-sampiyonlari-basarilarinin-sirrini-anlatti/4008964",
-      "image": "",
-      "date": "2026-07-25T09:10:53.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İspanyol bankalarından Visa ve Mastercard kullanımını azaltacak yeni ödeme sistemi",
-      "description": "İspanya'daki bankalar, tüketicilerin banka hesaplarından mağazalara doğrudan temassız ödeme yapabilmesini sağlayacak yeni bir ödeme sistemini devreye aldı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/ispanyol-bankalarindan-visa-ve-mastercard-kullanimini-azaltacak-yeni-odeme-sistemi/4008927",
-      "image": "",
-      "date": "2026-07-25T08:24:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Christopher Street Day in Berlin mit Demokratiefest gestartet",
       "description": "In Berlin haben am Freitag die Veranstaltungen zum diesjährigen Christopher Street Day begonnen. Erstmals gibt es vor der traditionellen Parade einen \"Demokratie-Abend\" am Brandenburger Tor mit Musik und Politik - und Ikkimel.",
       "url": "https://www.rbb24.de/kultur/beitrag/2026/07/berlin-christopher-street-day-parade.html",
       "image": "",
       "date": "2026-07-25T08:17:57.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Troya'yı etkileyen 1500 yıl önceki depremin izleri kazı yapılan caddede tespit edildi",
-      "description": "BM Eğitim, Bilim ve Kültür Örgütünün (UNESCO) Dünya Mirası Listesi'nde yer alan Troya Antik Kenti'nde bu yıl sürdürülen kazılarda, Roma dönemine ait bir caddede yaklaşık 1500 yıl önce meydana gelen depreme ilişkin tahribat izleri ortaya çıkarıldı.",
-      "url": "https://www.aa.com.tr/tr/kultur/troyayi-etkileyen-1500-yil-onceki-depremin-izleri-kazi-yapilan-caddede-tespit-edildi/4008903",
-      "image": "",
-      "date": "2026-07-25T08:11:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner CSD: Diese Verkehrseinschränkungen gelten am Samstag",
-      "description": "Der Berliner Christopher Street Day verwandelt die Berliner Innenstadt in eine große Partymeile - mit Auswirkungen für den Verkehr bis Montag. Ein Überblick der Verkehrseinschränkungen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-csd-demo-route-sperrung-programm.html",
-      "image": "",
-      "date": "2026-07-25T07:43:29.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
