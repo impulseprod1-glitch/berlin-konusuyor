@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-07-25T19:05:01.419Z",
+  "lastUpdated": "2026-07-25T20:51:19.502Z",
   "count": 10,
   "articles": [
+    {
+      "title": "CSD vor dem Brandenburger Tor abgebrochen - Menschen sollen das Gelände verlassen.",
+      "description": "Am Samstag sind mehreren hunderttausend Menschen anlässlich der Pride durch Berlin gezogen. Am Abend wurde die Veranstaltung abgebrochen. Die Menschen wurden aufgefordert, die Veranstaltung zu verlassen. Die Hintergründe sind noch unklar.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-samstag-demo.html",
+      "image": "",
+      "date": "2026-07-25T20:48:25.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye, CMAS Sualtı Hokeyi Dünya Şampiyonası'nı 1 altın, 1 gümüş madalyayla tamamladı",
+      "description": "Kocaeli'nin Gebze ilçesinde düzenlenen CMAS Sualtı Hokeyi Yaş Grupları Dünya Şampiyonası, final müsabakalarının ardından gerçekleştirilen ödül töreniyle sona erdi.",
+      "url": "https://www.aa.com.tr/tr/spor/turkiye-cmas-sualti-hokeyi-dunya-sampiyonasini-1-altin-1-gumus-madalyayla-tamamladi/4009414",
+      "image": "",
+      "date": "2026-07-25T20:40:12.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Milli okçular, Avrupa Gençler Şampiyonası'nı 18 madalyayla zirvede tamamladı",
       "description": "Türkiye, İtalya'da düzenlenen Avrupa Gençler Okçuluk Şampiyonası'nda 5'i altın olmak üzere toplam 18 madalya kazandı.",
@@ -11,17 +33,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Hunderttausende beim Berliner CSD-Umzug - eine Festnahme bei Gegenprotest",
-      "description": "Am Samstag sind mehreren hunderttausend Menschen anlässlich der Pride durch Berlin gezogen. Es kam auch zu einer Festnahme bei einem rechtsextremen Gegenprotest. Auch am Gesundbrunnen kam es zu Festnahmen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-samstag-demo.html",
-      "image": "",
-      "date": "2026-07-25T18:44:04.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     },
     {
@@ -69,17 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Uzmanlardan yaz tatilinde çocukların doğa ve aile büyükleriyle vakit geçirmesi önerisi",
-      "description": "Uzmanlar, yaz tatilinde doğayla, aile büyükleriyle ve sosyal çevreyle geçirilen zamanın çocukların gelişimi açısından önemli olduğuna dikkati çekiyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/uzmanlardan-yaz-tatilinde-cocuklarin-doga-ve-aile-buyukleriyle-vakit-gecirmesi-onerisi/4009335",
-      "image": "",
-      "date": "2026-07-25T16:55:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Union-Frauen spielen Unentschieden gegen den HSV",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/07/berlin-fussball-frauen-union-hamburg-hsv-testspiel.html",
@@ -91,9 +91,9 @@
       "type": "rss"
     },
     {
-      "title": "İzmir'de çıkan orman yangınına havadan ve karadan müdahale ediliyor",
-      "description": "İzmir'in Torbalı ilçesinde çıkan orman yangınına havadan ve karadan müdahale ediliyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/izmirde-cikan-orman-yanginina-havadan-ve-karadan-mudahale-ediliyor/4009332",
+      "title": "İzmir'de çıkan orman yangını kontrol altına alındı",
+      "description": "İzmir'in Torbalı ilçesinde çıkan orman yangını havadan ve karadan müdahaleyle kontrol altına alındı.",
+      "url": "https://www.aa.com.tr/tr/gundem/izmirde-cikan-orman-yangini-kontrol-altina-alindi/4009332",
       "image": "",
       "date": "2026-07-25T16:35:34.000Z",
       "source": "Anadolu Ajansı",
