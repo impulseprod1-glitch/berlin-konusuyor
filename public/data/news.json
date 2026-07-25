@@ -1,46 +1,68 @@
 {
-  "lastUpdated": "2026-07-25T20:51:19.502Z",
+  "lastUpdated": "2026-07-25T22:54:35.451Z",
   "count": 10,
   "articles": [
     {
-      "title": "CSD vor dem Brandenburger Tor abgebrochen - Menschen sollen das Gelände verlassen.",
-      "description": "Am Samstag sind mehreren hunderttausend Menschen anlässlich der Pride durch Berlin gezogen. Am Abend wurde die Veranstaltung abgebrochen. Die Menschen wurden aufgefordert, die Veranstaltung zu verlassen. Die Hintergründe sind noch unklar.",
+      "title": "CSD Berlin: Auto fährt in Menschen - ein Toter und Verletzte",
+      "description": "Am Rande des CSD in Berlin hat ein Auto Menschen erfasst: mehrere Menschen wurden teils schwer verletzt, mindestens eine Person ist tot. Die CSD-Party vor dem Brandenburger Tor wurde abgebrochen.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-samstag-demo.html",
       "image": "",
-      "date": "2026-07-25T20:48:25.000Z",
+      "date": "2026-07-25T22:46:09.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
       "type": "rss"
     },
     {
-      "title": "Türkiye, CMAS Sualtı Hokeyi Dünya Şampiyonası'nı 1 altın, 1 gümüş madalyayla tamamladı",
-      "description": "Kocaeli'nin Gebze ilçesinde düzenlenen CMAS Sualtı Hokeyi Yaş Grupları Dünya Şampiyonası, final müsabakalarının ardından gerçekleştirilen ödül töreniyle sona erdi.",
-      "url": "https://www.aa.com.tr/tr/spor/turkiye-cmas-sualti-hokeyi-dunya-sampiyonasini-1-altin-1-gumus-madalyayla-tamamladi/4009414",
+      "title": "Berlin'de LGBT yürüyüşünün yapıldığı alanın yakınında bir araç kalabalığa daldı",
+      "description": "Almanya'nın başkenti Berlin'de Christopher Street Day (LGBT) yürüyüşünün yapıldığı alanın yakınlarında bir aracın kalabalığa dalması sonucu 1 kişinin hayatını kaybettiği, çok sayıda kişinin de yaralandığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/berlinde-lgbt-yuruyusunun-yapildigi-alanin-yakininda-bir-arac-kalabaliga-daldi/4009438",
       "image": "",
-      "date": "2026-07-25T20:40:12.000Z",
+      "date": "2026-07-25T21:47:06.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Milli okçular, Avrupa Gençler Şampiyonası'nı 18 madalyayla zirvede tamamladı",
-      "description": "Türkiye, İtalya'da düzenlenen Avrupa Gençler Okçuluk Şampiyonası'nda 5'i altın olmak üzere toplam 18 madalya kazandı.",
-      "url": "https://www.aa.com.tr/tr/spor/milli-okcular-avrupa-gencler-sampiyonasini-18-madalyayla-zirvede-tamamladi/4009373",
+      "title": "İsrail polisi Tel Aviv'de Filistin yanlısı göstericilere müdahale etti",
+      "description": "İsrail polisinin Batı Şeria'daki yerleşimci şiddetini protesto için Tel Aviv'de sokağa inen göstericilerden 9'unu gözaltına aldığı belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-polisi-tel-avivde-filistin-yanlisi-gostericilere-mudahale-etti/4009433",
       "image": "",
-      "date": "2026-07-25T18:53:03.000Z",
+      "date": "2026-07-25T21:21:32.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Türkiye'den Suriye'deki trafik kazasında hayatını kaybedenler için taziye mesajı",
-      "description": "Dışişleri Bakanlığı, Suriye'de Şam-Deyrizor yolunda iki yolcu otobüsünün çarpıştığı kazada hayatını kaybedenler için taziye mesajı yayımladı.",
-      "url": "https://www.aa.com.tr/tr/gundem/turkiyeden-suriyedeki-trafik-kazasinda-hayatini-kaybedenler-icin-taziye-mesaji/4009370",
+      "title": "Ukrayna'nın Hazar Denizi'nde İran'ın ticaret gemisine yönelik saldırısına ülkeden kınama",
+      "description": "İran Dışişleri Bakanlığı, Ukrayna'nın Hazar Denizi'nde ülkelerine ait ticaret gemisine yönelik düzenlediği ve bir denizcinin hayatını kaybettiği saldırıyı kınadı.",
+      "url": "https://www.aa.com.tr/tr/dunya/ukraynanin-hazar-denizinde-iranin-ticaret-gemisine-yonelik-saldirisina-ulkeden-kinama/4009430",
       "image": "",
-      "date": "2026-07-25T18:21:35.000Z",
+      "date": "2026-07-25T20:57:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'in Haaretz gazetesi: Tarih Netanyahu'yu ülke tarihinin en kötü başbakanı olarak yazacak",
+      "description": "İsrail'de yayın yapan Haaretz gazetesi, Başbakan Binyamin Netanyahu'nun, ülke tarihindeki en kötü başbakan olarak tarihe geçeceğini savundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-haaretz-gazetesi-tarih-netanyahuyu-ulke-tarihinin-en-kotu-basbakani-olarak-yazacak/4009425",
+      "image": "",
+      "date": "2026-07-25T20:50:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Antalya'da \"Kökbörü Müsabakaları ve Geleneksel Atlı Spor Gösterileri\" yapıldı",
+      "description": "Türkiye Geleneksel Atlı Spor Dalları Federasyonu (TGASDF) ve İbradı Belediyesi ortaklığında gerçekleştirilen \"Kökbörü Müsabakaları ve Geleneksel Atlı Spor Gösterileri\" yapıldı.",
+      "url": "https://www.aa.com.tr/tr/spor/antalyada-kokboru-musabakalari-ve-geleneksel-atli-spor-gosterileri-yapildi/4009419",
+      "image": "",
+      "date": "2026-07-25T20:46:19.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -55,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "8. Türk-Arap Sanatçılar Buluşması, \"Renkler Hikayeler Çizer\" temasıyla Rami Kütüphanesi'nde başladı ",
-      "description": "Türk-Arap Derneği, Türk-Arap Sanat Evi, Rami Kütüphanesi ve Gaziosmanpaşa Belediyesi işbirliğiyle düzenlenen 8. Türk-Arap Sanatçılar Buluşması, \"Renkler Hikayeler Çizer\" temasıyla Rami Kütüphanesi'nde sanatseverlerle buluştu.",
-      "url": "https://www.aa.com.tr/tr/kultur/8-turk-arap-sanatcilar-bulusmasi-renkler-hikayeler-cizer-temasiyla-rami-kutuphanesinde-basladi-/4009360",
-      "image": "",
-      "date": "2026-07-25T18:02:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -88,17 +99,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İzmir'de çıkan orman yangını kontrol altına alındı",
-      "description": "İzmir'in Torbalı ilçesinde çıkan orman yangını havadan ve karadan müdahaleyle kontrol altına alındı.",
-      "url": "https://www.aa.com.tr/tr/gundem/izmirde-cikan-orman-yangini-kontrol-altina-alindi/4009332",
-      "image": "",
-      "date": "2026-07-25T16:35:34.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
