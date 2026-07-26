@@ -1,13 +1,35 @@
 {
-  "lastUpdated": "2026-07-25T22:54:35.451Z",
+  "lastUpdated": "2026-07-26T02:39:29.477Z",
   "count": 10,
   "articles": [
     {
-      "title": "CSD Berlin: Auto fährt in Menschen - ein Toter und Verletzte",
-      "description": "Am Rande des CSD in Berlin hat ein Auto Menschen erfasst: mehrere Menschen wurden teils schwer verletzt, mindestens eine Person ist tot. Die CSD-Party vor dem Brandenburger Tor wurde abgebrochen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-samstag-demo.html",
+      "title": "Liveticker: Auto fährt bei CSD Berlin in Menschen - Toter und Verletzte",
+      "description": "Am Rande des CSD in Berlin ist am Samstagabend ein Auto in Menschen gefahren. Es gibt einen Toten und mindestens 16 teils schwer Verletzte. Die Polizei hat einen Tatverdächtigen identifiziert. Alle Informationen im Liveticker.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/live-ticker-csd-berlin-auto-tiergarten-verletzte-tot.html",
       "image": "",
-      "date": "2026-07-25T22:46:09.000Z",
+      "date": "2026-07-26T02:08:38.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail, Batı Şeria'da 763 konut planıyla Filistin topraklarına yönelik gasbını genişletmeyi amaçlıyor",
+      "description": "İsrail'in aşırı sağcı Maliye Bakanı Bezalel Smotrich, işgal altındaki Batı Şeria'nın Nablus kentinin güneyinde Filistin toprakları gasbedilerek kurulan Eli yerleşim yerinde 763 yeni konut inşa edilmesini planladıklarını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-bati-seriada-763-konut-planiyla-filistin-topraklarina-yonelik-gasbini-genisletmeyi-amacliyor/4009447",
+      "image": "",
+      "date": "2026-07-26T00:49:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bildergalerie zum CSD: Auto fährt in Menschenmenge",
+      "description": "Ein Wagen fährt in Berlin während der Feiern zum Christopher Street Day Menschen an. Mindestens eine Person stirbt, zahlreiche weitere werden verletzt. Bilder vom Einsatzort.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/bildergalerie-csd-berlin-auto-tiergarten.html",
+      "image": "",
+      "date": "2026-07-26T00:38:55.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
@@ -58,14 +80,14 @@
       "type": "rss"
     },
     {
-      "title": "Antalya'da \"Kökbörü Müsabakaları ve Geleneksel Atlı Spor Gösterileri\" yapıldı",
-      "description": "Türkiye Geleneksel Atlı Spor Dalları Federasyonu (TGASDF) ve İbradı Belediyesi ortaklığında gerçekleştirilen \"Kökbörü Müsabakaları ve Geleneksel Atlı Spor Gösterileri\" yapıldı.",
-      "url": "https://www.aa.com.tr/tr/spor/antalyada-kokboru-musabakalari-ve-geleneksel-atli-spor-gosterileri-yapildi/4009419",
+      "title": "Hunderttausende beim Berliner CSD-Umzug - 7.000 bei Protest in Gesundbrunnen",
+      "description": "Am Samstag sind mehreren hunderttausend Menschen anlässlich der Pride durch Berlin gezogen. Am Abend wurde die Veranstaltung abgebrochen. Die Menschen wurden aufgefordert, die Veranstaltung zu verlassen. Die Hintergründe sind noch unklar.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-christopher-street-day-samstag-demo-veranstaltung-abgebrochen.html",
       "image": "",
-      "date": "2026-07-25T20:46:19.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
+      "date": "2026-07-25T20:40:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/07/berlin-brandenburg-finals-tag-3-hannover-Stelmakh-achter-schwimmen-br-volleys-triathlon.html",
       "image": "",
       "date": "2026-07-25T17:22:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Union-Frauen spielen Unentschieden gegen den HSV",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/07/berlin-fussball-frauen-union-hamburg-hsv-testspiel.html",
-      "image": "",
-      "date": "2026-07-25T16:51:57.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Hertha kassiert Packung, Altglienicke vermeidet Fehlstart ",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/07/berlin-brandenburg-fussball-regionalliga-altglienicke-hertha-tasmania-preussen-stahnsdorf.html",
-      "image": "",
-      "date": "2026-07-25T16:01:56.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
