@@ -1,16 +1,60 @@
 {
-  "lastUpdated": "2026-07-26T02:39:29.477Z",
+  "lastUpdated": "2026-07-26T06:35:16.009Z",
   "count": 10,
   "articles": [
     {
-      "title": "Liveticker: Auto fährt bei CSD Berlin in Menschen - Toter und Verletzte",
-      "description": "Am Rande des CSD in Berlin ist am Samstagabend ein Auto in Menschen gefahren. Es gibt einen Toten und mindestens 16 teils schwer Verletzte. Die Polizei hat einen Tatverdächtigen identifiziert. Alle Informationen im Liveticker.",
+      "title": "Liveticker: Auto fährt bei CSD in Menschen - eine Tote, Polizei fahndet nach Tatverdächtigem ",
+      "description": "Nach dem Angriff am Rande des CSD fahndet die Polizei öffentlich mit einem Foto nach einem Tatverdächtigen, dem 21-jährigen Abdul B. Eine Frau wurde durch den Angriff mit einem Auto getötet, 16 teils schwer verletzt. Alle Informationen im Liveticker.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/live-ticker-csd-berlin-auto-tiergarten-verletzte-tot.html",
       "image": "",
-      "date": "2026-07-26T02:08:38.000Z",
+      "date": "2026-07-26T06:20:09.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin İran'a deniz ablukasında 12 ticari geminin rotaları değiştirildi, 2 gemi hizmet dışı bırakıldı",
+      "description": "ABD ordusu, İran'a yönelik uygulanan deniz ablukası kapsamında 12 ticari geminin rotalarının değiştirildiğini, 2 geminin ise \"hizmet dışı\" bırakıldığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdnin-irana-deniz-ablukasinda-12-ticari-geminin-rotalari-degistirildi-2-gemi-hizmet-disi-birakildi/4009472",
+      "image": "",
+      "date": "2026-07-26T06:18:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Pakistan'ın Pencap eyaletinde şiddetli yağışlar sonucu son 24 saatte 7 kişi yaşamını yitirdi",
+      "description": "Pakistan'ın Pencap eyaletinde şiddetli yağışlar sonucu son 24 saatte 7 kişi hayatını kaybetti, 20 kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/pakistanin-pencap-eyaletinde-siddetli-yagislar-sonucu-son-24-saatte-7-kisi-yasamini-yitirdi/4009470",
+      "image": "",
+      "date": "2026-07-26T06:15:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Galatasaray, hazırlık maçında yarın İtalya ekibi Venezia ile karşılaşacak",
+      "description": "Galatasaray Futbol Takımı, yarın İtalya ekibi Venezia ile hazırlık maçı yapacak.",
+      "url": "https://www.aa.com.tr/tr/spor/galatasaray-hazirlik-macinda-yarin-italya-ekibi-venezia-ile-karsilasacak/4009469",
+      "image": "",
+      "date": "2026-07-26T06:01:29.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kastamonu'da su baskınları nedeniyle zemin katlarda yaşayanlar tahliye edildi",
+      "description": "Kastamonu'nun Cide ilçesinde su baskınları sebebiyle zemin katlarda yaşayanlar tahliye edildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/kastamonuda-su-baskinlari-nedeniyle-zemin-katlarda-yasayanlar-tahliye-edildi/4009464",
+      "image": "",
+      "date": "2026-07-26T05:50:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     },
     {
@@ -33,50 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin'de LGBT yürüyüşünün yapıldığı alanın yakınında bir araç kalabalığa daldı",
-      "description": "Almanya'nın başkenti Berlin'de Christopher Street Day (LGBT) yürüyüşünün yapıldığı alanın yakınlarında bir aracın kalabalığa dalması sonucu 1 kişinin hayatını kaybettiği, çok sayıda kişinin de yaralandığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/berlinde-lgbt-yuruyusunun-yapildigi-alanin-yakininda-bir-arac-kalabaliga-daldi/4009438",
-      "image": "",
-      "date": "2026-07-25T21:47:06.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail polisi Tel Aviv'de Filistin yanlısı göstericilere müdahale etti",
-      "description": "İsrail polisinin Batı Şeria'daki yerleşimci şiddetini protesto için Tel Aviv'de sokağa inen göstericilerden 9'unu gözaltına aldığı belirtildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-polisi-tel-avivde-filistin-yanlisi-gostericilere-mudahale-etti/4009433",
-      "image": "",
-      "date": "2026-07-25T21:21:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ukrayna'nın Hazar Denizi'nde İran'ın ticaret gemisine yönelik saldırısına ülkeden kınama",
-      "description": "İran Dışişleri Bakanlığı, Ukrayna'nın Hazar Denizi'nde ülkelerine ait ticaret gemisine yönelik düzenlediği ve bir denizcinin hayatını kaybettiği saldırıyı kınadı.",
-      "url": "https://www.aa.com.tr/tr/dunya/ukraynanin-hazar-denizinde-iranin-ticaret-gemisine-yonelik-saldirisina-ulkeden-kinama/4009430",
-      "image": "",
-      "date": "2026-07-25T20:57:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in Haaretz gazetesi: Tarih Netanyahu'yu ülke tarihinin en kötü başbakanı olarak yazacak",
-      "description": "İsrail'de yayın yapan Haaretz gazetesi, Başbakan Binyamin Netanyahu'nun, ülke tarihindeki en kötü başbakan olarak tarihe geçeceğini savundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilin-haaretz-gazetesi-tarih-netanyahuyu-ulke-tarihinin-en-kotu-basbakani-olarak-yazacak/4009425",
-      "image": "",
-      "date": "2026-07-25T20:50:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
