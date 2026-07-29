@@ -1,13 +1,79 @@
 {
-  "lastUpdated": "2026-07-29T17:12:55.868Z",
+  "lastUpdated": "2026-07-29T19:13:29.229Z",
   "count": 10,
   "articles": [
     {
-      "title": "Çanakkale Boğazı gemi trafiği, karaya oturan yük gemisi nedeniyle askıya alındı",
-      "description": "Çanakkale Boğazı gemi trafiği karaya oturan dökme yük gemisi nedeniyle çift yönlü ve geçici olarak askıya alındı.",
-      "url": "https://www.aa.com.tr/tr/gundem/canakkale-bogazi-gemi-trafigi-karaya-oturan-yuk-gemisi-nedeniyle-askiya-alindi/4012966",
+      "title": "Nach Anschlag auf CSD: Berliner \"Zug der Liebe\" abgesagt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-zug-der-liebe-absage.html",
       "image": "",
-      "date": "2026-07-29T16:57:26.000Z",
+      "date": "2026-07-29T19:10:10.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Ticker zum CSD-Anschlag: +++ \"Zug der Liebe\" abgesagt +++",
+      "description": "Vier Tage nach dem Anschlag auf den Berliner CSD ist der Innenausschuss zu einer Sondersitzung zusammengekommen. Die Polizei durchsucht wieder den Tiergarten. Und der \"Zug der Liebe\" wurde abgesagt. Alle Entwicklungen im Liveticker.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/csd-anschlag-ticker-berlin-ermittlungen-folgen.html",
+      "image": "",
+      "date": "2026-07-29T19:02:31.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "TOFAŞ'tan yılın ilk yarısında 6,3 milyar lira konsolide net kar",
+      "description": "Türk Otomobil Fabrikası AŞ'nin (TOFAŞ) konsolide net karı yılın ilk yarısında 2025'in aynı dönemine göre yüzde 197,2 artarak 6 milyar 291 milyon lira oldu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tofastan-yilin-ilk-yarisinda-6-3-milyar-lira-konsolide-net-kar/4013115",
+      "image": "",
+      "date": "2026-07-29T18:36:59.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM: Gazze'de yerinden edilmiş kişilerin yaşadığı yerlerin yüzde 83'ü kemirgen ve parazit istilası altında",
+      "description": "BM, Gazze'de İsrail'in kısıtlamaları nedeniyle yerinden edilmiş kişilerin yaşadığı bölgelerin yüzde 83'ünün yaygın kemirgen ve dış parazit istilası altında olduğunu açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-gazzede-yerinden-edilmis-kisilerin-yasadigi-yerlerin-yuzde-83u-kemirgen-ve-parazit-istilasi-altinda/4013105",
+      "image": "",
+      "date": "2026-07-29T18:28:51.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fed faiz oranını sabit tuttu",
+      "description": "ABD Merkez Bankası (Fed), politika faizini beklentiler doğrultusunda yüzde 3,50-3,75 aralığında sabit tuttu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/fed-faiz-oranini-sabit-tuttu/4013092",
+      "image": "",
+      "date": "2026-07-29T18:02:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Netanyahu ile Trump'ın İran'a karşı nasıl hareket edeceklerini ele aldığı bildirildi",
+      "description": "İsrail Başbakanı Binyamin Netanyahu ile ABD Başkanı Donald Trump'ın İran’a karşı nasıl hareket edeceklerini ve olası seçeneklerin küresel ekonomiye etkilerini ele aldıkları belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/netanyahu-ile-trumpin-irana-karsi-nasil-hareket-edeceklerini-ele-aldigi-bildirildi/4013088",
+      "image": "",
+      "date": "2026-07-29T17:56:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mısır'ın Dimyat Limanı'ndaki gazlaştırma ve depolama gemilerinde yangın çıktı",
+      "description": "Mısır Petrol Bakanlığı, Dimyat Limanı'nda bulunan iki gazlaştırma ve depolama gemisinde yangın çıktığını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/misirin-dimyat-limanindaki-gazlastirma-ve-depolama-gemilerinde-yangin-cikti/4013074",
+      "image": "",
+      "date": "2026-07-29T17:40:03.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -25,28 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Adalet Bakanı Gürlek'ten Spor Güvenliği Değerlendirme Toplantısı'na ilişkin paylaşım",
-      "description": "Adalet Bakanı Akın Gürlek, spor alanlarında suç teşkil eden, saha içinde, tribünlerde, stat çevresinde ve sosyal medyada şiddeti, hakareti ve provokasyonu körükleyen eylemlere karşı, daha etkin mücadele edeceklerini belirtti.",
-      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakani-gurlekten-spor-guvenligi-degerlendirme-toplantisina-iliskin-paylasim/4012909",
-      "image": "",
-      "date": "2026-07-29T16:39:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Milli para atıcı Aysel Özgan, Dünya Kupası'nda gümüş madalya aldı",
-      "description": "Milli sporcu Aysel Özgan, Sırbistan'da düzenlenen WSPS Para Atıcılık Dünya Kupası'nda gümüş madalya kazandı.",
-      "url": "https://www.aa.com.tr/tr/spor/milli-para-atici-aysel-ozgan-dunya-kupasinda-gumus-madalya-aldi/4012903",
-      "image": "",
-      "date": "2026-07-29T16:34:38.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Autofahrer lässt sich von Wespe ablenken und fährt gegen Laterne",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/spremberg-wespe-unfall-schaden.html",
@@ -58,17 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "TCMB ile Suriye Merkez Bankası arasında \"Türk Lirası Mevduat Hesabı Anlaşması\" imzalandı",
-      "description": "Türkiye Cumhuriyet Merkez Bankası (TCMB) ve Suriye Merkez Bankası arasında \"Türk Lirası Mevduat Hesabı Anlaşması\" imzalandı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-ile-suriye-merkez-bankasi-arasinda-turk-lirasi-mevduat-hesabi-anlasmasi-imzalandi/4012880",
-      "image": "",
-      "date": "2026-07-29T16:07:17.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Tamara Danz wird mit Sammelmünze gewürdigt",
       "description": "",
       "url": "https://www.rbb24.de/kultur/beitrag/2026/07/berlin-rockstar-tamara-danz-ehrung-sammelmuenze-praegung.html",
@@ -77,39 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Plagiatsvorwurf gegen Brosius-Gersdorf nicht bestätigt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/brosius-gersdorf-potsdam-verfassungsgericht-richterin-plagiatsvorwurf-nicht-bestaetigt.html",
-      "image": "",
-      "date": "2026-07-29T15:59:47.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bewerbung übergeben: Berlin will Tour-de-France-Start 2029",
-      "description": "40 Jahre nach dem Mauerfall: Berlin bewirbt sich mit Sachsen, Sachsen-Anhalt und Thüringen offiziell für den Start der Tour de France 2029. Tour-Direktor Prudhomme erkennt ein \"verlockendes Vorhaben\". Doch es gibt Mitbewerber.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/07/radsport-tour-de-france-grand-depart-2029-berlin-ostdeutschland.html",
-      "image": "",
-      "date": "2026-07-29T14:44:05.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan: Türkiye'yi bölgesinin teknoloji merkezi haline getirecek adımları kararlılıkla atıyoruz",
-      "description": "Cumhurbaşkanı Erdoğan, \"Türkiye'yi bölgesinin üretim, lojistik, transit ticarette ve teknoloji merkezi haline getirecek adımları kararlılıkla atıyoruz.\" diye konuştu.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-turkiyeyi-bolgesinin-teknoloji-merkezi-haline-getirecek-adimlari-kararlilikla-atiyoruz/4012684",
-      "image": "",
-      "date": "2026-07-29T13:15:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
