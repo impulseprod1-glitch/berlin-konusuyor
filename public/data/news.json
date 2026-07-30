@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-07-30T15:52:13.761Z",
+  "lastUpdated": "2026-07-30T17:25:15.186Z",
   "count": 10,
   "articles": [
     {
-      "title": "\"Fikri Mülkiyet Suçları ve Halk Sağlığı Çalıştayı\" sona erdi",
-      "description": "Emniyet Genel Müdürlüğü (EGM) Güvenlik Daire Başkanlığı Fikri Mülkiyet Suçları Merkez Şube Müdürlüğü ve Anadolu Ajansı (AA) işbirliğiyle düzenlenen \"Fikri Mülkiyet Suçları ve Halk Sağlığı Çalıştayı\" tamamlandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/fikri-mulkiyet-suclari-ve-halk-sagligi-calistayi-sona-erdi/4014195",
+      "title": "Brand von 90-Hektar-Feld bei Rheinsberg gelöscht",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/braunsberg-ostprignitz-ruppin-feldbrand-maeharbeiten-amtliche-warnung.html",
       "image": "",
-      "date": "2026-07-30T15:47:24.000Z",
+      "date": "2026-07-30T17:19:09.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu ateşkese rağmen Lübnan'ın güneyinde hastane çevresini hedef aldı",
+      "description": "İsrail ordusu, ateşkese ve çerçeve anlaşmasına rağmen Lübnan'ın güneyindeki Yukarı Nebatiye beldesinde bir hastanenin çevresine insansız hava aracıyla (İHA) saldırı düzenledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnanin-guneyinde-hastane-cevresini-hedef-aldi/4014254",
+      "image": "",
+      "date": "2026-07-30T17:09:46.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM Güvenlik Konseyi, Guterres'in yerine önerilecek aday için ilk ön oylamayı yaptı",
+      "description": "Birleşmiş Milletler Güvenlik Konseyi (BMGK), BM Genel Sekreteri Antonio Guterres'in yıl sonunda görev süresinin dolacak olması nedeniyle yerine önerilecek adayı seçmek için ilk ön oylamayı gerçekleştirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-guvenlik-konseyi-guterresin-yerine-onerilecek-aday-icin-ilk-on-oylamayi-yapti/4014248",
+      "image": "",
+      "date": "2026-07-30T17:00:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "KKTC Dışişleri, AB'nin Kıbrıs Özel Temsilcisi Fitto'yu muhatap almayacağını duyurdu",
+      "description": "KKTC Dışişleri Bakanlığı, Avrupa Birliği'nin (AB), Güney Kıbrıs Rum Yönetimi'nin (GKRY) talebi üzerine Raffaele Fitto'yu Kıbrıs'a sözde temsilci olarak görevlendirmesinin kendileri için hiçbir meşruiyet taşımadığını belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/kktc-disisleri-abnin-kibris-ozel-temsilcisi-fittoyu-muhatap-almayacagini-duyurdu/4014246",
+      "image": "",
+      "date": "2026-07-30T16:59:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'de yapılan anket, Trump'ın İran'a yönelik saldırılarına verilen desteğin azaldığını ortaya koydu",
+      "description": "ABD'de yapılan ankette, Başkan Donald Trump yönetiminin İran'a yönelik yürüttüğü askeri operasyona Amerikan halkının verdiği desteğin önemli ölçüde azaldığı görüldü.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdde-yapilan-anket-trumpin-irana-yonelik-saldirilarina-verilen-destegin-azaldigini-ortaya-koydu/4014240",
+      "image": "",
+      "date": "2026-07-30T16:54:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır: Konya'da OSB'lerin sayısını 8'den 12'ye çıkardık",
+      "description": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, \"Son 23 yılda nitelikli yatırımları Konya'ya kazandırmak için şehrimizdeki OSB'lerin sayısını 8'den 12'ye, OSB'lerin toplam yüzölçümünü 1700 hektardan 6 bin hektara çıkardık. \" dedi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/sanayi-ve-teknoloji-bakani-mehmet-fatih-kacir-konyada-osblerin-sayisini-8den-12ye-cikardik/4014238",
+      "image": "",
+      "date": "2026-07-30T16:53:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "\"Rente mit 63\": Woidke warnt vor Abschaffung des Modells",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/07/dietmar-woidke-abschlagsfreie-rente-45-beitragsjahre-rentenreform.html",
+      "image": "",
+      "date": "2026-07-30T16:38:48.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,17 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Borsa günü düşüşle tamamladı",
-      "description": "Borsa İstanbul'da BIST 100 endeksi, günü yüzde 1,55 değer kaybederek 13.292,93 puandan tamamladı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/borsa-gunu-dususle-tamamladi/4014177",
-      "image": "",
-      "date": "2026-07-30T15:31:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Nach Anschlag in Berlin: CSDs in Brandenburg sollen stattfinden",
       "description": "Nach dem Anschlag auf den Berliner CSD müssen Veranstalter kommender CSDs und anderer Veranstaltungen in der Region entscheiden, wie sie weitermachen wollen. Der Vorsitzende des queeren Dachverbands in Brandenburg hat dazu eine klare Meinung.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/csd-brandenburg-nach-anschlag-in-berlin-veranstaltungen.html",
@@ -47,66 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "İsrail'de bir grup asker, komutanlarına tepki göstererek bulundukları üssü terk etti",
-      "description": "İsrail'de Gazze Şeridi'nden alıkonulan Filistinli esirlerin de tutulduğu Sde Teiman Askeri Üssü'nde bir grup asker komutanlarına \"isyan ederek\" üssü terk etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilde-bir-grup-asker-komutanlarina-tepki-gostererek-bulunduklari-ussu-terk-etti/4014148",
-      "image": "",
-      "date": "2026-07-30T15:22:01.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Rekor sıcaklıkların yaşandığı Fransa'da hastanelere 33 bin klima sağlandı",
-      "description": "Fransa'da hükümet, bu yılın dördüncü sıcak hava dalgasına karşı alınan önlemler kapsamında hastanelere 33 bin klima tahsis edildiğini duyurdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/rekor-sicakliklarin-yasandigi-fransada-hastanelere-33-bin-klima-saglandi/4014094",
-      "image": "",
-      "date": "2026-07-30T15:12:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "90 Hektar Feld brennen bei Rheinsberg - Bevölkerung wird gewarnt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/braunsberg-ostprignitz-ruppin-feldbrand-maeharbeiten-amtliche-warnung.html",
-      "image": "",
-      "date": "2026-07-30T15:06:43.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Düşük riskli branşlarda spor yapanlar, hekime gitmeden lisans alabilecek",
-      "description": "Sağlık Bakanlığı ile Gençlik ve Spor Bakanlığı arasında sporcu lisansı sağlık raporlarının düzenlenmesine ilişkin imzalanan ön mutabakatla düşük riskli branşlarda spor yapacak bireyler, hekime başvurmadan lisans işlemlerini tamamlayabilecek",
-      "url": "https://www.aa.com.tr/tr/spor/dusuk-riskli-branslarda-spor-yapanlar-hekime-gitmeden-lisans-alabilecek/4014083",
-      "image": "",
-      "date": "2026-07-30T15:03:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Berlin und Brandenburg: Bis zu 38 Grad - abends Gewitter",
       "description": "Erst brütende Hitze mit über 30 Grad, dann droht der Wetterumschwung: Am Abend ziehen über Berlin und Brandenburg teils heftige Gewitter mit Starkregen, Sturmböen und Hagel auf. Besonders in Nordbrandenburg wird vor Unwetter gewarnt.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/07/wetter-temperaturen-hitze-berlin-brandenburg-unwetter-gewitter-starkregen.html",
       "image": "",
       "date": "2026-07-30T14:43:15.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Teltow-Fläming: Brand auf Truppenübungsplatz - Warnung vor Rauch",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/jueterbog-truppenuebungsplatz-treuenbrietzen-luckenwalde-brand-rauchentwicklung.html",
-      "image": "",
-      "date": "2026-07-30T13:51:33.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
