@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-07-31T17:27:23.627Z",
+  "lastUpdated": "2026-07-31T19:22:31.064Z",
   "count": 10,
   "articles": [
     {
-      "title": "Beşiktaş'ın genç futbolcusu Devrim, Bodrum FK'de",
-      "description": "Beşiktaş Kulübü, 19 yaşındaki Devrim Şahin'in bonservisinin Bodrum FK'ye kiralandığını açıkladı.",
-      "url": "https://www.aa.com.tr/tr/spor/besiktasin-genc-futbolcusu-devrim-bodrum-fkde/4015311",
+      "title": "Türkiye'den Japonya'daki depremde ölenler için taziye mesajı",
+      "description": "Dışişleri Bakanlığı, Japonya'nın Kumamoto eyaletinde 28 Temmuz'da meydana gelen depremde yaşanan can kayıpları nedeniyle Japon halkına taziyelerini sundu.",
+      "url": "https://www.aa.com.tr/tr/gundem/turkiyeden-japonyadaki-depremde-olenler-icin-taziye-mesaji/4015373",
       "image": "",
-      "date": "2026-07-31T17:21:13.000Z",
+      "date": "2026-07-31T19:17:40.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu, Nablus'taki Tel beldesinde bir haftada 200 Filistinli gözaltına aldı",
+      "description": "İsrail ordusu, işgal altındaki Batı Şeria'nın Nablus kenti yakınlarındaki Tel beldesinde yaşanan olayların ardından bölgede geçen hafta 200'den fazla Filistinlinin gözaltına alındığını kabul etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-nablustaki-tel-beldesinde-bir-haftada-200-filistinli-gozaltina-aldi/4015372",
+      "image": "",
+      "date": "2026-07-31T19:15:27.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rus e-ticaret platformu Wildberries: Saldırılardan yabancı girişimciler de zarar gördü",
+      "description": "Wildberries’in Üst Yöneticisi Kim, Ukrayna'nın şirketin depolarına yönelik saldırılarında Rusya'nın yanı sıra Kırgızistan, Belarus, Kazakistan, Ermenistan, Özbekistan ve Çin'den girişimcilerin de milyarlarca ruble zarara uğradığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/rus-e-ticaret-platformu-wildberries-saldirilardan-yabanci-girisimciler-de-zarar-gordu/4015368",
+      "image": "",
+      "date": "2026-07-31T19:11:51.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tuna Nehri'nin Sırbistan ve Bulgaristan'daki su seviyesinde düşüş sürüyor",
+      "description": "Avrupa'nın en uzun ikinci nehri olan ve 10 ülkenin sınırlarından geçerek Karadeniz'e dökülen Tuna Nehri'nin Sırbistan ve Bulgaristan kesiminde su seviyesinde düşüş devam ediyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/tuna-nehrinin-sirbistan-ve-bulgaristandaki-su-seviyesinde-dusus-suruyor/4015364",
+      "image": "",
+      "date": "2026-07-31T19:05:06.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Brand in Jüterbog eingedämmt - aber noch nicht komplett aus",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/jueterbog-truppenuebungsplatz-treuenbrietzen-luckenwalde-brand-rauchentwicklung.html",
+      "image": "",
+      "date": "2026-07-31T18:42:10.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Sanchez, Schengen Bölgesi'nin İspanya'ya kapatılması çağrılarına AB'nin düzensiz göç karnesiyle yanıt verdi",
+      "description": "İspanya Başbakanı Pedro Sanchez, ülkesinin Kuzey Afrika'daki toprağı Sebte'deki (Ceuta) düzensiz göç hareketleri nedeniyle Schengen Bölgesi'nin İspanya'ya kapatılması yönündeki çağrılara, Avrupa Birliği'nin (AB) düzensiz göç karnesiyle yanıt verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/sanchez-schengen-bolgesinin-ispanyaya-kapatilmasi-cagrilarina-abnin-duzensiz-goc-karnesiyle-yanit-verdi/4015349",
+      "image": "",
+      "date": "2026-07-31T18:34:38.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Schwedt verhängt nächtliches Alkoholverbot in Innenstadt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/uckermark-schwedt-zentrum-alkoholverbot-nachts.html",
+      "image": "",
+      "date": "2026-07-31T17:45:55.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "CSD-Anschlag: Polizei stellt Poller am Tatort im Tiergarten auf",
+      "description": "Rund um den Ort des Anschlags am Rande des CSD im Berliner Tiergarten hat die Polizei nun Poller aufgestellt. Grund ist auch eine Mahnwache am Wochenende.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/polizei-stellt-poller-auf-csd-berlin-anschlagsort-tiergarten.html",
+      "image": "",
+      "date": "2026-07-31T17:32:03.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Yunanistan'ın başkenti Atina'nın batısındaki Haydari bölgesi yakınlarında orman yangını çıktı",
-      "description": "Yunanistan'ın başkenti Atina’nın batısındaki Haydari bölgesi yakınlarında orman yangını çıktı.",
-      "url": "https://www.aa.com.tr/tr/dunya/yunanistanin-baskenti-atinanin-batisindaki-haydari-bolgesi-yakinlarinda-orman-yangini-cikti/4015285",
-      "image": "",
-      "date": "2026-07-31T17:05:31.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Trump, Hamas'ın silah bırakması anlaşmasından İsrail'in \"memnun\" olduğunu belirtti",
-      "description": "ABD Başkanı Donald Trump, Hamas'ın silahlarını bırakmasına ilişkin Barış Kurulu'nda sağlanan anlaşmadan İsrail'in \"memnun\" olduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/trump-hamasin-silah-birakmasi-anlasmasindan-israilin-memnun-oldugunu-belirtti/4015283",
-      "image": "",
-      "date": "2026-07-31T17:04:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD \"Hürmüz Boğazı'nın İran tarafından kapatıldığı\" iddiasını yalanladı",
-      "description": "ABD Merkez Kuvvetler Komutanlığı (CENTCOM), İran'ın \"Hürmüz Boğazı'nı ticari gemilerin geçişine kapattığı\" yönündeki açıklamasının doğru olmadığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-hurmuz-bogazinin-iran-tarafindan-kapatildigi-iddiasini-yalanladi/4015277",
-      "image": "",
-      "date": "2026-07-31T17:02:34.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Wenders schneidet Nacktszene mit 13-jähriger Kinski aus Film",
       "description": "",
       "url": "https://www.rbb24.de/kultur/beitrag/2026/07/wim-wenders-schneidet-nacktszene-aus-film-nastassia-kinski.html",
       "image": "",
       "date": "2026-07-31T16:56:48.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Selbstbestimmungsgesetz: Tausende ändern Geschlechtseintrag in Berlin und Brandenburg",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/tausende-aendern-geschlechtseintrag-selbstbestimmungsgesetz-berlin-brandenburg.html",
-      "image": "",
-      "date": "2026-07-31T16:32:45.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ticaret Bakanı Bolat: Türkiye 23 yıldır istikrarlı şekilde büyümeye, gelişmeye devam ediyor",
-      "description": "Bakan Bolat \"Dünyanın ekonomik durgunluk içinde olduğu, bölgemizde sıcak savaşların, enerjide, gıdada, uluslararası ticarette problemlerin olduğu bir ortamda Türkiye 23 yıldır istikrarlı büyümeye, gelişmeye, ülkesini güçlendirmeye devam ediyor\" dedi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/ticaret-bakani-bolat-turkiye-23-yildir-istikrarli-sekilde-buyumeye-gelismeye-devam-ediyor/4015157",
-      "image": "",
-      "date": "2026-07-31T14:43:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BVG-Straßenbahnlinie M1 ab Samstag wochenlang verkürzt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/berlin-bvg-strassenbahn-m1-verkuerzt-bauarbeiten.html",
-      "image": "",
-      "date": "2026-07-31T14:24:45.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Allrounderin für Alba: Kanadieren Wallack wechselt nach Berlin",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/07/alba-berlin-frauen-tara-wallack-kanada-neuzugang-dbbl.html",
-      "image": "",
-      "date": "2026-07-31T14:11:07.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
