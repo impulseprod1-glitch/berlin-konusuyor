@@ -1,4 +1,4 @@
-import { messaging, db, getToken, onMessage, collection, addDoc, query, where, getDocs, setDoc, doc } from '../firebase-config.js';
+import { db, loadMessaging, setDoc, doc } from '../firebase-config.js';
 
 const VAPID_KEY = "BKB-eES6AMxMmUTnrXOugT0kz1dZ92MmS1fjC6Jdu8wmNV_xdLmeWOOMM08e-2GTV5lYrkVeU0zYarVjjfNP0Sw"; // USER: Firebase Console -> Project Settings -> Cloud Messaging -> Web Push certificates
 
@@ -8,13 +8,16 @@ export async function initNotifications() {
     return;
   }
 
-  // Check if we already have permission or should ask
-  if (Notification.permission === 'default') {
-    // We could show a custom UI toast first to not be invasive
-  }
+  // Ön plan bildirim dinleyicisi yalnızca kullanıcı zaten izin vermişse
+  // anlamlıdır. İzin yoksa Messaging SDK'sını hiç indirmiyoruz —
+  // ziyaretçilerin büyük çoğunluğu için ~45 kB tasarruf.
+  if (Notification.permission !== 'granted') return;
 
-  // Handle foreground messages
-  onMessage(messaging, (payload) => {
+  const fcm = await loadMessaging();
+  if (!fcm) return;
+
+  // Uygulama açıkken gelen bildirimler
+  fcm.onMessage(fcm.messaging, (payload) => {
     showCustomNotification(payload.notification);
   });
 }
@@ -23,7 +26,10 @@ export async function requestNotificationPermission(userEmail = null) {
   try {
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
-      const token = await getToken(messaging, { vapidKey: VAPID_KEY });
+      const fcm = await loadMessaging();
+      if (!fcm) return false;
+
+      const token = await fcm.getToken(fcm.messaging, { vapidKey: VAPID_KEY });
       if (token) {
         await saveToken(token, userEmail);
         return true;

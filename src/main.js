@@ -6,6 +6,7 @@ import { initLangSwitcher } from './features/ui.js';
 import { initAuthListener } from './features/auth.js';
 import { initDashboardUtils } from './features/dashboard.js';
 import { loadNewsWithDeepLink } from './features/news.js';
+import { initVideoNews } from './features/video-news.js';
 import { loadEvents } from './features/events.js';
 import { loadPodcasts, initPodcastsUI } from './features/podcasts.js';
 import { initQAForum } from './features/forum.js';
@@ -16,7 +17,8 @@ import {
   initMobileMenu, initMobileDock, initLenis, initServiceWorker, 
   initTheme, initSearch 
 } from './features/ui.js';
-import { initCookieBanner } from './features/legal.js';
+import { initConsentBanner } from './features/consent.js';
+import { initGoogleAnalytics } from './features/ga.js';
 import { 
   initChatbot, initPolls, initShakeHistory, initSwipeToDismiss, 
   initCursorPremium, initParallax, initTiltEffects, initCounters, 
@@ -26,6 +28,7 @@ import { initMap } from './features/map.js';
 import { initNotifications, requestNotificationPermission } from './features/notifications.js';
 import { auth } from './firebase-config.js';
 import { initBridge } from './features/bridge.js';
+import { initAnalytics } from './features/analytics.js';
 import './features/pulse.js';
 
 
@@ -56,7 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initLangSwitcher();
     initTextReveal(); // Prioritized
-    initCookieBanner();
+
+    // GA yükleyicisinin rıza dinleyicisi, banner kararı yayınlamadan
+    // ÖNCE kurulmalı — sıralama önemli.
+    initGoogleAnalytics();
+    initConsentBanner();
+
     initNavbar();
     initMobileMenu();
     initMobileDock();
@@ -69,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initAuthListener();
     initDashboardUtils();
     loadNewsWithDeepLink();
+    initVideoNews();
     loadEvents();
     loadPodcasts();
     initPodcastsUI();
@@ -76,7 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initJobBoard();
     initChat();
     initServiceWorker();
-    
+    initAnalytics();
+
     // Extra UI / Interactions
     initParallax();
     initScrollProgress();
@@ -170,10 +180,13 @@ document.addEventListener('click', (e) => {
       if (window.closeHistoryModal) window.closeHistoryModal();
       break;
     case 'accept-cookies':
-      if (window.acceptCookies) window.acceptCookies();
+      if (window.acceptAllCookies) window.acceptAllCookies();
       break;
     case 'reject-cookies':
-      if (window.closeCookieBanner) window.closeCookieBanner();
+      if (window.rejectOptionalCookies) window.rejectOptionalCookies();
+      break;
+    case 'open-cookie-settings':
+      if (window.openCookieSettings) window.openCookieSettings(e);
       break;
     case 'toggle-map-filter':
       // This is now handled in map.js but kept here for potential future delegation

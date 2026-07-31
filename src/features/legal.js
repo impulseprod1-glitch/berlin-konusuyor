@@ -17,8 +17,9 @@ export const legalDocs = {
       <p>[İSİM/ŞİRKET ADI], Berlin, E-posta: berlinkonusuyor@outlook.de</p>
       <h3>2. Firebase & Barındırma</h3>
       <p>Sitemiz Firebase (Google Cloud) altyapısını kullanmaktadır. Veriler güvenli Google sunucularında saklanmaktadır. Auth (Giriş) ve Firestore (Veritabanı) işlemleri bu kapsamdadır.</p>
-      <h3>3. Çerezler (Cookies)</h3>
-      <p>Sitemiz, kullanıcı deneyimini iyileştirmek için teknik olarak gerekli çerezleri kullanır. Google Analytics veya benzeri takip araçları için onayınız alınır.</p>
+      <h3>3. Çerezler ve Google Analytics</h3>
+      <p>Sitenin çalışması için gerekli çerezleri her zaman kullanırız (oturum, dil ve tema tercihi gibi); bunlar rıza gerektirmez.</p>
+      <p><strong>Google Analytics (GA4):</strong> Yalnızca çerez banner'ında "Tümünü Kabul Et" seçeneğini işaretlediğinizde, Google Ireland Limited'e ait Google Analytics ziyaretçi istatistikleri için devreye girer. Onay vermediğiniz sürece bu araç hiç yüklenmez ve hiçbir veri Google'a gönderilmez. Kararınızı dilediğiniz zaman sayfa altındaki "Çerez Ayarları" bağlantısından değiştirebilirsiniz.</p>
       <h3>4. Haklarınız</h3>
       <p>Verileriniz hakkında bilgi alma, düzeltme, sildirme ve itiraz etme hakkına sahipsiniz.</p>
     `
@@ -42,6 +43,9 @@ export const legalDocs = {
       <p>Durch die Nutzung unserer Website erklären Sie sich mit der Erhebung, Verarbeitung und Nutzung von Daten gemäß der nachfolgenden Beschreibung einverstanden.</p>
       <h3>Hosting & Firebase</h3>
       <p>Unsere Website nutzt Dienste von Firebase (Google Ireland Limited). Dabei werden Daten an Google übertragen und dort verarbeitet.</p>
+      <h3>Cookies & Google Analytics</h3>
+      <p>Wir verwenden immer die für den Betrieb der Website technisch notwendigen Cookies (z. B. Sitzung, Sprach- und Themenwahl); dafür ist keine Einwilligung erforderlich.</p>
+      <p><strong>Google Analytics (GA4):</strong> Nur wenn Sie im Cookie-Banner "Alle Akzeptieren" auswählen, setzen wir Google Analytics von Google Ireland Limited zur Analyse der Websitenutzung ein. Ohne Ihre Einwilligung wird dieses Tool nicht geladen und es werden keine Daten an Google übertragen. Sie können Ihre Entscheidung jederzeit über den Link "Cookie-Einstellungen" im Footer ändern.</p>
     `
   },
   en: {
@@ -59,6 +63,9 @@ export const legalDocs = {
       <p>This privacy policy informs you about the type, scope and purpose of the processing of personal data on our website according to GDPR.</p>
       <h3>Firebase Service</h3>
       <p>We use Firebase (Google) for authentication and database services. Data may be stored on servers located in the US under appropriate safety certifications.</p>
+      <h3>Cookies & Google Analytics</h3>
+      <p>We always use the cookies necessary for the site to function (session, language and theme preference); these require no consent.</p>
+      <p><strong>Google Analytics (GA4):</strong> Only if you select "Accept All" in the cookie banner do we use Google Analytics (Google Ireland Limited) for visitor statistics. Without your consent this tool is never loaded and no data is sent to Google. You can change your decision at any time via the "Cookie Settings" link in the footer.</p>
       <h3>User Rights</h3>
       <p>You have the right to access, rectify, or delete your personal data stored by us at any time.</p>
     `
@@ -78,31 +85,11 @@ export function closeLegal() {
   document.body.style.overflow = '';
 }
 
-export function initCookieBanner() {
-  const banner = document.getElementById('cookieBanner');
-  if (!banner) return;
-
-  const isAccepted = localStorage.getItem('bk-cookies-accepted');
-  if (!isAccepted) {
-    setTimeout(() => {
-      banner.classList.add('active');
-    }, 2000);
-  }
-}
-
-export function acceptCookies() {
-  localStorage.setItem('bk-cookies-accepted', 'true');
-  const banner = document.getElementById('cookieBanner');
-  if (banner) banner.classList.remove('active');
-}
-
-export function closeCookieBanner() {
-  localStorage.setItem('bk-cookies-accepted', 'false'); // Minimal refusal tracking
-  const banner = document.getElementById('cookieBanner');
-  if (banner) banner.classList.remove('active');
-}
+// Çerez rızası artık features/consent.js içinde — gerçek bir durum
+// makinesi (kategori bazlı, olay yayınlayan, Google Analytics'i
+// gate'leyen). Eski initCookieBanner/acceptCookies/closeCookieBanner
+// hiçbir CSS'i olmayan, hiçbir scripti engellemeyen dekoratif bir
+// banner yönetiyordu.
 
 window.openLegal = openLegal;
 window.closeLegal = closeLegal;
-window.acceptCookies = acceptCookies;
-window.closeCookieBanner = closeCookieBanner;

@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu klonla
+        uses: actions/checkout@v4
+
+      - name: Node.js kurulumu
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Bagimliliklari yukle
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Testler
+        run: npm test
+
+      - name: Build
+        run: npm run build

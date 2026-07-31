@@ -1,12 +1,5 @@
 import { db, auth, collection, query, where, orderBy, onSnapshot, getDocs, addDoc, serverTimestamp } from '../firebase-config.js';
 
-export const DEMO_JOBS = [
-  { id: 'demo1', title: 'Barista / Servis Elemanı', company: 'The Barn Coffee Roasters', location: 'Mitte', type: 'Part-time', contact: 'jobs@thebarn.de', status: 'approved' },
-  { id: 'demo2', title: 'Senior Software Engineer', company: 'Zalando SE', location: 'Friedrichshain', type: 'Full-time', contact: 'careers@zalando.de', status: 'approved' },
-  { id: 'demo3', title: 'Satış Danışmanı', company: 'KaDeWe', location: 'Schöneberg', type: 'Minijob', contact: 'hr@kadewe.de', status: 'approved' },
-  { id: 'demo4', title: 'Kurye / Teslimat Sorumlusu', company: 'Lieferando', location: 'Berlin Geneli', type: 'Full-time', contact: 'apply@lieferando.de', status: 'approved' }
-];
-
 export async function initJobBoard() {
   const jobsGrid = document.getElementById('jobsGrid');
   const jobFilters = document.querySelectorAll('.job-filter-btn');
@@ -19,12 +12,7 @@ export async function initJobBoard() {
     onSnapshot(q, (snap) => {
       let jobs = [];
       snap.forEach(doc => jobs.push({ id: doc.id, ...doc.data() }));
-
-      if (jobs.length === 0) {
-        renderJobs(DEMO_JOBS);
-      } else {
-        renderJobs(jobs);
-      }
+      renderJobs(jobs);
     });
 
   } catch (error) {
@@ -54,7 +42,7 @@ export function renderJobs(jobs) {
   if (!jobsGrid) return;
 
   if (!jobs.length) {
-    jobsGrid.innerHTML = '<p class="no-data">Gösterilecek ilan bulunmuyor.</p>';
+    jobsGrid.innerHTML = '<p class="no-data">Henüz onaylanmış ilan yok — ilk ilanı siz verebilirsiniz.</p>';
     return;
   }
 

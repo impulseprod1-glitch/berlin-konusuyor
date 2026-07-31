@@ -1,16 +1,17 @@
 import { auth, googleProvider, signInWithPopup, signOut, onAuthStateChanged } from '../firebase-config.js';
 import { updateChatAuthState } from './chat.js';
+import { resolveAdminStatus } from '../utils/admin-claim.js';
 
 export async function loginWithGoogle() {
   try {
-    const result = await signInWithPopup(auth, googleProvider);
+    await signInWithPopup(auth, googleProvider);
   } catch (error) {
     console.error("Login Error:", error);
   }
 }
 
 export function initAuthListener() {
-  onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, async (user) => {
     const loginLabel = document.getElementById('loginLabel');
     const profileEmail = document.getElementById('profileEmail');
     const loginBtn = document.getElementById('loginBtn');
@@ -22,13 +23,12 @@ export function initAuthListener() {
       if (profileEmail) profileEmail.textContent = user.email;
 
       if (loginBtn) {
-        const ALLOWED_ADMINS = ['test@admin.com', 'oarslanerbln@gmail.com'];
-        const isAdmin = ALLOWED_ADMINS.includes(user.email);
-        
-        loginBtn.innerHTML = isAdmin 
-          ? '<i class="fas fa-user-shield"></i> Yönetim' 
+        const isAdmin = await resolveAdminStatus(user);
+
+        loginBtn.innerHTML = isAdmin
+          ? '<i class="fas fa-user-shield"></i> Yönetim'
           : '<i class="fas fa-user-circle"></i> Profil';
-          
+
         loginBtn.onclick = () => window.location.href = isAdmin ? '/admin.html' : '/profile.html';
       }
 

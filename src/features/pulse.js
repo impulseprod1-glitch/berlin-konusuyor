@@ -1,4 +1,4 @@
-import { CATEGORY_IMAGES, PLACEHOLDER_IMG } from './news.js';
+import { getNewsImage, PLACEHOLDER_IMG } from './news.js';
 
 /**
  * Berlin Pulse (Şehrin Nabzı) özelliğini başlatır.
@@ -10,14 +10,13 @@ export function initBerlinPulse(articles) {
 
   // 1. Kategorileri ve en son haberleri belirle
   const pulseItems = [];
-  const categoriesSeen = new Set();
 
   // En yeni 5 haberi "Yeni" etiketiyle ekle
   articles.slice(0, 5).forEach((article, idx) => {
     pulseItems.push({
       id: article.id || `news-${idx}`,
       label: article.title.substring(0, 15) + '...',
-      img: article.image || CATEGORY_IMAGES[article.category] || PLACEHOLDER_IMG,
+      img: article.image || getNewsImage(article) || PLACEHOLDER_IMG,
       action: () => {
         if (window.openNewsModal) window.openNewsModal(articles.indexOf(article));
       },
@@ -29,11 +28,10 @@ export function initBerlinPulse(articles) {
   const categories = [...new Set(articles.map(a => a.category))];
   categories.forEach(cat => {
     if (!cat) return;
-    const firstOfCat = articles.find(a => a.category === cat);
     pulseItems.push({
       id: `cat-${cat}`,
       label: translateCategory(cat),
-      img: CATEGORY_IMAGES[cat] || PLACEHOLDER_IMG,
+      img: getNewsImage({ category: cat, title: cat }) || PLACEHOLDER_IMG,
       action: () => {
         const filterBtn = document.querySelector(`.filter-btn[data-category="${cat}"]`);
         if (filterBtn) {

@@ -1,42 +1,154 @@
 rules_version = '2';
+
+// ═══════════════════════════════════════════════════════════
+//  Berlin Konuşuyor — Firestore Güvenlik Kuralları
+//
+//  İlke: içerik herkese açık okunur, yazma yetkisi admin'de.
+//  Kullanıcı katkıları (forum / iş ilanı) "pending" olarak
+//  gelir, admin onaylar.
+//
+//  Admin, e-posta listesi değil "admin" custom claim'i ile
+//  belirlenir. Yeni admin eklemek için functions/index.js
+//  içindeki ADMIN_EMAILS'e ekleyip fonksiyonu deploy edin —
+//  claim, yeni adminin bir sonraki girişinde kendiliğinden atanır.
+// ═══════════════════════════════════════════════════════════
+
 service cloud.firestore {
   match /databases/{database}/documents {
-    
-    // Admin check function
+
     function isAdmin() {
-      return request.auth != null && (request.auth.token.email == 'test@admin.com' || request.auth.token.email == 'oarslanerbln@gmail.com'); 
-      // NOT: 'test@admin.com' kısmını kendi admin mailinizle değiştirin
+      return request.auth != null && request.auth.token.admin == true;
     }
 
-    // Haberler, Etkinlikler, Anketler, Aboneler
-    match /news/{doc} { allow read: if true; allow write: if isAdmin(); }
-    match /events/{doc} { allow read: if true; allow write: if isAdmin(); }
-    match /polls/{doc} { allow read: if true; allow write: if isAdmin(); }
-    match /subscribers/{doc} { allow read: if isAdmin(); allow create: if true; }
+    function isSignedIn() {
+      return request.auth != null;
+    }
 
-    // Chat / Forum (Kullanıcılar okuyabilir, giriş yapanlar yazabilir)
-    match /chat_rooms/{room}/messages/{msg} {
+    function changedKeys() {
+      return request.resource.data.diff(resource.data).affectedKeys();
+    }
+
+    // ── Yayın içeriği ─────────────────────────────────────
+    match /news/{doc} {
       allow read: if true;
-      allow create: if request.auth != null;
-      allow delete, update: if isAdmin();
+      allow write: if isAdmin();
     }
 
-    // İş İlanları & Forum (Kullanıcılar ekleyebilir, Admin onaylar)
+    match /videos/{doc} {
+      allow read: if true;
+      allow create, delete: if isAdmin();
+      // Admin her alanı güncelleyebilir; ziyaretçi yalnızca
+      // izlenme sayacını 1 artırabilir.
+      allow update: if isAdmin() || (
+        changedKeys().hasOnly(['views'])
+        && request.resource.data.views is int
+        && request.resource.data.views == resource.data.views + 1
+      );
+    }
+
+    match /events/{doc} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // ── Anketler ──────────────────────────────────────────
+    // Oylama giriş gerektirmez (mükerrer oy localStorage ile
+    // sınırlanır), bu yüzden yalnızca 'options' alanının
+    // değişmesine izin veriyoruz.
+    match /polls/{doc} {
+      allow read: if true;
+      allow create, delete: if isAdmin();
+      allow update: if isAdmin() || (
+        changedKeys().hasOnly(['options'])
+        && request.resource.data.options is list
+        && request.resource.data.options.size() == resource.data.options.size()
+      );
+    }
+
+    // ── Bülten aboneleri ──────────────────────────────────
+    match /subscribers/{doc} {
+      allow read: if isAdmin();
+      // Spam'ı sınırlamak için e-posta biçimi doğrulanır.
+      allow create: if request.resource.data.email is string
+                    && request.resource.data.email.size() < 200
+                    && request.resource.data.email.matches('^[^@ ]+@[^@ ]+[.][^@ ]+$');
+      allow update, delete: if isAdmin();
+    }
+
+    // ── Sohbet odaları ────────────────────────────────────
+    // Koleksiyon adları: chat_genel, chat_kreuzberg,
+    // chat_mitte, chat_neukolln (src/features/chat.js).
+    match /{room}/{msg} {
+      allow read: if room in ['chat_genel', 'chat_kreuzberg', 'chat_mitte', 'chat_neukolln'];
+      allow create: if room in ['chat_genel', 'chat_kreuzberg', 'chat_mitte', 'chat_neukolln']
+                    && isSignedIn()
+                    && request.resource.data.senderId == request.auth.uid
+                    && request.resource.data.text is string
+                    && request.resource.data.text.size() <= 1000;
+      allow update: if false;
+      allow delete: if room in ['chat_genel', 'chat_kreuzberg', 'chat_mitte', 'chat_neukolln']
+                    && isAdmin();
+    }
+
+    // ── Kullanıcı katkıları (admin onayı gerekir) ─────────
     match /jobs/{doc} {
       allow read: if true;
-      allow create: if true; // veya auth
-      allow update, delete: if isAdmin();
-    }
-    match /forum/{doc} {
-      allow read: if true;
-      allow create: if request.auth != null;
+      allow create: if isSignedIn() && request.resource.data.status == 'pending';
       allow update, delete: if isAdmin();
     }
 
-    // Varsayılan: Giriş yapanlar her şeyi görebilir
-    match /{document=**} {
-      allow read: if request.auth != null;
+    match /forum/{doc} {
+      allow read: if true;
+      allow create: if isSignedIn() && request.resource.data.status == 'pending';
+      // Karma/yanıt güncellemeleri şimdilik yalnızca admin'de.
+      allow update, delete: if isAdmin();
+    }
+
+    // Profil sayfasının okuduğu eski koleksiyon.
+    match /qa_forum/{doc} {
+      allow read: if true;
       allow write: if isAdmin();
+    }
+
+    // ── Yer imleri (yalnızca sahibi) ──────────────────────
+    // Doküman kimliği: "<uid>_<baslik>" (src/features/news.js)
+    match /bookmarks/{docId} {
+      allow read, write: if isSignedIn() && docId.split('_')[0] == request.auth.uid;
+    }
+
+    // ── Push bildirim altyapısı ───────────────────────────
+    match /fcm_tokens/{doc} {
+      // Cihaz kendi tokenını kaydeder; listeyi yalnızca admin okur.
+      allow create, update: if request.resource.data.token is string
+                            && request.resource.data.token.size() < 500;
+      allow read, delete: if isAdmin();
+    }
+
+    match /notifications_queue/{doc} {
+      // Kuyruğa yalnızca admin yazar. İşleyici script Admin SDK
+      // kullandığı için bu kuralları atlar.
+      allow read, write: if isAdmin();
+    }
+
+    // ── Çerezsiz sayfa görüntüleme sayacı ─────────────────
+    // Doküman kimliği: "<YYYY-MM-DD>_<sayfa>". Kimliksiz
+    // ziyaretçi bile yazabilir (izleyici oturum açmıyor), ama
+    // yalnızca kendi günlük sayacını +1 artırabilir — başka
+    // alan değiştiremez, sayıyı geri saramaz veya sıçratamaz.
+    match /analytics_daily/{doc} {
+      allow read: if isAdmin();
+      allow create: if request.resource.data.keys().hasOnly(['date', 'path', 'views'])
+                    && request.resource.data.date is string
+                    && request.resource.data.path is string
+                    && request.resource.data.views == 1;
+      allow update: if changedKeys().hasOnly(['views'])
+                    && request.resource.data.views == resource.data.views + 1;
+      allow delete: if isAdmin();
+    }
+
+    // ── Varsayılan: kapalı ────────────────────────────────
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }

@@ -93,15 +93,11 @@
   }
   </script>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
-  <!-- External Resources -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <!-- Yazı tipleri, ikonlar ve harita kütüphanesi artık kendi sunucumuzdan
+       gelir. Dış CDN kullanılmıyor: Almanya'da Google Fonts'un doğrudan
+       Google sunucularından yüklenmesi ziyaretçinin IP adresini rızası
+       olmadan aktardığı için GDPR ihlali sayılmıştır (LG München I,
+       3 O 17493/20). Ayrıca render engelleyen script kalmadı. -->
 </head>
 <body>
 
@@ -321,12 +317,25 @@
             <div class="widget-header">
               <div class="live-badge"><span class="pulsate-dot"></span> LIVE GÜNDEM</div>
             </div>
-            <div class="shorts-phone-frame">
-              <iframe src="https://www.youtube.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A" title="Berlin Konuşuyor - Günün Yorumu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+            <!-- Yayınlanan en yeni video haber JS ile buraya basılır;
+                 hiç video yoksa aşağıdaki YouTube akışı yedek olarak kalır. -->
+            <div class="shorts-phone-frame" id="shortsPlayerFrame">
+              <!-- İki tıklama çözümü: YouTube ancak kullanıcı isteyince yüklenir.
+                   Otomatik gömü, ziyaretçinin IP'sini ve çerezlerini rıza
+                   alınmadan YouTube'a aktardığı için Almanya'da sorunludur. -->
+              <button class="yt-consent" data-action="load-youtube"
+                      data-src="https://www.youtube-nocookie.com/embed/videoseries?list=UUfTS80Ba1ZPzMlzsszGJ-_A&autoplay=1"
+                      data-title="Berlin Konuşuyor — Günün Yorumu">
+                <span class="yt-consent-play"><i class="fas fa-play"></i></span>
+                <span class="yt-consent-text">
+                  Videoyu yüklemek için tıklayın<br>
+                  <small>YouTube üzerinden yüklenir, gizlilik politikaları geçerlidir.</small>
+                </span>
+              </button>
             </div>
             <div class="shorts-widget-info">
-              <h3 class="shorts-widget-title">Bugün Neler Oldu?</h3>
-              <p class="shorts-widget-desc">Berlin gündeminin arka planını 1 dakikada özetliyorum.</p>
+              <h3 class="shorts-widget-title" id="shortsWidgetTitle">Bugün Neler Oldu?</h3>
+              <p class="shorts-widget-desc" id="shortsWidgetDesc">Berlin gündeminin arka planını 1 dakikada özetliyorum.</p>
               <a href="#roportajlar" class="shorts-btn">Tüm Videolar <i class="fas fa-play"></i></a>
             </div>
           </div>
@@ -375,6 +384,37 @@
         <div class="skeleton-card-premium"></div>
         <div class="skeleton-card-premium"></div>
       </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ VİDEO HABERLER / RÖPORTAJLAR ═══════════════ -->
+  <section class="video-news-section" id="roportajlar">
+    <div class="container">
+
+      <div class="video-news-head reveal">
+        <div>
+          <span class="section-tag" data-i18n="section_video">Kameramızdan</span>
+          <h2 class="section-title" data-i18n="video_title">Video Haberler &amp; Röportajlar</h2>
+          <p class="section-desc" data-i18n="video_desc">Berlin sokaklarından kendi çektiğimiz haberler, söyleşiler ve kısa analizler.</p>
+        </div>
+        <div class="video-news-toolbar">
+          <div class="video-news-filters" id="videoNewsFilters"></div>
+          <div class="video-rail-controls">
+            <button class="video-rail-btn" id="videoRailPrev" type="button" aria-label="Önceki videolar">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="video-rail-btn" id="videoRailNext" type="button" aria-label="Sonraki videolar">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-news-rail" id="videoNewsRail">
+        <!-- Video kartları JS tarafından canlı olarak basılır -->
+      </div>
+
+      <p class="video-news-count text-sm color-secondary" id="videoNewsCount"></p>
     </div>
   </section>
 
@@ -633,7 +673,9 @@
         <span class="newsletter-tag" data-i18n="newsletter_tag">Bülten</span>
         <h2 class="newsletter-title" data-i18n="newsletter_title">Berlin'den haberdar ol</h2>
         <p class="newsletter-desc" data-i18n="newsletter_desc">En güncel haberler, etkinlikler ve rehber içeriklerini doğrudan e-postanıza gönderin.</p>
-        <form class="newsletter-form" id="newsletterForm" action="https://formsubmit.co/berlinkonusuyor@outlook.de" method="POST">
+        <!-- JS ile Firestore'a yazılır (src/features/extras.js → initNewsletter);
+             action/method yok — üçüncü taraf bağımlılığı kalmadı. -->
+        <form class="newsletter-form" id="newsletterForm">
           <input type="email" name="email" class="newsletter-input" placeholder="E-posta adresiniz" data-i18n-placeholder="newsletter_placeholder" required />
           <button type="submit" class="newsletter-btn magnetic-btn" data-i18n="newsletter_btn">Abone Ol</button>
         </form>
@@ -677,6 +719,7 @@
       <div class="footer-legal">
         <a href="#" data-action="open-legal" data-legal="impressum" data-i18n="legal_impressum">Impressum</a>
         <a href="#" data-action="open-legal" data-legal="privacy" data-i18n="legal_privacy">Gizlilik Politikası</a>
+        <a href="#" data-action="open-cookie-settings" data-i18n="footer_cookie_settings">Çerez Ayarları</a>
       </div>
     </div>
   </footer>
@@ -701,7 +744,7 @@
         <p class="login-modal-subtitle">Eyleminize devam etmek için Google hesabınızla güvenle giriş yapın.</p>
 
         <button class="magnetic-btn login-google-btn" data-action="login-google" aria-label="Google ile Giriş Yap">
-          <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20" height="20" alt="Google" aria-hidden="true"> Google ile Giriş Yap
+          <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg> Google ile Giriş Yap
         </button>
 
         <p class="login-modal-disclaimer" style="margin-top: 20px; font-size: 0.8rem; color: var(--text-muted);">
@@ -757,6 +800,39 @@
         <h2 class="news-headline-large news-modal-title" id="newsModalTitle"></h2>
         <div class="news-modal-text" id="newsModalDesc"></div>
         <a href="#" target="_blank" rel="noopener" id="newsModalLink" class="magnetic-btn news-modal-btn">Habere Git <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ VIDEO PLAYER MODAL ═══════════════ -->
+  <div id="videoModal" class="video-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="videoModalTitle">
+    <div class="video-modal-shell">
+      <!-- Kapatma butonu stage'in DIŞINDA: oynatıcı enjekte edilirken silinmemeli. -->
+      <button class="video-modal-close" id="videoModalClose" data-action="close-video" type="button" aria-label="Kapat">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="video-modal-stage" id="videoModalStage"></div>
+      <div class="video-modal-body">
+        <div class="video-modal-tags">
+          <span class="video-modal-cat" id="videoModalCategory"></span>
+          <span id="videoModalDate"></span>
+          <span id="videoModalViews"></span>
+        </div>
+        <h2 class="video-modal-title" id="videoModalTitle"></h2>
+        <p class="video-modal-desc" id="videoModalDesc"></p>
+        <div class="video-modal-actions">
+          <button class="video-modal-btn" data-action="prev-video" type="button">
+            <i class="fas fa-chevron-left"></i> <span data-i18n="video_prev">Önceki</span>
+          </button>
+          <button class="video-modal-btn" data-action="next-video" type="button">
+            <span data-i18n="video_next">Sonraki</span> <i class="fas fa-chevron-right"></i>
+          </button>
+          <button class="video-modal-btn" id="videoShareBtn" data-action="share-video" type="button">
+            <i class="fas fa-share-nodes"></i> <span data-i18n="video_share">Paylaş</span>
+          </button>
+          <span class="video-modal-position" id="videoModalPosition"></span>
+        </div>
+        <p class="video-swipe-hint" data-i18n="video_swipe_hint">Sonraki video için yukarı kaydırın</p>
       </div>
     </div>
   </div>
@@ -878,17 +954,21 @@
     </button>
   </div>
 
-  <!-- GDPR Cookie Consent Banner -->
-  <div id="cookieBanner" class="cookie-banner glass-panel">
-    <div class="cookie-content">
-      <i class="fas fa-cookie-bite cookie-icon"></i>
-      <div class="cookie-text">
-        <p><strong>Çerez Onayı / Cookie Consent</strong></p>
-        <p>Size en iyi deneyimi sunmak için çerezler kullanıyoruz. <a href="#" data-action="open-legal" data-legal="privacy">Gizlilik Politikasını</a> inceleyebilirsiniz.</p>
+  <!-- ═══════════════ ÇEREZ RIZA BANNER'I (GDPR) ═══════════════
+       Kabul/Red butonları kasıtlı olarak eşit görsel ağırlıkta —
+       Almanya'da küçük "reddet" linki + büyük renkli "kabul"
+       butonu geçerli rıza sayılmıyor (BGH Planet49 kararı). -->
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Çerez tercihleri">
+    <div class="cookie-panel glass-panel">
+      <div class="cookie-icon-wrap"><i class="fas fa-cookie-bite"></i></div>
+      <div class="cookie-body">
+        <h3 class="cookie-title" data-i18n="cookie_title">Çerez Tercihleri</h3>
+        <p class="cookie-text" data-i18n="cookie_text">Sitenin çalışması için gerekli çerezleri her zaman kullanırız. İzin verirseniz, ziyaretçi istatistikleri için Google Analytics de kullanırız — izniniz olmadan yüklenmez.</p>
+        <a href="#" class="cookie-link" data-action="open-legal" data-legal="privacy" data-i18n="cookie_link">Gizlilik Politikası</a>
       </div>
       <div class="cookie-actions">
-        <button class="cookie-btn secondary" data-action="reject-cookies">Reddet</button>
-        <button class="cookie-btn primary" data-action="accept-cookies">Kabul Et</button>
+        <button class="cookie-btn cookie-btn-outline" data-action="reject-cookies" data-i18n="cookie_reject">Yalnızca Gerekli</button>
+        <button class="cookie-btn cookie-btn-solid" data-action="accept-cookies" data-i18n="cookie_accept">Tümünü Kabul Et</button>
       </div>
     </div>
   </div>
@@ -913,7 +993,6 @@
     </a>
   </nav>
 
-  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

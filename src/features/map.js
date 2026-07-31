@@ -39,10 +39,50 @@ const COLORS = {
 let map = null;
 let currentLayerGroup = null;
 let markerRefs = {}; // Store markers by ID
+let L = null; // Leaflet, ilk ihtiyaç anında yüklenir
 
+/**
+ * Harita bölümü görünüre girene kadar Leaflet indirilmez.
+ *
+ * Önceden Leaflet (~150 kB JS + CSS) <head> içinde senkron script
+ * olarak duruyordu: HTML ayrıştırmasını bloke ediyor ve harita
+ * sayfanın çok aşağısında olmasına rağmen her ziyarette iniyordu.
+ * Artık IntersectionObserver ile tembel yükleniyor.
+ */
 export function initMap() {
   const mapEl = document.getElementById('berlinMap');
-  if (!mapEl || typeof L === 'undefined') return;
+  if (!mapEl) return;
+
+  if (!('IntersectionObserver' in window)) {
+    bootMap(mapEl);
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (!entries.some((e) => e.isIntersecting)) return;
+      observer.disconnect();
+      bootMap(mapEl);
+    },
+    { rootMargin: '400px' } // Kullanıcı yaklaşırken önden yükle
+  );
+  observer.observe(mapEl);
+}
+
+async function bootMap(mapEl) {
+  if (map) return;
+
+  try {
+    const [leaflet] = await Promise.all([
+      import('leaflet'),
+      import('leaflet/dist/leaflet.css'),
+    ]);
+    L = leaflet.default || leaflet;
+  } catch (err) {
+    console.error('[Harita] Leaflet yüklenemedi:', err.message);
+    mapEl.innerHTML = '<p style="padding:40px; text-align:center; color:var(--text-muted);">Harita şu anda yüklenemedi.</p>';
+    return;
+  }
 
   // Haritayı başlat
   map = L.map('berlinMap', { 

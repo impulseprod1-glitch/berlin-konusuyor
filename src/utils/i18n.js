@@ -44,6 +44,12 @@ export const translations = {
     read_time: 'dk okuma',
     meta_title: "Berlin Konuşuyor — Berlin'in Nabzı, Sizin Sesiniz",
     meta_desc: "Berlin'in en güncel haberleri, sokak röportajları ve kapsamlı şehir rehberi. Berlin'deki Türk toplumu ve gurbetçiler için dijital medya platformu.",
+    cookie_title: "Çerez Tercihleri",
+    cookie_text: "Sitenin çalışması için gerekli çerezleri her zaman kullanırız. İzin verirseniz, ziyaretçi istatistikleri için Google Analytics de kullanırız — izniniz olmadan yüklenmez.",
+    cookie_link: "Gizlilik Politikası",
+    cookie_reject: "Yalnızca Gerekli",
+    cookie_accept: "Tümünü Kabul Et",
+    footer_cookie_settings: "Çerez Ayarları",
     legal_impressum: "Impressum",
     legal_privacy: "Gizlilik Politikası",
     ai_dashboard_title: "Berlin AI Insight",
@@ -71,6 +77,16 @@ export const translations = {
     cat_transit: "Ulaşım",
     events_cal_tag: "Takvim",
     events_cal_title: "Yaklaşan Etkinlikler",
+    section_video: "Kameramızdan",
+    video_title: "Video Haberler & Röportajlar",
+    video_desc: "Berlin sokaklarından kendi çektiğimiz haberler, söyleşiler ve kısa analizler.",
+    video_filter_all: "Tümü",
+    video_empty: "Bu kategoride henüz video yayınlanmadı.",
+    video_prev: "Önceki",
+    video_next: "Sonraki",
+    video_share: "Paylaş",
+    video_swipe_hint: "Sonraki video için yukarı kaydırın",
+    video_count: "video haber",
     section_deep_dive: "Derin Bakış",
     deep_dive_title: "Haftalık Analiz & Görüşler",
     listen_news: "Dinle"
@@ -118,6 +134,12 @@ export const translations = {
     read_time: 'Min. Lesezeit',
     meta_title: "Berlin Konuşuyor — Am Puls Berlins, Deine Stimme",
     meta_desc: "Aktuelle Nachrichten aus Berlin, Straßeninterviews und umfangreicher Stadtführer. Die digitale Plattform für die türkische Community.",
+    cookie_title: "Cookie-Einstellungen",
+    cookie_text: "Wir verwenden immer die für den Betrieb der Website notwendigen Cookies. Mit Ihrer Zustimmung nutzen wir zusätzlich Google Analytics für Besucherstatistiken — ohne Zustimmung wird es nicht geladen.",
+    cookie_link: "Datenschutzerklärung",
+    cookie_reject: "Nur Notwendige",
+    cookie_accept: "Alle Akzeptieren",
+    footer_cookie_settings: "Cookie-Einstellungen",
     legal_impressum: "Impressum",
     legal_privacy: "Datenschutzerklärung",
     ai_dashboard_title: "Berlin AI Insight",
@@ -146,6 +168,16 @@ export const translations = {
     events_cal_tag: "Kalender",
     events_cal_title: "Anstehende Veranstaltungen",
     events_cal_desc: "Was ist dieses Wochenende in Berlin los?",
+    section_video: "Aus unserer Kamera",
+    video_title: "Video-Nachrichten & Interviews",
+    video_desc: "Eigene Berichte, Gespräche und kurze Analysen aus den Straßen Berlins.",
+    video_filter_all: "Alle",
+    video_empty: "In dieser Kategorie wurde noch kein Video veröffentlicht.",
+    video_prev: "Zurück",
+    video_next: "Weiter",
+    video_share: "Teilen",
+    video_swipe_hint: "Nach oben wischen für das nächste Video",
+    video_count: "Video-Beiträge",
     section_deep_dive: "Tiefer Einblick",
     deep_dive_title: "Wöchentliche Analysen & Einblicke",
     listen_news: "Hören"
@@ -193,6 +225,12 @@ export const translations = {
     read_time: 'min read',
     meta_title: "Berlin Konuşuyor — Berlin's Pulse, Your Voice",
     meta_desc: "Latest Berlin news, street interviews, and comprehensive city guide. Digital media platform for global Berliners.",
+    cookie_title: "Cookie Preferences",
+    cookie_text: "We always use the cookies necessary for the site to function. With your consent, we also use Google Analytics for visitor statistics — it is not loaded without your permission.",
+    cookie_link: "Privacy Policy",
+    cookie_reject: "Necessary Only",
+    cookie_accept: "Accept All",
+    footer_cookie_settings: "Cookie Settings",
     legal_impressum: "Imprint",
     legal_privacy: "Privacy Policy",
     ai_dashboard_title: "Berlin AI Insight",
@@ -221,6 +259,16 @@ export const translations = {
     events_cal_tag: "Calendar",
     events_cal_title: "Upcoming Events",
     events_cal_desc: "What's happening in Berlin this weekend?",
+    section_video: "From Our Camera",
+    video_title: "Video News & Interviews",
+    video_desc: "Our own reports, conversations and short analyses from the streets of Berlin.",
+    video_filter_all: "All",
+    video_empty: "No video published in this category yet.",
+    video_prev: "Previous",
+    video_next: "Next",
+    video_share: "Share",
+    video_swipe_hint: "Swipe up for the next video",
+    video_count: "video reports",
     section_deep_dive: "Deep Dive",
     deep_dive_title: "Weekly Analysis & Insights",
     listen_news: "Listen"
@@ -275,6 +323,21 @@ export function setLanguage(lang) {
   localStorage.setItem('bk-lang', lang);
   currentLang = lang;
   updateMeta(lang);
+
+  // JS ile üretilen içerikler (video kartları, filtre çipleri vb.)
+  // data-i18n taramasıyla yakalanamaz; kendilerini yeniden çizsinler diye
+  // haber veriyoruz.
+  window.dispatchEvent(new CustomEvent('bk:langchange', { detail: { lang } }));
+}
+
+/**
+ * Tek bir çeviri anahtarını okur; anahtar yoksa yedek metni döner.
+ * @param {string} key
+ * @param {string} [fallback]
+ * @returns {string}
+ */
+export function t(key, fallback = '') {
+  return translations[currentLang]?.[key] ?? translations.tr?.[key] ?? fallback;
 }
 
 export function updateMeta(lang) {

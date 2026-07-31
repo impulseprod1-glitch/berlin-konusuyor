@@ -1,4 +1,4 @@
-import { db, auth, collection, query, where, orderBy, onSnapshot, doc, updateDoc, increment, addDoc, serverTimestamp, getDoc } from '../firebase-config.js';
+import { db, collection, query, where, orderBy, onSnapshot, doc, updateDoc, increment, addDoc } from '../firebase-config.js';
 
 function getTimeAgo(dateStr) {
   try {
@@ -9,7 +9,7 @@ function getTimeAgo(dateStr) {
     const hrs = Math.floor(minutes / 60);
     if (hrs < 24) return `${hrs} sa önce`;
     return `${Math.floor(hrs / 24)} gün önce`;
-  } catch(e) { return '...'; }
+  } catch { return '...'; }
 }
 
 export function initQAForum() {

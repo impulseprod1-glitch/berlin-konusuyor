@@ -7,7 +7,7 @@
 const SERVER_URL = 'http://localhost:8080/api/notify';
 
 export function initBridge() {
-    console.log('[Antigravity Bridge] Initializing connection to OS...');
+    console.warn('[Antigravity Bridge] Initializing connection to OS...');
 
     // 1. Heartbeat on Startup
     notifyOS('info', 'Uygulama Başlatıldı', 'Berlin Konuşuyor V4.0 sistemi başarıyla yüklendi.');
@@ -29,7 +29,7 @@ export function initBridge() {
  */
 export async function notifyOS(type, title, message) {
     try {
-        const response = await fetch(SERVER_URL, {
+        await fetch(SERVER_URL, {
             method: 'POST',
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
@@ -44,7 +44,7 @@ export async function notifyOS(type, title, message) {
             const dot = indicator.querySelector('.ag-status-dot');
             if (dot) dot.style.background = '#00ff88';
         }
-    } catch (e) {
+    } catch {
         const indicator = document.getElementById('agConnectionIndicator');
         if (indicator) {
             indicator.style.borderColor = 'rgba(255, 0, 0, 0.2)';

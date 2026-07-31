@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Hub Pro | Berlin Konuşuyor</title>
     <!-- Premium Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="src/styles/admin.css">
 </head>
@@ -24,8 +20,14 @@
             <button class="nav-item active" data-tab="tab-summary">
                 <i class="fas fa-chart-pie"></i> Özet Dashboard
             </button>
+            <button class="nav-item" data-tab="tab-analytics">
+                <i class="fas fa-chart-line"></i> Analitik
+            </button>
             <button class="nav-item" data-tab="tab-news">
                 <i class="fas fa-newspaper"></i> Haber Yönetimi
+            </button>
+            <button class="nav-item" data-tab="tab-videos">
+                <i class="fas fa-video"></i> Video Haber
             </button>
             <button class="nav-item" data-tab="tab-events">
                 <i class="fas fa-calendar-alt"></i> Etkinlikler
@@ -109,6 +111,25 @@
             </div>
         </div>
 
+        <!-- Tab: Analitik -->
+        <div id="tab-analytics" class="tab-content">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-label">Son 7 Gün — Toplam Görüntülenme</div>
+                    <div class="stat-value" id="analyticsTotal">0</div>
+                </div>
+            </div>
+            <div class="admin-card">
+                <h2>En Çok Görüntülenen Sayfalar (Son 7 Gün)</h2>
+                <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 16px;">
+                    Çerezsiz, kimliksiz sayaç — her ziyaretçi oturumu başına bir sayfa bir kez sayılır.
+                </p>
+                <div id="analyticsList" class="data-list">
+                    <p class="empty-list">Yükleniyor...</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Tab: Haberler -->
         <div id="tab-news" class="tab-content">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
@@ -150,6 +171,96 @@
                     <h2>Mevcut Haberler</h2>
                     <div id="newsList" class="data-list">
                         <p class="empty-list">Haberler yükleniyor...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Video Haber -->
+        <div id="tab-videos" class="tab-content">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div class="admin-card">
+                    <h2 id="videoFormTitle">Yeni Video Haber</h2>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px;">
+                        YouTube / Shorts / Vimeo bağlantısını yapıştırın <strong>ya da</strong> doğrudan bir video dosyası yükleyin.
+                        Kaydettiğiniz anda sitede canlı yayına girer — yeniden derleme gerekmez.
+                    </p>
+                    <form id="addVideoForm">
+                        <input type="hidden" id="videoId">
+
+                        <div class="form-group">
+                            <label>Video Bağlantısı (YouTube / Shorts / Vimeo)</label>
+                            <input type="url" id="videoUrl" placeholder="https://youtu.be/... veya https://youtube.com/shorts/...">
+                            <small id="videoUrlHint" style="display:block; margin-top:6px; font-size:0.75rem; color: var(--text-muted);">
+                                Bağlantı yapıştırıldığında kapak görseli otomatik alınır.
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>…veya Video Dosyası Yükle (mp4 / webm, önerilen &lt; 100 MB)</label>
+                            <input type="file" id="videoFile" accept="video/mp4,video/webm,video/quicktime" style="font-size: 0.8rem;">
+                            <div id="videoUploadBar" style="display:none; height:6px; background:rgba(255,255,255,0.08); border-radius:999px; margin-top:10px; overflow:hidden;">
+                                <div id="videoUploadFill" style="height:100%; width:0%; background:var(--accent); transition:width .25s;"></div>
+                            </div>
+                            <small id="videoFileHint" style="display:block; margin-top:6px; font-size:0.75rem; color: var(--text-muted);"></small>
+                        </div>
+
+                        <div id="videoPreviewBox" style="display:none; margin-bottom:20px;">
+                            <img id="videoPreviewImg" alt="Kapak önizleme" style="width:100%; border-radius:12px; border:1px solid var(--admin-border);">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Başlık</label>
+                            <input type="text" id="videoTitle" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Kategori</label>
+                            <select id="videoCat">
+                                <option value="Röportaj">Röportaj</option>
+                                <option value="Güncel">Güncel</option>
+                                <option value="Sokak Sesi">Sokak Sesi</option>
+                                <option value="Yaşam">Yaşam</option>
+                                <option value="Ekonomi">Ekonomi</option>
+                                <option value="Kültür">Kültür</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Açıklama</label>
+                            <textarea id="videoDesc" rows="4" placeholder="Videoda ne anlatılıyor? (SEO ve paylaşım için önemli)"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Görüntü Yönü</label>
+                            <select id="videoOrientation">
+                                <option value="landscape">Yatay (16:9)</option>
+                                <option value="portrait">Dikey / Shorts (9:16)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+                                <input type="checkbox" id="videoFeatured" style="width:auto;">
+                                Öne çıkar (ana sayfa widget'ında göster)
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+                                <input type="checkbox" id="videoDraft" style="width:auto;">
+                                Taslak olarak kaydet (sitede görünmez)
+                            </label>
+                        </div>
+
+                        <button type="submit" class="admin-btn" id="videoSubmitBtn">Videoyu Yayınla</button>
+                        <button type="button" id="cancelEditVideo" class="admin-btn btn-secondary" style="display:none; margin-top:10px;">İptal Et</button>
+                    </form>
+                </div>
+                <div class="admin-card">
+                    <h2>Yayındaki Videolar</h2>
+                    <div id="videosList" class="data-list">
+                        <p class="empty-list">Videolar yükleniyor...</p>
                     </div>
                 </div>
             </div>
@@ -277,12 +388,6 @@
             </div>
         </div>
     </main>
-
-    <script type="module" src="src/admin.js"></script>
-</body>
-</html>
->
-
     <script type="module" src="src/admin.js"></script>
 </body>
 </html>

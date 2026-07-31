@@ -1,0 +1,45 @@
+rules_version = '2';
+
+// ═══════════════════════════════════════════════════════════
+//  Berlin Konuşuyor — Firebase Storage Güvenlik Kuralları
+//  Medya herkese açık okunur, YALNIZCA admin yükleyebilir.
+//  Admin, e-posta listesi değil "admin" custom claim'i ile
+//  belirlenir — bkz. functions/index.js.
+// ═══════════════════════════════════════════════════════════
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+
+    function isImage() {
+      return request.resource.contentType.matches('image/.*')
+             && request.resource.size < 10 * 1024 * 1024;   // 10 MB
+    }
+
+    function isVideo() {
+      return request.resource.contentType.matches('video/.*')
+             && request.resource.size < 200 * 1024 * 1024;  // 200 MB
+    }
+
+    // Video haberler + otomatik üretilen kapak kareleri
+    match /videos/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin() && (isVideo() || isImage());
+    }
+
+    // Haber görselleri
+    match /news/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin() && isImage();
+    }
+
+    // Diğer her şey kapalı
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

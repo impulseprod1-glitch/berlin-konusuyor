@@ -61,7 +61,10 @@ export function initDashboardUtils() {
   const weatherController = new AbortController();
   const weatherTimeout = setTimeout(() => weatherController.abort(), 8000);
 
-  fetch('https://wttr.in/Berlin?format=%t+%C', { signal: weatherController.signal })
+  // Hava verisi artık üçüncü taraf servise DOĞRUDAN gitmez; derleme
+  // sırasında çekilip /data/weather.json içine yazılır (ziyaretçi IP'si
+  // dışarı sızmaz). Dosya yoksa widget sessizce boş kalır.
+  fetch('/data/weather.json', { signal: weatherController.signal })
     .then(res => {
       clearTimeout(weatherTimeout);
       if (!res.ok) throw new Error('Weather service unreachable');

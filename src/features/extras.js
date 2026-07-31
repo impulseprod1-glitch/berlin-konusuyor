@@ -1,4 +1,4 @@
-import { db, doc, collection, query, orderBy, getDocs, updateDoc } from '../firebase-config.js';
+import { db, doc, collection, query, orderBy, getDocs, updateDoc, setDoc, serverTimestamp } from '../firebase-config.js';
 
 // ── AI Chatbot Assistant (Knowledge-Base Powered) ──────────
 const BERLIN_KB = [
@@ -119,7 +119,6 @@ export function initChatbot() {
 export async function initPolls() {
   const pollQuestionEl = document.getElementById('pollQuestion');
   const pollOptionsEl = document.getElementById('pollOptions');
-  const pollTotalEl = document.getElementById('pollTotal');
   const pollResetBtn = document.getElementById('pollReset');
 
   if (!pollQuestionEl || !pollOptionsEl) return;
@@ -517,48 +516,78 @@ export function initMagneticButtons() {
   });
 }
 
+/* Bülten aboneliği artık formsubmit.co yerine doğrudan kendi Firestore'unuza
+   yazıyor — abone listeniz artık size ait, üçüncü tarafa bağımlı değil.
+   Admin panelindeki "Aboneler" sekmesi bu koleksiyonu zaten okuyordu.
+
+   Aynı e-posta ile tekrar denemede yeni kayıt açılmasın diye e-postadan
+   türetilmiş deterministik bir doküman kimliği kullanılıyor. Kayıt zaten
+   varsa güvenlik kuralları (yalnızca admin güncelleyebilir) yazmayı
+   reddeder; bu "permission-denied" hatası "zaten abonesiniz" olarak
+   yorumlanıyor — kullanıcıya doğru mesaj, sunucuda ekstra sorgu yok. */
 export function initNewsletter() {
   const form = document.getElementById('newsletterForm');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const input = form.querySelector('.newsletter-input');
     const btn = form.querySelector('.newsletter-btn');
-    const email = input.value.trim();
+    const email = input.value.trim().toLowerCase();
+
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       btn.textContent = 'Geçersiz E-posta!';
       btn.style.background = '#e74c3c';
       setTimeout(() => { btn.textContent = 'Abone Ol'; btn.style.background = ''; }, 2000);
       return;
     }
+
+    btn.disabled = true;
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
 
-    fetch('https://formsubmit.co/ajax/berlinkonusuyor@outlook.de', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ email: email, _subject: 'Yeni Bülten Aboneliği' })
-    })
-    .then(async response => {
-        btn.innerHTML = 'Kayıt Başarılı <i class="fas fa-check"></i>';
+    const docId = email.replace(/[^a-z0-9]/g, '_').slice(0, 150) || 'abone';
+
+    // Ağ koptuğunda (veya çok yavaşsa) Firestore'un setDoc() sözü hiç
+    // çözülmeyebilir — kullanıcı butonun sonsuza dek döndüğünü görür.
+    // 8 saniyelik bir zaman aşımı ile en azından anlamlı bir geri
+    // bildirim veriyoruz; arka planda yazma yine de tamamlanabilir.
+    const timeout = (ms) =>
+      new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms));
+
+    try {
+      await Promise.race([
+        setDoc(doc(db, 'subscribers', docId), {
+          email,
+          source: 'website',
+          timestamp: serverTimestamp(),
+        }),
+        timeout(8000),
+      ]);
+      btn.innerHTML = 'Kayıt Başarılı <i class="fas fa-check"></i>';
+      btn.style.background = '#22c55e';
+      input.value = '';
+    } catch (err) {
+      if (err.code === 'permission-denied') {
+        btn.innerHTML = 'Zaten Abonesiniz <i class="fas fa-check"></i>';
         btn.style.background = '#22c55e';
         input.value = '';
-        setTimeout(() => { btn.textContent = 'Abone Ol'; btn.style.background = ''; }, 3000);
-    })
-    .catch(error => {
-      console.error(error);
-      btn.textContent = 'Bağlantı Hatası';
-      btn.style.background = '#e74c3c';
-      setTimeout(() => { btn.textContent = 'Abone Ol'; btn.style.background = ''; }, 2500);
-    });
+      } else if (err.message === 'timeout') {
+        btn.textContent = 'Bağlantı Yavaş, Tekrar Deneyin';
+        btn.style.background = '#e74c3c';
+      } else {
+        console.error('[Newsletter] Kayıt hatası:', err);
+        btn.textContent = 'Bağlantı Hatası';
+        btn.style.background = '#e74c3c';
+      }
+    } finally {
+      btn.disabled = false;
+      setTimeout(() => { btn.textContent = 'Abone Ol'; btn.style.background = ''; }, 3000);
+    }
   });
 }
 
 // ── PWA Pull-to-Refresh Logic ──
 export function initPullToRefresh() {
-  const pwaStatus = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
-  // If we only want it in PWA: if (!pwaStatus) return;
-
   let startY = 0;
   let currentY = 0;
   const threshold = 120;
@@ -596,7 +625,7 @@ export function initPullToRefresh() {
     }
   }, { passive: true });
 
-  document.addEventListener('touchend', e => {
+  document.addEventListener('touchend', () => {
     if (startY > 0 && currentY > 0) {
       const diff = currentY - startY;
       if (diff > threshold) {

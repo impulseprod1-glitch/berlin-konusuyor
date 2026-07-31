@@ -22,8 +22,7 @@ export async function loadPodcasts() {
 
     globalPodcasts = data.podcasts;
     grid.innerHTML = html;
-  } catch (err) {
-    // console.log removed
+  } catch {
   }
 }
 

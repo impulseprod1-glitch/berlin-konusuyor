@@ -1,59 +1,55 @@
 import { db, auth, collection, query, orderBy, onSnapshot, setDoc, doc, serverTimestamp, deleteDoc } from '../firebase-config.js';
-import { translations, currentLang } from '../utils/i18n.js';
 import { renderAIDashboard } from './dashboard.js';
+import { contentPath } from '../utils/slug.js';
 
-export const CATEGORY_IMAGES = {
-  politics: [
-    'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80',
-    'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&q=80',
-    'https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=800&q=80',
-    'https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?w=800&q=80'
-  ],
-  culture: [
-    'https://images.unsplash.com/photo-1580655653885-65763b2597ad?w=800&q=80',
-    'https://images.unsplash.com/photo-1499364615650-ec38552f4ba8?w=800&q=80',
-    'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80',
-    'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80'
-  ],
-  economy: [
-    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80',
-    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
-    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80',
-    'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=800&q=80'
-  ],
-  lifestyle: [
-    'https://images.unsplash.com/photo-1559564484-e484c2076b46?w=800&q=80',
-    'https://images.unsplash.com/photo-1444491741275-3747c53d95c4?w=800&q=80',
-    'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80',
-    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80'
-  ],
-  default: [
-    'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80',
-    'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
-    'https://images.unsplash.com/photo-1502899576159-f224dc2349fa?w=800&q=80',
-    'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=80'
-  ]
+/* Kategori yer tutucu görselleri.
+   Önceden her biri Unsplash CDN'inden yükleniyordu: sayfa başına 20'ye
+   varan dış istek, ziyaretçi IP'sinin üçüncü tarafa aktarılması ve CDN
+   yavaşlarsa boş kartlar. Artık tamamı satır içi SVG degrade —
+   sıfır ağ isteği, anında çizim, marka renkleriyle tutarlı. */
+const CATEGORY_PALETTES = {
+  politics:  [['#2b1216', '#7f1d1d'], ['#1a1020', '#4c1d95']],
+  culture:   [['#101a24', '#0e7490'], ['#1d1526', '#7e22ce']],
+  economy:   [['#0f1a14', '#166534'], ['#141a10', '#3f6212']],
+  lifestyle: [['#241505', '#b45309'], ['#2a1207', '#9a3412']],
+  default:   [['#101010', '#2a2a2a'], ['#0d1117', '#1f2937']],
 };
 
-export const PLACEHOLDER_IMG = CATEGORY_IMAGES.default[0];
+function gradientDataUri([from, to], seed = 0) {
+  const angle = seed % 2 === 0 ? '135' : '45';
+  const svg =
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice">` +
+    `<defs><linearGradient id="g" gradientTransform="rotate(${angle})">` +
+    `<stop offset="0%" stop-color="${from}"/><stop offset="100%" stop-color="${to}"/>` +
+    `</linearGradient></defs><rect width="800" height="450" fill="url(#g)"/></svg>`;
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+}
+
+export const PLACEHOLDER_IMG = gradientDataUri(CATEGORY_PALETTES.default[0]);
 export let globalNews = [];
 
 export function getNewsImage(article) {
   if (article.image && article.image.startsWith('http')) return article.image;
-  
-  // Gelişmiş Keyword Eşleme
+
+  // Başlıktan kategori tahmini
   const title = (article.title || '').toLowerCase();
   let category = article.category || 'default';
-  
+
   if (title.includes('ekonomi') || title.includes('enflasyon') || title.includes('euro')) category = 'economy';
   if (title.includes('sinema') || title.includes('sergi') || title.includes('konser')) category = 'culture';
   if (title.includes('grev') || title.includes('siyaset') || title.includes('scholz')) category = 'politics';
   if (title.includes('mekan') || title.includes('restoran') || title.includes('gezi')) category = 'lifestyle';
 
-  const categoryPool = CATEGORY_IMAGES[category] || CATEGORY_IMAGES.default;
-  const str = article.title || article.summary_tr || article.id || "berlin";
-  const index = Array.from(str).reduce((acc, char) => acc + char.charCodeAt(0), 0) % categoryPool.length;
-  return categoryPool[index];
+  const palettes = CATEGORY_PALETTES[category] || CATEGORY_PALETTES.default;
+  const str = article.title || article.summary_tr || article.id || 'berlin';
+  const seed = Array.from(str).reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
+  return gradientDataUri(palettes[seed % palettes.length], seed);
+}
+
+export function escapeHtml(str = '') {
+  return String(str).replace(/[&<>"']/g, (c) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]
+  );
 }
 
 export function formatDate(isoDate) {
@@ -105,18 +101,18 @@ export function renderNews(articles, category = 'all') {
     ? [...dashboardArticles, ...dashboardArticles] 
     : dashboardArticles;
 
-  dashboardContainer.innerHTML = tickerArticles.map((article, idx) => {
+  dashboardContainer.innerHTML = tickerArticles.map((article) => {
     const rawTitle = article.summary_tr || article.title || '';
     const globalIdx = globalNews.indexOf(article);
     
     return `
       <article class="text-news-block reveal" data-action="open-news" data-index="${globalIdx}">
         <div class="text-news-top">
-          <span class="text-news-category">${article.category || 'GÜNDEM'}</span>
-          <h3 class="text-news-title">${rawTitle}</h3>
+          <span class="text-news-category">${escapeHtml(article.category || 'GÜNDEM')}</span>
+          <h3 class="text-news-title">${escapeHtml(rawTitle)}</h3>
         </div>
         <div class="text-news-footer">
-          <span class="text-news-source">${article.source}</span>
+          <span class="text-news-source">${escapeHtml(article.source || '')}</span>
           <a href="#" class="text-news-action">Oku <i class="fas fa-chevron-right"></i></a>
         </div>
       </article>
@@ -151,7 +147,6 @@ export function renderPremiumNews(articles, container) {
 
   container.innerHTML = articles.map((article) => {
     const rawTitle = article.summary_tr || article.title || '';
-    const safeTitle = rawTitle.replace(/"/g, '&quot;');
     const globalIdx = globalNews.indexOf(article);
     const imgUrl = getNewsImage(article);
     const readTime = calculateReadTime(article.content || rawTitle);
@@ -161,13 +156,13 @@ export function renderPremiumNews(articles, container) {
         <div class="card-bg" style="background-image: url('${imgUrl}')"></div>
         <div class="card-overlay"></div>
         <div class="card-content">
-          <span class="card-category">${article.category || 'ANALİZ'}</span>
-          <h3 class="card-title">${rawTitle}</h3>
-          <p class="card-desc">${article.content || rawTitle}</p>
+          <span class="card-category">${escapeHtml(article.category || 'ANALİZ')}</span>
+          <h3 class="card-title">${escapeHtml(rawTitle)}</h3>
+          <p class="card-desc">${escapeHtml(article.content || rawTitle)}</p>
           <div class="card-footer">
             <div class="source-badge">
               <div class="source-icon"><i class="fas fa-feather-alt"></i></div>
-              <span>${article.source}</span>
+              <span>${escapeHtml(article.source || '')}</span>
             </div>
             <span class="read-time"><i class="far fa-clock"></i> ${readTime} dk okuma</span>
           </div>
@@ -221,14 +216,10 @@ export function renderTicker(articles) {
   if (!ticker || !articles.length) return;
 
   const items = [...articles, ...articles].map((a, i) => `
-    <span class="ticker-item" data-action="open-news" data-index="${i % articles.length}">${a.summary_tr || a.title}</span>
+    <span class="ticker-item" data-action="open-news" data-index="${i % articles.length}">${escapeHtml(a.summary_tr || a.title || '')}</span>
   `).join('');
 
   ticker.innerHTML = items;
-}
-
-export function renderHeroFeatured(article) {
-  // Hero featured kutusu kaldırıldı.
 }
 
 export async function fetchFallbackNews() {
@@ -348,7 +339,7 @@ function updateNewsMeta(article) {
   const title = article.summary_tr || article.title;
   const desc = (article.content || title).substring(0, 160);
   const img = getNewsImage(article);
-  const url = `https://berlinkonusuyor.com/#!news/${article.id || ''}`;
+  const url = 'https://berlinkonusuyor.com' + contentPath('haber', article);
 
   document.title = `${title} — Berlin Konuşuyor`;
   
@@ -408,18 +399,40 @@ window.openNewsModal = (index) => {
   const article = globalNews[index];
   if (!modal || !article) return;
 
-  // Deep Linking: Update URL Hash
-  const newsId = article.id || `news-${index}`;
-  window.history.pushState(null, null, `#!news/${newsId}`);
+  // Gerçek URL: yenilenirse prerender edilmiş statik sayfa açılır.
+  window.history.pushState(null, '', contentPath('haber', article));
+  window.dispatchEvent(new CustomEvent('bk:navigate'));
 
   // UI Güncelleme
-  document.getElementById('newsModalTitle').innerText = article.summary_tr || article.title;
-  document.getElementById('newsModalSource').innerText = article.source || 'Berlin Konuşuyor';
-  document.getElementById('newsModalDate').innerText = formatDate(article.date);
-  document.getElementById('newsModalDesc').innerHTML = article.content || article.summary_tr || article.title;
-  document.getElementById('newsModalImg').style.backgroundImage = `url('${getNewsImage(article)}')`;
-  
-  if (linkBtn) linkBtn.href = article.url || '#';
+  const setText = (id, value) => {
+    const el = document.getElementById(id);
+    if (el) el.innerText = value;
+  };
+
+  setText('newsModalTitle', article.summary_tr || article.title);
+  setText('newsModalSource', article.source || 'Berlin Konuşuyor');
+  setText('newsModalDate', formatDate(article.date));
+
+  const descEl = document.getElementById('newsModalDesc');
+  if (descEl) {
+    descEl.textContent = article.content || article.summary_tr || article.title || '';
+    descEl.style.whiteSpace = 'pre-wrap';
+  }
+
+  const imgEl = document.getElementById('newsModalImg');
+  if (imgEl) imgEl.style.backgroundImage = `url('${getNewsImage(article)}')`;
+
+  // Kaynak bağlantısı yalnızca dış bir URL varsa gösterilir.
+  const linkBtn = document.getElementById('newsModalLink');
+  if (linkBtn) {
+    if (article.url) {
+      linkBtn.href = article.url;
+      linkBtn.style.display = '';
+    } else {
+      linkBtn.removeAttribute('href');
+      linkBtn.style.display = 'none';
+    }
+  }
 
   updateNewsMeta(article);
 
@@ -433,9 +446,9 @@ window.closeNewsModal = () => {
     modal.classList.remove('active');
     document.body.style.overflow = '';
     
-    // Deep Linking: Clear Hash
-    if (window.location.hash.includes('!news/')) {
-        window.history.pushState("", document.title, window.location.pathname + window.location.search);
+    // Adresi ana sayfaya döndür
+    if (window.location.pathname.startsWith('/haber/') || window.location.hash.includes('!news/')) {
+        window.history.pushState('', document.title, '/' + window.location.search);
         // Reset Meta if needed (or let i18n handle it)
         if (window.updateMeta && window.currentLang) {
           window.updateMeta(window.currentLang);
@@ -449,17 +462,25 @@ window.closeNewsModal = () => {
 
 // Sayfa yüklendiğinde veya hash değiştiğinde modalı kontrol et
 function handleHashNavigation() {
-    const hash = window.location.hash;
-    if (hash.startsWith('#!news/')) {
+    // Yeni biçim: /haber/<slug>-<idEki>   Eski biçim: #!news/<id>
+    const { pathname, hash } = window.location;
+    let index = -1;
+
+    if (pathname.startsWith('/haber/')) {
+        const slug = pathname.replace(/^\/haber\//, '').replace(/\/$/, '');
+        index = globalNews.findIndex(n => contentPath('haber', n).endsWith('/' + slug));
+    } else if (hash.startsWith('#!news/')) {
         const id = hash.replace('#!news/', '');
-        const index = globalNews.findIndex(n => n.id === id || `news-${globalNews.indexOf(n)}` === id);
-        if (index !== -1) {
-            setTimeout(() => window.openNewsModal(index), 500); // Küçük bir gecikme ile verilerin yüklenmesini bekle
-        }
+        index = globalNews.findIndex(n => n.id === id || `news-${globalNews.indexOf(n)}` === id);
+    }
+
+    if (index !== -1) {
+        setTimeout(() => window.openNewsModal(index), 500); // Verilerin yüklenmesini bekle
     }
 }
 
 window.addEventListener('hashchange', handleHashNavigation);
+window.addEventListener('popstate', handleHashNavigation);
 
 // loadNews fonksiyonuna kanca atalım (veriler yüklendiğinde kontrol için)
 const originalLoadNews = loadNews;

@@ -1,0 +1,6 @@
+{
+  "lastUpdated": null,
+  "count": 0,
+  "videos": [],
+  "_note": "Çevrimdışı yedek + prerender kaynağı. Asıl kaynak Firestore 'videos' koleksiyonudur; admin panelinden yayınlanan videolar anında siteye yansır."
+}

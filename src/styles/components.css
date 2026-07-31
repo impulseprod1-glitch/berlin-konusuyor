@@ -2853,3 +2853,125 @@ kbd {
     gap: 15px;
   }
 }
+/* ═══════════════════════════════════════════
+   ÇEREZ RIZA BANNER'I (GDPR/DSGVO)
+   Önceden bu bileşenin hiç CSS'i yoktu — görünmüyordu ve
+   dolayısıyla fiilen çalışmıyordu. Kabul/Red butonları
+   kasıtlı olarak eşit boyut/ağırlıkta (bkz. index.html notu).
+   ═══════════════════════════════════════════ */
+.cookie-banner {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 10500;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  transform: translateY(120%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s var(--ease), opacity 0.5s var(--ease);
+}
+
+.cookie-banner.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cookie-panel {
+  width: 100%;
+  max-width: 680px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 26px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 18px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.cookie-icon-wrap {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--glass);
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.cookie-body { flex: 1 1 320px; min-width: 0; }
+
+.cookie-title {
+  font-size: 1.02rem;
+  font-family: var(--font-heading);
+  margin-bottom: 6px;
+}
+
+.cookie-text {
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.cookie-link {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 340px;
+}
+
+.cookie-btn {
+  flex: 1 1 150px;
+  padding: 13px 18px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s var(--ease);
+  white-space: nowrap;
+}
+
+.cookie-btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--border-light);
+  color: var(--text-primary);
+}
+
+.cookie-btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+.cookie-btn-solid {
+  background: var(--accent);
+  border: 1.5px solid var(--accent);
+  color: #fff;
+}
+
+.cookie-btn-solid:hover { filter: brightness(1.12); transform: translateY(-1px); }
+
+@media (max-width: 640px) {
+  .cookie-banner { padding: 12px; }
+  .cookie-panel { padding: 20px; flex-direction: column; }
+  .cookie-actions { max-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookie-banner { transition: none; }
+  .cookie-btn-solid:hover { transform: none; }
+}

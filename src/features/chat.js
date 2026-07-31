@@ -1,5 +1,6 @@
-import { db, auth, collection, query, orderBy, onSnapshot, addDoc, serverTimestamp, signInWithPopup, googleProvider, getDoc, doc } from '../firebase-config.js';
+import { db, auth, collection, query, orderBy, onSnapshot, addDoc, serverTimestamp, signInWithPopup, googleProvider } from '../firebase-config.js';
 import { uploadMedia } from '../utils/media-upload.js';
+import { resolveAdminStatus } from '../utils/admin-claim.js';
 
 let currentRoom = 'genel';
 let unsubscribe = null;
@@ -60,9 +61,8 @@ window.handleChatImage = async (event) => {
   if (!file || !auth.currentUser) return;
 
   // Permission Check: Admin or Approved
-  const ALLOWED_ADMINS = ['test@admin.com']; // Sync with admin.js or store in DB
-  const isAdmin = ALLOWED_ADMINS.includes(auth.currentUser.email);
-  
+  const isAdmin = await resolveAdminStatus(auth.currentUser);
+
   // Also check "Approved" status from Firestore if needed
   // For now: Only Admins can upload in the prototype
   if (!isAdmin) {
@@ -78,7 +78,7 @@ window.handleChatImage = async (event) => {
     const fileName = `chat/${currentRoom}/${Date.now()}_${file.name}`;
     const url = await uploadMedia(file, fileName);
     await sendChatMessage("", url);
-  } catch (err) {
+  } catch {
     alert("Resim yüklenemedi.");
   } finally {
     statusEl.innerText = originalText;

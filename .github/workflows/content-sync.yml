@@ -1,0 +1,53 @@
+name: Icerik ve SEO Senkronizasyonu
+
+# Bu is akisi DIS KAYNAKLARDAN HABER CEKMEZ.
+# Yalnizca sitenin kendi Firestore icerigini sitemap/RSS'e isler ve
+# admin panelinden kuyruga alinan push bildirimlerini gonderir.
+# Gerekce: docs/ANALIZ.md -> "Hukuki Durum"
+
+on:
+  schedule:
+    # Her gun 05:00 ve 17:00 UTC
+    - cron: '0 5,17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu klonla
+        uses: actions/checkout@v4
+
+      - name: Node.js kurulumu
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Bagimliliklari yukle
+        run: npm ci
+
+      - name: Sitemap, RSS ve bildirimleri isle
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          SITE_BASE_URL: https://berlinkonusuyor.com
+        run: node scripts/build-seo.mjs
+
+      - name: Degisiklikleri kaydet
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/sitemap.xml public/rss.xml public/data/videos.json public/data/weather.json
+          if git diff --staged --quiet; then
+            echo "Degisiklik yok."
+          else
+            git commit -m "chore: sitemap/RSS guncellendi [skip ci]"
+            git push
+          fi

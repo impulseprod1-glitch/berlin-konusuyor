@@ -1,4 +1,4 @@
-import { translations, currentLang, setLanguage } from '../utils/i18n.js';
+import { translations, setLanguage } from '../utils/i18n.js';
 import { globalNews } from './news.js';
 import { globalEvents } from './events.js';
 
@@ -150,7 +150,20 @@ export function initMobileDock() {
   });
 }
 
-export function initLenis() {
+export async function initLenis() {
+  // Lenis artık unpkg CDN'den değil, npm paketinden ve talep üzerine gelir.
+  // Hareket azaltma tercihi olan kullanıcılar için hiç indirilmez.
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  let Lenis;
+  try {
+    Lenis = (await import('lenis')).default;
+    await import('lenis/dist/lenis.css');
+  } catch (err) {
+    console.warn('[UI] Lenis yüklenemedi, doğal kaydırma kullanılacak:', err.message);
+    return;
+  }
+
   if (typeof Lenis !== 'undefined') {
     const lenis = new Lenis({
       duration: 1.2,
