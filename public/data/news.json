@@ -1,35 +1,68 @@
 {
-  "lastUpdated": "2026-08-01T14:59:11.938Z",
+  "lastUpdated": "2026-08-01T16:57:50.940Z",
   "count": 10,
   "articles": [
     {
-      "title": "Irak Başbakanı: (Türkiye ile petrol anlaşması) İşbirliğini güçlendirmek adına önemli bir stratejik başarı",
-      "description": "Irak Başbakanı Ali Falih ez-Zeydi, Türkiye ile Irak arasındaki ham petrol boru hattının etkin kullanımını sağlamak amacıyla günlük 750 bin varillik kapasiteyi kapsayan 1 yıllık anlaşmanın imzalanmasını “stratejik başarı” olarak değerlendirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/irak-basbakani-turkiye-ile-petrol-anlasmasi-isbirligini-guclendirmek-adina-onemli-bir-stratejik-basari/4015899",
+      "title": "Dynamo und Stahnsdorf mit Siegen in Regionalliga",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/regionalliga-nordost-bfc-dynamo-altglienicke-luckenwalde-stahnsdorf.html",
       "image": "",
-      "date": "2026-08-01T14:53:53.000Z",
+      "date": "2026-08-01T16:34:30.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "15 Temmuz Şehitler Köprüsü'nde geçici trafik düzenlemesi",
+      "description": "5 Temmuz Şehitler Köprüsü'nde, belgesel dizi çekimleri kapsamında 3-4 ve 5 Ağustos'ta 01.00-05.00 saatlerinde geçici trafik düzenlemesi yapılacak.",
+      "url": "https://www.aa.com.tr/tr/gundem/15-temmuz-sehitler-koprusunde-gecici-trafik-duzenlemesi/4015936",
+      "image": "",
+      "date": "2026-08-01T16:12:14.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Bakanlıktan \"93 yaşındaki Niyazi Vural yardım bekliyor\" paylaşımlarına ilişkin açıklama",
-      "description": "Aile ve Sosyal Hizmetler Bakanlığı, 93 yaşındaki Vural'a ilişkin,\"Yaşlımız, Bakanlığımız personelinin bilgilendirme ve rehberlik çalışmaları sonucunda Kayseri'de hizmet veren bakım ve rehabilitasyon merkezine yerleştirilmiştir\" açıklamasında bulundu.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakanliktan-93-yasindaki-niyazi-vural-yardim-bekliyor-paylasimlarina-iliskin-aciklama/4015875",
+      "title": "Çevre, Şehircilik ve İklim Değişikliği Bakanı Kurum 'dan Kahramanmaraş'a 4 bin 500 sosyal konut müjdesi ",
+      "description": "Bakan  Kurum, \"8 bin 200 konuta ilave olarak, evi olmayan, depremde yakınlarını kaybetmiş kardeşlerimizin ev sahibi olabilmesi için yaklaşık 4 bin 500 sosyal konutu Kahramanmaraş'a kazandırıyoruz\" dedi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/cevre-sehircilik-ve-iklim-degisikligi-bakani-kurum-dan-kahramanmarasa-4-bin-500-sosyal-konut-mujdesi-/4015932",
       "image": "",
-      "date": "2026-08-01T14:19:01.000Z",
+      "date": "2026-08-01T15:58:24.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "İspanya'nın yönetimindeki Sebte'de umduklarını bulamayan düzensiz göçmenler yeniden Fas'a dönüyor",
-      "description": "Fas'ın kuzeyindeki Fenidek kentinden daha iyi bir yaşam umuduyla İspanya'nın yönetimindeki Sebte'ye geçen binlerce düzensiz göçmenden yaklaşık 69 bin 500'ü, Avrupa’ya geçme umutlarının azalmasıyla yeniden Fas'a dönmeye başladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/ispanyanin-yonetimindeki-sebtede-umduklarini-bulamayan-duzensiz-gocmenler-yeniden-fasa-donuyor/4015852",
+      "title": "Washington Post: ABD'li komutan, İsrail'i korumak için yeterli kaynak olmadığını Pentagon'a bildirdi",
+      "description": "ABD Avrupa Komutanı Alexus Grynkewich'in, bu hafta ABD Savunma Bakanlığına (Pentagon), İsrail'i balistik füzelerden korumaya devam etmek için yeterli deniz kuvvetlerine sahip olmadıkları konusunda bildirimde bulunduğu öne sürüldü.",
+      "url": "https://www.aa.com.tr/tr/dunya/washington-post-abdli-komutan-israili-korumak-icin-yeterli-kaynak-olmadigini-pentagona-bildirdi/4015930",
       "image": "",
-      "date": "2026-08-01T14:04:16.000Z",
+      "date": "2026-08-01T15:45:06.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Selçuk Bayraktar: KIZILELMA gibi bir eser abilerinizin ve ablalarınızın yıllarca rahatlarını bozarak inşa edildi",
+      "description": "Baykar Yönetim Kurulu Başkanı Selçuk Bayraktar, \"Ülkemizin ilk insansız savaş uçağı KIZILELMA gibi bir eser abilerinizin ve ablalarınızın yıllarca rahatlarını bozarak, konfor alanlarının dışına çıkarak inşa edildi.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/selcuk-bayraktar-kizilelma-gibi-bir-eser-abilerinizin-ve-ablalarinizin-yillarca-rahatlarini-bozarak-insa-edildi/4015922",
+      "image": "",
+      "date": "2026-08-01T15:32:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Gazze'deki Sağlık Bakanlığı: İsrail ordusunun Gazze'deki saldırılarında temmuzda 152 kişi öldü",
+      "description": "- Temmuz yılbaşından bu yana Gazze Şeridi'ndeki İsrail saldırılarında en çok Filistinlinin hayatını kaybettiği ay oldu",
+      "url": "https://www.aa.com.tr/tr/dunya/gazzedeki-saglik-bakanligi-israil-ordusunun-gazzedeki-saldirilarinda-temmuzda-152-kisi-oldu/4015911",
+      "image": "",
+      "date": "2026-08-01T15:11:32.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -47,17 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Regionalliga Nordost live: BFC Dynamo empfängt Chemie Leipzig",
-      "description": "Der BFC Dynamo hat zum Saisonauftakt der Regionalliga Nordost eine 1:4-Klatsche bei Rot-Weiß Erfurt kassiert. Im ersten Heimspiel hat das Team von Sven Körner also direkt etwas wiedergutzumachen. Ob das gegen Chemie Leipzig gelingt, sehen Sie im rbb|24-Livestream.",
-      "url": "https://www.rbb24.de/sport/hintergrund/livestream/livestream-fussball-regionalliga-nordost-bfc-dynamo-chemie-leipzig.html",
-      "image": "",
-      "date": "2026-08-01T13:59:09.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "Deutsches Team erfolgreich am zweiten Tag der Ruder-EM in Varese ",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/rudern-europameisterschaft-varese-deutsche-medaillen-berlin-bran.html",
@@ -66,28 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan: Gayemiz, terör engelini aradan çekip alarak Türkiye'yi geleceğe hazırlamaktır",
-      "description": "Cumhurbaşkanı Erdoğan, \"Gayemiz, terör engelini aradan çekip alarak Türkiye'yi kardeşlik, birlik ve bütünlük içinde güçlendirilmiş huzur atmosferi içinde geleceğe hazırlamaktır.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gayemiz-teror-engelini-aradan-cekip-alarak-turkiyeyi-gelecege-hazirlamaktir/4015803",
-      "image": "",
-      "date": "2026-08-01T13:03:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Kurum: Deprem bölgesinde saatte 23 günde 550 konut üreterek büyük bir başarıya hep birlikte imza attık",
-      "description": "Çevre, Şehircilik ve İklim Değişikliği Bakanı Murat Kurum, 6 Şubat 2023 depremlerinin ardından büyük bir seferberlikle saatte 23, günde 550 konut üreterek dünyada eşi benzeri olmayan bir başarıya imza attıklarını söyledi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-kurum-deprem-bolgesinde-saatte-23-gunde-550-konut-ureterek-buyuk-bir-basariya-hep-birlikte-imza-attik/4015795",
-      "image": "",
-      "date": "2026-08-01T12:54:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
