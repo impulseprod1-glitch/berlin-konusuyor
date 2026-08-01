@@ -1,13 +1,90 @@
 {
-  "lastUpdated": "2026-08-01T13:17:07.921Z",
+  "lastUpdated": "2026-08-01T14:59:11.938Z",
   "count": 10,
   "articles": [
     {
-      "title": "Irak-Türkiye Ham Petrol Boru Hattı'nın kullanımına ilişkin 1 yıllık anlaşma imzalandı",
-      "description": "Türkiye ile Irak arasında, Irak-Türkiye Ham Petrol Boru Hattı'nın etkin kullanımını sağlamak amacıyla günlük 750 bin varillik kapasiteyi kapsayan 1 yıllık anlaşma imzalandı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/irak-turkiye-ham-petrol-boru-hattinin-kullanimina-iliskin-1-yillik-anlasma-imzalandi/4015808",
+      "title": "Irak Başbakanı: (Türkiye ile petrol anlaşması) İşbirliğini güçlendirmek adına önemli bir stratejik başarı",
+      "description": "Irak Başbakanı Ali Falih ez-Zeydi, Türkiye ile Irak arasındaki ham petrol boru hattının etkin kullanımını sağlamak amacıyla günlük 750 bin varillik kapasiteyi kapsayan 1 yıllık anlaşmanın imzalanmasını “stratejik başarı” olarak değerlendirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/irak-basbakani-turkiye-ile-petrol-anlasmasi-isbirligini-guclendirmek-adina-onemli-bir-stratejik-basari/4015899",
       "image": "",
-      "date": "2026-08-01T13:06:01.000Z",
+      "date": "2026-08-01T14:53:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakanlıktan \"93 yaşındaki Niyazi Vural yardım bekliyor\" paylaşımlarına ilişkin açıklama",
+      "description": "Aile ve Sosyal Hizmetler Bakanlığı, 93 yaşındaki Vural'a ilişkin,\"Yaşlımız, Bakanlığımız personelinin bilgilendirme ve rehberlik çalışmaları sonucunda Kayseri'de hizmet veren bakım ve rehabilitasyon merkezine yerleştirilmiştir\" açıklamasında bulundu.",
+      "url": "https://www.aa.com.tr/tr/gundem/bakanliktan-93-yasindaki-niyazi-vural-yardim-bekliyor-paylasimlarina-iliskin-aciklama/4015875",
+      "image": "",
+      "date": "2026-08-01T14:19:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İspanya'nın yönetimindeki Sebte'de umduklarını bulamayan düzensiz göçmenler yeniden Fas'a dönüyor",
+      "description": "Fas'ın kuzeyindeki Fenidek kentinden daha iyi bir yaşam umuduyla İspanya'nın yönetimindeki Sebte'ye geçen binlerce düzensiz göçmenden yaklaşık 69 bin 500'ü, Avrupa’ya geçme umutlarının azalmasıyla yeniden Fas'a dönmeye başladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/ispanyanin-yonetimindeki-sebtede-umduklarini-bulamayan-duzensiz-gocmenler-yeniden-fasa-donuyor/4015852",
+      "image": "",
+      "date": "2026-08-01T14:04:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Festival \"Klassik ohne Grenzen\" startet wieder beiderseits der Oder",
+      "description": "",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/klassik-ohne-grenzen-frankfurt-oder-slubice.html",
+      "image": "",
+      "date": "2026-08-01T14:02:19.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Regionalliga Nordost live: BFC Dynamo empfängt Chemie Leipzig",
+      "description": "Der BFC Dynamo hat zum Saisonauftakt der Regionalliga Nordost eine 1:4-Klatsche bei Rot-Weiß Erfurt kassiert. Im ersten Heimspiel hat das Team von Sven Körner also direkt etwas wiedergutzumachen. Ob das gegen Chemie Leipzig gelingt, sehen Sie im rbb|24-Livestream.",
+      "url": "https://www.rbb24.de/sport/hintergrund/livestream/livestream-fussball-regionalliga-nordost-bfc-dynamo-chemie-leipzig.html",
+      "image": "",
+      "date": "2026-08-01T13:59:09.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Deutsches Team erfolgreich am zweiten Tag der Ruder-EM in Varese ",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/rudern-europameisterschaft-varese-deutsche-medaillen-berlin-bran.html",
+      "image": "",
+      "date": "2026-08-01T13:30:13.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan: Gayemiz, terör engelini aradan çekip alarak Türkiye'yi geleceğe hazırlamaktır",
+      "description": "Cumhurbaşkanı Erdoğan, \"Gayemiz, terör engelini aradan çekip alarak Türkiye'yi kardeşlik, birlik ve bütünlük içinde güçlendirilmiş huzur atmosferi içinde geleceğe hazırlamaktır.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-gayemiz-teror-engelini-aradan-cekip-alarak-turkiyeyi-gelecege-hazirlamaktir/4015803",
+      "image": "",
+      "date": "2026-08-01T13:03:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Kurum: Deprem bölgesinde saatte 23 günde 550 konut üreterek büyük bir başarıya hep birlikte imza attık",
+      "description": "Çevre, Şehircilik ve İklim Değişikliği Bakanı Murat Kurum, 6 Şubat 2023 depremlerinin ardından büyük bir seferberlikle saatte 23, günde 550 konut üreterek dünyada eşi benzeri olmayan bir başarıya imza attıklarını söyledi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-kurum-deprem-bolgesinde-saatte-23-gunde-550-konut-ureterek-buyuk-bir-basariya-hep-birlikte-imza-attik/4015795",
+      "image": "",
+      "date": "2026-08-01T12:54:39.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -25,39 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "TBMM Başkanı Kurtulmuş: Terörsüz Türkiye yasa teklifi inşallah önümüzdeki hafta ortak bir teklifi olarak TBMM'ye gelecek",
-      "description": "TBMM Başkanı Numan Kurtulmuş, \"(Terörsüz Türkiye) Yasa teklifi, inşallah önümüzdeki hafta partilerin ortak bir teklifi olarak TBMM'ye gelecek.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/tbmm-baskani-kurtulmus-terorsuz-turkiye-yasa-teklifi-insallah-onumuzdeki-hafta-ortak-bir-teklifi-olarak-tbmmye-gelecek/4015788",
-      "image": "",
-      "date": "2026-08-01T12:41:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Deutsches Team erfolgreich am zweiten Tag der Ruder-EM in Varese ",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/rudern-europameisterschaft-varese-deutsche-medaillen-berlin-bran.html",
-      "image": "",
-      "date": "2026-08-01T12:40:07.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "22 ildeki dolandırıcılık operasyonlarında 253 şüpheli gözaltına alındı",
-      "description": "İçişleri Bakanlığı 22 ildeki nitelikli dolandırıcılık operasyonlarında 253 şüphelinin gözaltına alındığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/22-ildeki-dolandiricilik-operasyonlarinda-253-supheli-gozaltina-alindi/4015781",
-      "image": "",
-      "date": "2026-08-01T12:32:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Straßensperrungen rund um Kurfürstendamm wegen Laufveranstaltung",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-lauf-veranstaltung-sperrungen-city-west-kurfuerstendamm.html",
@@ -66,50 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "589 queerfeindliche Vorfälle 2025 in Brandenburg",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/brandenburg-queerfeindliche-angriffe-angestiegen-2025-beleidigungen-bedrohungen.html",
-      "image": "",
-      "date": "2026-08-01T11:36:13.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Brand auf Truppenübungsplatz bei Jüterbog dank des Regens gelöscht",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/jueterbog-truppenuebungsplatz-treuenbrietzen-luckenwalde-brand-rauchentwicklung.html",
-      "image": "",
-      "date": "2026-08-01T11:30:50.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Adalet Bakanlığından Cumhurbaşkanı Erdoğan'a \"suikast girişimi\" davasına ilişkin açıklama",
-      "description": "Adalet Bakanlığı, Fetullahçı Terör Örgütü'nün (FETÖ) 15 Temmuz 2016'daki darbe teşebbüsü sırasında Cumhurbaşkanı Recep Tayyip Erdoğan'a yönelik suikast girişimi davasına ilişkin açıklama yaptı.",
-      "url": "https://www.aa.com.tr/tr/gundem/adalet-bakanligindan-cumhurbaskani-erdogana-suikast-girisimi-davasina-iliskin-aciklama/4015733",
-      "image": "",
-      "date": "2026-08-01T11:29:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İstilacı kuş çiğdeci İstanbul'da popülasyonunu artırıyor",
-      "description": "Ana vatanı Hindistan ve Pakistan başta olmak üzere Güney Asya olan, doğal yayılışı Güneydoğu Asya'nın bazı bölgelerine de uzanan istilacı kuş türü çiğdeci (Hint maynası), son yıllarda İstanbul'da yaşam alanını genişletiyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/istilaci-kus-cigdeci-istanbulda-populasyonunu-artiriyor/4015568",
-      "image": "",
-      "date": "2026-08-01T08:04:23.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
