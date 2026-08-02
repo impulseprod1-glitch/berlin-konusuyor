@@ -25,7 +25,14 @@ onAuthStateChanged(auth, async (user) => {
   const isAdmin = await resolveAdminStatus(user);
   if (!isAdmin) {
     console.warn(`[GÜVENLİK UYARISI] ${user.email} admin yetkisine sahip değil. firebase.rules devreye girdiğinde verileri değiştiremeyeceksiniz.`);
+    return;
   }
+
+  // Firestore sorguları admin claim'i doğrulanmadan (yani auth henüz
+  // hazır değilken) başlatılırsa "permission-denied" ile kalıcı olarak
+  // durur — onSnapshot bu hatadan sonra otomatik yeniden denemez.
+  updateStats();
+  loadVerificationList();
 });
 
 // Elements
@@ -840,8 +847,6 @@ document.getElementById('pushForm')?.addEventListener('submit', async (e) => {
 });
 
 // Init
-updateStats();
-loadVerificationList();
 monitorAGStatus(); // Tek sefer — sürekli yoklama kaldırıldı.
 
 
