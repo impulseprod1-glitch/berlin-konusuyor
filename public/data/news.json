@@ -1,16 +1,82 @@
 {
-  "lastUpdated": "2026-08-04T17:47:17.344Z",
+  "lastUpdated": "2026-08-04T19:35:24.909Z",
   "count": 10,
   "articles": [
     {
-      "title": "A Milli Basketbol Takımı'nın Litvanya maçı biletleri satışa çıktı",
-      "description": "A Milli Erkek Basketbol Takımı'nın FIBA 2027 Dünya Kupası Elemeleri'nde Litvanya ile sahasında oynayacağı ikinci tur J Grubu ilk maçının biletleri satışa sunuldu.",
-      "url": "https://www.aa.com.tr/tr/spor/a-milli-basketbol-takiminin-litvanya-maci-biletleri-satisa-cikti/4018445",
+      "title": "Wetter in Berlin und Brandenburg: Mittwoch wird schwül-heiß",
+      "description": "Nach einem feucht-warmen Dienstag folgt ein feucht-warmer Mittwoch. Doch der Höhepunkt der Hitzewelle ist laut ARD-Wetterexperte überschritten, zum Freitag sollen die Temperaturen sinken.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/wetter-berlin-brandenburg-hitze-gewitter.html",
       "image": "",
-      "date": "2026-08-04T17:31:54.000Z",
+      "date": "2026-08-04T19:22:33.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Telegram’ın kurucusu Durov: Apple, Telegram’ı uyarmadan App Store’dan kaldırdı",
+      "description": "Telegram'ın kurucusu ve Üst Yöneticisi Durov, Apple’ın Telegram’ın geliştiricileriyle iletişime geçmeden uygulamayı App Store’dan kaldırmasının, kullanıcı içeriklerine yer veren tüm mobil uygulamalar açısından sistemik risk oluşturduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/telegram-in-kurucusu-durov-apple-telegram-i-uyarmadan-app-store-dan-kaldirdi/4018493",
+      "image": "",
+      "date": "2026-08-04T19:19:10.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail hükümetinin, orduya Gazze Şeridi'nde saldırıları sınırlandırma talimatı verdiği ileri sürüldü",
+      "description": "İsrail hükümetinin, ordu komuta kademesine Gazze Şeridi'nde ateşkese rağmen sürdürdüğü saldırıları sınırlandırma talimatı verdiği iddia edildi.",
+      "url": "https://www.aa.com.tr/tr/israilin-gazze-saldirilari/israil-hukumetinin-orduya-gazze-seridinde-saldirilari-sinirlandirma-talimati-verdigi-ileri-suruldu/4018492",
+      "image": "",
+      "date": "2026-08-04T19:12:23.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu ateşkese rağmen Lübnan'ın güneyine İHA saldırıları düzenledi",
+      "description": "İsrail ordusu, ateşkes ve Roma'da başlayan 7. tur müzakerelerine rağmen Lübnan'ın güneyine insansız hava araçlarıyla (İHA) iki saldırı düzenledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnanin-guneyine-iha-saldirilari-duzenledi/4018491",
+      "image": "",
+      "date": "2026-08-04T19:10:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "TİKA'nın desteğiyle Bosna Hersek'teki \"Fetih Şenlikleri\"nde mehteran takımı konser verdi",
+      "description": "TİKA desteğiyle Fatih Sultan Mehmet'in 1463'te Bosna Hersek'i fethi sırasında batıda ulaştığı en uç nokta olarak bilinen Sanski Most'ta düzenlenen \"Fetih Şenlikleri\"nde mehteran sahne aldı.",
+      "url": "https://www.aa.com.tr/tr/dunya/tikanin-destegiyle-bosna-hersekteki-fetih-senliklerinde-mehteran-takimi-konser-verdi/4018483",
+      "image": "",
+      "date": "2026-08-04T18:50:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM: İsrail, Gazze'nin kuzeyinde evlerin yanı sıra bölgede ayakta kalan son okulu da yıktı",
+      "description": "BM Genel Sekreter Sözcü Yardımcısı Farhan Haq, dün İsrail güçlerinin, Gazze'nin kuzeyinde evlerin yanı sıra \"bölgede ayakta kalan son okulu da yıktığını\" bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-israil-gazzenin-kuzeyinde-evlerin-yani-sira-bolgede-ayakta-kalan-son-okulu-da-yikti/4018482",
+      "image": "",
+      "date": "2026-08-04T18:48:29.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Wahlplakate in Berlin: Viele Verstöße beim Aufhängen registriert",
+      "description": "Seit Sonntag dürfen Parteien in Berlin Wahlplakate für die Abgeordnetenhauswahl im September aufhängen. Wie eine Umfrage bei den Bezirken zeigt: Nicht alle halten sich an die Regeln.",
+      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-abgeordnetenhauswahl-verstoesse-wahlplakate-wahlkampf.html",
+      "image": "",
+      "date": "2026-08-04T17:47:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -22,39 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "TSK Komuta Kademesi yeniden şekillendi",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan başkanlığında gerçekleştirilen Yüksek Askeri Şura (YAŞ) toplantısının ardından Türk Silahlı Kuvvetleri'nin (TSK) Komuta Kademesi yeniden şekillendi.",
-      "url": "https://www.aa.com.tr/tr/gundem/tsk-komuta-kademesi-yeniden-sekillendi/4018438",
-      "image": "",
-      "date": "2026-08-04T17:11:17.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "TCMB, Temmuz Ayı Fiyat Gelişmeleri Raporu'nu yayımladı",
-      "description": "Türkiye Cumhuriyet Merkez Bankası (TCMB), temmuz ayında aylık bazda tüketici enflasyonunun ana eğiliminin bir önceki aya kıyasla gerilediğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-temmuz-ayi-fiyat-gelismeleri-raporunu-yayimladi/4018437",
-      "image": "",
-      "date": "2026-08-04T17:07:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "TBMM Başkanı Numan Kurtulmuş, AK Parti heyetini kabul etti",
-      "description": "TBMM Başkanı Numan Kurtulmuş, AK Parti Genel Başkanvekili Efkan Ala, AK Parti Grup Başkanı Abdullah Güler ve beraberindeki AK Parti heyetini kabul etti.",
-      "url": "https://www.aa.com.tr/tr/gundem/tbmm-baskani-numan-kurtulmus-ak-parti-heyetini-kabul-etti/4018434",
-      "image": "",
-      "date": "2026-08-04T17:04:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -74,39 +107,6 @@
       "url": "https://www.rbb24.de/politik/beitrag/2026/08/berlin-csd-anschlag-innenausschuss-bundestag.html",
       "image": "",
       "date": "2026-08-04T16:52:06.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Gözaltına alınan Tahir Sarıkaya tutuklandı",
-      "description": "İstanbul Cumhuriyet Başsavcılığınca yürütülen soruşturma kapsamında gözaltına alınan gazeteci Tahir Sarıkaya tutuklandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/gozaltina-alinan-tahir-sarikaya-tutuklandi/4018381",
-      "image": "",
-      "date": "2026-08-04T15:59:32.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Afrikanische Schweinepest: Weiterer Fall in der Uckermark",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/asp-schweinepest-uckermark-weiterer-fund-brandenburg-wildschwein.html",
-      "image": "",
-      "date": "2026-08-04T15:40:36.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin-Pankow: Auto und Straßenbahn stoßen frontal zusammen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/07/unfall-strassenbahn-auto-berlin-pankow-verletzte.html",
-      "image": "",
-      "date": "2026-08-04T15:29:55.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
