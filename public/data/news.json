@@ -1,7 +1,73 @@
 {
-  "lastUpdated": "2026-08-04T19:35:24.909Z",
+  "lastUpdated": "2026-08-04T21:11:52.353Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Milli atıcı İlayda Nur Çürük, 23 yaş altında Avrupa şampiyonu oldu",
+      "description": "23 Yaş Altı Avrupa Tüm Dallar Atıcılık Şampiyonası'nda mücadele eden İlayda Nur Çürük, kadınlar 10 metre havalı tabanca kategorisinde altın madalya kazandı.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-atici-ilayda-nur-curuk-23-yas-altinda-avrupa-sampiyonu-oldu/4018537",
+      "image": "",
+      "date": "2026-08-04T20:38:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trabzonspor, Muhammed Salah ile transfer görüşmelerine başlandığını açıkladı",
+      "description": "Trabzonspor Kulübü, Mısırlı yıldız futbolcu Muhammed Salah ile transfer görüşmelerine başlandığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/spor/trabzonspor-muhammed-salah-ile-transfer-gorusmelerine-baslandigini-acikladi/4018535",
+      "image": "",
+      "date": "2026-08-04T20:37:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "MİT Başkanı Kalın, Libyalı yetkililerle Ankara'da bir araya geldi",
+      "description": "Milli İstihbarat Teşkilatı (MİT) Başkanı İbrahim Kalın, Libya Ulusal Birlik Hükümeti Savunma Bakan Vekili Abdusselam Zubi ve Libya Ulusal Birlik Hükümeti Başbakanı Abdulhamid Dibeybe’nin Ulusal Güvenlik Danışmanı İbrahim Dibeybe ile bir araya geldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/mit-baskani-kalin-libyali-yetkililerle-ankarada-bir-araya-geldi/4018529",
+      "image": "",
+      "date": "2026-08-04T20:27:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Putin, yabancı yatırımcıların hisse geri alım hakkının kaldırılmasına izin verdi",
+      "description": "Rusya Devlet Başkanı Vladimir Putin, 2022'de ülkeden ayrılan yabancı yatırımcıların Rus şirketlerindeki hisse ve paylarını geri alma hakkından mahkeme kararıyla mahrum bırakılmasına imkan tanıyan kararnameyi imzaladı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/putin-yabanci-yatirimcilarin-hisse-geri-alim-hakkinin-kaldirilmasina-izin-verdi/4018515",
+      "image": "",
+      "date": "2026-08-04T19:56:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Özgür Özel ve Veli Ağbaba hakkında fezleke hazırlandı",
+      "description": "Ankara Cumhuriyet Başsavcılığı, Yeni Parti Genel Başkanı Özgür Özel ile Malatya Milletvekili Veli Ağbaba hakkında, \"zincirleme şekilde rüşvet almak\" soruşturması kapsamında dokunulmazlıklarının kaldırılması talebiyle fezleke hazırlandığını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/ozgur-ozel-ve-veli-agbaba-hakkinda-fezleke-hazirlandi/4018513",
+      "image": "",
+      "date": "2026-08-04T19:51:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Regionalliga Nordost: Altglienicke schockt Babelsberg",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-regionalliga-nordost-hertha-bsc-u23-greifswald-babelsberg-altglienicke-jena-rsv-eintracht-stahnsdorf-magdeburg-ii-luckenwalde-spielberichte-ergebnisse.html",
+      "image": "",
+      "date": "2026-08-04T19:36:43.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Wetter in Berlin und Brandenburg: Mittwoch wird schwül-heiß",
       "description": "Nach einem feucht-warmen Dienstag folgt ein feucht-warmer Mittwoch. Doch der Höhepunkt der Hitzewelle ist laut ARD-Wetterexperte überschritten, zum Freitag sollen die Temperaturen sinken.",
@@ -11,61 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Telegram’ın kurucusu Durov: Apple, Telegram’ı uyarmadan App Store’dan kaldırdı",
-      "description": "Telegram'ın kurucusu ve Üst Yöneticisi Durov, Apple’ın Telegram’ın geliştiricileriyle iletişime geçmeden uygulamayı App Store’dan kaldırmasının, kullanıcı içeriklerine yer veren tüm mobil uygulamalar açısından sistemik risk oluşturduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/telegram-in-kurucusu-durov-apple-telegram-i-uyarmadan-app-store-dan-kaldirdi/4018493",
-      "image": "",
-      "date": "2026-08-04T19:19:10.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail hükümetinin, orduya Gazze Şeridi'nde saldırıları sınırlandırma talimatı verdiği ileri sürüldü",
-      "description": "İsrail hükümetinin, ordu komuta kademesine Gazze Şeridi'nde ateşkese rağmen sürdürdüğü saldırıları sınırlandırma talimatı verdiği iddia edildi.",
-      "url": "https://www.aa.com.tr/tr/israilin-gazze-saldirilari/israil-hukumetinin-orduya-gazze-seridinde-saldirilari-sinirlandirma-talimati-verdigi-ileri-suruldu/4018492",
-      "image": "",
-      "date": "2026-08-04T19:12:23.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ordusu ateşkese rağmen Lübnan'ın güneyine İHA saldırıları düzenledi",
-      "description": "İsrail ordusu, ateşkes ve Roma'da başlayan 7. tur müzakerelerine rağmen Lübnan'ın güneyine insansız hava araçlarıyla (İHA) iki saldırı düzenledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnanin-guneyine-iha-saldirilari-duzenledi/4018491",
-      "image": "",
-      "date": "2026-08-04T19:10:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "TİKA'nın desteğiyle Bosna Hersek'teki \"Fetih Şenlikleri\"nde mehteran takımı konser verdi",
-      "description": "TİKA desteğiyle Fatih Sultan Mehmet'in 1463'te Bosna Hersek'i fethi sırasında batıda ulaştığı en uç nokta olarak bilinen Sanski Most'ta düzenlenen \"Fetih Şenlikleri\"nde mehteran sahne aldı.",
-      "url": "https://www.aa.com.tr/tr/dunya/tikanin-destegiyle-bosna-hersekteki-fetih-senliklerinde-mehteran-takimi-konser-verdi/4018483",
-      "image": "",
-      "date": "2026-08-04T18:50:47.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BM: İsrail, Gazze'nin kuzeyinde evlerin yanı sıra bölgede ayakta kalan son okulu da yıktı",
-      "description": "BM Genel Sekreter Sözcü Yardımcısı Farhan Haq, dün İsrail güçlerinin, Gazze'nin kuzeyinde evlerin yanı sıra \"bölgede ayakta kalan son okulu da yıktığını\" bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-israil-gazzenin-kuzeyinde-evlerin-yani-sira-bolgede-ayakta-kalan-son-okulu-da-yikti/4018482",
-      "image": "",
-      "date": "2026-08-04T18:48:29.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-brandenburg-blaualgen-zerkarien-gewaesser-baden-schwimmen.html",
       "image": "",
       "date": "2026-08-04T17:04:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "CSD-Anschlag: Nach Sondersitzung im Bundestag bleiben offene Fragen",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/08/berlin-csd-anschlag-innenausschuss-bundestag.html",
-      "image": "",
-      "date": "2026-08-04T16:52:06.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
