@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-08-05T19:27:07.890Z",
+  "lastUpdated": "2026-08-05T21:05:51.760Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Filistin topraklarını gasbeden İsrailliler, işgal altındaki Batı Şeria’daki saldırılarını sürdürdü",
+      "description": "Filistin topraklarını gasbeden İsrailliler, işgal altındaki Batı Şeria’nın Nablus ve El Halil kentlerinde düzenledikleri saldırılarda 3 Filistinliyi yaraladı ve evleri ateşe verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistin-topraklarini-gasbeden-israilliler-isgal-altindaki-bati-seria-daki-saldirilarini-surdurdu/4019586",
+      "image": "",
+      "date": "2026-08-05T21:01:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin North Carolina eyaletinde silahlı saldırı düzenlendi",
+      "description": "ABD'nin North Carolina eyaletinde düzenlenen silahlı saldırıda çok sayıda kişinin hayatını kaybettiği veya yaralandığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdnin-north-carolina-eyaletinde-silahli-saldiri-duzenlendi/4019578",
+      "image": "",
+      "date": "2026-08-05T20:53:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Handball: Härtetest der Füchse gegen Aalborg endet unentschieden",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/handball-bundesliga-hbl-testspiel-fuechse-berlin-aalborg.html",
+      "image": "",
+      "date": "2026-08-05T20:44:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Schwimm-EM in Paris: Pauline Pfeif gewinnt dritte Silbermedaille",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/wasserspringen-em-paris-pauline-pfeif-ole-roesler-moritz-wesemann.html",
+      "image": "",
+      "date": "2026-08-05T20:41:34.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Alman STK'den Volkswagen fabrikasının İsrailli silah üreticisi Rafael'e devredilmesi planına tepki",
+      "description": "Osnabrück Barış İnisiyatifi yetkilisi Marie Dominique Guyard, \"Bir İsrail silah şirketi için üretim yapmak, İsrail Devleti'nin Filistinlilere, Lübnan'a ve İran'a karşı yürüttüğü savaşlara fiili destek anlamına gelir.\" ifadesini kullandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/alman-stkden-volkswagen-fabrikasinin-israilli-silah-ureticisi-rafaele-devredilmesi-planina-tepki/4019567",
+      "image": "",
+      "date": "2026-08-05T20:35:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Aile ve Sosyal Hizmetler Bakanı Göktaş, canlı yayında soruları yanıtladı",
+      "description": "Bakan Göktaş, Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun Teklifi'ne ilişkin, \"Şehit ailelerinin ve gazilerin hassasiyetlerinin özellikle temel ilke olarak bu yasada gözetildiğini vurgulamak istiyorum.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/aile-ve-sosyal-hizmetler-bakani-goktas-canli-yayinda-sorulari-yanitladi/4019565",
+      "image": "",
+      "date": "2026-08-05T20:28:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "KKTC'de yüksek sıcaklıklar nedeniyle öğle saatlerinde açık alanda çalışmak 10 gün süreyle yasaklandı",
+      "description": "Kuzey Kıbrıs Türk Cumhuriyeti'nde (KKTC) yüksek hava sıcaklıkları nedeniyle öğle saatlerinde açık alanda çalışma 10 gün süreyle yasaklandı",
+      "url": "https://www.aa.com.tr/tr/dunya/kktcde-yuksek-sicakliklar-nedeniyle-ogle-saatlerinde-acik-alanda-calismak-10-gun-sureyle-yasaklandi/4019557",
+      "image": "",
+      "date": "2026-08-05T20:07:09.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Fußball-Regionalliga Nordost: Preussen und Tasmania früh im Tabellenkeller",
       "description": "",
@@ -11,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Mısırlı yıldız futbolcu Muhammed Salah, Trabzon'da",
-      "description": "Trabzonspor'un transfer görüşmelerine başladığı Mısırlı yıldız futbolcu Muhammed Salah, Trabzon'a geldi.",
-      "url": "https://www.aa.com.tr/tr/spor/misirli-yildiz-futbolcu-muhammed-salah-trabzonda/4019535",
-      "image": "",
-      "date": "2026-08-05T19:18:25.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -36,39 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "İran: Umman ile Hürmüz Boğazı konusundaki müzakereler son aşamada, Boğaz'ın açılması ABD'nin tutumuna bağlı",
-      "description": "İran Dışişleri Bakan Yardımcısı Garibabadi, Umman ile Hürmüz Boğazı'nda müzakerelerin son aşamaya girdiğini belirterek, Hürmüz Boğazı'nın tamamen açılmasının ABD'nin tutumuna bağlı olacağını söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-umman-ile-hurmuz-bogazi-konusundaki-muzakereler-son-asamada-bogazin-acilmasi-abdnin-tutumuna-bagli/4019510",
-      "image": "",
-      "date": "2026-08-05T18:39:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "LGS yerleştirmelerinde İstanbul'un zirvedeki 20 lisesi belli oldu",
-      "description": "Liselere Geçiş Sistemi (LGS) kapsamındaki merkezi sınavın ilk yerleştirme sonuçlarına göre, İstanbul Erkek Lisesi ve Kabataş Erkek Lisesi'nin Almanca bölümü 500 tam puanla öğrenci alarak birinciliği paylaştı.",
-      "url": "https://www.aa.com.tr/tr/gundem/lgs-yerlestirmelerinde-istanbulun-zirvedeki-20-lisesi-belli-oldu/4019500",
-      "image": "",
-      "date": "2026-08-05T18:30:14.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bahçelievler'de 4 katlı bina çöktü",
-      "description": "Bahçelievler'de 4 katlı binada çökme meydana geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bahcelievlerde-4-katli-bina-coktu/4019492",
-      "image": "",
-      "date": "2026-08-05T18:21:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "2. Bundesliga: Das ist Herthas Kapitän und Hoffnungsträger Brekalo",
       "description": "Beim VfL Bochum startet Hertha BSC am Freitag in die neue Saison der 2. Bundesliga. Josip Brekalo steht dabei besonders im Fokus. Nach einem brutalen Umbruch ist der Kroate DER Hoffnungsträger der Hertha – und neuerdings auch ihr Kapitän.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-2-bundesliga-auftakt-bochum-hertha-bsc-kapitaen-josip-brekalo.html",
@@ -77,39 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kein S-Bahnverkehr zwischen Tiergarten und Charlottenburg ab 20 Uhr",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/baumassnahmen-stadtbahn-einschraenkungen-mittwochtiergarten.html",
-      "image": "",
-      "date": "2026-08-05T17:04:12.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "RE1-Linie: Bauarbeiten verzögern sich",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-fangschleuse-bauarbeiten-bahn-re1-frankfurt-oder.html",
-      "image": "",
-      "date": "2026-08-05T16:38:39.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "ODAK: Türkiye’nin Gökyüzündeki Savunma Kalkanı \"Çelik Kubbe\"",
-      "description": "Türkiye,  insansız hava araçları başta olmak üzere çeşitli hava tehditlerine karşı, yerli hava savunma sistemlerini tek bir ağ merkezli komuta-kontrol mimarisinde birleştiren \"Çelik Kubbe\" projesiyle hava savunma mimarisini şekillendiriyor.",
-      "url": "https://www.aa.com.tr/tr/odak-haber/odak-turkiye-nin-gokyuzundeki-savunma-kalkani-celik-kubbe/3972097",
-      "image": "",
-      "date": "2026-06-19T12:17:28.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
