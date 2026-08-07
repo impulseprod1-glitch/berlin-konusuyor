@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-08-07T20:38:51.719Z",
+  "lastUpdated": "2026-08-07T22:32:55.530Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Zweite Liga: Grönning beschert Hertha Traumstart in Bochum",
+      "description": "Zum Saisonauftakt der zweiten Fußball-Bundesliga hat Hertha BSC beim VfL Bochum gewonnen und damit den ersten Auftaktsieg seit sechs Jahren feiern können.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-zweite-bundesliga-vfl-bochum-hertha-bsc-audiostream-liveticker-spielbericht.html",
+      "image": "",
+      "date": "2026-08-07T21:57:03.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Handball: Füchse verlieren zweites Testspiel gegen Aalborg",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/handball-testspiel-aalborg-fuechse-berlin.html",
+      "image": "",
+      "date": "2026-08-07T21:21:53.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Fußball-Regionalliga: Altglienicke feiert in Greifswald ersten Saisonsieg",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-regionalliga-nordost-vsg-altglienicke-greifswalder-fc-spielbericht.html",
+      "image": "",
+      "date": "2026-08-07T21:20:06.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "22-Jähriger bei Schüssen in Kreuzberger Graefestraße verletzt - Polizei fahndet nach Täter",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-kreuzberg-schuesse-graefestrasse-polizeieinsatz.html",
+      "image": "",
+      "date": "2026-08-07T20:52:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Fransa’dan iade edilen tarihi eserler Şam Kalesi’nde sergilendi",
+      "description": "Suriye’nin başkenti Şam’da düzenlenen \"yaz festivali\"nde, Fransa’dan iade edilen tarihi eserler sergilendi.",
+      "url": "https://www.aa.com.tr/tr/kultur/fransa-dan-iade-edilen-tarihi-eserler-sam-kalesi-nde-sergilendi/4021550",
+      "image": "",
+      "date": "2026-08-07T20:50:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "\"Mekke Ortak Savunma Anlaşması\" uluslararası basında geniş yer buldu",
       "description": "Türkiye, Suudi Arabistan ve Pakistan tarafından imzalanan Mekke Ortak Savunma Anlaşması uluslararası basında geniş yer buldu.",
@@ -14,55 +69,11 @@
       "type": "rss"
     },
     {
-      "title": "Zweite Liga: Grönning beschert Hertha Traumstart in Bochum",
-      "description": "Zum Saisonauftakt der zweiten Fußball-Bundesliga hat Hertha BSC beim VfL Bochum gewonnen und damit den ersten Auftaktsieg seit sechs Jahren feiern können.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-zweite-bundesliga-vfl-bochum-hertha-bsc-audiostream-liveticker-spielbericht.html",
-      "image": "",
-      "date": "2026-08-07T20:27:16.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Rusya: Ukrayna'nın liman ve gemilerine yönelik saldırıları sürdürdük",
-      "description": "Rusya Savunma Bakanlığı, Ukrayna'nın ordu için kullanılan liman ve gemilerine yönelik saldırıları sürdürdüklerini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/rusya-ukraynanin-liman-ve-gemilerine-yonelik-saldirilari-surdurduk/4021537",
+      "title": "Rusya: Ukrayna'da bir haftada 34 gemiyi vurduk, 8 yerleşim yerini ele geçirdik",
+      "description": "Rusya Savunma Bakanlığı, bir haftada Ukrayna'da askeri amaçla kullanılan 34 geminin vurulduğunu, 8 yerleşim yerinin de ele geçirildiğini duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/rusya-ukraynada-bir-haftada-34-gemiyi-vurduk-8-yerlesim-yerini-ele-gecirdik/4021537",
       "image": "",
       "date": "2026-08-07T20:23:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Eine Person bei Schüssen in Kreuzberger Graefestraße verletzt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-kreuzberg-schuesse-graefestrasse-polizeieinsatz.html",
-      "image": "",
-      "date": "2026-08-07T20:11:18.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İran Cumhurbaşkanı Pezeşkiyan, ABD ile mutabakatın uygulanmasını desteklediklerini söyledi",
-      "description": "İran Cumhurbaşkanı Mesud Pezeşkiyan, ABD ile 14 Haziran'da varılan mutabakatın uygulanmasını desteklediklerini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-cumhurbaskani-pezeskiyan-abd-ile-mutabakatin-uygulanmasini-desteklediklerini-soyledi/4021533",
-      "image": "",
-      "date": "2026-08-07T20:06:41.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Uluslararası İslam, Bilim ve Teknoloji Üniversitesi Rektörü Görmez'den Şam'daki üniversitelerle işbirliği mesajı",
-      "description": "Türkiye Uluslararası İslam, Bilim ve Teknoloji Üniversitesi Rektörü Mehmet Görmez, Şam'daki kadim üniversite gelenekleriyle kurulmakta olan kendi üniversiteleri arasında bağ kurmayı ve ortak programlar geliştirmeyi amaçladıklarını belirtti.",
-      "url": "https://www.aa.com.tr/tr/gundem/uluslararasi-islam-bilim-ve-teknoloji-universitesi-rektoru-gormezden-samdaki-universitelerle-isbirligi-mesaji/4021529",
-      "image": "",
-      "date": "2026-08-07T19:58:16.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -91,25 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "Brandenburgischer Kunstpreis wird nur noch alle zwei Jahre verliehen",
-      "description": "",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/brandenburgischer-kunstpreis-preistraeger-aenderungen-zweijaehri.html",
+      "title": "Milli pentatletler Kıvanç Taşyaran ve Buğra Ünal, Avrupa Şampiyonası'nda finale yükseldi",
+      "description": "2026 Avrupa Büyükler Modern Pentatlon Şampiyonası'nda milli sporcular Kıvanç Taşyaran ve Buğra Ünal, finale çıktı.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-pentatletler-kivanc-tasyaran-ve-bugra-unal-avrupa-sampiyonasinda-finale-yukseldi/4021465",
       "image": "",
-      "date": "2026-08-07T18:25:59.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Gottesanbeterin breitet sich in Berlin aus",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-insekt-gottesanbeterin-breitet-sich-aus.html",
-      "image": "",
-      "date": "2026-08-07T18:03:03.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
+      "date": "2026-08-07T17:50:42.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     }
   ],
