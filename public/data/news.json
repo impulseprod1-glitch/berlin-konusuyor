@@ -1,7 +1,51 @@
 {
-  "lastUpdated": "2026-08-07T02:45:50.208Z",
+  "lastUpdated": "2026-08-07T05:38:54.113Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail ordusu Kalendiya Mülteci Kampı'ndan çekildi, iki günlük baskında 51 Filistinli yaralandı",
+      "description": "İsrail ordusunun işgal altındaki Doğu Kudüs'ün kuzeyinde bulunan Kalendiya Mülteci Kampı'na iki gün süren baskınında 51 Filistinli yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-kalendiya-multeci-kampindan-cekildi-iki-gunluk-baskinda-51-filistinli-yaralandi/4020669",
+      "image": "",
+      "date": "2026-08-07T05:18:21.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanı Erdoğan, Suudi Arabistan'a hareket etti",
+      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, günübirlik çalışma ziyareti için Suudi Arabistan'a hareket etti.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-suudi-arabistana-hareket-etti/4020667",
+      "image": "",
+      "date": "2026-08-07T04:35:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berliner Wahlkämpfer verheddern sich in roten Linien",
+      "description": "Beflügelt von Umfragen stellt die Linke bereits Bedingungen für mögliche Koalitionsverhandlungen nach der Berlin-Wahl – zum Unmut der SPD. Ein Streit, der die zum Teil tiefen, politischen Gräben des Wahlkampfes zeigt.",
+      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-abgeordnetenhaus-wahlkampf-koalitionen-bedingungen-spd-linke-gruene-cdu.html",
+      "image": "",
+      "date": "2026-08-07T04:13:38.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Wahlprogramme zum Thema Kultur: Das planen die Berliner Parteien",
+      "description": "Die Vorschläge für die Kultur sind in den Wahlprogrammen breit gefächert. Sie reichen von einem neuen Standort für die Zentral- und Landesbibliothek über einen kostenlosen Museumssonntag bis zu mehr Arbeitsräumen für Kulturschaffende.",
+      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/wahlprogramme/kultur-politik-foerderung-szene-check.html",
+      "image": "",
+      "date": "2026-08-07T04:10:59.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Suudi Arabistan öncülüğündeki Arap Koalisyonu: Husilerin Necran'a saldırılarında 11 sivil yaralandı",
       "description": "Suudi Arabistan öncülüğündeki Arap Koalisyonu, Yemen'deki İran destekli Husilerin Suudi Arabistan'ın Necran bölgesine düzenlediği saldırılarda 11 sivilin yaralandığını bildirdi.",
@@ -36,28 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "İspanya, sosyal medyada \"Sebte'ye yönelik yeni kitlesel göç girişimi\" çağrılarını soruşturuyor",
-      "description": "İspanya'da Jandarma Müdürlüğü, ülkenin Kuzey Afrika'daki toprağı \"Sebte'ye (Ceuta) 15 Ağustos'ta yeni bir kitlesel düzensiz göç girişimi\" çağrılarının yapıldığı sosyal medya \"kampanyasına\" yönelik soruşturma başlattı.",
-      "url": "https://www.aa.com.tr/tr/dunya/ispanya-sosyal-medyada-sebteye-yonelik-yeni-kitlesel-goc-girisimi-cagrilarini-sorusturuyor/4020638",
-      "image": "",
-      "date": "2026-08-06T21:13:01.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanlığına Cevdet Yılmaz vekalet edecek",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan'ın Suudi Arabistan Krallığı'na ziyareti dolayısıyla Cumhurbaşkanlığına, Cumhurbaşkanı Yardımcısı Cevdet Yılmaz vekalet edecek.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskanligina-cevdet-yilmaz-vekalet-edecek/4020637",
-      "image": "",
-      "date": "2026-08-06T21:11:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Schwimm-EM in Paris: Berlinerin Hentschel jubelt über EM-Bronze",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/schwimm-em-paris-wasserspringen-synchron-bronze-lena-hentschel.html",
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-regionalliga-nordost-bfc-dynamo-erzgebirge-aue.html",
       "image": "",
       "date": "2026-08-06T19:12:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Erneut Wildkatze in Brandenburg nachgewiesen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/brandenburg-wildkatze-nachgewiesen-naturpark-dahme-heideseen.html",
-      "image": "",
-      "date": "2026-08-06T18:35:54.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Brand auf Getreidefeld nahe Flughafen BER ",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-brandenburg-flughafen-ber-brand-feld-feuerwehr.html",
-      "image": "",
-      "date": "2026-08-06T18:32:44.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
