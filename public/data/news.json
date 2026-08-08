@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-08-08T14:30:24.707Z",
+  "lastUpdated": "2026-08-08T16:31:29.514Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Nur jeder vierte Zug zwischen Berlin und Hamburg pünktlich",
+      "description": "Mit großem Aufwand wurde die Bahnstrecke Berlin-Hamburg monatelang saniert. Doch so richtig rund läuft der Verkehr auf der Strecke noch nicht - nur ein Viertel der Züge ist pünktlich. Die Bahn arbeitet aber nach eigenen Angaben an den Problemen.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/bahn-strecke-berlin-hamburg-jeder-vierte-zug-puenktlich.html",
+      "image": "",
+      "date": "2026-08-08T16:07:45.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Am Späti in Berlin-Altglienicke: \"Ich mache alles für den Kiez\"",
+      "description": "Die meisten Berliner wohnen außerhalb des Rings. Zwei rbb|24-Reporter sprechen dort Leute am Späti an und fragen, was sie umtreibt. Heute: ein junger Mann, der sich enorm ehrenamtlich engagiert - sogar mit Kontakten zum Bürgermeister.",
+      "url": "https://www.rbb24.de/panorama/thema/spaeti/berlin-altglienicke-am-spaeti-ehrenamtlicher1.html",
+      "image": "",
+      "date": "2026-08-08T15:42:15.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Hanfparade in Berlin - deutlich weniger Teilnehmer als angemeldet",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-hanfparade-legalisierung-cannabis-kundgebung-teilnehmer.html",
+      "image": "",
+      "date": "2026-08-08T15:32:58.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ABD askerlerinin aileleri, Hürmüz'de görevli USS Abraham Lincoln uçak gemisindeki koşullardan şikayetçi",
+      "description": "ABD donanmasında görevli bazı askerlerin aileleri, Orta Doğu'da konuşlu USS Abraham Lincoln (CVN 72) uçak gemisindeki yaşam koşullarından rahatsızlık duyuyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-askerlerinin-aileleri-hurmuzde-gorevli-uss-abraham-lincoln-ucak-gemisindeki-kosullardan-sikayetci/4021931",
+      "image": "",
+      "date": "2026-08-08T15:28:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran Güvenlik Konseyi Genel Sekreteri: ABD davranışlarını düzeltene kadar Hürmüz Boğazı açılmayacak",
+      "description": "İran Ulusal Güvenlik Yüksek Konseyi Genel Sekreteri Muhammed Bakır Zülkadr, Hürmüz Boğazı'nın yeniden açılmasının ABD'nin tutumunu değiştirmesine bağlı olduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-guvenlik-konseyi-genel-sekreteri-abd-davranislarini-duzeltene-kadar-hurmuz-bogazi-acilmayacak/4021928",
+      "image": "",
+      "date": "2026-08-08T15:22:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Down Judo Milli Takımı, İsveç'te dünya şampiyonu oldu",
+      "description": "Down Judo Milli Takımı, 2026 JUDOWN Dünya Şampiyonası'nda mix takım kategorisinde namağlup dünya şampiyonluğuna ulaştı.",
+      "url": "https://www.aa.com.tr/tr/spor/down-judo-milli-takimi-isvecte-dunya-sampiyonu-oldu/4021926",
+      "image": "",
+      "date": "2026-08-08T15:19:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Umman: Hürmüz Boğazı’ndaki seyrüsefer müzakereleri olumlu ilerliyor",
+      "description": "Umman, İran ile Hürmüz Boğazı’ndaki seyrüsefere ilişkin müzakerelerin olumlu ve yapıcı ilerlediğini belirterek, tüm tarafların çıkarlarını gözeten süreci ve kaydedilen ilerlemeyi etkileyecek eylemlerden kaçınılması çağrısı yaptı.",
+      "url": "https://www.aa.com.tr/tr/dunya/umman-hurmuz-bogazi-ndaki-seyrusefer-muzakereleri-olumlu-ilerliyor/4021925",
+      "image": "",
+      "date": "2026-08-08T15:19:05.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Regionalliga Nordost: Tasmania und Hertha II gewinnen",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-regionalliga-nordost-rsv-eintracht-chemie-leipzig-luckenwalde-tasmania-lok-leipzig-hertha-bsc-2.html",
+      "image": "",
+      "date": "2026-08-08T14:55:15.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Fischerei in Storkow schließt nach 800 Jahren",
       "description": "",
@@ -14,102 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "Bulgaristan hava sahasına giren İHA, Romanya sınırındaki doğal gaz boru hattı yakınında infilak etti",
-      "description": "Bulgaristan hava sahasına giren insansız hava aracının (İHA), Romanya sınırındaki Trans-Balkan doğal gaz boru hattının yakınlarında infilak ettiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/bulgaristan-hava-sahasina-giren-iha-romanya-sinirindaki-dogal-gaz-boru-hatti-yakininda-infilak-etti/4021892",
+      "title": "60 saniyede bugün (08 Ağustos 2026)",
+      "description": "Türkiye ve dünya gündeminin 60 saniyelik özeti. AJet'in katkılarıyla...",
+      "url": "https://www.aa.com.tr/tr/gundem/60-saniyede-bugun-08-agustos-2026/4021841",
       "image": "",
-      "date": "2026-08-08T14:21:34.000Z",
+      "date": "2026-08-08T12:57:26.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "FETÖ'nün suikast timindeki Karatepe'nin Muğla'da gösterdiği bölgelerde silah ve mühimmat bulunamadı",
-      "description": "Darbe girişiminde Cumhurbaşkanı Erdoğan'a yönelik Marmaris'te gerçekleştirilen suikast teşebbüsüne katılan ve 10 yıldır kırmızı bültenle aranırken yakalanarak tutuklanan FETÖ üyesi Karatepe'nin gösterdiği alanlarda silah ve mühimmat bulunamadı.",
-      "url": "https://www.aa.com.tr/tr/gundem/fetonun-suikast-timindeki-karatepenin-muglada-gosterdigi-bolgelerde-silah-ve-muhimmat-bulunamadi/4021887",
-      "image": "",
-      "date": "2026-08-08T14:18:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Giresun'da fındık hasadı başladı ",
-      "description": "Giresun'da sahil kesimindeki 250 metre rakıma kadar olan bölgelerde fındık üreticileri hasada başladı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/giresunda-findik-hasadi-basladi-/4021885",
-      "image": "",
-      "date": "2026-08-08T14:12:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Zelenskiy, ABD'nin Ukrayna'ya her ay PATRİOT için gerekli füzeleri tedarik edeceğini söyledi",
-      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, PATRİOT hava savunma sisteminde kullanılan füzeleri ABD'den her ay alacaklarını söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-abdnin-ukraynaya-her-ay-patriot-icin-gerekli-fuzeleri-tedarik-edecegini-soyledi/4021881",
-      "image": "",
-      "date": "2026-08-08T14:04:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bursa'da çıkan orman yangınına müdahale ediliyor",
-      "description": "Bursa'nın İnegöl ilçesindeki ormanlık alanda çıkan yangına ekipler havadan ve karadan müdahale ediyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/bursada-cikan-orman-yanginina-mudahale-ediliyor/4021874",
-      "image": "",
-      "date": "2026-08-08T13:48:34.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Oberhavel: Gasleck auf Baustelle in Bergfelde geschlossen",
-      "description": "In Bergfelde im Kreis Oberhavel ist am Samstag auf einer Baustelle Gas ausgetreten. Am frühen Nachmittag konnte der Gasaustritt gestoppt werden - die Gefahrenwarnung wurde wieder aufgehoben.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/brandenburg-bergfelde-gas-austritt-warnung-oberhavel.html",
-      "image": "",
-      "date": "2026-08-08T12:46:40.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Lesen im Strobolicht: Thrillerautor Sebastian Fitzek feiert Jubiläum in der Waldbühne",
-      "description": "20 Jahre nach seinem Debüt \"Die Therapie\" feiert Sebastian Fitzek sein Autorenjubiläum in der Waldbühne, vor knapp 20.000 Menschen. Mit auf der Bühne: Tänzer und prominente Musiker.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/berlin-triller-autor-sebastian-fitzek-lesung-waldbuehne.html",
-      "image": "",
-      "date": "2026-08-08T12:21:14.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "A13 in Richtung Berlin nach Unfall stundenlang gesperrt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/brandenburg-autobahn-13-gesperrt-unfall.html",
-      "image": "",
-      "date": "2026-08-08T12:00:25.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin-Adlershof: Wahlkampfhelfer bei Attacke von Radfahrer verletzt",
-      "description": "",
-      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/wahlkampfhelfer-verletzt-attacke-von-radfahrer-adlershof.html",
-      "image": "",
-      "date": "2026-08-08T11:41:17.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     }
   ],
