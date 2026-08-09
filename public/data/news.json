@@ -1,38 +1,82 @@
 {
-  "lastUpdated": "2026-08-09T08:40:10.628Z",
+  "lastUpdated": "2026-08-09T10:32:34.122Z",
   "count": 10,
   "articles": [
     {
-      "title": "Kocaeli'deki dereler kano tutkunlarının yeni rotası oldu",
-      "description": "Kocaeli'nin Kandıra ilçesindeki Sarısu ve Seyrek dereleri, yaz aylarında kano tutkunlarının ilgi gösterdiği rota haline geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/kocaelideki-dereler-kano-tutkunlarinin-yeni-rotasi-oldu/4022330",
+      "title": "Beşiktaş-Hradec Kralove rövanş maçını İsviçreli hakem Urs Schnyder yönetecek",
+      "description": "Beşiktaş'ın UEFA Avrupa Ligi üçüncü eleme turu rövanşında Çekya ekibi Hradec Kralove ile oynayacağı maçı İsviçre Futbol Federasyonundan Urs Schnyder yönetecek.",
+      "url": "https://www.aa.com.tr/tr/spor/besiktas-hradec-kralove-rovans-macini-isvicreli-hakem-urs-schnyder-yonetecek/4022385",
       "image": "",
-      "date": "2026-08-09T08:31:08.000Z",
+      "date": "2026-08-09T09:51:53.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Arnavutluk'un Kruja şehrinde yaşam alanlarını etkileyen yangın kontrol altına alındı",
-      "description": "Arnavutluk'un orta kesimlerindeki Kruja şehrinde yaşam alanlarını da etkileyen yangın kontrol altına alınırken, yangın söndürme çalışmalarında Bayraktar TB2 de görev aldı.",
-      "url": "https://www.aa.com.tr/tr/dunya/arnavutlukun-kruja-sehrinde-yasam-alanlarini-etkileyen-yangin-kontrol-altina-alindi/4022328",
+      "title": "\"Çocuklar Güvende\" ekipleri 9 bin 842 çocuğu sanat, spor ve sosyal faaliyetlere yönlendirdi",
+      "description": "Bakan Göktaş, çocukların sağlıklı gelişimlerini desteklemek amacıyla okullarla iletişime geçerek risk grubundaki çocukları belirleyen \"Çocuklar Güvende\" ekiplerinin, 9 bin 842 çocuğu sanat, spor ve sosyal faaliyetlere yönlendirdiğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/cocuklar-guvende-ekipleri-9-bin-842-cocugu-sanat-spor-ve-sosyal-faaliyetlere-yonlendirdi/4022381",
       "image": "",
-      "date": "2026-08-09T08:28:21.000Z",
+      "date": "2026-08-09T09:48:11.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "İran Devrim Muhafızları: ABD tüm şartlarımızı kabul edene kadar Hürmüz Boğazı'nı kontrol altında tutacağız",
-      "description": "İran Devrim Muhafızları Ordusu Sözcüsü Tuğgeneral Hüseyin Muhibbi, ülkesinin stratejisinin \"ABD, Tahran'ın tüm şartlarını kabul edene kadar Hürmüz Boğazı'nı kontrol altında tutmak\" olduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-devrim-muhafizlari-abd-tum-sartlarimizi-kabul-edene-kadar-hurmuz-bogazini-kontrol-altinda-tutacagiz/4022324",
+      "title": "Kung-Fu-WM in Bernau: Lokalmatador fächert sich zum Weltmeister",
+      "description": "In Bernau findet dieses Wochenende die erste Kung-Fu-Weltmeisterschaft auf deutschem Boden statt. Mit dabei ist Maxim Schengel. Er ist der Lokalmatador der Kung-Fu-Hochburg und seit Samstag auch Weltmeister.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/kung-fu-wm-2026-bernau-maxim-schengel-weltmeister-dirk-ritt.html",
       "image": "",
-      "date": "2026-08-09T08:23:39.000Z",
+      "date": "2026-08-09T09:40:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı kıyı ve sahil şeritlerinde düzenleme yapabilecek",
+      "description": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, kıyı ve sahil şeritlerinin bakım, onarım, güvenlik, temizlik gibi işlemlerini yapabilecek.",
+      "url": "https://www.aa.com.tr/tr/gundem/cevre-sehircilik-ve-iklim-degisikligi-bakanligi-kiyi-ve-sahil-seritlerinde-duzenleme-yapabilecek/4022374",
+      "image": "",
+      "date": "2026-08-09T09:36:19.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İstanbul'u ana liman olarak kullanan kruvaziyer gemisinde çocuklar için dijital denge modeli",
+      "description": "AROYA Cruises'ta çocuklara yönelik hazırlanan programlarda çocuklar gün boyunca bilim, sanat, spor ve takım çalışmalarına katılırken, sanal gerçeklik, teknoloji deneyimleri ve dijital oyunlar da belirli denge içinde sunuluyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulu-ana-liman-olarak-kullanan-kruvaziyer-gemisinde-cocuklar-icin-dijital-denge-modeli/4022367",
+      "image": "",
+      "date": "2026-08-09T09:31:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Abdülhamid Han Sondaj Gemisi, \"mavi vatan\"daki görevinde 4 yılı geride bıraktı",
+      "description": "Enerji ve Tabii Kaynaklar Bakanı Alparslan Bayraktar, \"Türk mühendisliğinin gücünü denizlerimize taşımaya milletimizin refahı için aramaya, keşfetmeye ve üretmeye devam edeceğiz.\" açıklamasında bulundu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdulhamid-han-sondaj-gemisi-mavi-vatandaki-gorevinde-4-yili-geride-birakti/4022341",
+      "image": "",
+      "date": "2026-08-09T09:00:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Weniger Geldautomatensprengungen in Brandenburg gezählt",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/weniger-automatensprengungen-in-brandenburg.html",
+      "image": "",
+      "date": "2026-08-09T08:44:34.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -44,28 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": " Milli boksör İvana Kılcı, Avrupa şampiyonluğu için yumruk sallıyor",
-      "description": "Hatay'da yetenek taramasında keşfedilerek boksa yönlendirilen 14 yaşındaki İvana Kılcı, ekimde Trabzon'da düzenlenecek Avrupa Şampiyonası'nda birincilik kürsüsünde yer alabilmek için yumruk sallıyor.",
-      "url": "https://www.aa.com.tr/tr/spor/-milli-boksor-ivana-kilci-avrupa-sampiyonlugu-icin-yumruk-salliyor/4022313",
-      "image": "",
-      "date": "2026-08-09T08:11:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fırat Havzası'ndaki kadın ve genç üreticilerin pazara erişimi kolaylaşacak",
-      "description": "Fırat Nehri Havzası Rehabilitasyon Projesi, Şanlıurfa, Malatya, Diyarbakır ve Adıyaman ile daha önce Uluslararası Tarımsal Kalkınma Fonunca finanse edilen projeler kapsamında bulunmayan Bingöl ve Elazığ'daki bazı ilçelerde uygulanacak.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/firat-havzasindaki-kadin-ve-genc-ureticilerin-pazara-erisimi-kolaylasacak/4022302",
-      "image": "",
-      "date": "2026-08-09T08:04:22.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berliner-kriminelle-in-brandenburg-aktiv.html",
       "image": "",
       "date": "2026-08-09T07:23:08.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Tausende Menschen besuchen queeres Parkfest in Berlin-Friedrichshain",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-friedrichshain-queeres-parkfest.html",
-      "image": "",
-      "date": "2026-08-09T06:22:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "1. FC Frankfurt in der Fußball-Oberliga: Ein Aufstieg mit Widrigkeiten",
-      "description": "Für den 1. FC Frankfurt beginnt am Sonntag das Abenteuer Oberliga. Über die Zuteilung in die südliche der beiden Staffel gab es zuletzt Ärger mit dem Verband. Dennoch überwiegt die Vorfreude auf die neue Aufgabe.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-oberliga-start-1-fc-frankfurt-aufstieg-neuzugaenge-verband-aerger.html",
-      "image": "",
-      "date": "2026-08-09T05:19:26.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
