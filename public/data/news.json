@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-08-09T18:37:41.269Z",
+  "lastUpdated": "2026-08-09T20:30:26.252Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Spezialeinsatzkommando stürmt Wohnung in Wittenberge",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/brandenburg-wittenberge-sek-sondereinsatzkommando-stuermt-wohnung.html",
+      "image": "",
+      "date": "2026-08-09T19:53:53.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Suriye'de Türkiye lise sınavlarını başarıyla tamamlayan öğrenciler için mezuniyet töreni düzenlendi",
+      "description": "Suriye'nin Halep ilinde, Türkiye Milli Eğitim Bakanlığı tarafından düzenlenen açık öğretim lisesi sınavlarını başarıyla tamamlayan Suriyeli öğrenciler için mezuniyet töreni düzenlendi.",
+      "url": "https://www.aa.com.tr/tr/dunya/suriyede-turkiye-lise-sinavlarini-basariyla-tamamlayan-ogrenciler-icin-mezuniyet-toreni-duzenlendi/4022648",
+      "image": "",
+      "date": "2026-08-09T19:33:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanlığı İletişim Başkanlığından Mekke Anlaşması'na özel iletişim kampanyası",
+      "description": "Cumhurbaşkanlığı İletişim Başkanlığınca, Mekke Ortak Savunma Anlaşması'nın taşıdığı birlik, dayanışma ve işbirliği mesajının kamuoyuna ulaştırılması amacıyla Ankara ve İstanbul'un simgesel noktalarında iletişim kampanyası yürütülüyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskanligi-iletisim-baskanligindan-mekke-anlasmasina-ozel-iletisim-kampanyasi/4022642",
+      "image": "",
+      "date": "2026-08-09T19:17:40.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "RE2 mit 500 Fahrgästen nach Fußballspiel evakuiert",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/cottbus-berlin-regionalexpress-re2-evakuiert-hannover-96.html",
+      "image": "",
+      "date": "2026-08-09T19:15:12.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Milli atıcılar, 23 Yaş Altı Avrupa Tüm Dallar Şampiyonası'nda 3 madalya kazandı",
+      "description": "23 Yaş Altı Avrupa Tüm Dallar Atıcılık Şampiyonası'nda milli sporcular 3 madalya kazanma başarısını gösterdi.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-aticilar-23-yas-alti-avrupa-tum-dallar-sampiyonasinda-3-madalya-kazandi/4022640",
+      "image": "",
+      "date": "2026-08-09T19:11:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Großer Preis von Berlin: Tiffany triumphiert in Hoppegarten",
       "description": "",
@@ -36,11 +91,11 @@
       "type": "rss"
     },
     {
-      "title": "\"Sessiz Zarafet\" sergisi İstanbul'da sanatseverlerle buluştu",
-      "description": "Koleksiyoner Mehmet Çebi'nin çağdaş hat, hilye ve tespihlerden oluşan \"Sessiz Zarafet\" sergisi, Tophane-i Amire Kültür ve Sanat Merkezi'nde ziyarete açıldı.",
-      "url": "https://www.aa.com.tr/tr/kultur/sessiz-zarafet-sergisi-istanbulda-sanatseverlerle-bulustu/4022609",
+      "title": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığından Şanlıurfa'daki afet konutlarına ilişkin paylaşım ",
+      "description": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, Şanlıurfa'da inşa edilen afet konutlarına ilişkin paylaşımda bulundu.",
+      "url": "https://www.aa.com.tr/tr/gundem/cevre-sehircilik-ve-iklim-degisikligi-bakanligindan-sanliurfadaki-afet-konutlarina-iliskin-paylasim-/4022611",
       "image": "",
-      "date": "2026-08-09T17:19:38.000Z",
+      "date": "2026-08-09T17:23:00.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -52,61 +107,6 @@
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/union-berlin-letztes-testspiel-trainingslager-aris-limassol-.html",
       "image": "",
       "date": "2026-08-09T17:08:35.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ordusu ve İsrailli işgalciler Batı Şeria'da Filistinlilere yönelik saldırılarını sürdürüyor",
-      "description": "İsrail ordusu, işgal altındaki Batı Şeria'nın çeşitli bölgelerinde Filistinlilere ait bir evi gasbederek askeri noktaya çevirirken, Filistin topraklarını gasbeden İsrailliler tarım arazilerine zarar verdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ve-israilli-isgalciler-bati-seriada-filistinlilere-yonelik-saldirilarini-surduruyor/4022607",
-      "image": "",
-      "date": "2026-08-09T17:00:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Türkiye Süper Enduro Şampiyonası'nın ikinci ayağı Kocaeli'de yapıldı",
-      "description": "Türkiye Süper Enduro Şampiyonası'nın ikinci ayağı, Kocaeli'nin Kartepe ilçesinde düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/spor/turkiye-super-enduro-sampiyonasinin-ikinci-ayagi-kocaelide-yapildi/4022602",
-      "image": "",
-      "date": "2026-08-09T16:41:02.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin: Hunderte Lehrer fallen wegen Krankheit dauerhaft aus",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-lehrer-krank-ausfaelle-beamte-schule.html",
-      "image": "",
-      "date": "2026-08-09T16:27:14.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Balıkesir'deki depremlerin ardından 305 konut ve 1 iş yeri, yarın hak sahiplerine teslim edilecek",
-      "description": "Afet ve Acil Durum Yönetimi Başkanlığı (AFAD), Balıkesir'de geçen yıl meydana gelen depremlerin ardından yapımı tamamlanan 305 konut ve 1 iş yerinin yarın hak sahiplerine teslim edileceğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/balikesirdeki-depremlerin-ardindan-305-konut-ve-1-is-yeri-yarin-hak-sahiplerine-teslim-edilecek/4022591",
-      "image": "",
-      "date": "2026-08-09T15:50:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gegen italienischen Vizemeister: Union-Frauen verlieren knapp",
-      "description": "Die Fußballerinnen des 1. FC Union Berlin haben den Heimtest gegen Inter Mailand mit 0:1 verloren. Gegen den italienischen Vizemeister hielten die Köpenickerinnen gut mit. In der Schlussphase wäre der Ausgleich drin gewesen.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/frauen-1-fc-union-berlin-saisoneroeffnung-inter-mailand-eta.html",
-      "image": "",
-      "date": "2026-08-09T15:23:13.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
