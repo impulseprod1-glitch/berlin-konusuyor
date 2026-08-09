@@ -22,8 +22,23 @@ export function renderEvents(events) {
   const container = document.getElementById('eventsTrack');
   if (!container) return;
 
+  // Statik yedek veri (events.json) elle güncellenmediği sürece eskir;
+  // Firestore'daki etkinlikler de zamanla geçmişte kalabilir. Geçmiş
+  // tarihli bir kaydı "Yaklaşan Etkinlikler" diye göstermek yanıltıcı.
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
+  const upcoming = events.filter((event) => {
+    const d = new Date(event.date);
+    return isNaN(d.getTime()) || d >= startOfToday;
+  });
+
+  if (upcoming.length === 0) {
+    container.innerHTML = '<p class="empty-list">Şu anda planlanmış yaklaşan bir etkinlik yok.</p>';
+    return;
+  }
+
   try {
-    container.innerHTML = events.map((event, index) => {
+    container.innerHTML = upcoming.map((event, index) => {
       let day = '--';
       let month = 'AY';
 

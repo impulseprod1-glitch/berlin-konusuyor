@@ -84,7 +84,7 @@
   -webkit-backdrop-filter: blur(20px) saturate(160%);
   backdrop-filter: blur(20px) saturate(160%);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 28px;
+  border-radius: var(--radius-card);
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer;
   box-shadow: 0 15px 45px rgba(0,0,0,0.2), inset 0 0 0 1px rgba(255,255,255,0.05);
@@ -323,7 +323,7 @@
 
 .event-img-wrapper {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
   position: relative;
   aspect-ratio: 16/10;
 }
@@ -651,7 +651,7 @@
 .event-card {
   width: 320px;
   flex-shrink: 0;
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   background: var(--bg-card);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -694,7 +694,7 @@
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   padding: 4px 12px;
-  border-radius: 99px;
+  border-radius: var(--radius-badge);
   font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -2134,16 +2134,16 @@ kbd {
 .post-job-btn { background: var(--text-primary); color: var(--bg-primary); border: none; padding: 10px 24px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.4s var(--ease); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
 .post-job-btn:hover { background: var(--accent); color: white; transform: translateY(-2px); box-shadow: 0 8px 24px var(--accent-dim); }
 .jobs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
-.job-card { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; border-radius: 20px; transition: all 0.4s var(--ease); position: relative; display: flex; flex-direction: column; }
+.job-card { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; border-radius: var(--radius-card); transition: all 0.4s var(--ease); position: relative; display: flex; flex-direction: column; }
 .job-card:hover { transform: translateY(-5px); border-color: var(--accent-glow); background: var(--bg-card-hover); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-.job-badge { position: absolute; top: 20px; right: 20px; font-size: 0.65rem; background: var(--accent-soft); color: var(--accent); padding: 4px 10px; border-radius: 4px; }
+.job-badge { position: absolute; top: 20px; right: 20px; font-size: 0.65rem; background: var(--accent-soft); color: var(--accent); padding: 4px 10px; border-radius: var(--radius-badge); }
 .job-title { font-size: 1.2rem; font-weight: 500; margin-bottom: 8px; padding-right: 60px; color: var(--text-primary); }
 .job-company { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px; font-family: var(--font-body); }
 .job-meta { display: flex; gap: 16px; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 20px; align-items: center; }
 .job-meta i { color: var(--accent); }
 .job-apply-btn { margin-top: auto; padding: 12px; text-align: center; background: var(--glass); border: 1px solid var(--border); border-radius: 12px; font-size: 0.85rem; font-weight: 500; transition: all 0.3s; color: var(--text-secondary); }
 .job-card:hover .job-apply-btn { background: var(--accent); color: white; border-color: var(--accent); }
-.skeleton-job { height: 200px; background: var(--bg-card); border-radius: 20px; animation: shimmer 1.5s infinite; border: 1px solid var(--border); }
+.skeleton-job { height: 200px; background: var(--bg-card); border-radius: var(--radius-card); animation: shimmer 1.5s infinite; border: 1px solid var(--border); }
 
 /* ── Weekly Polls (Anket) ─────────────────── */
 .poll-container {
@@ -2402,7 +2402,7 @@ kbd {
 .premium-news-card {
   position: relative;
   height: 500px;
-  border-radius: 32px;
+  border-radius: var(--radius-card);
   overflow: hidden;
   background: var(--bg-secondary);
   box-shadow: 0 30px 60px rgba(0,0,0,0.4);
@@ -2451,7 +2451,7 @@ kbd {
   background: var(--accent);
   color: #fff;
   padding: 6px 16px;
-  border-radius: 99px;
+  border-radius: var(--radius-badge);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;

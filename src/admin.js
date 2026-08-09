@@ -5,6 +5,7 @@ import {
 import { uploadMedia, probeVideoFile, convertImageToWebP } from './utils/media-upload.js';
 import { parseVideoUrl } from './utils/video-url.js';
 import { resolveAdminStatus } from './utils/admin-claim.js';
+import { categoryLabel } from './features/news.js';
 
 // --- ADMIN AUTH BARRIER ---
 // Gerçek yetki sınırı firestore.rules/storage.rules'taki "admin" custom
@@ -235,7 +236,7 @@ async function loadNewsList() {
         <div class="data-item">
           <div class="item-info">
             <div class="item-title">${data.title}</div>
-            <div class="item-meta">${data.category} | ${data.date ? new Date(data.date).toLocaleDateString('tr-TR') : 'Tarih yok'}</div>
+            <div class="item-meta">${categoryLabel(data.category)} | ${data.date ? new Date(data.date).toLocaleDateString('tr-TR') : 'Tarih yok'}</div>
           </div>
           <div class="item-actions">
             <button class="action-btn" data-action="edit-news" data-id="${d.id}">Düzenle</button>

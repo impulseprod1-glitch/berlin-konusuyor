@@ -493,6 +493,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  /* Grid öğeleri varsayılan min-width:auto ile içeriklerinden küçülemez;
+     yatay haber şeridi (18 × 320px kart) bu yüzden sayfayı 6787px'e kadar
+     genişletip tüm sayfada yatay kaydırma yaratıyordu. */
+  min-width: 0;
 }
 
 .bento-sidebar {
@@ -964,6 +968,27 @@
 
   .hamburger {
     display: flex;
+  }
+
+  /* .nav-right'taki arama/tema/dil/AG rozeti hiçbiri mobilde gizlenmiyordu;
+     hamburger ve "Giriş Yap" bu yüzden 390px ekranda 585-625px'e denk
+     gelip tamamen görünmez ve tıklanamaz oluyordu. Bu öğeleri mobilde
+     kaldırıp yalnızca logo + giriş + hamburger'ı bırakıyoruz. */
+  .search-container,
+  .theme-toggle-btn,
+  .lang-switcher,
+  .ag-status-badge {
+    display: none;
+  }
+
+  /* components.css layout.css'ten SONRA import edildiği için tekli class
+     seçici burada kazanamıyordu (aynı özgüllük, sonraki kural kazanır) —
+     .navbar ile özgüllüğü artırıp import sırasından bağımsız hale getiriyoruz. */
+  .navbar .nav-login-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    margin-left: 0;
+    white-space: nowrap;
   }
 
   .hero-line {

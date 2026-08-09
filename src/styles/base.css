@@ -26,6 +26,11 @@
   --nav-height: 80px;
   --ease: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-heavy: cubic-bezier(0.8, 0, 0.2, 1);
+  /* Kart/rozet köşe yarıçapı — tasarım yönü: keskin köşeli, sade
+     (Apple/Tesla tarzı), önceki 20-32px yuvarlak ve 99px pil şekilleri
+     yerine tek, tutarlı ve minimal bir değer. */
+  --radius-card: 2px;
+  --radius-badge: 2px;
 }
 
 /* ── Scrollbar ───────────────────────────── */

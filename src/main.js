@@ -5,7 +5,7 @@ import './bento-grid.css';
 import { initLangSwitcher } from './features/ui.js';
 import { initAuthListener } from './features/auth.js';
 import { initDashboardUtils } from './features/dashboard.js';
-import { loadNewsWithDeepLink } from './features/news.js';
+import { loadNewsWithDeepLink, initNewsFilters } from './features/news.js';
 import { initVideoNews } from './features/video-news.js';
 import { loadEvents } from './features/events.js';
 import { loadPodcasts, initPodcastsUI } from './features/podcasts.js';
@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initAuthListener();
     initDashboardUtils();
     loadNewsWithDeepLink();
+    initNewsFilters();
     initVideoNews();
     loadEvents();
     loadPodcasts();

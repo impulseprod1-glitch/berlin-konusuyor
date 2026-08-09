@@ -1,6 +1,7 @@
 import { db, auth, collection, query, orderBy, onSnapshot, setDoc, doc, serverTimestamp, deleteDoc } from '../firebase-config.js';
 import { renderAIDashboard } from './dashboard.js';
 import { contentPath } from '../utils/slug.js';
+import { t } from '../utils/i18n.js';
 
 /* Kategori yer tutucu görselleri.
    Önceden her biri Unsplash CDN'inden yükleniyordu: sayfa başına 20'ye
@@ -8,12 +9,34 @@ import { contentPath } from '../utils/slug.js';
    yavaşlarsa boş kartlar. Artık tamamı satır içi SVG degrade —
    sıfır ağ isteği, anında çizim, marka renkleriyle tutarlı. */
 const CATEGORY_PALETTES = {
-  politics:  [['#2b1216', '#7f1d1d'], ['#1a1020', '#4c1d95']],
+  general:   [['#2b1216', '#7f1d1d'], ['#1a1020', '#4c1d95']],
   culture:   [['#101a24', '#0e7490'], ['#1d1526', '#7e22ce']],
   economy:   [['#0f1a14', '#166534'], ['#141a10', '#3f6212']],
   lifestyle: [['#241505', '#b45309'], ['#2a1207', '#9a3412']],
   default:   [['#101010', '#2a2a2a'], ['#0d1117', '#1f2937']],
 };
+
+/* Sitede tek kategori sözlüğü: admin panelinin yazdığı ve filtre
+   butonlarının okuduğu anahtarlarla birebir aynı olmalı (bkz. admin.html
+   #newsCat, index.html .filter-btn). Otomatik çekilen haberler (RSS)
+   kendi "berlin"/"almanya" etiketiyle gelir, bu ikisi bu sözlükte yok —
+   başlığa bakarak en yakın kategoriye eşleniyor. */
+const CATEGORY_KEYS = ['general', 'culture', 'economy', 'lifestyle'];
+
+export function normalizeCategory(article) {
+  const raw = (article.category || '').toLowerCase();
+  if (CATEGORY_KEYS.includes(raw)) return raw;
+
+  const title = (article.title || '').toLowerCase();
+  if (/ekonomi|enflasyon|euro|wirtschaft|preis/.test(title)) return 'economy';
+  if (/sinema|sergi|konser|kultur|festival/.test(title)) return 'culture';
+  if (/mekan|restoran|gezi|reise/.test(title)) return 'lifestyle';
+  return 'general';
+}
+
+export function categoryLabel(key) {
+  return t(`filter_${key}`, key);
+}
 
 function gradientDataUri([from, to], seed = 0) {
   const angle = seed % 2 === 0 ? '135' : '45';
@@ -31,14 +54,7 @@ export let globalNews = [];
 export function getNewsImage(article) {
   if (article.image && article.image.startsWith('http')) return article.image;
 
-  // Başlıktan kategori tahmini
-  const title = (article.title || '').toLowerCase();
-  let category = article.category || 'default';
-
-  if (title.includes('ekonomi') || title.includes('enflasyon') || title.includes('euro')) category = 'economy';
-  if (title.includes('sinema') || title.includes('sergi') || title.includes('konser')) category = 'culture';
-  if (title.includes('grev') || title.includes('siyaset') || title.includes('scholz')) category = 'politics';
-  if (title.includes('mekan') || title.includes('restoran') || title.includes('gezi')) category = 'lifestyle';
+  const category = normalizeCategory(article);
 
   const palettes = CATEGORY_PALETTES[category] || CATEGORY_PALETTES.default;
   const str = article.title || article.summary_tr || article.id || 'berlin';
@@ -91,7 +107,7 @@ export function renderNews(articles, category = 'all') {
 
   let filtered = category === 'all'
     ? articles
-    : articles.filter(a => a.category === category);
+    : articles.filter(a => normalizeCategory(a) === category.toLowerCase());
     
   // 1. Horizontal Dashboard (Metin Odaklı - Infinite Ticker)
   const dashboardArticles = filtered.slice(0, 10);
@@ -108,7 +124,7 @@ export function renderNews(articles, category = 'all') {
     return `
       <article class="text-news-block reveal" data-action="open-news" data-index="${globalIdx}">
         <div class="text-news-top">
-          <span class="text-news-category">${escapeHtml(article.category || 'GÜNDEM')}</span>
+          <span class="text-news-category">${escapeHtml(categoryLabel(normalizeCategory(article)))}</span>
           <h3 class="text-news-title">${escapeHtml(rawTitle)}</h3>
         </div>
         <div class="text-news-footer">
@@ -123,9 +139,12 @@ export function renderNews(articles, category = 'all') {
   initTickerEngine(dashboardContainer);
 
 
-  // 2. Premium Discovery (Sonraki 6 haber)
+  // 2. Premium Discovery (Şeritte gösterilmeyen sonraki haberler)
   if (premiumContainer) {
-    const premiumArticles = filtered.slice(10, 16);
+    // 10'dan az haber varken slice(10, 16) her zaman boş dönüyor ve bu
+    // bölüm kalıcı olarak "analiz bulunmuyor" yazıyordu. Yeterli haber
+    // yoksa en güncel 6 haber kart olarak gösterilir.
+    const premiumArticles = filtered.length > 10 ? filtered.slice(10, 16) : filtered.slice(0, 6);
     renderPremiumNews(premiumArticles, premiumContainer);
   }
 
@@ -156,7 +175,7 @@ export function renderPremiumNews(articles, container) {
         <div class="card-bg" style="background-image: url('${imgUrl}')"></div>
         <div class="card-overlay"></div>
         <div class="card-content">
-          <span class="card-category">${escapeHtml(article.category || 'ANALİZ')}</span>
+          <span class="card-category">${escapeHtml(categoryLabel(normalizeCategory(article)))}</span>
           <h3 class="card-title">${escapeHtml(rawTitle)}</h3>
           <p class="card-desc">${escapeHtml(article.content || rawTitle)}</p>
           <div class="card-footer">
@@ -487,6 +506,21 @@ const originalLoadNews = loadNews;
 export async function loadNewsWithDeepLink() {
     await originalLoadNews();
     handleHashNavigation();
+}
+
+/* Kategori filtre butonları (.filter-btn) hiç dinleyiciye bağlı değildi —
+   tıklamanın gözle görünür hiçbir etkisi yoktu. */
+export function initNewsFilters() {
+  const buttons = document.querySelectorAll('.filter-btn');
+  if (!buttons.length) return;
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      buttons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderNews(globalNews, btn.dataset.category || 'all');
+    });
+  });
 }
 
 
