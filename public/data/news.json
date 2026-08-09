@@ -1,24 +1,13 @@
 {
-  "lastUpdated": "2026-08-09T16:33:02.994Z",
+  "lastUpdated": "2026-08-09T18:37:41.269Z",
   "count": 10,
   "articles": [
-    {
-      "title": "Berlin: Hunderte Lehrer fallen wegen Krankheit dauerhaft aus",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-lehrer-krank-ausfaelle-beamte-schule.html",
-      "image": "",
-      "date": "2026-08-09T16:27:14.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
     {
       "title": "Großer Preis von Berlin: Tiffany triumphiert in Hoppegarten",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/136-grosser-preis-hoppgarten-pferderennen-derby-tiffany.html",
       "image": "",
-      "date": "2026-08-09T16:21:37.000Z",
+      "date": "2026-08-09T18:09:54.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
@@ -29,7 +18,73 @@
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-notfaelle-strandbad-halensee-mann-ertrunken.html",
       "image": "",
-      "date": "2026-08-09T16:08:59.000Z",
+      "date": "2026-08-09T18:03:13.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Şehit aileleri ve gazilerin haklarına yönelik düzenlemeleri içeren kanun teklifi TBMM Genel Kurulunda",
+      "description": "TBMM Genel Kurulunda, şehit aileleri ve gazilerin haklarına yönelik düzenlemeleri içeren Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun Teklifi'nin tümü üzerindeki görüşmeler tamamlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/sehit-aileleri-ve-gazilerin-haklarina-yonelik-duzenlemeleri-iceren-kanun-teklifi-tbmm-genel-kurulunda/4022612",
+      "image": "",
+      "date": "2026-08-09T17:25:49.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "\"Sessiz Zarafet\" sergisi İstanbul'da sanatseverlerle buluştu",
+      "description": "Koleksiyoner Mehmet Çebi'nin çağdaş hat, hilye ve tespihlerden oluşan \"Sessiz Zarafet\" sergisi, Tophane-i Amire Kültür ve Sanat Merkezi'nde ziyarete açıldı.",
+      "url": "https://www.aa.com.tr/tr/kultur/sessiz-zarafet-sergisi-istanbulda-sanatseverlerle-bulustu/4022609",
+      "image": "",
+      "date": "2026-08-09T17:19:38.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Happy End: Union beendet zähes Trainingslager mit Limassol-Sieg",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/union-berlin-letztes-testspiel-trainingslager-aris-limassol-.html",
+      "image": "",
+      "date": "2026-08-09T17:08:35.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu ve İsrailli işgalciler Batı Şeria'da Filistinlilere yönelik saldırılarını sürdürüyor",
+      "description": "İsrail ordusu, işgal altındaki Batı Şeria'nın çeşitli bölgelerinde Filistinlilere ait bir evi gasbederek askeri noktaya çevirirken, Filistin topraklarını gasbeden İsrailliler tarım arazilerine zarar verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ve-israilli-isgalciler-bati-seriada-filistinlilere-yonelik-saldirilarini-surduruyor/4022607",
+      "image": "",
+      "date": "2026-08-09T17:00:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye Süper Enduro Şampiyonası'nın ikinci ayağı Kocaeli'de yapıldı",
+      "description": "Türkiye Süper Enduro Şampiyonası'nın ikinci ayağı, Kocaeli'nin Kartepe ilçesinde düzenlendi.",
+      "url": "https://www.aa.com.tr/tr/spor/turkiye-super-enduro-sampiyonasinin-ikinci-ayagi-kocaelide-yapildi/4022602",
+      "image": "",
+      "date": "2026-08-09T16:41:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Berlin: Hunderte Lehrer fallen wegen Krankheit dauerhaft aus",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-lehrer-krank-ausfaelle-beamte-schule.html",
+      "image": "",
+      "date": "2026-08-09T16:27:14.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
@@ -55,61 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Manisa'da çıkan orman yangınına müdahale ediliyor",
-      "description": "Manisa'nın Kula ilçesinde çıkan orman yangınına havadan ve karadan müdahale ediliyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/manisada-cikan-orman-yanginina-mudahale-ediliyor/4022571",
-      "image": "",
-      "date": "2026-08-09T15:16:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kocaeli'de sporcular İzmit Körfezi'ni yüzerek geçti",
-      "description": "Kocaeli'de düzenlenen Ulusal Açık Su Yüzme Yarışları'na katılan 471 sporcu, Gölcük Değirmendere sahilinden Derince'ye kulaç attı.",
-      "url": "https://www.aa.com.tr/tr/spor/kocaelide-sporcular-izmit-korfezini-yuzerek-gecti/4022570",
-      "image": "",
-      "date": "2026-08-09T15:15:47.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Gürlek, orman yangını soruşturmalarında 9 şüphelinin tutuklandığını açıkladı",
-      "description": "Adalet Bakanı Akın Gürlek, 1 Haziran'dan bu yana meydana gelen ve adli işlem yapılan 52 orman yangınına ilişkin soruşturmalarda, 34 şüpheli tespit edildiğini, bu şüphelilerden 9'unun tutuklandığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/bakan-gurlek-orman-yangini-sorusturmalarinda-9-suphelinin-tutuklandigini-acikladi/4022569",
-      "image": "",
-      "date": "2026-08-09T15:13:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Energie Cottbus schlägt Hannover 3:1 bei Zweitliga-Rückkehr",
-      "description": "Ekstase in der Lausitz: Mit einem 3:1-Sieg gegen Hannover 96 ist Energie Cottbus in die 2. Liga zurückgekehrt. Einem alten bekannten im Angriff und einem Neuzugang im Tor sei Dank.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-2-liga-fc-energie-cottbus-hannover-96-liveticker-audiostream-spielbericht.html",
-      "image": "",
-      "date": "2026-08-09T15:03:38.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "60 saniyede bugün (09 Ağustos 2026)",
-      "description": "Türkiye ve dünya gündeminin 60 saniyelik özeti. AJet'in katkılarıyla...",
-      "url": "https://www.aa.com.tr/tr/gundem/60-saniyede-bugun-09-agustos-2026/4022495",
-      "image": "",
-      "date": "2026-08-09T12:51:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
