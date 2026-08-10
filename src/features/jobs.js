@@ -35,6 +35,39 @@ export async function initJobBoard() {
       });
     });
   });
+
+  // #jobModal açılıyordu ama #jobForm'un submit'i hiçbir yere bağlı
+  // değildi — "İlanı Yayınla" tıklaması sayfayı yenilemekten başka
+  // bir şey yapmıyordu. Eksik olan bağlantı buydu.
+  document.getElementById('jobForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!auth.currentUser) {
+      alert('İlan vermek için giriş yapmalısınız.');
+      return;
+    }
+
+    const title = document.getElementById('jobTitle').value.trim();
+    const company = document.getElementById('jobCompany').value.trim();
+    const location = document.getElementById('jobLocation').value.trim();
+    const type = document.getElementById('jobType').value;
+    const contact = document.getElementById('jobContact').value.trim();
+    if (!title || !company || !contact) return;
+
+    try {
+      await addDoc(collection(db, 'jobs'), {
+        title, company, location, type, contact,
+        postedBy: auth.currentUser.uid,
+        status: 'pending',
+        createdAt: serverTimestamp(),
+      });
+      alert('İlanınız başarıyla alındı ve kontrol edildikten sonra yayına girecektir.');
+      e.target.reset();
+      window.closeJobModal();
+    } catch (err) {
+      console.error('Job submit error:', err);
+      alert('İlan gönderilemedi, lütfen tekrar deneyin.');
+    }
+  });
 }
 
 export function renderJobs(jobs) {

@@ -20,7 +20,10 @@
 
 import { initializeApp } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
+import { getFirestore } from 'firebase-admin/firestore';
+import { getMessaging } from 'firebase-admin/messaging';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
+import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 
 initializeApp();
 
@@ -44,3 +47,50 @@ export const syncAdminClaim = onCall({ region: REGION }, async (request) => {
 
   return { admin: shouldBeAdmin };
 });
+
+/*  ═══════════════════════════════════════════════════════════
+    Push Bildirimleri
+
+    NEDEN: admin.js'teki "Bildirimi Gönder" formu her zaman
+    notifications_queue koleksiyonuna yazıyordu, ama o kuyruğu
+    işleyen hiçbir şey yoktu — bildirimler asla gönderilmiyordu.
+    Bu, kuyruğun beklediği tetikleyici.
+    ═══════════════════════════════════════════════════════════ */
+
+const DEAD_TOKEN_CODES = new Set([
+  'messaging/registration-token-not-registered',
+  'messaging/invalid-registration-token',
+]);
+
+async function sendToAllTokens({ title, body, url }) {
+  const db = getFirestore();
+  const tokens = (await db.collection('fcm_tokens').get()).docs.map((d) => d.id);
+  if (!tokens.length) return;
+
+  const messaging = getMessaging();
+  // sendEachForMulticast 500 token/çağrı ile sınırlı — parti parti gönder.
+  for (let i = 0; i < tokens.length; i += 500) {
+    const batch = tokens.slice(i, i + 500);
+    const res = await messaging.sendEachForMulticast({
+      tokens: batch,
+      notification: { title, body },
+      webpush: { fcmOptions: { link: url || '/' } },
+    });
+
+    // Geçersiz/silinmiş token'ları temizle — yoksa her gönderimde
+    // ölü token'lara boşuna istek atılır.
+    const deletions = res.responses
+      .map((r, idx) => (!r.success && DEAD_TOKEN_CODES.has(r.error?.code) ? batch[idx] : null))
+      .filter(Boolean)
+      .map((t) => db.collection('fcm_tokens').doc(t).delete());
+    await Promise.all(deletions);
+  }
+}
+
+export const sendQueuedPush = onDocumentCreated(
+  { region: REGION, document: 'notifications_queue/{id}' },
+  async (event) => {
+    const data = event.data.data();
+    await sendToAllTokens({ title: data.title, body: data.body, url: data.url });
+  }
+);

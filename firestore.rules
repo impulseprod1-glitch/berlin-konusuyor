@@ -97,6 +97,13 @@ service cloud.firestore {
       allow update, delete: if isAdmin();
     }
 
+    // Usta/zanaatkar ilanları — jobs ile aynı moderasyon deseni.
+    match /craftsmen/{doc} {
+      allow read: if true;
+      allow create: if isSignedIn() && request.resource.data.status == 'pending';
+      allow update, delete: if isAdmin();
+    }
+
     match /forum/{doc} {
       allow read: if true;
       allow create: if isSignedIn() && request.resource.data.status == 'pending';

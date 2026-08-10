@@ -2906,6 +2906,82 @@ kbd {
 
 .cookie-body { flex: 1 1 320px; min-width: 0; }
 
+/* ═══════════════════════════════════════════
+   PUSH BİLDİRİM İSTEM BANNER'I
+   .cookie-banner ile aynı göster/gizle deseni — sayfa açılır
+   açılmaz değil, ~20sn sonra ya da ilk haber tıklamasında çıkar.
+   ═══════════════════════════════════════════ */
+.push-prompt-banner {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 10500;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  transform: translateY(120%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s var(--ease), opacity 0.5s var(--ease);
+}
+
+.push-prompt-banner.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.push-prompt-panel {
+  width: 100%;
+  max-width: 480px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-card);
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.push-prompt-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-badge);
+  display: grid;
+  place-items: center;
+  background: var(--glass);
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.push-prompt-body { flex: 1 1 220px; min-width: 0; }
+.push-prompt-body strong { display: block; margin-bottom: 4px; font-size: 0.95rem; }
+.push-prompt-body p { margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; }
+
+.push-prompt-close {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-badge);
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s, color 0.2s;
+}
+.push-prompt-close:hover { background: var(--glass); color: #fff; }
+
+.push-prompt-allow { flex-shrink: 0; }
+
+@media (max-width: 560px) {
+  .push-prompt-panel { flex-direction: column; align-items: stretch; }
+  .push-prompt-allow { width: 100%; justify-content: center; }
+}
+
 .cookie-title {
   font-size: 1.02rem;
   font-family: var(--font-heading);

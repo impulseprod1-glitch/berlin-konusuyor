@@ -163,6 +163,13 @@
                             <label>İçerik/Özet (TR)</label>
                             <textarea id="newsSummary" rows="6"></textarea>
                         </div>
+                        <div class="form-group">
+                            <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+                                <input type="checkbox" id="newsSendPush" style="width:auto;">
+                                🔔 Bu haber için bildirim gönder
+                            </label>
+                        </div>
+
                         <button type="submit" class="admin-btn" id="newsSubmitBtn">Haberi Yayınla</button>
                         <button type="button" id="cancelEditNews" class="admin-btn btn-secondary" style="display:none; margin-top:10px;">İptal Et</button>
                     </form>
@@ -250,6 +257,13 @@
                             <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
                                 <input type="checkbox" id="videoDraft" style="width:auto;">
                                 Taslak olarak kaydet (sitede görünmez)
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="display:flex; align-items:center; gap:10px; cursor:pointer;">
+                                <input type="checkbox" id="videoSendPush" style="width:auto;">
+                                🔔 Bu video için bildirim gönder
                             </label>
                         </div>
 

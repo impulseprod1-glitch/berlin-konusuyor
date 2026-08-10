@@ -446,69 +446,14 @@
 
     <!-- BERLİN REHBERİ -->
     <section class="section" id="rehber">
-      <div class="section-header reveal">
-        <span class="section-tag" data-i18n="guide_tag">Rehber</span>
-        <h2 class="section-title" data-i18n="guide_title">Berlin Rehberi</h2>
-      </div>
-      <div class="bento-grid reveal">
-        <a href="#" class="bento-item bento-large group" aria-label="Berlin Ev Bulma Rehberi">
-          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" loading="lazy" role="img" aria-label="Berlin'de tipik bir bina ve sokak görünümü"></div>
-          <div class="bento-content">
-            <div class="bento-icon"><i class="fas fa-home"></i></div>
-            <h3 class="bento-title" data-i18n="guide_housing">Ev Bulma</h3>
-            <p class="bento-desc" data-i18n="guide_housing_desc">Kiralık ev arama, başvuru süreci ve ipuçları.</p>
-          </div>
-        </a>
-        <a href="#" class="bento-item bento-tall group" aria-label="Berlin Resmi İşlemler Rehberi">
-          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1560969184-10fe8719e047?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Berlin'in resmi binaları ve Türk konsolosluğu"></div>
-          <div class="bento-content">
-            <div class="bento-icon"><i class="fas fa-file-signature"></i></div>
-            <h3 class="bento-title" data-i18n="guide_official">Resmi İşlemler</h3>
-            <p class="bento-desc" data-i18n="guide_official_desc">Anmeldung, vize, çalışma izni ve vatandaşlık süreçleri.</p>
-          </div>
-        </a>
-        <a href="#" class="bento-item group">
-          <div class="bento-bg" style="background-color: var(--accent);"></div>
-          <div class="bento-content">
-            <div class="bento-icon"><i class="fas fa-calendar-alt"></i></div>
-            <h3 class="bento-title" data-i18n="guide_events">Etkinlikler</h3>
-            <p class="bento-desc">Haftalık kültür ve sanat ajandası.</p>
-          </div>
-        </a>
-        <a href="#" class="bento-item bento-wide group" aria-label="Berlin Ulaşım Rehberi">
-          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1587396677465-98317351dfdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Berlin metrosu (U-Bahn) sarı treni"></div>
-          <div class="bento-content">
-            <div class="bento-icon"><i class="fas fa-train"></i></div>
-            <h3 class="bento-title" data-i18n="guide_transport">Ulaşım</h3>
-            <p class="bento-desc" data-i18n="guide_transport_desc">U-Bahn, S-Bahn bilet çeşitleri ve rotalar.</p>
-          </div>
-        </a>
-        <a href="#" class="bento-item group">
-          <div class="bento-bg" style="background-color: var(--card-bg);"></div>
-          <div class="bento-content">
-            <div class="bento-icon"><i class="fas fa-briefcase"></i></div>
-            <h3 class="bento-title" data-i18n="guide_jobs">İş Bulmak</h3>
-            <p class="bento-desc">Mülakat teknikleri ve staj.</p>
-          </div>
-        </a>
-        <a href="#" class="bento-item group" aria-label="Berlin Yeme İçme Rehberi">
-          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Berlin'de popüler bir restoran ve yemek masası"></div>
-          <div class="bento-content">
-            <div class="bento-icon"><i class="fas fa-utensils"></i></div>
-            <h3 class="bento-title">Yeme & İçme</h3>
-            <p class="bento-desc">Nerede ne yenir?</p>
-          </div>
-        </a>
-      </div>
-
       <!-- Interactive City Map Section -->
-      <div class="map-container reveal" style="margin-top: 40px;">
+      <div class="map-container reveal">
         <div class="map-header">
           <span class="section-tag" data-i18n="map_tag">Keşfet</span>
           <h3 class="map-title" data-i18n="map_title">İnteraktif Şehir Haritası</h3>
           <p class="map-desc" data-i18n="map_desc">Resmi kurumları, konut bölgelerini ve sosyal mekanları kategori bazlı keşfedin.</p>
         </div>
-        
+
         <div class="map-filters-container reveal">
           <button class="map-filter-btn" data-action="locate-me" id="locateMeBtn" style="color:var(--accent);" aria-label="Konumumu Bul" title="Konumumu Bul"><i class="fas fa-location-arrow"></i></button>
           <button class="map-filter-btn active" data-filter="all">Tümü</button>
@@ -559,6 +504,35 @@
         </div>
 
         <div class="jobs-grid" id="jobsGrid">
+          <!-- JS Skeleton -->
+        </div>
+      </div>
+    </section>
+
+    <!-- USTALAR (ZANAATKAR PAZARI) -->
+    <section class="section" id="ustalar">
+      <div class="section-header reveal">
+        <span class="section-tag">Zanaatkarlar</span>
+        <h2 class="section-title">Berlin'de Usta Bul</h2>
+        <p class="news-auto-badge">Boya badana, tesisatçı, elektrikçi ve daha fazlası — topluluktan güvenilir ustalar</p>
+      </div>
+
+      <div class="jobs-container reveal">
+        <div class="jobs-toolbar">
+          <div class="jobs-filters" id="craftsmenFilters">
+            <button class="craftsman-filter-btn job-filter-btn active" data-trade="all">Tümü</button>
+            <button class="craftsman-filter-btn job-filter-btn" data-trade="boya-badana">Boya & Badana</button>
+            <button class="craftsman-filter-btn job-filter-btn" data-trade="tesisatci">Tesisatçı</button>
+            <button class="craftsman-filter-btn job-filter-btn" data-trade="elektrikci">Elektrikçi</button>
+            <button class="craftsman-filter-btn job-filter-btn" data-trade="laminat-parke">Laminat & Parke</button>
+            <button class="craftsman-filter-btn job-filter-btn" data-trade="nakliyat">Nakliyat</button>
+            <button class="craftsman-filter-btn job-filter-btn" data-trade="temizlik">Temizlik</button>
+            <button class="craftsman-filter-btn job-filter-btn" data-trade="diger">Diğer</button>
+          </div>
+          <button class="post-job-btn magnetic-btn" data-action="open-craftsman-modal">Usta Olarak Kaydol</button>
+        </div>
+
+        <div class="jobs-grid" id="craftsmenGrid">
           <!-- JS Skeleton -->
         </div>
       </div>
@@ -777,6 +751,36 @@
         <input type="email" id="jobContact" class="qa-input" placeholder="İletişim İçin E-posta" required />
         
         <button type="submit" class="qa-submit magnetic-btn" style="width: 100%;">İlanı Yayınla</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══════════════ USTA KAYIT MODAL ═══════════════ -->
+  <div id="craftsmanModal" class="modal login-modal">
+    <div class="modal-content glass-panel login-modal-content">
+      <span class="modal-close" data-action="close-craftsman-modal">&times;</span>
+      <h2 class="login-modal-title" style="margin-bottom: 10px;">Usta Olarak Kaydol</h2>
+      <p class="login-modal-subtitle">Berlin topluluğuna ücretsiz usta kaydı oluşturun.</p>
+
+      <form id="craftsmanForm" class="qa-form">
+        <input type="text" id="craftsmanName" class="qa-input" placeholder="Adınız / İşletme Adınız" required />
+
+        <select id="craftsmanTrade" class="qa-category-select" style="width: 100%; margin-bottom: 10px;" required>
+          <option value="" disabled selected>Uzmanlık Alanı Seçin</option>
+          <option value="boya-badana">Boya & Badana</option>
+          <option value="tesisatci">Tesisatçı</option>
+          <option value="elektrikci">Elektrikçi</option>
+          <option value="laminat-parke">Laminat & Parke</option>
+          <option value="nakliyat">Nakliyat</option>
+          <option value="temizlik">Temizlik</option>
+          <option value="diger">Diğer İşler</option>
+        </select>
+
+        <input type="text" id="craftsmanDistrict" class="qa-input" placeholder="Hizmet Bölgesi (Örn: Neukölln)" />
+        <input type="tel" id="craftsmanPhone" class="qa-input" placeholder="Telefon / WhatsApp Numarası (Örn: +49...)" required />
+        <textarea id="craftsmanDescription" class="qa-input qa-textarea" placeholder="Kısa açıklama (deneyim, hizmetler...)" rows="3"></textarea>
+
+        <button type="submit" class="qa-submit magnetic-btn" style="width: 100%;">Kaydı Gönder</button>
       </form>
     </div>
   </div>

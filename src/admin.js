@@ -1,11 +1,12 @@
 import {
   db, auth, collection, addDoc, getDocs, getDoc, query, orderBy, onSnapshot, serverTimestamp,
-  doc, updateDoc, deleteDoc, where, onAuthStateChanged
+  doc, setDoc, updateDoc, deleteDoc, where, onAuthStateChanged
 } from './firebase-config.js';
 import { uploadMedia, probeVideoFile, convertImageToWebP } from './utils/media-upload.js';
 import { parseVideoUrl } from './utils/video-url.js';
 import { resolveAdminStatus } from './utils/admin-claim.js';
 import { categoryLabel } from './features/news.js';
+import { contentPath } from './utils/slug.js';
 
 // --- ADMIN AUTH BARRIER ---
 // Gerçek yetki sınırı firestore.rules/storage.rules'taki "admin" custom
@@ -160,6 +161,18 @@ const updateStats = () => {
 };
 
 
+// --- PUSH BİLDİRİM KUYRUĞU ---
+// functions/index.js'teki sendQueuedPush tetikleyicisi bu koleksiyonu
+// dinliyor ve gerçek FCM gönderimini yapıyor.
+async function queuePushNotification({ title, body, url }) {
+  await addDoc(collection(db, 'notifications_queue'), {
+    title,
+    body: body.length > 120 ? body.slice(0, 117) + '…' : body,
+    url,
+    createdAt: serverTimestamp(),
+  });
+}
+
 // --- NEWS MANAGEMENT ---
 const addNewsForm = document.getElementById('addNewsForm');
 const newsSubmitBtn = document.getElementById('newsSubmitBtn');
@@ -199,7 +212,18 @@ if (addNewsForm) {
       } else {
         newsData.createdAt = serverTimestamp();
         newsData.date = new Date().toISOString();
-        await addDoc(collection(db, "news"), newsData);
+        // ID'yi yazmadan önce üretiyoruz ki bildirim linki (contentPath)
+        // aynı ID'yi kullanabilsin — addDoc sonrasına bırakırsak sıra sorunu olur.
+        const ref = doc(collection(db, "news"));
+        await setDoc(ref, newsData);
+
+        if (document.getElementById('newsSendPush')?.checked) {
+          await queuePushNotification({
+            title: newsData.title,
+            body: newsData.summary_tr || newsData.title,
+            url: contentPath('haber', { id: ref.id, title: newsData.title }),
+          });
+        }
         alert('Haber yayınlandı!');
       }
       resetNewsForm();
@@ -436,7 +460,17 @@ document.getElementById('addVideoForm')?.addEventListener('submit', async (e) =>
       videoData.date = new Date().toISOString();
       videoData.views = 0;
       videoData.createdAt = serverTimestamp();
-      await addDoc(collection(db, 'videos'), videoData);
+      const ref = doc(collection(db, 'videos'));
+      await setDoc(ref, videoData);
+
+      // Taslaklar sitede görünmüyor, bildirim de gönderilmemeli.
+      if (document.getElementById('videoSendPush')?.checked && videoData.status !== 'draft') {
+        await queuePushNotification({
+          title: videoData.title,
+          body: videoData.description || videoData.title,
+          url: contentPath('video', { id: ref.id, title: videoData.title }),
+        });
+      }
       alert('Video yayınlandı! Ana sayfada anında görünür.');
     }
 
@@ -698,22 +732,28 @@ async function loadVerificationList() {
   try {
     const forumSnap = await getDocs(query(collection(db, "forum"), where("status", "==", "pending")));
     const jobsSnap = await getDocs(query(collection(db, "jobs"), where("status", "==", "pending")));
+    const craftsmenSnap = await getDocs(query(collection(db, "craftsmen"), where("status", "==", "pending")));
 
     const items = [];
     forumSnap.forEach(d => items.push({ id: d.id, col: 'forum', ...d.data() }));
     jobsSnap.forEach(d => items.push({ id: d.id, col: 'jobs', ...d.data() }));
+    craftsmenSnap.forEach(d => items.push({ id: d.id, col: 'craftsmen', ...d.data() }));
+
+    const COL_LABELS = { forum: 'Forum', jobs: 'İş İlanı', craftsmen: 'Usta Kaydı' };
 
     const html = items.map(item => {
       let title = item.title || item.name || 'Başlıksız';
       let body = item.text || '';
       if (item.col === 'jobs') {
         body = `${item.company || ''} | ${item.location || ''}<br>${item.contact || ''}`;
+      } else if (item.col === 'craftsmen') {
+        body = `${item.trade || ''} | ${item.district || ''}<br>${item.phone || ''}`;
       }
 
       return `
         <div class="verification-card">
           <div class="verification-info">
-            <div class="verification-type">${item.col === 'forum' ? 'Forum' : 'İş İlanı'}</div>
+            <div class="verification-type">${COL_LABELS[item.col] || item.col}</div>
             <div class="verification-title">${title}</div>
             <p class="verification-body">${body}</p>
           </div>

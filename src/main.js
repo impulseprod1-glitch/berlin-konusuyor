@@ -11,6 +11,7 @@ import { loadEvents } from './features/events.js';
 import { loadPodcasts, initPodcastsUI } from './features/podcasts.js';
 import { initQAForum } from './features/forum.js';
 import { initJobBoard } from './features/jobs.js';
+import { initCraftsmenBoard } from './features/craftsmen.js';
 import { initChat } from './features/chat.js';
 import { 
   initSplash, initScrollProgress, initTextReveal, initNavbar, 
@@ -26,6 +27,7 @@ import {
 } from './features/extras.js';
 import { initMap } from './features/map.js';
 import { initNotifications, requestNotificationPermission } from './features/notifications.js';
+import { initPushPrompt } from './features/push-prompt.js';
 import { auth } from './firebase-config.js';
 import { initBridge } from './features/bridge.js';
 import { initAnalytics } from './features/analytics.js';
@@ -84,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPodcastsUI();
     initQAForum();
     initJobBoard();
+    initCraftsmenBoard();
     initChat();
     initServiceWorker();
     initAnalytics();
@@ -106,7 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initServiceWorker();
     initPullToRefresh();
     initNotifications();
-    
+    initPushPrompt();
+
     // Notification listener for CTA
     const pushBtn = document.getElementById('pushSubscribeBtn');
     if (pushBtn) {
@@ -142,6 +146,12 @@ document.addEventListener('click', (e) => {
       break;
     case 'close-job-modal':
       if (window.closeJobModal) window.closeJobModal();
+      break;
+    case 'open-craftsman-modal':
+      if (window.openCraftsmanModal) window.openCraftsmanModal();
+      break;
+    case 'close-craftsman-modal':
+      if (window.closeCraftsmanModal) window.closeCraftsmanModal();
       break;
     case 'open-legal':
       e.preventDefault();
