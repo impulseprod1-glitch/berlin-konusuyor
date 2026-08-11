@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-08-11T20:40:48.407Z",
+  "lastUpdated": "2026-08-11T22:39:25.890Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Azerbaycan Cumhurbaşkanı Aliyev Zengezur Koridoru'nu değerlendirdi",
+      "description": "Azerbaycan Cumhurbaşkanı İlham Aliyev, \"Buradan fiber optik kablo, ardından elektrik hatları, gelecekte ihtiyaç olması halinde petrol ve doğal gaz boru hatları da geçebilir. Dolayısıyla Zengezur Koridoru'na bugün daha geniş açıdan bakıyoruz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/azerbaycan-cumhurbaskani-aliyev-zengezur-koridorunu-degerlendirdi/4024689",
+      "image": "",
+      "date": "2026-08-11T22:01:07.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "TBMM'nin tatile girmesine ilişkin karar Resmi Gazete'de",
+      "description": "Türkiye Büyük Millet Meclisi'nin (TBMM) 1 Ekim'e kadar tatile girmesine ilişkin karar, Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/tbmmnin-tatile-girmesine-iliskin-karar-resmi-gazetede/4024681",
+      "image": "",
+      "date": "2026-08-11T21:16:29.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "UEFA Şampiyonlar Ligi'nde üçüncü eleme turu  rövanş maçları tamamlandı",
+      "description": "UEFA Şampiyonlar Ligi'nde üçüncü eleme turu rövanş maçları sona erdi.",
+      "url": "https://www.aa.com.tr/tr/spor/uefa-sampiyonlar-liginde-ucuncu-eleme-turu-rovans-maclari-tamamlandi/4024677",
+      "image": "",
+      "date": "2026-08-11T21:09:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail basını: CENTCOM Komutanı Cooper, Gazze'de ateşkes için 15 maddelik plana bağlı olduklarını belirtti",
+      "description": "ABD Merkez Kuvvetler Komutanı (CENTCOM) Brad Cooper’ın, Washington yönetiminin Gazze Şeridi’ndeki ateşkese ilişkin 15 maddelik anlaşmaya bağlı olduğunu Uluslararası İstikrar Gücü temsilcilerine ilettiği öne sürüldü.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-centcom-komutani-cooper-gazzede-ateskes-icin-15-maddelik-plana-bagli-olduklarini-belirtti/4024674",
+      "image": "",
+      "date": "2026-08-11T21:02:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye, Kolombiya'nın \"işgal altındaki Golan Tepeleri'nde İsrail egemenliğini tanıyan\" kararını kınadı",
+      "description": "Dışişleri Bakanlığı, Kolombiya'nın işgal altındaki Golan Tepeleri üzerinde \"İsrail egemenliğini tanıdığı\" yönündeki kararının kınandığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/turkiye-kolombiyanin-isgal-altindaki-golan-tepelerinde-israil-egemenligini-taniyan-kararini-kinadi/4024665",
+      "image": "",
+      "date": "2026-08-11T20:52:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Traber-Derby: \"Vierbeinige Superstars\" bei \"Jahrhundertrennen\"",
       "description": "Beim 131. Deutschen Traber-Derby stehen zwei Pferde ganz besonders im Fokus: Fragolino Rosso und Blizzard Diamant. Sie sind schier unbesiegbar, teilen den selben Trainer, eigentlich auch den selben Fahrer und treffen nun erstmals aufeinander.",
@@ -11,28 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Yunanistan’ın Pilio Yarımadası ve Girit Adası’nda yangın çıktı",
-      "description": "Yunanistan’ın Pilio Yarımadası ve Girit Adası’nın Milopotamo bölgesinde yangın çıktığı belirtildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/yunanistan-in-pilio-yarimadasi-ve-girit-adasi-nda-yangin-cikti/4024639",
-      "image": "",
-      "date": "2026-08-11T20:09:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ordusu, işgal altındaki Batı Şeria'da 2 beldeyi \"kapalı askeri bölge\" ilan etti",
-      "description": "İsrail ordusu, işgal altındaki Batı Şeria'nın kuzeyinde son haftalarda Filistin topraklarını gasbeden İsraillilerin saldırdığı ve kaçak yerleşimler kurduğu Kusra ve Celud beldelerini \"kapalı askeri bölge\" ilan etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-isgal-altindaki-bati-seriada-2-beldeyi-kapali-askeri-bolge-ilan-etti/4024634",
-      "image": "",
-      "date": "2026-08-11T20:05:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -55,39 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Arap ülkeleri, Kolombiya'nın işgal altındaki Golan Tepeleri'nde İsrail egemenliğini tanıyan kararını kınadı",
-      "description": "Arap ülkeleri, Kolombiya'nın işgal altındaki Suriye toprağı Golan Tepeleri üzerindeki sözde İsrail egemenliğini tanıma kararını kınayarak, Kolombiya'ya bu adımdan geri dönme çağrısında bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/arap-ulkeleri-kolombiyanin-isgal-altindaki-golan-tepelerinde-israil-egemenligini-taniyan-kararini-kinadi/4024626",
-      "image": "",
-      "date": "2026-08-11T19:28:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fenerbahçe, play-off turuna galibiyetle yükseldi",
-      "description": "Fenerbahçe, UEFA Şampiyonlar Ligi 3. eleme turu rövanş maçında Sturm Graz’ı 1-0 yenerek play-off’a yükseldi.",
-      "url": "https://www.aa.com.tr/tr/spor/fenerbahce-play-off-turuna-galibiyetle-yukseldi/4024623",
-      "image": "",
-      "date": "2026-08-11T19:23:29.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "BM'den Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun'a destek açıklaması",
-      "description": "Birleşmiş Milletler (BM) Genel Sekreter Sözcü Yardımcısı Farhan Haq, Milli Dayanışma ve Toplumsal Bütünleşmenin Güçlendirilmesine Dair Kanun'un geçmesini desteklediklerini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/bmden-milli-dayanisma-ve-toplumsal-butunlesmenin-guclendirilmesine-dair-kanuna-destek-aciklamasi/4024617",
-      "image": "",
-      "date": "2026-08-11T19:17:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
