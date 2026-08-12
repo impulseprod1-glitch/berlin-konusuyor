@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-08-12T16:55:12.803Z",
+  "lastUpdated": "2026-08-12T18:59:28.616Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Im Re-Live: Sonnenfinsternis über Berlin und Brandenburg",
+      "description": "Am Mittwochabend kommt es zu einem seltenen Naturschauspiel: Eine Sonnenfinsternis wird in weiten teilen Westeuropas zu sehen sein. Sehen Sie hier im Stream, wie sich der Mond vor die Sonne schiebt.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/livestream-sonnenfinsternis-berlin-brandenburg.html",
+      "image": "",
+      "date": "2026-08-12T18:45:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Sonnenfinsternis: Tausende vor Zeiss-Großplanetarium in Berlin",
+      "description": "Die Suche nach Schutzbrillen für die Sonnenfinsternis führte tausende Menschen zum Zeiss-Großplanetarium in Berlin - wo sie einen Polizeieinsatz auslösten.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/sonnenfinsternis-berlin-zeiss-grossplanetarium.html",
+      "image": "",
+      "date": "2026-08-12T18:38:28.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Güneş tutulması gökyüzü meraklılarını buluşturdu",
+      "description": "Kısmi Güneş tutulması, birçok ülkede gökyüzü meraklıları tarafından heyecanla takip ediliyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/gunes-tutulmasi-gokyuzu-meraklilarini-bulusturdu/4025725",
+      "image": "",
+      "date": "2026-08-12T18:30:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Aile ve Sosyal Hizmetler Bakanlığı \"Küçük trans çocuklara örnek olacağız\" paylaşımları için suç duyurusunda bulundu",
+      "description": "Aile ve Sosyal Hizmetler Bakanlığı, bazı sosyal medya platformlarındaki \"Küçük trans çocuklara örnek olacağız\" başlığıyla yayımlanan paylaşımlara ilişkin Cumhuriyet Başsavcılığına suç duyurusunda bulunulduğunu bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/aile-ve-sosyal-hizmetler-bakanligi-kucuk-trans-cocuklara-ornek-olacagiz-paylasimlari-icin-suc-duyurusunda-bulundu/4025723",
+      "image": "",
+      "date": "2026-08-12T18:26:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bad vor der Volksbühne bleibt auch Donnerstag noch geschlossen",
+      "description": "",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/volksbad-berliner-volksbuehne-geschlossen-dusche-kaputt.html",
+      "image": "",
+      "date": "2026-08-12T18:19:18.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "AK Parti Genel Başkan Yardımcısı Acar: Hiçbir şeyin eskisi gibi olmadığı, 25 yıllık bir hikayeyle buluşmuş olacağız",
+      "description": "AK Parti Genel Başkan Yardımcısı, Tanıtım ve Medya Başkanı Acar, \"AK Parti'mizin 'Artık hiçbir şey eskisi gibi olmayacak' sözünden sonra, gerçekten hiçbir şeyin eskisi gibi olmadığı, 25 yıllık bir hafızayla 14 Ağustos günü buluşmuş olacağız.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ak-parti-genel-baskan-yardimcisi-acar-hicbir-seyin-eskisi-gibi-olmadigi-25-yillik-bir-hikayeyle-bulusmus-olacagiz/4025712",
+      "image": "",
+      "date": "2026-08-12T18:00:38.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran ordusu: Füze ve İHA kapasitemizin yüzde 75'ten fazlası henüz kullanılmadı",
+      "description": "İran Ordusu Komutan Yardımcısı Tuğgeneral Ali Rıza Şeyh, ülkenin füze ve insansız hava aracı (İHA) kapasitesinin yüzde 75'ten fazlasının hala kullanılmadığını öne sürdü.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-ordusu-fuze-ve-iha-kapasitemizin-yuzde-75ten-fazlasi-henuz-kullanilmadi/4025711",
+      "image": "",
+      "date": "2026-08-12T18:00:08.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD Başkanı Trump'a Truth Social paylaşımlarına erişim hizmeti satışı nedeniyle dava açıldı",
+      "description": "ABD'de iki medya kuruluşu, Trump Media & Technology Group'un sosyal medya platformu Truth Social'daki paylaşımlara hızlı erişim hakkı satma hamlesi dolayısıyla Başkan Donald Trump'a dava açtı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abd-baskani-trumpa-truth-social-paylasimlarina-erisim-hizmeti-satisi-nedeniyle-dava-acildi/4025705",
+      "image": "",
+      "date": "2026-08-12T17:55:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Deutsche Bahn bietet Begleitservice für Kinder von 6 bis 14 Jahren",
       "description": "",
@@ -14,99 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Sonnenfinsternis: Hunderte vor Zeiss-Großplanetarium in Berlin",
-      "description": "Die Suche nach Schutzbrillen für die Sonnenfinsternis führte hunderte Menschen zum Zeiss-Großplanetarium in Berlin - wo sie einen Polizeieinsatz auslösten.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/sonnenfinsternis-berlin-zeiss-grossplanetarium.html",
-      "image": "",
-      "date": "2026-08-12T16:46:14.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "Finanzen: Haushaltssperre fürs Havelland verhängt",
       "description": "",
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/08/havelland-haushaltssperre-finanzen-angespannt-ausgaben.html",
       "image": "",
       "date": "2026-08-12T16:31:21.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "ABD Kongresi için yarışan Müslüman adaylardan Ilhan Omar, Minnesota'daki ön seçimleri kazandı",
-      "description": "ABD Temsilciler Meclisi'ndeki Müslüman üyelerden Ilhan Omar, Minnesota'dan Kongre'ye girmek için katıldığı Demokratların ön seçimlerini kazandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-kongresi-icin-yarisan-musluman-adaylardan-ilhan-omar-minnesotadaki-on-secimleri-kazandi/4025643",
-      "image": "",
-      "date": "2026-08-12T16:27:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Dusan Vlahovic, Beşiktaş yolunda",
-      "description": "Beşiktaş Kulübü, Sırp santrfor Dusan Vlahovic ile transfer görüşmelerine başlandığını açıkladı.",
-      "url": "https://www.aa.com.tr/tr/spor/dusan-vlahovic-besiktas-yolunda/4025612",
-      "image": "",
-      "date": "2026-08-12T15:56:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fenerbahçe, Romelu Lukaku'yu kadrosuna kattı",
-      "description": "Fenerbahçe Futbol Direktörü Oğuz Çetin, Belçikalı santrfor Romelu Lukaku'nun transfer edildiğini açıkladı.",
-      "url": "https://www.aa.com.tr/tr/spor/fenerbahce-romelu-lukakuyu-kadrosuna-katti/4025607",
-      "image": "",
-      "date": "2026-08-12T15:52:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Irak Başbakanı Zeydi: \"Uluslararası Koalisyonun Irak'taki görevinin sona ermesi için 30 Eylül kesin tarih\"",
-      "description": "Irak Başbakanı Ali ez-Zeydi, Uluslararası Koalisyonun Irak'taki görevinin 30 Eylül'de sona ereceğini belirterek, bu tarihin kesin olduğunu ve değiştirilmeyeceğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/irak-basbakani-zeydi-uluslararasi-koalisyonun-iraktaki-gorevinin-sona-ermesi-icin-30-eylul-kesin-tarih/4025604",
-      "image": "",
-      "date": "2026-08-12T15:49:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Klimakammern sollen Forschung zu Pflanzen in Berlin voranbringen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-pflanzenschutzamt-klimakammern-millionen-investition-forschung.html",
-      "image": "",
-      "date": "2026-08-12T15:46:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fransa'da 40 binden fazla kişi içme suyu kesintileriyle karşı karşıya",
-      "description": "Fransa Ekolojik Dönüşüm Bakanı Monique Barbut, ülkede 40 binden fazla kişinin içme suyu kesintileriyle karşı karşıya olduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransada-40-binden-fazla-kisi-icme-suyu-kesintileriyle-karsi-karsiya/4025600",
-      "image": "",
-      "date": "2026-08-12T15:41:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Feuer in Wohnanlage in Biesdorf: Polizei ermittelt wegen Brandstiftung",
-      "description": "Nach einem Feuer in einer Anlage für betreutes Wohnen in Berlin-Biesdorf geht die Polizei dem Verdacht von fahrlässiger Brandstiftung nach. Für bedürftige Bewohner stehen Ersatzunterkünfte bereit.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/brand-biesdorf-brandstiftung-ermittlungen.html",
-      "image": "",
-      "date": "2026-08-12T15:10:29.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
