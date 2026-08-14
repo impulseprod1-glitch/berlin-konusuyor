@@ -1,7 +1,118 @@
 {
-  "lastUpdated": "2026-08-14T13:02:37.308Z",
-  "count": 0,
-  "articles": [],
+  "lastUpdated": "2026-08-14T14:49:42.215Z",
+  "count": 10,
+  "articles": [
+    {
+      "title": "Fischerei in Storkow mit 800-jähriger Tradition verkauft",
+      "description": "",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/08/fischerei-storkow-verkauft-betreiber-gesucht.html",
+      "image": "",
+      "date": "2026-08-14T14:38:20.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İletişim Başkanlığı, \"Hacı Bektaş Veli Anma Etkinlikleri Medya Programı\" düzenliyor",
+      "description": "Cumhurbaşkanlığı İletişim Başkanlığı, Nevşehir'in Hacıbektaş ilçesinde Hacı Bektaş Veli Anma Etkinlikleri Medya Programı düzenliyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskanligi-haci-bektas-veli-anma-etkinlikleri-medya-programi-duzenliyor/4027567",
+      "image": "",
+      "date": "2026-08-14T14:37:43.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD yakıt ikmal uçakları nedeniyle İsrail'in Ben Gurion Havalimanı'nda uçuşların aksadığı bildirildi",
+      "description": "İsrail'in Ben Gurion Havalimanı'nda konuşlu ABD yakıt ikmal uçaklarının hareketliliği nedeniyle uçuşlarda aksama yaşandığı belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-yakit-ikmal-ucaklari-nedeniyle-israilin-ben-gurion-havalimaninda-ucuslarin-aksadigi-bildirildi/4027563",
+      "image": "",
+      "date": "2026-08-14T14:33:34.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Rusya: AB'nin gemilerini hedef alacağız",
+      "description": "Rusya Dışişleri Bakanı Sergey Lavrov, Avrupa Birliği (AB) ülkelerine ait gemileri hedef alacaklarını belirterek, \"Hedefleri kendimiz belirleyeceğiz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/rusya-abnin-gemilerini-hedef-alacagiz/4027557",
+      "image": "",
+      "date": "2026-08-14T14:27:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İletişim Başkanı Duran, Pakistan'ın Bağımsızlık Günü'nü kutladı",
+      "description": "Cumhurbaşkanlığı İletişim Başkanı Burhanettin Duran, Pakistan'ın Bağımsızlık Günü'nü kutladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/iletisim-baskani-duran-pakistanin-bagimsizlik-gununu-kutladi/4027556",
+      "image": "",
+      "date": "2026-08-14T14:26:04.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İstanbul'daki vize danışmanlığı soruşturmasında 38 şüpheliye tutuklama talebi",
+      "description": "Vize danışmanlığı adı altında faaliyet göstererek randevu sistemlerine yazılımlarla eriştikleri ve vatandaşlardan ücret tahsil ettikleri belirlenen yapılara yönelik soruşturmada gözaltına alınan 38 kişi tutuklama talebiyle hakimliğe sevk edildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbuldaki-vize-danismanligi-sorusturmasinda-38-supheliye-tutuklama-talebi/4027553",
+      "image": "",
+      "date": "2026-08-14T14:22:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kommentar zu abgesagter \"Volksbad\"-Veranstaltung: Armutszeugnis für Berlin",
+      "description": "In der so angeblich bunten Stadt der Freiheit wird ein Sonder-Badetag für einen Verein der Schwarzen Community abgesagt. Grund ist rechte Hetze gegen das Event im \"Volksbad\" an der Volksbühne. Bitter ist allerdings auch, wie naiv die Volksbühne agiert.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/kommentar-volksbuehne-schwimmbad-schwarze-menschen-veranstaltung-absage.html",
+      "image": "",
+      "date": "2026-08-14T14:09:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "52-Jährige vor Mauerweglauf: \"Wenn man nachts läuft, muss man aufpassen\"",
+      "description": "161 Kilometer entlang des ehemaligen Mauerstreifens: Dorothee Serries startet zum dritten Mal beim Mauerweglauf. Die 52-Jährige spricht über nächtliche Kilometer, Gemeinschaftsgefühl und die Erinnerung an die Teilung.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/interview-dorothee-serries-mauerweglauf-100-meilen-ultramarathon.html",
+      "image": "",
+      "date": "2026-08-14T13:37:17.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "\"Volksbad\"-Veranstaltung mit Verein Eoto abgesagt",
+      "description": "Das temporäre Schwimmbecken vor der Berliner Volksbühne sollte für einige Stunden exklusiv für einen Verein der Schwarzen Community reserviert sein. Doch wird die Veranstaltung nicht stattfinden - es gibt Sicherheitsbedenken.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/berlin-volksbuehne-schwimmbecken-eoto-schwarze-menschen-abgesagt.html",
+      "image": "",
+      "date": "2026-08-14T13:00:48.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Tanz im August mit Satire-Revue \"Trapicana\" eröffnet",
+      "description": "\"Trapicana\", eine Satire auf Kubas wohl berühmteste Touristenfalle, hat die diesjährige Ausgabe des Festivals Tanz im August eröffnet. Glamouröse Kostüme treffen auf emotionale Abgründe. Doch der nachvollziehbaren Kritik geht nach und nach die Luft aus.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/berlin-hebbel-am-ufer-hau-tanz-im-august-tanzfestival.html",
+      "image": "",
+      "date": "2026-08-14T12:49:58.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    }
+  ],
   "insights": {
     "weatherAdvice": "Berlin'de güzel bir gün dileriz!",
     "newsBrief": "Berlin gündemi her zaman hareketli."
