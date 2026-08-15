@@ -1,7 +1,18 @@
 {
-  "lastUpdated": "2026-08-15T02:50:24.109Z",
+  "lastUpdated": "2026-08-15T04:28:32.246Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Jandarma ve Sahil Güvenlik Komutanlığına ilişkin atamalar Resmi Gazete'de",
+      "description": "Jandarma Genel Komutanlığı ve Sahil Güvenlik Komutanlığına ilişkin atamalar Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/jandarma-ve-sahil-guvenlik-komutanligina-iliskin-atamalar-resmi-gazetede/4027900",
+      "image": "",
+      "date": "2026-08-15T03:56:25.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Endonezya'da 7,7 büyüklüğünde deprem",
       "description": "Endonezya'da 7,7 büyüklüğünde deprem meydana geldi.",
@@ -99,17 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Nevşehir'de Hacı Bektaş Veli'nin Hakk'a Yürüyüşünün 755. Yıl Dönümü Anma Etkinliği düzenlendi",
-      "description": "Kültür ve Turizm Bakanlığınca Nevşehir'in Hacıbektaş ilçesinde, \"Hacı Bektaş Veli'nin Hakk'a Yürüyüşünün 755. Yıl Dönümü Anma Etkinlikleri\" düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/kultur/nevsehirde-haci-bektas-velinin-hakka-yuruyusunun-755-yil-donumu-anma-etkinligi-duzenlendi/4027801",
-      "image": "",
-      "date": "2026-08-14T18:43:28.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
