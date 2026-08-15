@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-08-14T22:20:35.512Z",
+  "lastUpdated": "2026-08-15T01:07:56.999Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Endonezya'da 7,7 büyüklüğünde deprem",
+      "description": "Endonezya'da 7,7 büyüklüğünde deprem meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/dunya/endonezyada-7-7-buyuklugunde-deprem/4027886",
+      "image": "",
+      "date": "2026-08-14T22:53:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran Dışişleri Bakanı Erakçi: ABD ile müzakere konusunda henüz bir karar almadık",
+      "description": "İran Dışişleri Bakanı Abbas Erakçi, ABD ile müzakerelere yeniden başlama konusunda henüz bir karar almadıklarını söyledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-disisleri-bakani-erakci-abd-ile-muzakere-konusunda-henuz-bir-karar-almadik/4027883",
+      "image": "",
+      "date": "2026-08-14T22:19:49.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "BAE'nin ADNOC şirketine ait bir tanker Hürmüz Boğazı'nda hedef alındı",
       "description": "Birleşik Arap Emirlikleri (BAE), ulusal petrol şirketi ADNOC'a ait bir tankerin Hürmüz Boğazı'ndan geçişi sırasında hedef alındığını bildirdi.",
@@ -19,17 +41,6 @@
       "url": "https://www.aa.com.tr/tr/gundem/turkiyeye-iade-edilen-organize-suc-orgutu-elebasi-serkan-kurtulus-istanbula-getirildi/4027879",
       "image": "",
       "date": "2026-08-14T21:56:04.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AK Parti'nin 25. yıl vizyon belgesi paylaşıldı",
-      "description": "AK Parti'nin 25. yıl vizyon belgesi, partinin 25. kuruluş yıl dönümü kutlama programında paylaşıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/ak-partinin-25-yil-vizyon-belgesi-paylasildi/4027867",
-      "image": "",
-      "date": "2026-08-14T20:55:20.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -66,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Son şampiyon Galatasaray, sezonun açılış maçında 1 puanı son anda kurtardı",
-      "description": "Son şampiyon Galatasaray, Trendyol Süper Lig'in ilk haftasında konuk ettiği Arca Çorum FK ile 2-2 berabere kaldı.",
-      "url": "https://www.aa.com.tr/tr/spor/son-sampiyon-galatasaray-sezonun-acilis-macinda-1-puani-son-anda-kurtardi/4027851",
-      "image": "",
-      "date": "2026-08-14T20:12:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
