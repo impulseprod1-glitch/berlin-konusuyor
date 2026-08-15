@@ -1,35 +1,57 @@
 {
-  "lastUpdated": "2026-08-15T18:26:26.509Z",
+  "lastUpdated": "2026-08-15T20:20:01.230Z",
   "count": 10,
   "articles": [
     {
-      "title": "Türkiye'ye iade edilen organize suç örgütü elebaşı Serkan Kurtuluş tutuklandı",
-      "description": "Kırmızı bültenle uluslararası seviyede aranırken Arjantin'de yakalanarak Türkiye'ye iade edilen organize suç örgütü elebaşı Serkan Kurtuluş, İzmir 3. Ağır Ceza Mahkemesince tutuklandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/turkiyeye-iade-edilen-organize-suc-orgutu-elebasi-serkan-kurtulus-tutuklandi/4028434",
+      "title": "TBMM Başkanı Kurtulmuş: Bu memlekette artık ne ayrılıkçı söze ne de ayrımcılık sözlerine yer yoktur",
+      "description": "TBMM Başkanı Kurtulmuş, Terörsüz Türkiye sürecine ilişkin, \"Bu memlekette artık ne ayrılıkçı söze ne de ayrımcılık sözlerine yer yoktur.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/tbmm-baskani-kurtulmus-bu-memlekette-artik-ne-ayrilikci-soze-ne-de-ayrimcilik-sozlerine-yer-yoktur/4028485",
       "image": "",
-      "date": "2026-08-15T18:16:15.000Z",
+      "date": "2026-08-15T20:08:43.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "\"Alihan Kuriş çıkar amaçlı suç örgütü\" soruşturmasında \"şüpheli\" para trafiği deşifre edildi",
-      "description": "Soruşturma kapsamında hazırlanan MASAK raporunda, örgütle bağlantılı şirketlerin, aralarında Suudi Arabistan, Birleşik Arap Emirlikleri ve ABD'nin de bulunduğu ülkelerdeki hesaplarla 66 milyar lirayı aşan para trafiği gerçekleştirdiği belirlendi.",
-      "url": "https://www.aa.com.tr/tr/gundem/alihan-kuris-cikar-amacli-suc-orgutu-sorusturmasinda-supheli-para-trafigi-desifre-edildi/4028426",
+      "title": "Techno-Parade \"Rave the Planet\" zieht durch Tiergarten",
+      "description": "Zehntausende Raver waren am Samstag auf der Techno-Parade im Tiergarten unterwegs - unter dem Motto: \"Imagine Love\". Nach dem Anschlag auf den Berliner CSD stand das Thema Sicherheit besonders im Fokus.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/rave-the-planet-techno-parade-berlin-tiergarten-motto-imagine-love.html",
       "image": "",
-      "date": "2026-08-15T17:49:28.000Z",
+      "date": "2026-08-15T20:05:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "\"1 Şehit, 1 Öykü, 1 Şiir\" kitabının 5. cildi Konya'da tanıtıldı",
+      "description": "Konya'da, şehitlerin hatıralarını yaşatmak ve gelecek nesillere aktarmak için gönüllü şair ve yazarlar tarafından kaleme alınan \"1 Şehit, 1 Öykü, 1 Şiir\" kitabının 5. cildinin tanıtımı gerçekleştirildi.",
+      "url": "https://www.aa.com.tr/tr/kultur/1-sehit-1-oyku-1-siir-kitabinin-5-cildi-konyada-tanitildi/4028460",
+      "image": "",
+      "date": "2026-08-15T19:28:29.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Belçika'da kayıtlara geçen en büyük orman yangını yaşanıyor",
-      "description": "Belçika'nın doğusundaki Hautes Fagnes (Yüksek Fens) bölgesinde çıkan orman yangını, yaklaşık 1600 hektarlık alanı etkileyerek ülkede kayıtlara geçen en büyük yangın haline geldi.",
-      "url": "https://www.aa.com.tr/tr/dunya/belcikada-kayitlara-gecen-en-buyuk-orman-yangini-yasaniyor/4028425",
+      "title": "Bahnhof Fangschleuse bei Tesla-Werk in Grünheide eröffnet",
+      "description": "Der neue Bahnhof in Fangschleuse bei Tesla ist am Samstag - mit einigen Stunden Verspätung - eröffnet worden. Wegen Bauarbeiten ging die Strecke des RE1 Berlin-Frankfurt (Oder) erst am Abend in Betrieb.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/re1-bahnhof-fangschleuse-tesla-regionalverkehr.html",
       "image": "",
-      "date": "2026-08-15T17:47:15.000Z",
+      "date": "2026-08-15T19:22:29.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Milli para yüzücü Defne Kurt'tan Avrupa Yüzme Şampiyonası'nda gümüş madalya",
+      "description": "Milli para yüzücü Defne Kurt, Fransa'da düzenlenen Avrupa Yüzme Şampiyonası'nda 50 metre serbestte 27.13'lük derecesiyle gümüş madalya kazandı.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-para-yuzucu-defne-kurttan-avrupa-yuzme-sampiyonasinda-gumus-madalya/4028458",
+      "image": "",
+      "date": "2026-08-15T19:18:11.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -69,17 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Kasımpaşa evinde Trabzonspor ile 1-1 berabere kaldı",
-      "description": "Trendyol Süper Lig'in ilk haftasında Kasımpaşa ile Trabzonspor 1-1 berabere kaldı.",
-      "url": "https://www.aa.com.tr/tr/spor/kasimpasa-evinde-trabzonspor-ile-1-1-berabere-kaldi/4028397",
-      "image": "",
-      "date": "2026-08-15T16:54:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Hertha-Frauen gelingt souveräner Playoff-Sieg im DFB-Pokal",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-frauen-hertha-viktoria-turbine-dfb-pokal-qualifikation.html",
@@ -91,25 +102,14 @@
       "type": "rss"
     },
     {
-      "title": "4:1-Erfolg gegen Heidenheim: Bei Hertha siegt nun der Teamgeist",
-      "description": "Hertha BSC gelingt der beste Ligastart seit 2018. Die Berliner zeigten beim fulminanten 4:1-Heimsieg über den FC Heidenheim erneut eine starke Leistung, die auf sehr guter Trainingsarbeit fußt – ein Mechanismus, der bei Hertha bislang alles andere als logisch war.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/berlin-fussball-hertha-bsc-heidenheim-sieg-analyse-leitl.html",
+      "title": "Sağlık Bakanlığı Lübnan'a 15,6 tonluk tıbbi yardım ve ilaç gönderdi",
+      "description": "Sağlık Bakanı Kemal Memişoğlu, Lübnan'da yaşanan insani kriz nedeniyle sağlık hizmetlerine destek amacıyla hazırlanan 15,6 tonluk tıbbi yardım ve ilaç malzemesinin Mersin'den Lübnan'a yola çıktığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/saglik-bakanligi-lubnana-15-6-tonluk-tibbi-yardim-ve-ilac-gonderdi/4028388",
       "image": "",
-      "date": "2026-08-15T15:30:20.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Regionalliga Nordost: BFC Preussen ringt Greifswald Punkt ab",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-regionalliga-nordost-bfc-preussen-greifswald-spielbericht.html",
-      "image": "",
-      "date": "2026-08-15T15:24:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
+      "date": "2026-08-15T16:32:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
       "type": "rss"
     }
   ],
