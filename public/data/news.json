@@ -1,13 +1,57 @@
 {
-  "lastUpdated": "2026-08-15T22:19:26.677Z",
+  "lastUpdated": "2026-08-16T01:12:40.172Z",
   "count": 10,
   "articles": [
     {
-      "title": "İstanbul'da 17. Milli İrade Buluşması \"Terörsüz Türkiye\" programı düzenlendi",
-      "description": "TGTV ve Milli İrade Platformu tarafından \"Terörsüz Türkiye\" temasıyla  MÜSİAD'ın Bakırköy'deki merkezinde 17. Milli İrade Buluşması düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-17-milli-irade-bulusmasi-terorsuz-turkiye-programi-duzenlendi/4028483",
+      "title": "Hamas heyeti Gazze'deki ateşkes anlaşmasının kalıcı hale getirilmesi için Kahire'ye gidiyor",
+      "description": "Hamas Siyasi Büro Başkanı Halil el-Hayye başkanlığındaki üst düzey heyetin, Gazze Şeridi'ndeki ateşkes anlaşmasının kalıcı hale getirilmesi başta olmak üzere Filistin meselesine ilişkin gelişmeleri görüşmek üzere Kahire'ye gideceği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/hamas-heyeti-gazzedeki-ateskes-anlasmasinin-kalici-hale-getirilmesi-icin-kahireye-gidiyor/4028531",
       "image": "",
-      "date": "2026-08-15T20:06:45.000Z",
+      "date": "2026-08-15T23:44:20.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mora Yarımadası'nda şiddetli yağışlar sonucu seller oluştu",
+      "description": "Yangınlarla mücadele eden Yunanistan'ın Mora Yarımadası'nda şiddetli yağış sellere yol açtı.",
+      "url": "https://www.aa.com.tr/tr/dunya/mora-yarimadasinda-siddetli-yagislar-sonucu-seller-olustu/4028530",
+      "image": "",
+      "date": "2026-08-15T23:14:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Yunanistan itfaiyesinde yangınlara müdahale için yeterli sayıda saha personeli bulunmuyor",
+      "description": "Yunanistan'ın Avrupa Birliği (AB) ülkeleri arasında çalışan nüfusa oranla en fazla profesyonel itfaiyeciye sahip ülke olmasına rağmen, yangınlara doğrudan müdahale eden personel sayısının yetersiz olduğu belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/yunanistan-itfaiyesinde-yanginlara-mudahale-icin-yeterli-sayida-saha-personeli-bulunmuyor/4028529",
+      "image": "",
+      "date": "2026-08-15T23:07:06.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistinli anne, hasta kızının tedavisi için çıktığı evine İsrail ordusunun engeli nedeniyle dönemiyor",
+      "description": "İşgal altındaki Batı Şeria'nın Nablus kentine bağlı Kusra beldesinde yaşayan Filistinli Rukiyye Hassan, 2 yaşındaki kızı Hur'u tedavi ettirmek için çıktığı evine İsrail güçlerinin engellemesi nedeniyle günlerdir giremiyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistinli-anne-hasta-kizinin-tedavisi-icin-ciktigi-evine-israil-ordusunun-engeli-nedeniyle-donemiyor/4028528",
+      "image": "",
+      "date": "2026-08-15T23:05:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail ordusu Kuneytra'da evlere baskın düzenledi",
+      "description": "İsrail ordusunun Suriye'nin Kuneytra kırsalındaki Rafid köyünde bazı evlere baskın düzenleyerek arama yaptığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-kuneytrada-evlere-baskin-duzenledi/4028526",
+      "image": "",
+      "date": "2026-08-15T22:53:19.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -25,39 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "Fenerbahçe, Süper Lig'e yenilgiyle başladı",
-      "description": "Fenerbahçe, Trendyol Süper Lig'in ilk haftasında deplasmanda Gençlerbirliği'ne 2-1 yenilerek sezona kötü bir başlangıç yaptı.",
-      "url": "https://www.aa.com.tr/tr/spor/fenerbahce-super-lige-yenilgiyle-basladi/4028465",
-      "image": "",
-      "date": "2026-08-15T19:34:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gaziantep FK, evinde Corendon Alanyaspor ile 1-1 berabere kaldı",
-      "description": "Trendyol Süper Lig'in 1. haftasında Gaziantep FK, konuk ettiği Corendon Alanyaspor ile 1-1 berabere kaldı.",
-      "url": "https://www.aa.com.tr/tr/spor/gaziantep-fk-evinde-corendon-alanyaspor-ile-1-1-berabere-kaldi/4028461",
-      "image": "",
-      "date": "2026-08-15T19:28:52.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İtfaiye merdiveni yetişmeyince 11. kattan iki kat aşağıdaki kurtarma sepetine atlayarak yaralı kurtuldu",
-      "description": "Almanya'nın başkenti Berlin'de yüksek binada çıkan yangında 11. katta mahsur kalan kadın, itfaiye merdiveni kendisine yetişemeyince 9. katta bulunan kurtarma sepetine atlayarak hafif yaralı kurtuldu.",
-      "url": "https://www.aa.com.tr/tr/dunya/itfaiye-merdiveni-yetismeyince-11-kattan-iki-kat-asagidaki-kurtarma-sepetine-atlayarak-yarali-kurtuldu/4028459",
-      "image": "",
-      "date": "2026-08-15T19:25:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Bahnhof Fangschleuse bei Tesla-Werk in Grünheide eröffnet",
       "description": "Der neue Bahnhof in Fangschleuse bei Tesla ist am Samstag - mit einigen Stunden Verspätung - eröffnet worden. Wegen Bauarbeiten ging die Strecke des RE1 Berlin-Frankfurt (Oder) erst am Abend in Betrieb.",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/08/re1-bahnhof-fangschleuse-tesla-regionalverkehr.html",
@@ -66,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Macaristan'da Büyük Hun-Türk Kurultayı'nın resmi açılış töreni yapıldı",
-      "description": "Macaristan'ın Bacs-Kiskun bölgesindeki Bugac kasabasında düzenlenen \"Büyük Hun-Türk Kurultayı\"nın resmi açılış töreni yapıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/macaristanda-buyuk-hun-turk-kurultayinin-resmi-acilis-toreni-yapildi/4028440",
-      "image": "",
-      "date": "2026-08-15T18:20:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
