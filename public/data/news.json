@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-08-20T04:35:07.077Z",
+  "lastUpdated": "2026-08-20T06:41:50.710Z",
   "count": 10,
   "articles": [
+    {
+      "title": "ABD, El Nino tehdidi altındaki Peru'ya hastane gemisi göndermeye hazırlanıyor ",
+      "description": "ABD'nin El Nino tehdidi altındaki Peru'ya, hava olayının etkileriyle mücadele amacıyla hastane gemisi göndereceği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-el-nino-tehdidi-altindaki-peruya-hastane-gemisi-gondermeye-hazirlaniyor-/4032323",
+      "image": "",
+      "date": "2026-08-20T06:33:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Für immer und dich - vor 30 Jahren starb Rio Reiser",
+      "description": "Vor 30 Jahren starb Ralph Möbius alias Rio Reiser. Der Musiker und Songwriter wurde in den 1970er Jahren mit der Band Ton Steine Scherben bekannt, später machte er solo Karriere. Einige seiner Songs sind zu Hymnen seiner Generation geworden.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/rio-reiser-30-Todestag-koenig-von-deutschland-berlin-ton-steine-scherben.html",
+      "image": "",
+      "date": "2026-08-20T06:32:58.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Süper Lig'de 2. hafta heyecanı yarın başlayacak",
+      "description": "Trendyol Süper Lig'de 2. haftanın perdesi yarın oynanacak tek maçla açılacak.",
+      "url": "https://www.aa.com.tr/tr/spor/super-ligde-2-hafta-heyecani-yarin-baslayacak/4032311",
+      "image": "",
+      "date": "2026-08-20T06:21:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tornado in Fürstenwalde deckt Dächer ab und wirft Bäume um",
+      "description": "Videos zeigen herumfliegende Dachteile: In Fürstenwalde (Spree) hat am Mittwoch ein Tornado Verwüstungen angerichtet, dabei wurden drei Menschen leicht verletzt. Die Aufräumarbeiten in der Stadt dauern noch an.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/fuerstenwalde-tornado-feuerwehr-einsatz-schaeden.html",
+      "image": "",
+      "date": "2026-08-20T06:19:32.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin Hürmüz Boğazı'nda petrol tankerleri için gizli geçiş koridoru oluşturduğu iddia edildi",
+      "description": "ABD ordusunun, İran ile gerilimin sürdüğü Hürmüz Boğazı'nda petrol tankerlerinin güvenli geçişini sağlamak amacıyla gizli bir koridor oluşturduğu iddia edildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdnin-hurmuz-bogazinda-petrol-tankerleri-icin-gizli-gecis-koridoru-olusturdugu-iddia-edildi/4032305",
+      "image": "",
+      "date": "2026-08-20T06:16:10.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kadınlarda Avrupa voleybolunun en büyüğü Türkiye'de belli olacak",
+      "description": "Türkiye'nin yanı sıra Çekya, Azerbaycan ve İsveç'in de ev sahipliğinde 24 ülkenin katılımıyla düzenlenecek Trendyol Avrupa Kadınlar Voleybol Şampiyonası'nın finali İstanbul'da oynanacak.",
+      "url": "https://www.aa.com.tr/tr/spor/kadinlarda-avrupa-voleybolunun-en-buyugu-turkiyede-belli-olacak/4032304",
+      "image": "",
+      "date": "2026-08-20T06:15:19.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin ticari ham petrol stokları 4,4 milyon varil arttı",
+      "description": "ABD'nin ticari ham petrol stokları, geçen hafta önceki haftaya göre yaklaşık 4 milyon 400 bin varil arttı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdnin-ticari-ham-petrol-stoklari-4-4-milyon-varil-artti/4032301",
+      "image": "",
+      "date": "2026-08-20T06:11:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Online-Portal für Briefwahlen soll wieder funktionieren",
+      "description": "In Folge des Hackerangriffs auf zwei Senatsverwaltungen kam es zeitweise zu Ausfällen anderer Onlineportale, darunter auch dem zur Briefwahlanmeldung. Seit Mittwoch ist die Online-Anmeldung wieder möglich.",
+      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-senatsverwaltung-hackerangriff-online-portal-briefwahlunterlagen.html",
+      "image": "",
+      "date": "2026-08-20T06:02:04.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Ein Monat vor der AGH-Wahl: Kopf an Kopf an Kopf an Kopf ",
       "description": "Noch ein Monat, dann wird in Berlin ein neues Abgeordnetenhaus gewählt. Wer danach im Roten Rathaus regieren wird, ist offener denn je, denn gleich vier Parteien kämpfen vorne mit.",
@@ -14,99 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "ABD Başkanı Trump, İran'a yönelik eşi benzeri görülmemiş \"ekonomik operasyon\" ilan etti",
-      "description": "ABD Başkanı Donald Trump, İran'a yönelik eşi benzeri görülmemiş boyutta bir \"ekonomik operasyon\" ilan ettiğini belirterek, Tahran yönetimine destek veren ülkeleri de ağır ekonomik sonuçlarla karşılaşmakla tehdit etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-trump-irana-yonelik-esi-benzeri-gorulmemis-ekonomik-operasyon-ilan-etti/4032267",
-      "image": "",
-      "date": "2026-08-19T23:53:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail askerleri ile gaspçı İsraillilerden Batı Şeria ile Doğu Kudüs'te baskın ve saldırılar",
-      "description": "İsrail askerleri ve Filistin topraklarını gasbeden İsraillilerin, işgal altındaki Batı Şeria ve Doğu Kudüs'ün çeşitli bölgelerinde baskın, yol kontrolü ve yıkım faaliyetleri gerçekleştirdiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-askerleri-ile-gaspci-israillilerden-bati-seria-ile-dogu-kuduste-baskin-ve-saldirilar/4032266",
-      "image": "",
-      "date": "2026-08-19T23:49:10.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD'deki gazeteci derneklerinden Kongre'ye basın vizesi mektubu",
-      "description": "ABD'deki gazeteci dernekleri ve basın özgürlüğü savunucuları, İç Güvenlik Bakanlığının (DHS) yabancı medya vizeleri için süresiz olan statü süresini 240 günle sınırlayan yeni düzenlemenin iptali için Kongre'ye çağrıda bulundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/abddeki-gazeteci-derneklerinden-kongreye-basin-vizesi-mektubu/4032261",
-      "image": "",
-      "date": "2026-08-19T23:13:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ticaret Bakanı Ömer Bolat: Türkiye, dünyada sözü dinlenen, saygınlık gören, sözüne itibar edilen konumda",
-      "description": "Ticaret Bakanı Ömer Bolat, \"Türkiye, dünyada sözü dinlenen, saygınlık gören, sözüne itibar edilen, barışın kurucusu, mazlum insanların koruyucusu, ihtilaflarda mutlaka barış yolunda ve olması istenen konumda.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/ticaret-bakani-omer-bolat-turkiye-dunyada-sozu-dinlenen-sayginlik-goren-sozune-itibar-edilen-konumda/4032260",
-      "image": "",
-      "date": "2026-08-19T23:12:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İngiliz basınına göre ABD'de yaşayan Prens Harry ve eşi Meghan Markle İngiltere'ye dönüyor",
-      "description": "İngiltere Kralı 3. Charles'ın ABD'de yaşayan oğlu Sussex Dükü Prens Harry ve eşi Meghan Markle'ın bu ay sonunda İngiltere’ye taşınacakları iddia edildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/ingiliz-basinina-gore-abdde-yasayan-prens-harry-ve-esi-meghan-markle-ingiltereye-donuyor/4032253",
-      "image": "",
-      "date": "2026-08-19T22:40:57.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Tornado in Fürstenwalde deckt Dächer ab und wirft Bäume um",
-      "description": "Videos zeigen herumfliegende Dachteile: In Fürstenwalde (Spree) hat es am Mittwochnachmittag einen Tornado gegeben, offenbar mit heftigen Auswirkungen - der Feuerwehreinsatz läuft noch.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/fuerstenwalde-tornado-feuerwehr-einsatz-schaeden.html",
-      "image": "",
-      "date": "2026-08-19T20:20:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "Landespokal Berlin: VSG Altglienicke souverän eine Runde weiter",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-landespokal-berlin-runde-1-borussia-pankow-vsg-altglienicke.html",
       "image": "",
       "date": "2026-08-19T19:47:25.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Mehrere Berliner Freibäder bis in den September geöffnet, Hallenbäder starten Betrieb",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-infos-start-saison-hallenbaeder-herbst.html",
-      "image": "",
-      "date": "2026-08-19T18:18:25.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Schock für deutsche Basketballerinnen: Satou Sabally verpasst WM",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/basketball-wm-frauen-deutschland-berlinerin-satou-sabally-verletzt-ausfall.html",
-      "image": "",
-      "date": "2026-08-19T17:38:59.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
