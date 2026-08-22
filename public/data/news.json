@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-08-22T04:30:28.329Z",
+  "lastUpdated": "2026-08-22T06:36:50.537Z",
   "count": 10,
   "articles": [
+    {
+      "title": "ABD’nin yüzde 50 tarife kararı üzerine Kanada’dan müzakereleri sonlandırma adımı",
+      "description": "ABD’nin, yaklaşık 20 milyar dolar değerindeki Kanada ürünlerine yüzde 50'lik tarife uygulanması kararı üzerine Kanada, bu tarifelere misilleme yapacağını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-nin-yuzde-50-tarife-karari-uzerine-kanada-dan-muzakereleri-sonlandirma-adimi/4034373",
+      "image": "",
+      "date": "2026-08-22T06:23:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Mevzuata aykırı taşınmaz ve taşıt ilanı veren 82 işletmeye 8,2 milyon lira ceza",
+      "description": "Ticaret Bakanlığı, sosyal medyada mevzuata aykırı ilan veren 42 emlak ve 40 galeri işletmesine 8,2 milyon lira idari para cezası uygulandığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/mevzuata-aykiri-tasinmaz-ve-tasit-ilani-veren-82-isletmeye-8-2-milyon-lira-ceza/4034356",
+      "image": "",
+      "date": "2026-08-22T06:04:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ZAZ in der Zitadelle Spandau: Vom Pfeifkonzert in die Arme der Fans",
+      "description": "Eine halbe Stunde lässt die französische Sängerin ZAZ ihr Publikum in der Zitadelle Spandau warten. Doch auf das Stimmungstief folgt ein Höhenflug.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/berlin-zaz-zitadelle-spandau-konzert-kritik.html",
+      "image": "",
+      "date": "2026-08-22T06:03:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Temporäres Kloster bei Neuzelle feiert Richtfest",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/kloster-neuzelle-treppeln-richtfest-moenche.html",
+      "image": "",
+      "date": "2026-08-22T05:14:23.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Female Rage in der Literatur",
+      "description": "Wütende Romanheldinnen stürmen aktuell die Bestsellerlisten. Female Rage heißt der Trend in der Literatur. Da scheint sich etwas zu entladen.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/literatur-frauen-wut-female-rage-feminismus.html",
+      "image": "",
+      "date": "2026-08-22T05:14:14.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Unions Niederlage gegen Bayern: Ein Sieg der Widersprüche",
+      "description": "Union Berlins Spielerinnen zeigen zum Saisonauftakt gegen Bayern München eine über weite Strecken überzeugende Leistung. Warum die Niederlage mit 1:4 dabei deutlich zu hoch ausfällt und trotzdem in Ordnung geht...",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-bundesliga-union-berlin-bayern-muenchen-analyse.html",
+      "image": "",
+      "date": "2026-08-22T05:14:03.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Einschulung in Berlin: So viel kostet der Schulstart",
+      "description": "Eigenes Headset, Hefte mit speziellem Seitenrand, ein 300-Euro-Ranzen: Der Schulstart wird für Berliner Familien immer teurer. Wir rechnen nach, wie viel er kostet. Ehrenamtliche helfen Familien, die sich das nicht leisten können.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/schulanfang-berlin-schulranzen-schulmaterial-teurer-schuleinfuehrung.html",
+      "image": "",
+      "date": "2026-08-22T05:13:54.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Bolu ve Düzce'de 656 bin hektar ormanlık alan 24 saat gözetim altında",
       "description": "Bolu ve Düzce'de yaklaşık 656 bin hektarlık ormanlık alan, Bolu Orman Bölge Müdürlüğü ekipleri tarafından olası yangınlara karşı 24 saat gözetim altında tutuluyor.",
@@ -33,83 +110,6 @@
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Filistinli mühendisler, İsrail'in Şifa Hastanesinde zarar verdiği cihazları imkansızlıklara rağmen onarıyor",
-      "description": "Gazze Şeridi'nin en büyük hastanesi Şifa'da görev yapan Filistinli mühendisler, İsrail saldırılarında tahrip olan tıbbi cihazlardan sağlam parçaları sökerek doktorların hastalıkları teşhiste ihtiyaç duyduğu bazı cihazları yeniden çalıştırıyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/filistinli-muhendisler-israilin-sifa-hastanesinde-zarar-verdigi-cihazlari-imkansizliklara-ragmen-onariyor/4034338",
-      "image": "",
-      "date": "2026-08-21T22:22:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AA Yönetim Kurulu Başkanı ve Genel Müdürü Karagöz: Mavi Vatan TEKNOFEST dostlara güven, düşmanlara da kaygı veriyor",
-      "description": "Anadolu Ajansı (AA) Genel Müdürü ve Yönetim Kurulu Başkanı Serdar Karagöz, TEKNOFEST Mavi Vatan'ın, dostlara güven, düşmanlara çok büyük bir kaygı, gençliğe de ümit verdiğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/gundem/aa-yonetim-kurulu-baskani-ve-genel-muduru-karagoz-mavi-vatan-teknofest-dostlara-guven-dusmanlara-da-kaygi-veriyor/4034331",
-      "image": "",
-      "date": "2026-08-21T21:53:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Handball: Potsdam zittert sich zum Pokalsieg über Vinnhorst",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/handball-pokal-erste-runde-vinnhorst-vfl-potsdam.html",
-      "image": "",
-      "date": "2026-08-21T20:58:38.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Fußball-Bundesliga: Unions Spielerinnen verlieren Saisonauftakt gegen Bayern ",
-      "description": "Zum Saisonauftakt der Fußball-Bundesliga haben die Spielerinnen des 1. FC Union mit 1:4 gegen den amtierenden Meister Bayern München verloren. Dabei sah es in der ersten Halbzeit noch nach einem Spiel auf Augenhöhe aus.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-bundesliga-union-berlin-bayern-muenchen-spielbericht.html",
-      "image": "",
-      "date": "2026-08-21T19:44:57.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "RE1: Bauarbeiten am Bahnhof Fangschleuse verzögern sich erneut ",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/bahnhof-fangschleuse-re1-bauarbeite-verzoegerung.html",
-      "image": "",
-      "date": "2026-08-21T16:51:06.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Tornado in Fürstenwalde: Wann Versicherungen zahlen",
-      "description": "Nach dem zerstörerischen Tornado in Fürstenwalde müssen zahlreiche Gebäude repariert werden. Auch Autos wurden beschädigt. Wie Betroffene nun hohe Kosten vermeiden.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/tornado-fuerstenwalde-versicherung-schaeden-haus-auto.html",
-      "image": "",
-      "date": "2026-08-21T15:49:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berliner Bäderbetriebe bieten Hundebadetage in einigen Freibecken",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/hundeschwimmen-bbb-berlin-baederbetriebe-freibad-fellnase-fiffi-wasser.html",
-      "image": "",
-      "date": "2026-08-21T15:25:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
       "type": "rss"
     }
   ],
