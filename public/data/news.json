@@ -1,46 +1,57 @@
 {
-  "lastUpdated": "2026-08-21T22:22:28.024Z",
+  "lastUpdated": "2026-08-22T01:07:41.304Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Bolu ve Düzce'de 656 bin hektar ormanlık alan 24 saat gözetim altında",
+      "description": "Bolu ve Düzce'de yaklaşık 656 bin hektarlık ormanlık alan, Bolu Orman Bölge Müdürlüğü ekipleri tarafından olası yangınlara karşı 24 saat gözetim altında tutuluyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/bolu-ve-duzcede-656-bin-hektar-ormanlik-alan-24-saat-gozetim-altinda/4034341",
+      "image": "",
+      "date": "2026-08-21T22:23:28.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Teneffüste koşarken keşfedilen Elfinay Kama, atletizmde 2 yıl üst üste Türkiye şampiyonu oldu",
+      "description": "Osmaniye'nin Kadirli ilçesinde, okuldaki teneffüste hızlı koşarken kendisini gören antrenör tarafından atletizme yönlendirilen 13 yaşındaki Elfinay Kama, üçlü branşta 2 yıl üst üste Türkiye şampiyonluğu elde etti.",
+      "url": "https://www.aa.com.tr/tr/spor/teneffuste-kosarken-kesfedilen-elfinay-kama-atletizmde-2-yil-ust-uste-turkiye-sampiyonu-oldu/4034340",
+      "image": "",
+      "date": "2026-08-21T22:23:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Şanlıurfa'da 13 asırlık zeytin ağacı meyve vermeyi sürdürüyor",
+      "description": "Şanlıurfa'nın Eyyübiye ilçesinde 13 asırlık \"Cudi\" adı verilen zeytin ağacı, meyve vermeyi sürdürüyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/sanliurfada-13-asirlik-zeytin-agaci-meyve-vermeyi-surduruyor/4034339",
+      "image": "",
+      "date": "2026-08-21T22:22:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Filistinli mühendisler, İsrail'in Şifa Hastanesinde zarar verdiği cihazları imkansızlıklara rağmen onarıyor",
+      "description": "Gazze Şeridi'nin en büyük hastanesi Şifa'da görev yapan Filistinli mühendisler, İsrail saldırılarında tahrip olan tıbbi cihazlardan sağlam parçaları sökerek doktorların hastalıkları teşhiste ihtiyaç duyduğu bazı cihazları yeniden çalıştırıyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/filistinli-muhendisler-israilin-sifa-hastanesinde-zarar-verdigi-cihazlari-imkansizliklara-ragmen-onariyor/4034338",
+      "image": "",
+      "date": "2026-08-21T22:22:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "AA Yönetim Kurulu Başkanı ve Genel Müdürü Karagöz: Mavi Vatan TEKNOFEST dostlara güven, düşmanlara da kaygı veriyor",
       "description": "Anadolu Ajansı (AA) Genel Müdürü ve Yönetim Kurulu Başkanı Serdar Karagöz, TEKNOFEST Mavi Vatan'ın, dostlara güven, düşmanlara çok büyük bir kaygı, gençliğe de ümit verdiğini söyledi.",
       "url": "https://www.aa.com.tr/tr/gundem/aa-yonetim-kurulu-baskani-ve-genel-muduru-karagoz-mavi-vatan-teknofest-dostlara-guven-dusmanlara-da-kaygi-veriyor/4034331",
       "image": "",
       "date": "2026-08-21T21:53:44.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Trump'a göre İran, ABD ile \"doğru anlaşmayı\" yapmaya hazır değil",
-      "description": "ABD Başkanı Donald Trump, İran'a karşı askeri seçeneklerin halen masada olduğunu belirterek, \"İranlılar bir anlaşma yapmak istiyorlar, ancak doğru anlaşmayı yapmaya hazır değiller.\" ifadesini kullandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/trumpa-gore-iran-abd-ile-dogru-anlasmayi-yapmaya-hazir-degil/4034330",
-      "image": "",
-      "date": "2026-08-21T21:47:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD Adalet Bakanlığı ile TikTok \"çocuk gizliliği\" davasında 400 milyon dolarlık uzlaşmaya vardı",
-      "description": "ABD Adalet Bakanlığı, TikTok ve ana şirketi ByteDance ile \"çocukların çevrim içi gizliliğinin korunmasına\" yönelik davayı 400 milyon dolarlık anlaşmayla sonuçlandırdı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/abd-adalet-bakanligi-ile-tiktok-cocuk-gizliligi-davasinda-400-milyon-dolarlik-uzlasmaya-vardi/4034322",
-      "image": "",
-      "date": "2026-08-21T21:14:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Premier Lig'in son şampiyonu Arsenal, sezona galibiyetle başladı ",
-      "description": "İngiltere Premier Lig'de 2026-27 sezonunun açılış maçında Arsenal, sahasında Coventry City'yi 3-0 mağlup etti.",
-      "url": "https://www.aa.com.tr/tr/spor/premier-ligin-son-sampiyonu-arsenal-sezona-galibiyetle-basladi-/4034319",
-      "image": "",
-      "date": "2026-08-21T21:04:48.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -55,17 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "RTÜK Başkanı Mehmet Daniş'ten İsrail yönetimine tepki",
-      "description": "Daniş \"Hakkında savaş suçları ve insanlığa karşı işlenen suçlardan dolayı Uluslararası Ceza Mahkemesince tutuklama kararı bulunan Netanyahu yönetiminin Cumhurbaşkanımıza yönelik seviyesiz ifadeleri, Türkiye'nin yükselttiği sese gölge düşüremez\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/rtuk-baskani-mehmet-danisten-israil-yonetimine-tepki/4034304",
-      "image": "",
-      "date": "2026-08-21T20:40:59.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
