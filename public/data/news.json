@@ -1,27 +1,104 @@
 {
-  "lastUpdated": "2026-08-22T06:36:50.537Z",
+  "lastUpdated": "2026-08-22T08:27:06.286Z",
   "count": 10,
   "articles": [
     {
-      "title": "ABD’nin yüzde 50 tarife kararı üzerine Kanada’dan müzakereleri sonlandırma adımı",
-      "description": "ABD’nin, yaklaşık 20 milyar dolar değerindeki Kanada ürünlerine yüzde 50'lik tarife uygulanması kararı üzerine Kanada, bu tarifelere misilleme yapacağını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/abd-nin-yuzde-50-tarife-karari-uzerine-kanada-dan-muzakereleri-sonlandirma-adimi/4034373",
+      "title": "Einschulung in Berlin: So viel kostet der Schulstart",
+      "description": "Eigenes Headset, Hefte mit speziellem Seitenrand, ein 300-Euro-Ranzen: Der Schulstart wird für Berliner Familien immer teurer. Wir rechnen nach, wie viel er kostet. Ehrenamtliche helfen Familien, die sich das nicht leisten können.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/schulanfang-berlin-schulranzen-schulmaterial-teurer-schuleinfuehrung.html",
       "image": "",
-      "date": "2026-08-22T06:23:41.000Z",
+      "date": "2026-08-22T08:24:46.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Kayseri'de kentsel dönüşüm çalışmasında izlerine rastlanan medresede kazı çalışması başlatıldı",
+      "description": "Kayseri'de \"Suriçi Camikebir Kentsel Dönüşüm Projesi\" çalışması sırasında izlerine rastlanan 12. yüzyıldan kalma medresede kazı çalışması başlatıldı.",
+      "url": "https://www.aa.com.tr/tr/kultur/kayseride-kentsel-donusum-calismasinda-izlerine-rastlanan-medresede-kazi-calismasi-baslatildi/4034453",
+      "image": "",
+      "date": "2026-08-22T08:24:16.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Mevzuata aykırı taşınmaz ve taşıt ilanı veren 82 işletmeye 8,2 milyon lira ceza",
-      "description": "Ticaret Bakanlığı, sosyal medyada mevzuata aykırı ilan veren 42 emlak ve 40 galeri işletmesine 8,2 milyon lira idari para cezası uygulandığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/mevzuata-aykiri-tasinmaz-ve-tasit-ilani-veren-82-isletmeye-8-2-milyon-lira-ceza/4034356",
+      "title": "Bellek fiyatlarındaki tarihi yükseliş teknoloji şirketlerini zorluyor",
+      "description": "Yapay zeka veri merkezlerine yönelik yatırımların hızlanmasıyla sunucularda kullanılan dinamik rastgele erişimli belleklere (DRAM) ve yüksek bant genişlikli belleklere (HBM) yönelik talebin artması, teknoloji şirketlerinin maliyetlerini yükseltti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bellek-fiyatlarindaki-tarihi-yukselis-teknoloji-sirketlerini-zorluyor/4034444",
       "image": "",
-      "date": "2026-08-22T06:04:50.000Z",
+      "date": "2026-08-22T08:14:31.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Yunanistan'da Batı Nil virüsü vakalarındaki artış nedeniyle sivrisinek uyarısı yapıldı",
+      "description": "Yunanistan'da Batı Nil virüsü vakalarında son dönemde yaşanan artışın ardından vatandaşlardan sivrisineklere karşı koruyucu önlemleri artırmaları istendi.",
+      "url": "https://www.aa.com.tr/tr/dunya/yunanistanda-bati-nil-virusu-vakalarindaki-artis-nedeniyle-sivrisinek-uyarisi-yapildi/4034443",
+      "image": "",
+      "date": "2026-08-22T08:13:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Justizministerin will nach CSD-Anschlag Grundgesetz ändern",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/08/berlin-grundgesetzaenderung-hubig-schutz-queere-menschen.html",
+      "image": "",
+      "date": "2026-08-22T08:10:25.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "A Milli Kadın Voleybol Takımı, Avrupa Şampiyonası'nda yarın Slovenya ile karşılaşacak",
+      "description": "A Milli Kadın Voleybol Takımı, Trendyol 2026 Avrupa Şampiyonası'ndaki ikinci maçında yarın Slovenya ile karşı karşıya gelecek.",
+      "url": "https://www.aa.com.tr/tr/spor/a-milli-kadin-voleybol-takimi-avrupa-sampiyonasinda-yarin-slovenya-ile-karsilasacak/4034431",
+      "image": "",
+      "date": "2026-08-22T08:04:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kripto para piyasasının değeri geçen hafta 500 milyar doların üzerinde arttı",
+      "description": "Kripto piyasasının toplam değerini ifade eden Total Market, ABD Başkanı Donald Trump'ın kripto para piyasası temsilcileriyle bir araya gelmesi üzerine haftalık bazda 500 milyar doların üzerinde artarak 2 trilyon 668 milyar dolara çıktı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kripto-para-piyasasinin-degeri-gecen-hafta-500-milyar-dolarin-uzerinde-artti/4034429",
+      "image": "",
+      "date": "2026-08-22T08:03:40.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Erste Saisonbilanz: Volle Becken in Berliner Freibädern ",
+      "description": "An heißen Tagen mussten die Berliner Bäderbetriebe den Ticketverkauf für Freibäder teils stoppen. Auch andere Bäder waren im Sommer gut besucht. Eine erste Bilanz fällt daher positiv aus.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-baeder-betriebe-bilanz-sommersaison.html",
+      "image": "",
+      "date": "2026-08-22T06:58:03.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Staatsanwaltschaft bearbeitet Hunderte neue Fälle antisemitischer Straftaten",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/berlin-staatsanwaltschaft-hunderte-neue-faelle-antisemitismus.html",
+      "image": "",
+      "date": "2026-08-22T06:44:38.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,83 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Temporäres Kloster bei Neuzelle feiert Richtfest",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/kloster-neuzelle-treppeln-richtfest-moenche.html",
-      "image": "",
-      "date": "2026-08-22T05:14:23.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Female Rage in der Literatur",
-      "description": "Wütende Romanheldinnen stürmen aktuell die Bestsellerlisten. Female Rage heißt der Trend in der Literatur. Da scheint sich etwas zu entladen.",
-      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/literatur-frauen-wut-female-rage-feminismus.html",
-      "image": "",
-      "date": "2026-08-22T05:14:14.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Unions Niederlage gegen Bayern: Ein Sieg der Widersprüche",
-      "description": "Union Berlins Spielerinnen zeigen zum Saisonauftakt gegen Bayern München eine über weite Strecken überzeugende Leistung. Warum die Niederlage mit 1:4 dabei deutlich zu hoch ausfällt und trotzdem in Ordnung geht...",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/fussball-bundesliga-union-berlin-bayern-muenchen-analyse.html",
-      "image": "",
-      "date": "2026-08-22T05:14:03.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Einschulung in Berlin: So viel kostet der Schulstart",
-      "description": "Eigenes Headset, Hefte mit speziellem Seitenrand, ein 300-Euro-Ranzen: Der Schulstart wird für Berliner Familien immer teurer. Wir rechnen nach, wie viel er kostet. Ehrenamtliche helfen Familien, die sich das nicht leisten können.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/schulanfang-berlin-schulranzen-schulmaterial-teurer-schuleinfuehrung.html",
-      "image": "",
-      "date": "2026-08-22T05:13:54.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Bolu ve Düzce'de 656 bin hektar ormanlık alan 24 saat gözetim altında",
-      "description": "Bolu ve Düzce'de yaklaşık 656 bin hektarlık ormanlık alan, Bolu Orman Bölge Müdürlüğü ekipleri tarafından olası yangınlara karşı 24 saat gözetim altında tutuluyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/bolu-ve-duzcede-656-bin-hektar-ormanlik-alan-24-saat-gozetim-altinda/4034341",
-      "image": "",
-      "date": "2026-08-21T22:23:28.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Teneffüste koşarken keşfedilen Elfinay Kama, atletizmde 2 yıl üst üste Türkiye şampiyonu oldu",
-      "description": "Osmaniye'nin Kadirli ilçesinde, okuldaki teneffüste hızlı koşarken kendisini gören antrenör tarafından atletizme yönlendirilen 13 yaşındaki Elfinay Kama, üçlü branşta 2 yıl üst üste Türkiye şampiyonluğu elde etti.",
-      "url": "https://www.aa.com.tr/tr/spor/teneffuste-kosarken-kesfedilen-elfinay-kama-atletizmde-2-yil-ust-uste-turkiye-sampiyonu-oldu/4034340",
-      "image": "",
-      "date": "2026-08-21T22:23:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Şanlıurfa'da 13 asırlık zeytin ağacı meyve vermeyi sürdürüyor",
-      "description": "Şanlıurfa'nın Eyyübiye ilçesinde 13 asırlık \"Cudi\" adı verilen zeytin ağacı, meyve vermeyi sürdürüyor.",
-      "url": "https://www.aa.com.tr/tr/gundem/sanliurfada-13-asirlik-zeytin-agaci-meyve-vermeyi-surduruyor/4034339",
-      "image": "",
-      "date": "2026-08-21T22:22:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
