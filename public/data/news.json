@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-08-24T16:35:09.009Z",
+  "lastUpdated": "2026-08-24T18:37:23.579Z",
   "count": 10,
   "articles": [
     {
-      "title": "Beşiktaş'tan MHK Başkanı Ferhat Gündoğdu'ya istifa çağrısı",
-      "description": "Beşiktaş Kulübü İkinci Başkanı Hakan Daltaban, Corendon Alanyaspor maçındaki hakem performansını eleştirerek MHK Başkanı Ferhat Gündoğdu'yu istifaya, TFF Başkanı Hacıosmanoğlu'nu da MHK Başkanı Gündoğdu'yu görevden almaya davet etti.",
-      "url": "https://www.aa.com.tr/tr/spor/besiktastan-mhk-baskani-ferhat-gundogduya-istifa-cagrisi/4036140",
+      "title": "\"Burning Berlin\": Bedrohte Liebe im aufkeimenden Faschismus",
+      "description": "Flirts, Partys, Eifersucht: Das Musical \"Burning Berlin\" erzählt von lesbischer Subkultur in den 1920ern. Die Nazis haben viel davon zerstört. Dennoch ist das keine Geschichte für die Geschichtsbücher - sondern sie hat mit dem Hier und Jetzt zu tun.",
+      "url": "https://www.rbb24.de/kultur/beitrag/2026/08/queeres-musical-burning-berlin-kritik-1920er-jahre.html",
       "image": "",
-      "date": "2026-08-24T16:26:13.000Z",
+      "date": "2026-08-24T18:27:42.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Trabzonspor, Brezilyalı futbolcu Fabinho'yu renklerine bağladı",
+      "description": "Trabzonspor, Brezilyalı futbolcu Fabinho'yu 2 yıllığına renklerine bağladı.",
+      "url": "https://www.aa.com.tr/tr/spor/trabzonspor-brezilyali-futbolcu-fabinhoyu-renklerine-bagladi/4036229",
+      "image": "",
+      "date": "2026-08-24T18:22:02.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD Hazine Bakanlığı: Suriye, \"teröre destek veren ülkeler\" listesinden çıkarıldı",
+      "description": "ABD Hazine Bakanlığı, Suriye'nin \"teröre destek veren ülkeler\" listesinden resmen çıkarıldığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-hazine-bakanligi-suriye-terore-destek-veren-ulkeler-listesinden-cikarildi/4036227",
+      "image": "",
+      "date": "2026-08-24T18:16:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Molkerei Müller kündigt Verträge mit Brandenburger Bauern",
+      "description": "",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/08/brandenburg-molkerei-mueller-milch-bauern-vertraege-kuendigung.html",
+      "image": "",
+      "date": "2026-08-24T18:02:27.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "A Milli Kadın Voleybol Takımı, Macaristan'ı yendi",
+      "description": "A Milli Kadın Voleybol Takımı, Trendyol 2026 Avrupa Kadınlar Voleybol Şampiyonası A Grubu üçüncü maçında Macaristan'ı 3-0 yendi.",
+      "url": "https://www.aa.com.tr/tr/spor/a-milli-kadin-voleybol-takimi-macaristani-yendi/4036212",
+      "image": "",
+      "date": "2026-08-24T17:54:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Türkiye tarımsal hasılada dünyada 7'nci, Avrupa'da birinci sırada",
+      "description": "Tarım ve Orman Bakanı Yumaklı, Türkiye'nin 2025 verilerine göre 83,2 milyar dolarlık tarımsal hasılayla dünyada 7'nci, Avrupa'da ise birinci sıraya yükseldiğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/turkiye-tarimsal-hasilada-dunyada-7nci-avrupada-birinci-sirada/4036210",
+      "image": "",
+      "date": "2026-08-24T17:53:55.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BM: Gazze'deki kronik yetersiz beslenme sorunu devam ediyor",
+      "description": "Birleşmiş Milletler (BM), İsrail'in Gazze'de ve işgal altındaki Batı Şeria'daki saldırılarında Filistinli sivillerin öldürülmeye devam ettiğini ve Gazze'deki kronik yetersiz beslenme sorununun sürdüğünü açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-gazzedeki-kronik-yetersiz-beslenme-sorunu-devam-ediyor/4036209",
+      "image": "",
+      "date": "2026-08-24T17:53:52.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Tuberkulose-Verdacht: Mitarbeiter in Pflegeheim Oberhavel werden getestet",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/oberhavel-hohen-neuendorf-pflegeheim-tuberkulose.html",
+      "image": "",
+      "date": "2026-08-24T16:41:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,17 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "Yemen'deki Husiler: Kızıldeniz'de Suudi Arabistan'a ait bir petrol tankerini hedef aldık",
-      "description": "Yemen'deki İran destekli Husiler, Kızıldeniz'de Suudi Arabistan'a ait bir petrol tankeriyle çeşitli bölgelerdeki askeri yığınaklara balistik füze ve insansız hava araçlarıyla (İHA) saldırı düzenlediklerini ileri sürdü.",
-      "url": "https://www.aa.com.tr/tr/dunya/yemendeki-husiler-kizildenizde-suudi-arabistana-ait-bir-petrol-tankerini-hedef-aldik/4036122",
-      "image": "",
-      "date": "2026-08-24T15:52:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Autonome Shuttles: Verkehrsministerium in Gesprächen mit Tesla",
       "description": "",
       "url": "https://www.rbb24.de/politik/beitrag/2026/08/brandenburg-autonomes-shuttle-oepnv-robert-crumbach-tesla.html",
@@ -44,72 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Tote Fische in Nebenarm der Oder: Umweltamt gibt Entwarnung",
-      "description": "Weil sich die Blüte der giftigen Goldalge an einem Nebengewässer der Oder ausbreitet, wächste die Sorge vor einem erneuten Fischsterben wie im Jahr 2022. Damals waren 360 Tonnen tote Fische geborgen worden.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/oder-tote-fische-polnische-nebengewaesser-goldalgenbluete.html",
-      "image": "",
-      "date": "2026-08-24T15:31:56.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "YSK Başkanı Mutta, Kazakistan'daki Kurultay seçiminin halkın demokrasiye bağlılığını gösterdiğini söyledi",
-      "description": "Yüksek Seçim Kurulu (YSK) Başkanı Serdar Mutta, Kazakistan'da dün yapılan Kurultay seçimlerinin sakin ve barışçıl ortamda geçtiğini belirterek, yüksek katılım oranının Kazak halkının demokrasiye ve kendi iradesine bağlılığını gösterdiğini söyledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/ysk-baskani-mutta-kazakistandaki-kurultay-seciminin-halkin-demokrasiye-bagliligini-gosterdigini-soyledi/4036095",
-      "image": "",
-      "date": "2026-08-24T15:29:22.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fransa'da liselerde cep telefonu yeni eğitim yılından itibaren yasaklandı",
-      "description": "Fransa Cumhurbaşkanı Emmanuel Macron, yeni eğitim-öğretim yılından itibaren liselerde de cep telefonunun yasaklandığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransada-liselerde-cep-telefonu-yeni-egitim-yilindan-itibaren-yasaklandi/4036088",
-      "image": "",
-      "date": "2026-08-24T15:21:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Neue Rettungswache im Elbe-Elster-Kreis eröffnet",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/08/neue-rettungswache-gross-thiemig-elbe-elster.html",
-      "image": "",
-      "date": "2026-08-24T14:49:37.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Deutsches Team mit Rekord-Starts bei der Ruder-WM",
-      "description": "Berlin und Brandenburg sind auf Rekordkurs - bei einer Rekord-WM. Noch nie waren so viele regionale Ruderinnen und Ruderer in der Nationalmannschaft. Zwischen Goldträumen, vom Winde verwehten Rennen und Radwegen ohne Fahrräder.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/08/rudern-berlin-brandenburg-wm-weltmeisterschaft-nationalmannschaft.html",
-      "image": "",
-      "date": "2026-08-24T14:10:30.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Sosyal medya çocukların beden algısını ve öz saygısını olumsuz etkileyebiliyor",
-      "description": "Yetim Vakfında ergen ve çocuk psikoloğu ve terapist olarak görev yapan Psikolog Ömer Faruk Şeker, sosyal medyada görülen içeriklerin tekrarlandıkça normalleştiğini ve çocukların kendilerini bu görüntülerle karşılaştırmaya başladığını söyledi.",
-      "url": "https://www.aa.com.tr/tr/gundem/sosyal-medya-cocuklarin-beden-algisini-ve-oz-saygisini-olumsuz-etkileyebiliyor/4035921",
-      "image": "",
-      "date": "2026-08-24T13:24:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
