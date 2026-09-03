@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-09-02T22:23:00.774Z",
-  "count": 5,
+  "lastUpdated": "2026-09-03T03:01:33.012Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "Venezuela, ABD'li şirketlerle petrol üretimini artıracak yeni anlaşmalar imzaladı",
+      "description": "Venezuela hükümeti, petrol üretimini artırmak amacıyla ABD'li petrol şirketi Chevron ve İtalyan Eni ile mevcut ortaklıkların kapsamını genişleten yeni anlaşmalar imzaladı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/venezuela-abdli-sirketlerle-petrol-uretimini-artiracak-yeni-anlasmalar-imzaladi/4045865",
+      "image": "",
+      "date": "2026-09-03T00:14:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin Minneapolis kentindeki silahlı saldırıda iki polis dahil çok sayıda kişi yaralandı",
+      "description": "ABD'nin Minnesota eyaletine bağlı Minneapolis kentinde meydana gelen silahlı saldırıda ilk belirlemelere göre aralarında iki polisin de bulunduğu çok sayıda kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdnin-minneapolis-kentindeki-silahli-saldirida-iki-polis-dahil-cok-sayida-kisi-yaralandi/4045851",
+      "image": "",
+      "date": "2026-09-02T23:05:44.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İran, Hürmüz Boğazı'nda \"kara liste\"ye aldığı gemilerin sayısının 56'ya çıktığını duyurdu",
+      "description": "İran, Hürmüz Boğazı'ndan geçmeye çalışan ve \"kurallara uymayan\" 11 gemiyi daha kara listeye aldığını duyurarak, gelecekte Boğaz'dan geçmek isteyen adı geçen gemilerin \"para cezası, alıkonulma veya el koyma\" cezalarıyla karşılaşacağını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-hurmuz-bogazinda-kara-listeye-aldigi-gemilerin-sayisinin-56ya-ciktigini-duyurdu/4045842",
+      "image": "",
+      "date": "2026-09-02T21:56:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Yerli üretim robot teknoparkta danışma görevlisi oldu",
+      "description": "Bursa'da, Ulutek Teknopark Teknoloji Geliştirme Bölgesi'nde faaliyet gösteren bilişim firmasının tasarladığı yapay zekalı robot \"Adam\", teknopark binasında danışma görevlisi oldu.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/yerli-uretim-robot-teknoparkta-danisma-gorevlisi-oldu/4045835",
+      "image": "",
+      "date": "2026-09-02T21:33:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Alternatif ürün olarak yetiştirilen ahududu ve böğürtlen çiftçiye yeni gelir kapısı oldu",
+      "description": "Edirne’nin merkeze bağlı Kemalköy köyünde çiftçilik yapan Mehmet Ceylan, geleneksel tarıma alternatif olarak başladığı ahududu ve böğürtlen yetiştiriciliğinde üretim alanını genişletti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/alternatif-urun-olarak-yetistirilen-ahududu-ve-bogurtlen-ciftciye-yeni-gelir-kapisi-oldu/4045834",
+      "image": "",
+      "date": "2026-09-02T21:33:15.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Pflegekräfte an der Berliner Charité beginnen dreitägigen Warnstreik",
       "description": "",
