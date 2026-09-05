@@ -1,24 +1,57 @@
 {
-  "lastUpdated": "2026-09-05T19:57:32.086Z",
+  "lastUpdated": "2026-09-05T21:58:57.432Z",
   "count": 10,
   "articles": [
     {
-      "title": "Beşiktaş, bir sezonluk aranın ardından derbi kazandı",
-      "description": "Trendyol Süper Lig'in 4. haftasında Fenerbahçe'ye konuk olan Beşiktaş, karşılaşmayı 2-1 kazanarak bir sezonluk aranın ardından derbi sevinci yaşadı.",
-      "url": "https://www.aa.com.tr/tr/spor/besiktas-bir-sezonluk-aranin-ardindan-derbi-kazandi/4048421",
+      "title": "Van'daki sahipsiz kediler yeni yuvalarında güvenle yaşıyor",
+      "description": "Van'da sahipsiz ve sokağa terk edilen kediler için Büyükşehir Belediyesi bünyesinde kurulan kedi evi, ilk misafirlerini ağırlamaya başladı.",
+      "url": "https://www.aa.com.tr/tr/gundem/vandaki-sahipsiz-kediler-yeni-yuvalarinda-guvenle-yasiyor/4048487",
       "image": "",
-      "date": "2026-09-05T19:38:11.000Z",
+      "date": "2026-09-05T21:44:18.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Dijital gönüllülük platformu \"İyilik Var\" 12 Eylül'de hayata geçirilecek",
-      "description": "Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, Fenerbahçe-Beşiktaş karşılaşmasında stadyumda dikkat çekilen dijital gönüllülük platformu \"İyilik Var\"ın 12 Eylül'de hayata geçirileceğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/dijital-gonulluluk-platformu-iyilik-var-12-eylulde-hayata-gecirilecek/4048416",
+      "title": "Avrupa şampiyonu başpehlivan, Kırkpınar'da son anda kaçırdığı altın kemeri almak istiyor",
+      "description": "Milli güreşçi ve başpehlivan Feyzullah Aktürk, gelecek yıl düzenlenecek 666. Tarihi Kırkpınar Yağlı Güreşleri’nde altın kemeri boynuna takmayı hedefliyor.",
+      "url": "https://www.aa.com.tr/tr/spor/avrupa-sampiyonu-baspehlivan-kirkpinarda-son-anda-kacirdigi-altin-kemeri-almak-istiyor/4048486",
       "image": "",
-      "date": "2026-09-05T19:21:37.000Z",
+      "date": "2026-09-05T21:41:56.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "\"Minik Herkül\"ün hedefi Paralimpik Oyunları'nda altın madalya",
+      "description": "Sivas'ta doğuştan boy kısalığı bulunan 1 metre 25 santimetre boyundaki bedensel engelli milli halterci Abdullah Kayapınar, 2028 yılında Los Angeles'ta düzenlenecek Paralimpik Oyunları'na yoğun tempoda hazırlanıyor.",
+      "url": "https://www.aa.com.tr/tr/spor/minik-herkulun-hedefi-paralimpik-oyunlarinda-altin-madalya/4048485",
+      "image": "",
+      "date": "2026-09-05T21:40:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Dünya Motokros Şampiyonası sporcuları memnun ediyor",
+      "description": "Afyonkarahisar'da düzenlenen Dünya Motokros Şampiyonası'nın Türkiye ayağı, yarış kalitesi, pist zemini ve tesis imkanlarıyla sporculara keyifli bir mücadele ortamı sunuyor.",
+      "url": "https://www.aa.com.tr/tr/spor/dunya-motokros-sampiyonasi-sporculari-memnun-ediyor/4048484",
+      "image": "",
+      "date": "2026-09-05T21:40:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "33. Uluslararası Aspendos Opera ve Bale Festivali \"Attila\" operasıyla başlayacak",
+      "description": "Kültür ve Turizm Bakanlığı Devlet Opera ve Balesi Genel Müdürlüğünce düzenlenen 33. Uluslararası Aspendos Opera ve Bale Festivali, 12-26 Eylül'de opera ve bale eserlerini sanatseverlerle buluşturacak.",
+      "url": "https://www.aa.com.tr/tr/kultur/33-uluslararasi-aspendos-opera-ve-bale-festivali-attila-operasiyla-baslayacak/4048483",
+      "image": "",
+      "date": "2026-09-05T21:40:19.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -33,17 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in Lübnan'a Ekim 2023'ten bu yana düzenlediği saldırılarda 9 bine yakın kişi hayatını kaybetti",
-      "description": "İsrail ordusunun 8 Ekim 2023'ten bu yana Lübnan'a düzenlediği saldırılarda 9 bine yakın kişi yaşamını yitirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilin-lubnana-ekim-2023ten-bu-yana-duzenledigi-saldirilarda-9-bine-yakin-kisi-hayatini-kaybetti/4048403",
-      "image": "",
-      "date": "2026-09-05T18:56:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -66,28 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Batman'da TEKNOFEST Drone Şampiyonası'nın ikinci etabı başladı",
-      "description": "Havacılık, Uzay ve Teknoloji Festivali (TEKNOFEST) kapsamında Batman'da düzenlenen \"Drone Şampiyonası\"nın ikinci etabı başladı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/batmanda-teknofest-drone-sampiyonasinin-ikinci-etabi-basladi/4048376",
-      "image": "",
-      "date": "2026-09-05T18:02:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Putin'in ABD Başkanı Trump'ın temsilcileriyle görüşmesi başladı",
-      "description": "Rusya Devlet Başkanı Vladimir Putin'in, ABD Başkanı Donald Trump'ın özel temsilcileri Steve Witkoff ve Jared Kushner ile görüşmesi başladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/putinin-abd-baskani-trumpin-temsilcileriyle-gorusmesi-basladi/4048366",
-      "image": "",
-      "date": "2026-09-05T17:42:14.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
