@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-09-06T16:42:23.849Z",
+  "lastUpdated": "2026-09-06T20:01:03.694Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Reaktionen auf Wahl in Sachsen-Anhalt: AfD jubelt, andere Parteien bedrückt",
+      "description": "In Sachsen-Anhalt ist am Sonntag ein neuer Landtag gewählt worden. Die AfD wird nach den bisherigen Zahlen stärkste Kraft. Politiker aus Berlin und Brandenburg äußern sich zum Ergebnis in Sachsen-Anhalt - auch mit Blick auf die Wahl in Berlin.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/09/landtagswahl-sachsen-anhalt-berlin-brandenburg-reaktionen.html",
+      "image": "",
+      "date": "2026-09-06T19:50:27.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'de Amazon'a ait kargo uçağı iniş sırasında pistten çıktı",
+      "description": "ABD'de Amazon’a ait Boeing 767 tipi bir kargo uçağının Florida eyaletindeki Miami Uluslararası Havalimanı'na inerken pistten çıktığı belirtildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abdde-amazona-ait-kargo-ucagi-inis-sirasinda-pistten-cikti/4049099",
+      "image": "",
+      "date": "2026-09-06T19:39:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Zeynep Sönmez, ABD Açık'ta çiftlerde 3. tura çıktı",
+      "description": "Zeynep Sönmez ile Alman partneri Tatjana Maria, sezonun son grand slam tenis turnuvası ABD Açık'ta çift kadınlarda 3. tura yükseldi.",
+      "url": "https://www.aa.com.tr/tr/spor/zeynep-sonmez-abd-acikta-ciftlerde-3-tura-cikti/4049091",
+      "image": "",
+      "date": "2026-09-06T19:25:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Nach Cyberangriff: Neues Datenpaket aus dem Berliner Landesnetz aufgetaucht",
+      "description": "Nach einem Hackerangriff auf das Berliner Landesnetz sind am Freitag weitere Daten im Darknet veröffentlicht worden. Bei der betroffenen Senatsbauverwaltung kann es nun zu Einschränkungen für die Mitarbeiter kommen.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-neues-datenpaket-rhysida-darknet.html",
+      "image": "",
+      "date": "2026-09-06T18:51:30.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Batman'da TEKNOFEST Drone Şampiyonası'nın ikinci etabı tamamlandı",
+      "description": "Havacılık, Uzay ve Teknoloji Festivali (TEKNOFEST) kapsamında Batman'da düzenlenen \"Drone Şampiyonası\"nın ikinci etabı tamamlandı.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/batmanda-teknofest-drone-sampiyonasinin-ikinci-etabi-tamamlandi/4049061",
+      "image": "",
+      "date": "2026-09-06T18:36:41.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kocaelispor, Samsunspor'u mağlup etti",
+      "description": "Kocaelispor, konuk ettiği Samsunspor'u 1-0 yendi.",
+      "url": "https://www.aa.com.tr/tr/spor/kocaelispor-samsunsporu-maglup-etti/4049037",
+      "image": "",
+      "date": "2026-09-06T18:08:17.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trabzonspor, Hüseyin Çimşir yönetiminde farklı galip geldi",
+      "description": "Trabzonspor, teknik direktör Fatih Tekke ile yolların ayrılmasının ardından göreve getirilen Hüseyin Çimşir yönetimindeki karşılaşmasında Gençlerbirliği'ni 5-0 mağlup etti.",
+      "url": "https://www.aa.com.tr/tr/spor/trabzonspor-huseyin-cimsir-yonetiminde-farkli-galip-geldi/4049032",
+      "image": "",
+      "date": "2026-09-06T18:01:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Handball: Füchse Berlin zittern sich zum Sieg in Stuttgart",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/09/handball-bundesliga-stuttgart-fuechse-berlin.html",
+      "image": "",
+      "date": "2026-09-06T17:18:17.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Champions Hockey League: Eisbären verlieren auch in Davos",
       "description": "",
@@ -14,39 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "Irak Başbakanı Zeydi, Türkiye’nin Bağdat Büyükelçisi ile ikili ilişkileri ve bölgesel gelişmeleri görüştü",
-      "description": "Irak Başbakanı Ali Falih Zeydi, Türkiye’nin Bağdat Büyükelçisi Anıl Bora İnan ile ikili ilişkileri ve bölgesel gelişmeleri ele aldı.",
-      "url": "https://www.aa.com.tr/tr/dunya/irak-basbakani-zeydi-turkiye-nin-bagdat-buyukelcisi-ile-ikili-iliskileri-ve-bolgesel-gelismeleri-gorustu/4048976",
-      "image": "",
-      "date": "2026-09-06T16:25:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gençler Dünya Motokros Şampiyonası'nda Farres birinci oldu",
-      "description": "Afyonkarahisar'da düzenlenen Gençler Dünya Motokros Şampiyonası'nda (MX2) İspanyol Guillem Farres birinci oldu.",
-      "url": "https://www.aa.com.tr/tr/spor/gencler-dunya-motokros-sampiyonasinda-farres-birinci-oldu/4048974",
-      "image": "",
-      "date": "2026-09-06T16:14:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail’in 2 Mart’tan bu yana Lübnan’a saldırılarında can kaybı 4 bin 362’ye yükseldi",
-      "description": "İsrail ordusunun Lübnan’a yönelik saldırılarında 2 Mart’tan bu yana hayatını kaybedenlerin sayısı 4 bin 362’ye, yaralananların sayısı 12 bin 378’e yükseldi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-in-2-mart-tan-bu-yana-lubnan-a-saldirilarinda-can-kaybi-4-bin-362-ye-yukseldi/4048972",
-      "image": "",
-      "date": "2026-09-06T16:12:47.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Chemische Reaktion von Putzmitteln - Hostel in Berlin zeitweise geräumt",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-hostel-feuerwehr-putzmittel-chemische-reaktion.html",
@@ -55,61 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Basketball: Alba mit klarer Testspiel-Niederlage gegen Rostock",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/09/basketball-testspiel-alba-berlin-rostock-seawolves.html",
-      "image": "",
-      "date": "2026-09-06T15:41:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Sabotage an Umspannwerken: Suche mit Fahndungsfotos",
-      "description": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus haben Fotos von einem 48-Jährigen veröffentlicht. Er wird verdächtigt, Sabotageakte auf Umspannwerke in Brandenburg und NRW verübt zu haben.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
-      "image": "",
-      "date": "2026-09-06T15:39:57.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Wetter: Montag warm, Dienstag kühler - und immer zu trocken",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/09/wetter-abkuehlung-regen.html",
-      "image": "",
-      "date": "2026-09-06T15:38:44.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Arca Çorum FK, konuk ettiği Eyüpspor'u yendi",
-      "description": "Trendyol Süper Lig'in 4. haftasında Arca Çorum FK, konuk ettiği Eyüpspor'u 3-0 yendi.",
-      "url": "https://www.aa.com.tr/tr/spor/arca-corum-fk-konuk-ettigi-eyupsporu-yendi/4048944",
-      "image": "",
-      "date": "2026-09-06T15:11:26.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kasımpaşa ile Amed Sportif Faaliyetler berabere kaldı",
-      "description": "Trendyol Süper Lig'in 4. haftasında Kasımpaşa ile Amed Sportif Faaliyetler 2-2 berabere kaldı.",
-      "url": "https://www.aa.com.tr/tr/spor/kasimpasa-ile-amed-sportif-faaliyetler-berabere-kaldi/4048940",
-      "image": "",
-      "date": "2026-09-06T15:02:26.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
