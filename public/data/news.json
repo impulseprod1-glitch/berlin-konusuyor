@@ -1,60 +1,71 @@
 {
-  "lastUpdated": "2026-09-12T20:12:39.895Z",
+  "lastUpdated": "2026-09-12T23:45:01.712Z",
   "count": 10,
   "articles": [
+    {
+      "title": "ABD Açık'ta tek kadınlar şampiyonu Rybakina oldu",
+      "description": "Sezonun son grand slam tenis turnuvası ABD Açık'ta Belaruslu Aryna Sabalenka'yı 2-1 yenen Kazak Elena Rybakina şampiyon oldu.",
+      "url": "https://www.aa.com.tr/tr/spor/abd-acikta-tek-kadinlar-sampiyonu-rybakina-oldu/4055562",
+      "image": "",
+      "date": "2026-09-12T23:16:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Husiler: Suudi Arabistan'da silah depoları ve komuta kontrol merkezini hedef aldık",
+      "description": "Yemen'deki İran destekli Husiler, Suudi Arabistan'ın Şarure şehrinde bulunan bir askeri üsse balistik füze ve insansız hava araçlarıyla (İHA) saldırı düzenlediklerini öne sürdü.",
+      "url": "https://www.aa.com.tr/tr/live-blog/husiler-suudi-arabistanda-silah-depolari-ve-komuta-kontrol-merkezini-hedef-aldik/6370",
+      "image": "",
+      "date": "2026-09-12T22:19:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Gülistan Doku soruşturmasında 11 şüpheli hakkında gözaltı kararı",
+      "description": "Tunceli'de 5 Ocak 2020'den beri haber alınamayan üniversite öğrencisi Gülistan Doku ile ilgili soruşturma kapsamında 11 şüpheli hakkında gözaltı kararı verildi.",
+      "url": "https://www.aa.com.tr/tr/gundem/gulistan-doku-sorusturmasinda-11-supheli-hakkinda-gozalti-karari/4055548",
+      "image": "",
+      "date": "2026-09-12T21:49:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "\"The Bodyguard\" müzikali 20 Eylül'e kadar Zorlu PSM'de izleyiciyle buluşuyor",
+      "description": "Whitney Houston'ın unutulmaz şarkıları eşliğinde sahneye taşınan \"The Bodyguard\" müzikali, orijinal uluslararası oyuncu kadrosuyla İstanbul'da sanatseverlerle buluşuyor.",
+      "url": "https://www.aa.com.tr/tr/kultur/the-bodyguard-muzikali-20-eylule-kadar-zorlu-psmde-izleyiciyle-bulusuyor/4055542",
+      "image": "",
+      "date": "2026-09-12T21:14:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bosna Hersek, savaş suçlusu Mladic'e cenaze töreni düzenleyenler için yaptırım çağrısında bulundu",
+      "description": "Bosna Hersek Dışişleri Bakanı Elmedin Konakovic, Srebrenitsa Soykırımı'nın baş sorumlularından Ratko Mladic'in Sırbistan'da devlet ve askeri törenle gömülmesinden sorumlu kişilere yaptırım uygulanması çağrısında bulundu.",
+      "url": "https://www.aa.com.tr/tr/dunya/bosna-hersek-savas-suclusu-mladice-cenaze-toreni-duzenleyenler-icin-yaptirim-cagrisinda-bulundu/4055532",
+      "image": "",
+      "date": "2026-09-12T21:11:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Frankreich beendet WM-Märchen der DBB-Frauen",
       "description": "Die Reise zum Basketball-Olymp ist zu Ende: Das deutsche Team verlangt den Französinnen alles ab, leistet sich aber zu viele Ballverluste. Den Unterschied macht eine gebürtige US-Amerikanerin.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/09/basketball-wm-2026-deutschland-frankreich-sabally-uber-arena-.html",
       "image": "",
-      "date": "2026-09-12T20:01:39.000Z",
+      "date": "2026-09-12T20:16:00.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Dışişleri Bakanı Fidan İranlı mevkidaşı Erakçi ile telefonda görüştü",
-      "description": "Dışişleri Bakanı Hakan Fidan, İran Dışişleri Bakanı Abbas Erakçi ile telefon görüşmesi yaptı.",
-      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakani-fidan-iranli-mevkidasi-erakci-ile-telefonda-gorustu/4055492",
-      "image": "",
-      "date": "2026-09-12T19:50:06.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Irak'taki İslami Direniş örgütü, Suudi Arabistan petrol boru hattına \"saldırı gerçekleştirmediğini\" savundu",
-      "description": "Irak'ta Şii milis güçlerden oluşan ve kendisini \"Irak'taki İslami Direniş\" olarak tanıtan silahlı grup, Suudi Arabistan'ın Riyad ve Medine bölgelerindeki Doğu-Batı boru hattına saldırıyı \"gerçekleştirmediklerini\" savundu.",
-      "url": "https://www.aa.com.tr/tr/dunya/iraktaki-islami-direnis-orgutu-suudi-arabistan-petrol-boru-hattina-saldiri-gerceklestirmedigini-savundu/4055489",
-      "image": "",
-      "date": "2026-09-12T19:48:22.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Venedik Film Festivali'nde, İsrail'in Gazze'deki sivil katliamını belgeleyen \"NAZA\"ya \"Jüri Özel Ödülü\" verildi",
-      "description": "İtalya'da bu yıl 83'üncüsü düzenlenen Uluslararası Venedik Film Festivali'nde, \"Jüri Özel Ödülü\"ne, İsrail'in Gazze'deki sivil katliamını belgeleyen \"NAZA\" filmi layık görüldü.",
-      "url": "https://www.aa.com.tr/tr/kultur/venedik-film-festivalinde-israilin-gazzedeki-sivil-katliamini-belgeleyen-nazaya-juri-ozel-odulu-verildi/4055488",
-      "image": "",
-      "date": "2026-09-12T19:42:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Serie A'da Milan, Diego Moreira ile 1 puan aldı",
-      "description": "İtalya Birinci Futbol Ligi'nin (Serie A) 4. haftasında Lazio ile Milan 2-2 berabere kaldı.",
-      "url": "https://www.aa.com.tr/tr/spor/serie-ada-milan-diego-moreira-ile-1-puan-aldi/4055483",
-      "image": "",
-      "date": "2026-09-12T19:32:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -66,17 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Alanyaspor ile Göztepe 2-2 berabere kaldı",
-      "description": "Trendyol Süper Lig'in 5. haftasında Corendon Alanyaspor ile Göztepe 2-2 berabere kaldı.",
-      "url": "https://www.aa.com.tr/tr/spor/alanyaspor-ile-goztepe-2-2-berabere-kaldi/4055411",
-      "image": "",
-      "date": "2026-09-12T17:56:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
