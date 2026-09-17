@@ -1,27 +1,71 @@
 {
-  "lastUpdated": "2026-09-16T20:53:48.847Z",
+  "lastUpdated": "2026-09-17T00:06:04.389Z",
   "count": 10,
   "articles": [
     {
-      "title": "İstanbul merkezli \"Ailem Güvende\" operasyonunda 20 şüpheli tutuklandı",
-      "description": "İstanbul merkezli düzenlenen ve 6 LGBTİ+ derneğini de kapsayan \"Ailem Güvende\" operasyonunda gözaltına alınan 20 şüpheli tutuklandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/istanbul-merkezli-ailem-guvende-operasyonunda-20-supheli-tutuklandi/4059538",
+      "title": "ABD Başkanı Trump: Umarım (İran'la) savaşın sonuna doğru ilerliyoruz",
+      "description": "ABD Başkanı Donald Trump, anlaşma yapmak amacıyla Tahran'ın kendileriyle doğrudan temasa geçtiğini belirterek, \"Umarım (İran'la) savaşın sonuna doğru ilerliyoruz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-trump-umarim-iranla-savasin-sonuna-dogru-ilerliyoruz/4059576",
       "image": "",
-      "date": "2026-09-16T20:44:24.000Z",
+      "date": "2026-09-16T23:40:13.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Fed Başkanı Warsh, enflasyonun uzun süredir çok yüksek olduğunu söyledi",
-      "description": "ABD Merkez Bankası (Fed) Başkanı Kevin Warsh, enflasyonun çok uzun süredir çok yüksek olduğunu belirterek, bugünkü faiz artırımı kararının fiyat istikrarını sağlamaya yönelik doğru bir adım olduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/fed-baskani-warsh-enflasyonun-uzun-suredir-cok-yuksek-oldugunu-soyledi/4059535",
+      "title": "Yemen'den ABD'ye Husilere desteği durdurmak için eyleme geçme çağrısı",
+      "description": "Yemen Dışişleri Bakanı Afrah ez-Zube, ABD'yi, Kızıldeniz ve Babulmendeb Boğazı'nda tırmanan gerilim nedeniyle \"İran'ın Husilere sağladığı silah, finansman ve askeri uzmanlık akışını\" durdurmak için somut adımlar atmaya çağırdı.",
+      "url": "https://www.aa.com.tr/tr/dunya/yemenden-abdye-husilere-destegi-durdurmak-icin-eyleme-gecme-cagrisi/4059575",
       "image": "",
-      "date": "2026-09-16T20:40:14.000Z",
+      "date": "2026-09-16T23:31:45.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Yemen'de çatışmaların şiddetlenmesi nedeniyle 122 binden fazla kişi yerinden edildi",
+      "description": "Yemen'in 8 vilayetinde eylülün ilk yarısında Husilerle yaşanan çatışmalar nedeniyle 122 binden fazla kişinin yerinden edildiği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/yemende-catismalarin-siddetlenmesi-nedeniyle-122-binden-fazla-kisi-yerinden-edildi/4059571",
+      "image": "",
+      "date": "2026-09-16T22:56:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Uluslararası Göç Örgütü: Yemen'deki çatışmalar nedeniyle 104 binden fazla kişi yerinden edildi",
+      "description": "Birleşmiş Milletler (BM) Uluslararası Göç Örgütü (IOM), Yemen'in batı kıyısında devam eden çatışmalar nedeniyle 104 binden fazla kişinin yerinden edildiğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/uluslararasi-goc-orgutu-yemendeki-catismalar-nedeniyle-104-binden-fazla-kisi-yerinden-edildi/4059565",
+      "image": "",
+      "date": "2026-09-16T22:06:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "DSÖ, KDC'de Ebola salgınının büyümeye ve can almaya devam ettiğini bildirdi",
+      "description": "DSÖ Genel Direktörü Tedros Adhanom Ghebreyesus, Kongo Demokratik Cumhuriyeti'nde (KDC) Ebola salgınının büyümeye ve can almaya devam ettiğini bildirerek, \"7 eyalette 7 bin 200'den fazla vaka ve 3 bin 500'ün üzerinde ölüm bildirildi.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/dso-kdcde-ebola-salgininin-buyumeye-ve-can-almaya-devam-ettigini-bildirdi/4059564",
+      "image": "",
+      "date": "2026-09-16T22:06:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "BFC Dynamo verspielt 2:0 gegen Lok, Tasmania geht gegen Chemie unter",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/09/berlin-brandenburg-fussball-regionalliga-nordost-stahnsdorf-bfc-dynamo-babelsberg-tasmania.html",
+      "image": "",
+      "date": "2026-09-16T21:27:30.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,39 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "TJK'nin Nimet Üyken Basın Ödülleri sahiplerini buldu",
-      "description": "Anadolu Ajansından Başak Akbulut Yazar, Şebnem Coşkun ve Muhammed Furkan Dursun, \"Geleceğin jokeyleri hipodromlarda at koşturmak için zorlu eğitimden geçiyor\" başlıklı haberle ödüle layık görüldü.",
-      "url": "https://www.aa.com.tr/tr/gundem/tjknin-nimet-uyken-basin-odulleri-sahiplerini-buldu/4059504",
-      "image": "",
-      "date": "2026-09-16T20:07:05.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kolombiya Cumhurbaşkanı, Türk iş insanı Çankaya'nın kullandığı uçağın bulunduğunu duyurdu",
-      "description": "Kolombiya Cumhurbaşkanı Abelardo de la Espriella, Türk iş insanı Mehmet Çankaya'nın kullandığı uçağın bulunduğunu ve uçaktaki 5 kişinin hayatını kaybettiğini açıkladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/kolombiya-cumhurbaskani-turk-is-insani-cankayanin-kullandigi-ucagin-bulundugunu-duyurdu/4059479",
-      "image": "",
-      "date": "2026-09-16T19:00:55.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İçişleri Bakanı Çiftçi, İranlı mevkidaşı Mumini ile görüştü",
-      "description": "İçişleri Bakanı Mustafa Çiftçi, İran İçişleri Bakanı İskender Mumini ile Ankara'da bir araya geldi.",
-      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-iranli-mevkidasi-mumini-ile-gorustu/4059463",
-      "image": "",
-      "date": "2026-09-16T18:33:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/09/pfarrer-und-ddr-buergerrechtler-martin-gutzeit-gestorben-.html",
       "image": "",
       "date": "2026-09-16T17:25:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Polizei stellt Anti-Höcke-Plakat bei der Linken in Fürstenwalde sicher",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/09/polizei-Plakat-bjoern-hoecke-beschlagnahmung-linke.html",
-      "image": "",
-      "date": "2026-09-16T16:17:33.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
