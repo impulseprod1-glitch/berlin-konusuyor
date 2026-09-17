@@ -1,35 +1,57 @@
 {
-  "lastUpdated": "2026-09-17T17:56:03.786Z",
+  "lastUpdated": "2026-09-17T21:00:15.429Z",
   "count": 10,
   "articles": [
     {
-      "title": "BM: Bu yıl Avrupa'ya gelen düzensiz göçmen sayısı azalırken, göç yolunda ölümler arttı",
-      "description": "Birleşmiş Milletler (BM) Uluslararası Göç Örgütü (IOM), bu yıl Avrupa'ya gelen düzensiz göçmen ve mülteci sayısının keskin bir şekilde azaldığını ancak Orta Akdeniz rotasındaki ölümlerin arttığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-bu-yil-avrupaya-gelen-duzensiz-gocmen-sayisi-azalirken-goc-yolunda-olumler-artti/4060464",
+      "title": "Gazze'deki Kuveyt Sahra Hastanesi: Yakıt tedarikinin kesilmesi nedeniyle hizmetlerin çoğu askıya alınıyor",
+      "description": "Gazze Şeridi'ndeki Kuveyt Sahra Hastanesi, yakıt tedarikinin durması nedeniyle pazar gününden itibaren sağlık hizmetlerinin çoğunu askıya alacağını, faaliyetlerini sadece acil vakalara müdahaleyle sınırlandıracağını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/gazzedeki-kuveyt-sahra-hastanesi-yakit-tedarikinin-kesilmesi-nedeniyle-hizmetlerin-cogu-askiya-aliniyor/4060631",
       "image": "",
-      "date": "2026-09-17T17:33:45.000Z",
+      "date": "2026-09-17T20:50:38.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Türk Telekom Genel Müdürlük binasına COP31 kapsamında \"Yarına Sözümüz Var\" mesajı yansıtıldı",
-      "description": "Türk Telekom Genel Müdürlüğünün binasına Birleşmiş Milletler (BM) İklim Değişikliği Çerçeve Sözleşmesi 31. Taraflar Konferansı (COP31) kapsamında \"Yarına Sözümüz Var\" mesajı yansıtıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/turk-telekom-genel-mudurluk-binasina-cop31-kapsaminda-yarina-sozumuz-var-mesaji-yansitildi/4060463",
+      "title": "ABD, savaşa rağmen İranlı üst düzey hükümet yetkililerine BM Genel Kurulu için vize verdi",
+      "description": "ABD, savaşın devam etmesine rağmen, İranlı üst düzey hükümet yetkililerine ve diplomatlara, New York'taki 81. Birleşmiş Milletler (BM) Genel Kurulu görüşmelerine katılmaları için vize onayı verdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-savasa-ragmen-iranli-ust-duzey-hukumet-yetkililerine-bm-genel-kurulu-icin-vize-verdi/4060625",
       "image": "",
-      "date": "2026-09-17T17:32:56.000Z",
+      "date": "2026-09-17T20:46:44.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Fransız hükümeti, 2027 bütçesi için 54 milyar avro tasarruf sağlanmasını istiyor ",
-      "description": "Fransa Başbakanı Sebastien Lecornu, kamu borcunun bütçe dengesi üzerinde giderek daha fazla baskı uyguladığını ve 2027 bütçesinde 54 milyar avro tasarruf istediğini belirtti.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/fransiz-hukumeti-2027-butcesi-icin-54-milyar-avro-tasarruf-saglanmasini-istiyor-/4060460",
+      "title": "İsrail'in Gazze'de düzenlediği saldırılar sonucu 1 Filistinli hayatını kaybetti",
+      "description": "İsrail ordusunun Gazze Şeridi'nin orta ve güney kesimlerinde düzenlediği saldırılar ve açtığı ateş sonucu 1 Filistinli hayatını kaybetti, çok sayıda kişi yaralandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilin-gazzede-duzenledigi-saldirilar-sonucu-1-filistinli-hayatini-kaybetti/4060615",
       "image": "",
-      "date": "2026-09-17T17:31:53.000Z",
+      "date": "2026-09-17T20:39:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD'nin Michigan eyaletinde eğitim sırasında F-16 savaş uçağı düştü",
+      "description": "ABD'de bir F-16 savaş uçağının rutin eğitim sırasında Michigan eyaletinin kırsal kesiminde düştüğü bildirildi",
+      "url": "https://www.aa.com.tr/tr/dunya/abdnin-michigan-eyaletinde-egitim-sirasinda-f-16-savas-ucagi-dustu/4060613",
+      "image": "",
+      "date": "2026-09-17T20:37:05.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Beşiktaş, Olimpik Marsilya'yı mağlup etti",
+      "description": "Beşiktaş, UEFA Avrupa Ligi'nde Olimpik Marsilya'yı 4-1 yendi.",
+      "url": "https://www.aa.com.tr/tr/spor/besiktas-olimpik-marsilyayi-maglup-etti/4060572",
+      "image": "",
+      "date": "2026-09-17T19:55:01.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -58,17 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Fransa'da Gazze'deki soykırımdan bahsedilen programın tekrarının kaldırılması protesto edildi",
-      "description": "Fransa'da oyuncu Adele Haenel'in İsrail'in Gazze'deki soykırımına değindiği televizyon programının tekrarının Fransız kamu yayıncısının internet sitesinden kaldırılmasına tepki olarak protesto düzenlendi.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransada-gazzedeki-soykirimdan-bahsedilen-programin-tekrarinin-kaldirilmasi-protesto-edildi/4060448",
-      "image": "",
-      "date": "2026-09-17T17:15:55.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Hertha vor Spiel gegen Dresden: Von Sorgenfalten zum Luxusproblem",
       "description": "Zu Saisonbeginn herrschten große Zweifel daran, ob der Kader von Hertha BSC gut genug besetzt ist. Nach fünf Spieltagen plagen Trainer Stefan Leitl aber plötzlich regelrechte Luxusprobleme. Vor dem Spiel gegen Dynamo Dresden hat er die Qual der Wahl.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/09/berlin-fussball-hertha-bsc-dynamo-dresden-vorbericht-leitl-adewumi-gouram-groenning-nilsson.html",
@@ -77,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Uşak'ta sağanak nedeniyle yollar kapandı ",
-      "description": "Uşak'ta kısa süre etkili olan sağanak ve dolu nedeniyle Uşak-Ankara ve Uşak-Denizli kara yollarının bir bölümü trafiğe kapatıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/usakta-saganak-nedeniyle-yollar-kapandi-/4060428",
-      "image": "",
-      "date": "2026-09-17T16:51:13.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
