@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-09-18T18:52:42.362Z",
-  "count": 9,
+  "lastUpdated": "2026-09-18T22:18:45.475Z",
+  "count": 10,
   "articles": [
+    {
+      "title": "Trump, ABD'nin Grönland'da \"kalıcı güvenlik kontrolü\" için Danimarka ile anlaştığını duyurdu",
+      "description": "ABD Başkanı Donald Trump, ABD'nin Grönland'da \"kalıcı güvenlik kontrolü\" için Danimarka ile anlaştığını ve bu kapsamda adada büyük bir askeri varlık oluşturma sürecine başlayacaklarını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-abdnin-gronlandda-kalici-guvenlik-kontrolu-icin-danimarka-ile-anlastigini-duyurdu/4061643",
+      "image": "",
+      "date": "2026-09-18T21:52:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ulusal Akıllı Şehirler Stratejisi ve Eylem Planı'na ilişkin genelge Resmi Gazete'de",
+      "description": "\"2030 Ulusal Akıllı Şehirler Stratejisi ve Eylem Planı\" konulu Cumhurbaşkanlığı Genelgesi, Resmi Gazete'de yayımlandı.",
+      "url": "https://www.aa.com.tr/tr/gundem/ulusal-akilli-sehirler-stratejisi-ve-eylem-planina-iliskin-genelge-resmi-gazetede/4061641",
+      "image": "",
+      "date": "2026-09-18T21:50:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Basketball: Alba Berlin gewinnt Saisonauftakt gegen Chemnitz",
+      "description": "Erst nochmal die Meisterschaft nachgefeiert, dann wieder am Nullpunkt mit der neuen Arbeit gestartet: Die Basketballer von Alba Berlin haben die Bundesliga-Saison mit einem Sieg begonnen. Gegen die Niners Chemnitz taten sich die Berliner am Freitag äußerst schwer.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/09/basketball-berlin-alba-bundesliga-chemnitz.html",
+      "image": "",
+      "date": "2026-09-18T21:35:07.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Küçükbaş hayvan varlığındaki yükseliş yetiştiriciyi memnun etti",
+      "description": "Türkiye Damızlık Koyun Keçi Yetiştiricileri Merkez Birliği (TÜDKİYEB) Genel Başkanı Turan Saldırıcıer, ülkede küçükbaş hayvan varlığının yeniden 55-60 milyon baş bandına ulaşmasının sektör açısından dikkat çekici gelişme olduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kucukbas-hayvan-varligindaki-yukselis-yetistiriciyi-memnun-etti/4061631",
+      "image": "",
+      "date": "2026-09-18T21:26:58.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ağrı'da Nuh'un Gemisi çalışmaları uluslararası belgesellere konu oluyor",
+      "description": "Ağrı'nın Doğubayazıt ilçesinde Nuh'un Gemisi'ne ait kalıntıların olduğuna inanılan alanla ilgili yapılan bilimsel çalışmalar uluslararası belgesellere konu oluyor.",
+      "url": "https://www.aa.com.tr/tr/kultur/agrida-nuhun-gemisi-calismalari-uluslararasi-belgesellere-konu-oluyor/4061628",
+      "image": "",
+      "date": "2026-09-18T21:22:24.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump, Çin Devlet Başkanı Şi ile \"çok verimli\" bir görüşme yapmayı umuyor",
+      "description": "ABD Başkanı Donald Trump, 23 Eylül'de Beyaz Saray'da ağırlayacağı Çin Devlet Başkanı Şi Cinping ile iyi anlaştığını ve onunla yapacağı görüşmelerin \"çok verimli\" geçmesini beklediğini söyledi.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-cin-devlet-baskani-si-ile-cok-verimli-bir-gorusme-yapmayi-umuyor/4061623",
+      "image": "",
+      "date": "2026-09-18T21:17:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fußball-Bundesliga: Weiter siegloses Union geht bei Bayern unter",
+      "description": "Sie hatten keine Chance und konnten sie nicht nutzen - Union Berlin hat am vierten Spieltag der Fußball-Bundesliga mit 0:7 bei Bayern München verloren. Und das mehr als verdient.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/09/fussball-bundesliga-bayern-muenchen-union-berlin-liveticker-audiostream-netcast-sportschau-spielbericht.html",
+      "image": "",
+      "date": "2026-09-18T20:48:39.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "CSD-Veranstaltungen am Samstag in Hennigsdorf, Jüterbog und Bad Belzig",
       "description": "",
@@ -22,72 +99,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": " İsrail'in Gazze kentine düzenlediği saldırılarda 2 Filistinli hayatını kaybetti",
-      "description": "İsrail ordusunun Gazze Şeridi'ne düzenlediği saldırılarda 2 Filistinli yaşamını yitirdi, biri kız çocuğu çok sayıda kişi de yaralandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/-israilin-gazze-kentine-duzenledigi-saldirilarda-2-filistinli-hayatini-kaybetti/4061507",
-      "image": "",
-      "date": "2026-09-18T18:25:23.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Jetzt live hören und im Ticker: Was geht für Union in München?",
-      "description": "Nur ein Punkt aus bisher drei Partien und dann ausgerechnet vor der langen Länderspielpause das wahrscheinlich schwerste Auswärtsspiel der Saison. Kann der 1. FC Union Berlin beim FC Bayern München die Chance nutzen, die er eigentlich nicht hat?",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/09/fussball-bundesliga-bayern-muenchen-union-berlin-liveticker-audiostream-netcast-sportschau-spielbericht.html",
-      "image": "",
-      "date": "2026-09-18T18:25:02.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "\"İmamoğlu çıkar amaçlı suç örgütü\" soruşturmasında ek iddianame düzenlendi",
-      "description": "\"İmamoğlu çıkar amaçlı suç örgütü\"ne yönelik soruşturma kapsamında, Ağaç ve Peyzaj AŞ üzerinden usulsüz ihale sistemi işletilerek ihalelere fesat karıştırıldığı iddiasıyla 29 şüpheli hakkında ek iddianame hazırlandı.",
-      "url": "https://www.aa.com.tr/tr/gundem/imamoglu-cikar-amacli-suc-orgutu-sorusturmasinda-ek-iddianame-duzenlendi/4061505",
-      "image": "",
-      "date": "2026-09-18T18:23:38.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Türk Kızılay İstanbul'da 20 yeni kan çalkalama cihazını hizmete aldı",
-      "description": "Türk Kızılay İstanbul İl Başkanlığı tarafından hayırseverlerin katkılarıyla kente kazandırılan 20 yeni kan çalkalama cihazı, Kuzey Marmara Bölge Kan Merkezi'nde düzenlenen törenle hizmete alındı.",
-      "url": "https://www.aa.com.tr/tr/gundem/turk-kizilay-istanbulda-20-yeni-kan-calkalama-cihazini-hizmete-aldi/4061495",
-      "image": "",
-      "date": "2026-09-18T18:10:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Gürcistan'dan tek taraflı bağımsızlığını ilan eden Güney Osetya'daki seçimlere tepki",
-      "description": "Gürcistan Dışişleri Bakanlığı, ülkeden tek taraflı bağımsızlığını ilan eden ve Rusya'nın desteklediği Güney Osetya'da düzenlenen sözde erken devlet başkanlığı seçimlerine tepki gösterdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/gurcistandan-tek-tarafli-bagimsizligini-ilan-eden-guney-osetyadaki-secimlere-tepki/4061493",
-      "image": "",
-      "date": "2026-09-18T18:10:03.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "DMM'den \"Somali'nin Türk vatandaşlarına vize kısıtlaması getirdiği\" iddiasına yalanlama",
-      "description": "Cumhurbaşkanlığı İletişim Başkanlığı Dezenformasyonla Mücadele Merkezi (DMM), \"Somali'nin Türk vatandaşlarına vize kısıtlaması getirdiği\" yönündeki iddiaların doğru olmadığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/dmmden-somalinin-turk-vatandaslarina-vize-kisitlamasi-getirdigi-iddiasina-yalanlama/4061492",
-      "image": "",
-      "date": "2026-09-18T18:04:37.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
