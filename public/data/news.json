@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-09-22T23:59:52.662Z",
+  "lastUpdated": "2026-09-23T04:34:59.993Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Rentenreform: \"Alle in ein System, alle zu gleichen Bedingungen\"",
+      "description": "Während die Babyboomer sich allmählich in die Rente verabschieden, bangen nachfolgende Generationen um ihre Altersvorsorge. Was die Rentenkommission vorsieht und was es zu beachten gibt, erklärt Henriette Wunderlich vom Sozialverband Deutschland.",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/09/rentenreform-verunsicherung-sozialverband-deutschland-interview.html",
+      "image": "",
+      "date": "2026-09-23T04:10:49.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Hugging-Face-Vorfall von OpenAI: \"KI-Angst ist auch Werbung\"",
+      "description": "Bei einem Sicherheitstest des KI-Unternehmens OpenAI fanden KI-Agenten einen Weg aus ihrer abgeschotteten Umgebung und griffen Systeme von Hugging Face an. Droht der Menschheit nun das Ende – oder werden die Fähigkeiten von KI überschätzt?",
+      "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-ki-agenten-hugging-face-open-ai-cybersicherheit.html",
+      "image": "",
+      "date": "2026-09-23T04:09:46.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Ticaret Bakanı Bolat, 4. Türk-Amerikan İş Dünyası Buluşması'nda konuştu",
+      "description": "Ticaret Bakanı Ömer Bolat, Türkiye ekonomisinin ihracatın artırılması ve ödemeler dengesinin iyileştirilmesiyle daha da güçleneceğini belirtti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ticaret-bakani-bolat-4-turk-amerikan-is-dunyasi-bulusmasinda-konustu/4065674",
+      "image": "",
+      "date": "2026-09-23T02:57:07.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Dışişleri Bakanı Fidan, İngiliz mevkidaşı Miliband ile New York'ta bir araya geldi",
+      "description": "Dışişleri Bakanı Hakan Fidan, İngiltere Dışişleri Bakanı Ed Miliband ile görüştü.",
+      "url": "https://www.aa.com.tr/tr/gundem/disisleri-bakani-fidan-ingiliz-mevkidasi-miliband-ile-new-yorkta-bir-araya-geldi/4065665",
+      "image": "",
+      "date": "2026-09-23T01:54:46.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Guterres: İki devletli çözüme verilen destek sözlerin ötesine geçmelidir",
+      "description": "Birleşmiş Milletler (BM) Genel Sekreteri Antonio Guterres, Filistinliler ve Orta Doğu'da barışa önem veren herkes açısından iki devletli çözüme verilen desteğin sözlerin ötesine geçmesi gerektiğini kaydetti.",
+      "url": "https://www.aa.com.tr/tr/dunya/guterres-iki-devletli-cozume-verilen-destek-sozlerin-otesine-gecmelidir/4065644",
+      "image": "",
+      "date": "2026-09-23T01:07:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Netanyahu ve Smotrich’ten Fransız Cumhurbaşkanı Macron’a tepki",
       "description": "İsrail Başbakanı Netanyahu ve aşırı sağcı Maliye Bakanı Smotrich, Fransa Cumhurbaşkanı Macron'un Gazze'deki insani duruma ve işgal altındaki Batı Şeria'da Filistin topraklarını gasbeden İsrailli şiddetine ilişkin eleştirilerine tepki gösterdi.",
@@ -14,44 +69,11 @@
       "type": "rss"
     },
     {
-      "title": "Yemen'de hükümet güçleri Taiz'deki stratejik tepeyi kontrol altına aldıklarını duyurdu",
-      "description": "Yemen’de hükümet güçleri, ülkenin güneyindeki Taiz vilayetine bağlı Eş-Şamayeteyn ilçesinde yer alan stratejik Kirfan Dağı'nı Husilerden geri aldıklarını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/yemende-hukumet-gucleri-taizdeki-stratejik-tepeyi-kontrol-altina-aldiklarini-duyurdu/4065599",
+      "title": "İstanbul'un bazı bölgelerinde sağanak etkili oldu",
+      "description": "İstanbul'un bazı bölgelerinde sağanak etkili oldu.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulun-bazi-bolgelerinde-saganak-etkili-oldu/4065508",
       "image": "",
-      "date": "2026-09-22T22:43:54.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran'ın Keşm Adası yakınlarında patlama sesi duyuldu",
-      "description": "İran'ın güneyindeki Hürmüzgan eyaletine bağlı Keşm Adası yakınlarında patlama sesi duyulduğu bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/iranin-kesm-adasi-yakinlarinda-patlama-sesi-duyuldu/4065546",
-      "image": "",
-      "date": "2026-09-22T22:00:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Boşnak lider Becirovic, BM 81. Genel Kurulu'nda Gazze'deki soykırıma dikkati çekti",
-      "description": "Bosna Hersek Devlet Başkanlığı Konseyi Başkanı Denis Becirovic, \"Dünya, Bosna Hersek'e yönelik saldırı sırasında olduğu gibi Ukrayna'ya yönelik saldırıya ve Gazze'de Filistinlilere karşı işlenen soykırıma da gereken tepkiyi vermedi.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/dunya/bosnak-lider-becirovic-bm-81-genel-kurulunda-gazzedeki-soykirima-dikkati-cekti/4065529",
-      "image": "",
-      "date": "2026-09-22T21:42:39.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Ukrayna Devlet Başkanı Zelenskiy, ABD Başkanı Trump'la görüşmesini değerlendirdi",
-      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, ABD Başkanı Donald Trump'la birlikte Rusya Devlet Başkanı Vladimir Putin ile bir araya gelmeye hazır olduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/ukrayna-devlet-baskani-zelenskiy-abd-baskani-trumpla-gorusmesini-degerlendirdi/4065509",
-      "image": "",
-      "date": "2026-09-22T21:17:33.000Z",
+      "date": "2026-09-22T21:17:28.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -85,28 +107,6 @@
       "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/linke-sondierungen-koalitionsverhandlungen-antisemitismus-vorwurf.html",
       "image": "",
       "date": "2026-09-22T18:41:32.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin nur Außenseiter im Rennen um deutsche Olympia-Bewerbung",
-      "description": "Die Evaluierungskommission des Deutschen Olympischen Sportbunds (DOSB) hat die drei Olympia-Bewerber bewertet und sieht München und \"KölnRheinRuhr\" als besser geeignet an als Berlin.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/09/olympia-olympische-spiele-bewerbung-dosb-kommission-empfehlung-berlin-muenchen-koeln-rhein-ruhr.html",
-      "image": "",
-      "date": "2026-09-22T18:15:55.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin-Wahl im Liveticker: ++  Saleh tritt nicht wieder an ++ Eralp neue Co-Vorsitzende",
-      "description": "Berlin hat ein neues Abgeordnetenhaus und die BVVen gewählt: Im rbb|24-Liveticker begleiten wir Sie durch den Tag nach der Wahl und danach.",
-      "url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/berlin-wahl-agh-bvv-ergebnis-liveticker.html",
-      "image": "",
-      "date": "2026-09-22T16:46:34.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
