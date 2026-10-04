@@ -1,0 +1,49 @@
+name: 'Stories: publish'
+
+# Starts at 08:35 Berlin and waits inside the job until 09:00, because GitHub
+# often starts scheduled runs 5–20 minutes late. In summer the second slot
+# (09:35) doubles as an automatic retry; markers prevent double posts.
+on:
+  schedule:
+    - cron: '35 6 * * *' # 08:35 CEST (summer)
+    - cron: '35 7 * * *' # 08:35 CET (winter)
+  workflow_dispatch:
+    inputs:
+      now:
+        description: 'Publish immediately (skip the time window and the veto wait)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: stories-edition
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: instagram-stories
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: instagram-stories/package-lock.json
+      - run: npm ci
+      - name: Read the veto and publish to Instagram
+        run: npm run edition:publish -- ${{ inputs.now && '--now' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_BASE: ${{ vars.IG_GRAPH_BASE }}
+          BRAND_HANDLE: ${{ vars.BRAND_HANDLE }}

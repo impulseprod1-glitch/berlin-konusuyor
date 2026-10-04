@@ -1,0 +1,52 @@
+name: 'Stories: prepare'
+
+# 08:10 Berlin. GitHub cron is UTC and has no time zone, so both offsets are
+# scheduled; the script runs only in the slot where Berlin shows 08:xx.
+on:
+  schedule:
+    - cron: '10 6 * * *' # 08:10 CEST (summer)
+    - cron: '10 7 * * *' # 08:10 CET (winter)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Redo today even if it is already prepared'
+        type: boolean
+        default: false
+
+# Shared with publish: a late prepare must never race a publish run.
+concurrency:
+  group: stories-edition
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: instagram-stories
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: instagram-stories/package-lock.json
+      - run: npm ci
+      - name: Prepare today's stories and send the Telegram preview
+        run: >-
+          npm run edition:prepare --
+          ${{ github.event_name == 'workflow_dispatch' && '--now' || '' }}
+          ${{ inputs.force && '--force' || '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_BASE: ${{ vars.IG_GRAPH_BASE }}
+          BRAND_HANDLE: ${{ vars.BRAND_HANDLE }}
