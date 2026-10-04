@@ -1,0 +1,32 @@
+rules_version = '2';
+
+// Only the admin uploads files: news images (src/admin.js) and chat images
+// (src/features/chat.js). Everyone may view them.
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Keep in sync with firestore.rules and src/utils/admins.js.
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in ['oarslanerbln@gmail.com'];
+    }
+
+    function validImage() {
+      return request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/(jpeg|png|webp|gif)');
+    }
+
+    match /news/{file} {
+      allow read: if true;
+      allow create, update: if isAdmin() && validImage();
+      allow delete: if isAdmin();
+    }
+
+    match /chat/{room}/{file} {
+      allow read: if true;
+      allow create, update: if isAdmin() && validImage();
+      allow delete: if isAdmin();
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { db, auth, collection, query, orderBy, onSnapshot, addDoc, serverTimestamp, signInWithPopup, googleProvider, getDoc, doc } from '../firebase-config.js';
 import { uploadMedia } from '../utils/media-upload.js';
+import { isAdminUser } from '../utils/admins.js';
 
 let currentRoom = 'genel';
 let unsubscribe = null;
@@ -59,13 +60,9 @@ window.handleChatImage = async (event) => {
   const file = event.target.files[0];
   if (!file || !auth.currentUser) return;
 
-  // Permission Check: Admin or Approved
-  const ALLOWED_ADMINS = ['test@admin.com']; // Sync with admin.js or store in DB
-  const isAdmin = ALLOWED_ADMINS.includes(auth.currentUser.email);
-  
-  // Also check "Approved" status from Firestore if needed
-  // For now: Only Admins can upload in the prototype
-  if (!isAdmin) {
+  // Image uploads are admin-only (storage.rules); the check here only spares
+  // other users a failing upload.
+  if (!isAdminUser(auth.currentUser)) {
     alert("Resim paylaşma yetkisi sadece onaylı üyeler ve adminlere aittir.");
     return;
   }

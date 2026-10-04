@@ -1,42 +1,174 @@
 rules_version = '2';
+
+// Access model
+//   Editorial content (news, events, polls)  public read, admin write
+//   Community content (forum, jobs)          submitted for moderation, public sees approved only
+//   Chat                                     public read, signed-in users post as themselves
+//   Personal data (bookmarks, push tokens,   owner or admin only
+//   subscribers)
+// Everything not listed here is closed. Field and size checks exist because
+// the client is public JavaScript: anyone can call these endpoints directly.
+// Tests: tests/rules (npm test there) – run them after every change.
+
 service cloud.firestore {
   match /databases/{database}/documents {
-    
-    // Admin check function
+
+    // Keep in sync with src/utils/admins.js and storage.rules.
+    // email_verified matters: without it anyone could register this address
+    // with email/password and become admin.
     function isAdmin() {
-      return request.auth != null && (request.auth.token.email == 'test@admin.com' || request.auth.token.email == 'oarslanerbln@gmail.com'); 
-      // NOT: 'test@admin.com' kısmını kendi admin mailinizle değiştirin
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in ['oarslanerbln@gmail.com'];
     }
 
-    // Haberler, Etkinlikler, Anketler, Aboneler
-    match /news/{doc} { allow read: if true; allow write: if isAdmin(); }
-    match /events/{doc} { allow read: if true; allow write: if isAdmin(); }
-    match /polls/{doc} { allow read: if true; allow write: if isAdmin(); }
-    match /subscribers/{doc} { allow read: if isAdmin(); allow create: if true; }
+    function signedIn() {
+      return request.auth != null;
+    }
 
-    // Chat / Forum (Kullanıcılar okuyabilir, giriş yapanlar yazabilir)
-    match /chat_rooms/{room}/messages/{msg} {
+    function text(value, max) {
+      return value is string && value.size() > 0 && value.size() <= max;
+    }
+
+    function optionalText(value, max) {
+      return value == null || (value is string && value.size() <= max);
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function onlyChanged(keys) {
+      return incoming().diff(resource.data).affectedKeys().hasOnly(keys);
+    }
+
+    // ---------------------------------------------------------------- editorial
+
+    match /news/{id} {
       allow read: if true;
-      allow create: if request.auth != null;
-      allow delete, update: if isAdmin();
-    }
-
-    // İş İlanları & Forum (Kullanıcılar ekleyebilir, Admin onaylar)
-    match /jobs/{doc} {
-      allow read: if true;
-      allow create: if true; // veya auth
-      allow update, delete: if isAdmin();
-    }
-    match /forum/{doc} {
-      allow read: if true;
-      allow create: if request.auth != null;
-      allow update, delete: if isAdmin();
-    }
-
-    // Varsayılan: Giriş yapanlar her şeyi görebilir
-    match /{document=**} {
-      allow read: if request.auth != null;
       allow write: if isAdmin();
+    }
+
+    match /events/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Voting rewrites the options array (src/features/extras.js). Visitors may
+    // only touch `options` and must keep the number of options.
+    match /polls/{id} {
+      allow read: if true;
+      allow create, delete: if isAdmin();
+      allow update: if isAdmin()
+        || (onlyChanged(['options'])
+            && incoming().options is list
+            && incoming().options.size() == resource.data.options.size());
+    }
+
+    // ---------------------------------------------------------------- community
+
+    // Chat rooms are top-level collections named chat_<room> (src/features/chat.js).
+    match /{room}/{messageId} {
+      function isChatRoom() {
+        return room.matches('chat_(genel|kreuzberg|mitte|neukolln)');
+      }
+
+      allow read: if isChatRoom();
+      allow create: if isChatRoom()
+        && signedIn()
+        && incoming().keys().hasOnly(['text', 'image', 'senderId', 'senderName', 'senderPhoto', 'timestamp'])
+        && incoming().senderId == request.auth.uid
+        && incoming().timestamp == request.time
+        && incoming().text is string
+        && incoming().text.size() <= 1000
+        && optionalText(incoming().image, 2000)
+        && (incoming().text.size() > 0 || incoming().image is string)
+        && text(incoming().senderName, 80)
+        && optionalText(incoming().senderPhoto, 2000);
+      allow update, delete: if isChatRoom() && isAdmin();
+    }
+
+    // Questions arrive anonymously as 'pending' and go public once approved.
+    // Visitors may upvote (+1) or append exactly one reply to approved posts.
+    match /forum/{id} {
+      allow read: if resource.data.status == 'approved' || isAdmin();
+
+      allow create: if incoming().keys().hasOnly(['name', 'text', 'category', 'time', 'karma', 'replies', 'status'])
+        && incoming().status == 'pending'
+        && incoming().karma == 0
+        && incoming().replies == []
+        && text(incoming().name, 60)
+        && text(incoming().text, 2000)
+        && text(incoming().category, 40)
+        && text(incoming().time, 40);
+
+      allow update: if isAdmin()
+        || (resource.data.status == 'approved'
+            && onlyChanged(['karma'])
+            && incoming().karma == resource.data.karma + 1)
+        || (resource.data.status == 'approved'
+            && onlyChanged(['replies'])
+            && incoming().replies is list
+            && incoming().replies.size() == resource.data.replies.size() + 1
+            && incoming().replies.size() <= 200
+            && incoming().replies.hasAll(resource.data.replies)
+            && incoming().replies[resource.data.replies.size()].keys().hasOnly(['name', 'text', 'time'])
+            && text(incoming().replies[resource.data.replies.size()].name, 60)
+            && text(incoming().replies[resource.data.replies.size()].text, 1000));
+
+      allow delete: if isAdmin();
+    }
+
+    match /jobs/{id} {
+      allow read: if resource.data.status == 'approved' || isAdmin();
+      allow create: if signedIn()
+        && incoming().keys().hasOnly(['title', 'company', 'location', 'type', 'contact', 'postedBy', 'status', 'createdAt'])
+        && incoming().postedBy == request.auth.uid
+        && incoming().status == 'pending'
+        && incoming().createdAt == request.time
+        && text(incoming().title, 120)
+        && text(incoming().company, 120)
+        && optionalText(incoming().location, 120)
+        && optionalText(incoming().type, 40)
+        && text(incoming().contact, 200);
+      allow update, delete: if isAdmin();
+    }
+
+    // ---------------------------------------------------------------- personal data
+
+    // Document id is "<uid>_<title>" (src/features/news.js).
+    match /bookmarks/{id} {
+      function ownBookmark() {
+        return incoming().userId == request.auth.uid
+          && id.matches(request.auth.uid + '_.*')
+          && incoming().keys().hasOnly(['userId', 'title', 'source', 'dateAdded'])
+          && text(incoming().title, 500)
+          && text(incoming().source, 120);
+      }
+
+      allow read, delete: if signedIn() && resource.data.userId == request.auth.uid;
+      allow create: if signedIn() && ownBookmark();
+      allow update: if signedIn() && resource.data.userId == request.auth.uid && ownBookmark();
+    }
+
+    // Written by the browser that granted push permission; only the server
+    // (Admin SDK, bypasses rules) and the admin may read the list.
+    match /fcm_tokens/{token} {
+      allow create, update: if incoming().keys().hasOnly(['token', 'email', 'updatedAt'])
+        && incoming().token == token
+        && token.size() <= 4096
+        && (incoming().email == 'anonymous'
+            || (signedIn() && incoming().email == request.auth.token.email))
+        && text(incoming().updatedAt, 40);
+      allow read, delete: if isAdmin();
+    }
+
+    match /subscribers/{id} {
+      allow read, write: if isAdmin();
+    }
+
+    match /notifications_queue/{id} {
+      allow read, write: if isAdmin();
     }
   }
 }

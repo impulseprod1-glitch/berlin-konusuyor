@@ -3,25 +3,25 @@ import {
   doc, updateDoc, deleteDoc, where, onAuthStateChanged
 } from './firebase-config.js';
 import { uploadMedia } from './utils/media-upload.js';
+import { isAdminUser } from './utils/admins.js';
 
 // --- ADMIN AUTH BARRIER ---
-const ALLOWED_ADMINS = ['test@admin.com', 'oarslanerbln@gmail.com']; // Kendi e-postanızı buraya yazıp yetki alabilirsiniz
-
-onAuthStateChanged(auth, (user) => {
-  if (!user) {
-    document.body.innerHTML = `
+// UI gate only; firestore.rules is what actually protects the data.
+const accessScreen = (title, text) => `
       <div style="display:flex; height:100vh; align-items:center; justify-content:center; flex-direction:column; background:#050505; color:white; font-family:sans-serif;">
-        <h2>Lütfen Giriş Yapın</h2>
-        <p>Admin paneline erişmek için oturum açmalısınız.</p>
+        <h2>${title}</h2>
+        <p>${text}</p>
         <a href="/" style="color:#e50914; margin-top:20px; text-decoration:none;">Ana Sayfaya Dön</a>
       </div>
     `;
+
+onAuthStateChanged(auth, (user) => {
+  if (!user) {
+    document.body.innerHTML = accessScreen('Lütfen Giriş Yapın', 'Admin paneline erişmek için oturum açmalısınız.');
     return;
   }
-  
-  // Güvenlik uyarısı (Konsolda)
-  if(ALLOWED_ADMINS.length > 0 && !ALLOWED_ADMINS.includes(user.email)) {
-    console.warn(`[GÜVENLİK UYARISI] ${user.email} admin yetkisine sahip değil. firebase.rules devreye girdiğinde verileri değiştiremeyeceksiniz.`);
+  if (!isAdminUser(user)) {
+    document.body.innerHTML = accessScreen('Yetkiniz Yok', 'Bu hesap admin paneline erişemez.');
   }
 });
 

@@ -27,5 +27,8 @@
         "supportEmail": "dusuncekivilcimi2024@gmail.com"
       }
     }
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }
