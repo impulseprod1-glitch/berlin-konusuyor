@@ -38,6 +38,8 @@ for (const id of ids) {
   const res = await fetch(`https://images.unsplash.com/${id}?w=1200&q=80&fm=jpg&fit=crop`);
   if (!res.ok) {
     console.error(`✗ ${id}: HTTP ${res.status}`);
+    // Shows up as an annotation on the pull request instead of hiding in the log.
+    if (process.env.GITHUB_ACTIONS) console.log(`::warning::Stock image ${id} could not be downloaded (HTTP ${res.status}) – replace or remove the reference.`);
     failed++;
     continue;
   }

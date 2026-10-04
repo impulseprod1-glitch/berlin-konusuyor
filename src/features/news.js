@@ -10,8 +10,6 @@ export const CATEGORY_IMAGES = {
     '/img/stock/photo-1572949645841-094f3a9c4c94.jpg'
   ],
   culture: [
-    '/img/stock/photo-1580655653885-65763b2597ad.jpg',
-    '/img/stock/photo-1499364615650-ec38552f4ba8.jpg',
     '/img/stock/photo-1514525253161-7a46d19cd819.jpg',
     '/img/stock/photo-1460661419201-fd4cecdf8a8b.jpg'
   ],
@@ -22,8 +20,6 @@ export const CATEGORY_IMAGES = {
     '/img/stock/photo-1579532537598-459ecdaf39cc.jpg'
   ],
   lifestyle: [
-    '/img/stock/photo-1559564484-e484c2076b46.jpg',
-    '/img/stock/photo-1444491741275-3747c53d95c4.jpg',
     '/img/stock/photo-1501504905252-473c47e087f8.jpg',
     '/img/stock/photo-1511988617509-a57c8a288659.jpg'
   ],
