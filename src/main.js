@@ -1,3 +1,4 @@
+import './vendor.js';
 import './style.css';
 import './news-engine.css';
 import './chat.css';
@@ -23,9 +24,9 @@ import {
   initMagneticButtons, initNewsletter, initPullToRefresh
 } from './features/extras.js';
 import { initMap } from './features/map.js';
+import { initYouTubeEmbeds } from './features/consent-embed.js';
 import { initNotifications, requestNotificationPermission } from './features/notifications.js';
 import { auth } from './firebase-config.js';
-import { initBridge } from './features/bridge.js';
 import './features/pulse.js';
 
 
@@ -46,9 +47,6 @@ function startGlobalObserving() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Phase 1: Bridge to Antigravity OS
-    initBridge();
-    
     // Basic UI Setup
     initLenis();
 
@@ -86,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMagneticButtons();
     initNewsletter();
     initMap();
+    initYouTubeEmbeds();
     initPolls();
     initChatbot();
     

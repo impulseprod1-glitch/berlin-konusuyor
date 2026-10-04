@@ -2,6 +2,7 @@ import {
   db, auth, collection, addDoc, getDocs, getDoc, query, orderBy, onSnapshot, serverTimestamp,
   doc, updateDoc, deleteDoc, where, onAuthStateChanged
 } from './firebase-config.js';
+import './vendor.js';
 import { uploadMedia } from './utils/media-upload.js';
 import { isAdminUser } from './utils/admins.js';
 
@@ -63,23 +64,6 @@ navItems.forEach(item => {
   });
 });
 
-/**
- * Antigravity OS Status Monitor (Admin Hub)
- */
-async function monitorAGStatus() {
-  const statusDot = document.querySelector('.ag-status-dot');
-  const statusText = document.getElementById('agStatusText');
-  
-  try {
-    // Check if local dev server is up
-    const response = await fetch('http://localhost:8080/api/status', { mode: 'no-cors' });
-    if (statusDot) statusDot.style.background = '#00ff88';
-    if (statusText) statusText.textContent = 'SYSTEM ACTIVE: V3.0';
-  } catch (e) {
-    if (statusDot) statusDot.style.background = '#666';
-    if (statusText) statusText.textContent = 'DISCONNECTED';
-  }
-}
 
 const updateStats = () => {
   onSnapshot(collection(db, "news"), snap => { if (statNews) statNews.textContent = snap.size; });
@@ -115,7 +99,7 @@ if (addNewsForm) {
       title: document.getElementById('newsTitle').value,
       category: document.getElementById('newsCat').value,
       source: document.getElementById('newsSource').value || 'Berlin Konuşuyor',
-      image: imageUrl || 'https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800',
+      image: imageUrl || '/img/stock/photo-1560969184-10fe8719e047.jpg',
       summary_tr: document.getElementById('newsSummary').value,
       updatedAt: serverTimestamp()
     };
@@ -508,7 +492,5 @@ document.getElementById('pushForm')?.addEventListener('submit', async (e) => {
 // Init
 updateStats();
 loadVerificationList();
-monitorAGStatus();
-setInterval(monitorAGStatus, 10000); // Poll every 10s
 
 

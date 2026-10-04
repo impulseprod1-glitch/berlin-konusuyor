@@ -36,13 +36,37 @@ const COLORS = {
   transit: '#3b82f6'   // Mavi
 };
 
+import { consentGate } from './consent-embed.js';
+
+// Leaflet is loaded on demand, only after the visitor agreed to the map.
+let L = null;
 let map = null;
 let currentLayerGroup = null;
 let markerRefs = {}; // Store markers by ID
 
 export function initMap() {
   const mapEl = document.getElementById('berlinMap');
-  if (!mapEl || typeof L === 'undefined') return;
+  if (!mapEl) return;
+  consentGate(mapEl, {
+    service: 'map',
+    title: 'Berlin Haritası',
+    provider: 'CARTO / OpenStreetMap',
+    onLoad: () => loadMap().catch((err) => console.error('Harita yüklenemedi:', err)),
+  });
+}
+
+async function loadMap() {
+  const [leaflet, icon, icon2x, shadow] = await Promise.all([
+    import('leaflet'),
+    import('leaflet/dist/images/marker-icon.png'),
+    import('leaflet/dist/images/marker-icon-2x.png'),
+    import('leaflet/dist/images/marker-shadow.png'),
+    import('leaflet/dist/leaflet.css'),
+  ]);
+  L = leaflet.default;
+  // Bundled Leaflet cannot guess its default marker image paths.
+  delete L.Icon.Default.prototype._getIconUrl;
+  L.Icon.Default.mergeOptions({ iconUrl: icon.default, iconRetinaUrl: icon2x.default, shadowUrl: shadow.default });
 
   // Haritayı başlat
   map = L.map('berlinMap', { 

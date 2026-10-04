@@ -21,6 +21,7 @@ const DATA_PATH = join(__dirname, '..', 'public', 'data', 'news.json');
 const WIDGETS_PATH = join(__dirname, '..', 'public', 'data', 'widgets.json');
 const SITEMAP_PATH = join(__dirname, '..', 'public', 'sitemap.xml');
 const RSS_PATH = join(__dirname, '..', 'public', 'rss.xml');
+const WEATHER_PATH = join(__dirname, '..', 'public', 'data', 'weather.json');
 
 // ── Configuration ───────────────────────────
 const CONFIG = {
@@ -94,7 +95,8 @@ async function fetchRSSFeeds() {
         title: item.title || '',
         description: item.contentSnippet || item.content || '',
         url: item.link || '',
-        image: item.enclosure?.url || extractImgFromContent(item['content:encoded'] || item.content || '') || '',
+        // Publisher photos are not ours to republish; the site picks a stock image.
+        image: '',
         date: item.isoDate || item.pubDate || new Date().toISOString(),
         source: feed.name,
         lang: feed.lang,
@@ -135,7 +137,7 @@ async function fetchNewsAPI() {
       title: item.title || '',
       description: item.description || '',
       url: item.link || '',
-      image: item.image_url || '',
+      image: '',
       date: item.pubDate || new Date().toISOString(),
       source: item.source_name || item.source_id || 'NewsData',
       lang: item.language || 'de',
@@ -243,6 +245,13 @@ async function generateAIInsights(articles) {
 // ── Katman 5: Push Bildirim Gönderme ─────────
 async function sendPushNotifications(articles) {
   if (!fcmApp) return;
+  // An AI-ranked headline pushed to every subscriber without a human look is
+  // a misinformation risk. Automatic pushes are opt-in; the admin panel can
+  // still send pushes by hand.
+  if (process.env.AUTO_PUSH !== 'true') {
+    console.log('  🔕 Otomatik bildirim kapalı (AUTO_PUSH=true ile açılır).');
+    return;
+  }
 
   // Sadece yüksek öncelikli ve henüz bildirim gönderilmemiş haberleri seç
   const importantArticles = articles.filter(a => 
@@ -292,11 +301,6 @@ async function sendPushNotifications(articles) {
 }
 
 // ── Helpers ─────────────────────────────────
-function extractImgFromContent(html) {
-  const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
-  return match ? match[1] : '';
-}
-
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -381,7 +385,27 @@ function generateRSS(articles) {
 }
 
 // ── Main ────────────────────────────────────
+// Fetched here rather than in the browser, so wttr.in never sees visitors' IPs.
+async function fetchWeather() {
+  try {
+    const res = await fetch('https://wttr.in/Berlin?format=j1&lang=tr', { signal: AbortSignal.timeout(10_000) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const current = (await res.json()).current_condition?.[0];
+    if (!current) throw new Error('no current_condition');
+    const weather = {
+      tempC: Number(current.temp_C),
+      description: current.lang_tr?.[0]?.value || current.weatherDesc?.[0]?.value || '',
+      updatedAt: new Date().toISOString(),
+    };
+    writeFileSync(WEATHER_PATH, JSON.stringify(weather, null, 2), 'utf-8');
+    console.log(`  🌤️  Hava durumu: ${weather.tempC}°C ${weather.description}`);
+  } catch (err) {
+    console.warn('  ⚠️ Hava durumu alınamadı:', err.message);
+  }
+}
+
 async function main() {
+  await fetchWeather();
   console.log('╔═══════════════════════════════════════╗');
   console.log('║  Berlin Konuşuyor — Haber Çekici      ║');
   console.log('╚═══════════════════════════════════════╝\n');

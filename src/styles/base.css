@@ -21,8 +21,8 @@
   --border: rgba(255, 255, 255, 0.05);
   --border-light: rgba(255, 255, 255, 0.1);
   --glass: rgba(255, 255, 255, 0.02);
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter Variable', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Playfair Display Variable', 'Playfair Display', serif;
   --nav-height: 80px;
   --ease: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-heavy: cubic-bezier(0.8, 0, 0.2, 1);

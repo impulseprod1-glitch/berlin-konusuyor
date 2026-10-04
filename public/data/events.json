@@ -2,21 +2,21 @@
   "events": [
     {
       "category": "KÜLTÜR",
-      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
+      "image": "/img/stock/photo-1492684223066-81342ee5ff30.jpg",
       "date": "2026-03-20",
       "title": "Berlin Sanat Galerisi Açılışı",
       "location": "Mitte, Berlin"
     },
     {
       "category": "MÜZİK",
-      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&q=80",
+      "image": "/img/stock/photo-1501281668745-f7f57925c3b4.jpg",
       "date": "2026-03-22",
       "title": "Açık Hava Caz Konseri",
       "location": "Tiergarten, Berlin"
     },
     {
       "category": "TEKNOLOJİ",
-      "image": "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?w=800&q=80",
+      "image": "/img/stock/photo-1540575861501-7cf05a4b125a.jpg",
       "date": "2026-03-25",
       "title": "Start-up Networking Gecesi",
       "location": "Friedrichshain, Berlin"

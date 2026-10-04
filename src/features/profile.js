@@ -1,3 +1,4 @@
+import '../vendor.js';
 import { auth, db, onAuthStateChanged, collection, query, where, getDocs, signOut } from '../firebase-config.js';
 
 let currentUser = null;

@@ -57,33 +57,22 @@ export function initDashboardUtils() {
     `;
   }
 
-  // Hava Durumu (Basit Fetch) — 8sn timeout ile
-  const weatherController = new AbortController();
-  const weatherTimeout = setTimeout(() => weatherController.abort(), 8000);
-
-  fetch('https://wttr.in/Berlin?format=%t+%C', { signal: weatherController.signal })
+  // Hava durumu: scripts/fetch-news.mjs writes it every two hours, so the
+  // browser never contacts the weather service itself.
+  fetch('/data/weather.json')
     .then(res => {
-      clearTimeout(weatherTimeout);
-      if (!res.ok) throw new Error('Weather service unreachable');
-      return res.text();
+      if (!res.ok) throw new Error('Weather data missing');
+      return res.json();
     })
-    .then(data => {
-      if (!data || data.includes('Unknown') || data.includes('html')) throw new Error('Invalid weather data');
-      const parts = data.split(' ');
-      const temp = parts[0];
-      const desc = parts.slice(1).join(' ');
-
+    .then(({ tempC, description }) => {
       const tempEl = document.getElementById('berlinTemp');
       const descEl = document.getElementById('weatherDesc');
-      if (tempEl && temp.includes('°')) tempEl.innerText = temp;
-      if (descEl && desc) descEl.innerText = desc;
+      if (tempEl && Number.isFinite(tempC)) tempEl.innerText = `${Math.round(tempC)}°C`;
+      if (descEl && description) descEl.innerText = description;
     })
     .catch(() => {
-      clearTimeout(weatherTimeout);
       const tempEl = document.getElementById('berlinTemp');
-      const descEl = document.getElementById('weatherDesc');
-      if (tempEl) tempEl.innerText = "12°C";
-      if (descEl) descEl.innerText = "Veri alınamadı";
+      if (tempEl) tempEl.innerText = '—';
     });
 
   // Footer yılını dinamik yap

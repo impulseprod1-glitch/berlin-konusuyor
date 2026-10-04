@@ -4,42 +4,47 @@ import { renderAIDashboard } from './dashboard.js';
 
 export const CATEGORY_IMAGES = {
   politics: [
-    'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=80',
-    'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&q=80',
-    'https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=800&q=80',
-    'https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?w=800&q=80'
+    '/img/stock/photo-1529107386315-e1a2ed48a620.jpg',
+    '/img/stock/photo-1540910419892-4a36d2c3266c.jpg',
+    '/img/stock/photo-1555848962-6e79363ec58f.jpg',
+    '/img/stock/photo-1572949645841-094f3a9c4c94.jpg'
   ],
   culture: [
-    'https://images.unsplash.com/photo-1580655653885-65763b2597ad?w=800&q=80',
-    'https://images.unsplash.com/photo-1499364615650-ec38552f4ba8?w=800&q=80',
-    'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80',
-    'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80'
+    '/img/stock/photo-1580655653885-65763b2597ad.jpg',
+    '/img/stock/photo-1499364615650-ec38552f4ba8.jpg',
+    '/img/stock/photo-1514525253161-7a46d19cd819.jpg',
+    '/img/stock/photo-1460661419201-fd4cecdf8a8b.jpg'
   ],
   economy: [
-    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80',
-    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
-    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80',
-    'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=800&q=80'
+    '/img/stock/photo-1526304640581-d334cdbbf45e.jpg',
+    '/img/stock/photo-1611974789855-9c2a0a7236a3.jpg',
+    '/img/stock/photo-1590283603385-17ffb3a7f29f.jpg',
+    '/img/stock/photo-1579532537598-459ecdaf39cc.jpg'
   ],
   lifestyle: [
-    'https://images.unsplash.com/photo-1559564484-e484c2076b46?w=800&q=80',
-    'https://images.unsplash.com/photo-1444491741275-3747c53d95c4?w=800&q=80',
-    'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80',
-    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80'
+    '/img/stock/photo-1559564484-e484c2076b46.jpg',
+    '/img/stock/photo-1444491741275-3747c53d95c4.jpg',
+    '/img/stock/photo-1501504905252-473c47e087f8.jpg',
+    '/img/stock/photo-1511988617509-a57c8a288659.jpg'
   ],
   default: [
-    'https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80',
-    'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
-    'https://images.unsplash.com/photo-1502899576159-f224dc2349fa?w=800&q=80',
-    'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=80'
+    '/img/stock/photo-1560969184-10fe8719e047.jpg',
+    '/img/stock/photo-1477959858617-67f85cf4f1df.jpg',
+    '/img/stock/photo-1502899576159-f224dc2349fa.jpg',
+    '/img/stock/photo-1449844908441-8829872d2607.jpg'
   ]
 };
 
 export const PLACEHOLDER_IMG = CATEGORY_IMAGES.default[0];
 export let globalNews = [];
 
+// Only images we own are shown: uploads from the admin panel (Firebase
+// Storage) and our self-hosted stock photos. Publishers' photos are licensed
+// to them, not to us, so they are never displayed or hotlinked.
+const OWN_IMAGE = /^(\/|https:\/\/firebasestorage\.googleapis\.com\/v0\/b\/berlin-konusuyor\.firebasestorage\.app\/)/;
+
 export function getNewsImage(article) {
-  if (article.image && article.image.startsWith('http')) return article.image;
+  if (article.image && OWN_IMAGE.test(article.image)) return article.image;
   
   // Gelişmiş Keyword Eşleme
   const title = (article.title || '').toLowerCase();

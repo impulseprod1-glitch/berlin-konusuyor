@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add public/data/news.json
+          git add public/data/news.json public/data/weather.json
           
           # Eğer hiçbir yeni haber haberi yoksa hata vermemesi için "|| echo" ekliyoruz.
           git commit -m "Oto-Güncelleme: Yeni haberler çekildi 🤖 [skip ci]" || echo "Değişiklik yok, commit atlanıyor."

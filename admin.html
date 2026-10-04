@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Hub Pro | Berlin Konuşuyor</title>
-    <!-- Premium Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Fonts and icons come from src/vendor.js (bundled, self-hosted). -->
     
     <link rel="stylesheet" href="src/styles/admin.css">
 </head>
@@ -61,12 +57,6 @@
                 <h1 id="pageTitle">Komuta Merkezi</h1>
                 <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">Berlin'in nabzını buradan yönetin.</p>
             </div>
-            
-            <!-- Antigravity OS Connection Indicator -->
-            <div id="agAdminStatus" class="ag-dashboard-status">
-                <span class="ag-status-dot active"></span>
-                <span id="agStatusText">SYSTEM ACTIVE: V3.0</span>
-            </div>
         </header>
 
         <!-- Tab: Özet -->
@@ -90,20 +80,11 @@
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 320px; gap: 30px;">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 30px;">
                 <div class="admin-card">
                     <h2>Bekleyen Onaylar (Hızlı Bakış)</h2>
                     <div id="miniVerificationList">
                         <p class="empty-list">Bekleyen onay yok.</p>
-                    </div>
-                </div>
-                <div class="admin-card">
-                    <h2>Sistem Notları</h2>
-                    <div style="background: rgba(0,242,255,0.05); padding: 20px; border-radius: 16px; border-left: 3px solid #00f2ff;">
-                        <p style="font-size: 0.85rem; line-height: 1.6;">
-                            <strong>Guardian Notu:</strong><br>
-                            Sistem şu an <code>localhost:8080</code> üzerinden Antigravity OS'e bağlı. Tüm kritik değişiklikler otonom olarak izleniyor.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -283,6 +264,5 @@
 </html>
 >
 
-    <script type="module" src="src/admin.js"></script>
 </body>
 </html>
