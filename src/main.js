@@ -17,7 +17,7 @@ import {
   initMobileMenu, initMobileDock, initLenis, initServiceWorker, 
   initTheme, initSearch 
 } from './features/ui.js';
-import { initCookieBanner } from './features/legal.js';
+import './features/legal.js';
 import { 
   initChatbot, initPolls, initShakeHistory, initSwipeToDismiss, 
   initCursorPremium, initParallax, initTiltEffects, initCounters, 
@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initLangSwitcher();
     initTextReveal(); // Prioritized
-    initCookieBanner();
     initNavbar();
     initMobileMenu();
     initMobileDock();
@@ -167,12 +166,6 @@ document.addEventListener('click', (e) => {
       break;
     case 'close-history-modal':
       if (window.closeHistoryModal) window.closeHistoryModal();
-      break;
-    case 'accept-cookies':
-      if (window.acceptCookies) window.acceptCookies();
-      break;
-    case 'reject-cookies':
-      if (window.closeCookieBanner) window.closeCookieBanner();
       break;
     case 'toggle-map-filter':
       // This is now handled in map.js but kept here for potential future delegation

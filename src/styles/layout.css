@@ -136,6 +136,33 @@
   gap: 20px;
 }
 
+.lang-switcher--menu {
+  display: none;
+}
+
+/* Phones: logo, login and hamburger are all that fit. Search is in the dock,
+   the language switcher moves into the menu. */
+@media (max-width: 768px) {
+  .nav-right {
+    gap: 8px;
+  }
+  #searchToggle,
+  #themeToggle,
+  .nav-right .lang-switcher {
+    display: none;
+  }
+  .nav-login-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .lang-switcher--menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
 /* ── Hamburger ───────────────────────────── */
 .hamburger {
   display: none;
@@ -441,24 +468,29 @@
 
 .dashboard-bento-grid {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  /* minmax(0, …): a plain 1fr track grows to its widest child (the news
+     rails are thousands of pixels wide), which widened the whole page on
+     phones and pushed fixed elements off-screen. */
+  grid-template-columns: minmax(0, 1fr) 340px;
   gap: 30px;
   align-items: start;
 }
 
 @media (max-width: 1100px) {
   .dashboard-bento-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 .bento-main-feed {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
 .bento-sidebar {
+  min-width: 0;
   position: sticky;
   top: calc(var(--nav-height) + 60px);
   display: flex;

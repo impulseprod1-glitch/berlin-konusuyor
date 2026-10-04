@@ -40,7 +40,7 @@ export function consentGate(container, { service, title, provider, onLoad }) {
   container.innerHTML = `
     <div class="consent-gate">
       <p class="consent-gate__title">${title}</p>
-      <p class="consent-gate__text">${t.notice(provider)} <a href="#" data-legal="privacy">${t.privacy}</a></p>
+      <p class="consent-gate__text">${t.notice(provider)} <a href="#" data-action="open-legal" data-legal="privacy">${t.privacy}</a></p>
       <button type="button" class="consent-gate__btn">${t.load}</button>
       <label class="consent-gate__remember"><input type="checkbox" checked> ${t.remember}</label>
     </div>`;

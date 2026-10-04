@@ -50,3 +50,12 @@
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Last line of defence: nothing may make the page wider than the screen.
+   A wider document widens the initial containing block on phones, and every
+   position: fixed element (navbar, dock, player) slides out of view.
+   Content that is meant to be wider scrolls inside its own container. */
+html,
+body {
+  overflow-x: clip;
+}
