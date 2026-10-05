@@ -26,3 +26,6 @@ dist-ssr
 .vercel
 .env
 .env.*
+
+# Downloaded at deploy time by scripts/stock-images.mjs
+public/img/stock/

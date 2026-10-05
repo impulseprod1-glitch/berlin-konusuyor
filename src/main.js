@@ -1,3 +1,4 @@
+import './vendor.js';
 import './style.css';
 import './news-engine.css';
 import './chat.css';
@@ -16,16 +17,16 @@ import {
   initMobileMenu, initMobileDock, initLenis, initServiceWorker, 
   initTheme, initSearch 
 } from './features/ui.js';
-import { initCookieBanner } from './features/legal.js';
+import './features/legal.js';
 import { 
   initChatbot, initPolls, initShakeHistory, initSwipeToDismiss, 
   initCursorPremium, initParallax, initTiltEffects, initCounters, 
   initMagneticButtons, initNewsletter, initPullToRefresh
 } from './features/extras.js';
 import { initMap } from './features/map.js';
+import { initYouTubeEmbeds } from './features/consent-embed.js';
 import { initNotifications, requestNotificationPermission } from './features/notifications.js';
 import { auth } from './firebase-config.js';
-import { initBridge } from './features/bridge.js';
 import './features/pulse.js';
 
 
@@ -46,9 +47,6 @@ function startGlobalObserving() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Phase 1: Bridge to Antigravity OS
-    initBridge();
-    
     // Basic UI Setup
     initLenis();
 
@@ -56,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initLangSwitcher();
     initTextReveal(); // Prioritized
-    initCookieBanner();
     initNavbar();
     initMobileMenu();
     initMobileDock();
@@ -86,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMagneticButtons();
     initNewsletter();
     initMap();
+    initYouTubeEmbeds();
     initPolls();
     initChatbot();
     
@@ -168,12 +166,6 @@ document.addEventListener('click', (e) => {
       break;
     case 'close-history-modal':
       if (window.closeHistoryModal) window.closeHistoryModal();
-      break;
-    case 'accept-cookies':
-      if (window.acceptCookies) window.acceptCookies();
-      break;
-    case 'reject-cookies':
-      if (window.closeCookieBanner) window.closeCookieBanner();
       break;
     case 'toggle-map-filter':
       // This is now handled in map.js but kept here for potential future delegation

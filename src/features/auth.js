@@ -1,5 +1,6 @@
 import { auth, googleProvider, signInWithPopup, signOut, onAuthStateChanged } from '../firebase-config.js';
 import { updateChatAuthState } from './chat.js';
+import { isAdminUser } from '../utils/admins.js';
 
 export async function loginWithGoogle() {
   try {
@@ -22,8 +23,7 @@ export function initAuthListener() {
       if (profileEmail) profileEmail.textContent = user.email;
 
       if (loginBtn) {
-        const ALLOWED_ADMINS = ['test@admin.com', 'oarslanerbln@gmail.com'];
-        const isAdmin = ALLOWED_ADMINS.includes(user.email);
+        const isAdmin = isAdminUser(user);
         
         loginBtn.innerHTML = isAdmin 
           ? '<i class="fas fa-user-shield"></i> Yönetim' 

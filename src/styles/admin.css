@@ -19,7 +19,7 @@
 body.admin-body {
     background: var(--admin-bg);
     color: var(--text-primary);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter Variable', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     min-height: 100vh;
     display: flex;
     overflow-x: hidden;
@@ -131,28 +131,7 @@ body.admin-body {
     letter-spacing: -0.02em;
 }
 
-/* ── AG STATUS COMPONENT ── */
-.ag-dashboard-status {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: rgba(0, 242, 255, 0.05);
-    border: 1px solid rgba(0, 242, 255, 0.2);
-    padding: 10px 20px;
-    border-radius: 99px;
-    color: #00f2ff;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
 
-.ag-status-dot.active {
-    width: 8px;
-    height: 8px;
-    background: #00f2ff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00f2ff;
-    animation: status-pulse 2s infinite;
-}
 
 @keyframes status-pulse {
     0% { transform: scale(1); opacity: 1; }

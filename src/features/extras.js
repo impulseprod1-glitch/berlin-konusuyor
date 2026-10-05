@@ -251,7 +251,7 @@ window.stopTTS = () => {
 
 // ── History Shake ──────────
 const BERLIN_HISTORY_EVENTS = [
-  { date: "9 KASIM 1989", title: "Berlin Duvarı Yıkılıyor", text: "Soğuk Savaş'ın simgesi olan Berlin Duvarı, halkın baskısı ve yanlış anlaşılan bir basın açıklaması sonucu açıldı.", image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=800&auto=format&fit=crop" }
+  { date: "9 KASIM 1989", title: "Berlin Duvarı Yıkılıyor", text: "Soğuk Savaş'ın simgesi olan Berlin Duvarı, halkın baskısı ve yanlış anlaşılan bir basın açıklaması sonucu açıldı.", image: "/img/stock/photo-1599940824399-b87987ceb72a.jpg" }
 ];
 
 export function initShakeHistory() {

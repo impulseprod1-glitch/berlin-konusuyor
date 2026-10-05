@@ -30,14 +30,16 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'icon-192.png', 'icon-512.png'],
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,webp}'],
-        navigationPreload: true,
+        // Fonts (every subset of every family) and stock photos would add
+        // megabytes to the install; they are cached on first use instead.
+        globIgnores: ['**/stock/**', '**/*.{woff,woff2,ttf,eot}'],
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/fonts\.(?:googleapis|gstatic)\.com\/.*/i,
+            urlPattern: ({ request, sameOrigin }) => sameOrigin && request.destination === 'font',
             handler: 'CacheFirst',
             options: {
-              cacheName: 'google-fonts',
-              expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 }
+              cacheName: 'fonts',
+              expiration: { maxEntries: 30, maxAgeSeconds: 60 * 60 * 24 * 365 }
             }
           }
         ]

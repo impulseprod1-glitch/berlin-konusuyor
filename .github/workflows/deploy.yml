@@ -1,0 +1,79 @@
+name: Deploy
+
+# Pull requests get a temporary preview URL (7 days) to look at before merge.
+# Production is manual on purpose: Actions → Deploy → Run workflow.
+#   rules       – only Firestore and Storage security rules (safe at any time)
+#   production  – rules + the site; refuses to run while the Impressum has placeholders
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: What to deploy
+        type: choice
+        options: [rules, production]
+        default: rules
+
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+concurrency:
+  group: deploy-${{ github.event_name == 'pull_request' && github.event.number || inputs.target }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run stock-images
+      - run: npx vite build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: berlin-konusuyor
+          expires: 7d
+
+  production:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Write service account for the Firebase CLI
+        env:
+          SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: printf '%s' "$SERVICE_ACCOUNT" > "$RUNNER_TEMP/sa.json"
+      - name: Deploy security rules
+        if: inputs.target == 'rules'
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/sa.json
+        run: npx --yes firebase-tools@15 deploy --only firestore:rules,storage --project berlin-konusuyor --non-interactive
+      - name: Check Impressum
+        if: inputs.target == 'production'
+        run: node scripts/check-legal.mjs
+      - name: Build
+        if: inputs.target == 'production'
+        run: |
+          npm ci
+          npm run stock-images
+          npx vite build
+          node scripts/check-third-party.mjs
+      - name: Deploy site and rules
+        if: inputs.target == 'production'
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/sa.json
+        run: npx --yes firebase-tools@15 deploy --only hosting,firestore:rules,storage --project berlin-konusuyor --non-interactive

@@ -195,6 +195,13 @@
   transform: translateX(-50%) translateY(0);
 }
 
+/* Off-screen is not enough: on phones the parked player peeked out behind
+   the dock ("Yükleniyor..."). Hide it until something plays. */
+.podcast-floating-island:not(.active) {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .island-progress-bar {
   position: absolute;
   top: 0;
@@ -309,7 +316,7 @@
 @media (max-width: 768px) {
   .podcast-floating-island {
     width: calc(100% - 30px);
-    bottom: 85px; /* Dock'un üzerinde dursun */
+    bottom: 100px; /* above the dock: 24px offset + 64px height + gap */
     padding: 12px 20px;
   }
   .player-text h4 { max-width: 100px; }
@@ -2031,7 +2038,7 @@ kbd {
 }
 
 .history-date-tag {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.2em;
@@ -2060,7 +2067,7 @@ kbd {
 }
 
 .history-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 1.8rem;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -2128,12 +2135,12 @@ kbd {
 /* ── Job Board Styles ────────────────────── */
 .jobs-container { margin-top: 40px; }
 .jobs-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; gap: 20px; flex-wrap: wrap; }
-.jobs-filters { display: flex; gap: 12px; }
+.jobs-filters { display: flex; flex-wrap: wrap; gap: 12px; }
 .job-filter-btn { background: var(--glass); border: 1px solid var(--border); color: var(--text-secondary); padding: 8px 16px; border-radius: 99px; font-size: 0.8rem; cursor: pointer; transition: all 0.3s var(--ease); }
 .job-filter-btn.active, .job-filter-btn:hover { background: var(--accent); color: white; border-color: var(--accent); }
 .post-job-btn { background: var(--text-primary); color: var(--bg-primary); border: none; padding: 10px 24px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.4s var(--ease); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
 .post-job-btn:hover { background: var(--accent); color: white; transform: translateY(-2px); box-shadow: 0 8px 24px var(--accent-dim); }
-.jobs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+.jobs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 24px; }
 .job-card { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; border-radius: 20px; transition: all 0.4s var(--ease); position: relative; display: flex; flex-direction: column; }
 .job-card:hover { transform: translateY(-5px); border-color: var(--accent-glow); background: var(--bg-card-hover); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
 .job-badge { position: absolute; top: 20px; right: 20px; font-size: 0.65rem; background: var(--accent-soft); color: var(--accent); padding: 4px 10px; border-radius: 4px; }
@@ -2159,7 +2166,7 @@ kbd {
 
 .poll-question {
   font-size: 1.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   color: var(--text-primary);
   margin-bottom: 30px;
   text-align: center;
@@ -2851,5 +2858,28 @@ kbd {
   .ue-details {
     flex-direction: column;
     gap: 15px;
+  }
+}
+
+/* Phones: the chat assistant button sits above the dock, and above the
+   podcast player while one is playing. */
+@media (max-width: 768px) {
+  .chatbot-toggle-btn {
+    bottom: 100px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+  body:has(.podcast-floating-island.active) .chatbot-toggle-btn {
+    bottom: 186px;
+  }
+}
+
+/* The custom cursor follows a mouse; on touch screens it only gets in the way. */
+@media (hover: none) {
+  .cursor-ring,
+  .cursor-glow {
+    display: none;
   }
 }

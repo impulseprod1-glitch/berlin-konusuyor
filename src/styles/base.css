@@ -21,8 +21,8 @@
   --border: rgba(255, 255, 255, 0.05);
   --border-light: rgba(255, 255, 255, 0.1);
   --glass: rgba(255, 255, 255, 0.02);
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter Variable', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Playfair Display Variable', 'Playfair Display', serif;
   --nav-height: 80px;
   --ease: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-heavy: cubic-bezier(0.8, 0, 0.2, 1);
@@ -50,3 +50,12 @@
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Last line of defence: nothing may make the page wider than the screen.
+   A wider document widens the initial containing block on phones, and every
+   position: fixed element (navbar, dock, player) slides out of view.
+   Content that is meant to be wider scrolls inside its own container. */
+html,
+body {
+  overflow-x: clip;
+}

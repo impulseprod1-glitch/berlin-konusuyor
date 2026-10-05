@@ -136,6 +136,33 @@
   gap: 20px;
 }
 
+.lang-switcher--menu {
+  display: none;
+}
+
+/* Phones: logo, login and hamburger are all that fit. Search is in the dock,
+   the language switcher moves into the menu. */
+@media (max-width: 768px) {
+  .nav-right {
+    gap: 8px;
+  }
+  #searchToggle,
+  #themeToggle,
+  .nav-right .lang-switcher {
+    display: none;
+  }
+  .nav-login-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .lang-switcher--menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
 /* ── Hamburger ───────────────────────────── */
 .hamburger {
   display: none;
@@ -275,48 +302,11 @@
   border-color: rgba(255,255,255,0.3);
 }
 
-/* ── AG STATUS BADGE ── */
-.ag-status-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(0, 242, 255, 0.2);
-  padding: 4px 12px;
-  border-radius: 99px;
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: #00f2ff;
-  cursor: help;
-  transition: all 0.3s var(--ease);
-}
-
-.ag-status-badge:hover {
-  background: rgba(0, 242, 255, 0.1);
-  border-color: #00f2ff;
-  box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
-}
-
-.ag-status-dot {
-  width: 6px;
-  height: 6px;
-  background: #00f2ff;
-  border-radius: 50%;
-  animation: ag-pulse 2s infinite;
-}
-
-@keyframes ag-pulse {
-  0% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(0, 242, 255, 0.4); }
-  70% { transform: scale(1.1); opacity: 0.8; box-shadow: 0 0 0 6px rgba(0, 242, 255, 0); }
-  100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(0, 242, 255, 0); }
-}
-
 @media (max-width: 768px) {
   .hero-glass-core {
     padding: 40px 24px;
     border-radius: 24px;
   }
-  .ag-status-text { display: none; }
 }
 
 /* ── Horizontal News Flow ──────────────── */
@@ -478,24 +468,29 @@
 
 .dashboard-bento-grid {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  /* minmax(0, …): a plain 1fr track grows to its widest child (the news
+     rails are thousands of pixels wide), which widened the whole page on
+     phones and pushed fixed elements off-screen. */
+  grid-template-columns: minmax(0, 1fr) 340px;
   gap: 30px;
   align-items: start;
 }
 
 @media (max-width: 1100px) {
   .dashboard-bento-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 .bento-main-feed {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
 .bento-sidebar {
+  min-width: 0;
   position: sticky;
   top: calc(var(--nav-height) + 60px);
   display: flex;
