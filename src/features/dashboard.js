@@ -58,13 +58,18 @@ export function initDashboardUtils() {
   }
 
   // Hava durumu: scripts/fetch-news.mjs writes it every two hours, so the
-  // browser never contacts the weather service itself.
+  // browser never contacts the weather service itself. If the job could not
+  // refresh it for a while, showing nothing beats showing yesterday's weather.
+  const WEATHER_MAX_AGE_MS = 6 * 60 * 60 * 1000;
   fetch('/data/weather.json')
     .then(res => {
       if (!res.ok) throw new Error('Weather data missing');
       return res.json();
     })
-    .then(({ tempC, description }) => {
+    .then(({ tempC, description, updatedAt }) => {
+      if (!updatedAt || Date.now() - Date.parse(updatedAt) > WEATHER_MAX_AGE_MS) {
+        throw new Error('Weather data stale');
+      }
       const tempEl = document.getElementById('berlinTemp');
       const descEl = document.getElementById('weatherDesc');
       if (tempEl && Number.isFinite(tempC)) tempEl.innerText = `${Math.round(tempC)}°C`;
