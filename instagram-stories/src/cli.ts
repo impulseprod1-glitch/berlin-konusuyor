@@ -1,5 +1,6 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { config } from './config.ts';
+import { runConnectionCheck } from './check.ts';
 import { prepareEdition, produce, publishEdition } from './edition.ts';
 import { requireEnv } from './env.ts';
 import { renderSlides } from './render/render.ts';
@@ -14,6 +15,7 @@ import { localParts, zonedTime } from './time.ts';
  *   tsx src/cli.ts prepare [--now] [--force] [--date YYYY-MM-DD]
  *   tsx src/cli.ts publish [--now] [--date YYYY-MM-DD]
  *   tsx src/cli.ts preview [--sample]        → ./out/*.jpg, nothing uploaded
+ *   tsx src/cli.ts check                     → connection check, finds IG_USER_ID
  *
  * Scheduled runs pass no flags and decide from the Berlin clock whether this
  * is the right run (the cron fires for both UTC offsets). --now skips that
@@ -69,6 +71,12 @@ async function main(): Promise<void> {
       return;
     }
 
+    case 'check': {
+      // Reports every missing piece at once instead of stopping at the first.
+      if (!(await runConnectionCheck())) process.exitCode = 1;
+      return;
+    }
+
     case 'preview': {
       const stories = flag('--sample') ? SAMPLE_STORIES : null;
       const rendered = stories
@@ -83,7 +91,7 @@ async function main(): Promise<void> {
     }
 
     default:
-      console.log('Usage: tsx src/cli.ts <prepare|publish|preview> [--now] [--force] [--sample] [--date YYYY-MM-DD]');
+      console.log('Usage: tsx src/cli.ts <prepare|publish|preview|check> [--now] [--force] [--sample] [--date YYYY-MM-DD]');
       process.exitCode = command === 'help' ? 0 : 1;
   }
 }
@@ -92,7 +100,7 @@ main().catch(async (err: Error) => {
   console.error(err);
   process.exitCode = 1;
   // The editor should hear about a failed morning from Telegram, not from silence.
-  if (process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID && command !== 'preview') {
+  if (process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID && command !== 'preview' && command !== 'check') {
     await sendMessage(`❌ <b>${command}</b> başarısız (${isoDate}):\n${escapeText(err.message)}`).catch(() => {});
   }
 });

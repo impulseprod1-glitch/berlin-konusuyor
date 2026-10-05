@@ -33,6 +33,12 @@ async function call<T>(method: string, body: Record<string, unknown>): Promise<T
   return json.result as T;
 }
 
+/** The bot's @username, which also proves the token is valid. */
+export async function botUsername(): Promise<string> {
+  const me = await call<{ username: string }>('getMe', {});
+  return me.username;
+}
+
 export function sendMessage(html: string): Promise<unknown> {
   return call('sendMessage', {
     chat_id: env('TELEGRAM_CHAT_ID'),
