@@ -28,6 +28,12 @@ function bucket() {
   return getStorage().bucket();
 }
 
+/** True when the service account can see the bucket (connection check). */
+export async function bucketReachable(): Promise<boolean> {
+  const [found] = await bucket().exists();
+  return found;
+}
+
 export async function uploadImage(isoDate: string, name: string, jpeg: Buffer): Promise<string> {
   // A fresh name per upload: a re-rendered slide never reuses a cached URL.
   const path = `${dir(isoDate)}${name}-${randomUUID().slice(0, 8)}.jpg`;

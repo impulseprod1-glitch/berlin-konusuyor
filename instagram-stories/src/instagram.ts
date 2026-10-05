@@ -30,7 +30,10 @@ export class GraphError extends Error {
 
 const base = () => (process.env.IG_GRAPH_BASE || 'https://graph.facebook.com/v26.0').replace(/\/$/, '');
 
-async function graph<T>(method: 'GET' | 'POST', path: string, params: Record<string, string>): Promise<T> {
+/** Instagram Login tokens talk to graph.instagram.com, Facebook Login tokens to graph.facebook.com. */
+export const usesInstagramLogin = () => base().includes('graph.instagram.com');
+
+export async function graph<T>(method: 'GET' | 'POST', path: string, params: Record<string, string>): Promise<T> {
   const url = new URL(`${base()}${path}`);
   const all = { ...params, access_token: env('IG_ACCESS_TOKEN') };
   let init: RequestInit = { method };

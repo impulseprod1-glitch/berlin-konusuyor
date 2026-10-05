@@ -44,9 +44,10 @@ Instagram API'si sadece **profesyonel hesaplarla** (İşletme veya İçerik Üre
    seç: `instagram_basic`, `instagram_content_publish`, `pages_show_list`,
    `pages_read_engagement`, `business_management`. Bu token'ın süresi dolmaz →
    **IG_ACCESS_TOKEN**
-4. **IG_USER_ID:** Graph API Explorer'da bu token ile
-   `GET /me/accounts?fields=instagram_business_account` sorgusunu çalıştır.
-   Dönen `instagram_business_account.id` değeri senin IG_USER_ID'n.
+4. **IG_USER_ID:** Önce sadece `IG_ACCESS_TOKEN` secret'ını ekle ve
+   *Actions → Stories: connection check → Run workflow* çalıştır. Test,
+   token'ın gördüğü Instagram hesabını ve ID'sini sonuç tablosunda gösterir;
+   o değeri `IG_USER_ID` olarak ekle.
 
 > Alternatif olarak "Instagram Login" kullanılabilir (Facebook Sayfası gerekmez).
 > O zaman `IG_GRAPH_BASE` değişkenine `https://graph.instagram.com/v26.0`
@@ -88,6 +89,9 @@ sessizce atlanmaz.
 
 ### 6. İlk test
 
+0. *Actions → Stories: connection check → Run workflow*: Her bağlantıyı tek
+   tabloda kontrol eder, eksik secret'ları gösterir ve Telegram'a bir test
+   mesajı yollar. Tüm satırlar ✅ olunca devam et.
 1. *Actions → Stories: prepare → Run workflow* → Telegram'a önizleme gelmeli.
 2. Görseller iyi görünüyorsa: *Actions → Stories: publish → Run workflow*,
    „Publish immediately" işaretli → story'ler yayınlanır.
