@@ -1,27 +1,104 @@
 {
-  "lastUpdated": "2026-10-07T19:44:36.020Z",
+  "lastUpdated": "2026-10-08T00:00:27.215Z",
   "count": 10,
   "articles": [
     {
-      "title": "Kültür ve Turizm Bakanlığı Devlet Çoksesli Korosu Şefi Erdem, IFCM başkanı oldu",
-      "description": "Kültür ve Turizm Bakanlığı Devlet Çoksesli Korosu Şefi Burak Onur Erdem, Uluslararası Koro Müziği Federasyonu (IFCM) Başkanlığına seçildi.",
-      "url": "https://www.aa.com.tr/tr/kultur/kultur-ve-turizm-bakanligi-devlet-coksesli-korosu-sefi-erdem-ifcm-baskani-oldu/4081471",
+      "title": "İçişleri Bakan Yardımcısı Turan: AK Parti'yi AK Parti yapan garibana sahip çıkma iradesidir",
+      "description": "İçişleri Bakan Yardımcısı Bülent Turan, \"AK Parti'yi AK Parti yapan 86 yıldan beri açılmayan Ayasofya'yı açma, garibana sahip çıkma iradesidir. Her türlü mazlumun yanında olma iddiasıdır.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakan-yardimcisi-turan-ak-partiyi-ak-parti-yapan-garibana-sahip-cikma-iradesidir/4081600",
       "image": "",
-      "date": "2026-10-07T19:42:22.000Z",
+      "date": "2026-10-07T22:58:51.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Galata Kulesi Filistin bayrağının renklerine büründü",
-      "description": "İstanbul'un simge yapılarından Galata Kulesi'ne Filistin bayrağı yansıtıldı.",
-      "url": "https://www.aa.com.tr/tr/gundem/galata-kulesi-filistin-bayraginin-renklerine-burundu/4081455",
+      "title": "Balıkesir'in Bandırma ilçesinde yağ fabrikasında çıkan yangın kontrol altına alındı",
+      "description": "Balıkesir'in Bandırma ilçesinde yağ fabrikasında çıkan yangın kontrol altına alındı.",
+      "url": "https://www.aa.com.tr/tr/gundem/balikesirin-bandirma-ilcesinde-yag-fabrikasinda-cikan-yangin-kontrol-altina-alindi/4081599",
       "image": "",
-      "date": "2026-10-07T19:25:55.000Z",
+      "date": "2026-10-07T22:47:59.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ticaret Bakanı Bolat hakkındaki iddiaları yalanladı",
+      "description": "Ticaret Bakanı Bolat, fon soruşturmaları kapsamında 7 yatırım kuruluşuna yönelik incelemeler üzerinden adının gündeme getirilmeye çalışılmasının, tümüyle bir kara propaganda, sosyal ve siyasal linç avcılığının yeni bir versiyonu olduğunu belirtti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ticaret-bakani-bolat-hakkindaki-iddialari-yalanladi/4081597",
+      "image": "",
+      "date": "2026-10-07T22:41:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kleinflugzeug bei Finowfurt abgestürzt - Pilot tot",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/finowfurt-flugzeug-kleinflugzeug-absturz-pilot-tot.html",
+      "image": "",
+      "date": "2026-10-07T22:21:57.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İran, ABD'nin müzakerelerde sunduğu önerilere yanıtını arabulucular üzerinden iletecek",
+      "description": "İran, ABD'nin müzakerelerde sunduğu önerilere ilişkin yanıtını arabulucular aracılığıyla ileteceğini açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/iran-abdnin-muzakerelerde-sundugu-onerilere-yanitini-arabulucular-uzerinden-iletecek/4081589",
+      "image": "",
+      "date": "2026-10-07T22:04:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Sieg bei Salzburg: Eisbären ziehen ins CHL-Achtelfinale ein",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/eishockey-champions-hockey-league-salzburg-eisbaeren-berlin.html",
+      "image": "",
+      "date": "2026-10-07T21:44:33.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Bakan Bolat: Türkiye-ABD ticareti en geç 2028'de 50 milyar doları yakalayabilir",
+      "description": "Ticaret Bakanı Ömer Bolat, \"Türkiye ve ABD arasındaki toplam ticarette en geç 2028'de 50 milyar doları yakalayabileceğiz.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-bolat-turkiye-abd-ticareti-en-gec-2028de-50-milyar-dolari-yakalayabilir/4081585",
+      "image": "",
+      "date": "2026-10-07T21:41:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Vier Mopedfahrer sterben bei Verkehrsunfall bei Biesenthal",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/schwerer-verkehrsunfall-brandenburg-landkreis-barnim-vier-mopedf.html",
+      "image": "",
+      "date": "2026-10-07T21:04:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Berlin: Äußere Fahrstreifen der A100 auf Rudolf-Wissell-Brücke gesperrt",
+      "description": "An der Brücke des am drittmeisten befahrenen Autobahnabschnitt Deutschlands platzen Betonteile ab. Am Mittwoch wurde ein Fahrstreifen in beide Richtungen auf A100 über die Rudolf-Wissell-Brücke gesperrt.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/a100-berlin-charlottenburg-rudolf-wissell-bruecke-fahrstreifen-gesperrt.html",
+      "image": "",
+      "date": "2026-10-07T20:28:46.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,83 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kupada 2. eleme turunda bugün 24 maç oynandı",
-      "description": "Ziraat Türkiye Kupası 2. eleme turunda bugün 24 karşılaşma yapıldı.",
-      "url": "https://www.aa.com.tr/tr/spor/kupada-2-eleme-turunda-bugun-24-mac-oynandi/4081438",
-      "image": "",
-      "date": "2026-10-07T19:17:26.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Araştırma: Dünyanın en büyük penguen kolonisinde popülasyonun çeyreğinden fazlası öldü",
-      "description": "İngiliz Antarktika Araştırmaları Enstitüsü (BAS), Antarktika yakınlarındaki Zavodovski Adası'ndaki penguen nüfusunun, 2011'den bu yana 4'te 1'inden fazlasının öldüğünü ve buranın \"dünyanın en büyük penguen kolonisi\" ünvanını yitirdiğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/gundem/arastirma-dunyanin-en-buyuk-penguen-kolonisinde-populasyonun-ceyreginden-fazlasi-oldu/4081432",
-      "image": "",
-      "date": "2026-10-07T19:13:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Berlin: Äußere Fahrstreifen der A100 auf Rudolf-Wissell-Brücke gesperrt",
-      "description": "An der Brücke des am drittmeisten befahrenen Autobahnabschnitt Deutschlands platzen Betonteile ab. Am Mittwoch wurde ein Fahrstreifen in beide Richtungen auf A100 über die Rudolf-Wissell-Brücke gesperrt.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/a100-berlin-charlottenburg-rudolf-wissell-bruecke-fahrstreifen-gesperrt.html",
-      "image": "",
-      "date": "2026-10-07T19:03:19.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Mann nach tödlichem Angriff in Nauener Psychiatrie zu vier Jahren Haft verurteilt ",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/haft-nauen-havelland-psychiatrie-angriff-toedlich-opfer-klage.html",
-      "image": "",
-      "date": "2026-10-07T18:53:25.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Brennendes Auto im Gleisbett - Trams unterbrochen ",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/verkehrsunfall-berlin-weissensee-brand-tram-unterbrochen.html",
-      "image": "",
-      "date": "2026-10-07T18:51:20.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Kleinflugzeug bei Finowfurt abgestürzt - Pilot tot",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/finowfurt-flugzeug-kleinflugzeug-absturz-pilot-tot.html",
-      "image": "",
-      "date": "2026-10-07T18:50:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in Gazze'de uyguladığı soykırım birçok ilde protesto edildi",
-      "description": "İsrail'in Ekim 2023'ten bu yana Gazze'de uyguladığı soykırım birçok ilde protesto edildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/israilin-gazzede-uyguladigi-soykirim-bircok-ilde-protesto-edildi/4081386",
-      "image": "",
-      "date": "2026-10-07T18:25:01.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
