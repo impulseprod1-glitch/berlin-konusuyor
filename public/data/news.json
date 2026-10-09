@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-10-08T22:55:44.637Z",
+  "lastUpdated": "2026-10-09T04:40:42.114Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Maltepe'de kısmen çöken 7 katlı binada arama kurtarma çalışmaları tamamlandı",
+      "description": "Maltepe'de kısmen çöken 7 katlı binanın enkazında 3 kişinin daha cansız bedenine ulaşılmasıyla olayda hayatını kaybedenlerin sayısı 5'e yükseldi.",
+      "url": "https://www.aa.com.tr/tr/gundem/maltepede-kismen-coken-7-katli-binada-arama-kurtarma-calismalari-tamamlandi/4082850",
+      "image": "",
+      "date": "2026-10-09T04:30:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Großeinsatz der Polizei in Velten - Mann festgenommen",
+      "description": "Stundenlang haben Polizeibeamte in Velten mit einem Mann verhandelt, der sich in einem Wohnhaus verschanzt hatte. Das betraf auch mehrere Kinder und Trainer eines Sportvereins. Der Mann konnte festgenommen werden, die Details bleiben unklar.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/polizei-grosseinsatz-velten-gefahrenlage.html",
+      "image": "",
+      "date": "2026-10-08T23:32:55.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "NYT: ABD ordusu, Trump'ın seçimlere kadar saldırıları \"durdurduğu\" İran'a karşı seçenekleri değerlendiriyor",
       "description": "ABD Başkanı Donald Trump'ın 3 Kasım'daki ara seçimlere kadar İran'a karşı herhangi bir saldırı düzenlenmeyeceğini açıklamasının ardından ABD ordusunun, İran'a saldırı seçeneklerini değerlendirdiği öne sürüldü.",
@@ -47,17 +69,6 @@
       "type": "rss"
     },
     {
-      "title": "İsrail basını: Trump, İsrail seçimleri öncesinde İran'a saldırı düzenlemeyi planlıyor",
-      "description": "İsrail basını, ABD Başkanı Donald Trump'ın 27 Ekim'de yapılacak İsrail parlamento seçimleri öncesinde İran'a saldırı düzenlemeyi planladığını iddia etti.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-trump-israil-secimleri-oncesinde-irana-saldiri-duzenlemeyi-planliyor/4082824",
-      "image": "",
-      "date": "2026-10-08T21:01:51.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Influencer im Olympiastadion: Auch Hertha verbietet Stadionvlogs",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/10/fussball-2-bundesliga-vlogs-vlogger-hertha-bsc-olympiastadion.html",
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/politik/beitrag/2026/10/berlin-analyse-rot-gruen-rot-sondierungsgespraeche.html",
       "image": "",
       "date": "2026-10-08T18:17:00.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Zweifel an Tragfähigkeit: Spreeausgang am Bahnhof Jannowitzbrücke gesperrt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/jannowitzbruecke-spree-zugang-sperrung-mitte-berlin.html",
-      "image": "",
-      "date": "2026-10-08T17:43:16.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
