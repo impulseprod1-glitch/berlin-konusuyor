@@ -1,16 +1,93 @@
 {
-  "lastUpdated": "2026-10-10T17:06:15.127Z",
+  "lastUpdated": "2026-10-10T21:11:27.496Z",
   "count": 10,
   "articles": [
     {
-      "title": "Nobel Barış Ödülü sahibi Pillay, ABD'nin UCM'ye yaptırımlarının \"kabul edilemez\" olduğunu söyledi",
-      "description": "Nobel Barış Ödülü'nü alan Güney Afrikalı hukukçu Navanethem Navi Pillay, ABD'nin Uluslararası Ceza Mahkemesine (UCM) yaptırım uygulama kararının \"kabul edilemez\" olduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/dunya/nobel-baris-odulu-sahibi-pillay-abdnin-ucmye-yaptirimlarinin-kabul-edilemez-oldugunu-soyledi/4084669",
+      "title": "İçişleri Bakanı Çiftçi: Fon Koordinasyon Kurulu çalışmalarına devam ediyor",
+      "description": "İçişleri Bakanı Çiftçi, Fon Koordinasyon Kurulunun çalışmalarına devam ettiğini belirterek, \"Devletin hazinesinden, bütçeden kesinlikle bu konuyla ilgili herhangi bir para ödenmeyecek.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftci-fon-koordinasyon-kurulu-calismalarina-devam-ediyor/4084780",
       "image": "",
-      "date": "2026-10-10T17:01:32.000Z",
+      "date": "2026-10-10T20:46:03.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Milli sporcu Hakan Akkaya, Avrupa Para Eskrim Şampiyonası'nda bronz madalya kazandı",
+      "description": "Milli sporcu Hakan Akkaya, Büyük Britanya'da düzenlenen Avrupa Para Eskrim Şampiyonası'nda bronz madalya kazandı.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-sporcu-hakan-akkaya-avrupa-para-eskrim-sampiyonasinda-bronz-madalya-kazandi/4084779",
+      "image": "",
+      "date": "2026-10-10T20:44:02.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "DSÖ, Rusya'daki zatürre vakasında bulaş olduğuna dair kanıt bulunmadığını bildirdi",
+      "description": "Dünya Sağlık Örgütü (DSÖ), Rusya'nın Sibirya bölgesinde nedeni belirlenemeyen zatürre şüphesiyle bir kişinin hayatını kaybetmesinin ardından söz konusu hastalıkla ilgili herhangi bir bulaş olduğuna dair kanıt bulunmadığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/dso-rusyadaki-zaturre-vakasinda-bulas-olduguna-dair-kanit-bulunmadigini-bildirdi/4084768",
+      "image": "",
+      "date": "2026-10-10T20:19:57.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Nobel Barış Ödülü'nün Pillay'a gitmesi İsrail yanlısı çevreleri rahatsız etti ",
+      "description": "İsrail yanlısı çevreler, Gazze'de soykırım tespit eden Birleşmiş Milletler (BM) Komisyonuna başkanlık yapan Navi Pillay'ın Nobel Barış Ödülü'nü almasından rahatsız oldu.",
+      "url": "https://www.aa.com.tr/tr/dunya/nobel-baris-odulunun-pillaya-gitmesi-israil-yanlisi-cevreleri-rahatsiz-etti-/4084761",
+      "image": "",
+      "date": "2026-10-10T20:16:11.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Basketball-Bundesliga: Alba Berlin verliert in Trier",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/basketball-bbl-bundesliga-gladiators-trier-alba-berlin-spielbericht-ergebnis.html",
+      "image": "",
+      "date": "2026-10-10T20:13:00.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Pentagon, İran ile savaşta ölen ABD askerlerinin sayısını 21 olarak güncelledi",
+      "description": "ABD Savunma Bakanlığı (Pentagon), İran'a karşı saldırılarda hayatını kaybeden Amerikan askeri sayısının bildirilenden daha yüksek olduğunu kabul etti ve resmi sayıyı 21'e yükseltti.",
+      "url": "https://www.aa.com.tr/tr/dunya/pentagon-iran-ile-savasta-olen-abd-askerlerinin-sayisini-21-olarak-guncelledi/4084741",
+      "image": "",
+      "date": "2026-10-10T19:44:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Basketball-Bundesliga: Alba-Frauen gewinnen klar in Herne",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/basketball-dbbl-bundesliga-herner-tc-alba-berlin-2-spieltag-ergebnis.html",
+      "image": "",
+      "date": "2026-10-10T18:36:30.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Tausende ziehen bei Palästina-Demo durch Berliner Regierungsviertel",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/berlin-demo-pro-palaestina-gaza-israel.html",
+      "image": "",
+      "date": "2026-10-10T17:39:27.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,88 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Bakan Kacır: IAC 2026, bugüne kadarki en büyük ve en görkemli uluslararası uzay kongresi oldu",
-      "description": "Sanayi ve Teknoloji Bakanı Kacır, 77. Uluslararası Uzay Kongresi'nin (IAC 2026)  bugüne kadarki en büyük ve en görkemli uluslararası uzay kongresi olduğunu bildirdi.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/bakan-kacir-iac-2026-bugune-kadarki-en-buyuk-ve-en-gorkemli-uluslararasi-uzay-kongresi-oldu/4084656",
-      "image": "",
-      "date": "2026-10-10T16:44:59.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İYV Başkanı Necmeddin Bilal Erdoğan, Türkiye'nin çok daha güçlü olduğunu belirtti",
-      "description": "İlim Yayma Vakfı (İYV) Mütevelli Heyeti Başkanı Necmeddin Bilal Erdoğan, Türkiye'nin artık 25 yıl önceki Türkiye olmadığını, daha güçlü bir Türkiye olduğunu söyledi.",
-      "url": "https://www.aa.com.tr/tr/gundem/iyv-baskani-necmeddin-bilal-erdogan-turkiyenin-cok-daha-guclu-oldugunu-belirtti/4084653",
-      "image": "",
-      "date": "2026-10-10T16:41:30.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Galatasaray Kulübünün yıllık olağan genel kurul toplantısı sona erdi",
-      "description": "Galatasaray Kulübünde Dursun Özbek başkanlığındaki yönetim kurulu, 1 Haziran 2025-31 Mayıs 2026 dönemindeki faaliyetlerinden dolayı ibra edildi.",
-      "url": "https://www.aa.com.tr/tr/spor/galatasaray-kulubunun-yillik-olagan-genel-kurul-toplantisi-sona-erdi/4084649",
-      "image": "",
-      "date": "2026-10-10T16:39:52.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "\"Türk Dünyası Gençlik Buluşması\" panel oturumlarıyla devam etti",
-      "description": "AK Parti Türk Devletleri ile İlişkiler Başkanlığı koordinasyonunda ve Kocaeli Büyükşehir Belediyesinin ev sahipliğinde düzenlenen \"Türk Dünyası Gençlik Buluşması\"nda panel oturumları gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/gundem/turk-dunyasi-genclik-bulusmasi-panel-oturumlariyla-devam-etti/4084637",
-      "image": "",
-      "date": "2026-10-10T16:35:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Tausende ziehen bei Palästina-Demo durch Berliner Regierungsviertel",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/berlin-demo-pro-palaestina-gaza-israel.html",
-      "image": "",
-      "date": "2026-10-10T16:04:55.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Erster Saisonsieg:  Burcu erlöst Union spät gegen Elversberg",
-      "description": "Fußball-Bundesligist 1. FC Union Berlin hat nach der Länderspielpause den ersten Saisonsieg eingefahren. Gegen den Aufsteiger SV Elversberg holten die Eisernen spät ein 1:0. Mann des Tages war Livan Burcu.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/10/fussball-bundesliga-union-berlin-sv-elversberg-audio-livestream-liveticker-spielbericht.html",
-      "image": "",
-      "date": "2026-10-10T15:52:54.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
       "title": "Tausende Menschen demonstrieren als \"M1llion\" gegen Regierungspolitik",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/10/berlin-projekt-m1llion-demo-bundespolitik-regierung-frieden-krieg.html",
       "image": "",
       "date": "2026-10-10T15:51:22.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Regionalliga Nordost: Ndi-Treffer reicht Hertha II nicht zum Sieg",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/10/fussball-regionalliga-nordost-bfc-preussen-hertha-bsc-amateure-spielbericht.html",
-      "image": "",
-      "date": "2026-10-10T15:11:12.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
