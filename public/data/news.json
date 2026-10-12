@@ -1,24 +1,57 @@
 {
-  "lastUpdated": "2026-10-11T21:30:31.499Z",
+  "lastUpdated": "2026-10-12T00:59:56.229Z",
   "count": 10,
   "articles": [
     {
-      "title": "Suudi Arabistan'daki 5 havalimanına bir haftada düzenlenen 10 saldırıda 19 kişi hayatını kaybetti",
-      "description": "Suudi Arabistan'da bir haftada 5 havalimanının hedef alındığı 10 saldırıda 19 kişi yaşamını yitirdi, yüzlerce kişi yaralandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/suudi-arabistandaki-5-havalimanina-bir-haftada-duzenlenen-10-saldirida-19-kisi-hayatini-kaybetti/4085492",
+      "title": "Suudi Arabistan: Kral Halid Uluslararası Havalimanı'na yönelik dünkü saldırıda 1 kişi öldü, 11 kişi yaralandı",
+      "description": "Suudi Arabistan Sivil Havacılık Genel Kurulu (GACA), Riyad'daki Kral Halid Uluslararası Havalimanı'nı hedef alan saldırıda 1 kişinin hayatını kaybettiğini, 11 kişinin yaralandığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/suudi-arabistan-kral-halid-uluslararasi-havalimanina-yonelik-dunku-saldirida-1-kisi-oldu-11-kisi-yaralandi/4085518",
       "image": "",
-      "date": "2026-10-11T20:29:44.000Z",
+      "date": "2026-10-11T22:55:29.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "İbn Haldun Üniversitesi Mütevelli Heyeti Başkan Vekili Erdoğan: Gazze'deki insani durum ciddiyetini koruyor",
-      "description": "İbn Haldun Üniversitesi Mütevelli Heyeti Başkan Vekili Bilal Erdoğan, Gazze'deki insani durumun ateşkese rağmen ciddiyetini koruduğunu belirterek, \"Maalesef soykırım her gün devam ediyor.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/ibn-haldun-universitesi-mutevelli-heyeti-baskan-vekili-erdogan-gazzedeki-insani-durum-ciddiyetini-koruyor/4085475",
+      "title": "İngiltere'deki hayvanat bahçesinde yaşam alanına giren ziyaretçiyi öldüren kaplan itlaf edilmeyecek",
+      "description": "İngiltere'nin Yorkshire bölgesindeki hayvanat bahçesinde yaşam alanına giren ziyaretçinin ölümüne sebep olan \"Altai\" isimli kaplanın itlaf edilmeyeceği açıklandı.",
+      "url": "https://www.aa.com.tr/tr/dunya/ingilteredeki-hayvanat-bahcesinde-yasam-alanina-giren-ziyaretciyi-olduren-kaplan-itlaf-edilmeyecek/4085511",
       "image": "",
-      "date": "2026-10-11T19:59:57.000Z",
+      "date": "2026-10-11T21:18:18.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Altın çatılı tapınaklar ve su yolları arasında bir şehir: Phnom Penh",
+      "description": "Güneydoğu Asya'nın kalbinde, Mekong, Tonle Sap ve Bassac nehirlerinin kesiştiği stratejik havzada yer alan Kamboçya'nın başkenti Phnom Penh, köklü geleneksel Khmer yaşamını ve hızla yükselen modern mimarisini aynı sokaklarda buluşturuyor.",
+      "url": "https://www.aa.com.tr/tr/dunya/altin-catili-tapinaklar-ve-su-yollari-arasinda-bir-sehir-phnom-penh/4085510",
+      "image": "",
+      "date": "2026-10-11T21:12:45.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Bodrum'da \"sarı yaz\" etkinlikleri turizm sezonunu uzatıyor",
+      "description": "Muğla'nın Bodrum ilçesinde yaz sezonunun ardından başlayan \"sarı yaz\" dönemi, festival, spor organizasyonları ve fuarlarla turizm hareketliliğini sürdürüyor.",
+      "url": "https://www.aa.com.tr/tr/kultur/bodrumda-sari-yaz-etkinlikleri-turizm-sezonunu-uzatiyor/4085509",
+      "image": "",
+      "date": "2026-10-11T21:10:21.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Eyüpspor, Süper Lig'de Göztepe'yi konuk edecek",
+      "description": "Eyüpspor, Trendyol Süper Lig'de 7. haftanın kapanış maçında  sahasında Göztepe ile karşılaşacak.",
+      "url": "https://www.aa.com.tr/tr/spor/eyupspor-super-ligde-goztepeyi-konuk-edecek/4085508",
+      "image": "",
+      "date": "2026-10-11T21:06:10.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -33,17 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Netanyahu'nun İran'la gerilimin tırmanması ihtimaline ilişkin \"güvenlik toplantısı\" yaptığı bildirildi",
-      "description": "İsrail Başbakanı Binyamin Netanyahu'nun, İran'la gerilimin tırmanması ihtimali ile Gazze Şeridi ve Lübnan'a ilişkin \"güvenlik toplantısı\" gerçekleştirdiği belirtildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/netanyahunun-iranla-gerilimin-tirmanmasi-ihtimaline-iliskin-guvenlik-toplantisi-yaptigi-bildirildi/4085458",
-      "image": "",
-      "date": "2026-10-11T19:08:43.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -88,28 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Belçika'da on binlerce kişi iklim değişikliğiyle mücadele için yürüdü",
-      "description": "Belçika'nın başkenti Brüksel'de on binlerce kişi, iklim değişikliğiyle mücadelede daha etkili politikalar uygulanması ve fosil yakıtlara bağımlılığın azaltılması talebiyle gösteri düzenledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/belcikada-on-binlerce-kisi-iklim-degisikligiyle-mucadele-icin-yurudu/4085338",
-      "image": "",
-      "date": "2026-10-11T15:47:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Brüksel'de, İsrail'in Gazze'deki soykırımının 3. yılı dolayısıyla Filistin'e destek gösterisi düzenlendi",
-      "description": "Belçika'nın başkenti Brüksel'de yüzlerce kişi, Gazze'deki soykırımın üçüncü yılında İsrail'in saldırılarında hayatını kaybeden Filistinlileri anmak ve İsrail'e yönelik siyasi tedbirler alınması için gösteri düzenledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/brukselde-israilin-gazzedeki-soykiriminin-3-yili-dolayisiyla-filistine-destek-gosterisi-duzenlendi/4084997",
-      "image": "",
-      "date": "2026-10-11T08:53:38.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
