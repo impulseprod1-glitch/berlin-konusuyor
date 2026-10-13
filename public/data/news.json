@@ -1,16 +1,71 @@
 {
-  "lastUpdated": "2026-10-12T19:37:37.127Z",
+  "lastUpdated": "2026-10-13T01:49:23.797Z",
   "count": 10,
   "articles": [
     {
-      "title": "ABD'nin Riyad Büyükelçiliği: Suudi Arabistan'daki saldırıları görüntüleyen ABD vatandaşları gözaltına alındı",
-      "description": "ABD'nin Riyad Büyükelçiliği, Suudi Arabistan'da son dönemde düzenlenen saldırıları ve hava savunma müdahalelerini görüntüleyen ABD vatandaşlarının gözaltına alındığını duyurdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/abdnin-riyad-buyukelciligi-suudi-arabistandaki-saldirilari-goruntuleyen-abd-vatandaslari-gozaltina-alindi/4086600",
+      "title": "Panama'da 6,1 büyüklüğünde deprem",
+      "description": "Orta Amerika ülkesi Panama'da 6,1 büyüklüğünde deprem meydana geldi.",
+      "url": "https://www.aa.com.tr/tr/dunya/panamada-6-1-buyuklugunde-deprem/4086713",
       "image": "",
-      "date": "2026-10-12T19:23:51.000Z",
+      "date": "2026-10-13T01:01:40.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail basını: Netanyahu Husilere müdahale etmek istiyor, Prens Selman karşı çıkıyor",
+      "description": "İsrail basını, Başbakan Binyamin Netanyahu'nun Yemen'deki Husilere müdahale etmek istediğini, buna karşın Suudi Arabistan Veliaht Prensi Muhammed bin Selman'ın buna karşı çıktığını iddia etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basini-netanyahu-husilere-mudahale-etmek-istiyor-prens-selman-karsi-cikiyor/4086709",
+      "image": "",
+      "date": "2026-10-13T00:07:00.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fas’ta 4 partinin anlaşmaya varmasıyla koalisyon hükümeti kuruldu",
+      "description": "Fas'ta 30 Eylül'den bu yana devam eden hükümet kurma görüşmelerinin ikinci turunun ardından 4 parti, yeni hükümet çoğunluğunu oluşturma konusunda anlaştıklarını duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/fas-ta-4-partinin-anlasmaya-varmasiyla-koalisyon-hukumeti-kuruldu/4086700",
+      "image": "",
+      "date": "2026-10-12T23:09:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'de anket: Muhalefet bloku, Netanyahu liderliğindeki iktidar koalisyonunun önünde yarışı sürdürüyor",
+      "description": "İsrail'de 27 Ekim'de yapılacak genel seçimlere iki hafta kala yayımlanan son kamuoyu araştırmasına göre, Başbakan Netanyahu karşıtı muhalefet bloku 120 sandalyeli mecliste 67 sandalyeye ulaşarak iktidar koalisyonunun açık farkla önünde yer aldı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilde-anket-muhalefet-bloku-netanyahu-liderligindeki-iktidar-koalisyonunun-onunde-yarisi-surduruyor/4086699",
+      "image": "",
+      "date": "2026-10-12T23:09:47.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail bir uçağa Endonezyalı mürettebat bulundurduğu gerekçesiyle iniş izni vermedi",
+      "description": "İsrail'in, mürettebatında diplomatik ilişkisi bulunmayan Endonezyalı bir kişi bulundurduğu gerekçesiyle Etiyopya'dan kalkan bir uçağa ülkeye iniş izni vermediği bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-bir-ucaga-endonezyali-murettebat-bulundurdugu-gerekcesiyle-inis-izni-vermedi/4086695",
+      "image": "",
+      "date": "2026-10-12T22:51:30.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Judoschule Falkensee gewinnt \"Großen Stern des Sports\" in Silber",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/breitensport-sterne-des-sports-judoschule-falkensee-kidstrainer.html",
+      "image": "",
+      "date": "2026-10-12T19:59:10.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -25,28 +80,6 @@
       "type": "rss"
     },
     {
-      "title": "Polonya Başbakanı Tusk: Casus yazılım üzerinden hassas verilerin, İsrail'e aktarılması devlete karşı suç",
-      "description": "Polonya Başbakanı Donald Tusk, önceki hükümet döneminde kullanılan Pegasus casus yazılımı aracılığıyla Polonya vatandaşlarına ait hassas verilerin, İsrail tarafına aktarılmasını \"devlete karşı işlenmiş ağır bir suç\" olarak nitelendirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/polonya-basbakani-tusk-casus-yazilim-uzerinden-hassas-verilerin-israile-aktarilmasi-devlete-karsi-suc/4086596",
-      "image": "",
-      "date": "2026-10-12T19:16:58.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "2026 Voleybol Erkekler AXA Sigorta Şampiyonlar Kupası'nı Galatasaray Madeş Mobilya kazandı",
-      "description": "2026 Voleybol Erkekler AXA Sigorta Şampiyonlar Kupası'nı, Ziraat Bankkart'ı 3-1 yenen Galatasaray Madeş Mobilya kazandı.",
-      "url": "https://www.aa.com.tr/tr/spor/2026-voleybol-erkekler-axa-sigorta-sampiyonlar-kupasini-galatasaray-mades-mobilya-kazandi/4086581",
-      "image": "",
-      "date": "2026-10-12T18:46:31.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Berliner Landespokal: TeBe trifft erneut auf Regionalligisten",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/10/fussball-berlin-landespokal-achtelfinale-auslosung-delay-sports-altglienicke-tennis-borussia-bfc-preussen.html",
@@ -55,17 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Göztepe, deplasmanda Eyüpspor'u farklı yendi",
-      "description": "Trendyol Süper Lig'de 7. haftanın son maçında Göztepe, deplasmanda Eyüpspor'u 4-0 yendi.",
-      "url": "https://www.aa.com.tr/tr/spor/goztepe-deplasmanda-eyupsporu-farkli-yendi/4086543",
-      "image": "",
-      "date": "2026-10-12T18:01:56.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -80,33 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "TBMM Başkanı Kurtulmuş: Hemen sınır bölgemizde asla ve asla terör örgütünün hiçbir şekilde unsuru kalmayacak",
-      "description": "TBMM Başkanı Kurtulmuş, \"Metina bölgesinde örgütün elinde bulunan bazı mağaraların devlet kurumlarına devriyle ilgili süreçte önemli bir adım atıldı. Böylece hemen sınır bölgemizde asla ve asla terör örgütünün hiçbir şekilde unsuru kalmayacak.\" dedi.",
-      "url": "https://www.aa.com.tr/tr/gundem/tbmm-baskani-kurtulmus-hemen-sinir-bolgemizde-asla-ve-asla-teror-orgutunun-hicbir-sekilde-unsuru-kalmayacak/4086513",
-      "image": "",
-      "date": "2026-10-12T17:17:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Wie Berlin seine Grundschüler zu sicheren Schwimmern machen will",
       "description": "Mit Millioneninvestitionen und gezielter Wassergewöhnung will Berlin die Nichtschwimmer-Quote drastisch senken. Warum das Projekt trotz großer Erfolge vor riesigen Herausforderungen steht und wie Schwimmtrainer mit Vertrauen kulturelle Ängste abbauen.",
       "url": "https://www.rbb24.de/sport/beitrag/2026/10/schwimmen-kinder-grundschule-training-lernen-berlin-nichtschwimmer-quote-seepferdchen.html",
       "image": "",
       "date": "2026-10-12T17:10:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Mögliche Kamerahalterungen auf Damentoiletten der HWR Berlin entdeckt",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/berlin-hochschule-wirtschaft-recht-kamerahalterungen-damentoiletten.html",
-      "image": "",
-      "date": "2026-10-12T15:46:23.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
