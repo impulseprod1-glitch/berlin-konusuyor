@@ -1,27 +1,71 @@
 {
-  "lastUpdated": "2026-10-21T19:55:21.553Z",
+  "lastUpdated": "2026-10-21T23:01:23.005Z",
   "count": 10,
   "articles": [
     {
-      "title": "UEFA'dan Halil Umut Meler'e görev",
-      "description": "FIFA kokartlı hakem Halil Umut Meler, UEFA Avrupa Ligi'nde yarın oynanacak Hoffenheim-Lyon maçında görev yapacak.",
-      "url": "https://www.aa.com.tr/tr/spor/uefadan-halil-umut-melere-gorev/4096457",
+      "title": "Microsoft, Çin bağlantılı aktörün yapay zeka kullanarak yüzlerce kuruluşu hedef aldığını belirtti",
+      "description": "ABD'li teknoloji şirketi Microsoft, Çin devletiyle bağlantılı bir siber aktörün yapay zeka destekli araçlar kullanarak dünya genelinde yüzlerce kuruluşu hedef aldığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/microsoft-cin-baglantili-aktorun-yapay-zeka-kullanarak-yuzlerce-kurulusu-hedef-aldigini-belirtti/4096573",
       "image": "",
-      "date": "2026-10-21T19:45:50.000Z",
+      "date": "2026-10-21T22:40:45.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
       "type": "rss"
     },
     {
-      "title": "Dünya çapında PHP kaynaklı güvenlik açığının giderilmesi için çok sayıda internet sitesi erişime kapatıldı",
-      "description": "Bir programlama dili olan PHP'deki \"ciddi güvenlik açıklarına\" ilişkin haberlerin ardından dünya çapında hükümet siteleri de dahil olmak üzere çok sayıda internet sitesine tedbir amacıyla erişim kısmen ya da tamamen askıya alındı.",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/dunya-capinda-php-kaynakli-guvenlik-aciginin-giderilmesi-icin-cok-sayida-internet-sitesi-erisime-kapatildi/4096454",
+      "title": "Suudi Arabistan'daki Kral Fahd Uluslararası Havalimanı'na yönelik saldırıda 1 kişi öldü, 8 kişi yaralandı",
+      "description": "Suudi Arabistan Sivil Havacılık Genel Otoritesi (GACA), Dammam'daki Kral Fahd Uluslararası Havalimanı'na düzenlenen saldırıda 1 kişinin öldüğünü, 8 kişinin yaralandığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/suudi-arabistandaki-kral-fahd-uluslararasi-havalimanina-yonelik-saldirida-1-kisi-oldu-8-kisi-yaralandi/4096567",
       "image": "",
-      "date": "2026-10-21T19:43:18.000Z",
+      "date": "2026-10-21T22:22:36.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Libya TM Başkanı Abdunnebi: Türkiye ile deniz yetki mutabakatı diğer ülkelerin çıkarlarına zarar vermiyor",
+      "description": "Libya Temsilciler Meclisi Başkanı Abdunnebi, Türkiye-Libya deniz yetki alanları mutabakatının diğer ülkelerin çıkarlarına zarar vermediğini belirterek, \"Bu anlaşma egemenlik kararıdır ve Libya devletinin kendi çıkarlarını gözetme hakkı vardır.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/dunya/libya-tm-baskani-abdunnebi-turkiye-ile-deniz-yetki-mutabakati-diger-ulkelerin-cikarlarina-zarar-vermiyor/4096564",
+      "image": "",
+      "date": "2026-10-21T22:15:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kanada ve Ontario eyaleti, ABD tarifelerine karşı 8,7 milyar dolarlık paket açıkladı",
+      "description": "Kanada Başbakanı Mark Carney ile Ontario eyaletinin Başbakanı Doug Ford, ABD tarifelerinin yarattığı ekonomik belirsizliğe karşı Ontario'daki stratejik sektörleri ve çalışanları desteklemek amacıyla toplam 8,7 milyar dolarlık yatırımları duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/kanada-ve-ontario-eyaleti-abd-tarifelerine-karsi-8-7-milyar-dolarlik-paket-acikladi/4096562",
+      "image": "",
+      "date": "2026-10-21T22:02:33.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Meta'nın geliri üçüncü çeyrekte arttı",
+      "description": "Facebook, Instagram ve WhatsApp'ın sahibi Meta'nın geliri yılın üçüncü çeyreğinde yüzde 26 artış kaydetti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/metanin-geliri-ucuncu-ceyrekte-artti/4096555",
+      "image": "",
+      "date": "2026-10-21T21:42:54.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Empörung nach \"Judenfrage\"-Post der Potsdamer Wirtschaftsunion - Linke fordert Entschuldigung",
+      "description": "",
+      "url": "https://www.rbb24.de/politik/beitrag/2026/10/mittelstands-wirtschaftsunion-potsdam-instagram-post-empoerung-redmann-brandenburg.html",
+      "image": "",
+      "date": "2026-10-21T19:57:06.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
       "type": "rss"
     },
     {
@@ -33,39 +77,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Arnavutluk'ta öğrencilerin eğitim koşullarının iyileştirilmesi talebiyle düzenlediği protestolar sürüyor",
-      "description": "Arnavutluk'un başkenti Tiran'da, üniversite öğrencilerinin eğitim koşullarının iyileştirilmesi talebiyle yaptığı gösteriler devam ediyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/arnavutlukta-ogrencilerin-egitim-kosullarinin-iyilestirilmesi-talebiyle-duzenledigi-protestolar-suruyor/4096448",
-      "image": "",
-      "date": "2026-10-21T19:37:03.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Panathinaikos Basketbol Kulübünden Yunanistan'daki şike ve rüşvet iddialarına ilişkin açıklama",
-      "description": "Panathinaikos Basketbol Kulübü, Yunanistan'da yaşanan şike ve rüşvet operasyonları sonrası sert bir açıklamada bulundu.",
-      "url": "https://www.aa.com.tr/tr/spor/panathinaikos-basketbol-kulubunden-yunanistandaki-sike-ve-rusvet-iddialarina-iliskin-aciklama/4096444",
-      "image": "",
-      "date": "2026-10-21T19:33:19.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "AA foto muhabiri Coşkun, Rusya'daki uluslararası fotoğraf yarışmasında \"Jüri Özel Ödülü\"nü aldı",
-      "description": "Anadolu Ajansı (AA) foto muhabiri Şebnem Coşkun, 12. Uluslararası Andrey Stenin Basın Fotoğrafçılığı Yarışması'nda \"Jüri Özel Ödülü\"ne layık görüldü.",
-      "url": "https://www.aa.com.tr/tr/kurumsal-haberler/aa-foto-muhabiri-coskun-rusyadaki-uluslararasi-fotograf-yarismasinda-juri-ozel-odulunu-aldi/4096433",
-      "image": "",
-      "date": "2026-10-21T19:26:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -96,17 +107,6 @@
       "url": "https://www.rbb24.de/panorama/beitrag/2026/10/it-sicherheitsbehoerde-bsi-kritische-schwachstelle-webanwendunge.html",
       "image": "",
       "date": "2026-10-21T18:58:08.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Ringbahn ab Donnerstagmorgen zwischen Halensee und Westend unterbrochen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/berlin-ringbahn-sperrung-s-bahn-bauarbeiten.html",
-      "image": "",
-      "date": "2026-10-21T16:26:54.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
