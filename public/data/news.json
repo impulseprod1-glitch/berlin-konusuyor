@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-10-22T19:44:50.018Z",
+  "lastUpdated": "2026-10-22T22:57:57.900Z",
   "count": 10,
   "articles": [
+    {
+      "title": "Kızılhaç: Sudan'da hava saldırıları, sivillere verilen zararda endişe verici bir artışa yol açtı",
+      "description": "Uluslararası Kızılhaç Komitesi (ICRC), çatışmaların yaşandığı Sudan'da son dönemde artan hava saldırılarının sivillere verilen zararda endişe verici artışa yol açtığını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/kizilhac-sudanda-hava-saldirilari-sivillere-verilen-zararda-endise-verici-bir-artisa-yol-acti/4097896",
+      "image": "",
+      "date": "2026-10-22T22:39:36.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Vatikan: Papa 14. Leo, ameliyat sonrasında başka tedaviye ihtiyaç duymayacak",
+      "description": "Vatikan Devlet Başkanı Papa 14. Leo'nun, ameliyatı sırasında akciğerinden alınan kitleye ilişkin patolojik ve moleküler test sonuçları ve bunlar doğrultusundaki onkolojik değerlendirmeye göre başka bir tedaviye ihtiyaç duymayacağı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/vatikan-papa-14-leo-ameliyat-sonrasinda-baska-tedaviye-ihtiyac-duymayacak/4097895",
+      "image": "",
+      "date": "2026-10-22T22:34:07.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İstanbul'da üst solunum yolu vakaları sonbaharla birlikte artıyor",
+      "description": "İstanbul İl Sağlık Müdürü Doç. Dr. Abdullah Emre Güner, sonbaharla birlikte üst solunum yolu enfeksiyonu başvurularının artmaya başladığını, son bir ayda 559 bin kişinin bu şikayetlerle hastanelere geldiğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/istanbulda-ust-solunum-yolu-vakalari-sonbaharla-birlikte-artiyor/4097890",
+      "image": "",
+      "date": "2026-10-22T22:18:06.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "ABD Başkanı Trump, petrol kapasitesini artırmak için Savunma Üretim Yasası'nı devreye aldı",
+      "description": "ABD Başkanı Donald Trump, ülkenin savunma kabiliyetini güçlendirmek ve yurt içi petrol üretim, rafinasyon ve lojistik kapasitesini artırmak amacıyla Savunma Üretim Yasası'nı devreye soktu.",
+      "url": "https://www.aa.com.tr/tr/dunya/abd-baskani-trump-petrol-kapasitesini-artirmak-icin-savunma-uretim-yasasini-devreye-aldi/4097885",
+      "image": "",
+      "date": "2026-10-22T22:05:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Kanada Dışişleri Bakanı Anand, Türkiye ile ilişkilerin öneminin arttığını vurguladı",
+      "description": "Kanada Dışişleri Bakanı Anita Anand, Türkiye ile Kanada arasındaki ilişkilerin ekonomik çıkarlar ve iki ülkenin NATO müttefiki olarak sorumlulukları açısından giderek daha fazla önem kazandığını belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/kanada-disisleri-bakani-anand-turkiye-ile-iliskilerin-oneminin-arttigini-vurguladi/4097882",
+      "image": "",
+      "date": "2026-10-22T21:48:32.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Jugendgewalt in Frankfurt und Potsdam: Fünf junge Tatverdächtige in U-Haft",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/brandenburg-potsdam-cottbus-jugend-gewalt-untersuchungshaft.html",
+      "image": "",
+      "date": "2026-10-22T19:50:56.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Gegen Castors Braine: Alba-Frauen holen ersten Sieg im EuroCup",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/berlin-basketball-frauen-eurocup-alba-castors-braine-spielbericht.html",
+      "image": "",
+      "date": "2026-10-22T19:46:47.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Polizei ruft 15 Jahre nach Babyfund in Potsdam zu DNA-Test auf",
       "description": "",
@@ -11,50 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Vakıflar Genel Müdürlüğünün yükseköğrenim burs başvuruları başladı",
-      "description": "Kültür ve Turizm Bakanlığı Vakıflar Genel Müdürlüğünün (VGM) 2026-2027 eğitim öğretim yılı yükseköğrenim burs başvuruları başladı.",
-      "url": "https://www.aa.com.tr/tr/gundem/vakiflar-genel-mudurlugunun-yuksekogrenim-burs-basvurulari-basladi/4097796",
-      "image": "",
-      "date": "2026-10-22T19:17:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Fransa'da 15 vilayette fırtına nedeniyle \"turuncu alarm\" verildi",
-      "description": "Fransa'nın batısında ve kuzeyindeki 15 vilayette Austen Fırtınası nedeniyle turuncu alarm verildiği bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/fransada-15-vilayette-firtina-nedeniyle-turuncu-alarm-verildi/4097783",
-      "image": "",
-      "date": "2026-10-22T18:48:48.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "ABD'de kurumsal yatırımcıların konut alımlarını kısıtlayan yasaya yönelik düzenleme taslağı",
-      "description": "ABD Hazine Bakanlığı, büyük kurumsal yatırımcıların müstakil konut satın almasını kısıtlayan yasanın uygulanmasına ilişkin düzenleme taslağı yayımladı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-kurumsal-yatirimcilarin-konut-alimlarini-kisitlayan-yasaya-yonelik-duzenleme-taslagi/4097781",
-      "image": "",
-      "date": "2026-10-22T18:48:21.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Zelenskiy'den ABD'nin Rusya'ya yaptırımları askıya almasının \"Putin'i güçlendireceği\" mesajı",
-      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, ABD Başkanı Donald Trump'ın Rusya'ya yönelik yaptırımları geçici olarak askıya alması kararının Rusya Devlet Başkanı Vladimir Putin'i \"daha da güçlendireceği\" mesajını verdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/zelenskiyden-abdnin-rusyaya-yaptirimlari-askiya-almasinin-putini-guclendirecegi-mesaji/4097771",
-      "image": "",
-      "date": "2026-10-22T18:39:36.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -69,44 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "BM: Yemen’deki çatışmalarda ağustos başından bu yana 66 sivil öldü, 196 kişi yaralandı",
-      "description": "Birleşmiş Milletler (BM), Yemen'de devam eden çatışmalarda sivillerin ağır bedeller ödediğini belirterek, ağustos başından bu yana yarısından fazlası çocuk 66 sivilin öldüğünü ve 196 kişinin de yaralandığını açıkladı.",
-      "url": "https://www.aa.com.tr/tr/dunya/bm-yemen-deki-catismalarda-agustos-basindan-bu-yana-66-sivil-oldu-196-kisi-yaralandi/4097760",
-      "image": "",
-      "date": "2026-10-22T18:24:35.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Emirates fliegt vorerst doch nicht zwischen Berlin und Dubai",
       "description": "",
       "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/10/flughafen-ber-keine-langstreckenverbindung-berlin-dubai.html",
       "image": "",
       "date": "2026-10-22T18:23:33.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Gemeinde und Landesanglerverband wollen Wandlitzsee kaufen",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/anglerverband-gemeinde-wandlitzsee-kaufen-barnim.html",
-      "image": "",
-      "date": "2026-10-22T18:13:59.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Wie bestimmte Hertha-Fanartikel für eine Kurven-Diskussion sorgen",
-      "description": "Es rumort im Fanlager von Hertha BSC. Die Ultras kritisieren von Fans selbst kreierte Fanartikel und werfen ihnen vor, sich bereichern zu wollen. Die Shop-Betreiber distanzieren sich von den Vorwürfen.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/10/fussball-zweite-bundesliga-hertha-bsc-kritik-merch-fanartikel-kurvenecho-ultras-ostkurve-fanszene-ucoh-kurvenstoff.html",
-      "image": "",
-      "date": "2026-10-22T18:04:16.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
