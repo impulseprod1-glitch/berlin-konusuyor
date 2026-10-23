@@ -1,7 +1,84 @@
 {
-  "lastUpdated": "2026-10-23T19:47:04.620Z",
+  "lastUpdated": "2026-10-23T22:54:05.909Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail ordusu, Batı Şeria'nın El Halil şehrine \"geniş çaplı askeri operasyon\" başlattığını duyurdu",
+      "description": "İsrail ordusu, işgal altındaki Batı Şeria'nın güneyinde yer alan ve çatışmaların yaşandığı El Halil kentine \"geniş çaplı askeri operasyon\" başlattığını açıkladı.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-bati-serianin-el-halil-sehrine-genis-capli-askeri-operasyon-baslattigini-duyurdu/4099141",
+      "image": "",
+      "date": "2026-10-23T22:03:22.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Modern dans eseri \"Rüzgar Ağacı\"nın prömiyeri bugün AKM'de gerçekleşecek",
+      "description": "İstanbul Kültür Sanat Vakfı (İKSV) tarafından düzenlenen \"İstanbul Tiyatro Festivali\" bu yıl 30. edisyonunu kutlarken İstanbul Devlet Opera ve Balesi (İDOB) ile ortak bir prodüksiyona imza atıyor.",
+      "url": "https://www.aa.com.tr/tr/kultur/modern-dans-eseri-ruzgar-agacinin-promiyeri-bugun-akmde-gerceklesecek/4099139",
+      "image": "",
+      "date": "2026-10-23T21:51:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Güneydoğu'nun en yüksek dağına kayak merkezi kuruluyor",
+      "description": "Batman'ın Sason ilçesindeki 2 bin 978 metre rakımlı Mereto Dağı'na kayak merkezi kuruluyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/guneydogunun-en-yuksek-dagina-kayak-merkezi-kuruluyor/4099138",
+      "image": "",
+      "date": "2026-10-23T21:49:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Lider Kayserispor'da Seferi'den 11 maçta 9 gol",
+      "description": "Trendyol 1. Lig'in lideri Metro Holding Kayserispor'un golcüsü Taulant Seferi, 11 haftada attığı 9 golle takımına önemli katkı sağladı.",
+      "url": "https://www.aa.com.tr/tr/spor/lider-kayserisporda-seferiden-11-macta-9-gol/4099137",
+      "image": "",
+      "date": "2026-10-23T21:49:26.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "UAEA: İran ile ABD arasında diplomatik anlaşmaya varılmadan kalıcı ve istikrarlı bir çözüm olmayacak",
+      "description": "Uluslararası Atom Enerjisi Ajansı (UAEA) Başkanı Rafael Grossi, İran'ın nükleer faaliyetlerini doğrulamak için hazırlıkların çoğunu tamamladıklarını, bölgede diplomatik bir anlaşma olmadan kalıcı ve istikrarlı bir çözüme ulaşılmayacağını belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/uaea-iran-ile-abd-arasinda-diplomatik-anlasmaya-varilmadan-kalici-ve-istikrarli-bir-cozum-olmayacak/4099135",
+      "image": "",
+      "date": "2026-10-23T21:46:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "DEL: Eisbären beginnen schwach und besiegen Augsburg dennoch",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/eishockey-del-eisbaeren-augsburg.html",
+      "image": "",
+      "date": "2026-10-23T20:22:35.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Volleyball: Netzhoppers verlieren auch ihr zweites Saisonspiel",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/volleyball-bundesliga-volley-goats-mitteldeutschland-netzhoppers.html",
+      "image": "",
+      "date": "2026-10-23T20:04:44.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Regionalliga: Dynamo holt Remis in Jena, Babelsberg siegt",
       "description": "",
@@ -11,28 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanlığı Senfoni Orkestrası \"Melankoli ve Gül\" konseriyle sanatseverlerle buluştu",
-      "description": "Cumhurbaşkanlığı Senfoni Orkestrası (CSO), Birleşmiş Milletler işbirliğiyle düzenlenen \"Melankoli ve Gül\" konserinde sanatseverlerle buluştu.",
-      "url": "https://www.aa.com.tr/tr/kultur/cumhurbaskanligi-senfoni-orkestrasi-melankoli-ve-gul-konseriyle-sanatseverlerle-bulustu/4099018",
-      "image": "",
-      "date": "2026-10-23T19:14:07.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Yemen ordusu: Son 24 saatte 1392 operasyonda 620 Husi etkisiz hale getirildi",
-      "description": "Yemen ordusu, son 24 saatte İran destekli Husilere karşı 1392 operasyon düzenlediğini ve 620 örgüt mensubunun etkisiz hale getirildiğini bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/yemen-ordusu-son-24-saatte-1392-operasyonda-620-husi-etkisiz-hale-getirildi/4099009",
-      "image": "",
-      "date": "2026-10-23T18:58:20.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -47,28 +102,6 @@
       "type": "rss"
     },
     {
-      "title": "Zelenskiy: Ukrayna, ABD ve Rusya'nın katılımıyla üçlü bir toplantı yapılması konusunda anlaştık",
-      "description": "Ukrayna Devlet Başkanı Volodimir Zelenskiy, savaşın bitirilmesi yönünde Rusya-ABD-Ukrayna olarak üçlü görüşmelerin yeniden yapılması için anlaşmaya vardıklarını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/dunya/zelenskiy-ukrayna-abd-ve-rusyanin-katilimiyla-uclu-bir-toplanti-yapilmasi-konusunda-anlastik/4099004",
-      "image": "",
-      "date": "2026-10-23T18:53:12.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Kocaelispor, Alanyaspor’u deplasmanda 2 golle geçti",
-      "description": "Trendyol Süper Lig'in 9. haftasında Corendon Alanyaspor-Kocaelispor karşılaşması, konuk takımın 2-1 üstünlüğüyle tamamlandı.",
-      "url": "https://www.aa.com.tr/tr/spor/kocaelispor-alanyaspor-u-deplasmanda-2-golle-gecti/4098974",
-      "image": "",
-      "date": "2026-10-23T18:07:00.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Personenschutz-Kommando nach Einsatz in US-Botschaft aufgelöst",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/10/personenschutz-kommando-us-botschaft-usa-alkohol.html",
@@ -77,39 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Extremläuferin Hübner: \"Das sollte man keinesfalls nachmachen\"",
-      "description": "Joyce Hübner wollte 495 Marathons an 495 Tagen laufen – bis eine Verletzung sie stoppte. Im Interview spricht die Ausnahmeläuferin über Schmerzignoranz, das unterschätzte Tempo und warum sie trotzdem wieder an den Start geht.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/10/leichtathletik-marathon-interview-lauf-influencerin-joyce-huebner-495-marathons-in-495-tagen.html",
-      "image": "",
-      "date": "2026-10-23T17:12:27.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Sechs tatverdächtige Jugendliche in U-Haft in Potsdam",
-      "description": "Nach Fällen schwerer Jugendgewalt in Potsdam und Frankfurt (Oder) sind insgesamt 35 Tatverdächtige identifiziert worden. Sechs von ihnen sitzen derzeit in Untersuchungshaft. Der Potsdamer SPD-Politiker Reimann forderte, die Jugendhilfe miteinzubeziehen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/brandenburg-potsdam-cottbus-jugend-gewalt-untersuchungshaft.html",
-      "image": "",
-      "date": "2026-10-23T16:54:07.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Libyalılar, Türkiye-Libya deniz yetki muhtırasının Akdeniz'deki haklarının güvencesi olduğunu düşünüyor",
-      "description": "Libyalılar, ülkelerinin meclisinde onaylanan Türkiye-Libya deniz yetki alanlarının sınırlandırılmasına ilişkin mutabakat muhtırasının ülkelerinin Akdeniz'deki haklarını koruyan stratejik bir kalkan olduğunu düşünüyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/libyalilar-turkiye-libya-deniz-yetki-muhtirasinin-akdenizdeki-haklarinin-guvencesi-oldugunu-dusunuyor/4098254",
-      "image": "",
-      "date": "2026-10-23T09:01:40.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
