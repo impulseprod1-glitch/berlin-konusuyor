@@ -1,7 +1,62 @@
 {
-  "lastUpdated": "2026-10-24T20:15:21.301Z",
+  "lastUpdated": "2026-10-25T00:00:19.209Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail basınına göre, ordu seçim öncesinde alarm seviyesini \"en üst düzeye\" çıkardı",
+      "description": "İsrail ordusunun, 27 Ekim'de yapılacak seçime 3 gün kala, İran veya Lübnan'dan füze fırlatılması dahil olası güvenlik gelişmelerine karşı alarm seviyesini en üst düzeye çıkardığı ve çeşitli bölgelere on binlerce asker konuşlandırdığı bildirildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israil-basinina-gore-ordu-secim-oncesinde-alarm-seviyesini-en-ust-duzeye-cikardi/4099920",
+      "image": "",
+      "date": "2026-10-24T23:48:40.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "GAİB'e bağlı 9 ildeki kuru meyve ihracatından 9 ayda 183,9 milyon dolarlık gelir",
+      "description": "Güneydoğu Anadolu İhracatçı Birliklerine bağlı 9 ilden ocak-eylül döneminde 183,9 milyon dolarlık kuru meyve ihracatı gerçekleştirildi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/gaibe-bagli-9-ildeki-kuru-meyve-ihracatindan-9-ayda-183-9-milyon-dolarlik-gelir/4099908",
+      "image": "",
+      "date": "2026-10-24T22:14:14.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Robotik kalp cerrahisi hastaların günlük yaşama dönüşünü hızlandırıyor",
+      "description": "Karadeniz Teknik Üniversitesi (KTÜ) Farabi Hastanesinde robotik kalp ve damar cerrahisi uygulanmaya başlanırken bu yöntemle ilk kez Rize ve Gümüşhane'den gelen iki hasta ameliyat edildi.",
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/robotik-kalp-cerrahisi-hastalarin-gunluk-yasama-donusunu-hizlandiriyor/4099907",
+      "image": "",
+      "date": "2026-10-24T22:13:16.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Eber Gölü'ndeki sazlık ve Sarıcaova'daki yanan ormanlarda yaban hayatı izleniyor",
+      "description": "Afyonkarahisar'da, Eber Gölü'ndeki sazlık ile Sarıcaova'daki yangından etkilenen ormanlık alanlarda yürütülen çalışmalarla, yaban hayvanlarının bölgedeki varlığı ve yangının tür çeşitliliği üzerindeki etkileri araştırılıyor.",
+      "url": "https://www.aa.com.tr/tr/gundem/eber-golundeki-sazlik-ve-saricaovadaki-yanan-ormanlarda-yaban-hayati-izleniyor/4099905",
+      "image": "",
+      "date": "2026-10-24T22:11:37.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Barselona'da şiddet olaylarının yaşandığı protestolara polis müdahale etti",
+      "description": "İspanya'nın Barselona kentinde polis ekipleri, gençlerin organize ettiği protesto gösterilerinde şiddet olayları yaşanması üzerine gruba müdahale etti.",
+      "url": "https://www.aa.com.tr/tr/dunya/barselonada-siddet-olaylarinin-yasandigi-protestolara-polis-mudahale-etti/4099892",
+      "image": "",
+      "date": "2026-10-24T21:10:50.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
     {
       "title": "Grand Prix de France: Hocke/Kunkel überzeugen im Kurzprogramm ",
       "description": "",
@@ -36,17 +91,6 @@
       "type": "rss"
     },
     {
-      "title": "Fernando Melo'nun \"Rüzgar Ağacı\" adlı eseri AKM'de izleyiciyle buluştu",
-      "description": "İstanbul Kültür Sanat Vakfı tarafından düzenlenen 30. İstanbul Tiyatro Festivali kapsamında, İstanbul Devlet Opera ve Balesi ile ortak prodüksiyon olarak sahnelenen \"Rüzgar Ağacı\", AKM Tiyatro Sahnesi'nde prömiyer yaptı.",
-      "url": "https://www.aa.com.tr/tr/kultur/fernando-melonun-ruzgar-agaci-adli-eseri-akmde-izleyiciyle-bulustu/4099843",
-      "image": "",
-      "date": "2026-10-24T19:57:08.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Reinickendorf: Leiche bei Brand in Berliner Kellerwohnung gefunden ",
       "description": "",
       "url": "https://www.rbb24.de/panorama/beitrag/2026/10/berlin-reinickendorf-brand-kellerwohnung-leichenfund.html",
@@ -55,50 +99,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail ordusu ateşkese rağmen Lübnan'ın güneyindeki saldırılarını sürdürdü",
-      "description": "İsrail ordusu, ateşkese ve çerçeve anlaşmasına rağmen Lübnan'ın güneyindeki bölgelere hava ve topçu saldırıları düzenledi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-ordusu-ateskese-ragmen-lubnanin-guneyindeki-saldirilarini-surdurdu/4099824",
-      "image": "",
-      "date": "2026-10-24T19:03:24.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "New York Belediye Başkanı Mamdani, erken oy kullanmanın başladığı New York'ta oyunu kullandı",
-      "description": "ABD'de 3 Kasım'da yapılacak Kongre ara seçimleri yaklaşırken erken oy kullanma işlemlerinin başladığı New York'ta, Belediye Başkanı Zohran Mamdani oyunu kullandı.",
-      "url": "https://www.aa.com.tr/tr/dunya/new-york-belediye-baskani-mamdani-erken-oy-kullanmanin-basladigi-new-yorkta-oyunu-kullandi/4099820",
-      "image": "",
-      "date": "2026-10-24T18:44:18.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'in kuşattığı El Halil'de Filistinlilerin çıkarıldığı evler askeri mevzilere dönüştürülüyor",
-      "description": "İsrail ordusunun işgal altındaki Batı Şeria'nın El Halil kentinde başlattığı saldırılar, Filistinlilerin evlerinden zorla çıkarılması, konutların askeri mevzilere dönüştürülmesi ve hareket özgürlüklerinin kısıtlanmasıyla insani krizi derinleştiriyor.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilin-kusattigi-el-halilde-filistinlilerin-cikarildigi-evler-askeri-mevzilere-donusturuluyor/4099817",
-      "image": "",
-      "date": "2026-10-24T18:31:06.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Amed Sportif Faaliyetler, deplasmanda Samsunspor'u 2-1 yendi",
-      "description": "Trendyol Süper Lig'in 9. haftasında Amed Sportif Faaliyetler, deplasmanda Samsunspor'u 2-1 yendi.",
-      "url": "https://www.aa.com.tr/tr/spor/amed-sportif-faaliyetler-deplasmanda-samsunsporu-2-1-yendi/4099771",
-      "image": "",
-      "date": "2026-10-24T17:05:09.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
