@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-10-28T20:46:37.757Z",
+  "lastUpdated": "2026-10-29T01:33:15.957Z",
   "count": 10,
   "articles": [
+    {
+      "title": "BM raportörleri: Fransa'daki öğrenci protestolarına yönelik şiddet nedeniyle dehşete kapıldık",
+      "description": "Birleşmiş Milletler (BM) raportörleri, Fransa'da taleplerinin yerine getirilmesi için gösteri yapan öğrenciler ve gençlerin uğradığı şiddetin düzeyi nedeniyle dehşete kapıldıklarını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/bm-raportorleri-fransadaki-ogrenci-protestolarina-yonelik-siddet-nedeniyle-dehsete-kapildik/4104432",
+      "image": "",
+      "date": "2026-10-28T23:21:03.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "İsrail'de muhalefet lideri Eisenkot \"Siyonist askerlik hükümeti\" kuracaklarını belirtti",
+      "description": "İsrail'de muhalefet lideri Gadi Eisenkot, ülkede değişim gerçekleştirerek \"Siyonist askerlik hükümeti\" kuracaklarını bildirdi.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilde-muhalefet-lideri-eisenkot-siyonist-askerlik-hukumeti-kuracaklarini-belirtti/4104431",
+      "image": "",
+      "date": "2026-10-28T23:18:53.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Leiche in Wald bei Neuendorf (Dahme-Spreewald) gefunden",
+      "description": "",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/brandenburg-leichenfund-neuendorf.html",
+      "image": "",
+      "date": "2026-10-28T22:48:07.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "İçişleri Bakanı Çiftçi'den kuvvetli sağanak uyarısı",
+      "description": "İçişleri Bakanı Mustafa Çiftçi, \"Vatandaşlarımızdan, Meteoroloji Genel Müdürlüğümüzün ve AFAD'ımızın uyarılarına hassasiyetle riayet etmelerini, can ve mal güvenliklerini riske atabilecek durumlardan uzak durmalarını istirham ediyorum.\" dedi.",
+      "url": "https://www.aa.com.tr/tr/gundem/icisleri-bakani-ciftciden-kuvvetli-saganak-uyarisi/4104421",
+      "image": "",
+      "date": "2026-10-28T22:37:23.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Fitch: ABD'deki mali baskılar, ara seçim sonucundan bağımsız olarak sürecek",
+      "description": "Fitch Ratings, ABD'de 3 Kasım'da yapılacak ara seçimlerin ardından Kongre'deki dağılımın bütçe ve borç limiti konusunda anlaşmazlık riskini artırabileceğini ancak mali baskıların seçim sonucundan bağımsız olarak süreceğini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/fitch-abddeki-mali-baskilar-ara-secim-sonucundan-bagimsiz-olarak-surecek/4104418",
+      "image": "",
+      "date": "2026-10-28T22:02:48.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Trump, \"İran'la müzakereleri yeniden başlatması için Vance'i görevlendirdiği\" iddiasını yalanladı",
+      "description": "ABD Başkanı Donald Trump, \"İran'la müzakereleri yeniden başlatması için Başkan Yardımcısı JD Vance'i görevlendirdiği\" iddiasını yalanlayarak, Vance'in sadece İran'ın ihtiyaç duyduğu tıbbi malzemelerin teminine yardım ettiğini belirtti.",
+      "url": "https://www.aa.com.tr/tr/dunya/trump-iranla-muzakereleri-yeniden-baslatmasi-icin-vancei-gorevlendirdigi-iddiasini-yalanladi/4104416",
+      "image": "",
+      "date": "2026-10-28T21:53:40.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Basketball Champions League: Alba Berlin schlägt Bilbao nach 13-Punkte-Rückstand",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/berlin-basketball-alba-bilbao-champions-league-spielbericht.html",
+      "image": "",
+      "date": "2026-10-28T21:49:35.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "54:72-Niederlage: Alba-Frauen verlieren in Mailand",
+      "description": "",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/10/berlin-basketball-alba-geas-basket-eurocup-spielbericht.html",
+      "image": "",
+      "date": "2026-10-28T20:46:42.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Mega-Support: Brekalo führt Hertha ins Pokal-Achtelfinale",
       "description": "Hertha BSC hat seine Pflichtaufgabe im DFB-Pokal erfüllt. Die Berliner gewinnen verdient mit 2:0 gegen den SSV Jeddeloh II. Der Regionalligist wehrte sich lange tapfer, hatte aber auch durchaus Glück, dass Hertha das altbekannte Abschlussproblem auch im Pokal zeigte.",
@@ -14,99 +102,11 @@
       "type": "rss"
     },
     {
-      "title": "Fitch: Yapay zeka ve piyasa oynaklığına ilişkin riskler 2027'ye girerken artıyor",
-      "description": "Fitch Ratings, yapay zeka yatırımlarına yönelik riskler, Orta Doğu kaynaklı jeopolitik gerilimlerin enerji fiyatlarını yüksek tutması ve finansman koşullarının sıkılaşmasının, yeni yıla girerken küresel risk ortamını ağırlaştırdığını bildirdi.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/fitch-yapay-zeka-ve-piyasa-oynakligina-iliskin-riskler-2027ye-girerken-artiyor/4104387",
-      "image": "",
-      "date": "2026-10-28T20:37:45.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Belçika'daki Mouvement Reformateur Partisi heyeti, AA'yı ziyaret etti",
-      "description": "Belçika'daki Mouvement Reformateur (MR) Genel Başkanı Georges-Louis Bouchez ve heyeti, Anadolu Ajansı (AA) Genel Müdürlüğünü ziyaret etti.",
-      "url": "https://www.aa.com.tr/tr/kurumsal-haberler/belcikadaki-mouvement-reformateur-partisi-heyeti-aayi-ziyaret-etti/4104386",
-      "image": "",
-      "date": "2026-10-28T20:35:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
       "title": "Berlin Volleys schlagen Volley Goats Mitteldeutschland",
       "description": "",
       "url": "https://www.rbb24.de/sport/beitrag/2026/10/berlin-volleyball-br-volleys-vg-mitteldeutschland-bundesliga-spielbericht.html",
       "image": "",
       "date": "2026-10-28T20:33:51.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Axios: Katar'ın öncülüğündeki bölgesel arabulucular, ABD-İran müzakerelerini yeniden başlatmak istiyor",
-      "description": "Katar öncülüğündeki bölgesel arabulucuların, ABD ile İran arasındaki müzakereleri yeniden başlatmak ve ABD'deki Kongre ara seçimlerinin ardından savaşın yeniden alevlenmesini önlemek için diplomatik anlaşma sağlamaya çalıştığı iddia edildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/axios-katarin-onculugundeki-bolgesel-arabulucular-abd-iran-muzakerelerini-yeniden-baslatmak-istiyor/4104382",
-      "image": "",
-      "date": "2026-10-28T20:26:49.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Başkentte Türk Devletleri Teşkilatı Zirvesi kapsamında bazı yollar trafiğe kapatılacak",
-      "description": "Ankara'da düzenlenecek Türk Devletleri Teşkilatı 13. Zirvesi kapsamında bazı yollar ihtiyaç olması halinde iki gün süreyle araç trafiğine kapatılacak.",
-      "url": "https://www.aa.com.tr/tr/gundem/baskentte-turk-devletleri-teskilati-zirvesi-kapsaminda-bazi-yollar-trafige-kapatilacak/4104380",
-      "image": "",
-      "date": "2026-10-28T20:24:46.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Bakan Bolat: Kazakistan ile öncelikli hedefimiz 15 milyar dolarlık ticaret hacmine ulaşmak",
-      "description": "Ticaret Bakanı Ömer Bolat, Kazakistan ile öncelikli hedefin, 15 milyar dolarlık ikili ticaret hacmi hedefine en kısa sürede ulaşmak olduğuna dikkati çekerek, \"Bu ortak hedef doğrultusunda kararlılıkla çalışmaya devam edeceğiz.\" ifadelerini kullandı.",
-      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-bolat-kazakistan-ile-oncelikli-hedefimiz-15-milyar-dolarlik-ticaret-hacmine-ulasmak/4104378",
-      "image": "",
-      "date": "2026-10-28T20:15:47.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Zeh-Nachfolge: Mammutaufgabe für die Brandenburger Politik",
-      "description": "Die Schriftstellerin Juli Zeh hat um ihre Entlassung als ehrenamtliche Brandenburger Verfassungsrichterin gebeten. Das stellt den Landtag vor eine schwierige Aufgabe. Denn bei der Wahl einer Nachfolgerin oder eines Nachfolgers muss auch die AfD zustimmen.",
-      "url": "https://www.rbb24.de/politik/beitrag/2026/10/juli-zeh-verfassungsrichterin-brandenburg-niedergelegt-reaktionen.html",
-      "image": "",
-      "date": "2026-10-28T17:55:28.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Energie Cottbus: Wollitz erwartet \"90 Minuten volle Intensität\"",
-      "description": "Zuletzt in Heidenheim hatte Cottbus Trainer Wollitz so wenig Personal zur Verfügung, dass auf der Auswechselbank ein Platz frei blieb. Vor dem Heimspiel am kommenden Freitag gegen Bochum scheint sich die Lage zu entspannen.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/10/fussball-fc-energie-cottbus-vfl-bochum-2-liga-bittencourt-vorbericht.html",
-      "image": "",
-      "date": "2026-10-28T17:12:08.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Studierende blockierten Otto-Suhr-Institut an der FU Berlin",
-      "description": "",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/10/otto-suhr-institut-freie-universitaet-blockade.html",
-      "image": "",
-      "date": "2026-10-28T16:56:17.000Z",
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
