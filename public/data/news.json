@@ -1,7 +1,95 @@
 {
-  "lastUpdated": "2026-11-08T18:39:39.652Z",
+  "lastUpdated": "2026-11-08T23:25:55.303Z",
   "count": 10,
   "articles": [
+    {
+      "title": "İsrail'de seçim yenilgisi sonrası Ultra-Ortodoks Şas Partisi liderinden milletvekilliğini devretme kararı",
+      "description": "İsrail'de 27 Ekim'deki genel seçimlerde milletvekili sayısı 11'den 6'ya düşen Ultra-Ortodoks (Haredi) Şas Partisinin lideri Aryeh Deri, İsrail Meclisi açılmadan milletvekilliği görevini partisinden bir başka isme devredeceğini duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/israilde-secim-yenilgisi-sonrasi-ultra-ortodoks-sas-partisi-liderinden-milletvekilligini-devretme-karari/4116381",
+      "image": "",
+      "date": "2026-11-08T22:14:05.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Nvidia, CEO'su Huang'ın yabancı istihbaratın hedefi olduğu haberleri üzerine soruşturma başlatıyor",
+      "description": "ABD'li çip üreticisi Nvidia, şirketin kurucusu ve üst yöneticisi (CEO) Jensen Huang'ın yabancı istihbarat faaliyetinin hedefi olduğuna ilişkin haberlerin ardından bağımsız soruşturma başlatacağını duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/nvidia-ceosu-huangin-yabanci-istihbaratin-hedefi-oldugu-haberleri-uzerine-sorusturma-baslatiyor/4116369",
+      "image": "",
+      "date": "2026-11-08T21:31:24.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Ankara'ya 247 kilometrelik akıllı ulaşım koridoru kuruluyor",
+      "description": "Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu, toplam 247 kilometrelik akıllı ulaşım sistemi koridoru oluşturulmasına yönelik proje çalışmalarına devam ettiklerini bildirdi.",
+      "url": "https://www.aa.com.tr/tr/gundem/ankaraya-247-kilometrelik-akilli-ulasim-koridoru-kuruluyor/4116352",
+      "image": "",
+      "date": "2026-11-08T21:14:42.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Cumhurbaşkanlığı Yatırım ve Finans Ofisi, COP31'de yeşil yatırımların hızlandırılmasına odaklanacak",
+      "description": "Cumhurbaşkanlığı Yatırım ve Finans Ofisi, 31. Birleşmiş Milletler İklim Değişikliği Konferansı kapsamında yeşil yatırımlar, sürdürülebilir finansman ve uluslararası yatırım işbirliklerine odaklanan kapsamlı bir program gerçekleştireceğini duyurdu.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/cumhurbaskanligi-yatirim-ve-finans-ofisi-cop31de-yesil-yatirimlarin-hizlandirilmasina-odaklanacak/4116351",
+      "image": "",
+      "date": "2026-11-08T21:09:11.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "14. Boğaziçi Film Festivali  törenle başladı",
+      "description": "Boğaziçi Kültür Sanat Vakfı tarafından Kültür ve Turizm Bakanlığı Sinema Genel Müdürlüğünün desteğiyle düzenlenen ve Anadolu Ajansının (AA) Global İletişim Ortağı olduğu 14. Boğaziçi Film Festivali, Atlas Sineması'nda düzenlenen törenle başladı.",
+      "url": "https://www.aa.com.tr/tr/kultur/14-bogazici-film-festivali-torenle-basladi/4116342",
+      "image": "",
+      "date": "2026-11-08T20:50:01.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Nach Unions Niederlage in Freiburg: Rönnow und die Einsamkeit des Torhüters",
+      "description": "Frederik Rönnow hält Union Berlin in Freiburg lange im Spiel. Doch seine Mitspieler lassen den Torhüter immer wieder im Stich. Nach der Niederlage schlägt der Däne Alarm.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/11/fussball-bundesliga-sc-freiburg-1-fc-union-berlin-analyse-statistiken.html",
+      "image": "",
+      "date": "2026-11-08T20:49:02.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "Vermisste 13-Jährige aus Marzahn tot in Brandenburg gefunden - Mutmaßlicher Täter in Klinik",
+      "description": "Bei der Suche nach einer vermissten 13-Jährigen aus Berlin-Marzahn ist eine Leiche gefunden worden. Nach Angaben der Staatsanwaltschaft handelt es sich um das gesuchte Mädchen.",
+      "url": "https://www.rbb24.de/panorama/beitrag/2026/11/berlin-marzahn-vermisstes-maedchen-tot-brandenburg-bad-freienwalde.html",
+      "image": "",
+      "date": "2026-11-08T19:26:29.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
+    {
+      "title": "0:2-Niederlage: Union Berlin chancenlos in Freiburg",
+      "description": "Nach vier stabilen Bundesliga-Spielen ohne Niederlage hat der 1. FC Union Berlin beim SC Freiburg einen heftigen Dämpfer erhalten. Beim 0:2 blieben die Berliner über weite Strecken völlig harmlos und verbleiben tief im Abstiegskampf.",
+      "url": "https://www.rbb24.de/sport/beitrag/2026/11/fussball-bundesliga-sc-freiburg-union-berlin-audiostream-liveticker-spielbericht.html",
+      "image": "",
+      "date": "2026-11-08T19:08:16.000Z",
+      "source": "RBB24 Berlin",
+      "lang": "de",
+      "category": "berlin",
+      "type": "rss"
+    },
     {
       "title": "Heiko Mutz wird neuer Bürgermeister von Schwielowsee",
       "description": "",
@@ -22,94 +110,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Cumhurbaşkanı Erdoğan, Azerbaycan'dan yurda döndü",
-      "description": "Cumhurbaşkanı Recep Tayyip Erdoğan, Azerbaycan'daki temaslarının ardından yurda döndü.",
-      "url": "https://www.aa.com.tr/tr/gundem/cumhurbaskani-erdogan-azerbaycandan-yurda-dondu/4116274",
-      "image": "",
-      "date": "2026-11-08T18:28:42.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "0:2-Niederlage: Union Berlin chancenlos in Freiburg",
-      "description": "Nach vier stabilen Bundesliga-Spielen ohne Niederlage hat der 1. FC Union Berlin beim SC Freiburg einen heftigen Dämpfer erhalten. Beim 0:2 blieben die Berliner über weite Strecken völlig harmlos und verbleiben tief im Abstiegskampf.",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/11/fussball-bundesliga-sc-freiburg-union-berlin-audiostream-liveticker-spielbericht.html",
-      "image": "",
-      "date": "2026-11-08T18:24:11.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Vermisste 13-Jährige aus Marzahn in Brandenburg tot aufgefunden - Mutmaßlicher Täter in Klinik",
-      "description": "Bei der Suche nach einer vermissten 13-Jährigen aus Berlin-Marzahn ist eine Leiche gefunden worden. Nach Angaben der Staatsanwaltschaft handelt es sich um das gesuchte Mädchen.",
-      "url": "https://www.rbb24.de/panorama/beitrag/2026/11/berlin-marzahn-vermisstes-maedchen-tot-brandenburg-bad-freienwalde.html",
-      "image": "",
-      "date": "2026-11-08T18:17:07.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Eishockey-WM: Deutsches Frauen-Team chancenlos gegen USA ",
-      "description": "",
-      "url": "https://www.rbb24.de/sport/beitrag/2026/11/eishockey-wm-frauen-deutschland-usa-chancenlos-spielbericht.html",
-      "image": "",
-      "date": "2026-11-08T18:06:53.000Z",
-      "source": "RBB24 Berlin",
-      "lang": "de",
-      "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "ABD'nin İran'la savaşı bitirmek için Çin'den yardım istediği iddia edildi",
-      "description": "ABD yönetiminin, İran'la savaşı sona erdirmek amacıyla Çin'den Tahran üzerindeki nüfuzunu kullanmasını istediği öne sürüldü.",
-      "url": "https://www.aa.com.tr/tr/dunya/abdnin-iranla-savasi-bitirmek-icin-cinden-yardim-istedigi-iddia-edildi/4116267",
-      "image": "",
-      "date": "2026-11-08T18:03:34.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "Trabzonspor, Corendon Alanyaspor'u 2-0 mağlup etti",
-      "description": "Trendyol Süper Lig'in 11. haftasında Trabzonspor, deplasmanda Corendon Alanyaspor'u 2-0 mağlup etti.",
-      "url": "https://www.aa.com.tr/tr/spor/trabzonspor-corendon-alanyasporu-2-0-maglup-etti/4116256",
-      "image": "",
-      "date": "2026-11-08T17:36:33.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail hapishanelerindeki Filistinli esirlerin yaklaşık yüzde 80'i uyuz hastalığından şikayet ediyor",
-      "description": "İsrail hapishanelerinde tutulan 9 bini aşkın Filistinli esirin yaklaşık yüzde 80'inin uyuz hastalığına yakalandığı bildirildi.",
-      "url": "https://www.aa.com.tr/tr/dunya/israil-hapishanelerindeki-filistinli-esirlerin-yaklasik-yuzde-80i-uyuz-hastaligindan-sikayet-ediyor/4116255",
-      "image": "",
-      "date": "2026-11-08T17:35:15.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İran Ordusu: Hürmüz Boğazı'nda bir petrol tankeri mayına çarparak alev aldı",
-      "description": "İran Ordusu Deniz Kuvvetleri, Hürmüz Boğazı'nın doğusunda, izin verilmeyen bölgede hareket ettiği belirtilen bir petrol tankerinin deniz mayınına çarpması sonucu alev aldığını duyurdu.",
-      "url": "https://www.aa.com.tr/tr/dunya/iran-ordusu-hurmuz-bogazinda-bir-petrol-tankeri-mayina-carparak-alev-aldi/4116254",
-      "image": "",
-      "date": "2026-11-08T17:32:28.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     }
   ],
