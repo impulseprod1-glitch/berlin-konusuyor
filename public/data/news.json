@@ -1,13 +1,57 @@
 {
-  "lastUpdated": "2026-11-07T23:25:48.903Z",
+  "lastUpdated": "2026-11-08T04:33:33.052Z",
   "count": 10,
   "articles": [
     {
-      "title": "İsrail'de hükümet kurma yetkisi almaya hazırlanan Eisenkot: Ulusal acil durum hükümeti kurma zamanı",
-      "description": "İsrail'de 27 Ekim'de yapılan seçimlerin ardından Cumhurbaşkanı Isaac Herzog'dan hükümet kurma yetkisini almaya hazırlanan Yashar Partisi lideri Gadi Eisenkot, ülkede \"ulusal acil durum hükümeti kurma zamanı\" olduğunu belirtti.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilde-hukumet-kurma-yetkisi-almaya-hazirlanan-eisenkot-ulusal-acil-durum-hukumeti-kurma-zamani/4115600",
+      "title": "Suudi Arabistan'ın Dammam, Ahsa ve Bukayk kentlerinde erken uyarı sistemi devreye alındı",
+      "description": "Suudi Arabistan Sivil Savunma Müdürlüğü, Dammam, Ahsa ve Bukayk kentlerinde erken uyarı sisteminin tehlike alarmı verdiğini, daha sonra tehlikenin geçtiğini duyurdu.",
+      "url": "https://www.aa.com.tr/tr/dunya/suudi-arabistanin-dammam-ahsa-ve-bukayk-kentlerinde-erken-uyari-sistemi-devreye-alindi/4115621",
       "image": "",
-      "date": "2026-11-07T22:41:19.000Z",
+      "date": "2026-11-08T02:12:31.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Paraguay'da azledilen eski Devlet Başkanı Pena hakkında tutuklama kararı",
+      "description": "Paraguay'da finansal skandal iddialarının ardından görevinden alınan eski Devlet Başkanı Santiago Pena hakkında tutuklama kararı verildi.",
+      "url": "https://www.aa.com.tr/tr/dunya/paraguayda-azledilen-eski-devlet-baskani-pena-hakkinda-tutuklama-karari/4115613",
+      "image": "",
+      "date": "2026-11-08T00:41:39.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Iraklı Bakan, Kalkınma Yolu Projesi'nin Türkiye ile ekonomik ve siyasi ilişkileri güçlendireceğini söyledi",
+      "description": "Irak Çevre Bakanı Sirve Abdülvahid, Kalkınma Yolu Projesi'nin Türkiye başta olmak üzere komşu ülkelerle ekonomik ve siyasi ilişkilerin daha etkin hale gelmesine yardımcı olacağını belirtti.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/irakli-bakan-kalkinma-yolu-projesinin-turkiye-ile-ekonomik-ve-siyasi-iliskileri-guclendirecegini-soyledi/4115609",
+      "image": "",
+      "date": "2026-11-07T23:20:38.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Milli sürat patenci Furkan Akar'ın başarı yolculuğu devam ediyor",
+      "description": "Avrupa ve dünya şampiyonalarında kazandığı madalyalarla Türk sürat pateninde ilkleri başaran milli sporcu Furkan Akar, ISU Kısa Kulvar Sürat Pateni Dünya Turu'nun Kanada'daki ilk etabında elde ettiği bronz madalyayla başarı yolculuğunu sürdürdü.",
+      "url": "https://www.aa.com.tr/tr/spor/milli-surat-patenci-furkan-akarin-basari-yolculugu-devam-ediyor/4115608",
+      "image": "",
+      "date": "2026-11-07T23:19:12.000Z",
+      "source": "Anadolu Ajansı",
+      "lang": "tr",
+      "category": "almanya",
+      "type": "rss"
+    },
+    {
+      "title": "Manavgat susamının hasadı yağışlarla uzadı",
+      "description": "Antalya'nın Manavgat ilçesinde coğrafi işaret tescilli susamın hasadı, yağışların erken başlaması nedeniyle kasıma sarktı.",
+      "url": "https://www.aa.com.tr/tr/ekonomi/manavgat-susaminin-hasadi-yagislarla-uzadi/4115607",
+      "image": "",
+      "date": "2026-11-07T23:18:52.000Z",
       "source": "Anadolu Ajansı",
       "lang": "tr",
       "category": "almanya",
@@ -22,17 +66,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "Arda Güler'in gol attığı maçta Real Madrid, Valencia'yı 3-0 yendi",
-      "description": "İspanya LaLiga ekiplerinden Real Madrid, milli futbolcu Arda Güler'in 1 gol attığı maçta Valencia'yı 3-0 mağlup etti.",
-      "url": "https://www.aa.com.tr/tr/spor/arda-gulerin-gol-attigi-macta-real-madrid-valenciayi-3-0-yendi/4115597",
-      "image": "",
-      "date": "2026-11-07T22:20:50.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
@@ -55,39 +88,6 @@
       "source": "RBB24 Berlin",
       "lang": "de",
       "category": "berlin",
-      "type": "rss"
-    },
-    {
-      "title": "ABD'de İsrail destekçisi Jeffries'in Temsilciler Meclisi Başkanı seçilmemesi için imza kampanyası sürüyor",
-      "description": "ABD'de Demokratların Temsilciler Meclisi Azınlık Lideri Hakeem Jeffries'in, Demokratların çoğunlukta olacağı yeni dönemde Temsilciler Meclisi Başkanı seçilmesine karşı çıkan çevrim içi kampanyayı imzalayanların sayısı 1 milyonu geçti.",
-      "url": "https://www.aa.com.tr/tr/dunya/abdde-israil-destekcisi-jeffriesin-temsilciler-meclisi-baskani-secilmemesi-icin-imza-kampanyasi-suruyor/4115577",
-      "image": "",
-      "date": "2026-11-07T21:09:27.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "İsrail'de Arap partilerinin de yer alacağı bir hükümet kurulması talebiyle gösteriler düzenlendi",
-      "description": "İsrail'in farklı noktalarında yüzlerce kişi, Başbakan Binyamin Netanyahu'nun iktidarına son verecek, Arap partilerinin de yer alacağı yeni bir hükümet kurulması talebiyle gösteri yaptı.",
-      "url": "https://www.aa.com.tr/tr/dunya/israilde-arap-partilerinin-de-yer-alacagi-bir-hukumet-kurulmasi-talebiyle-gosteriler-duzenlendi/4115569",
-      "image": "",
-      "date": "2026-11-07T21:06:10.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
-      "type": "rss"
-    },
-    {
-      "title": "\"6. Korkut Ata Türk Dünyası Film Festivali\" ödül töreniyle sona erdi",
-      "description": "Kültür ve Turizm Bakanlığı himayesinde, Uluslararası Sinema Derneği tarafından düzenlenen \"6. Korkut Ata Türk Dünyası Film Festivali\" kapanış ve ödül töreni, Atatürk Kültür Merkezi'nde (AKM) gerçekleştirildi.",
-      "url": "https://www.aa.com.tr/tr/kultur/6-korkut-ata-turk-dunyasi-film-festivali-odul-toreniyle-sona-erdi/4115558",
-      "image": "",
-      "date": "2026-11-07T21:01:23.000Z",
-      "source": "Anadolu Ajansı",
-      "lang": "tr",
-      "category": "almanya",
       "type": "rss"
     },
     {
