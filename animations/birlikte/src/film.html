@@ -79,6 +79,44 @@ svg.art{position:absolute;overflow:visible;fill:none;stroke:currentColor;stroke-
 #fx .door{position:absolute;left:0;width:1080px;height:962px;background:var(--ink);visibility:hidden}
 #grain{position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-size:256px 256px}
 
+/* ───────── stil denemeleri: ?style=neon|riso|sketch|swiss|paper ───────── */
+.st-neon{--ink:#05060c;--cream:#eafcff;--red:#ff2e6c;--gold:#ffe45c;--teal:#22f3e3}
+.st-neon .scene,.st-neon .card,.st-neon .p{background:var(--ink)!important}
+.st-neon .bg-cream{color:var(--cream)}.st-neon .bg-red{color:var(--red)}.st-neon .bg-gold{color:var(--gold)}.st-neon .bg-teal{color:var(--teal)}
+.st-neon .c-ink{color:var(--cream)}
+.st-neon svg.art,.st-neon .big,.st-neon .serif{filter:drop-shadow(0 0 10px currentColor) drop-shadow(0 0 34px currentColor)}
+.st-neon #hud{color:var(--cream)!important}.st-neon .chip.solid{background:transparent!important;border-color:currentColor}
+
+.st-riso{--ink:#1b2a6b;--cream:#efe5cf;--red:#e9472b;--gold:#f3b52f;--teal:#2f8f86}
+.st-riso .bg-red{background:var(--red)!important}.st-riso .bg-ink{background:var(--ink)!important}
+.st-riso svg.art,.st-riso .big{filter:url(#fx-rough)}
+.st-riso .big{text-shadow:7px 6px 0 rgba(233,71,43,.5)}
+.st-riso .bg-red .big,.st-riso .c-red{text-shadow:7px 6px 0 rgba(27,42,107,.45)}
+.st-riso #grain{opacity:.5;mix-blend-mode:multiply}
+.st-riso .dots{opacity:.34;background-size:26px 26px;background-image:radial-gradient(currentColor 4px,transparent 4.6px)}
+
+.st-sketch{--ink:#24272c;--cream:#faf6ec;--red:#d8362c;--gold:#f5c400;--teal:#2b6cb0}
+.st-sketch .scene,.st-sketch .card,.st-sketch .p{background:var(--cream) repeating-linear-gradient(transparent 0 78px,rgba(43,108,176,.16) 78px 80px)!important;color:var(--ink)!important}
+.st-sketch .c-cream{color:var(--ink)}.st-sketch #hud{color:var(--ink)!important}
+.st-sketch svg.art,.st-sketch .big,.st-sketch .serif,.st-sketch .body{filter:url(#fx-wobble)}
+.st-sketch svg.art{stroke-width:4.5px!important}
+.st-sketch .big{-webkit-text-stroke:3px currentColor;-webkit-text-fill-color:transparent;background:repeating-linear-gradient(-58deg,currentColor 0 3px,transparent 3px 11px);-webkit-background-clip:text;background-clip:text}
+.st-sketch .dots,.st-sketch .grid{display:none}.st-sketch .chip.solid{background:var(--gold)!important;color:var(--ink)!important}
+
+.st-swiss{--ink:#111;--cream:#fff;--red:#e50914;--gold:#fff;--teal:#e50914}
+.st-swiss .bg-gold{color:var(--ink)}.st-swiss .bg-gold .c-ink,.st-swiss .bg-cream .c-ink{color:#111}
+.st-swiss svg.art{stroke-width:3px!important}
+.st-swiss .dots,.st-swiss .grid,.st-swiss #grain{display:none}
+.st-swiss .big{font-stretch:100%;letter-spacing:-.045em}
+.st-swiss .bg-gold .c-gold,.st-swiss .bg-ink .c-gold,.st-swiss .bg-teal .c-gold{color:#fff}
+.st-swiss .bg-ink .c-teal{color:var(--red)}
+
+.st-paper{--ink:#22223b;--cream:#fff3e0;--red:#ef476f;--gold:#ffd166;--teal:#06d6a0}
+.st-paper .bg-red{background:var(--red)!important}.st-paper .bg-ink{background:var(--ink)!important}
+.st-paper svg.art .d{fill:currentColor;fill-opacity:.22}
+.st-paper svg.art,.st-paper .big,.st-paper .chip{filter:drop-shadow(0 12px 0 rgba(0,0,0,.2))}
+.st-paper .scene::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.35),transparent 45%);pointer-events:none}
+
 /* player UI */
 #ui{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5%;background:rgba(5,5,5,.6);color:var(--cream);border:0;font:inherit;width:100%;text-align:center;cursor:pointer;z-index:10;transition:opacity .25s;-webkit-tap-highlight-color:transparent}
 #ui.off{opacity:0;pointer-events:none}
@@ -95,6 +133,7 @@ body.render #stage{cursor:default}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute"><filter id="fx-rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter><filter id="fx-wobble" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".018" numOctaves="2" seed="7" id="wobbleNoise"/><feDisplacementMap in="SourceGraphic" scale="11"/></filter></svg>
 <div id="fit"><div id="box">
 <div id="stage" lang="tr">
  <div id="shk">

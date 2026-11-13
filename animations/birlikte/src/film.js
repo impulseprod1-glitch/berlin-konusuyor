@@ -7,6 +7,8 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const RENDER = new URLSearchParams(location.search).has('render');
   if (RENDER) document.body.classList.add('render');
+  const STYLE = new URLSearchParams(location.search).get('style');
+  if (STYLE) document.getElementById('stage').classList.add('st-' + STYLE);
   gsap.config({ force3D: false, nullTargetWarn: false });
   gsap.ticker.lagSmoothing(0);
 
