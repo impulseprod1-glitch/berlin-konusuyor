@@ -1,0 +1,15 @@
+{
+  "name": "berlin-konusuyor-birlikte",
+  "private": true,
+  "type": "module",
+  "description": "\"Birlikte\" – 60 saniyelik çizgi animasyon (1080×1920)",
+  "scripts": {
+    "build": "node build.mjs",
+    "render": "node build.mjs && node render.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "^5.2.0",
+    "@fontsource-variable/playfair-display": "^5.2.0",
+    "gsap": "^3.13.0"
+  }
+}
