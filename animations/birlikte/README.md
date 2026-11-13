@@ -9,7 +9,9 @@ Her şey koddan üretilir; görsel ya da ses dosyası yoktur:
 | --- | --- |
 | `src/film.html` | Sahne iskeleti, stil ve SVG çizimleri |
 | `src/film.js` | Zaman çizelgesi (GSAP), geçişler, oynatıcı |
-| `src/audio.js` | Müzik ve ses efektleri – saf JavaScript sentezi (bağlama, darbuka, bas, efektler) |
+| `src/audio.js` | Müzik ve ses efektleri – saf JavaScript sentezi (pop davul, melodik bas, elektrikli piyano, yaylılar, bağlama, darbuka) |
+| `src/narration.json` | Seslendirme metni ve her cümlenin başladığı saniye |
+| `voice.mjs` | Seslendirmeyi ElevenLabs ile üretir (`voice/NN.mp3`) |
 | `build.mjs` | Tek dosyalık oynatıcıyı üretir (`dist/birlikte.html`, yazı tipleri ve GSAP gömülü) |
 | `render.mjs` | Kare kare MP4 üretir (`out/birlikte.mp4`) |
 | `shot.mjs` | Geliştirme için belirli saniyelerden kontak tabakası alır |
@@ -22,8 +24,25 @@ npm run build                 # dist/birlikte.html – tarayıcıda aç, dokun, 
 npm run render                # out/birlikte.mp4 (60 fps; Playwright + ffmpeg gerekir)
 FPS=30 node render.mjs        # hızlı önizleme
 node audio.mjs                # yalnızca ses: out/birlikte.wav
+ELEVENLABS_API_KEY=… VOICE_ID=… npm run voice   # seslendirme: voice/00.mp3 … 21.mp3
+node voice.mjs 4 5            # yalnızca 4. ve 5. cümleyi yeniden üret
 node shot.mjs out/a.png 2.4 15.2 31.6   # kareleri kontrol et
 ```
+
+## Seslendirme
+
+`voice/` klasöründe klip varsa `render.mjs` her cümleyi `narration.json`'daki saniyesine
+yerleştirir, yerine sığmayan cümleyi en çok %30 hızlandırır ve müziği seslendirmenin
+altında kendiliğinden kısar (≈6 dB). Klasör boşsa video yalnızca müzikle çıkar;
+`NO_VOICE=1` seslendirmeyi atlar, `VOICE_GAIN=1.6` ses düzeyini ayarlar.
+`VOICE_ID` verilmezse `voice.mjs` hesaptaki sesleri listeler ve ilkini kullanır.
+
+## Müzik
+
+120 BPM, Re hicaz. Akor yürüyüşü: Re · Mi♭maj7 · Do m7 · Re7. Bağlama, Karplus-Strong tel
+modeliyle sentezlenir: çift ince tel + oktav pesten bam teli, tekne rezonansı, aşağı/yukarı
+mızrap, çarpma, tril ve dem telleri ayrı ayrı modellenir. Hicazın 2. ve 3. dereceleri
+tampere değil, saz perdesine yakın akortlanır (`KOMA`).
 
 ## Zamanlama
 

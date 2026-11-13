@@ -5,6 +5,7 @@
   "description": "\"Birlikte\" – 60 saniyelik çizgi animasyon (1080×1920)",
   "scripts": {
     "build": "node build.mjs",
+    "voice": "node voice.mjs",
     "render": "node build.mjs && node render.mjs"
   },
   "devDependencies": {

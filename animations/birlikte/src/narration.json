@@ -1,0 +1,27 @@
+{
+  "_": "Seslendirme metni. t = cümlenin başladığı saniye (film.js ile aynı zaman çizelgesi). Rakamlar okunacağı gibi yazılır.",
+  "lines": [
+    { "t": 0.4,  "text": "Berlin'i Berlin yapan kim?" },
+    { "t": 4.2,  "text": "Otuz Ekim bin dokuz yüz altmış bir. Bir anlaşma, bir tren, bir bavul." },
+    { "t": 7.9,  "text": "Onlara misafir işçi dediler." },
+    { "t": 10.0, "text": "Ama kaldık. Çalıştık. Büyüdük." },
+    { "t": 13.2, "text": "Bugün Almanya'da iki virgül altı milyon Türkiye kökenli insan yaşıyor." },
+    { "t": 16.4, "text": "Ülkenin en büyük göçmen kökenli topluluğu." },
+    { "t": 18.3, "text": "Yalnızca Berlin'de yaklaşık iki yüz bin kişi." },
+    { "t": 21.0, "text": "Kreuzberg, Neukölln, Wedding." },
+    { "t": 24.2, "text": "Ekonomi mi?" },
+    { "t": 26.1, "text": "Seksen bin girişimci." },
+    { "t": 28.1, "text": "Yarım milyon insana iş." },
+    { "t": 30.4, "text": "Yılda elli milyar euro ciro." },
+    { "t": 34.3, "text": "Döner mi? Berlin'de doğdu, dünyaya yayıldı." },
+    { "t": 40.5, "text": "Bilimde Uğur Şahin ve Özlem Türeci." },
+    { "t": 42.7, "text": "Dünyanın ilk onaylı em-re-ne-a aşısı. Mainz'ten dünyaya." },
+    { "t": 46.1, "text": "Sinemada Fatih Akın. Altın Ayı." },
+    { "t": 48.1, "text": "Sahada Gündoğan. Kaptan." },
+    { "t": 50.1, "text": "Edebiyatta Özdamar. Büchner Ödülü." },
+    { "t": 52.1, "text": "Ve bu şehrin ritmi." },
+    { "t": 54.2, "text": "Misafir geldik." },
+    { "t": 55.5, "text": "Ev sahibiyiz." },
+    { "t": 57.1, "text": "Berlin'i de, Almanya'yı da birlikte büyüttük." }
+  ]
+}

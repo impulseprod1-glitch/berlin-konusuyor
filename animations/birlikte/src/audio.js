@@ -65,11 +65,11 @@
     const xp = (a, b, x) => a * Math.pow(b / a, x);
 
     /* ── davullar ── */
-    const kickBuf = (() => {
-      const n = S(0.5), v = new Float32Array(n); let ph = 0;
+    const kickBuf = (() => { // pop: kısa, sıkı gövde + net tık
+      const n = S(0.36), v = new Float32Array(n); let ph = 0;
       for (let i = 0; i < n; i++) {
-        const t = i / sr; ph += (TAU * (46 + 135 * Math.exp(-t / 0.028))) / sr;
-        v[i] = Math.tanh(Math.sin(ph) * Math.exp(-t / 0.17) * 1.7) + (rnd() - 0.5) * 0.5 * Math.exp(-t / 0.0015);
+        const t = i / sr; ph += (TAU * (50 + 120 * Math.exp(-t / 0.02))) / sr;
+        v[i] = Math.tanh(Math.sin(ph) * Math.exp(-t / 0.12) * 1.8) + (rnd() - 0.5) * 0.55 * Math.exp(-t / 0.0012);
       }
       return fade(v, S(0.001), S(0.03));
     })();
@@ -88,10 +88,18 @@
       }
       return fade(v, 4, S(0.02));
     })();
-    const snareBuf = (() => {
-      const n = S(0.22), v = filt(noise(n), bq('hp', 1400, 0.7));
-      for (let i = 0; i < n; i++) { const t = i / sr; v[i] = v[i] * Math.exp(-t / 0.06) * 0.8 + Math.sin(TAU * 196 * t) * Math.exp(-t / 0.04) * 0.6; }
-      return fade(v, 4, S(0.02));
+    const snareBuf = (() => { // pop trampet: gövde + tel + parlak üst
+      const n = S(0.3), nz = filt(noise(n), bq('bp', 2300, 0.7)), hi = filt(noise(n), bq('hp', 6500, 0.7)), v = new Float32Array(n); let ph = 0;
+      for (let i = 0; i < n; i++) {
+        const t = i / sr; ph += (TAU * (168 + 60 * Math.exp(-t / 0.012))) / sr;
+        v[i] = Math.sin(ph) * Math.exp(-t / 0.055) * 0.8 + nz[i] * 1.6 * Math.exp(-t / 0.09) + hi[i] * 0.5 * Math.exp(-t / 0.05);
+      }
+      return fade(v, 3, S(0.03));
+    })();
+    const shakeBuf = (() => {
+      const n = S(0.09), v = filt(noise(n), bq('bp', 6800, 1.1));
+      for (let i = 0; i < n; i++) { const t = i / sr; v[i] *= Math.min(1, t / 0.012) * Math.exp(-Math.max(0, t - 0.012) / 0.028) * 2; }
+      return fade(v, 4, S(0.01));
     })();
     const dumBuf = (() => {
       const n = S(0.4), v = new Float32Array(n); let ph = 0;
@@ -106,23 +114,35 @@
     const tekB = tekBuf(760, 0.04), kaB = tekBuf(610, 0.025);
 
     const kicks = [];
-    const kick = (t, g = 1) => { put(drums, kickBuf, t, 0.92 * g); kicks.push([t, g]); };
-    const hat = (t, g, open) => put(drums, open ? hatO : hatC, t, g, open ? 0.25 : -0.2);
-    const clap = (t, g = 1) => put(drums, clapBuf, t, 0.3 * g, 0.05, 0.25);
-    const snare = (t, g = 1) => put(drums, snareBuf, t, 0.32 * g, 0, 0.15);
+    const kick = (t, g = 1) => { put(drums, kickBuf, t, 0.8 * g); kicks.push([t, g]); };
+    const hat = (t, g, open) => put(drums, open ? hatO : hatC, t, g * 1.35, open ? 0.25 : -0.2);
+    const clap = (t, g = 1) => put(drums, clapBuf, t, 0.34 * g, 0.05, 0.25);
+    const snare = (t, g = 1) => put(drums, snareBuf, t, 0.38 * g, 0, 0.22);
     const dum = (t, g = 1) => put(drums, dumBuf, t, 0.5 * g, -0.15, 0.1);
     const tek = (t, g = 1) => put(drums, tekB, t, 0.36 * g, 0.3, 0.2);
     const ka = (t, g = 1) => put(drums, kaB, t, 0.24 * g, -0.35, 0.15);
 
-    /* ── bas ── */
-    function bass(t, midi, dur, g = 1) {
-      const n = S(dur), v = new Float32Array(n), w = (TAU * mtof(midi)) / sr;
+    /* ── bas: alt sinüs + zarflı alçak geçirenli testere, isteğe bağlı kaydırma ── */
+    function bass(t, midi, dur, g = 1, from) {
+      const n = S(dur), v = new Float32Array(n), f1 = mtof(midi), f0 = from ? mtof(from) : f1; let ph = 0;
       for (let i = 0; i < n; i++) {
-        const tt = i / sr, p = w * i; let s = 0;
-        for (let k = 1; k <= 5; k++) s += (Math.sin(p * k) / k) * Math.exp(-tt * (k - 1) * 4.5);
-        v[i] = Math.tanh(s * 1.3);
+        const tt = i / sr, f = f1 + (f0 - f1) * Math.exp(-tt / 0.03), fc = 190 + 1250 * Math.exp(-tt / 0.085);
+        ph += (TAU * f) / sr;
+        let s = 0.75 * Math.sin(ph);
+        for (let k = 1; k <= 8; k++) { const h = (k * f) / fc; s += Math.sin(ph * k) / k / Math.sqrt(1 + h * h * h * h); }
+        v[i] = Math.tanh(s * 1.1);
       }
-      put(music, fade(v, S(0.004), S(0.035)), t, 0.42 * g);
+      put(music, fade(v, S(0.004), S(0.03)), t, 0.3 * g);
+    }
+
+    /* ── elektrikli piyano (FM): akor vuruşları ── */
+    function ep(t, midi, dur, g, pan) {
+      const n = S(dur + 0.22), v = new Float32Array(n), w = (TAU * mtof(midi)) / sr;
+      for (let i = 0; i < n; i++) {
+        const tt = i / sr, e = Math.exp(-tt / 0.8) * (tt > dur ? Math.max(0, 1 - (tt - dur) / 0.2) : 1);
+        v[i] = (Math.sin(w * i + (0.35 + 1.9 * Math.exp(-tt / 0.16)) * Math.sin(w * i)) + 0.18 * Math.sin(w * i * 4) * Math.exp(-tt / 0.04)) * e * (1 + 0.12 * Math.sin(TAU * 5 * tt));
+      }
+      put(music, fade(v, S(0.002), S(0.01)), t, 0.12 * g, pan, 0.28);
     }
 
     /* ── ped (yumuşak akor) ── */
@@ -141,7 +161,9 @@
       putSt(music, vl, vr, t, g / notes.length, send);
     }
 
-    /* ── bağlama: Karplus-Strong tel modeli, çift tel + oktav teli ── */
+    /* ── bağlama: Karplus-Strong tel modeli ──
+       Üst tel takımı gerçek sazdaki gibi: iki ince çelik tel (hafif akort farkıyla) + bir oktav
+       pesten bam teli. Gövde rezonansı, mızrap tıkırtısı, aşağı/yukarı mızrap, çarpma ve tril ayrı. */
     function string(f, n, damp) {
       const v = new Float32Array(n), D = sr / f + 0.5, L = Math.floor(D - 0.1), d = D - L, C = (1 - d) / (1 + d);
       const buf = new Float32Array(L); let prev = 0;
@@ -155,17 +177,67 @@
       }
       return v;
     }
+    // Hicaz perdeleri tampere değildir: 2. derece (Mi♭) biraz dik, 3. derece (Fa♯) biraz pes basılır
+    const KOMA = { 3: 22, 6: -12 };
+    const sazF = (m) => mtof(m) * Math.pow(2, (KOMA[((m % 12) + 12) % 12] || 0) / 1200);
     const pluckCache = new Map();
-    function pluckBuf(midi, dur) {
-      const key = midi + '|' + dur; let v = pluckCache.get(key);
+    function pluckBuf(midi, dur, up, ham) {
+      const key = midi + '|' + dur + (up ? 'u' : '') + (ham ? 'h' : ''); let v = pluckCache.get(key);
       if (v) return v;
-      const n = S(dur), f = mtof(midi), a = string(f * 1.0025, n, 0.997), b = string(f * 0.9975, n, 0.997), c = string(f * 2, n, 0.995);
-      v = new Float32Array(n); let pk = 0;
-      for (let i = 0; i < n; i++) { v[i] = a[i] + b[i] + 0.35 * c[i]; pk = Math.max(pk, Math.abs(v[i])); }
-      for (let i = 0; i < n; i++) v[i] /= pk;
+      const n = S(dur), f = sazF(midi), a = string(f * 1.002, n, 0.9975), b = string(f * 0.998, n, 0.9975), c = string(f / 2, n, 0.9985);
+      v = new Float32Array(n);
+      for (let i = 0; i < n; i++) v[i] = a[i] + b[i] + 0.5 * c[i];
+      const lo = filt(v.slice(), bq('bp', 290, 1.6)), mid = filt(v.slice(), bq('bp', 900, 2.2)); // tekne
+      for (let i = 0; i < n; i++) v[i] = v[i] * 0.8 + lo[i] * 0.9 + mid[i] * 0.7;
+      if (up) filt(v, bq('hp', 420, 0.7)); // yukarı mızrap: ince tellere daha çok değer
+      if (ham) fade(v, S(0.006), 1); // çarpma: mızrapsız, parmakla
+      else { const k = filt(noise(S(0.006)), bq('hp', 2600, 0.7)); for (let i = 0; i < k.length; i++) v[i] += k[i] * (1 - i / k.length) * 1.2; }
+      let pk = 0; for (let i = 0; i < n; i++) pk = Math.max(pk, Math.abs(v[i]));
+      for (let i = 0; i < n; i++) v[i] /= pk * (up ? 1.25 : 1);
       fade(v, 2, S(0.02)); pluckCache.set(key, v); return v;
     }
-    const pluck = (t, midi, dur = 0.45, g = 1, pan = 0, send = 0.2) => put(music, pluckBuf(midi, dur), t, 0.29 * g, pan, send);
+    const SAZ = 0.43;
+    const pluck = (t, midi, dur = 0.45, g = 1, pan = 0, send = 0.2) => put(music, pluckBuf(midi, dur, false, false), t, SAZ * g, pan, send);
+    function saz(t, midi, dur, g = 1, o = {}) {
+      const pan = -0.12;
+      if (o.trem) { // tril: hızlı aşağı-yukarı mızrap
+        const k = Math.max(2, Math.round(dur / 0.0625));
+        for (let i = 0; i < k; i++) put(music, pluckBuf(midi, 0.16, i % 2 === 1, false), t + i * 0.0625, SAZ * g * (i % 2 ? 0.72 : 0.9) * (o.cresc ? 0.45 + (0.65 * i) / k : 1), pan, 0.2);
+        return;
+      }
+      if (o.drone) { // güçlü vuruşta mızrap alt tellerden geçer: Re-La dem sesi
+        put(music, pluckBuf(50, 0.9, false, false), t - 0.014, SAZ * g * 0.4, pan - 0.1, 0.2);
+        put(music, pluckBuf(57, 0.9, false, false), t - 0.007, SAZ * g * 0.34, pan, 0.2);
+      }
+      if (o.grace) { // çarpma: üst perdeden ana sese
+        put(music, pluckBuf(o.grace, 0.07, false, false), t, SAZ * g * 0.75, pan, 0.2);
+        put(music, pluckBuf(midi, dur, false, true), t + 0.055, SAZ * g * 0.95, pan, 0.22);
+        return;
+      }
+      put(music, pluckBuf(midi, dur, !!o.up, false), t, SAZ * g, pan, 0.22);
+    }
+
+    /* ── yaylılar: tek sesli, bağlı (legato) ve kaydırmalı – Türk pop tarzı ── */
+    const sawTab = new Float32Array(4097);
+    for (let i = 0; i <= 4096; i++) { const p = (TAU * i) / 4096; let s = 0; for (let k = 1; k <= 12; k++) s += Math.sin(p * k) / k / (1 + (k / 7) * (k / 7)); sawTab[i] = s; }
+    function strings(t0, notes, g) {
+      const end = Math.max(...notes.map((x) => x[0] + x[2])) + 0.4, n = S(end), vl = new Float32Array(n), vr = new Float32Array(n);
+      const tg = new Float32Array(n), gate = new Float32Array(n);
+      for (const [o, m, d] of notes) { const a = Math.round(o * sr), b = Math.min(n, Math.round((o + d) * sr)), f = mtof(m); for (let i = a; i < b; i++) { tg[i] = f; gate[i] = 1; } }
+      let f = mtof(notes[0][1]), last = f, amp = 0; const ph = [0, 1000, 2000, 3000], DET = [0.9948, 0.9983, 1.0023, 1.0058];
+      const kf = 1 - Math.exp(-1 / (0.035 * sr)), ka2 = 1 - Math.exp(-1 / (0.07 * sr)), kr = 1 - Math.exp(-1 / (0.18 * sr));
+      for (let i = 0; i < n; i++) {
+        if (tg[i]) last = tg[i];
+        f += (last - f) * kf; amp += (gate[i] - amp) * (gate[i] > amp ? ka2 : kr);
+        const vib = 1 + 0.0045 * Math.sin((TAU * 5.6 * i) / sr);
+        for (let o = 0; o < 4; o++) {
+          const ip = ph[o] | 0, s = (sawTab[ip] + (sawTab[ip + 1] - sawTab[ip]) * (ph[o] - ip)) * amp;
+          if (o % 2) { vr[i] += s; vl[i] += s * 0.4; } else { vl[i] += s; vr[i] += s * 0.4; }
+          ph[o] += (f * vib * DET[o] * 4096) / sr; if (ph[o] >= 4096) ph[o] -= 4096;
+        }
+      }
+      putSt(music, vl, vr, t0, 0.046 * g, 0.5);
+    }
 
     /* ── çan / zil sesleri ── */
     function bell(b, t, f, dur, g, pan = 0, send = 0.4) {
@@ -256,69 +328,88 @@
       putSt(sfx, mkCh(), mkCh(), t0, g, 0.05);
     }
 
-    /* ═════════════ DÜZENLEME ═════════════ */
+    /* ═════════════ DÜZENLEME ═════════════
+       Akor yürüyüşü (ölçü başına): Re · Mi♭maj7 · Do m7 · Re7 – hicazın pop armonisi */
     const BAR = 2, S16 = 0.125;
-    const D = [50, 57, 62, 66], Eb = [51, 58, 63, 67];
-    const A1 = [74, 0, 74, 75, 78, 0, 75, 74, 72, 0, 74, 0, 70, 72, 74, 0];
-    const A2 = [75, 0, 74, 72, 70, 0, 67, 0, 69, 70, 69, 66, 62, 0, 66, 69];
-    const B1 = [74, 0, 78, 0, 79, 78, 75, 0, 74, 0, 75, 74, 72, 0, 74, 0];
-    const B2 = [75, 0, 79, 0, 82, 79, 75, 0, 74, 0, 72, 74, 69, 0, 66, 69];
-    const C1 = [74, 74, 74, 0, 75, 0, 74, 0, 72, 72, 72, 0, 74, 0, 70, 0];
-    const C2 = [69, 69, 69, 0, 70, 0, 72, 0, 74, 0, 75, 74, 72, 70, 69, 0];
-    const riff = (t, pat, g, oct = 0) => pat.forEach((m, i) => {
-      if (!m) return;
-      const acc = i % 4 === 0 ? 1 : i % 2 === 0 ? 0.82 : 0.68;
-      pluck(t + i * S16, m, 0.42, g * acc, i % 2 ? 0.22 : -0.22);
-      if (oct) pluck(t + i * S16, m + 12, 0.3, g * acc * oct, i % 2 ? -0.3 : 0.3);
-    });
+    const P = [
+      { root: 38, ep: [54, 57, 62, 66], pad: [50, 57, 62, 66] },
+      { root: 39, ep: [55, 58, 62, 63], pad: [51, 58, 63, 67] },
+      { root: 36, ep: [55, 58, 60, 63], pad: [48, 55, 60, 63] },
+      { root: 38, ep: [54, 57, 60, 62], pad: [50, 57, 62, 66] },
+    ];
+    const D = P[0].pad;
+    // nakarat ezgisi – [16'lık adım, nota, süre, işaret]  d: dem telleri · u: yukarı mızrap · c: çarpma · t: tril
+    const HOOK = [
+      [[0, 69, 3, 'd'], [3, 67, 1, 'u'], [4, 66, 2, 'c'], [6, 63, 2], [8, 62, 4, 't'], [12, 66, 2], [14, 67, 2, 'u']],
+      [[0, 70, 3, 'd'], [3, 69, 1, 'u'], [4, 67, 2], [6, 70, 2], [8, 67, 3, 'd'], [11, 63, 1, 'u'], [12, 67, 2], [14, 69, 2]],
+      [[0, 72, 3, 'd'], [3, 70, 1, 'u'], [4, 67, 2], [6, 63, 2], [8, 67, 2, 'd'], [10, 70, 2], [12, 69, 2], [14, 67, 2]],
+      [[0, 66, 2, 'c'], [2, 67, 1, 'u'], [3, 66, 1], [4, 63, 2], [6, 66, 2], [8, 62, 6, 't'], [14, 57, 2]],
+    ];
+    const FILL = [[62, 63, 66, 67, 69, 67, 66, 63], [69, 70, 69, 67, 66, 63, 62, 0], [66, 67, 69, 70, 69, 67, 66, 63]];
+    const SOLO = [
+      [62, 62, 63, 62, 66, 66, 67, 66, 69, 69, 70, 69, 67, 66, 63, 62],
+      [70, 69, 67, 66, 67, 66, 63, 62, 63, 62, 60, 62, 58, 60, 62, 63],
+      [66, 63, 62, 60, 62, 0, 62, 63, 66, 67, 69, 70],
+    ];
     const maksum = (t, g) => {
       dum(t, g); tek(t + 2 * S16, g); ka(t + 3 * S16, g * 0.6); ka(t + 5 * S16, g * 0.5); tek(t + 6 * S16, g * 0.9);
       dum(t + 8 * S16, g * 0.9); ka(t + 10 * S16, g * 0.6); ka(t + 11 * S16, g * 0.45); tek(t + 12 * S16, g); ka(t + 14 * S16, g * 0.6); ka(t + 15 * S16, g * 0.5);
     };
-    const harmony = (b, t, g) => { // çift ölçü: Re · tek ölçü: Mi♭ → Re
-      if (b % 2 === 0) pad(t, D, BAR - 0.1, g);
-      else { pad(t, Eb, 1 - 0.1, g); pad(t + 1, D, 1 - 0.1, g); }
-    };
-    const bassBar = (b, t, g) => { for (let k = 0; k < 4; k++) bass(t + 0.25 + k * 0.5, b % 2 === 1 && k < 2 ? 39 : 38, 0.21, g); };
+    const shaker = (t, g) => put(drums, shakeBuf, t, g * 1.4, 0.4);
     const skip = new Set([17.5, 23.5, 33.5, 39.5, 53.5]); // geçişlerden önce nefes
 
-    // giriş 0–4
+    // giriş 0–4: ped üstünde serbest saz (açış)
     pad(0, D, 3.8, 0.42, 0.3, 1.2, 0.3); pad(0, [38], 3.8, 0.22, 0.2, 0.8, 0.3);
-    pluck(0.02, 50, 1.6, 1.1, -0.2, 0.4); pluck(0.05, 62, 1.4, 0.8, 0.2, 0.4);
+    saz(0.04, 62, 1.5, 1.1, { drone: true });
     whoosh(0, 1.2, 300, 2400, 0.16, -0.7, 0.7, 0.75);
-    [[0.5, 69], [1.0, 70], [1.5, 66]].forEach(([t, m]) => { hit(t, 0.75); pluck(t, m, 0.9, 1, 0, 0.35); });
-    impact(2.0, 0.95); [62, 69, 74].forEach((m, i) => pluck(2.0 + i * 0.018, m, 1.6, 1, i - 1, 0.4));
-    for (let i = 0; i < 16; i++) pluck(3.0 + i * 0.0625, 74, 0.2, 0.3 + (i / 16) * 1.0, i % 2 ? 0.3 : -0.3, 0.25);
+    hit(0.5, 0.75); saz(0.5, 69, 0.9, 1); hit(1.0, 0.75); saz(1.0, 70, 0.9, 1, { grace: 72 }); hit(1.5, 0.75); saz(1.5, 66, 0.9, 1, { grace: 67 });
+    impact(2.0, 0.95); saz(2.0, 62, 1.2, 1.1, { drone: true });
+    [69, 67, 66, 63].forEach((m, i) => saz(2.5 + i * S16, m, 0.3, 0.85, { up: i % 2 === 1 }));
+    saz(3.0, 62, 1.0, 1.1, { trem: true, cresc: true });
     riser(3.0, 1.0, 0.5); whoosh(3.7, 0.5, 500, 5000, 0.4, 0, 0, 0.55);
 
-    for (let b = 2; b < 30; b++) {
-      const t = b * BAR;
-      const full = (b >= 5 && b < 20) || (b >= 23 && b < 27);
-      // bas davul
-      if (b >= 2 && b < 5) for (let k = 0; k < 4; k++) { if (!(b === 4 && k === 3)) kick(t + k * 0.5, 0.78); }
-      if (full) for (let k = 0; k < 4; k++) { if (!skip.has(t + k * 0.5)) kick(t + k * 0.5, 1); }
-      if (b === 22) for (let k = 0; k < 4; k++) kick(t + k * 0.5, 0.8);
-      // alkış + ziller
-      if (full) { clap(t + 0.5); clap(t + 1.5); for (let k = 0; k < 4; k++) hat(t + 0.25 + k * 0.5, 0.11, true); }
-      if (b === 3 || b === 4) for (let k = 0; k < 4; k++) hat(t + 0.25 + k * 0.5, 0.07, true);
-      if ((b >= 9 && b < 17) || (b >= 23 && b < 27)) for (let k = 0; k < 16; k++) if (k % 4 !== 2) hat(t + k * S16, k % 2 ? 0.045 : 0.075, false);
-      if (b === 22) for (let k = 0; k < 4; k++) hat(t + 0.25 + k * 0.5, 0.08, true);
-      // darbuka
-      if (b >= 7 && b < 12) maksum(t, 0.5);
-      if (b >= 13 && b < 17) maksum(t, 0.55);
-      if (b >= 17 && b < 20) maksum(t, 0.95);
-      if (b >= 23 && b < 27) maksum(t, 0.75);
-      // bas + armoni
-      if ((b >= 3 && b < 20) || (b >= 22 && b < 27)) bassBar(b, t, b < 5 ? 0.8 : 1);
-      if (b >= 2 && b < 20) harmony(b, t, b < 5 ? 0.28 : 0.24);
-      if (b >= 23 && b < 27) harmony(b, t, 0.26);
-      // bağlama
-      if (b >= 3 && b < 5) riff(t, b % 2 ? A2 : A1, 0.8);
-      if (b >= 5 && b < 12) riff(t, b % 2 ? A2 : A1, 1);
-      if (b >= 12 && b < 17) riff(t, b % 2 ? B2 : B1, 1);
-      if (b >= 17 && b < 20) riff(t, b % 2 ? C1 : C2, 1.15);
-      if (b >= 23 && b < 27) riff(t, b % 2 ? A2 : A1, 1, 0.45);
+    const SECT = [[2, 5, 'open'], [5, 9, 'chorus'], [9, 12, 'verse'], [12, 17, 'chorus'], [17, 20, 'doner'], [23, 27, 'chorus']];
+    for (const [a, z, type] of SECT) {
+      const line = [], lift = a === 23;
+      for (let b = a; b < z; b++) {
+        const t = b * BAR, i = (b - a) % 4, ch = P[i], st = (k) => t + k * S16;
+        // davul
+        const K = type === 'chorus' ? [0, 4, 8, 12] : type === 'verse' ? [0, 6, 10] : type === 'doner' ? [0, 7, 8] : b === 2 ? [0] : [0, 10];
+        for (const k of K) if (!skip.has(st(k))) kick(st(k), type === 'open' ? 0.8 : 1);
+        if (type === 'open') { if (b > 2) { tek(st(4), 0.5); tek(st(12), 0.5); } } else for (const k of [4, 12]) { snare(st(k), 1); clap(st(k), type === 'chorus' ? 0.9 : 0.55); }
+        for (let k = 0; k < 16; k++) {
+          if (type === 'chorus') { hat(st(k), k % 2 ? 0.032 : 0.058, false); if (k % 4 === 2) hat(st(k), 0.08, true); } else if (k % 2 === 0) hat(st(k), k % 4 === 0 ? 0.065 : 0.045, false);
+          if (b > 2) shaker(st(k), (k % 4 === 2 ? 0.05 : 0.028) * (type === 'chorus' ? 1 : 0.7));
+        }
+        if (type === 'verse') hat(st(14), 0.075, true);
+        if (type === 'doner') maksum(t, 0.95);
+        if (type === 'chorus') { tek(st(6), 0.4); ka(st(7), 0.3); tek(st(14), 0.4); ka(st(15), 0.3); if (lift) { ka(st(3), 0.3); ka(st(11), 0.3); } }
+        // bas
+        if (type === 'chorus') [0, 0, 12, 0, 0, 0, 12, 7].forEach((o, j) => bass(st(j * 2), ch.root + o, S16 * 1.7, j % 2 ? 0.85 : 1));
+        else if (type === 'verse' || (type === 'open' && b > 2)) [[0, 0, 3], [3, 0, 1], [6, 12, 1.5, 0], [8, 0, 2], [11, 7, 1], [14, 7, 2, 0]].forEach(([k, o, d, sl]) => bass(st(k), ch.root + o, d * S16, 1, sl === 0 ? ch.root : undefined));
+        else if (type === 'doner') [[0, 0, 3], [6, 0, 1], [8, 0, 3], [14, 7, 2]].forEach(([k, o, d]) => bass(st(k), ch.root + o, d * S16, 1));
+        // armoni
+        pad(t, ch.pad, BAR - 0.1, 0.15);
+        if (type !== 'doner') [[0, 5], [6, 2], [10, 4], [14, 2]].forEach(([k, d], j) => ch.ep.forEach((m, q) => ep(st(k) + q * 0.005, m, d * S16, j === 0 ? 1 : 0.72, (q - 1.5) * 0.3)));
+        // bağlama
+        if (type === 'chorus') for (const [k, m, d, fl] of HOOK[i]) {
+          saz(st(k), m, fl === 't' ? d * S16 : Math.min(0.9, d * S16 + 0.25), 1, fl === 't' ? { trem: true } : fl === 'c' ? { grace: m + 1 } : { drone: fl === 'd', up: fl === 'u' });
+          if (d >= 2) line.push([(b - a) * BAR + k * S16, m + 12, d * S16]);
+        }
+        if ((type === 'verse' || type === 'open') && b > a) FILL[(b - a) % 3].forEach((m, j) => m && saz(st(8 + j), m, 0.36, 0.9, { up: j % 2 === 1, drone: j === 0 }));
+        if (type === 'doner') {
+          SOLO[b - a].forEach((m, j) => m && saz(st(j), m, 0.3, 1.3, { up: j % 2 === 1, drone: j % 8 === 0 }));
+          if (b === z - 1) saz(st(12), 74, 0.5, 1.1, { trem: true, cresc: true });
+        }
+      }
+      if (line.length) { // yaylılar ezgiyi bir oktav üstten, bağlı çalar
+        line.forEach((x, j) => { if (line[j + 1]) x[2] = line[j + 1][0] - x[0]; });
+        strings(a * BAR, line, lift ? 1.2 : 1);
+      }
     }
+    // 44–46: nakarata tırmanış
+    for (let k = 0; k < 4; k++) { kick(44 + k * 0.5, 0.8); hat(44.25 + k * 0.5, 0.08, true); }
+    for (let k = 0; k < 8; k++) bass(44 + k * 0.25, 38, S16 * 1.7, 0.9);
 
     // 2 · 1961 (4–10): tren, düdük
     impact(4.0, 0.7); whistle(4.3, 0.6, 0.085);
@@ -413,7 +504,7 @@
     const duck = new Float32Array(N).fill(1);
     for (const [t, g] of kicks) {
       const i0 = Math.round(t * sr), n = Math.min(S(0.45), N - i0);
-      for (let i = 0; i < n; i++) { const d = 1 - 0.5 * g * Math.exp(-i / sr / 0.1) * Math.min(1, i / (0.004 * sr)); if (d < duck[i0 + i]) duck[i0 + i] = d; }
+      for (let i = 0; i < n; i++) { const d = 1 - 0.38 * g * Math.exp(-i / sr / 0.09) * Math.min(1, i / (0.004 * sr)); if (d < duck[i0 + i]) duck[i0 + i] = d; }
     }
     // yankı (Schroeder: paralel taraklar + seri tüm-geçirenler)
     function reverb(x, spread) {
