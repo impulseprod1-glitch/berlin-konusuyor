@@ -5,7 +5,7 @@
 (function (root) {
   'use strict';
 
-  function render(sr) {
+  function render(sr, cues) {
     sr = sr || 44100;
     const DUR = 60, N = Math.ceil(sr * DUR), TAU = Math.PI * 2;
     const mk = () => ({ L: new Float32Array(N), R: new Float32Array(N) });
@@ -524,6 +524,17 @@
     [50, 62, 69, 74, 78].forEach((m, i) => pluck(57.0 + i * 0.022, m, 2.4, 1.1, i / 2 - 1, 0.45));
     [[58.0, 69, 0.5], [58.25, 66, 0.5], [58.5, 63, 0.6], [58.75, 62, 1.2]].forEach(([t, m, d], i) => pluck(t, m, d, 1, i % 2 ? 0.2 : -0.2, 0.45));
     [86, 93, 98].forEach((m, i) => bell(sfx, 58.2 + i * 0.07, mtof(m), 1.7, 0.085, i - 1, 0.6));
+
+    // kinetik kurgu: harf bloklarının/tuğlaların yerine oturması ve harf tıkırtıları
+    if (cues) {
+      const stone = (() => {
+        const n = S(0.22), v = new Float32Array(n), nz = filt(noise(n), bq('bp', 900, 0.9)), ck = filt(noise(n), bq('hp', 3500, 0.7)); let ph = 0;
+        for (let i = 0; i < n; i++) { const t = i / sr; ph += (TAU * (58 + 70 * Math.exp(-t / 0.018))) / sr; v[i] = Math.sin(ph) * Math.exp(-t / 0.06) + nz[i] * 1.6 * Math.exp(-t / 0.022) + ck[i] * 0.5 * Math.exp(-t / 0.006); }
+        return fade(v, 3, S(0.03));
+      })();
+      (cues.thud || []).forEach(([t, g], i) => put(sfx, stone, t, 0.34 * g, (i % 3 - 1) * 0.3, 0.18));
+      (cues.tick || []).forEach((t, i) => tick(t, 1500 + (i % 5) * 140, 0.045, i % 2 ? 0.3 : -0.3));
+    }
 
     /* ═════════════ MİKS ═════════════ */
     // yan zincir: her bas davulda müzik hattı kısılır

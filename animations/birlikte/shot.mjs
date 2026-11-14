@@ -13,7 +13,7 @@ const b = await chromium.launch();
 const p = await b.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
 p.on('console', (m) => m.type() === 'error' && console.log('console:', m.text()));
 p.on('pageerror', (e) => console.log('pageerror:', e.message));
-await p.goto('file://' + join(here, 'dist/birlikte.html') + '?render');
+await p.goto('file://' + join(here, (process.env.FILM || 'dist/birlikte.html')) + '?render');
 await p.waitForFunction('window.BK && window.BK.ready');
 let i = 0;
 for (const t of times) {

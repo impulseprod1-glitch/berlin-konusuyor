@@ -32,6 +32,25 @@ mkdirSync(join(here, 'dist'), { recursive: true });
 writeFileSync(join(here, 'dist/birlikte.html'), html);
 console.log(`dist/birlikte.html  ${(html.length / 1024).toFixed(0)} KB`);
 
+// 2. stil: kinetik kurgu (dünya + sanal kamera) → dist/kinetik.html
+{
+  const snips = (card) => {
+    const base = read('src/film.html');
+    const seg = base.slice(base.indexOf(`id="${card}"`)).split('<div class="big hd"')[0];
+    return seg.match(/<svg class="art[^>]*ic"[\s\S]*?<\/svg>/g) || [];
+  };
+  const baseCss = read('src/film.html').split('<style>')[1].split('</style>')[0].replace('/*__FONTS__*/', () => fonts);
+  const k = read('src/kinetic.html')
+    .replace('/*__BASECSS__*/', () => baseCss)
+    .replace(/<!--SVG:(c\d):(\d)-->/g, (_, c, i) => snips(c)[+i])
+    .replace('/*__GSAP__*/', () => readFileSync(join(here, 'node_modules/gsap/dist/gsap.min.js'), 'utf8'))
+    .replace('/*__AUDIO__*/', () => read('src/audio.js'))
+    .replace('/*__ART__*/', () => read('src/art.js'))
+    .replace('/*__FILM__*/', () => read('src/kinetic.js'));
+  writeFileSync(join(here, 'dist/kinetik.html'), k);
+  console.log(`dist/kinetik.html   ${(k.length / 1024).toFixed(0)} KB`);
+}
+
 // Gövdesiz sürüm: kendi <html>/<head>/<body> iskeletini ekleyen yayın ortamları için
 const fragment = html
   .replace(/^[\s\S]*?<title>/, '<meta name="claude:viewport-fit-sides" content="cover">\n<title>')

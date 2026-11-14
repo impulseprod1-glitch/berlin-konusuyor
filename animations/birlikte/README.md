@@ -12,6 +12,7 @@ Her şey koddan üretilir; görsel ya da ses dosyası yoktur:
 | `src/audio.js` | Müzik ve ses efektleri – saf JavaScript sentezi (pop davul, melodik bas, elektrikli piyano, yaylılar, bağlama, darbuka) |
 | `src/narration.json` | Seslendirme metni ve her cümlenin başladığı saniye |
 | `voice.mjs` | Seslendirmeyi ElevenLabs ile üretir (`voice/NN.mp3`) |
+| `src/kinetic.html`, `src/kinetic.js`, `src/art.js` | 2. stil – kinetik kurgu: tek bir "dünya" üzerinde gezen sanal kamera, harf harf yazım, harf blokları ve tuğla kuleler |
 | `build.mjs` | Tek dosyalık oynatıcıyı üretir (`dist/birlikte.html`, yazı tipleri ve GSAP gömülü) |
 | `render.mjs` | Kare kare MP4 üretir (`out/birlikte.mp4`) |
 | `shot.mjs` | Geliştirme için belirli saniyelerden kontak tabakası alır |
@@ -23,6 +24,8 @@ npm ci
 npm run build                 # dist/birlikte.html – tarayıcıda aç, dokun, sesli izle
 npm run render                # out/birlikte.mp4 (60 fps; Playwright + ffmpeg gerekir)
 FPS=30 node render.mjs        # hızlı önizleme
+FILM=kinetik OUT=birlikte-kinetik.mp4 node render.mjs   # 2. stil (dist/kinetik.html)
+FILM=dist/kinetik.html node shot.mjs out/k.png 2.2 31.9   # 2. stilden kare
 node audio.mjs                # yalnızca ses: out/birlikte.wav
 ELEVENLABS_API_KEY=… VOICE_ID=… npm run voice   # seslendirme: voice/00.mp3 … 21.mp3
 node voice.mjs 4 5            # yalnızca 4. ve 5. cümleyi yeniden üret

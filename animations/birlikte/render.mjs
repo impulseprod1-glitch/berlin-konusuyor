@@ -19,7 +19,15 @@ const WORKERS = +(process.env.WORKERS || Math.max(1, Math.min(6, cpus().length))
 const out = join(here, 'out'), frames = join(out, '.frames');
 rmSync(frames, { recursive: true, force: true }); mkdirSync(frames, { recursive: true });
 
-const audio = globalThis.BKAudio.render(48000);
+// FILM=kinetik → 2. stil (dist/kinetik.html); sayfadaki blok/tuğla ses işaretleri müziğe eklenir
+const PAGE = join(here, 'dist', (process.env.FILM || 'birlikte') + '.html');
+let cues;
+{
+  const b = await chromium.launch(), p = await b.newPage();
+  await p.goto('file://' + PAGE + '?render'); await p.waitForFunction('window.BK && window.BK.ready');
+  cues = await p.evaluate('window.BK.cues || null'); await b.close();
+}
+const audio = globalThis.BKAudio.render(48000, cues);
 writeFileSync(join(out, 'birlikte.wav'), globalThis.BKAudio.wav(audio));
 
 // Seslendirme (voice/NN.mp3 varsa): her cümle kendi saniyesine yerleşir, yerine sığmıyorsa
@@ -66,7 +74,7 @@ let done = 0;
 const t0 = Date.now();
 async function worker(k) {
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
-  await page.goto('file://' + join(here, 'dist/birlikte.html') + '?render');
+  await page.goto('file://' + PAGE + '?render');
   await page.waitForFunction('window.BK && window.BK.ready');
   // her işçi kendi dilimini baştan sona, sırayla işler
   for (let f = Math.floor((TOTAL * k) / WORKERS); f < Math.floor((TOTAL * (k + 1)) / WORKERS); f++) {
