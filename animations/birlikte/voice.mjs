@@ -23,15 +23,20 @@ if (!voice) {
   console.log(`VOICE_ID verilmedi → ${voices[0].name} kullanılıyor`);
 }
 
+const MODEL = process.env.MODEL_ID || 'eleven_v3', V3 = MODEL === 'eleven_v3';
+console.log(`Model: ${MODEL}${V3 ? ' (yönergeli, dinamik)' : ''}`);
 mkdirSync(join(here, 'voice'), { recursive: true });
 for (const [i, line] of lines.entries()) {
   if (only.length && !only.includes(i)) continue;
   const r = await fetch(`${API}/text-to-speech/${voice}?output_format=mp3_44100_128`, {
     method: 'POST', headers,
-    body: JSON.stringify({
-      text: line.text,
-      model_id: process.env.MODEL_ID || 'eleven_multilingual_v2',
-      voice_settings: { stability: 0.4, similarity_boost: 0.8, style: 0.35, use_speaker_boost: true, speed: 1.1 },
+    body: JSON.stringify(V3 ? {
+      // v3: köşeli parantezli yönergeleri (coşkulu, fısıltı, haykırış…) okur, en dinamik model
+      text: line.text, model_id: MODEL, language_code: 'tr',
+      voice_settings: { stability: +(process.env.STABILITY ?? 0), similarity_boost: 0.8 },
+    } : {
+      text: line.text.replace(/\[[^\]]*\]\s*/g, ''), model_id: MODEL, language_code: 'tr',
+      voice_settings: { stability: 0.3, similarity_boost: 0.8, style: 0.6, use_speaker_boost: true, speed: 1.08 },
     }),
   });
   if (!r.ok) throw new Error(`Satır ${i} üretilemedi: ${r.status} ${await r.text()}`);

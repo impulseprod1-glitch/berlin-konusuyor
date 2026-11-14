@@ -31,6 +31,10 @@ node shot.mjs out/a.png 2.4 15.2 31.6   # kareleri kontrol et
 
 ## Seslendirme
 
+`voice.mjs` varsayılan olarak `eleven_v3` modelini kullanır; metindeki `[coşkulu]` gibi köşeli
+parantezli yönergeleri okur (`MODEL_ID=eleven_multilingual_v2` verilirse yönergeler silinir).
+`drop: true` olan cümlelerde müzik bir anlığına susar.
+
 `voice/` klasöründe klip varsa `render.mjs` her cümleyi `narration.json`'daki saniyesine
 yerleştirir, yerine sığmayan cümleyi en çok %30 hızlandırır ve müziği seslendirmenin
 altında kendiliğinden kısar (≈6 dB). Klasör boşsa video yalnızca müzikle çıkar;
