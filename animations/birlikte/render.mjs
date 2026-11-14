@@ -27,20 +27,26 @@ writeFileSync(join(out, 'birlikte.wav'), globalThis.BKAudio.wav(audio));
 let track = join(out, 'birlikte.wav');
 {
   const { lines } = JSON.parse(readFileSync(join(here, 'src/narration.json'), 'utf8'));
-  const clips = lines.map((l, i) => ({ ...l, i, file: join(here, 'voice', String(i).padStart(2, '0') + '.mp3') })).filter((c) => existsSync(c.file));
+  const clips = lines.map((l, i) => { const b = join(here, 'voice', String(i).padStart(2, '0')); return { ...l, i, file: existsSync(b + '.wav') ? b + '.wav' : b + '.mp3' }; }).filter((c) => existsSync(c.file));
   if (clips.length && !process.env.NO_VOICE) {
     // ses zinciri: gövde temizliği, varlık (presence) artışı, sıkı kompresör → reklam/fragman tınısı
     const VOX = 'highpass=f=85,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3200:t=q:w=1.4:g=4,equalizer=f=9000:t=q:w=1:g=2,acompressor=threshold=0.08:ratio=4:attack=4:release=90:makeup=2.2';
     const args = ['-y', '-loglevel', 'error', '-i', track], f = [];
+    // önce her klibin baş/son sessizliği atılır, cümle içi duraklamalar kısaltılır → cümle tam saniyesinde başlar
+    const tmp = join(out, '.vo'); rmSync(tmp, { recursive: true, force: true }); mkdirSync(tmp, { recursive: true });
+    for (const c of clips) {
+      const t = join(tmp, String(c.i).padStart(2, '0') + '.wav');
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', c.file, '-af', 'silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.02:stop_periods=-1:stop_threshold=-40dB:stop_duration=0.18:stop_silence=0.18', t]);
+      c.file = t;
+      c.dur = +execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', t]).toString();
+      const next = lines[c.i + 1], slot = (next ? next.t : DUR) - c.t - 0.08;
+      c.tempo = Math.min(1.25, Math.max(1, c.dur / slot));
+      if (c.dur / slot > 1.25) console.warn(`Uyarı: ${c.i}. cümle yerine sığmıyor (${c.dur.toFixed(1)} sn → ${slot.toFixed(1)} sn)`);
+    }
     // drop: true olan cümlelerde müzik tamamen susar (vurgu için)
-    const drops = clips.filter((c) => c.drop).map((c) => {
-      const dur = +execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', c.file]).toString();
-      return `between(t,${(c.t - 0.05).toFixed(2)},${(c.t + Math.min(dur, 2.2) * 0.85).toFixed(2)})`;
-    });
+    const drops = clips.filter((c) => c.drop).map((c) => `between(t,${(c.t - 0.05).toFixed(2)},${(c.t + Math.min(c.dur / c.tempo, 2.2) * 0.9).toFixed(2)})`);
     clips.forEach((c, k) => {
-      const dur = +execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', c.file]).toString();
-      const next = lines[c.i + 1], slot = (next ? next.t : DUR) - c.t - 0.08, tempo = Math.min(1.3, Math.max(1, dur / slot));
-      if (dur / slot > 1.3) console.warn(`Uyarı: ${c.i}. satır yerine sığmıyor (${dur.toFixed(1)} sn → ${slot.toFixed(1)} sn)`);
+      const tempo = c.tempo;
       args.push('-i', c.file);
       f.push(`[${k + 1}:a]aresample=48000,aformat=channel_layouts=stereo,atempo=${tempo.toFixed(3)},${VOX},adelay=${Math.round(c.t * 1000)}:all=1[v${k}]`);
     });
@@ -50,6 +56,7 @@ let track = join(out, 'birlikte.wav');
     f.push('[bed][vo]amix=inputs=2:normalize=0,alimiter=limit=0.89:level=disabled[out]');
     track = join(out, 'birlikte-mix.wav');
     execFileSync('ffmpeg', [...args, '-filter_complex', f.join(';'), '-map', '[out]', '-t', String(DUR), track]);
+    rmSync(tmp, { recursive: true, force: true });
     console.log(`Seslendirme eklendi: ${clips.length}/${lines.length} cümle`);
   } else console.log('Seslendirme yok (voice/ boş) → yalnızca müzik');
 }

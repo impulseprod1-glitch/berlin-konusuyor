@@ -31,6 +31,16 @@ node shot.mjs out/a.png 2.4 15.2 31.6   # kareleri kontrol et
 
 ## Seslendirme
 
+`voice/` klasöründeki klipler depodadır; `npm run render` onları kullanır. Yeniden üretmek için iki yol var:
+
+- **Yerel, anahtarsız (şu an kullanılan):** açık kaynaklı Chatterbox Multilingual.
+  `pip install chatterbox-tts faster-whisper num2words` (Python 3.11, ~6 GB), sonra
+  `REF=tts/ref/ref_tr_fast.wav python tts/best_voice.py`. Her cümle için birkaç aday üretir,
+  Whisper ile geri dinler, hem metne uyan hem sahnesine sığan adayı seçer; puanlar
+  `voice/scores.json` içinde. `REF` sesi ve okuma hızını belirler: kendi sesinden 5–15 sn'lik
+  temiz bir kayıt verirsen anlatım o sesle çıkar.
+- **ElevenLabs:** `ELEVENLABS_API_KEY=… npm run voice` (aşağıya bakın).
+
 `voice.mjs` varsayılan olarak `eleven_v3` modelini kullanır; metindeki `[coşkulu]` gibi köşeli
 parantezli yönergeleri okur (`MODEL_ID=eleven_multilingual_v2` verilirse yönergeler silinir).
 `drop: true` olan cümlelerde müzik bir anlığına susar.
