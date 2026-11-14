@@ -1,0 +1,28 @@
+{
+  "_": "Seslendirme metni. t = cümlenin başladığı saniye (film.js ile aynı zaman çizelgesi). Köşeli parantezler ton yönergesidir (ElevenLabs v3 okur; yerel modelde vurgu düzeyini belirler). drop: true olan cümlede müzik bir anlığına susar. say: yabancı adların Türkçe okunuşu (yalnızca yerel ses modeli kullanır).",
+  "lines": [
+    { "t": 0.4,  "text": "[confident, low voice] Berlin'i Berlin yapan kim?", "drop": true },
+    { "t": 4.2,  "text": "[storytelling] Otuz Ekim, bin dokuz yüz altmış bir." },
+    { "t": 7.8,  "text": "[slightly bitter] Bize misafir işçi dediler." },
+    { "t": 10.0, "text": "[determined] Kaldık!" },
+    { "t": 11.0, "text": "[determined] Çalıştık!" },
+    { "t": 12.0, "text": "[proud, rising] Büyüdük!" },
+    { "t": 13.3, "text": "[energetic] Bugün Almanya'da iki virgül altı milyon kişiyiz!" },
+    { "t": 18.3, "text": "[excited] Yalnızca Berlin'de yaklaşık iki yüz bin!" },
+    { "t": 21.0, "text": "[rhythmic] Kreuzberg. Neukölln. Wedding.", "say": "Kroytsberg. Noyköln. Vedding." },
+    { "t": 24.2, "text": "[punchy] Ekonomi mi?" },
+    { "t": 26.1, "text": "[punchy] Seksen bin girişimci!" },
+    { "t": 28.1, "text": "[punchy] Yarım milyon insana iş!" },
+    { "t": 31.5, "text": "[shouting with pride] Yılda elli milyar euro!", "drop": true },
+    { "t": 34.3, "text": "[playful, proud] Döner mi? Berlin'de doğdu, dünyayı fethetti!" },
+    { "t": 40.5, "text": "[serious, warm] Uğur Şahin ve Özlem Türeci." },
+    { "t": 44.1, "text": "[rising] Mainz'ten dünyaya!", "say": "Maynts'tan bütün dünyaya!" },
+    { "t": 46.1, "text": "[fast] Sinemada Fatih Akın!" },
+    { "t": 48.1, "text": "[fast] Sahada Gündoğan!" },
+    { "t": 50.1, "text": "[fast] Edebiyatta Özdamar!" },
+    { "t": 52.1, "text": "[fast] Ve bu şehrin ritmi!" },
+    { "t": 54.1, "text": "[low, intense] Misafir geldik." },
+    { "t": 55.5, "text": "[shouting with pride] Ev sahibiyiz!", "drop": true },
+    { "t": 57.0, "text": "[powerful, warm] Berlin'i de, Almanya'yı da birlikte büyüttük." }
+  ]
+}
