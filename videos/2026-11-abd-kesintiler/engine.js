@@ -147,3 +147,65 @@ function keyframes(list, t, e = ease.inOutSine) {
 
 /** Count-up number formatted with Turkish thousands separator. */
 const fmtNum = n => Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+/* ---------- voice-over helpers (timeline written by voice.py) ---------- */
+
+/** {start, end} of a voice-over segment by id. */
+const seg = id => (window.TIMELINE.segments.find(s => s.id === id) || { start: 0, end: 0 });
+
+/** Groups word timings into short caption chunks (breaks on segment change, pauses and length). */
+function buildChunks(words, maxWords = 4) {
+  // Spelled-out acronyms come back letter by letter ("N", "S", "A'nın"); join them for display.
+  const merged = [];
+  for (const w of words) {
+    const p = merged[merged.length - 1];
+    if (p && p.seg === w.seg && /^[A-ZÇĞİÖŞÜ]{1,3}$/.test(p.w) && /^[A-ZÇĞİÖŞÜ]($|')/.test(w.w)) { merged[merged.length - 1] = { ...p, w: p.w + w.w, t1: w.t1 }; continue; }
+    merged.push({ ...w });
+  }
+  words = merged;
+  const chunks = []; let cur = null;
+  words.forEach((w, i) => {
+    const prev = words[i - 1];
+    const brk = !cur || cur.words.length >= maxWords || w.seg !== prev.seg || w.t0 - prev.t1 > 0.3;
+    if (brk) { cur = { words: [], t0: w.t0 }; chunks.push(cur); }
+    cur.words.push(w); cur.t1 = w.t1;
+  });
+  chunks.forEach((c, i) => { const n = chunks[i + 1]; c.end = n ? Math.min(n.t0, c.t1 + 0.5) : c.t1 + 0.6; });
+  return chunks;
+}
+
+/**
+ * Karaoke-style captions: the current chunk, with the spoken word highlighted.
+ * o: font, color, active, activeBg, upper, y, maxW, lineH, band (background colour or null), boxR
+ */
+function captions(ctx, t, chunks, o) {
+  const c = chunks.find(c => t >= c.t0 - 0.06 && t < c.end); if (!c) return;
+  const ws = c.words.map(w => ({ ...w, s: o.upper ? w.w.toLocaleUpperCase('tr-TR') : w.w }));
+  ctx.save(); ctx.font = o.font; ctx.letterSpacing = '0px';
+  const space = ctx.measureText(' ').width * 1.1;
+  const lines = [[]]; let lw = 0;
+  for (const w of ws) {
+    w.wd = ctx.measureText(w.s).width;
+    if (lines[lines.length - 1].length && lw + space + w.wd > o.maxW) { lines.push([]); lw = 0; }
+    lines[lines.length - 1].push(w); lw += (lw ? space : 0) + w.wd;
+  }
+  const pop = ease.outBack(prog(t, c.t0 - 0.06, 0.18), 2);
+  const y0 = o.y - (lines.length - 1) * o.lineH / 2;
+  if (o.band) { ctx.fillStyle = o.band; ctx.globalAlpha = 0.85; rrect(ctx, 40, y0 - o.lineH * 0.85, W - 80, lines.length * o.lineH + o.lineH * 0.45, 24); ctx.fill(); ctx.globalAlpha = 1; }
+  ctx.textBaseline = 'alphabetic';
+  lines.forEach((ln, li) => {
+    const width = ln.reduce((a, w, i) => a + w.wd + (i ? space : 0), 0);
+    let x = 540 - width / 2; const y = y0 + li * o.lineH;
+    for (const w of ln) {
+      const active = t >= w.t0 - 0.03 && (t < w.t1 + 0.12 || w === ws[ws.length - 1]);
+      const spoken = t >= w.t0 - 0.03;
+      ctx.save(); ctx.translate(x + w.wd / 2, y); ctx.scale(0.85 + 0.15 * pop, 0.85 + 0.15 * pop);
+      if (active && o.activeBg) { ctx.fillStyle = o.activeBg; rrect(ctx, -w.wd / 2 - 12, -o.lineH * 0.72, w.wd + 24, o.lineH * 0.9, o.boxR || 10); ctx.fill(); }
+      ctx.fillStyle = active ? o.active : spoken ? o.color : (o.dim || o.color);
+      ctx.textAlign = 'center'; ctx.fillText(w.s, 0, 0);
+      ctx.restore();
+      x += w.wd + space;
+    }
+  });
+  ctx.restore();
+}

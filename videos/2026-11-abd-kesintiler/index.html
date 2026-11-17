@@ -13,6 +13,8 @@
   @font-face{font-family:'Fraunces';font-style:italic;font-weight:100 900;src:url(fonts/fraunces-latin-ext-full-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02FF,U+1E00-1EFF}
   @font-face{font-family:'Inter';font-weight:100 900;src:url(fonts/inter-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+2190-2199,U+2212}
   @font-face{font-family:'Inter';font-weight:100 900;src:url(fonts/inter-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02FF,U+1E00-1EFF}
+  @font-face{font-family:'Caveat';font-weight:700;src:url(fonts/caveat-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+2190-2199,U+2212}
+  @font-face{font-family:'Caveat';font-weight:700;src:url(fonts/caveat-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02FF,U+1E00-1EFF}
   @font-face{font-family:'JetBrains Mono';font-weight:100 900;src:url(fonts/jetbrains-mono-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+2190-2199,U+2212}
   @font-face{font-family:'JetBrains Mono';font-weight:100 900;src:url(fonts/jetbrains-mono-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02FF,U+1E00-1EFF}
   html,body{margin:0;background:#000}
@@ -25,11 +27,12 @@
 <script>
   // ?v=v1-sinematik  → loads that scene file; ?t=12.5 → shows a still (for previewing in a browser).
   const q = new URLSearchParams(location.search);
+  const name = q.get('v') || 'v1-sinematik';
   const s = document.createElement('script');
-  s.src = (q.get('v') || 'v1-sinematik') + '.js';
+  s.src = name + '.js';
   s.onload = async () => {
     const faces = ['400 40px Anton', '300 40px Fraunces', 'italic 300 40px Fraunces', '600 40px Fraunces',
-      'italic 600 40px Fraunces', '400 40px Inter', '700 40px Inter', '500 40px "JetBrains Mono"'];
+      'italic 600 40px Fraunces', '400 40px Inter', '700 40px Inter', '500 40px "JetBrains Mono"', '700 40px Caveat', '800 40px Inter'];
     // Load both subsets of every face before the first frame.
     await Promise.all(faces.map(f => document.fonts.load(f, 'AaĞğŞşİı')));
     window.READY = true;
@@ -39,7 +42,11 @@
     if (q.has('t')) renderFrame(parseFloat(q.get('t')));
     else if (q.has('play')) { const t0 = performance.now(); const loop = () => { renderFrame(((performance.now() - t0) / 1000) % VIDEO.duration); requestAnimationFrame(loop); }; loop(); }
   };
-  document.body.appendChild(s);
+  // Voice-over videos get their timing from <name>.timeline.js (written by voice.py).
+  const tl = document.createElement('script');
+  tl.src = name + '.timeline.js';
+  tl.onload = tl.onerror = () => document.body.appendChild(s);
+  document.body.appendChild(tl);
 </script>
 </body>
 </html>
