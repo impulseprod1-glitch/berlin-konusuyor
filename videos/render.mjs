@@ -6,6 +6,7 @@
  *   node render.mjs 01-enerjik --stills 2,9.5  # yalnızca kareler -> out/stills/
  *   node render.mjs all                        # tüm sahneler
  *   node render.mjs 01-enerjik --audio-only    # yalnızca sesi yeniden üret ve birleştir
+ *   node render.mjs 05-bauhaus --voice         # Türkçe seslendirmeli sürüm -> out/05-bauhaus.seslendirme.mp4
  *
  * Gerekenler: Playwright (Chromium), ffmpeg, python3 + numpy + scipy.
  */
@@ -42,6 +43,17 @@ function serve() {
   return new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve(server)));
 }
 
+/** Parçalı doğrusal eşleme: düğümler [[T, t], ...] */
+function interp(T, knots) {
+  if (T <= knots[0][0]) return knots[0][1];
+  for (let i = 1; i < knots.length; i++) {
+    const [a, sa] = knots[i - 1];
+    const [b, sb] = knots[i];
+    if (T <= b) return sa + ((T - a) / (b - a)) * (sb - sa);
+  }
+  return knots[knots.length - 1][1];
+}
+
 function run(cmd, args, opts = {}) {
   return new Promise((resolve, reject) => {
     const p = spawn(cmd, args, { stdio: ['pipe', 'inherit', 'inherit'], ...opts });
@@ -59,7 +71,8 @@ async function renderScene(browser, port, name) {
   page.on('pageerror', (e) => console.error(`[${name}]`, e));
   await page.goto(`http://127.0.0.1:${port}/scenes/${name}.html`);
   await page.waitForFunction(() => window.SCENE, null, { timeout: 30000 });
-  const { duration, cues } = await page.evaluate(() => window.SCENE);
+  const { duration: sceneDuration, cues, segments } = await page.evaluate(() => window.SCENE);
+  let duration = sceneDuration;
 
   if (stills) {
     await mkdir(join(OUT, 'stills'), { recursive: true });
@@ -72,21 +85,34 @@ async function renderScene(browser, port, name) {
     return;
   }
 
-  await writeFile(join(OUT, `${name}.cues.json`), JSON.stringify({ duration, fps, cues }, null, 1));
+  const cuesPath = join(OUT, `${name}.cues.json`);
+  await writeFile(cuesPath, JSON.stringify({ duration, fps, cues, segments }, null, 1));
 
-  const silent = join(OUT, `${name}.silent.mp4`);
+  // --voice: Türkçe seslendirme. Video zamanı konuşmaya göre yeniden eşlenir.
+  const voice = process.argv.includes('--voice');
+  let map = null;
+  if (voice) {
+    await run('python3', [join(ROOT, 'voice', 'voiceover.py'), 'plan', name, cuesPath]);
+    map = JSON.parse(await readFile(join(OUT, 'voice', name, 'timemap.json'), 'utf8'));
+    duration = map.duration;
+  }
+
+  const tag = voice ? '.seslendirme' : '';
+  const silent = join(OUT, `${name}${tag}.silent.mp4`);
   const started = Date.now();
-  if (!process.argv.includes('--audio-only')) await renderFrames(page, name, duration, fps, silent);
+  const toScene = map ? (T) => interp(T, map.knots) : (T) => T;
+  if (!process.argv.includes('--audio-only')) await renderFrames(page, name, duration, fps, silent, toScene);
   await page.close();
 
-  const wav = join(OUT, `${name}.wav`);
-  await run('python3', [join(ROOT, 'audio', `${name}.py`), join(OUT, `${name}.cues.json`), wav]);
-  await run('ffmpeg', ['-y', '-loglevel', 'error', '-i', silent, '-i', wav, '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-ar', '48000', '-c:a', 'aac', '-b:a', '256k', '-shortest', '-movflags', '+faststart', join(OUT, `${name}.mp4`)]);
-  console.log(`[${name}] hazır -> out/${name}.mp4  (${((Date.now() - started) / 1000).toFixed(0)} sn)`);
+  const wav = join(OUT, `${name}${tag}.wav`);
+  if (voice) await run('python3', [join(ROOT, 'voice', 'voiceover.py'), 'mix', name, wav]);
+  else await run('python3', [join(ROOT, 'audio', `${name}.py`), cuesPath, wav]);
+  await run('ffmpeg', ['-y', '-loglevel', 'error', '-i', silent, '-i', wav, '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-ar', '48000', '-c:a', 'aac', '-b:a', '256k', '-shortest', '-movflags', '+faststart', join(OUT, `${name}${tag}.mp4`)]);
+  console.log(`[${name}] hazır -> out/${name}${tag}.mp4  (${((Date.now() - started) / 1000).toFixed(0)} sn)`);
 }
 
 /** Kareleri sırayla çizip ffmpeg'e akıtır (sessiz video). */
-async function renderFrames(page, name, duration, fps, silent) {
+async function renderFrames(page, name, duration, fps, silent, toScene) {
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
     '-c:v', 'libx264', '-preset', 'slow', '-crf', '20', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', silent], { stdio: ['pipe', 'inherit', 'inherit'] });
   const ffDone = new Promise((resolve, reject) => ff.on('exit', (c) => (c === 0 ? resolve() : reject(new Error('ffmpeg ' + c)))));
@@ -94,7 +120,7 @@ async function renderFrames(page, name, duration, fps, silent) {
   const frames = Math.round(duration * fps);
   const started = Date.now();
   for (let f = 0; f < frames; f++) {
-    await page.evaluate((t) => window.seek(t), f / fps);
+    await page.evaluate((t) => window.seek(t), toScene(f / fps));
     const buf = await page.screenshot({ type: 'jpeg', quality: 94 });
     if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once('drain', r));
     if (f % (fps * 5) === 0) console.log(`[${name}] ${((f / frames) * 100).toFixed(0)}%  (${((Date.now() - started) / 1000).toFixed(0)} sn)`);

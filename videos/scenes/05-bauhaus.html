@@ -288,6 +288,7 @@ S.ready.then(() => {
   tl.set({}, {}, DUR);
 
   S.finish();
+  window.SCENE.segments = SEGS.map((s) => s.t);
 });
 </script>
 </body>
