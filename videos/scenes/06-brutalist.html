@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>06 — Brutalist Poster</title>
+<link rel="stylesheet" href="shared/fonts.css">
+<style>
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #c8ff2e; }
+  #stage { position: absolute; inset: 0; overflow: hidden; }
+  .seg { position: absolute; inset: 0; visibility: hidden; background: var(--bg); color: var(--ink); }
+  .band { position: absolute; left: -300px; width: 1680px; height: 118px; background: var(--band); color: var(--bandInk); overflow: hidden; border-top: 6px solid var(--band); border-bottom: 6px solid var(--band); }
+  .band .run { position: absolute; top: 0; left: 0; white-space: nowrap; font-family: 'Anton'; font-size: 92px; line-height: 118px; letter-spacing: .01em; }
+  .stack { position: absolute; left: 70px; right: 70px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 18px; }
+  .row { font-family: 'Anton'; line-height: 1.06; white-space: nowrap; text-transform: none; }
+  .stk { background: var(--stk); color: var(--stkInk); border: 9px solid #111; box-shadow: 18px 18px 0 #111; padding: .04em .18em .06em; }
+  .tag { position: absolute; font-family: 'Space Grotesk'; font-weight: 700; font-size: 34px; letter-spacing: .04em; color: var(--ink); }
+  .tag.box { border: 5px solid currentColor; padding: 6px 16px; }
+  .star { position: absolute; width: 230px; height: 230px; }
+  .star path { fill: var(--stk); stroke: #111; stroke-width: 8; }
+  .dots { position: absolute; width: 520px; height: 520px; background-image: radial-gradient(circle, var(--ink) 33%, transparent 35%); background-size: 26px 26px; opacity: .9; -webkit-mask-image: radial-gradient(circle at 0 100%, #000 20%, transparent 70%); mask-image: radial-gradient(circle at 0 100%, #000 20%, transparent 70%); }
+  .arrow { position: absolute; font-family: 'Anton'; font-size: 260px; line-height: 1; color: var(--ink); }
+  #flash { position: absolute; inset: 0; background: #111; opacity: 0; }
+  #fade { position: absolute; inset: 0; background: #111; }
+</style>
+</head>
+<body>
+<div id="stage"><div id="segs"></div><div id="flash"></div><div id="fade"></div></div>
+
+<script src="/node_modules/gsap/dist/gsap.min.js"></script>
+<script src="shared/stage.js"></script>
+<script>
+const { createScene, mulberry32, hashNoise, clamp } = Stage;
+const DUR = 45;
+const up = (s) => s.toLocaleUpperCase('tr');
+// [zemin, yazı, sticker, sticker yazısı, şerit, şerit yazısı]
+const PAL = {
+  lime: ['#c8ff2e', '#111', '#ff4fb0', '#111', '#111', '#c8ff2e'],
+  pink: ['#ff4fb0', '#111', '#c8ff2e', '#111', '#111', '#ff4fb0'],
+  blue: ['#2b3cff', '#f4f2ea', '#c8ff2e', '#111', '#f4f2ea', '#2b3cff'],
+  paper: ['#f2efe6', '#111', '#ff5b1f', '#111', '#111', '#f2efe6'],
+  orange: ['#ff5b1f', '#111', '#f2efe6', '#111', '#111', '#ff5b1f'],
+  black: ['#111111', '#c8ff2e', '#ff4fb0', '#111', '#c8ff2e', '#111'],
+};
+// satır: "metin" veya "!metin" (sticker kutusu)
+const SEGS = [
+  { t: [0.4, 4.6], pal: 'lime', band: 'TEHLİKELİ', rows: ['TEHLİKELİ', 'DERECEDE', '!EĞİTİMLİ OL.'] },
+  { t: [4.6, 7.8], pal: 'pink', band: 'BİLGİLİ', rows: ['BİLGİLİ', 'BİR İNSAN', '!OL.'] },
+  { t: [7.8, 11.0], pal: 'blue', band: 'ZOR', rows: ['ALDATILMASI', 'DAHA', '!ZOR.'] },
+  { t: [11.0, 14.2], pal: 'paper', band: 'KESKİN', rows: ['SOHBETTE', 'DAHA', '!KESKİN.'] },
+  { t: [14.2, 17.6], pal: 'orange', band: 'OKUMADA', rows: ['DURUMLARI', 'OKUMADA', '!DAHA İYİ.'] },
+  { t: [17.6, 23.4], pal: 'black', band: 'YÜZYILLARIN', rows: ['YÜZYILLARIN', 'BİLGELİĞİ VE', 'BİLGİSİNE', 'BAŞVURABİLME', 'YETENEĞİNE', '!SAHİP.'], gap: .45 },
+  { t: [23.4, 27.4], pal: 'lime', band: 'DAHA', rows: ['!DAHA BİLGİLİ.', '!DAHA İLGİNÇ.', '!DAHA YETKİN.'], gap: 1.0 },
+  { t: [27.4, 30.8], pal: 'pink', band: 'DURMAKSIZIN', rows: ['DURMAKSIZIN', '!ÖĞREN.'] },
+  { t: [30.8, 34.8], pal: 'paper', band: 'ZİHİN', rows: ['İYİ YAŞANMIŞ,', 'İYİ BİLGİLENMİŞ', 'BİR', '!ZİHİN'] },
+  { t: [34.8, 39.0], pal: 'black', band: 'MANİPÜLE', rows: ['MANİPÜLE ETMEK,', 'KORKUTMAK', 'VEYA BASTIRMAK', 'AÇISINDAN', 'SON DERECE'], gap: .5 },
+  { t: [39.0, DUR], pal: 'lime', band: 'ZORDUR', rows: ['!ZORDUR.'], final: true },
+];
+const STAR = 'M115 5 L140 80 L220 80 L155 128 L180 205 L115 158 L50 205 L75 128 L10 80 L90 80 Z';
+
+const S = createScene({ duration: DUR, fonts: ['400 100px Anton', '700 34px "Space Grotesk"'] });
+const { tl } = S;
+const rand = mulberry32(66);
+
+S.ready.then(() => {
+  const root = document.getElementById('segs');
+  const bands = [];
+  const jitters = [];
+
+  SEGS.forEach((sg, si) => {
+    const [t0, t1] = sg.t;
+    const P = PAL[sg.pal];
+    const seg = document.createElement('div');
+    seg.className = 'seg';
+    ['--bg', '--ink', '--stk', '--stkInk', '--band', '--bandInk'].forEach((k, i) => seg.style.setProperty(k, P[i]));
+    root.append(seg);
+
+    // dekor: nokta tramı, yıldız, ok, etiketler
+    const dots = document.createElement('div');
+    dots.className = 'dots';
+    Object.assign(dots.style, si % 2 ? { right: '-60px', top: '-60px', transform: 'scaleX(-1) scaleY(-1)' } : { left: '-60px', bottom: '-60px' });
+    seg.append(dots);
+    const star = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    star.setAttribute('viewBox', '0 0 230 230');
+    star.classList.add('star');
+    star.innerHTML = `<path d="${STAR}"/>`;
+    Object.assign(star.style, si % 2 ? { left: '60px', top: '1500px' } : { right: '60px', top: '200px' });
+    seg.append(star);
+    const tagA = document.createElement('div');
+    tagA.className = 'tag box';
+    tagA.textContent = `NO.${String(si + 1).padStart(2, '0')}`;
+    Object.assign(tagA.style, { left: '70px', top: '90px' });
+    const tagB = document.createElement('div');
+    tagB.className = 'tag';
+    tagB.textContent = `${String(si + 1).padStart(2, '0')}/${SEGS.length} ★`;
+    Object.assign(tagB.style, { right: '70px', bottom: '90px' });
+    seg.append(tagA, tagB);
+
+    // kayan şeritler
+    const mkBand = (y, rot, dir) => {
+      const b = document.createElement('div');
+      b.className = 'band';
+      b.style.top = y + 'px';
+      b.style.transform = `rotate(${rot}deg)`;
+      const run = document.createElement('div');
+      run.className = 'run';
+      run.textContent = Array(14).fill(` ${sg.band} ✱`).join('');
+      b.append(run);
+      seg.append(b);
+      bands.push({ run, dir, speed: 260 + rand() * 120, t0, t1 });
+      tl.from(b, { scaleX: 0, duration: .25, ease: 'power4.out', transformOrigin: dir > 0 ? '0 50%' : '100% 50%' }, t0 + .05);
+      return b;
+    };
+    if (!sg.final) {
+      mkBand(sg.rows.length > 4 ? 150 : 300, -7, 1);
+      mkBand(sg.rows.length > 4 ? 1690 : 1540, 5, -1);
+    } else {
+      mkBand(260, -9, 1); mkBand(470, 4, -1); mkBand(1420, -4, 1); mkBand(1620, 8, -1);
+    }
+
+    // ana metin
+    const stack = document.createElement('div');
+    stack.className = 'stack';
+    seg.append(stack);
+    const rows = sg.rows.map((r) => {
+      const el = document.createElement('div');
+      const sticker = r.startsWith('!');
+      el.className = 'row' + (sticker ? ' stk' : '');
+      el.textContent = r.replace(/^!/, '');
+      stack.append(el);
+      // sığdır
+      el.style.fontSize = '100px';
+      const w = el.getBoundingClientRect().width;
+      const target = sticker ? 820 : 940;
+      const max = sg.final ? 330 : (sg.rows.length > 4 ? 150 : 230);
+      el.style.fontSize = Math.min(max, 100 * target / w).toFixed(1) + 'px';
+      if (sticker) el.style.rotate = ((rand() - .5) * 7).toFixed(1) + 'deg';
+      return { el, sticker };
+    });
+    jitters.push({ stack, t0, t1 });
+
+    // sert kesme: segment görünür olur, ilk karede kısa siyah flaş
+    tl.set(seg, { visibility: 'visible' }, t0);
+    if (si > 0) tl.set(SEGS[si - 1].el, { visibility: 'hidden' }, t0);
+    sg.el = seg;
+    tl.fromTo('#flash', { opacity: .9 }, { opacity: 0, duration: .12, ease: 'steps(2)', immediateRender: false }, t0);
+    S.cue(t0, 'cut', { i: si, final: !!sg.final });
+
+    // damga gibi vurulan satırlar
+    const gap = sg.gap ?? .35;
+    rows.forEach((r, ri) => {
+      const at = t0 + .2 + ri * gap;
+      tl.fromTo(r.el, { scale: r.sticker ? 1.6 : 1.35, opacity: 0 }, { scale: 1, opacity: 1, duration: .12, ease: 'steps(3)', immediateRender: false }, at);
+      tl.set(r.el, { opacity: 0 }, 0);
+      if (r.sticker) {
+        tl.fromTo(r.el, { boxShadow: '0px 0px 0 #111', x: 0, y: 0 }, { boxShadow: '18px 18px 0 #111', x: -6, y: -6, duration: .18, ease: 'steps(3)', immediateRender: false }, at + .12);
+      }
+      S.cue(at, r.sticker ? 'stamp' : 'hit', { ri });
+    });
+    // dekor girişleri
+    tl.from(star, { scale: 0, duration: .2, ease: 'steps(3)' }, t0 + .1);
+    tl.to(star, { rotate: 360, duration: (t1 - t0) * 1.2, ease: 'none' }, t0);
+    tl.from([tagA, tagB], { opacity: 0, duration: .1, ease: 'steps(2)', stagger: .1 }, t0 + .15);
+
+    if (sg.final) {
+      tl.to(rows[0].el, { scale: 1.08, duration: DUR - t0 - 1, ease: 'none' }, t0 + .4);
+      [40.6, 42.0].forEach((t) => {
+        tl.to(rows[0].el, { rotate: '+=4', duration: .08, yoyo: true, repeat: 1, ease: 'steps(1)' }, t);
+        S.cue(t, 'stamp', { ri: 0 });
+      });
+    }
+  });
+
+  tl.to('#fade', { opacity: 0, duration: .15, ease: 'steps(2)' }, 0);
+  tl.to('#fade', { opacity: 1, duration: .5, ease: 'steps(3)' }, DUR - .6);
+  tl.set({}, {}, DUR);
+
+  // stop-motion: dekor ve metin saniyede 12 kez hafif titrer, şeritler sürekli kayar
+  S.onDraw((t) => {
+    for (const b of bands) {
+      if (t < b.t0 || t > b.t1) continue;
+      const x = ((t - b.t0) * b.speed * b.dir) % 900;
+      b.run.style.transform = `translateX(${(b.dir > 0 ? -900 : 0) + x}px)`;
+    }
+    const q = Math.floor(t * 12);
+    for (const j of jitters) {
+      if (t < j.t0 || t > j.t1) continue;
+      j.stack.style.transform = `translate(${(hashNoise(q, 1) - .5) * 5}px, ${(hashNoise(q, 2) - .5) * 5}px) rotate(${(hashNoise(q, 3) - .5) * .5}deg)`;
+    }
+  });
+
+  S.finish();
+});
+</script>
+</body>
+</html>

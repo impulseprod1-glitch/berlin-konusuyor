@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>05 — Bauhaus / Swiss</title>
+<style>
+  :root { --paper: #f1eadb; --ink: #141414; --red: #e2372b; --blue: #1d4ea3; --yel: #f2b404; }
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+  #stage { position: absolute; inset: 0; overflow: hidden; background: var(--paper); }
+  #grid { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(20,20,20,.055) 1px, transparent 1px); background-size: 76.67px 100%; background-position: 80px 0; }
+  #grid::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(0deg, rgba(20,20,20,.04) 1px, transparent 1px); background-size: 100% 80px; }
+  #paperTex { position: absolute; inset: 0; mix-blend-mode: multiply; opacity: .5; }
+  .seg { position: absolute; inset: 0; visibility: hidden; }
+  .shape { position: absolute; }
+  .txt { position: absolute; left: 80px; right: 80px; }
+  .ln { overflow: hidden; display: block; padding: .06em 0 .1em; margin: -.06em 0 -.1em; }
+  .ln > span { display: inline-block; font-family: 'Inter'; font-weight: 900; letter-spacing: -.045em; line-height: .98; color: var(--ink); white-space: nowrap; }
+  .hl { position: relative; display: inline-block; padding: 0 .08em; margin: 0 -.02em; z-index: 0; }
+  .hl::before { content: ''; position: absolute; left: 0; right: 0; top: .1em; bottom: .02em; background: var(--c); z-index: -1; transform: scaleX(var(--s, 0)); transform-origin: 0 50%; }
+  .hl.on { color: var(--fg, #fff); }
+  .num { position: absolute; left: 80px; top: 150px; right: 80px; display: flex; align-items: flex-end; gap: 26px; font-family: 'Inter'; font-weight: 900; }
+  .num b { font-size: 110px; line-height: .8; letter-spacing: -.05em; color: var(--red); }
+  .num i { flex: 1; height: 6px; background: var(--ink); transform-origin: 0 50%; margin-bottom: 6px; }
+  .num em { font-style: normal; font-weight: 700; font-size: 34px; letter-spacing: .02em; margin-bottom: -2px; }
+  #wipe { position: absolute; inset: 0; transform: scaleX(0); transform-origin: 0 50%; }
+  #fade { position: absolute; inset: 0; background: var(--paper); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="grid"></div>
+  <canvas id="paperTex" width="1080" height="1920"></canvas>
+  <div id="segs"></div>
+  <div id="wipe"></div>
+  <div id="fade"></div>
+</div>
+
+<script src="/node_modules/gsap/dist/gsap.min.js"></script>
+<script src="shared/stage.js"></script>
+<script>
+const { createScene, mulberry32 } = Stage;
+const C = { r: 'var(--red)', b: 'var(--blue)', y: 'var(--yel)', k: 'var(--ink)', p: 'var(--paper)' };
+const DUR = 46;
+
+/*
+ * Her segment: zaman aralığı, satırlar ("[[kelime|renk]]" vurgulu kelime),
+ * metnin dikey konumu ve geometrik şekiller.
+ * Şekil: [tür, x, y, boyut, renk, giriş, gecikme, ekstra]
+ */
+const SEGS = [
+  { t: [0.6, 4.9], y: 760, lines: ['Tehlikeli', 'derecede', '[[eğitimli|r]] ol.'], shapes: [
+    ['circle', 610, 300, 400, 'r', 'scale', 0], ['square', 150, 420, 200, 'b', 'spin', .3], ['half', 400, 1600, 340, 'y', 'up', .55], ['dot', 860, 1560, 90, 'k', 'scale', .8]] },
+  { t: [4.9, 8.1], y: 820, lines: ['Bilgili bir', '[[insan|b]] ol.'], shapes: [
+    ['half', 540, 1420, 700, 'b', 'up', 0, 180], ['circle', 820, 330, 180, 'k', 'scale', .25], ['bar', 80, 600, 600, 'r', 'right', .4]] },
+  { t: [8.1, 11.3], y: 760, lines: ['Aldatılması', 'daha [[zor.|y|k]]'], shapes: [
+    ['tri', 700, 280, 420, 'k', 'drop', 0], ['bars', 80, 1340, 920, 'r', 'right', .3], ['dot', 220, 380, 120, 'y', 'scale', .5]] },
+  { t: [11.3, 14.5], y: 800, lines: ['Sohbette', 'daha [[keskin.|r]]'], shapes: [
+    ['blade', 540, 560, 1200, 'k', 'slice', 0], ['circle', 820, 1500, 260, 'y', 'scale', .35], ['square', 140, 1500, 150, 'b', 'spin', .55]] },
+  { t: [14.5, 18.0], y: 700, lines: ['Durumları', 'okumada', 'daha [[iyi.|b]]'], shapes: [
+    ['eye', 540, 1500, 420, 'b', 'scale', .2], ['bar', 80, 420, 300, 'y', 'right', 0]] },
+  { t: [18.0, 23.8], y: 470, size: 132, lines: ['Yüzyılların', 'bilgeliği ve', 'bilgisine', 'başvurabilme', 'yeteneğine', '[[sahip.|y|k]]'], shapes: [
+    ['shelf', 80, 1460, 920, 'k', 'right', 1.2]] },
+  { t: [23.8, 27.8], y: 720, lines: ['Daha [[bilgili.|r]]', 'Daha [[ilginç.|b]]', 'Daha [[yetkin.|y|k]]'], gap: 1.0, shapes: [
+    ['square', 80, 320, 160, 'r', 'scale', 0], ['square', 260, 320, 160, 'b', 'scale', 1.0], ['square', 440, 320, 160, 'y', 'scale', 2.0]] },
+  { t: [27.8, 31.2], y: 780, lines: ['Durmaksızın', '[[öğren.|r]]'], shapes: [
+    ['wheel', 540, 1460, 560, 'k', 'spin', 0], ['circle', 800, 330, 160, 'y', 'scale', .3]] },
+  { t: [31.2, 35.3], y: 300, lines: ['İyi yaşanmış,', 'iyi bilgilenmiş', 'bir [[zihin|b]]'], shapes: [
+    ['mind', 540, 1300, 640, '', 'quarters', .5]] },
+  { t: [35.3, 39.6], y: 260, size: 128, lines: ['manipüle etmek,', 'korkutmak', 'veya bastırmak', 'açısından', 'son derece'], gap: .45, shapes: [
+    ['wall', 540, 1460, 0, 'r', 'push', .4]] },
+  { t: [39.6, DUR], y: 860, size: 300, final: true, lines: ['[[zordur.|k|p]]'], shapes: [
+    ['circle', 700, 330, 420, 'r', 'scale', .5], ['square', 120, 1450, 300, 'b', 'spin', .7], ['tri', 650, 1400, 330, 'y', 'drop', .9], ['dot', 940, 1240, 60, 'r', 'scale', 1.2]] },
+];
+
+const S = createScene({ duration: DUR, fonts: ['900 100px Inter', '700 34px Inter'] });
+const { tl } = S;
+
+function richLine(src) {
+  // "[[kelime|renk|yazıRengi]]" -> vurgu bloğu
+  return src.replace(/\[\[([^|\]]+)\|(\w)(?:\|(\w))?\]\]/g, (_, w, c, fg) =>
+    `<span class="hl" style="--c:${C[c]};--fg:${fg ? C[fg] : '#fff'}">${w}</span>`);
+}
+
+function makeShape(seg, [kind, x, y, size, col, enter, delay, extra], t0) {
+  const el = document.createElement('div');
+  el.className = 'shape';
+  const color = C[col];
+  const at = t0 + .1 + delay;
+  const set = (o) => Object.assign(el.style, o);
+  const parts = [];
+  switch (kind) {
+    case 'circle': case 'dot':
+      set({ left: x - size / 2 + 'px', top: y - size / 2 + 'px', width: size + 'px', height: size + 'px', borderRadius: '50%', background: color }); break;
+    case 'square':
+      set({ left: x + 'px', top: y + 'px', width: size + 'px', height: size + 'px', background: color }); break;
+    case 'half':
+      set({ left: x - size / 2 + 'px', top: y - size / 2 + 'px', width: size + 'px', height: size / 2 + 'px', borderRadius: `${size}px ${size}px 0 0`, background: color, transformOrigin: '50% 100%' });
+      if (extra) el.style.rotate = extra + 'deg';
+      break;
+    case 'tri':
+      set({ left: x - size / 2 + 'px', top: y - size / 2 + 'px', width: size + 'px', height: size * .87 + 'px', background: color, clipPath: 'polygon(50% 0, 100% 100%, 0 100%)' }); break;
+    case 'bar':
+      set({ left: x + 'px', top: y + 'px', width: size + 'px', height: '34px', background: color, transformOrigin: '0 50%' }); break;
+    case 'bars':
+      set({ left: x + 'px', top: y + 'px', width: size + 'px', height: '300px' });
+      for (let i = 0; i < 5; i++) { const b = document.createElement('div'); Object.assign(b.style, { position: 'absolute', left: 0, top: i * 62 + 'px', height: '34px', width: (size - i * 150) + 'px', background: i % 2 ? C.k : color, transformOrigin: '0 50%' }); el.append(b); parts.push(b); }
+      break;
+    case 'blade':
+      set({ left: x - size / 2 + 'px', top: y + 'px', width: size + 'px', height: '22px', background: color, rotate: '-24deg' }); break;
+    case 'eye': {
+      set({ left: x - size / 2 + 'px', top: y - size / 2 + 'px', width: size + 'px', height: size + 'px' });
+      const ring = document.createElement('div');
+      Object.assign(ring.style, { position: 'absolute', inset: 0, borderRadius: '50%', border: `34px solid ${C.k}`, boxSizing: 'border-box' });
+      const iris = document.createElement('div');
+      Object.assign(iris.style, { position: 'absolute', left: '28%', top: '28%', width: '44%', height: '44%', borderRadius: '50%', background: color });
+      el.append(ring, iris); parts.push(ring, iris);
+      break;
+    }
+    case 'shelf':
+      set({ left: x + 'px', top: y + 'px', width: size + 'px', height: '360px' });
+      [['r', 120, 300], ['k', 70, 250], ['b', 150, 330], ['y', 90, 280], ['k', 60, 220], ['r', 110, 310], ['b', 80, 260], ['y', 140, 300]].reduce((acc, [c, w, h]) => {
+        const b = document.createElement('div');
+        Object.assign(b.style, { position: 'absolute', left: acc + 'px', bottom: 0, width: w - 8 + 'px', height: h + 'px', background: C[c], transformOrigin: '50% 100%' });
+        el.append(b); parts.push(b);
+        return acc + w;
+      }, 0);
+      break;
+    case 'wheel': {
+      set({ left: x - size / 2 + 'px', top: y - size / 2 + 'px', width: size + 'px', height: size + 'px', borderRadius: '50%', background: `conic-gradient(${C.r} 0 25%, ${C.k} 0 50%, ${C.y} 0 75%, ${C.b} 0)` });
+      const hole = document.createElement('div');
+      Object.assign(hole.style, { position: 'absolute', left: '30%', top: '30%', width: '40%', height: '40%', borderRadius: '50%', background: 'var(--paper)' });
+      el.append(hole);
+      break;
+    }
+    case 'mind': {
+      set({ left: x - size / 2 + 'px', top: y - size / 2 + 'px', width: size + 'px', height: size + 'px' });
+      [['r', 0, 0, '100% 0 0 0'], ['b', 1, 0, '0 100% 0 0'], ['y', 0, 1, '0 0 0 100%'], ['k', 1, 1, '0 0 100% 0']].forEach(([c, cx, cy, br]) => {
+        const q = document.createElement('div');
+        Object.assign(q.style, { position: 'absolute', left: cx * 50 + '%', top: cy * 50 + '%', width: '50%', height: '50%', background: C[c], borderRadius: br.split(' ').map((v) => v === '100%' ? size / 2 + 'px' : 0).join(' ') });
+        el.append(q); parts.push(q);
+      });
+      break;
+    }
+    case 'wall': {
+      set({ left: 0, top: y - 200 + 'px', width: '1080px', height: '400px' });
+      const red = document.createElement('div');
+      Object.assign(red.style, { position: 'absolute', left: '460px', top: '40px', width: '160px', height: '320px', background: C.r });
+      el.append(red); parts.push(red);
+      for (let i = 0; i < 3; i++) {
+        const b = document.createElement('div');
+        const left = i % 2 === 0;
+        Object.assign(b.style, { position: 'absolute', top: 40 + i * 110 + 'px', height: '90px', width: '400px', background: C.k, left: left ? '60px' : '620px' });
+        b.dataset.side = left ? -1 : 1;
+        el.append(b); parts.push(b);
+      }
+      break;
+    }
+  }
+  seg.append(el);
+
+  // giriş animasyonları — mekanik, keskin
+  const E = 'expo.out';
+  const hit = (t, k = 'shape') => S.cue(t, k, { kind, col });
+  if (enter === 'scale') { tl.from(el, { scale: 0, duration: .55, ease: 'back.out(1.6)' }, at); hit(at); }
+  if (enter === 'spin') { tl.from(el, { scale: 0, rotate: -180, duration: .8, ease: E }, at); hit(at); }
+  if (enter === 'up') { tl.from(el, { yPercent: 120, duration: .7, ease: E }, at); hit(at); }
+  if (enter === 'drop') { tl.from(el, { y: -700, duration: .65, ease: 'bounce.out' }, at); hit(at + .45, 'thud'); }
+  if (enter === 'right') {
+    const targets = parts.length ? parts : [el];
+    if (kind === 'shelf') targets.forEach((b, i) => { tl.from(b, { scaleY: 0, duration: .45, ease: 'back.out(2)' }, at + i * .12); hit(at + i * .12); });
+    else { tl.from(targets, { scaleX: 0, transformOrigin: '0 50%', duration: .6, ease: E, stagger: .1 }, at); hit(at); }
+  }
+  if (enter === 'slice') {
+    tl.from(el, { scaleX: 0, duration: .35, ease: 'power4.out', transformOrigin: '0 50%' }, at); S.cue(at, 'slice', {});
+  }
+  if (enter === 'quarters') {
+    const off = [[-1, -1], [1, -1], [-1, 1], [1, 1]];
+    parts.forEach((q, i) => { tl.from(q, { x: off[i][0] * 500, y: off[i][1] * 500, rotate: off[i][0] * 90, duration: .7, ease: E }, at + i * .18); hit(at + i * .18); });
+    tl.to(el, { rotate: 360, duration: 3.2, ease: 'power2.inOut' }, at + 1.0);
+  }
+  if (enter === 'push') {
+    const [red, ...blocks] = parts;
+    tl.from(red, { scaleY: 0, duration: .45, ease: E, transformOrigin: '50% 100%' }, at); hit(at);
+    blocks.forEach((b, i) => {
+      const side = Number(b.dataset.side);
+      const tt = at + .6 + i * .55;
+      tl.from(b, { x: side * 900, duration: .5, ease: 'power3.in' }, tt);
+      tl.to(b, { x: side * 40, duration: .35, ease: 'back.out(3)' }, tt + .5);
+      S.cue(tt + .5, 'thud', {});
+      tl.to(red, { scaleX: 1.06, duration: .08, yoyo: true, repeat: 1, ease: 'power1.inOut' }, tt + .5);
+    });
+  }
+  if (kind === 'wheel') tl.to(el, { rotate: 720, duration: 3.4, ease: 'none' }, at + .5);
+  if (kind === 'eye') tl.to(parts[1], { keyframes: [{ x: -60, duration: .5 }, { x: 60, duration: .7 }, { x: 0, duration: .5 }], ease: 'power2.inOut' }, at + .8);
+  return el;
+}
+
+S.ready.then(() => {
+  const root = document.getElementById('segs');
+  // kâğıt dokusu
+  {
+    const g = document.getElementById('paperTex').getContext('2d');
+    const rand = mulberry32(3);
+    const img = g.createImageData(1080, 1920);
+    for (let i = 0; i < img.data.length; i += 4) { const v = 225 + rand() * 30; img.data[i] = v; img.data[i + 1] = v; img.data[i + 2] = v - 4; img.data[i + 3] = 255; }
+    g.putImageData(img, 0, 0);
+  }
+
+  tl.to('#fade', { opacity: 0, duration: .4 }, 0);
+
+  SEGS.forEach((sg, si) => {
+    const [t0, t1] = sg.t;
+    const seg = document.createElement('div');
+    seg.className = 'seg';
+    root.append(seg);
+    tl.set(seg, { visibility: 'visible' }, t0);
+    S.cue(t0, 'seg', { i: si, final: !!sg.final });
+
+    // başlık numarası
+    if (!sg.final) {
+      const num = document.createElement('div');
+      num.className = 'num';
+      num.innerHTML = `<b>${String(si + 1).padStart(2, '0')}</b><i></i><em>/ ${SEGS.length}</em>`;
+      seg.append(num);
+      tl.from(num.querySelector('b'), { yPercent: 100, opacity: 0, duration: .45, ease: 'expo.out' }, t0);
+      tl.from(num.querySelector('i'), { scaleX: 0, duration: .7, ease: 'expo.inOut' }, t0);
+      tl.from(num.querySelector('em'), { opacity: 0, duration: .3 }, t0 + .4);
+    }
+
+    // metin
+    const txt = document.createElement('div');
+    txt.className = 'txt';
+    txt.style.top = sg.y + 'px';
+    const size = sg.size ?? 170;
+    sg.lines.forEach((l) => {
+      const ln = document.createElement('div');
+      ln.className = 'ln';
+      ln.innerHTML = `<span style="font-size:${size}px">${richLine(l)}</span>`;
+      txt.append(ln);
+    });
+    seg.append(txt);
+    // en geniş satır 920px'i geçmesin
+    const spans = [...txt.querySelectorAll('.ln > span')];
+    const widest = Math.max(...spans.map((s) => s.getBoundingClientRect().width));
+    if (widest > 920) spans.forEach((s) => (s.style.fontSize = (size * 920 / widest).toFixed(1) + 'px'));
+    if (sg.final) { txt.style.textAlign = 'left'; }
+
+    const gap = sg.gap ?? .16;
+    spans.forEach((s, li) => {
+      const at = t0 + .15 + li * gap;
+      tl.from(s, { yPercent: 105, duration: .6, ease: 'expo.out' }, at);
+      S.cue(at, 'line', { li });
+      s.querySelectorAll('.hl').forEach((h) => {
+        const ht = at + .45;
+        tl.fromTo(h, { '--s': 0 }, { '--s': 1, duration: .35, ease: 'expo.inOut' }, ht);
+        tl.set(h, { attr: { class: 'hl on' } }, ht + .12);
+        S.cue(ht, 'hl', { final: !!sg.final });
+      });
+    });
+
+    // şekiller
+    sg.shapes.forEach((sh) => makeShape(seg, sh, t0));
+
+    // çıkış
+    if (!sg.final) {
+      const out = t1 - .4;
+      tl.to(spans, { yPercent: -105, duration: .35, ease: 'power3.in', stagger: .03 }, out);
+      tl.to(seg.querySelectorAll(':scope > .shape'), { scale: 0, rotate: 30, duration: .35, ease: 'power3.in', stagger: .03 }, out);
+      tl.to(seg.querySelector('.num'), { opacity: 0, duration: .25 }, out + .1);
+      tl.set(seg, { visibility: 'hidden' }, t1);
+      S.cue(out, 'out', {});
+    }
+  });
+
+  // büyük geçiş perdeleri: bölüm aralarında renkli silme
+  const wipe = document.getElementById('wipe');
+  [[17.6, C.b], [27.4, C.r], [35.0, C.y], [39.2, C.k]].forEach(([t, c], i) => {
+    tl.set(wipe, { background: c, transformOrigin: '0 50%' }, t);
+    tl.fromTo(wipe, { scaleX: 0 }, { scaleX: 1, duration: .32, ease: 'power3.in', immediateRender: false }, t);
+    tl.set(wipe, { transformOrigin: '100% 50%' }, t + .4);
+    tl.to(wipe, { scaleX: 0, duration: .38, ease: 'power3.out' }, t + .4);
+    S.cue(t, 'wipe', { i });
+  });
+
+  // final: noktanın zıplaması ve kapanış
+  S.cue(DUR - 2.0, 'end', {});
+  tl.to('#fade', { opacity: 1, duration: 1.2, ease: 'power1.in' }, DUR - 1.3);
+  tl.set({}, {}, DUR);
+
+  S.finish();
+});
+</script>
+</body>
+</html>
