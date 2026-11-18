@@ -548,18 +548,42 @@ def v7(cues):  # domino, C major / A minor 100 BPM
                      (61, 77.2, {'pad', 'arp', 'kick'}), (77.2, 86.2, {'pad', 'heart'}), (86.2, 90, set())], H)
 
 
-def v8(cues):  # phone, lo-fi 104 BPM
-    H = {'ding': lambda m, c: (m.add(bell(88, 1.2, idx=0.8, decay=4), c['t'], gain=0.3 * c.get('gain', 1), send=0.3),
-                               m.add(bell(93, 1.2, idx=0.8, decay=4), c['t'] + 0.09, gain=0.26 * c.get('gain', 1), send=0.3)),
-         'alert': lambda m, c: m.add(beeps(3, 91, 86, 0.11), c['t'], gain=0.55, send=0.2),
+def v8(cues):  # phone, lo-fi 104 BPM; the bed thickens day by day
+    NOTE = {'news': (88, 93, 96), 'mail': (84, 88), 'chat': (91, 88), 'air': (81, 86, 89), 'hr': (86, 91),
+            'bank': (72, 76), 'pay': (79, 84), 'bk': (84, 88, 91, 96)}
+
+    def ding(m, c):
+        g = c.get('gain', 1.0)
+        for k, n in enumerate(NOTE.get(c.get('app'), (88, 93))):
+            m.add(bell(n, 1.2, idx=0.8, decay=4.5), c['t'] + k * 0.085, gain=0.28 * g, pan=0.15, send=0.3)
+
+    def buzz(m, tt, n=2):  # haptic: short low tonal pulses
+        for k in range(n):
+            x = np.sin(2 * np.pi * 150 * tvec(0.09)) * np.sin(np.pi * np.linspace(0, 1, int(0.09 * SR)))
+            m.add(x * 0.35, tt + k * 0.13, send=0)
+
+    def alert(m, c):
+        m.add(beeps(3, 91, 86, 0.11), c['t'], gain=0.5, send=0.2); buzz(m, c['t'])
+
+    def rewind(m, c):
+        m.add(sweep(1500, 140, 2.6, 'mid'), c['t'], gain=0.45, send=0.4)
+        for k in range(14):
+            m.add(tick(96 - k, 0.04), c['t'] + 2.4 * (1 - (1 - k / 14) ** 1.5), gain=0.18, pan=0.3, send=0.1)
+
+    H = {'wake': lambda m, c: m.add(sweep(400, 900, 0.4, 'mid'), c['t'], gain=0.2, send=0.4),
+         'ding': ding, 'alert': alert, 'rewind': rewind,
+         'marker': lambda m, c: m.add(sweep(1200, 2200, 0.35, 'mid'), c['t'], gain=0.08, send=0.2),
          'swipe': lambda m, c: m.add(sweep(300, 1400, 0.45, 'mid'), c['t'], gain=0.3, send=0.4),
-         'rewind': lambda m, c: m.add(sweep(1400, 160, 2.6, 'mid'), c['t'], gain=0.45, send=0.4),
-         'pile': lambda m, c: m.add(boom(1.6, 0.8), c['t'] + 0.5, send=0.3),
-         'hit': lambda m, c: m.add(boom(1.6, 0.9), c['t'], send=0.3),
-         'select': lambda m, c: m.add(pluck(76, 0.4, decay=10), c['t'], gain=0.4, send=0.3),
+         'pile': lambda m, c: m.add(boom(1.6, 0.7), c['t'] + 0.5, send=0.3),
+         'pop': lambda m, c: m.add(pluck(76 + 3 * (int(c['t'] * 10) % 4), 0.4, decay=9), c['t'], gain=0.4, send=0.3),
+         'hit': lambda m, c: (m.add(boom(1.4, 0.8), c['t'], send=0.3), buzz(m, c['t'], 1)),
+         'select': lambda m, c: (m.add(pluck(76, 0.4, decay=10), c['t'], gain=0.4, send=0.3), buzz(m, c['t'], 1)),
          'end': lambda m, c: chime(m, c['t'])}
     return text_bed(cues, 104, [45, 41, 48, 43], [[57, 60, 64], [53, 57, 60], [55, 60, 64], [55, 59, 62]],
-                    [(0, 6.6, {'pad'}), (6.6, 60.5, {'pad', 'kick', 'hat', 'pizz'}), (60.5, 69, {'pad', 'heart'}), (69, 85.6, {'pad', 'bell', 'kick'}), (85.6, 90, set())], H)
+                    [(0, 3.9, {'pad', 'kick'}), (3.9, 6.6, set()),
+                     (6.6, 17, {'pad', 'pizz'}), (17, 30.2, {'pad', 'pizz', 'kick'}), (30.2, 42, {'pad', 'pizz', 'kick', 'hat'}),
+                     (42, 52, {'pad', 'kick', 'hat', 'bass16'}), (52, 60.5, {'pad', 'heart', 'bass16'}),
+                     (60.5, 70.6, {'pad', 'heart'}), (70.6, 86, {'pad', 'bell', 'kick'}), (86, 90, {'pad'})], H)
 
 
 def with_voice(name, builder):
