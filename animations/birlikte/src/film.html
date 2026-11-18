@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Birlikte Büyüttük</title>
+<style>
+/*__FONTS__*/
+:root{
+  /* tek görünüm: koyu zemin üzerinde 9:16 sahne, ortalanmış */
+  --ink:#0c0d12; --cream:#f4eee3; --red:#e50914; --gold:#f7c443; --teal:#0fb5a5; --page:#050505;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--page);overflow:hidden}
+body{font-family:'Archivo Variable','Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--cream)}
+#fit{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding-block:max(12px,env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body.render #fit{padding:0}
+#box{position:relative;flex:none}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0;overflow:hidden;background:var(--ink);cursor:pointer;
+  font-variant-numeric:tabular-nums;font-kerning:normal;user-select:none;-webkit-user-select:none}
+#shk{position:absolute;inset:0}
+.scene{position:absolute;inset:0;visibility:hidden;overflow:hidden}
+.cam{position:absolute;inset:0;transform-origin:50% 50%}
+.abs{position:absolute}
+.bg-ink{background:var(--ink);color:var(--cream)}
+.bg-cream{background:var(--cream);color:var(--ink)}
+.bg-red{background:var(--red);color:var(--cream)}
+.bg-gold{background:var(--gold);color:var(--ink)}
+.bg-teal{background:var(--teal);color:var(--cream)}
+.c-red{color:var(--red)} .c-gold{color:var(--gold)} .c-teal{color:var(--teal)} .c-cream{color:var(--cream)} .c-ink{color:var(--ink)}
+
+/* line art */
+svg.art{position:absolute;overflow:visible;fill:none;stroke:currentColor;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.d{stroke-dasharray:1 1;stroke-dashoffset:1;opacity:0}
+.fill{fill:currentColor;stroke:none}
+
+/* type */
+.big{position:absolute;font-weight:900;font-stretch:118%;letter-spacing:-.025em;line-height:.9;white-space:nowrap;transform-origin:50% 55%}
+.fit{display:inline-block;white-space:nowrap}
+.serif{font-family:'Playfair Display Variable',Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-.01em;line-height:1.08}
+.cap{font-weight:750;font-stretch:112%;letter-spacing:.2em;font-size:30px;line-height:1.3;white-space:nowrap}
+.body{font-weight:700;font-stretch:104%;letter-spacing:-.01em;line-height:1.12}
+.src{position:absolute;left:80px;font-weight:500;font-size:24px;letter-spacing:.06em;opacity:.6;white-space:nowrap}
+.ln{display:block;overflow:hidden;padding:.06em 0 .12em;margin:-.06em 0 -.12em}
+.ln>span{display:inline-block;will-change:transform}
+.ol{-webkit-text-stroke:4px currentColor;-webkit-text-fill-color:transparent;paint-order:stroke fill}
+.s4chip.chip{position:relative;font-size:29px;padding:15px 26px 13px}
+.chip{position:absolute;display:inline-block;padding:16px 30px 14px;border:4px solid currentColor;border-radius:999px;font-weight:800;font-stretch:112%;letter-spacing:.14em;font-size:34px;white-space:nowrap}
+.chip.solid{border-color:transparent}
+.tag{position:absolute;display:inline-flex;align-items:center;gap:18px}
+.tag i{display:inline-block;width:64px;height:5px;background:currentColor;border-radius:3px;transform-origin:0 50%}
+.hl{position:relative;display:inline-block;padding:0 .18em;margin:0 -.06em}
+.hl>b{position:absolute;inset:.04em 0 .02em;background:var(--red);transform-origin:0 50%;border-radius:8px}
+.hl>span{position:relative;color:var(--cream)}
+
+/* decor */
+.dots{position:absolute;inset:-60px;opacity:.16;background-image:radial-gradient(currentColor 2.2px,transparent 2.6px);background-size:54px 54px}
+.grid{position:absolute;inset:-60px;opacity:.1;background-image:linear-gradient(currentColor 2px,transparent 2px),linear-gradient(90deg,currentColor 2px,transparent 2px);background-size:108px 108px}
+.fl{position:absolute;opacity:.5}
+.marq{position:absolute;left:0;white-space:nowrap;font-weight:900;font-stretch:125%;font-size:330px;letter-spacing:-.02em;line-height:1;opacity:.16}
+
+/* chrome (always on top) */
+#hud{position:absolute;inset:0;pointer-events:none;color:var(--cream)}
+#hud .wm{position:absolute;left:80px;top:118px;font-weight:900;font-stretch:112%;letter-spacing:.12em;font-size:27px}
+#hud .wm em{font-style:normal;color:var(--red)}
+#hud.mono .wm em{color:inherit;opacity:.55}
+#hud .yr{position:absolute;right:80px;top:118px;font-weight:700;letter-spacing:.2em;font-size:25px}
+#hud .chap{position:absolute;left:80px;bottom:112px;font-weight:700;letter-spacing:.2em;font-size:25px;white-space:nowrap}
+#hud .bar{position:absolute;left:80px;right:80px;bottom:86px;height:4px;background:currentColor;opacity:.22;border-radius:2px}
+#hud .barf{position:absolute;left:80px;right:80px;bottom:86px;height:4px;background:currentColor;border-radius:2px;transform-origin:0 50%;transform:scaleX(0)}
+
+/* fx */
+#fx{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+#fx .bar{position:absolute;left:-600px;top:-500px;width:2280px;height:2920px;visibility:hidden}
+#iris{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;visibility:hidden}
+#flash{position:absolute;inset:0;opacity:0}
+#fx .bl{position:absolute;left:0;width:1080px;height:385px;background:var(--ink);transform-origin:50% 0;visibility:hidden}
+#fx .door{position:absolute;left:0;width:1080px;height:962px;background:var(--ink);visibility:hidden}
+#grain{position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-size:256px 256px}
+
+/* ───────── stil denemeleri: ?style=neon|riso|sketch|swiss|paper ───────── */
+.st-neon{--ink:#05060c;--cream:#eafcff;--red:#ff2e6c;--gold:#ffe45c;--teal:#22f3e3}
+.st-neon .scene,.st-neon .card,.st-neon .p{background:var(--ink)!important}
+.st-neon .bg-cream{color:var(--cream)}.st-neon .bg-red{color:var(--red)}.st-neon .bg-gold{color:var(--gold)}.st-neon .bg-teal{color:var(--teal)}
+.st-neon .c-ink{color:var(--cream)}
+.st-neon svg.art,.st-neon .big,.st-neon .serif{filter:drop-shadow(0 0 10px currentColor) drop-shadow(0 0 34px currentColor)}
+.st-neon #hud{color:var(--cream)!important}.st-neon .chip.solid{background:transparent!important;border-color:currentColor}
+
+.st-riso{--ink:#1b2a6b;--cream:#efe5cf;--red:#e9472b;--gold:#f3b52f;--teal:#2f8f86}
+.st-riso .bg-red{background:var(--red)!important}.st-riso .bg-ink{background:var(--ink)!important}
+.st-riso svg.art,.st-riso .big{filter:url(#fx-rough)}
+.st-riso .big{text-shadow:7px 6px 0 rgba(233,71,43,.5)}
+.st-riso .bg-red .big,.st-riso .c-red{text-shadow:7px 6px 0 rgba(27,42,107,.45)}
+.st-riso #grain{opacity:.5;mix-blend-mode:multiply}
+.st-riso .dots{opacity:.34;background-size:26px 26px;background-image:radial-gradient(currentColor 4px,transparent 4.6px)}
+
+.st-sketch{--ink:#24272c;--cream:#faf6ec;--red:#d8362c;--gold:#f5c400;--teal:#2b6cb0}
+.st-sketch .scene,.st-sketch .card,.st-sketch .p{background:var(--cream) repeating-linear-gradient(transparent 0 78px,rgba(43,108,176,.16) 78px 80px)!important;color:var(--ink)!important}
+.st-sketch .c-cream{color:var(--ink)}.st-sketch #hud{color:var(--ink)!important}
+.st-sketch svg.art,.st-sketch .big,.st-sketch .serif,.st-sketch .body{filter:url(#fx-wobble)}
+.st-sketch svg.art{stroke-width:4.5px!important}
+.st-sketch .big{-webkit-text-stroke:3px currentColor;-webkit-text-fill-color:transparent;background:repeating-linear-gradient(-58deg,currentColor 0 3px,transparent 3px 11px);-webkit-background-clip:text;background-clip:text}
+.st-sketch .dots,.st-sketch .grid{display:none}.st-sketch .chip.solid{background:var(--gold)!important;color:var(--ink)!important}
+
+.st-swiss{--ink:#111;--cream:#fff;--red:#e50914;--gold:#fff;--teal:#e50914}
+.st-swiss .bg-gold{color:var(--ink)}.st-swiss .bg-gold .c-ink,.st-swiss .bg-cream .c-ink{color:#111}
+.st-swiss svg.art{stroke-width:3px!important}
+.st-swiss .dots,.st-swiss .grid,.st-swiss #grain{display:none}
+.st-swiss .big{font-stretch:100%;letter-spacing:-.045em}
+.st-swiss .bg-gold .c-gold,.st-swiss .bg-ink .c-gold,.st-swiss .bg-teal .c-gold{color:#fff}
+.st-swiss .bg-ink .c-teal{color:var(--red)}
+
+.st-paper{--ink:#22223b;--cream:#fff3e0;--red:#ef476f;--gold:#ffd166;--teal:#06d6a0}
+.st-paper .bg-red{background:var(--red)!important}.st-paper .bg-ink{background:var(--ink)!important}
+.st-paper svg.art .d{fill:currentColor;fill-opacity:.22}
+.st-paper svg.art,.st-paper .big,.st-paper .chip{filter:drop-shadow(0 12px 0 rgba(0,0,0,.2))}
+.st-paper .scene::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.35),transparent 45%);pointer-events:none}
+
+/* player UI */
+#ui{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5%;background:rgba(5,5,5,.6);color:var(--cream);border:0;font:inherit;width:100%;text-align:center;cursor:pointer;z-index:10;transition:opacity .25s;-webkit-tap-highlight-color:transparent}
+#ui.off{opacity:0;pointer-events:none}
+#ui .btn{width:22%;aspect-ratio:1;border-radius:50%;border:2px solid var(--cream);display:grid;place-items:center}
+#ui .btn svg{width:38%;fill:var(--cream);margin-left:8%}
+#ui:focus-visible{outline:3px solid var(--gold);outline-offset:-6px}
+#ui .t{font-weight:900;font-stretch:112%;letter-spacing:.14em;font-size:max(13px,2.2vh)}
+#ui .t em{font-style:normal;color:var(--red)}
+#ui .s{font-weight:500;font-size:max(12px,1.6vh);opacity:.7;letter-spacing:.04em;padding:0 8%}
+#ctl{position:absolute;left:0;right:0;bottom:0;height:5px;background:rgba(244,238,227,.18);z-index:11;cursor:pointer}
+#ctl i{display:block;height:100%;width:0;background:var(--red)}
+body.render #ui,body.render #ctl{display:none}
+body.render #stage{cursor:default}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><filter id="fx-rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter><filter id="fx-wobble" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".018" numOctaves="2" seed="7" id="wobbleNoise"/><feDisplacementMap in="SourceGraphic" scale="11"/></filter></svg>
+<div id="fit"><div id="box">
+<div id="stage" lang="tr">
+ <div id="shk">
+
+ <!-- 1 · KANCA -->
+ <section class="scene bg-ink" id="s1" style="visibility:visible">
+  <div class="cam">
+   <div class="dots"></div>
+   <div class="big" id="s1a" style="left:80px;top:400px"><span class="fit" data-w="700">BERLİN'İ</span></div>
+   <div class="big ol" id="s1b" style="left:80px;top:560px"><span class="fit" data-w="700">BERLİN</span></div>
+   <div class="big" id="s1c" style="left:80px;top:745px"><span class="fit" data-w="620">YAPAN</span></div>
+   <div class="big c-red" id="s1d" style="left:80px;top:915px;transform-origin:20% 60%"><span class="fit" data-w="900">KİM?</span></div>
+   <svg class="art skyline c-cream" id="s1sky" style="left:0;top:1322px" width="1080" height="430" viewBox="0 0 1080 430"></svg>
+  </div>
+ </section>
+
+ <!-- 2 · 1961 -->
+ <section class="scene bg-cream" id="s2">
+  <div class="cam">
+   <div class="grid"></div>
+   <div class="tag cap c-red" id="s2tag" style="left:80px;top:262px"><i></i><span>NASIL BAŞLADI?</span></div>
+   <div class="big" id="s2a" style="left:80px;top:330px"><span class="ln"><span class="fit" data-w="560">30 EKİM</span></span></div>
+   <div class="big c-red" id="s2b" style="left:74px;top:470px"><span class="fit" data-w="930">1961</span></div>
+   <svg class="art" id="s2route" style="left:80px;top:835px;stroke-width:6" width="920" height="360" viewBox="0 0 920 360">
+     <path class="d c-red" id="s2arc" d="M800 268 C 660 40, 320 10, 122 92"/>
+     <circle class="fill c-ink pop" cx="800" cy="268" r="15"/>
+     <circle class="fill c-red pop" cx="122" cy="92" r="15"/>
+     <circle class="d c-red ring" cx="122" cy="92" r="34" style="stroke-width:4"/>
+   </svg>
+   <div class="cap abs s2lab" style="left:724px;top:1133px">İSTANBUL</div>
+   <div class="cap abs s2lab c-red" style="left:150px;top:855px">MÜNİH</div>
+   <div class="abs" id="s2track" style="left:0;top:1418px;width:1080px;height:6px;background:var(--ink);border-radius:3px;transform-origin:100% 50%"></div>
+   <div class="abs" id="s2ties" style="left:0;top:1432px;width:1300px;height:6px;opacity:.35;background:repeating-linear-gradient(90deg,var(--ink) 0 26px,transparent 26px 64px)"></div>
+   <svg class="art" id="s2train" style="left:0;top:1226px" width="760" height="210" viewBox="0 0 760 210"></svg>
+   <div class="serif abs" id="s2c" style="left:80px;top:1470px;font-size:84px"><span class="ln"><span>Bir bavul.</span></span><span class="ln"><span class="c-red">Bir umut.</span></span></div>
+   <svg class="art c-ink" id="s2case" style="left:770px;top:1474px;stroke-width:6" width="220" height="198" viewBox="0 0 200 180">
+     <rect class="d" x="18" y="52" width="164" height="112" rx="16"/>
+     <path class="d" d="M70 52 V32 Q70 20 82 20 H118 Q130 20 130 32 V52"/>
+     <path class="d c-red" d="M58 52 V164 M142 52 V164"/>
+     <circle class="d c-red" cx="100" cy="108" r="16"/>
+   </svg>
+   <div class="body abs" id="s2d" style="left:80px;top:1668px;font-size:58px;white-space:nowrap"><span class="hl"><b></b><span>“MİSAFİR İŞÇİ”</span></span> dediler.</div>
+  </div>
+ </section>
+
+ <!-- 3 · ALMANYA / 2,6 MİLYON -->
+ <section class="scene bg-red" id="s3">
+  <div class="cam">
+   <div class="dots"></div>
+   <div class="big s3w" style="left:80px;top:800px"><span class="fit" data-w="920">KALDIK.</span></div>
+   <div class="big s3w" style="left:80px;top:800px"><span class="fit" data-w="920">ÇALIŞTIK.</span></div>
+   <div class="big s3w" style="left:80px;top:800px"><span class="fit" data-w="920">BÜYÜDÜK.</span></div>
+   <div id="s3n">
+    <div class="tag cap" id="s3tag" style="left:80px;top:262px"><i></i><span>BUGÜN ALMANYA'DA</span></div>
+    <div class="big" id="s3num" style="left:66px;top:330px"><span class="fit" data-w="720" data-keep="1" id="s3cnt">2,6</span></div>
+    <div class="abs" id="s3badge" style="left:800px;top:404px;width:200px;height:200px;border:5px solid currentColor;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+     <div class="cap" style="font-size:19px;letter-spacing:.16em">NÜFUSUN</div>
+     <div style="font-weight:900;font-stretch:118%;font-size:56px;line-height:1;letter-spacing:-.02em">%3,2</div>
+    </div>
+    <div class="big c-ink" id="s3mil" style="left:80px;top:725px"><span class="fit" data-w="920">MİLYON</span></div>
+    <div class="abs" id="s3ppl" style="left:80px;top:965px;width:920px"></div>
+    <div class="cap abs" id="s3leg" style="left:80px;top:1196px;font-size:24px;opacity:.85">HER FİGÜR = 100.000 KİŞİ</div>
+    <div class="body abs" id="s3cap" style="left:80px;top:1272px;font-size:66px"><span class="ln"><span>Türkiye kökenli insan</span></span><span class="ln"><span>bu ülkede yaşıyor.</span></span></div>
+    <div class="chip solid bg-ink" id="s3chip" style="left:80px;top:1480px;font-size:30px;line-height:1.35;border-radius:28px;padding:22px 34px 20px;color:var(--gold)">ALMANYA'NIN EN BÜYÜK<br>GÖÇMEN KÖKENLİ TOPLULUĞU</div>
+    <div class="src" style="top:1650px">Kaynak: Destatis · Mikrozensus 2025</div>
+   </div>
+  </div>
+ </section>
+
+ <!-- 4 · BERLİN -->
+ <section class="scene bg-ink" id="s4">
+  <div class="cam">
+   <div class="marq c-teal ol" id="s4marq" style="top:205px">BERLİN · BERLİN · BERLİN · BERLİN ·</div>
+   <div class="tag cap c-teal" id="s4tag" style="left:80px;top:590px"><i></i><span>VE BAŞKENT · YAKLAŞIK</span></div>
+   <div class="big c-gold" id="s4num" style="left:74px;top:655px"><span class="fit" data-w="930" data-keep="1" id="s4cnt">200.000</span></div>
+   <div class="body abs" id="s4cap" style="left:80px;top:880px;font-size:66px"><span class="ln"><span>Türkiye kökenli Berlinli.</span></span></div>
+   <div class="abs" style="left:80px;top:1010px;display:flex;gap:18px">
+    <div class="chip s4chip c-cream">KREUZBERG</div><div class="chip s4chip c-cream">NEUKÖLLN</div><div class="chip s4chip c-cream">WEDDING</div>
+   </div>
+   <div class="serif abs c-cream" id="s4line" style="left:80px;top:1140px;font-size:64px"><span class="ln"><span>Türkiye dışındaki en büyük</span></span><span class="ln"><span>Türk topluluklarından <span class="c-teal">biri.</span></span></span></div>
+   <svg class="art skyline c-teal" id="s4sky" style="left:-40px;top:1296px;stroke-width:5.5" width="1160" height="462" viewBox="0 0 1080 430"></svg>
+   <div class="src" style="top:1316px;opacity:.45">Tahmini değer</div>
+  </div>
+ </section>
+
+ <!-- 5 · EKONOMİ -->
+ <section class="scene bg-gold" id="s5">
+  <div class="cam">
+   <div class="grid"></div>
+   <div id="s5t">
+    <div class="tag cap" id="s5tag" style="left:80px;top:700px"><i></i><span>RAKAMLAR KONUŞSUN</span></div>
+    <div class="big" id="s5title" style="left:76px;top:770px"><span class="fit" data-w="930">EKONOMİ</span></div>
+    <svg class="art c-red" style="left:80px;top:990px;stroke-width:12" width="920" height="40" viewBox="0 0 920 40"><path class="d" id="s5ul" d="M6 22 C 200 2, 420 38, 640 16 S 860 10, 914 20"/></svg>
+   </div>
+   <!-- A -->
+   <div class="abs p bg-gold" id="s5A" style="inset:0;visibility:hidden">
+    <div class="grid"></div>
+    <svg class="art c-ink" id="s5shop" style="left:210px;top:290px;stroke-width:5" width="660" height="572" viewBox="0 0 300 260">
+      <path class="d" d="M22 92 L44 30 H256 L278 92 Z"/>
+      <path class="d c-red" d="M22 92 q32 40 64 0 q32 40 64 0 q32 40 64 0 q32 40 64 0"/>
+      <path class="d" d="M36 112 V240 H264 V112"/>
+      <rect class="d" x="60" y="142" width="62" height="98" rx="4"/>
+      <rect class="d" x="146" y="142" width="96" height="62" rx="4"/>
+      <path class="d c-red" d="M110 192 v8 M160 190 L182 160 M176 190 L198 160"/>
+      <path class="d" d="M10 240 H290"/>
+    </svg>
+    <div class="big c-ink" style="left:74px;top:930px"><span class="fit num" data-w="930" data-keep="1" id="s5a">80.000</span></div>
+    <div class="big c-red lab" style="left:80px;top:1165px"><span class="fit" data-w="920">GİRİŞİMCİ</span></div>
+    <div class="serif abs sub" style="left:80px;top:1390px;font-size:70px"><span class="ln"><span>Bakkaldan teknoloji</span></span><span class="ln"><span>şirketine.</span></span></div>
+   </div>
+   <!-- B -->
+   <div class="abs p bg-ink" id="s5B" style="inset:0;visibility:hidden;color:var(--gold)">
+    <div class="dots"></div>
+    <svg class="art c-gold" id="s5gear" style="left:240px;top:270px;stroke-width:5" width="600" height="600" viewBox="0 0 300 300"></svg>
+    <div class="big c-gold" style="left:74px;top:930px"><span class="fit num" data-w="930" data-keep="1" id="s5b">500.000</span></div>
+    <div class="big c-cream lab" style="left:80px;top:1165px"><span class="fit" data-w="920">İSTİHDAM</span></div>
+    <div class="serif abs sub c-cream" style="left:80px;top:1390px;font-size:70px"><span class="ln"><span>Yarım milyon insana</span></span><span class="ln"><span>iş ve ekmek.</span></span></div>
+   </div>
+   <!-- C -->
+   <div class="abs p bg-gold" id="s5C" style="inset:0;visibility:hidden">
+    <div class="grid"></div>
+    <svg class="art c-ink" id="s5chart" style="left:80px;top:300px;stroke-width:7" width="920" height="560" viewBox="0 0 920 560">
+      <path class="d" d="M30 20 V530 H900"/>
+      <path class="d ax" style="stroke-width:4;opacity:.4" d="M30 410 H900 M30 290 H900 M30 170 H900"/>
+      <path class="d c-red" id="s5line" style="stroke-width:14" d="M52 486 L190 430 L300 452 L440 330 L560 356 L700 210 L860 62"/>
+      <path class="d c-red" id="s5arrow" style="stroke-width:14" d="M758 58 L864 58 L864 164"/>
+    </svg>
+    <div class="big c-ink" style="left:74px;top:915px"><span class="fit num" data-w="400" data-keep="1" id="s5c">50</span></div>
+    <div class="big c-red" id="s5eur" style="left:500px;top:940px"><span class="fit" data-w="500">MİLYAR</span><br><span class="fit" data-w="500">EURO</span></div>
+    <div class="big c-ink lab" style="left:80px;top:1250px"><span class="fit" data-w="920">YILLIK CİRO</span></div>
+    <div class="serif abs sub" style="left:80px;top:1440px;font-size:70px"><span class="ln"><span>Her yıl. Bu ekonomiye.</span></span></div>
+    <div class="src" style="top:1650px">Kaynak: TD-IHK · deutschland.de</div>
+   </div>
+  </div>
+ </section>
+
+ <!-- 6 · DÖNER -->
+ <section class="scene bg-teal" id="s6">
+  <div class="cam">
+   <div class="dots"></div>
+   <div class="big c-ink" id="s6word" style="left:76px;top:250px;opacity:.9"><span class="fit" data-w="930">DÖNER</span></div>
+   <svg class="art c-cream" id="s6doner" style="left:270px;top:455px;stroke-width:4.6" width="540" height="837" viewBox="0 0 400 620"></svg>
+   <div class="big c-cream" id="s6a" style="left:80px;top:1318px"><span class="fit" data-w="920">BERLİN'DE DOĞDU.</span></div>
+   <div class="big c-gold" id="s6b" style="left:80px;top:1418px"><span class="fit" data-w="920">DÜNYAYA YAYILDI.</span></div>
+   <div class="abs" id="s6st" style="left:80px;top:1545px;width:920px;display:flex;gap:34px;white-space:nowrap">
+     <div class="s6box" style="flex:1.3;border-top:5px solid currentColor;padding-top:18px"><div class="body" style="font-size:58px;font-weight:900;font-stretch:118%"><span id="s6n1">2,4</span> MİLYAR €</div><div class="cap" style="font-size:25px;margin-top:6px">YILLIK CİRO</div></div>
+     <div class="s6box" style="flex:.72;border-top:5px solid currentColor;padding-top:18px"><div class="body" style="font-size:58px;font-weight:900;font-stretch:118%"><span id="s6n2">60.000</span></div><div class="cap" style="font-size:25px;margin-top:6px">İSTİHDAM</div></div>
+   </div>
+   <div class="src" style="top:1716px">Kaynak: ATDiD</div>
+  </div>
+ </section>
+
+ <!-- 7 · BİLİM -->
+ <section class="scene bg-ink" id="s7">
+  <div class="cam">
+   <div class="dots c-teal"></div>
+   <svg class="art" id="s7dna" style="left:60px;top:250px;stroke-width:6" width="300" height="1180" viewBox="0 0 300 1180"></svg>
+   <div class="tag cap c-teal" id="s7tag" style="left:430px;top:300px"><i></i><span>BİLİM</span></div>
+   <div class="big c-cream" id="s7a" style="left:426px;top:375px"><span class="ln"><span class="fit" data-w="350">UĞUR</span></span><br><span class="ln"><span class="fit" data-w="500">ŞAHİN</span></span></div>
+   <div class="serif abs c-teal" id="s7amp" style="left:430px;top:668px;font-size:120px;line-height:1">&amp;</div>
+   <div class="big c-cream" id="s7b" style="left:426px;top:800px"><span class="ln"><span class="fit" data-w="480">ÖZLEM</span></span><br><span class="ln"><span class="fit" data-w="560">TÜRECİ</span></span></div>
+   <div class="body abs c-gold" id="s7c" style="left:430px;top:1120px;font-size:50px"><span class="ln"><span>BioNTech'in kurucuları.</span></span></div>
+   <div class="serif abs c-cream" id="s7d" style="left:430px;top:1206px;font-size:56px"><span class="ln"><span>Dünyanın ilk onaylı</span></span><span class="ln"><span>mRNA Covid‑19 aşısı.</span></span></div>
+   <svg class="art c-teal" id="s7rings" style="left:240px;top:1270px;stroke-width:4" width="600" height="600" viewBox="0 0 600 600">
+     <circle class="rg" cx="300" cy="300" r="60" opacity="0"/><circle class="rg" cx="300" cy="300" r="60" opacity="0"/><circle class="rg" cx="300" cy="300" r="60" opacity="0"/>
+   </svg>
+   <div class="big c-teal" id="s7e" style="left:80px;top:1432px"><span class="fit" data-w="920">MAINZ'TEN</span></div>
+   <div class="big c-cream" id="s7f" style="left:80px;top:1549px"><span class="fit" data-w="920">DÜNYAYA.</span></div>
+  </div>
+ </section>
+
+ <!-- 8 · KÜLTÜR (4 kart) -->
+ <section class="scene bg-ink" id="s8">
+  <div class="abs card bg-red" id="c1" style="inset:0">
+   <div class="dots"></div>
+   <div class="tag cap" style="left:80px;top:262px"><i></i><span>KÜLTÜR 01 · SİNEMA</span></div>
+   <svg class="art c-cream ic" style="left:215px;top:370px;stroke-width:4.4" width="650" height="563" viewBox="0 0 300 260">
+     <rect class="d" x="30" y="112" width="240" height="128" rx="10"/>
+     <g transform="rotate(-13 34 108)"><rect class="d" x="30" y="72" width="240" height="36" rx="6"/><path class="d c-ink" d="M66 106 L84 74 M114 106 L132 74 M162 106 L180 74 M210 106 L228 74"/></g>
+     <path class="d c-ink" d="M56 150 H244 M56 180 H170 M56 210 H130"/>
+     <path class="d c-gold star5" data-cx="218" data-cy="196" data-r="26"/>
+   </svg>
+   <div class="big hd" style="left:76px;top:1000px"><span class="fit" data-w="930">FATİH AKIN</span></div>
+   <div class="big c-ink hd2" style="left:80px;top:1175px"><span class="fit" data-w="760">ALTIN AYI</span></div>
+   <div class="serif abs dt" style="left:80px;top:1370px;font-size:66px"><span class="ln"><span>Berlinale 2004 —</span></span><span class="ln"><span>“Duvara Karşı”</span></span></div>
+  </div>
+  <div class="abs card bg-cream" id="c2" style="inset:0">
+   <div class="grid"></div>
+   <div class="tag cap c-red" style="left:80px;top:262px"><i></i><span>KÜLTÜR 02 · FUTBOL</span></div>
+   <svg class="art c-ink ic" id="c2ball" style="left:255px;top:370px;stroke-width:4.4" width="570" height="570" viewBox="0 0 240 240"></svg>
+   <div class="big hd" style="left:76px;top:1000px"><span class="fit" data-w="930">GÜNDOĞAN</span></div>
+   <div class="big c-red hd2" style="left:80px;top:1175px"><span class="fit" data-w="640">KAPTAN</span></div>
+   <div class="serif abs dt" style="left:80px;top:1370px;font-size:66px"><span class="ln"><span>Almanya Millî Takımı,</span></span><span class="ln"><span>EURO 2024.</span></span></div>
+  </div>
+  <div class="abs card bg-teal" id="c3" style="inset:0">
+   <div class="dots"></div>
+   <div class="tag cap" style="left:80px;top:262px"><i></i><span>KÜLTÜR 03 · EDEBİYAT</span></div>
+   <svg class="art c-cream ic" style="left:190px;top:400px;stroke-width:4.4" width="700" height="513" viewBox="0 0 300 220">
+     <path class="d" d="M150 52 Q96 20 28 40 V190 Q96 172 150 204"/>
+     <path class="d" d="M150 52 Q204 20 272 40 V190 Q204 172 150 204"/>
+     <path class="d c-ink" d="M150 52 V204"/>
+     <path class="d c-ink" d="M52 72 Q92 62 128 78 M52 100 Q92 90 128 106 M52 128 Q92 118 128 134"/>
+     <path class="d c-ink" d="M172 78 Q208 62 248 72 M172 106 Q208 90 248 100 M172 134 Q208 118 248 128"/>
+     <path class="d c-gold" d="M196 150 L246 30 L262 38 L212 158 L192 172 Z"/>
+   </svg>
+   <div class="big hd" style="left:76px;top:1000px"><span class="fit" data-w="930">ÖZDAMAR</span></div>
+   <div class="big c-ink hd2" style="left:80px;top:1175px"><span class="fit" data-w="920">BÜCHNER ÖDÜLÜ</span></div>
+   <div class="serif abs dt" style="left:80px;top:1370px;font-size:66px"><span class="ln"><span>Emine Sevgi Özdamar, 2022 —</span></span><span class="ln"><span>Alman edebiyatının zirvesi.</span></span></div>
+  </div>
+  <div class="abs card bg-gold" id="c4" style="inset:0">
+   <div class="grid"></div>
+   <div class="tag cap c-red" style="left:80px;top:262px"><i></i><span>KÜLTÜR 04 · MÜZİK &amp; SOFRA</span></div>
+   <svg class="art c-ink ic" style="left:170px;top:345px;stroke-width:4.6" width="240" height="672" viewBox="0 0 200 560">
+     <path class="d" d="M100 552 C30 552 20 466 50 408 C70 370 88 350 92 300 L108 300 C112 350 130 370 150 408 C180 466 170 552 100 552 Z"/>
+     <path class="d" d="M92 300 V44 L86 12 H114 L108 44 V300"/>
+     <path class="d c-red" d="M96 44 V498 M100 44 V498 M104 44 V498"/>
+     <path class="d" d="M78 500 H122 M86 24 H70 M86 36 H70 M114 24 H130 M114 36 H130"/>
+   </svg>
+   <svg class="art c-ink ic" style="left:560px;top:480px;stroke-width:4.6" width="330" height="536" viewBox="0 0 160 260">
+     <path class="d" d="M40 22 C40 82 62 96 62 126 C62 160 36 172 44 216 H116 C124 172 98 160 98 126 C98 96 120 82 120 22"/>
+     <ellipse class="d" cx="80" cy="22" rx="40" ry="8"/>
+     <path class="d c-red" d="M42 56 Q80 68 118 56"/>
+     <ellipse class="d" cx="80" cy="230" rx="72" ry="13"/>
+     <path class="d c-red" d="M66 -8 q-10 -14 0 -28 q10 -14 0 -28 M94 -8 q-10 -14 0 -28 q10 -14 0 -28"/>
+   </svg>
+   <div class="big hd" style="left:76px;top:1085px"><span class="fit" data-w="930">ŞEHRİN</span></div>
+   <div class="big c-red hd2" style="left:76px;top:1290px"><span class="fit" data-w="760">RİTMİ.</span></div>
+   <div class="serif abs dt" style="left:80px;top:1500px;font-size:66px"><span class="ln"><span>Sazdan rap'e,</span></span><span class="ln"><span>çaydan baklavaya.</span></span></div>
+  </div>
+ </section>
+
+ <!-- 9 · FİNAL -->
+ <section class="scene bg-ink" id="s9">
+  <div class="cam">
+   <div class="dots"></div>
+   <div id="s9p1">
+    <div class="big ol c-cream" id="s9a" style="left:76px;top:640px"><span class="fit" data-w="930">MİSAFİR</span></div>
+    <svg class="art c-red" style="left:50px;top:700px;stroke-width:16" width="980" height="80" viewBox="0 0 980 80"><path class="d" id="s9strike" d="M10 52 C 240 18, 520 66, 970 26"/></svg>
+    <div class="big c-cream" id="s9b" style="left:76px;top:850px"><span class="fit" data-w="760">GELDİK.</span></div>
+    <div class="big c-gold" id="s9c" style="left:76px;top:1085px"><span class="fit" data-w="930">EV SAHİBİYİZ.</span></div>
+   </div>
+   <div id="s9p2">
+    <svg class="art c-red" id="s9moon" style="left:390px;top:270px;stroke-width:7" width="300" height="300" viewBox="0 0 300 300">
+      <path class="d" d="M214.5 96.5 A100 100 0 1 0 214.5 203.5 A80 80 0 1 1 214.5 96.5 Z"/>
+      <path class="d star5" data-cx="236" data-cy="150" data-r="36" data-rot="-18"/>
+    </svg>
+    <div class="serif abs c-cream" id="s9s" style="left:0;top:625px;width:1080px;text-align:center;font-size:72px"><span class="ln"><span>Berlin'i de, Almanya'yı da</span></span></div>
+    <div class="big c-cream" id="s9d" style="left:76px;top:745px"><span class="fit" data-w="930">BİRLİKTE</span></div>
+    <div class="big c-red" id="s9e" style="left:76px;top:925px"><span class="fit" data-w="930">BÜYÜTTÜK.</span></div>
+    <svg class="art skyline c-cream" id="s9sky" style="left:0;top:1175px;stroke-width:5" width="1080" height="430" viewBox="0 0 1080 430"></svg>
+    <div class="abs" id="s9logo" style="left:0;top:1652px;width:1080px;text-align:center;font-weight:900;font-stretch:112%;letter-spacing:.1em;font-size:58px;white-space:nowrap">BERLIN<span class="c-red">KONUŞUYOR</span></div>
+    <div class="cap abs" id="s9sub" style="left:0;top:1740px;width:1080px;text-align:center;font-size:26px;opacity:.7">65 YIL · 1961 — 2026</div>
+   </div>
+  </div>
+ </section>
+
+ </div><!-- /shk -->
+
+ <div id="fx">
+  <div class="bar" id="bar1"></div><div class="bar" id="bar2"></div><div class="bar" id="bar3"></div>
+  <div id="iris"></div>
+  <div class="bl" style="top:0"></div><div class="bl" style="top:384px"></div><div class="bl" style="top:768px"></div><div class="bl" style="top:1152px"></div><div class="bl" style="top:1536px"></div>
+  <div class="door" id="doorT" style="top:0"></div><div class="door" id="doorB" style="top:958px"></div>
+  <div id="flash"></div>
+ </div>
+ <div id="hud">
+  <div class="wm">BERLIN<em>KONUŞUYOR</em></div>
+  <div class="yr">65 YIL</div>
+  <div class="chap" id="chap">01 — SORU</div>
+  <div class="bar"></div><div class="barf" id="barf"></div>
+ </div>
+ <div id="grain"></div>
+</div>
+<button type="button" id="ui" aria-label="Animasyonu sesli oynat"><div class="btn"><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9z"/></svg></div><div class="t">BERLIN<em>KONUŞUYOR</em></div><div class="s" id="uis">Sesli izlemek için dokun</div></button>
+<div id="ctl"><i></i></div>
+</div></div>
+<script>/*__GSAP__*/</script>
+<script>/*__AUDIO__*/</script>
+<script>/*__FILM__*/</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Birlikte Büyüttük</title>
+<style>
+/*__BASECSS__*/
+
+/* ───────── kinetik kurgu: tek dünya + sanal kamera ───────── */
+#stage{background:#07080b;perspective:1700px;perspective-origin:50% 50%}
+#world{position:absolute;left:0;top:0;width:0;height:0;transform-origin:0 0}
+#space{position:absolute;left:-9000px;top:-12000px;width:66000px;height:30000px;opacity:.5;
+  background-image:linear-gradient(rgba(244,238,227,.07) 3px,transparent 3px),linear-gradient(90deg,rgba(244,238,227,.07) 3px,transparent 3px);background-size:480px 480px}
+.st{position:absolute;width:1080px;height:1920px;transform-origin:540px 960px}
+.st>.panel{position:absolute;background:inherit}
+.st .big,.st .abs,.st .tag,.st .chip,.st svg.art{position:absolute}
+.ch{display:inline-block;transform-origin:50% 80%}
+
+/* harf blokları */
+.bw{position:absolute;display:flex;gap:.09em;perspective:1300px;--bc:var(--cream);--fc:var(--ink);--sc:rgba(0,0,0,.42)}
+.blk{flex:none;display:grid;place-items:center;width:.84em;height:1.06em;border-radius:.07em;background:var(--bc);color:var(--fc);font-weight:900;font-stretch:112%;transform-origin:50% 100%}
+.blk>b{font-size:.74em;line-height:1;font-weight:900}
+.blk.sp{visibility:hidden;width:.4em}
+/* tuğlalar */
+.tower,.wall{position:absolute}
+.brick{position:absolute;height:56px;border-radius:5px;background:var(--bk,var(--ink));box-shadow:inset 0 0 0 3px rgba(255,255,255,.1),4px 4px 0 rgba(0,0,0,.28)}
+.lbl{position:absolute;white-space:nowrap}
+</style>
+</head>
+<body>
+<div id="fit"><div id="box">
+<div id="stage" lang="tr">
+ <div id="shk"><div id="world">
+  <div id="space"></div>
+
+  <!-- 1 · SORU -->
+  <section class="st bg-ink" id="k1">
+   <div class="panel" style="left:-1700px;top:-1600px;width:7200px;height:5200px"></div>
+   <div class="big" id="k1line" style="left:80px;top:560px"><span class="fit" data-w="3300">BERLİN'İ BERLİN YAPAN</span></div>
+   <div class="bw" id="k1kim" data-text="KİM?" style="left:2180px;top:880px;font-size:330px;--bc:var(--red);--fc:var(--cream)"></div>
+   <svg class="art skyline c-cream" id="k1sky" style="left:70px;top:1380px;stroke-width:2.3" width="3310" height="1318" viewBox="0 0 1080 430"></svg>
+  </section>
+
+  <!-- 2 · 1961 -->
+  <section class="st bg-cream" id="k2">
+   <div class="panel" style="left:-3200px;top:-1600px;width:7600px;height:5200px"></div>
+   <div class="tag cap c-red" id="k2tag" style="left:80px;top:330px"><i></i><span>NASIL BAŞLADI?</span></div>
+   <div class="big" id="k2a" style="left:80px;top:400px"><span class="fit" data-w="620">30 EKİM</span></div>
+   <div class="bw" id="k2yr" data-text="1961" style="left:80px;top:590px;font-size:262px;--bc:var(--red);--fc:var(--cream)"></div>
+   <div class="abs" id="k2track" style="left:-2100px;top:1418px;width:5200px;height:7px;background:var(--ink);border-radius:4px"></div>
+   <div class="abs" style="left:-2100px;top:1434px;width:5200px;height:6px;opacity:.35;background:repeating-linear-gradient(90deg,var(--ink) 0 26px,transparent 26px 64px)"></div>
+   <div class="abs k2dot" id="k2ist" style="left:2424px;top:1392px;width:60px;height:60px;border-radius:50%;background:var(--ink)"></div>
+   <div class="cap abs k2lab" id="k2istl" style="left:2330px;top:1300px;font-size:44px">İSTANBUL</div>
+   <div class="abs k2dot" id="k2mun" style="left:-1700px;top:1392px;width:60px;height:60px;border-radius:50%;background:var(--red)"></div>
+   <div class="cap abs k2lab c-red" id="k2munl" style="left:-1760px;top:1300px;font-size:44px">MÜNİH</div>
+   <svg class="art" id="k2train" style="left:0;top:1226px" width="760" height="210" viewBox="0 0 760 210"></svg>
+   <div class="body abs" id="k2say" style="left:-1780px;top:836px;font-size:112px;white-space:nowrap;font-weight:900;font-stretch:112%">“MİSAFİR İŞÇİ”</div>
+   <svg class="art c-red" style="left:-1790px;top:965px;stroke-width:14" width="1000" height="50" viewBox="0 0 1000 50"><path class="d" id="k2ul" d="M8 28 C 220 6, 480 46, 700 20 S 940 14, 992 26"/></svg>
+   <div class="serif abs" id="k2ded" style="left:-1780px;top:1030px;font-size:128px">dediler.</div>
+  </section>
+
+  <!-- 3 · ALMANYA -->
+  <section class="st bg-red" id="k3">
+   <div class="panel" style="left:-1700px;top:-2400px;width:4500px;height:6000px"></div>
+   <div class="tag cap" id="k3tag" style="left:80px;top:-330px"><i></i><span>BUGÜN ALMANYA'DA</span></div>
+   <div class="big" id="k3num" style="left:66px;top:-270px"><span class="fit" data-w="720" data-keep="1" id="k3cnt">2,6</span></div>
+   <div class="abs" id="k3badge" style="left:800px;top:-196px;width:200px;height:200px;border:5px solid currentColor;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+    <div class="cap" style="font-size:19px;letter-spacing:.16em">NÜFUSUN</div>
+    <div style="font-weight:900;font-stretch:118%;font-size:56px;line-height:1;letter-spacing:-.02em">%3,2</div>
+   </div>
+   <div class="bw" id="k3mil" data-text="MİLYON" style="left:80px;top:150px;font-size:166px;--bc:var(--ink);--fc:var(--cream)"></div>
+   <div class="abs" id="k3ppl" style="left:80px;top:380px;width:920px"></div>
+   <div class="cap abs" id="k3leg" style="left:80px;top:612px;font-size:24px;opacity:.85">HER FİGÜR = 100.000 KİŞİ</div>
+   <div class="body abs" id="k3cap" style="left:80px;top:690px;font-size:66px"><span class="ln"><span>Türkiye kökenli insan</span></span><span class="ln"><span>bu ülkede yaşıyor.</span></span></div>
+   <div class="chip solid bg-ink" id="k3chip" style="left:80px;top:890px;font-size:30px;line-height:1.35;border-radius:28px;padding:22px 34px 20px;color:var(--gold)">ALMANYA'NIN EN BÜYÜK<br>GÖÇMEN KÖKENLİ TOPLULUĞU</div>
+   <div class="src" style="top:1060px">Kaynak: Destatis · Mikrozensus 2025</div>
+   <div class="bw k3row" id="k3r3" data-text="BÜYÜDÜK" style="left:80px;top:1232px;font-size:124px;--bc:var(--gold);--fc:var(--ink)"></div>
+   <div class="bw k3row" id="k3r2" data-text="ÇALIŞTIK" style="left:80px;top:1376px;font-size:124px;--bc:var(--ink);--fc:var(--gold)"></div>
+   <div class="bw k3row" id="k3r1" data-text="KALDIK" style="left:80px;top:1520px;font-size:124px;--bc:var(--cream);--fc:var(--red)"></div>
+   <div class="abs" style="left:-400px;top:1656px;width:1880px;height:8px;background:var(--ink);border-radius:4px"></div>
+  </section>
+
+  <!-- 4 · BERLİN -->
+  <section class="st bg-ink" id="k4">
+   <div class="panel" style="left:-1700px;top:-1600px;width:4500px;height:5200px"></div>
+   <div class="marq c-teal ol" id="k4marq" style="top:215px;left:-600px">BERLİN · BERLİN · BERLİN · BERLİN ·</div>
+   <div class="tag cap c-teal" id="k4tag" style="left:80px;top:590px"><i></i><span>VE BAŞKENT · YAKLAŞIK</span></div>
+   <div class="big c-gold" id="k4num" style="left:74px;top:655px"><span class="fit" data-w="930" data-keep="1" id="k4cnt">200.000</span></div>
+   <div class="body abs" id="k4cap" style="left:80px;top:880px;font-size:66px"><span class="ln"><span>Türkiye kökenli Berlinli.</span></span></div>
+   <div class="bw k4d" data-text="KREUZBERG" style="left:80px;top:1010px;font-size:64px;--bc:var(--red);--fc:var(--cream)"></div>
+   <div class="bw k4d" data-text="NEUKÖLLN" style="left:230px;top:1094px;font-size:64px;--bc:var(--teal);--fc:var(--ink)"></div>
+   <div class="bw k4d" data-text="WEDDING" style="left:380px;top:1178px;font-size:64px;--bc:var(--gold);--fc:var(--ink)"></div>
+   <svg class="art skyline c-teal" id="k4sky" style="left:-200px;top:1296px;stroke-width:4.2" width="1480" height="589" viewBox="0 0 1080 430"></svg>
+   <div class="src" style="top:960px;left:800px;opacity:.45">Tahmini değer</div>
+  </section>
+
+  <!-- 5 · EKONOMİ -->
+  <section class="st bg-gold" id="k5">
+   <div class="panel" style="left:-1700px;top:-3200px;width:4500px;height:6900px"></div>
+   <div class="tag cap" id="k5tag" style="left:80px;top:250px"><i></i><span>RAKAMLAR KONUŞSUN</span></div>
+   <div class="big" id="k5title" style="left:76px;top:320px"><span class="fit" data-w="640">EKONOMİ</span></div>
+   <div class="abs" style="left:-500px;top:1700px;width:2080px;height:8px;background:var(--ink);border-radius:4px"></div>
+   <div class="tower" id="k5A" data-rows="3" style="left:100px;top:1700px;width:240px"></div>
+   <div class="tower" id="k5B" data-rows="7" style="left:410px;top:1700px;width:240px"></div>
+   <div class="tower" id="k5C" data-rows="31" style="left:760px;top:1700px;width:240px;--bk:var(--red)"></div>
+   <div class="lbl k5la" style="left:100px;top:1352px"><div class="big" style="position:static;font-size:78px"><span id="k5a">80.000</span></div><div class="cap c-red" style="font-size:27px;margin-top:6px">GİRİŞİMCİ</div></div>
+   <div class="lbl k5lb" style="left:410px;top:1122px"><div class="big" style="position:static;font-size:78px"><span id="k5b">500.000</span></div><div class="cap c-red" style="font-size:27px;margin-top:6px">İSTİHDAM</div></div>
+   <div class="bw" id="k5c1" data-text="50 MİLYAR" style="left:80px;top:-640px;font-size:112px;--bc:var(--ink);--fc:var(--gold)"></div>
+   <div class="bw" id="k5c2" data-text="EURO" style="left:80px;top:-496px;font-size:166px;--bc:var(--red);--fc:var(--cream)"></div>
+   <div class="cap abs" id="k5c3" style="left:80px;top:-290px;font-size:40px">YILLIK CİRO</div>
+   <div class="src" style="top:1740px">Kaynak: TD-IHK · deutschland.de</div>
+  </section>
+
+  <!-- 6 · DÖNER -->
+  <section class="st bg-teal" id="k6">
+   <div class="panel" style="left:-1700px;top:-1600px;width:4500px;height:5200px"></div>
+   <div class="bw" id="k6word" data-text="DÖNER" style="left:80px;top:236px;font-size:198px;--bc:var(--ink);--fc:var(--teal)"></div>
+   <svg class="art c-cream" id="k6doner" style="left:270px;top:480px;stroke-width:4.6" width="540" height="837" viewBox="0 0 400 620"></svg>
+   <div class="big c-cream" id="k6a" style="left:80px;top:1340px"><span class="fit" data-w="920">BERLİN'DE DOĞDU.</span></div>
+   <div class="big c-gold" id="k6b" style="left:80px;top:1440px"><span class="fit" data-w="920">DÜNYAYI FETHETTİ.</span></div>
+   <div class="abs" id="k6st" style="left:80px;top:1570px;width:920px;display:flex;gap:34px;white-space:nowrap">
+     <div class="k6box" style="flex:1.3;border-top:5px solid currentColor;padding-top:18px"><div class="body" style="font-size:58px;font-weight:900;font-stretch:118%"><span id="k6n1">2,4</span> MİLYAR €</div><div class="cap" style="font-size:25px;margin-top:6px">YILLIK CİRO</div></div>
+     <div class="k6box" style="flex:.72;border-top:5px solid currentColor;padding-top:18px"><div class="body" style="font-size:58px;font-weight:900;font-stretch:118%"><span id="k6n2">60.000</span></div><div class="cap" style="font-size:25px;margin-top:6px">İSTİHDAM</div></div>
+   </div>
+   <div class="src" style="top:1736px">Kaynak: ATDiD</div>
+  </section>
+
+  <!-- 7 · BİLİM -->
+  <section class="st bg-ink" id="k7">
+   <div class="panel" style="left:-1700px;top:-1600px;width:4500px;height:6400px"></div>
+   <svg class="art" id="k7dna" style="left:60px;top:200px;stroke-width:6" width="300" height="2500" viewBox="0 0 300 2500"></svg>
+   <div class="tag cap c-teal" id="k7tag" style="left:430px;top:300px"><i></i><span>BİLİM</span></div>
+   <div class="big c-cream" id="k7a1" style="left:426px;top:375px"><span class="fit" data-w="350">UĞUR</span></div>
+   <div class="big c-cream" id="k7a2" style="left:426px;top:500px"><span class="fit" data-w="500">ŞAHİN</span></div>
+   <div class="serif abs c-teal" id="k7amp" style="left:430px;top:668px;font-size:120px;line-height:1">&amp;</div>
+   <div class="big c-cream" id="k7b1" style="left:426px;top:800px"><span class="fit" data-w="480">ÖZLEM</span></div>
+   <div class="big c-cream" id="k7b2" style="left:426px;top:925px"><span class="fit" data-w="560">TÜRECİ</span></div>
+   <div class="body abs c-gold" id="k7c" style="left:430px;top:1120px;font-size:50px"><span class="ln"><span>BioNTech'in kurucuları.</span></span></div>
+   <div class="serif abs c-cream" id="k7d" style="left:430px;top:1206px;font-size:56px"><span class="ln"><span>Dünyanın ilk onaylı</span></span><span class="ln"><span>mRNA Covid‑19 aşısı.</span></span></div>
+   <svg class="art c-teal" id="k7rings" style="left:240px;top:1830px;stroke-width:4" width="600" height="600" viewBox="0 0 600 600">
+     <circle class="rg" cx="300" cy="300" r="60" opacity="0"/><circle class="rg" cx="300" cy="300" r="60" opacity="0"/><circle class="rg" cx="300" cy="300" r="60" opacity="0"/>
+   </svg>
+   <div class="bw" id="k7e" data-text="MAINZ'TEN" style="left:430px;top:1980px;font-size:68px;--bc:var(--teal);--fc:var(--ink)"></div>
+   <div class="bw" id="k7f" data-text="DÜNYAYA" style="left:430px;top:2076px;font-size:88px;--bc:var(--cream);--fc:var(--ink)"></div>
+  </section>
+
+  <!-- 8 · KÜLTÜR: dört kart, kamera her birinde 90° döner -->
+  <section class="st bg-red" id="k8a">
+   <div class="panel" style="left:-900px;top:-900px;width:2880px;height:3720px"></div>
+   <div class="tag cap" style="left:80px;top:262px"><i></i><span>KÜLTÜR 01 · SİNEMA</span></div>
+   <!--SVG:c1:0-->
+   <div class="big nm" style="left:76px;top:1000px"><span class="fit" data-w="930">FATİH AKIN</span></div>
+   <div class="bw aw" data-text="ALTIN AYI" style="left:80px;top:1190px;font-size:104px;--bc:var(--ink);--fc:var(--gold)"></div>
+   <div class="serif abs dt" style="left:80px;top:1370px;font-size:66px"><span class="ln"><span>Berlinale 2004 —</span></span><span class="ln"><span>“Duvara Karşı”</span></span></div>
+  </section>
+  <section class="st bg-cream" id="k8b">
+   <div class="panel" style="left:-900px;top:-900px;width:2880px;height:3720px"></div>
+   <div class="tag cap c-red" style="left:80px;top:262px"><i></i><span>KÜLTÜR 02 · FUTBOL</span></div>
+   <svg class="art c-ink ic" id="k8ball" style="left:255px;top:370px;stroke-width:4.4" width="570" height="570" viewBox="0 0 240 240"></svg>
+   <div class="big nm" style="left:76px;top:1000px"><span class="fit" data-w="930">GÜNDOĞAN</span></div>
+   <div class="bw aw" data-text="KAPTAN" style="left:80px;top:1190px;font-size:128px;--bc:var(--red);--fc:var(--cream)"></div>
+   <div class="serif abs dt" style="left:80px;top:1370px;font-size:66px"><span class="ln"><span>Almanya Millî Takımı,</span></span><span class="ln"><span>EURO 2024.</span></span></div>
+  </section>
+  <section class="st bg-teal" id="k8c">
+   <div class="panel" style="left:-900px;top:-900px;width:2880px;height:3720px"></div>
+   <div class="tag cap" style="left:80px;top:262px"><i></i><span>KÜLTÜR 03 · EDEBİYAT</span></div>
+   <!--SVG:c3:0-->
+   <div class="big nm" style="left:76px;top:1000px"><span class="fit" data-w="930">ÖZDAMAR</span></div>
+   <div class="bw aw" data-text="BÜCHNER" style="left:80px;top:1190px;font-size:116px;--bc:var(--ink);--fc:var(--teal)"></div>
+   <div class="serif abs dt" style="left:80px;top:1370px;font-size:66px"><span class="ln"><span>Emine Sevgi Özdamar, 2022 —</span></span><span class="ln"><span>Alman edebiyatının zirvesi.</span></span></div>
+  </section>
+  <section class="st bg-gold" id="k8d">
+   <div class="panel" style="left:-900px;top:-900px;width:2880px;height:3720px"></div>
+   <div class="tag cap c-red" style="left:80px;top:262px"><i></i><span>KÜLTÜR 04 · MÜZİK &amp; SOFRA</span></div>
+   <!--SVG:c4:0--><!--SVG:c4:1-->
+   <div class="big nm" style="left:76px;top:1085px"><span class="fit" data-w="930">ŞEHRİN</span></div>
+   <div class="bw aw" data-text="RİTMİ" style="left:80px;top:1280px;font-size:172px;--bc:var(--red);--fc:var(--cream)"></div>
+   <div class="serif abs dt" style="left:80px;top:1500px;font-size:66px"><span class="ln"><span>Sazdan rap'e,</span></span><span class="ln"><span>çaydan baklavaya.</span></span></div>
+  </section>
+
+  <!-- 9 · FİNAL -->
+  <section class="st bg-ink" id="k9">
+   <div class="panel" style="left:-1700px;top:-1600px;width:4500px;height:7200px"></div>
+   <div class="big ol c-cream" id="k9a" style="left:76px;top:560px"><span class="fit" data-w="930">MİSAFİR</span></div>
+   <svg class="art c-red" style="left:50px;top:620px;stroke-width:16" width="980" height="80" viewBox="0 0 980 80"><path class="d" id="k9strike" d="M10 52 C 240 18, 520 66, 970 26"/></svg>
+   <div class="big c-cream" id="k9b" style="left:76px;top:770px"><span class="fit" data-w="760">GELDİK.</span></div>
+   <div class="bw" id="k9c1" data-text="EV" style="left:80px;top:1010px;font-size:230px;--bc:var(--gold);--fc:var(--ink)"></div>
+   <div class="bw" id="k9c2" data-text="SAHİBİYİZ" style="left:80px;top:1270px;font-size:109px;--bc:var(--gold);--fc:var(--ink)"></div>
+   <!-- final sayfası: kamera aşağı iner -->
+   <svg class="art c-red" id="k9moon" style="left:390px;top:2360px;stroke-width:7" width="300" height="300" viewBox="0 0 300 300">
+     <path class="d" d="M214.5 96.5 A100 100 0 1 0 214.5 203.5 A80 80 0 1 1 214.5 96.5 Z"/>
+     <path class="d star5" data-cx="236" data-cy="150" data-r="36" data-rot="-18"/>
+   </svg>
+   <div class="serif abs c-cream" id="k9s" style="left:0;top:2700px;width:1080px;text-align:center;font-size:72px"><span class="ln"><span>Berlin'i de, Almanya'yı da</span></span></div>
+   <div class="bw" id="k9d" data-text="BİRLİKTE" style="left:80px;top:2826px;font-size:124px;--bc:var(--cream);--fc:var(--ink)"></div>
+   <div class="bw" id="k9e" data-text="BÜYÜTTÜK." style="left:80px;top:2972px;font-size:109px;--bc:var(--red);--fc:var(--cream)"></div>
+   <div class="wall" id="k9wall" data-rows="2" data-cols="6" style="left:-80px;top:3548px;width:1240px;--bk:#2c2f3a"></div>
+   <svg class="art skyline c-cream" id="k9sky" style="left:0;top:3130px;stroke-width:5" width="1080" height="430" viewBox="0 0 1080 430"></svg>
+   <div class="abs" id="k9logo" style="left:0;top:3706px;width:1080px;text-align:center;font-weight:900;font-stretch:112%;letter-spacing:.1em;font-size:58px;white-space:nowrap">BERLIN<span class="c-red">KONUŞUYOR</span></div>
+   <div class="cap abs" id="k9sub" style="left:0;top:3794px;width:1080px;text-align:center;font-size:26px;opacity:.7">65 YIL · 1961 — 2026</div>
+  </section>
+ </div></div>
+
+ <div id="fx"><div id="flash"></div></div>
+ <div id="hud">
+  <div class="wm">BERLIN<em>KONUŞUYOR</em></div>
+  <div class="yr">65 YIL</div>
+  <div class="chap" id="chap">01 — SORU</div>
+  <div class="bar"></div><div class="barf" id="barf"></div>
+ </div>
+ <div id="grain"></div>
+</div>
+<button type="button" id="ui" aria-label="Animasyonu sesli oynat"><div class="btn"><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9z"/></svg></div><div class="t">BERLIN<em>KONUŞUYOR</em></div><div class="s" id="uis">Sesli izlemek için dokun</div></button>
+<div id="ctl"><i></i></div>
+</div></div>
+<script>/*__GSAP__*/</script>
+<script>/*__AUDIO__*/</script>
+<script>/*__ART__*/</script>
+<script>/*__FILM__*/</script>
+</body>
+</html>
