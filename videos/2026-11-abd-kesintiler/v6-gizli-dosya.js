@@ -231,7 +231,7 @@
     const g = ctx.createRadialGradient(560, 820, 150, 540, 1000, 1250);
     g.addColorStop(0, 'rgba(255,225,170,0.10)'); g.addColorStop(1, 'rgba(0,0,0,0.72)');
     ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-    band(ctx, t);
+    ctx.save(); ctx.globalAlpha = 1; band(ctx, t); ctx.restore();
     // hook line under the closed cover
     const ha = win(t, 3.0, 7.2, 0.5, 0.4);
     if (ha > 0) { ctx.fillStyle = `rgba(12,8,5,${0.85 * ha})`; ctx.fillRect(0, 1440, W, 140);
