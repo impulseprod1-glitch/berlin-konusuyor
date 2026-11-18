@@ -505,6 +505,63 @@ def v5(cues, tl):
     return m
 
 
+def text_bed(cues, bpm, roots, chords, sections, handlers):
+    """Instrumental bed for the text-only videos: sections = [(t0, t1, layers)]."""
+    m = Mix()
+    for t0, t1, layers in sections:
+        bed_loop(m, t0, t1, bpm, roots, chords, layers)
+    for c in cues:
+        h = handlers.get(c['type'])
+        if h:
+            h(m, c)
+    return master(m, rev_s=2.6, rev_tone=3800, rev_gain=0.7, fade_out=2.0, target_rms_db=-16)
+
+
+def chime(m, tt, base=(76, 79, 83, 88), g=0.28):
+    for j, n in enumerate(base):
+        m.add(bell(n, 3.5, idx=1.2), tt + j * 0.12, gain=g, pan=(j - 1.5) * 0.3, send=0.7)
+
+
+def v6(cues):  # noir dossier, A minor 72 BPM
+    def typing(m, c):
+        k = 0
+        while k * 0.08 < c['len']:
+            m.add(tick(98 + (k % 3) * 2, 0.03), c['t'] + k * 0.08, gain=0.1, pan=0.2, send=0.05); k += 1
+    H = {'stamp': lambda m, c: (m.add(boom(0.9, 0.8), c['t'], send=0.3), m.add(pluck(33, 0.4, decay=12, harmonics=6), c['t'], gain=0.6, send=0.2)),
+         'slide': lambda m, c: m.add(sweep(160, 520, 0.6, 'mid'), c['t'] - 0.1, gain=0.3, send=0.5),
+         'photo': lambda m, c: m.add(pluck(81, 0.3, decay=14, harmonics=3), c['t'], gain=0.25, send=0.3),
+         'typing': typing,
+         'mark': lambda m, c: m.add(pluck(69, 0.6, decay=6), c['t'], gain=0.35, send=0.4),
+         'end': lambda m, c: chime(m, c['t'], (69, 72, 76, 81))}
+    return text_bed(cues, 72, [45, 41, 43, 40], [[57, 60, 64], [53, 57, 60], [55, 59, 62], [52, 55, 59]],
+                    [(0, 7.5, {'pad'}), (7.5, 61, {'pad', 'pizz', 'bell'}), (61, 77, {'pad', 'heart', 'bell'}), (77, 86.2, {'pad'}), (86.2, 90, set())], H)
+
+
+def v7(cues):  # domino, C major / A minor 100 BPM
+    H = {'knock': lambda m, c: (m.add(pluck(55, 0.25, decay=25, harmonics=4), c['t'], gain=0.7 * c.get('gain', 1), send=0.2),
+                                m.add(boom(0.5, 0.5 * c.get('gain', 1)), c['t'], send=0.1)),
+         'whoosh': lambda m, c: m.add(sweep(220, 900, 0.5, 'mid'), c['t'] - 0.25, gain=0.3, send=0.5),
+         'hit': lambda m, c: (m.add(boom(1.5, 0.8), c['t'], send=0.3), m.add(pad([57, 60, 64, 69], 0.6, cutoff=3500, a=0.003, r=0.4), c['t'], gain=0.35, send=0.5)),
+         'end': lambda m, c: chime(m, c['t'], (72, 76, 79, 84))}
+    return text_bed(cues, 100, [48, 45, 41, 43], [[60, 64, 67], [57, 60, 64], [53, 57, 60], [55, 59, 62]],
+                    [(0, 6.5, {'pad', 'arp'}), (6.5, 46, {'pad', 'arp', 'kick', 'hat'}), (46, 57, {'pad', 'heart', 'bell'}), (57, 61, {'pad'}),
+                     (61, 77.2, {'pad', 'arp', 'kick'}), (77.2, 86.2, {'pad', 'heart'}), (86.2, 90, set())], H)
+
+
+def v8(cues):  # phone, lo-fi 104 BPM
+    H = {'ding': lambda m, c: (m.add(bell(88, 1.2, idx=0.8, decay=4), c['t'], gain=0.3 * c.get('gain', 1), send=0.3),
+                               m.add(bell(93, 1.2, idx=0.8, decay=4), c['t'] + 0.09, gain=0.26 * c.get('gain', 1), send=0.3)),
+         'alert': lambda m, c: m.add(beeps(3, 91, 86, 0.11), c['t'], gain=0.55, send=0.2),
+         'swipe': lambda m, c: m.add(sweep(300, 1400, 0.45, 'mid'), c['t'], gain=0.3, send=0.4),
+         'rewind': lambda m, c: m.add(sweep(1400, 160, 2.6, 'mid'), c['t'], gain=0.45, send=0.4),
+         'pile': lambda m, c: m.add(boom(1.6, 0.8), c['t'] + 0.5, send=0.3),
+         'hit': lambda m, c: m.add(boom(1.6, 0.9), c['t'], send=0.3),
+         'select': lambda m, c: m.add(pluck(76, 0.4, decay=10), c['t'], gain=0.4, send=0.3),
+         'end': lambda m, c: chime(m, c['t'])}
+    return text_bed(cues, 104, [45, 41, 48, 43], [[57, 60, 64], [53, 57, 60], [55, 60, 64], [55, 59, 62]],
+                    [(0, 6.6, {'pad'}), (6.6, 60.5, {'pad', 'kick', 'hat', 'pizz'}), (60.5, 69, {'pad', 'heart'}), (69, 85.6, {'pad', 'bell', 'kick'}), (85.6, 90, set())], H)
+
+
 def with_voice(name, builder):
     from scipy.io import wavfile
     tl = json.load(open(f'out/{name}.timeline.json'))
@@ -533,7 +590,7 @@ if __name__ == '__main__':
         x = with_voice(name, {'v4': v4, 'v5': v5}[name[:2]])
     else:
         cues = json.load(open(f'out/{name}.cues.json'))['cues']
-        x = {'v1': v1, 'v2': v2, 'v3': v3}[name[:2]](cues)
+        x = {'v1': v1, 'v2': v2, 'v3': v3, 'v6': v6, 'v7': v7, 'v8': v8}[name[:2]](cues)
     from scipy.io import wavfile
     wavfile.write(f'out/{name}.wav', SR, (x.T * 32767).astype(np.int16))
     print('wrote', f'out/{name}.wav', 'peak', float(np.abs(x).max()))
