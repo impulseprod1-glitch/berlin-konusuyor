@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>02 — Ağır & Karizmatik (Noir)</title>
+<link rel="stylesheet" href="shared/fonts.css">
+<style>
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #04070d; }
+  #stage, #cam, canvas, .ov { position: absolute; inset: 0; }
+  canvas { width: 1080px; height: 1920px; }
+  #cam { transform-origin: 50% 48%; }
+  #grain { mix-blend-mode: overlay; }
+  #vig { background: radial-gradient(ellipse 75% 60% at 50% 48%, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 78%, rgba(0,0,0,.92) 100%); }
+  #fade { background: #000; }
+
+  .seg { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; }
+  .num { font-family: 'Cormorant Garamond'; font-weight: 500; font-size: 30px; letter-spacing: .5em; color: #8fa6c2; margin: 0 0 70px .5em; display: flex; align-items: center; gap: 28px; }
+  .num::before, .num::after { content: ''; width: 110px; height: 1px; background: linear-gradient(90deg, transparent, #8fa6c2); }
+  .num::after { transform: scaleX(-1); }
+  .ln { font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 140px; line-height: 1.12; color: #eef2f7; white-space: nowrap; text-align: center; letter-spacing: .005em; }
+  .ln em { font-style: italic; font-weight: 400; color: #b9d4ff; }
+  .glow { text-shadow: 0 0 40px rgba(217, 187, 127, .0); }
+  .big { font-size: 300px; line-height: 1; }
+  .hair { width: 0; height: 1px; background: linear-gradient(90deg, transparent, #b9d4ff, transparent); margin-top: 60px; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="bg" width="1080" height="1920"></canvas>
+  <div id="cam">
+    <div class="seg"><div class="num">I</div><div class="ln">Tehlikeli derecede</div><div class="ln"><em>eğitimli</em> ol.</div></div>
+    <div class="seg"><div class="num">II</div><div class="ln"><em>Bilgili</em> bir</div><div class="ln">insan ol.</div></div>
+    <div class="seg"><div class="num">III</div><div class="ln">Aldatılması</div><div class="ln">daha <em>zor.</em></div></div>
+    <div class="seg"><div class="num">IV</div><div class="ln">Sohbette</div><div class="ln">daha <em>keskin.</em></div></div>
+    <div class="seg"><div class="num">V</div><div class="ln">Durumları okumada</div><div class="ln">daha <em>iyi.</em></div></div>
+    <div class="seg"><div class="num">VI</div><div class="ln"><em>Yüzyılların</em> bilgeliği</div><div class="ln">ve bilgisine</div><div class="ln">başvurabilme yeteneğine</div><div class="ln"><em>sahip.</em></div></div>
+    <div class="seg"><div class="num">VII</div><div class="ln">Daha <em>bilgili.</em></div><div class="ln">Daha <em>ilginç.</em></div><div class="ln">Daha <em>yetkin.</em></div></div>
+    <div class="seg"><div class="num">VIII</div><div class="ln"><em>Durmaksızın</em></div><div class="ln">öğren.</div></div>
+    <div class="seg"><div class="num">IX</div><div class="ln">İyi yaşanmış,</div><div class="ln">iyi bilgilenmiş</div><div class="ln">bir <em>zihin</em></div></div>
+    <div class="seg"><div class="num">X</div><div class="ln">manipüle etmek,</div><div class="ln">korkutmak</div><div class="ln">veya bastırmak</div><div class="ln">açısından</div><div class="ln">son derece</div></div>
+    <div class="seg"><div class="ln big"><em>zordur.</em></div><div class="hair"></div></div>
+  </div>
+  <canvas id="grain" width="1080" height="1920"></canvas>
+  <div class="ov" id="vig"></div>
+  <div class="ov" id="fade"></div>
+</div>
+
+<script src="/node_modules/gsap/dist/gsap.min.js"></script>
+<script src="/node_modules/gsap/dist/SplitText.min.js"></script>
+<script src="shared/stage.js"></script>
+<script>
+gsap.registerPlugin(SplitText);
+const { createScene, mulberry32, smoothNoise, clamp, smooth, makeGrain } = Stage;
+const DUR = 68;
+const S = createScene({ duration: DUR, fonts: ['300 100px "Cormorant Garamond"', 'italic 400 100px "Cormorant Garamond"', '500 30px "Cormorant Garamond"'] });
+const { tl } = S;
+const $$ = (q, r = document) => [...r.querySelectorAll(q)];
+
+// [başlangıç, bitiş] — sakin, nefes alan bir tempo
+const TIMES = [[1.2, 7.4], [7.4, 12.0], [12.0, 16.6], [16.6, 21.2], [21.2, 26.2], [26.2, 35.2], [35.2, 42.6], [42.6, 47.6], [47.6, 53.6], [53.6, 61.0], [61.0, 68]];
+
+S.ready.then(() => {
+  const segs = $$('.seg');
+  // Taşan segmentleri orantılı küçült (en geniş satır <= 960px)
+  for (const seg of segs) {
+    const lns = $$('.ln', seg);
+    const widest = Math.max(...lns.map((l) => { l.style.display = 'inline-block'; const w = l.getBoundingClientRect().width; l.style.display = ''; return w; }));
+    if (widest > 960) for (const l of lns) l.style.fontSize = (parseFloat(getComputedStyle(l).fontSize) * 960 / widest).toFixed(1) + 'px';
+  }
+
+  tl.fromTo('#fade', { opacity: 1 }, { opacity: 0, duration: 2.2, ease: 'power1.out', immediateRender: false }, 0);
+  tl.fromTo('#cam', { scale: 1.0 }, { scale: 1.1, duration: DUR, ease: 'none', immediateRender: false }, 0);
+  S.cue(0, 'drone', {});
+
+  segs.forEach((seg, si) => {
+    const [t0, t1] = TIMES[si];
+    const last = si === segs.length - 1;
+    tl.set(seg, { opacity: 1 }, t0);
+    S.cue(t0, 'seg', { i: si, last });
+
+    const num = seg.querySelector('.num');
+    if (num) {
+      tl.set(num, { opacity: 0 }, 0);
+      tl.fromTo(num, { opacity: 0, letterSpacing: '1.1em' }, { opacity: 1, letterSpacing: '.5em', duration: 2.0, ease: 'power3.out', immediateRender: false }, t0);
+    }
+
+    const lns = $$('.ln', seg);
+    const gap = si === 6 ? 1.7 : si === 9 ? 0.95 : 0.85;
+    lns.forEach((ln, li) => {
+      const split = new SplitText(ln, { type: 'chars,words', charsClass: 'c' });
+      const t = t0 + 0.35 + li * gap;
+      tl.set(split.chars, { opacity: 0 }, 0);
+      tl.fromTo(split.chars,
+        { opacity: 0, y: 26, filter: 'blur(16px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: last ? 2.4 : 1.3, stagger: last ? .12 : .032, ease: 'power2.out', immediateRender: false }, t);
+      const ems = $$('em', ln);
+      S.cue(t, 'line', { i: si, li, em: ems.length > 0 });
+      ems.forEach((em) => {
+        const te = t + 0.5;
+        tl.fromTo(em, { textShadow: '0 0 0px rgba(150,195,255,0)' }, { textShadow: '0 0 46px rgba(150,195,255,.6)', duration: 1.0, ease: 'sine.out', immediateRender: false }, te);
+        tl.to(em, { textShadow: '0 0 18px rgba(150,195,255,.2)', duration: 1.6, ease: 'sine.inOut' }, te + 1.0);
+      });
+    });
+
+    const hair = seg.querySelector('.hair');
+    if (hair) tl.fromTo(hair, { width: 0 }, { width: 700, duration: 2.6, ease: 'power3.inOut', immediateRender: false }, t0 + 1.4);
+
+    if (!last) {
+      tl.to(seg, { opacity: 0, y: -40, filter: 'blur(14px)', duration: 1.1, ease: 'power2.in' }, t1 - 1.1);
+    } else {
+      S.cue(t0, 'final', {});
+      tl.to('#fade', { opacity: 1, duration: 2.4, ease: 'power1.in' }, DUR - 2.6);
+    }
+  });
+  tl.set({}, {}, DUR);
+
+  // ---------- sinematik zemin: duman, ışık huzmesi, toz ----------
+  const ctx = document.getElementById('bg').getContext('2d');
+  const rand = mulberry32(77);
+  const blobs = Array.from({ length: 7 }, (_, i) => ({ x: rand() * 1080, y: 400 + rand() * 1200, r: 500 + rand() * 600, ch: i * 3, a: .05 + rand() * .07 }));
+  const motes = Array.from({ length: 90 }, () => ({ x: rand() * 1080, y: rand() * 1920, r: .5 + rand() * 1.8, ph: rand() * 6.28, sp: 4 + rand() * 12 }));
+  const grain = makeGrain(document.getElementById('grain'), { opacity: .14, seed: 21 });
+  const segCues = S.cues.filter((c) => c.type === 'seg').map((c) => c.t);
+
+  S.onDraw((t) => {
+    ctx.fillStyle = '#04070d';
+    ctx.fillRect(0, 0, 1080, 1920);
+    // nefes: her segmentte hafif ışık kabarması
+    let breath = 0;
+    for (const st of segCues) { const d = t - st; if (d > 0 && d < 5) breath += Math.sin(Math.PI * d / 5) * .6; }
+    ctx.globalCompositeOperation = 'lighter';
+    for (const b of blobs) {
+      const x = b.x + smoothNoise(t * .08, b.ch) * 260;
+      const y = b.y + smoothNoise(t * .06, b.ch + 1) * 200;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, b.r);
+      const a = b.a * (1 + breath * .5);
+      g.addColorStop(0, `rgba(40, 70, 120, ${a})`);
+      g.addColorStop(.5, `rgba(20, 36, 70, ${a * .5})`);
+      g.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, 1080, 1920);
+    }
+    // üstten süzülen ışık huzmesi
+    const sway = smoothNoise(t * .05, 40) * 80;
+    const beam = ctx.createLinearGradient(0, 0, 0, 1500);
+    beam.addColorStop(0, `rgba(190, 215, 255, ${.11 + breath * .03})`);
+    beam.addColorStop(1, 'rgba(190, 215, 255, 0)');
+    ctx.fillStyle = beam;
+    ctx.beginPath();
+    ctx.moveTo(400 + sway, -50);
+    ctx.lineTo(680 + sway, -50);
+    ctx.lineTo(1050 + sway * 2, 1600);
+    ctx.lineTo(30 + sway * 2, 1600);
+    ctx.closePath();
+    ctx.fill();
+    // havada asılı toz
+    for (const m of motes) {
+      const x = m.x + smoothNoise(t * .1 + m.ph, 9) * 40;
+      const y = ((m.y - t * m.sp) % 1920 + 1920) % 1920;
+      const inBeam = Math.max(0, 1 - Math.abs(x - 540 - sway * 1.5) / (200 + y * .25));
+      const a = (.08 + inBeam * .5) * (.5 + .5 * Math.sin(t * .9 + m.ph));
+      ctx.fillStyle = `rgba(210, 228, 255, ${a})`;
+      ctx.beginPath();
+      ctx.arc(x, y, m.r, 0, 6.283);
+      ctx.fill();
+    }
+    ctx.globalCompositeOperation = 'source-over';
+    // kameranın hafif sürüklenmesi
+    const cam = document.getElementById('cam');
+    const dx = smoothNoise(t * .12, 50) * 8, dy = smoothNoise(t * .1, 51) * 8, r = smoothNoise(t * .07, 52) * .25;
+    cam.style.translate = `${dx}px ${dy}px`;
+    cam.style.rotate = `${r}deg`;
+    grain(t, 24);
+  });
+
+  S.finish();
+});
+</script>
+</body>
+</html>

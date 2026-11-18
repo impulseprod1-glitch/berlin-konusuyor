@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>01 — Enerjik & Klas</title>
+<link rel="stylesheet" href="shared/fonts.css">
+<style>
+  :root {
+    --gold: linear-gradient(180deg, #fff4c8 0%, #f0cf74 30%, #c8962f 62%, #8a5d14 82%, #e9c56b 100%);
+    --ink: #f4efe6;
+  }
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #050505; }
+  #stage, #shake, #cam, .layer, canvas { position: absolute; inset: 0; }
+  #cam { transform-origin: 50% 50%; }
+  canvas { width: 1080px; height: 1920px; }
+  #grain { mix-blend-mode: overlay; pointer-events: none; }
+
+  .seg { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; }
+  .line { display: block; text-align: center; white-space: nowrap; }
+  .w { display: inline-block; white-space: nowrap; will-change: transform, filter; }
+  .A { font-family: 'Anton', sans-serif; line-height: 1.0; color: var(--ink); letter-spacing: .005em; }
+  .I { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; line-height: 1.05; color: var(--ink); }
+  .gold, .gold .c { background: var(--gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .gold.c-host { background: none; }
+  .A.gold { padding: .16em .03em .08em; margin: -.16em -.03em -.08em; }
+  .I.gold, .gold .c { padding: .1em .06em .18em; margin: -.1em -.06em -.18em; }
+  .line { margin: 4px 0; }
+  .line:has(> .I) { margin: 6px 0 24px; }
+  .wide { letter-spacing: .18em; margin-right: -.18em; }
+  .rule { width: 520px; height: 3px; background: linear-gradient(90deg, transparent, #e2b955 20%, #fff1c0 50%, #e2b955 80%, transparent); transform-origin: 50% 50%; margin: 34px auto 0; }
+
+  #frame { position: absolute; inset: 44px; border: 1px solid rgba(226, 185, 85, .22); pointer-events: none; }
+  #frame::before, #frame::after { content: ''; position: absolute; width: 60px; height: 60px; border: 2px solid rgba(240, 207, 116, .7); }
+  #frame::before { left: -2px; top: -2px; border-right: 0; border-bottom: 0; }
+  #frame::after { right: -2px; bottom: -2px; border-left: 0; border-top: 0; }
+  #progress { position: absolute; left: 90px; bottom: 96px; height: 2px; width: 900px; background: rgba(255,255,255,.08); }
+  #progress i { position: absolute; inset: 0; background: linear-gradient(90deg, #8a5d14, #f0cf74); transform-origin: 0 50%; transform: scaleX(0); }
+
+  #roman { position: absolute; inset: 0; opacity: 0; overflow: hidden; }
+  #roman span { position: absolute; left: 50%; font-family: 'Anton'; font-size: 520px; line-height: 1; color: transparent; -webkit-text-stroke: 2px rgba(240, 207, 116, .16); transform: translateX(-50%); white-space: nowrap; }
+
+  .slashwrap { position: relative; }
+  .slashwrap .half { position: absolute; left: 0; top: 0; padding: .16em .03em .08em; margin: 0; }
+  .slashline { position: absolute; left: -200px; top: 50%; width: 1480px; height: 4px; background: linear-gradient(90deg, transparent, #fff 45%, #fff 55%, transparent); transform-origin: 50% 50%; opacity: 0; }
+
+  #flash { position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, #fff6d8, #f0cf74 40%, rgba(240,207,116,0) 75%); opacity: 0; mix-blend-mode: screen; }
+  #fade { position: absolute; inset: 0; background: #000; opacity: 1; }
+  .shine { background-image: linear-gradient(105deg, rgba(255,255,255,0) 40%, rgba(255,255,255,.95) 50%, rgba(255,255,255,0) 60%), var(--gold); background-size: 300% 100%, 100% 100%; background-position: 150% 0, 0 0; background-repeat: no-repeat; }
+  .ring { position: absolute; left: 50%; top: 50%; width: 900px; height: 900px; margin: -450px 0 0 -450px; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="bg" width="1080" height="1920"></canvas>
+  <div id="shake"><div id="cam">
+    <div id="roman"></div>
+
+    <div class="seg" id="s1">
+      <div class="line"><span class="w A gold fit" data-w="930">TEHLİKELİ</span></div>
+      <div class="line"><span class="w A fit" data-w="930">DERECEDE</span></div>
+      <div class="line" style="margin-top:18px"><span class="w I split" style="font-size:170px">eğitimli ol.</span></div>
+      <div class="rule"></div>
+    </div>
+
+    <div class="seg" id="s2">
+      <div class="line"><span class="w I gold split" style="font-size:270px">Bilgili</span></div>
+      <div class="line" style="margin-top:20px"><span class="w A wide split" style="font-size:118px">BİR İNSAN OL.</span></div>
+    </div>
+
+    <div class="seg" id="s3">
+      <div class="line"><span class="w A fit" data-w="930">ALDATILMASI</span></div>
+      <div class="line" style="margin:14px 0 4px"><span class="w I gold" style="font-size:140px">daha</span></div>
+      <div class="line"><span class="w A gold fit" data-w="760">ZOR.</span></div>
+    </div>
+
+    <div class="seg" id="s4">
+      <div class="line"><span class="w I split" style="font-size:160px">Sohbette</span></div>
+      <div class="line" style="margin:8px 0 10px"><span class="w A wide" style="font-size:130px">DAHA</span></div>
+      <div class="line"><span class="w A gold fit slashwrap" data-w="930" id="keskin">KESKİN.</span></div>
+    </div>
+
+    <div class="seg" id="s5">
+      <div class="line"><span class="w A fit" data-w="930">DURUMLARI</span></div>
+      <div class="line" style="margin:6px 0 16px"><span class="w I gold split" style="font-size:170px">okumada</span></div>
+      <div class="line"><span class="w A fit" data-w="760">DAHA İYİ.</span></div>
+    </div>
+
+    <div class="seg" id="s6">
+      <div class="line"><span class="w I gold split" style="font-size:150px">Yüzyılların</span></div>
+      <div class="line"><span class="w A fit" data-w="900">BİLGELİĞİ</span></div>
+      <div class="line" style="margin:14px 0 8px"><span class="w I split" style="font-size:118px">ve bilgisine</span></div>
+      <div class="line"><span class="w A gold fit" data-w="930">BAŞVURABİLME</span></div>
+      <div class="line"><span class="w A fit" data-w="760">YETENEĞİNE</span></div>
+      <div class="line" style="margin-top:8px"><span class="w I gold split" style="font-size:180px">sahip.</span></div>
+    </div>
+
+    <div class="seg" id="s7">
+      <div class="line"><span class="w A wide" id="daha" style="font-size:250px">DAHA</span></div>
+      <div class="line" style="position:relative;height:330px;width:1080px;margin-top:10px">
+        <span class="w I gold adj" style="font-size:290px;position:absolute;left:0;right:0;top:0">bilgili.</span>
+        <span class="w I gold adj" style="font-size:290px;position:absolute;left:0;right:0;top:0">ilginç.</span>
+        <span class="w I gold adj" style="font-size:290px;position:absolute;left:0;right:0;top:0">yetkin.</span>
+      </div>
+    </div>
+
+    <div class="seg" id="s8">
+      <div class="line"><span class="w A gold fit" data-w="960">DURMAKSIZIN</span></div>
+      <div class="line" style="margin-top:6px"><span class="w I split" style="font-size:290px">öğren.</span></div>
+    </div>
+
+    <div class="seg" id="s9">
+      <div class="line"><span class="w I split" style="font-size:150px">İyi yaşanmış,</span></div>
+      <div class="line" style="margin:10px 0"><span class="w A gold fit" data-w="930">İYİ BİLGİLENMİŞ</span></div>
+      <div class="line"><span class="w I" style="font-size:120px" id="bir">bir</span></div>
+      <div class="line" style="position:relative">
+        <svg class="ring" viewBox="0 0 900 900"><circle id="ringc" cx="450" cy="450" r="400" fill="none" stroke="url(#rg)" stroke-width="3"/><defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#8a5d14"/><stop offset=".5" stop-color="#fff1c0"/><stop offset="1" stop-color="#c8962f"/></linearGradient></defs></svg>
+        <span class="w A" style="font-size:330px;position:relative">ZİHİN</span>
+      </div>
+    </div>
+
+    <div class="seg" id="s10">
+      <div class="line"><span class="w A fit" data-w="930">MANİPÜLE ETMEK,</span></div>
+      <div class="line"><span class="w A fit" data-w="930">KORKUTMAK</span></div>
+      <div class="line" style="margin:4px 0"><span class="w I gold" style="font-size:120px">veya</span></div>
+      <div class="line"><span class="w A fit" data-w="930">BASTIRMAK</span></div>
+      <div class="line" style="margin-top:20px"><span class="w I gold split" style="font-size:112px">açısından son derece</span></div>
+    </div>
+
+    <div class="seg" id="s11">
+      <div class="line"><span class="w A gold shine fit" data-w="980" id="zordur">ZORDUR.</span></div>
+      <div class="rule" style="width:760px;margin-top:40px"></div>
+    </div>
+  </div></div>
+
+  <div id="flash"></div>
+  <canvas id="grain" width="1080" height="1920"></canvas>
+  <div id="frame"></div>
+  <div id="progress"><i></i></div>
+  <div id="fade"></div>
+</div>
+
+<script src="/node_modules/gsap/dist/gsap.min.js"></script>
+<script src="/node_modules/gsap/dist/SplitText.min.js"></script>
+<script src="shared/stage.js"></script>
+<script>
+gsap.registerPlugin(SplitText);
+const { createScene, mulberry32, smoothNoise, clamp, smooth, makeGrain } = Stage;
+const BEAT = 0.5;
+const S = createScene({ duration: 44, fonts: ['400 100px Anton', 'italic 400 100px "Playfair Display"'] });
+const { tl } = S;
+const $ = (q, r = document) => r.querySelector(q);
+const $$ = (q, r = document) => [...r.querySelectorAll(q)];
+
+S.ready.then(() => {
+  // Satırları hedef genişliğe sığdır: kinetik tipografinin "blok" görünümü.
+  for (const el of $$('.fit')) {
+    el.style.fontSize = '100px';
+    const w = el.getBoundingClientRect().width;
+    el.style.fontSize = (100 * Number(el.dataset.w) / w).toFixed(2) + 'px';
+  }
+  const splits = new Map();
+  for (const el of $$('.split')) {
+    const s = new SplitText(el, { type: 'chars', charsClass: 'c' });
+    if (el.classList.contains('gold')) el.classList.add('c-host');
+    splits.set(el, s.chars);
+  }
+
+  // ---------- yardımcılar ----------
+  const slam = (el, t, amp = 1, big = false) => {
+    tl.fromTo(el, { scale: 1.9, opacity: 0, filter: 'blur(22px)' }, { scale: 1, opacity: 1, filter: 'blur(0px)', duration: .34, ease: 'expo.out', immediateRender: false }, t);
+    tl.set(el, { opacity: 0 }, 0);
+    S.cue(t, 'hit', { amp, big });
+  };
+  const rise = (el, t, stagger = .028) => {
+    const chars = splits.get(el) || [el];
+    tl.set(chars, { opacity: 0 }, 0);
+    tl.fromTo(chars, { yPercent: 70, opacity: 0, rotate: 8, filter: 'blur(10px)' },
+      { yPercent: 0, opacity: 1, rotate: 0, filter: 'blur(0px)', duration: .55, stagger, ease: 'power4.out', immediateRender: false }, t);
+    S.cue(t, 'tick', { amp: .6, n: chars.length, stagger });
+  };
+  const pop = (el, t) => {
+    tl.set(el, { opacity: 0 }, 0);
+    tl.fromTo(el, { opacity: 0, y: 40, scale: .9 }, { opacity: 1, y: 0, scale: 1, duration: .4, ease: 'back.out(2)', immediateRender: false }, t);
+    S.cue(t, 'tick', { amp: .5, n: 1 });
+  };
+  const show = (seg, t) => tl.set(seg, { opacity: 1 }, t);
+  const exitUp = (seg, t) => {
+    tl.to(seg, { scale: 1.18, opacity: 0, filter: 'blur(26px)', duration: .26, ease: 'power2.in' }, t);
+    S.cue(t - .15, 'whoosh', { amp: .8 });
+  };
+  const exitSide = (seg, t, dir = -1) => {
+    tl.to(seg, { xPercent: dir * 60, skewX: dir * 18, opacity: 0, filter: 'blur(18px)', duration: .26, ease: 'power3.in' }, t);
+    S.cue(t - .15, 'whoosh', { amp: .8 });
+  };
+  const exitDown = (seg, t) => {
+    tl.to(seg, { scale: .82, opacity: 0, filter: 'blur(14px)', duration: .26, ease: 'power2.in' }, t);
+    S.cue(t - .15, 'whoosh', { amp: .7 });
+  };
+  const camPush = (t0, t1, from = 1, to = 1.05) => tl.fromTo('#cam', { scale: from }, { scale: to, duration: t1 - t0, ease: 'none', immediateRender: false }, t0);
+  const line = (seg, i) => $$('.line .w', seg)[i];
+
+  // ---------- intro ----------
+  S.cue(0, 'section', { name: 'intro' });
+  tl.to('#fade', { opacity: 0, duration: .8, ease: 'power2.out' }, 0);
+  tl.fromTo('#frame', { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 1.6, ease: 'power3.out' }, .2);
+  S.cue(0, 'riser', { dur: 2 });
+
+  // ---------- S1  2.0 - 6.0 ----------
+  const s1 = $('#s1');
+  S.cue(2, 'section', { name: 'groove' });
+  show(s1, 2);
+  slam(line(s1, 0), 2.0, 1.2, true);
+  slam(line(s1, 1), 2.5, .9);
+  rise(line(s1, 2), 3.0);
+  tl.fromTo($('.rule', s1), { scaleX: 0 }, { scaleX: 1, duration: .7, ease: 'expo.out', immediateRender: false }, 3.5);
+  tl.set($('.rule', s1), { scaleX: 0 }, 0);
+  camPush(2, 6, 1, 1.05);
+  exitUp(s1, 5.74);
+
+  // ---------- S2  6.0 - 9.0 ----------
+  const s2 = $('#s2');
+  show(s2, 6);
+  rise(line(s2, 0), 6.0, .04);
+  S.cue(6, 'hit', { amp: 1 });
+  rise(line(s2, 1), 6.5, .03);
+  camPush(6, 9, 1.0, 1.04);
+  exitSide(s2, 8.74, -1);
+
+  // ---------- S3  9.0 - 12.0 ----------
+  const s3 = $('#s3');
+  show(s3, 9);
+  slam(line(s3, 0), 9.0, 1);
+  pop(line(s3, 1), 9.5);
+  slam(line(s3, 2), 10.0, 1.3, true);
+  camPush(9, 12, 1.0, 1.06);
+  exitDown(s3, 11.74);
+
+  // ---------- S4  12.0 - 15.0  "keskin" ikiye bölünür ----------
+  const s4 = $('#s4');
+  show(s4, 12);
+  rise(line(s4, 0), 12.0);
+  S.cue(12, 'hit', { amp: .9 });
+  pop(line(s4, 1), 12.5);
+  const k = $('#keskin');
+  slam(k, 13.0, 1.1, true);
+  {
+    // Çapraz kesik: kelimenin iki kopyası, poligonlarla kırpılıp ayrılır.
+    const txt = k.textContent;
+    k.textContent = '';
+    const base = document.createElement('span');
+    base.textContent = txt;
+    base.style.visibility = 'hidden';
+    k.append(base);
+    const mk = (clip) => {
+      const h = document.createElement('span');
+      h.className = 'half gold';
+      h.textContent = txt;
+      h.style.clipPath = clip;
+      k.append(h);
+      return h;
+    };
+    const top = mk('polygon(0 0, 100% 0, 100% 30%, 0 70%)');
+    const bot = mk('polygon(0 70%, 100% 30%, 100% 100%, 0 100%)');
+    const sl = document.createElement('div');
+    sl.className = 'slashline';
+    k.append(sl);
+    const ang = -Math.atan2(0.4 * k.offsetHeight, k.offsetWidth) * 180 / Math.PI;
+    tl.set(sl, { rotate: ang, scaleX: 0, opacity: 0 }, 0);
+    tl.to(sl, { scaleX: 1, opacity: 1, duration: .14, ease: 'power4.out' }, 13.5);
+    tl.to(sl, { opacity: 0, duration: .4 }, 13.68);
+    tl.to(top, { x: 26, y: -22, duration: .5, ease: 'expo.out' }, 13.56);
+    tl.to(bot, { x: -26, y: 22, duration: .5, ease: 'expo.out' }, 13.56);
+    S.cue(13.5, 'slash', { amp: 1 });
+  }
+  camPush(12, 15, 1.0, 1.05);
+  exitUp(s4, 14.74);
+
+  // ---------- S5  15.0 - 18.0 ----------
+  const s5 = $('#s5');
+  show(s5, 15);
+  slam(line(s5, 0), 15.0, 1);
+  rise(line(s5, 1), 15.5);
+  slam(line(s5, 2), 16.0, 1.2, true);
+  camPush(15, 18, 1.0, 1.05);
+  exitSide(s5, 17.74, 1);
+
+  // ---------- S6  18.0 - 24.0  yüzyıllar: arka planda Roma rakamları ----------
+  S.cue(18, 'section', { name: 'break' });
+  const s6 = $('#s6');
+  const roman = $('#roman');
+  const numerals = ['I', 'V', 'X', 'XII', 'XV', 'XVIII', 'XX', 'XXI'];
+  numerals.forEach((n, i) => {
+    const sp = document.createElement('span');
+    sp.textContent = n;
+    sp.style.top = (i * 620 - 400) + 'px';
+    roman.append(sp);
+  });
+  tl.to(roman, { opacity: 1, duration: .6 }, 18);
+  tl.fromTo(roman, { y: 1200 }, { y: -3800, duration: 6.2, ease: 'none', immediateRender: false }, 18);
+  tl.to(roman, { opacity: 0, duration: .4 }, 23.6);
+  show(s6, 18);
+  rise(line(s6, 0), 18.0, .035);
+  S.cue(18, 'hit', { amp: 1.1, big: true });
+  slam(line(s6, 1), 18.75, .9);
+  rise(line(s6, 2), 19.5);
+  slam(line(s6, 3), 20.25, 1);
+  slam(line(s6, 4), 20.75, .9);
+  rise(line(s6, 5), 21.5, .05);
+  camPush(18, 24, 1.0, 1.07);
+  exitUp(s6, 23.74);
+
+  // ---------- S7  24.0 - 28.0  DAHA + değişen sıfatlar ----------
+  S.cue(24, 'section', { name: 'build' });
+  const s7 = $('#s7');
+  const daha = $('#daha');
+  const adjs = $$('.adj', s7);
+  show(s7, 24);
+  slam(daha, 24.0, 1.1, true);
+  tl.set(adjs, { opacity: 0 }, 0);
+  adjs.forEach((a, i) => {
+    const t = 24.5 + i * 1.0;
+    tl.fromTo(a, { opacity: 0, yPercent: 40, filter: 'blur(16px)', scale: 1.15 }, { opacity: 1, yPercent: 0, filter: 'blur(0px)', scale: 1, duration: .32, ease: 'expo.out', immediateRender: false }, t);
+    if (i < adjs.length - 1) tl.to(a, { opacity: 0, yPercent: -40, filter: 'blur(16px)', duration: .2, ease: 'power2.in' }, t + .8);
+    tl.fromTo(daha, { scale: 1.12 }, { scale: 1, duration: .35, ease: 'power3.out', immediateRender: false }, t);
+    S.cue(t, 'hit', { amp: .9 + i * .15 });
+  });
+  S.cue(26.0, 'riser', { dur: 2 });
+  tl.to('#cam', { scale: 1.12, duration: 1.5, ease: 'power2.in' }, 26.5);
+  tl.to(s7, { opacity: 0, scale: 1.3, filter: 'blur(30px)', duration: .3, ease: 'power2.in' }, 27.7);
+
+  // ---------- S8  28.0 - 31.0  DROP ----------
+  S.cue(28, 'section', { name: 'drop' });
+  const s8 = $('#s8');
+  show(s8, 28);
+  tl.set('#cam', { scale: 1.0 }, 28);
+  slam(line(s8, 0), 28.0, 1.6, true);
+  S.cue(28, 'drop', { amp: 1 });
+  rise(line(s8, 1), 28.5, .05);
+  camPush(28.01, 31, 1.0, 1.06);
+  exitUp(s8, 30.74);
+
+  // ---------- S9  31.0 - 35.0 ----------
+  const s9 = $('#s9');
+  show(s9, 31);
+  rise(line(s9, 0), 31.0);
+  S.cue(31, 'hit', { amp: 1 });
+  slam(line(s9, 1), 31.75, 1.1, true);
+  pop($('#bir'), 32.5);
+  slam(line(s9, 3), 33.0, 1.3, true);
+  const rc = $('#ringc');
+  const circ = 2 * Math.PI * 400;
+  tl.set(rc, { attr: { 'stroke-dasharray': circ, 'stroke-dashoffset': circ } }, 0);
+  tl.to(rc, { attr: { 'stroke-dashoffset': 0 }, duration: 1.1, ease: 'power3.inOut' }, 33.2);
+  tl.fromTo('.ring', { rotate: -90 }, { rotate: 30, duration: 2, ease: 'none', immediateRender: false }, 33.2);
+  camPush(31, 35, 1.0, 1.05);
+  exitDown(s9, 34.74);
+
+  // ---------- S10  35.0 - 38.0 ----------
+  const s10 = $('#s10');
+  show(s10, 35);
+  slam(line(s10, 0), 35.0, 1.2, true);
+  slam(line(s10, 1), 35.5, 1.1);
+  pop(line(s10, 2), 36.0);
+  slam(line(s10, 3), 36.25, 1.2, true);
+  rise(line(s10, 4), 37.0, .022);
+  camPush(35, 38, 1.0, 1.06);
+  S.cue(37.0, 'riser', { dur: 1 });
+  tl.to(s10, { opacity: 0, scale: .7, filter: 'blur(20px)', duration: .25, ease: 'power3.in' }, 37.75);
+
+  // ---------- S11  38.0 - 44.0  ZORDUR. ----------
+  S.cue(38, 'section', { name: 'final' });
+  const s11 = $('#s11');
+  show(s11, 38);
+  tl.set('#cam', { scale: 1 }, 38);
+  slam($('#zordur'), 38.0, 2, true);
+  S.cue(38, 'final', { amp: 1 });
+  tl.set($('.rule', s11), { scaleX: 0 }, 0);
+  tl.to($('.rule', s11), { scaleX: 1, duration: 1.2, ease: 'expo.out' }, 38.4);
+  tl.to('#zordur', { backgroundPosition: '-50% 0, 0 0', duration: 1.4, ease: 'power2.inOut' }, 38.7);
+  S.cue(38.7, 'shine', { amp: .8 });
+  tl.to('#zordur', { backgroundPosition: '-50% 0, 0 0', duration: 0 }, 41);
+  tl.fromTo('#zordur', { backgroundPosition: '150% 0, 0 0' }, { backgroundPosition: '-50% 0, 0 0', duration: 1.4, ease: 'power2.inOut', immediateRender: false }, 41.2);
+  camPush(38.01, 44, 1.0, 1.08);
+  tl.to('#fade', { opacity: 1, duration: 1.2, ease: 'power1.in' }, 42.8);
+  tl.set({}, {}, 44);
+
+  // ---------- çizim katmanı: arka plan, toz, ışık şeritleri, sarsıntı ----------
+  const bg = $('#bg').getContext('2d');
+  const rand = mulberry32(2024);
+  const dust = Array.from({ length: 170 }, () => ({
+    x: rand() * 1080, y: rand() * 1920, z: .3 + rand() * .7, r: .6 + rand() * 2.4, ph: rand() * 6.28, sp: 10 + rand() * 40,
+  }));
+  const streakAt = S.cues.filter((c) => c.type === 'hit' && c.big).map((c, i) => ({ t: c.t, a: -28 + (i % 3) * 14, y: 400 + ((i * 523) % 1100) }));
+  const grain = makeGrain($('#grain'), { opacity: .09, seed: 11 });
+  const prog = $('#progress i');
+
+  S.onDraw((t) => {
+    const hit = S.impulse(t, ['hit', 'drop', 'final', 'slash'], 9, 1.2);
+    const flash = S.impulse(t, ['drop', 'final'], 6, 1.5) * .85 + S.impulse(t, ['hit'], 14, .5) * .12;
+    // zemin
+    const g = bg.createRadialGradient(540, 900, 50, 540, 960, 1300);
+    const warm = 0.10 + Math.min(.12, hit * .04);
+    g.addColorStop(0, `rgba(${60 + hit * 30 | 0}, ${42 + hit * 18 | 0}, ${16}, 1)`);
+    g.addColorStop(.45, `rgba(18, 13, 7, 1)`);
+    g.addColorStop(1, '#030303');
+    bg.fillStyle = g;
+    bg.fillRect(0, 0, 1080, 1920);
+    // altın tozu
+    bg.save();
+    bg.globalCompositeOperation = 'lighter';
+    const drop = smooth(28, 28.2, t) * (1 - smooth(30.6, 31, t));
+    for (const p of dust) {
+      const y = ((p.y - t * p.sp * p.z * (1 + drop * 6)) % 1920 + 1920) % 1920;
+      const x = p.x + Math.sin(t * .6 + p.ph) * 18 * p.z;
+      const tw = .45 + .55 * Math.sin(t * 2.2 + p.ph * 3);
+      const a = (.25 + .5 * tw) * p.z * (1 + hit * .6);
+      bg.fillStyle = `rgba(240, 200, 110, ${Math.min(1, a)})`;
+      if (drop > .01) {
+        bg.fillRect(x - p.r * .5, y, p.r, p.r * (1 + drop * 26 * p.z));
+      } else {
+        bg.beginPath();
+        bg.arc(x, y, p.r * p.z, 0, 6.283);
+        bg.fill();
+      }
+    }
+    // ışık şeritleri (büyük vuruşlarda)
+    for (const s of streakAt) {
+      const d = t - s.t;
+      if (d < 0 || d > .7) continue;
+      const k = d / .7;
+      bg.save();
+      bg.translate(540, s.y);
+      bg.rotate(s.a * Math.PI / 180);
+      const x = -1400 + k * 2800;
+      const lg = bg.createLinearGradient(x - 400, 0, x + 400, 0);
+      lg.addColorStop(0, 'rgba(255,220,140,0)');
+      lg.addColorStop(.5, `rgba(255,235,180,${.55 * (1 - k)})`);
+      lg.addColorStop(1, 'rgba(255,220,140,0)');
+      bg.fillStyle = lg;
+      bg.fillRect(x - 400, -6, 800, 12);
+      bg.restore();
+    }
+    bg.restore();
+    // sarsıntı
+    const sh = Math.min(1.5, S.impulse(t, ['hit', 'drop', 'final'], 16, .4)) * 14;
+    const sx = smoothNoise(t * 38, 1) * sh;
+    const sy = smoothNoise(t * 38, 2) * sh;
+    const rot = smoothNoise(t * 30, 3) * sh * .04;
+    document.getElementById('shake').style.transform = `translate(${sx}px, ${sy}px) rotate(${rot}deg)`;
+    document.getElementById('flash').style.opacity = Math.min(.9, flash);
+    prog.style.transform = `scaleX(${clamp((t - 2) / 40)})`;
+    grain(t);
+  });
+
+  S.finish();
+});
+</script>
+</body>
+</html>

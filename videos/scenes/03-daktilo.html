@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>03 — Daktilo</title>
+<link rel="stylesheet" href="shared/fonts.css">
+<style>
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #1a120c; }
+  #stage, canvas.full, .ov { position: absolute; inset: 0; }
+  canvas.full { width: 1080px; height: 1920px; }
+  #world { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 0 0; }
+  #paper { position: absolute; left: 70px; top: 150px; width: 940px; height: 1620px; transform: rotate(-.6deg); box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 4px 14px rgba(0,0,0,.4); }
+  #paper canvas { position: absolute; inset: 0; }
+  #text { position: absolute; left: 92px; top: 130px; width: 760px; font-family: 'Special Elite', monospace; font-size: 50px; line-height: 1.62; color: #1f1b17; }
+  #text .title { font-size: 58px; line-height: 1.4; margin-bottom: 64px; display: block; }
+  #text .ch { opacity: 0; display: inline-block; white-space: pre; }
+  #text .sp { display: inline; white-space: normal; }
+  #text .wd { white-space: nowrap; }
+  #cursor { position: absolute; width: 30px; height: 5px; background: #8a1d17; opacity: 0; }
+  svg#ink { position: absolute; inset: 0; width: 940px; height: 1620px; overflow: visible; mix-blend-mode: multiply; }
+  svg#ink path { fill: none; stroke: #b3241c; stroke-linecap: round; stroke-linejoin: round; }
+  #lamp { background: radial-gradient(ellipse 70% 55% at 55% 35%, rgba(255,200,130,.16), rgba(0,0,0,0) 60%), radial-gradient(ellipse 90% 80% at 50% 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,.7) 100%); }
+  #grain { mix-blend-mode: overlay; }
+  #fade { background: #000; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas class="full" id="desk" width="1080" height="1920"></canvas>
+  <div id="world">
+    <div id="paper">
+      <canvas id="pt" width="940" height="1620"></canvas>
+      <div id="text"></div>
+      <div id="cursor"></div>
+      <svg id="ink" viewBox="0 0 940 1620"></svg>
+    </div>
+  </div>
+  <div class="ov" id="lamp"></div>
+  <canvas class="full" id="grain" width="1080" height="1920"></canvas>
+  <div class="ov" id="fade"></div>
+</div>
+
+<script src="/node_modules/gsap/dist/gsap.min.js"></script>
+<script src="shared/stage.js"></script>
+<script>
+const { createScene, mulberry32, smoothNoise, clamp, lerp, smooth, makeGrain } = Stage;
+const TITLE = 'Tehlikeli derecede eğitimli ol.';
+const BODY = 'Bilgili bir insan ol. Aldatılması daha zor. Sohbette daha keskin. Durumları okumada daha iyi. Yüzyılların bilgeliği ve bilgisine başvurabilme yeteneğine sahip. Daha bilgili. Daha ilginç. Daha yetkin. Durmaksızın öğren. İyi yaşanmış, iyi bilgilenmiş bir zihin manipüle etmek, korkutmak veya bastırmak açısından son derece zordur.';
+const MARKS = [
+  { phrase: TITLE, where: 'title', kind: 'underline' },
+  { phrase: 'Durmaksızın öğren.', kind: 'underline' },
+  { phrase: 'zordur.', kind: 'circle' },
+];
+const rand = mulberry32(31);
+const FPS = 30;
+
+// --- metni karakterlere böl ---
+const textEl = document.getElementById('text');
+function addChars(parent, str) {
+  const out = [];
+  let word = null;
+  for (const ch of str) {
+    if (ch !== ' ' && !word) { word = document.createElement('span'); word.className = 'wd'; parent.append(word); }
+    if (ch === ' ') word = null;
+    const s = document.createElement('span');
+    s.className = 'ch';
+    s.textContent = ch;
+    if (ch === ' ') { s.classList.add('sp'); }
+    else {
+      // mürekkep ve tuş vuruşu farklılıkları
+      s.style.transform = `translateY(${((rand() - .5) * 3).toFixed(2)}px) rotate(${((rand() - .5) * 2.2).toFixed(2)}deg)`;
+      s.dataset.ink = (.72 + rand() * .28).toFixed(2);
+      if (rand() < .12) s.style.textShadow = '0.8px 0.3px 0 rgba(31,27,23,.45)';
+    }
+    (ch === ' ' ? parent : word).append(s);
+    out.push(s);
+  }
+  return out;
+}
+const titleEl = document.createElement('span');
+titleEl.className = 'title';
+textEl.append(titleEl);
+const titleChars = addChars(titleEl, TITLE);
+const bodyEl = document.createElement('span');
+textEl.append(bodyEl);
+const bodyChars = addChars(bodyEl, BODY);
+const chars = [...titleChars, ...bodyChars];
+
+const S = createScene({ duration: 60, fonts: ['400 50px "Special Elite"'] });
+const { tl } = S;
+
+S.ready.then(() => {
+  const paper = document.getElementById('paper');
+  const world = document.getElementById('world');
+  // karakter konumları (kağıt koordinatları; kâğıdın dönüşü hesaba katılmadan)
+  paper.style.transform = 'none';
+  const pr = paper.getBoundingClientRect();
+  const pos = chars.map((c) => {
+    const r = c.getBoundingClientRect();
+    return { x: r.left - pr.left, y: r.top - pr.top, w: r.width, h: r.height, cx: r.left - pr.left + r.width / 2, cy: r.top - pr.top + r.height / 2 };
+  });
+  paper.style.transform = '';
+
+  // --- yazım zamanlaması ---
+  let t = 1.6;
+  const times = [];
+  let prevTop = pos[0].y;
+  let lineStart = 0;
+  for (let i = 0; i < chars.length; i++) {
+    const ch = chars[i].textContent;
+    const newLine = Math.abs(pos[i].y - prevTop) > 10 && ch !== ' ';
+    if (newLine) {
+      S.cue(t - .05, 'bell', {});
+      t += .18;
+      S.cue(t, 'return', {});
+      t += .5;
+      prevTop = pos[i].y;
+    }
+    if (i === titleChars.length) { t += .5; }
+    times.push(t);
+    if (ch === ' ') { S.cue(t, 'key', { k: 'space' }); t += .09 + rand() * .05; continue; }
+    S.cue(t, 'key', { k: /[.,]/.test(ch) ? 'punct' : 'letter', v: rand() });
+    t += .045 + rand() * .035 + (rand() < .08 ? .12 : 0);
+    if (ch === '.') t += .42;
+    if (ch === ',') t += .22;
+  }
+  const T_TYPED = t + .3;
+  S.cue(T_TYPED, 'typed', {});
+
+  // --- kamera yolu: yazarken yakın plan, sonra tüm sayfa ---
+  const PAPER_X = 70, PAPER_Y = 150;
+  const Z_IN = 1.5;
+  const T_ZOOM = T_TYPED + .4, Z_DUR = 2.8;
+  const cam = [];
+  let cx = pos[0].cx + 120, cy = pos[0].cy + 120;
+  const totalFrames = 90 * FPS;
+  for (let f = 0; f < totalFrames; f++) {
+    const tt = f / FPS;
+    let idx = 0;
+    while (idx + 1 < times.length && times[idx + 1] <= tt) idx++;
+    const p = pos[idx];
+    const tx = clamp(p.cx, 390, 550) + PAPER_X;
+    const ty = p.cy + PAPER_Y + 40;
+    const k = f === 0 ? 1 : .085;
+    cx = lerp(cx, tx, k);
+    cy = lerp(cy, ty, k * .8);
+    cam.push([cx, cy]);
+  }
+  S.cue(T_ZOOM, 'zoom', { dur: Z_DUR });
+
+  // --- kırmızı kalem işaretleri ---
+  const ink = document.getElementById('ink');
+  const fullText = TITLE + BODY;
+  let T_MARK = T_ZOOM + Z_DUR + .3;
+  const inkAnims = [];
+  for (const m of MARKS) {
+    const start = m.where === 'title' ? 0 : TITLE.length + BODY.indexOf(m.phrase);
+    const idxs = [...Array(m.phrase.length).keys()].map((k) => start + k).filter((i) => chars[i].textContent !== ' ');
+    // satırlara göre grupla
+    const lines = [];
+    for (const i of idxs) {
+      const p = pos[i];
+      const L = lines.find((l) => Math.abs(l.y - p.y) < 10);
+      if (L) { L.x0 = Math.min(L.x0, p.x); L.x1 = Math.max(L.x1, p.x + p.w); L.b = Math.max(L.b, p.y + p.h); }
+      else lines.push({ y: p.y, x0: p.x, x1: p.x + p.w, b: p.y + p.h });
+    }
+    for (const L of lines) {
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      let d;
+      if (m.kind === 'underline') {
+        const y = L.b - 6;
+        const pts = [];
+        const n = 8;
+        for (let k = 0; k <= n; k++) pts.push([lerp(L.x0 - 14, L.x1 + 18, k / n), y + (rand() - .5) * 5 + k * .6]);
+        d = 'M' + pts.map((p) => p.map((v) => v.toFixed(1)).join(' ')).join(' L');
+        // ikinci, daha kısa vuruş
+        const y2 = y + 14;
+        d += ` M${(L.x0 + 10).toFixed(1)} ${(y2 + 2).toFixed(1)} Q ${((L.x0 + L.x1) / 2).toFixed(1)} ${(y2 + 6).toFixed(1)} ${(L.x1 - 30).toFixed(1)} ${(y2 - 2).toFixed(1)}`;
+        path.setAttribute('stroke-width', '5.5');
+      } else {
+        const ccx = (L.x0 + L.x1) / 2, ccy = (L.y + L.b) / 2 + 2;
+        const rx = (L.x1 - L.x0) / 2 + 42, ry = (L.b - L.y) / 2 + 26;
+        const pts = [];
+        const a0 = -2.4, a1 = a0 + Math.PI * 2 + .55;
+        for (let k = 0; k <= 48; k++) {
+          const a = lerp(a0, a1, k / 48);
+          const wob = 1 + (smoothNoise(k * .25, 7) * .05) + k / 48 * .06;
+          pts.push([ccx + Math.cos(a) * rx * wob, ccy + Math.sin(a) * ry * wob]);
+        }
+        d = 'M' + pts.map((p) => p.map((v) => v.toFixed(1)).join(' ')).join(' L');
+        path.setAttribute('stroke-width', '6');
+      }
+      path.setAttribute('d', d);
+      ink.append(path);
+      const len = path.getTotalLength();
+      path.style.strokeDasharray = len;
+      path.style.strokeDashoffset = len;
+      const dur = m.kind === 'circle' ? 1.0 : .75;
+      tl.to(path, { strokeDashoffset: 0, duration: dur, ease: 'power1.inOut' }, T_MARK);
+      S.cue(T_MARK, 'pen', { dur, kind: m.kind });
+      T_MARK += dur + .25;
+    }
+    T_MARK += .45;
+  }
+  S.cue(T_MARK - .4, 'end', {});
+  const END = T_MARK + 3.2;
+  S.duration = END;
+
+  tl.fromTo('#fade', { opacity: 1 }, { opacity: 0, duration: 1.4, ease: 'power1.out', immediateRender: false }, 0);
+  tl.to('#fade', { opacity: 1, duration: 1.6, ease: 'power1.in' }, END - 1.6);
+  tl.set({}, {}, END);
+
+  // --- kâğıt dokusu ---
+  {
+    const g = document.getElementById('pt').getContext('2d');
+    const W = 940, H = 1620;
+    const base = g.createLinearGradient(0, 0, W, H);
+    base.addColorStop(0, '#f1e7d0');
+    base.addColorStop(.6, '#eadcbe');
+    base.addColorStop(1, '#ddc9a3');
+    g.fillStyle = base;
+    g.fillRect(0, 0, W, H);
+    const img = g.getImageData(0, 0, W, H);
+    for (let i = 0; i < W * H; i++) {
+      const n = (rand() - .5) * 16;
+      img.data[i * 4] += n; img.data[i * 4 + 1] += n; img.data[i * 4 + 2] += n * .8;
+    }
+    g.putImageData(img, 0, 0);
+    // lifler
+    g.lineWidth = .7;
+    for (let k = 0; k < 900; k++) {
+      const x = rand() * W, y = rand() * H, l = 6 + rand() * 26, a = rand() * 6.28;
+      g.strokeStyle = `rgba(120, 95, 60, ${.04 + rand() * .07})`;
+      g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + Math.cos(a + .6) * l * .5, y + Math.sin(a + .6) * l * .5, x + Math.cos(a) * l, y + Math.sin(a) * l); g.stroke();
+    }
+    // kahve halkası
+    g.lineWidth = 7;
+    g.strokeStyle = 'rgba(130, 85, 40, .10)';
+    g.beginPath(); g.arc(790, 1440, 92, .3, 5.9); g.stroke();
+    g.lineWidth = 2;
+    g.strokeStyle = 'rgba(130, 85, 40, .14)';
+    g.beginPath(); g.arc(790, 1440, 96, .5, 5.4); g.stroke();
+    // kenar yanığı
+    const e = g.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, H * .75);
+    e.addColorStop(0, 'rgba(110, 70, 30, 0)');
+    e.addColorStop(1, 'rgba(110, 70, 30, .35)');
+    g.fillStyle = e;
+    g.fillRect(0, 0, W, H);
+  }
+  // --- masa ---
+  {
+    const g = document.getElementById('desk').getContext('2d');
+    g.fillStyle = '#24170e';
+    g.fillRect(0, 0, 1080, 1920);
+    for (let y = 0; y < 1920; y += 2) {
+      const v = smoothNoise(y * .02, 3) * .5 + smoothNoise(y * .17, 4) * .3;
+      g.fillStyle = `rgba(${v > 0 ? '90,60,35' : '10,6,3'}, ${Math.abs(v) * .35})`;
+      g.fillRect(0, y, 1080, 2);
+    }
+  }
+
+  const grain = makeGrain(document.getElementById('grain'), { opacity: .1, seed: 5 });
+  const cursor = document.getElementById('cursor');
+  let lastShown = -1;
+
+  S.onDraw((t) => {
+    // karakterler
+    let n = 0;
+    while (n < times.length && times[n] <= t) n++;
+    if (n !== lastShown) {
+      chars.forEach((c, i) => {
+        if (i < n) {
+          const age = t - times[i];
+          c.style.opacity = c.dataset.ink ?? 1;
+        } else c.style.opacity = 0;
+      });
+      lastShown = n;
+    }
+    // vuruş anında harf hafifçe "bastırılır"
+    if (n > 0 && t - times[n - 1] < .05) chars[n - 1].style.filter = 'blur(.6px)'; else if (n > 0) chars[n - 1].style.filter = '';
+    // imleç
+    const ci = Math.min(n, chars.length - 1);
+    const p = pos[ci];
+    const after = n >= chars.length;
+    cursor.style.left = (after ? p.x + p.w + 4 : p.x) + 'px';
+    cursor.style.top = (p.y + p.h - 2) + 'px';
+    const idle = n > 0 ? t - times[n - 1] : t;
+    const blink = idle > .25 ? (Math.floor(t * 2.2) % 2 === 0 ? 1 : 0) : 1;
+    cursor.style.opacity = (t < T_TYPED + 1.2 ? blink : 0) * (t > .8 ? 1 : 0);
+
+    // kamera
+    const f = Math.min(cam.length - 1, Math.round(t * FPS));
+    let [x, y] = cam[f];
+    let s = Z_IN;
+    if (t > T_ZOOM) {
+      const k = gsap.parseEase('power2.inOut')(clamp((t - T_ZOOM) / Z_DUR));
+      s = lerp(Z_IN, 1, k);
+      x = lerp(x, 540, k);
+      y = lerp(y, 960, k);
+    }
+    // daktilo sarsıntısı
+    const kick = S.impulse(t, ['key'], 40, .1) * .8 + S.impulse(t, ['return'], 9, .5) * 4;
+    const jx = smoothNoise(t * 60, 1) * kick, jy = smoothNoise(t * 60, 2) * kick * .6;
+    const drift = smooth(T_ZOOM + Z_DUR, S.duration, t) * .05;
+    s *= 1 + drift;
+    world.style.transform = `translate(${540 - s * x + jx}px, ${960 - s * y + jy}px) scale(${s})`;
+    grain(t);
+  });
+
+  S.finish();
+  window.SCENE.duration = END;
+});
+</script>
+</body>
+</html>
