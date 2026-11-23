@@ -1,0 +1,620 @@
+"""
+Original background music + sound design for the three videos, synthesised from scratch.
+
+Everything is built from tonal sources (sine/additive oscillators, FM bells, pitched
+percussion). There is deliberately no noise generator anywhere in the signal path,
+so there is no hiss, crackle or noisy "whoosh" — transitions are pitched sweeps.
+
+    python3 music.py v1-sinematik   → out/v1-sinematik.wav  (reads out/<name>.cues.json)
+"""
+import json
+import sys
+
+import numpy as np
+from scipy.signal import butter, sosfilt, fftconvolve
+
+SR = 48000
+DUR = 90.0
+N = int(SR * DUR)
+
+
+def mtof(m):
+    return 440.0 * 2 ** ((m - 69) / 12)
+
+
+def tvec(dur):
+    return np.arange(int(dur * SR)) / SR
+
+
+def lp(x, fc, order=2):
+    return sosfilt(butter(order, min(fc, SR * 0.45), 'low', fs=SR, output='sos'), x, axis=-1)
+
+
+def hp(x, fc, order=2):
+    return sosfilt(butter(order, fc, 'high', fs=SR, output='sos'), x, axis=-1)
+
+
+def adsr(n, a, d, s, r):
+    """Linear-attack, exponential-decay envelope of n samples."""
+    t = np.arange(n) / SR
+    dur = n / SR
+    e = np.where(t < a, t / max(a, 1e-4), s + (1 - s) * np.exp(-(t - a) / max(d, 1e-4)))
+    rel_start = max(dur - r, a)
+    e = e * np.clip((dur - t) / max(r, 1e-4), 0, 1) ** 1.5 if r > 0 else e
+    return e
+
+
+class Mix:
+    def __init__(self):
+        self.dry = np.zeros((2, N))
+        self.wet = np.zeros((2, N))   # sent to reverb
+
+    def add(self, sig, t, gain=1.0, pan=0.0, send=0.25):
+        if sig.ndim == 1:
+            l, r = np.cos((pan + 1) * np.pi / 4), np.sin((pan + 1) * np.pi / 4)
+            sig = np.stack([sig * l * 1.414, sig * r * 1.414])
+        i = int(round(t * SR))
+        if i >= N:
+            return
+        j0 = max(0, -i)
+        seg = sig[:, j0: j0 + N - max(i, 0)]
+        i = max(i, 0)
+        self.dry[:, i:i + seg.shape[1]] += seg * gain
+        if send:
+            self.wet[:, i:i + seg.shape[1]] += seg * gain * send
+
+
+# ---------------------------------------------------------------- instruments
+
+def saw(f, dur, maxf=4000, phase_seed=0):
+    """Band-limited additive sawtooth (no aliasing, no noise)."""
+    t = tvec(dur)
+    rs = np.random.RandomState(phase_seed)
+    out = np.zeros_like(t)
+    k_max = max(1, int(min(maxf, SR / 2 * 0.9) / f))
+    for k in range(1, min(k_max, 40) + 1):
+        out += np.sin(2 * np.pi * k * f * t + rs.rand() * 6.283) / k
+    return out
+
+
+def pad(notes, dur, cutoff=1400, a=1.5, r=2.0, seed=1):
+    """Warm detuned-saw pad, stereo."""
+    n = int(dur * SR)
+    L = np.zeros(n); R = np.zeros(n)
+    for i, m in enumerate(notes):
+        f = mtof(m)
+        for j, cents in enumerate((-7, 0, 7)):
+            v = saw(f * 2 ** (cents / 1200), dur, maxf=cutoff * 2, phase_seed=seed + i * 7 + j)[:n]
+            pan = (j - 1) * 0.6
+            L += v * (1 - pan) * 0.5; R += v * (1 + pan) * 0.5
+    sig = lp(np.stack([L, R]), cutoff) / (len(notes) * 3)
+    return sig * adsr(n, a, 9, 1, r)
+
+
+def piano(m, dur=4.0, bright=1.0):
+    t = tvec(dur)
+    f = mtof(m)
+    out = np.zeros_like(t)
+    for k in range(1, 9):
+        fk = k * f * np.sqrt(1 + 0.0004 * k * k)
+        if fk > 12000:
+            break
+        out += np.sin(2 * np.pi * fk * t) * (1 / k ** 1.4) * np.exp(-t * (1.2 + 0.9 * k / bright))
+    att = np.clip(t / 0.004, 0, 1)
+    return out * att * 0.5
+
+
+def bell(m, dur=4.0, idx=2.5, ratio=3.5, decay=1.6):
+    t = tvec(dur)
+    f = mtof(m)
+    mod = idx * np.exp(-t * 3) * np.sin(2 * np.pi * f * ratio * t)
+    return np.sin(2 * np.pi * f * t + mod) * np.exp(-t * decay) * np.clip(t / 0.003, 0, 1) * 0.4
+
+
+def pluck(m, dur=0.5, decay=7.0, harmonics=10, bright=1.0):
+    t = tvec(dur)
+    f = mtof(m)
+    out = np.zeros_like(t)
+    for k in range(1, harmonics + 1):
+        if k * f > 10000:
+            break
+        out += np.sin(2 * np.pi * k * f * t) / k * np.exp(-t * (decay + 3 * k / bright))
+    return out * np.clip(t / 0.002, 0, 1) * 0.5
+
+
+def bass(m, dur, drive=1.5, decay=3.0):
+    t = tvec(dur)
+    f = mtof(m)
+    x = np.sin(2 * np.pi * f * t) + 0.25 * np.sin(4 * np.pi * f * t)
+    x = np.tanh(x * drive) / np.tanh(drive)
+    n = len(t)
+    return x * adsr(n, 0.005, 1 / decay, 0.6, 0.05) * 0.6
+
+
+def kick(gain=1.0, dur=0.45):
+    t = tvec(dur)
+    f = 44 + 110 * np.exp(-t * 32)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    x = np.sin(ph) * np.exp(-t * 7) + 0.25 * np.sin(2 * np.pi * 1000 * t) * np.exp(-t * 400)
+    return np.tanh(x * 1.6) * gain * 0.9
+
+
+def snare_tonal(dur=0.35):
+    """Snare-ish hit made only of pitched partials (no noise)."""
+    t = tvec(dur)
+    body = np.sin(2 * np.pi * 190 * t) * np.exp(-t * 22) + 0.6 * np.sin(2 * np.pi * 330 * t) * np.exp(-t * 30)
+    ring = sum(np.sin(2 * np.pi * f * t + i) for i, f in enumerate((1130, 1710, 2290, 3170))) * np.exp(-t * 55) * 0.18
+    return (body + ring) * 0.55
+
+
+def hat_tonal(dur=0.08, open_=False):
+    t = tvec(dur)
+    x = sum(np.sin(2 * np.pi * f * t + i) for i, f in enumerate((5310, 6970, 8130))) / 3
+    return lp(x * np.exp(-t * (25 if open_ else 70)), 9000) * 0.12
+
+
+def tick(m=96, dur=0.12):
+    t = tvec(dur)
+    return (np.sin(2 * np.pi * mtof(m) * t) + 0.4 * np.sin(2 * np.pi * mtof(m + 7) * t)) * np.exp(-t * 45) * 0.25
+
+
+def boom(dur=3.0, gain=1.0):
+    t = tvec(dur)
+    f = 32 + 48 * np.exp(-t * 6)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    return np.sin(ph) * np.exp(-t * 1.6) * np.clip(t / 0.01, 0, 1) * gain
+
+
+def sweep(f0, f1, dur, shape='up'):
+    """Pitched riser/fall: a few harmonics following an exponential glide, swelling in."""
+    t = tvec(dur)
+    f = f0 * (f1 / f0) ** (t / dur)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    x = np.sin(ph) + 0.35 * np.sin(2 * ph) + 0.15 * np.sin(3 * ph) + 0.3 * np.sin(ph * 1.5)
+    if shape == 'up':
+        e = (t / dur) ** 2.2
+    else:  # quick in, smooth out
+        e = np.sin(np.pi * np.clip(t / dur, 0, 1)) ** 1.5
+    return x * e * 0.25
+
+
+def swell(notes, dur=1.6):
+    """Reverse-style crescendo of a soft chord ending exactly at the cue."""
+    sig = pad(notes, dur, cutoff=2200, a=0.01, r=0.02, seed=5)
+    t = tvec(dur)[: sig.shape[1]]
+    return sig * (t / dur) ** 3
+
+
+def reverb(wet, seconds=3.0, tone=3500, seed=1):
+    # Smooth exponentially-decaying stereo IR (low-passed). With no input it outputs silence,
+    # so it adds space without adding any hiss of its own.
+    rs = np.random.RandomState(seed)
+    n = int(seconds * SR)
+    t = np.arange(n) / SR
+    ir = rs.randn(2, n) * np.exp(-t * 6.9 / seconds)
+    ir = lp(ir, tone, order=4)
+    ir[:, : int(0.012 * SR)] *= np.linspace(0, 1, int(0.012 * SR))
+    ir /= np.sqrt((ir ** 2).sum(axis=1, keepdims=True))
+    out = np.stack([fftconvolve(wet[c], ir[c])[:N] for c in range(2)])
+    return out
+
+
+def master(mix, rev_s=3.0, rev_tone=3500, rev_gain=0.9, fade_out=1.6, target_rms_db=-17):
+    x = mix.dry + reverb(mix.wet, rev_s, rev_tone) * rev_gain
+    x = hp(x, 28)
+    x = x - 0.45 * lp(x, 110)  # low shelf: keeps phone speakers from being swamped by sub
+    x = lp(x, 15000)
+    rms = np.sqrt((x ** 2).mean())
+    x *= 10 ** (target_rms_db / 20) / max(rms, 1e-9)
+    x = np.tanh(x * 1.1) / 1.1  # soft limiter
+    x *= 0.89 / max(np.abs(x).max(), 1e-9)
+    t = np.arange(N) / SR
+    x *= np.clip(t / 0.03, 0, 1) * np.clip((DUR - t) / fade_out, 0, 1)
+    return x
+
+
+# ---------------------------------------------------------------- arrangements
+
+def v1(cues):
+    """Calm, cinematic: D minor pads, sparse piano, a heartbeat under the ocean scene."""
+    m = Mix()
+    D, Bb, F, C, Gm, A = [50, 57, 62, 65], [46, 58, 62, 65], [53, 57, 60, 65], [48, 55, 60, 64], [43, 58, 62, 67], [45, 57, 61, 64]
+    prog_ = [D, Bb, F, C, D, Bb, Gm, A, D, Bb, Gm, A, Bb, C, D]
+    for i, ch in enumerate(prog_):
+        t0 = i * 6.0
+        dur = 9.0 if i < 14 else 8.0
+        cutoff = 900 + 500 * np.sin(i * 0.7) ** 2
+        m.add(pad(ch, dur, cutoff=cutoff, a=2.0, r=3.0, seed=i), t0, gain=0.75, send=0.6)
+        # low root
+        if i >= 2:
+            t = tvec(6.5)
+            r = np.sin(2 * np.pi * mtof(ch[0] - 12) * t) * adsr(len(t), 1.0, 9, 1, 2.0) * 0.15
+            m.add(r, t0, send=0.1)
+        # piano: sparse in the intro, a gentle eighth-note figure after
+        pattern = [3, 1, 2, 1, 3, 2, 0, 2] if i >= 1 else [3, 2]
+        step = 0.75 if i >= 1 else 3.0
+        for k in range(int(6.0 / step)):
+            if i >= 1 and k % 8 in (5, 7) and i % 2 == 0:
+                continue
+            note = ch[pattern[k % len(pattern)]] + 12
+            if i in (10, 11) and k % 2:  # thinner under the ocean scene
+                continue
+            vel = 0.55 + 0.25 * (k % 4 == 0)
+            m.add(piano(note, 4.0, bright=0.8), t0 + k * step + 0.02 * np.sin(k), gain=vel * 0.85, pan=0.3 * np.sin(k * 1.3), send=0.55)
+    # drone
+    t = tvec(DUR)
+    drone = (np.sin(2 * np.pi * mtof(38) * t) + 0.3 * np.sin(2 * np.pi * mtof(45) * t)) * 0.06
+    drone *= np.clip(t / 6, 0, 1)
+    m.add(drone, 0, send=0.2)
+    # heartbeat under the ships
+    for k in range(12):
+        tt = 59.5 + k * 1.25
+        m.add(boom(0.6, 0.3), tt, send=0.1)
+        m.add(boom(0.6, 0.2), tt + 0.28, send=0.1)
+    # final chord rings out
+    m.add(bell(74, 5, idx=1.5), 84.2, gain=0.35, pan=-0.3, send=0.7)
+    m.add(bell(81, 5, idx=1.5), 84.6, gain=0.28, pan=0.3, send=0.7)
+    for c in cues:
+        g = c.get('gain', 1.0)
+        if c['type'] == 'impact':
+            m.add(boom(3.0, 0.55 * g), c['t'], send=0.4)
+            m.add(piano(38, 5, 0.6) + piano(45, 5, 0.6), c['t'], gain=0.7 * g, send=0.6)
+        elif c['type'] == 'swell':
+            m.add(swell([62, 69, 74], 1.6), c['t'] - 1.6, gain=0.9 * g, send=0.6)
+        elif c['type'] == 'boom':
+            m.add(boom(4.0, 1.2 * g), c['t'], send=0.5)
+            m.add(sweep(900, 140, 1.4, 'down'), c['t'] - 0.9, gain=0.5, send=0.7)
+        elif c['type'] == 'chime':
+            for j, n in enumerate((74, 77, 81, 86)):
+                m.add(bell(n, 5, idx=1.2), c['t'] + j * 0.14, gain=0.3 * g, pan=(j - 1.5) * 0.3, send=0.8)
+    return master(m, rev_s=4.5, rev_tone=3000, rev_gain=1.0, fade_out=2.5, target_rms_db=-19)
+
+
+def v2(cues):
+    """Energetic, kinetic: 128 BPM, A minor, sidechained bass and pad, drop at bar 33."""
+    m = Mix()
+    bt = 60 / 128
+    bar = 4 * bt
+    roots = [45, 41, 48, 43]                      # Am F C G
+    chords = [[57, 60, 64], [53, 57, 60], [55, 60, 64], [55, 59, 62]]
+    breakdown = range(26, 33)                     # bars 26..32 (NSA)
+    groove = lambda b: (b < 26) or (33 <= b < 47)
+
+    kicks = []
+    for b in range(48):
+        ch, rt = chords[b % 4], roots[b % 4]
+        t0 = b * bar
+        if b == 47:
+            kicks.append(t0)
+            m.add(pad([45, 57, 60, 64, 69], 4.5, cutoff=2500, a=0.01, r=3.5), t0, gain=0.55, send=0.6)
+            m.add(boom(3.0, 0.8), t0, send=0.3)
+            continue
+        # pad
+        pc = 2400 if b >= 33 else (1100 if b in breakdown else 1700)
+        m.add(pad(ch + [ch[0] + 12], bar + 0.4, cutoff=pc, a=0.05 if b not in breakdown else 0.8, r=0.4, seed=b), t0,
+              gain=0.5 if b not in breakdown else 0.65, send=0.4)
+        if groove(b):
+            for q in range(4):
+                kicks.append(t0 + q * bt)
+            if b >= 4:
+                for q in (1, 3):
+                    m.add(snare_tonal(), t0 + q * bt, gain=0.75, send=0.35)
+                for e in range(8):
+                    if e % 2 == 1 or b >= 33:
+                        m.add(hat_tonal(open_=(e % 4 == 2 and b >= 33)), t0 + e * bt / 2, gain=0.8, pan=0.3, send=0.1)
+                # off-beat bass
+                for e in range(8):
+                    if e % 2 == 1:
+                        m.add(bass(rt - 12 + (12 if e == 7 else 0), bt / 2 * 0.9, drive=2.2, decay=6), t0 + e * bt / 2, gain=0.4, send=0.0)
+        else:
+            # breakdown: a soft heartbeat pulse
+            m.add(boom(0.8, 0.35), t0, send=0.2)
+            m.add(boom(0.8, 0.25), t0 + 2 * bt, send=0.2)
+        # 16th arp
+        arp = [ch[0] + 12, ch[1] + 12, ch[2] + 12, ch[1] + 24, ch[2] + 12, ch[1] + 12, ch[0] + 24, ch[2] + 12]
+        for s in range(16):
+            vel = 0.5 + 0.3 * (s % 4 == 0)
+            g = 0.42 if b not in breakdown else 0.28
+            bright = 0.5 if b in breakdown else 1.0
+            m.add(pluck(arp[s % 8], 0.35, decay=9, bright=bright), t0 + s * bt / 4, gain=g * vel, pan=0.4 * np.sin(s), send=0.3)
+        # lead melody in the drop
+        if 33 <= b < 41:
+            mel = [[76, 0], [79, 1.5], [81, 3]] if b % 2 == 0 else [[84, 0], [83, 1], [79, 2], [76, 3]]
+            for n, q in mel:
+                m.add(pluck(n, 0.9, decay=3.5, harmonics=6), t0 + q * bt, gain=0.5, pan=-0.2, send=0.45)
+                m.add(bell(n + 12, 1.2, idx=1.0, decay=3.5), t0 + q * bt, gain=0.1, pan=0.2, send=0.5)
+    # sidechain ducking on everything except kicks: compute envelope
+    t = np.arange(N) / SR
+    duck = np.ones(N)
+    for k in kicks:
+        i = int(k * SR); j = min(N, i + int(0.35 * SR))
+        duck[i:j] = np.minimum(duck[i:j], 1 - 0.55 * np.exp(-(t[i:j] - k) * 12))
+    m.dry *= duck; m.wet *= duck
+    for k in kicks:  # kicks after ducking
+        m.add(kick(1.0), k, gain=0.45, send=0.03)
+    for c in cues:
+        g = c.get('gain', 1.0)
+        if c['type'] == 'hit':
+            if g >= 1.2:
+                m.add(boom(1.2, 0.3 * g), c['t'], send=0.3)
+                m.add(pad([69, 72, 76, 81], 0.5, cutoff=4000, a=0.003, r=0.3, seed=9), c['t'], gain=0.35, send=0.5)
+            else:
+                m.add(tick(91, 0.1), c['t'], gain=0.35 * g, pan=0.2, send=0.25)
+        elif c['type'] == 'whoosh':
+            m.add(sweep(300, 1600, 0.6, 'mid'), c['t'] - 0.3, gain=0.6, send=0.5)
+        elif c['type'] == 'riser':
+            m.add(sweep(110, 880, c['len'], 'up'), c['t'], gain=0.8, send=0.5)
+            for s in range(32):  # accelerating snare roll (tonal)
+                tt = c['t'] + c['len'] * (1 - (1 - s / 32) ** 1.2)
+                m.add(snare_tonal(0.15), tt, gain=0.12 + 0.35 * s / 32, send=0.2)
+        elif c['type'] == 'boom':
+            m.add(boom(3.0, 1.2), c['t'], send=0.4)
+    return master(m, rev_s=2.2, rev_tone=4500, rev_gain=0.6, fade_out=1.2, target_rms_db=-15)
+
+
+def v3(cues):
+    """Analysis bed: 100 BPM, E minor, steady pulse bass, clock tick, bell motif."""
+    m = Mix()
+    bt = 0.6
+    bar = 4 * bt
+    roots = [40, 36, 43, 38]                      # Em C G D
+    chords = [[52, 55, 59], [48, 52, 55], [50, 55, 59], [50, 54, 57]]
+    nbars = int(np.ceil(86.4 / bar))              # music body until the end card
+    for b in range(nbars):
+        ch, rt = chords[b % 4], roots[b % 4]
+        t0 = b * bar
+        m.add(pad(ch + [ch[2] + 12], bar + 0.6, cutoff=1300, a=0.3, r=0.6, seed=b), t0, gain=0.4, send=0.4)
+        # pulse bass on 8ths
+        if b >= 1:
+            for e in range(8):
+                m.add(pluck(rt, 0.28, decay=10, harmonics=5), t0 + e * bt / 2, gain=0.55 if e % 2 == 0 else 0.4, send=0.05)
+                m.add(np.sin(2 * np.pi * mtof(rt - 12) * tvec(0.25)) * np.exp(-tvec(0.25) * 10) * 0.15, t0 + e * bt / 2, send=0)
+        # clock tick on quarters, softer offbeats
+        for q in range(4):
+            m.add(tick(100 if q == 0 else 96, 0.06), t0 + q * bt, gain=0.22, pan=0.35, send=0.1)
+        # soft kick on 1 & 3 after the intro
+        if b >= 3:
+            m.add(kick(0.4), t0, send=0.05)
+            m.add(kick(0.32), t0 + 2 * bt, send=0.05)
+            m.add(snare_tonal(0.2), t0 + 3 * bt + bt / 2, gain=0.12, send=0.3)
+        # bell motif every bar
+        motif = [[ch[2] + 24, 0], [ch[1] + 24, 1.5], [ch[0] + 24, 2.5]] if b % 2 == 0 else [[ch[2] + 24, 0], [ch[2] + 26, 2]]
+        if b >= 2:
+            for n, q in motif:
+                m.add(bell(n, 2.0, idx=1.6, decay=2.2), t0 + q * bt, gain=0.24, pan=-0.3, send=0.5)
+    # end: ring out on Em(add9)
+    te = 86.4
+    m.add(pad([40, 52, 55, 59, 66], 4.0, cutoff=1800, a=0.05, r=3.0), te, gain=0.45, send=0.7)
+    for c in cues:
+        g = c.get('gain', 1.0)
+        if c['type'] == 'tick':
+            m.add(pluck(88, 0.25, decay=14, harmonics=3), c['t'], gain=0.25, pan=-0.2, send=0.3)
+        elif c['type'] == 'whoosh':
+            m.add(sweep(250, 1200, 0.5, 'mid'), c['t'] - 0.25, gain=0.35 * g, send=0.5)
+        elif c['type'] == 'chime':
+            for j, n in enumerate((76, 79, 83, 88)):
+                m.add(bell(n, 4, idx=1.2), c['t'] + j * 0.12, gain=0.25 * g, pan=(j - 1.5) * 0.3, send=0.7)
+    return master(m, rev_s=2.6, rev_tone=3800, rev_gain=0.7, fade_out=1.5, target_rms_db=-17)
+
+
+def set_duration(d):
+    global DUR, N
+    DUR = d
+    N = int(SR * DUR)
+
+
+def beeps(n=3, f1=88, f2=81, step=0.13):
+    out = np.zeros(int(SR * (n * step + 0.2)))
+    for i in range(n):
+        b = tick(f1 if i % 2 == 0 else f2, 0.12) * 1.4
+        j = int(i * step * SR); out[j:j + len(b)] += b
+    return out
+
+
+def bed_loop(m, t0, t1, bpm, roots, chords, layers, bar_offset=0):
+    """Lays bars between t0 and t1. layers: set of 'pad','bass16','kick','hat','arp','heart','bell','pizz'."""
+    bt = 60 / bpm; bar = 4 * bt
+    b = 0
+    t = t0
+    while t < t1 - 0.05:
+        i = (b + bar_offset) % len(roots)
+        ch, rt = chords[i], roots[i]
+        span = min(bar, t1 - t)
+        if 'pad' in layers:
+            m.add(pad(ch + [ch[0] + 12], span + 0.5, cutoff=1300, a=0.25, r=0.5, seed=b + int(t)), t, gain=0.5, send=0.45)
+        for e in range(16):
+            te = t + e * bt / 4
+            if te >= t1:
+                break
+            if 'bass16' in layers:
+                m.add(pluck(rt, 0.18, decay=14, harmonics=6), te, gain=0.5 if e % 4 == 0 else 0.32, send=0.05)
+            if 'arp' in layers and e % 2 == 0:
+                seq = [ch[0] + 12, ch[1] + 12, ch[2] + 12, ch[1] + 24]
+                m.add(pluck(seq[(e // 2) % 4], 0.4, decay=8), te, gain=0.3, pan=0.4 * np.sin(e), send=0.35)
+            if 'pizz' in layers and e % 2 == 0:
+                walk = [ch[0] + 12, ch[2] + 12, ch[1] + 12, ch[2] + 12, ch[0] + 24, ch[2] + 12, ch[1] + 12, ch[0] + 12]
+                m.add(pluck(walk[(e // 2) % 8], 0.3, decay=11, harmonics=5), te, gain=0.42, pan=-0.3 + 0.6 * ((e // 2) % 2), send=0.3)
+            if 'hat' in layers and e % 4 == 2:
+                m.add(hat_tonal(), te, gain=0.9, pan=0.3, send=0.1)
+            if 'kick' in layers and e in (0, 8):
+                m.add(kick(0.45), te, send=0.05)
+            if 'heart' in layers and e in (0, 3):
+                m.add(boom(0.6, 0.35 if e == 0 else 0.22), te, send=0.1)
+            if 'bell' in layers and e in (0, 6, 10):
+                m.add(bell(ch[(e // 4) % 3] + 24, 1.8, idx=1.4, decay=2.4), te, gain=0.16, pan=-0.3, send=0.5)
+        b += 1
+        t += bar
+
+
+def v4(cues, tl):
+    m = Mix()
+    S = {x['id']: x for x in tl['segments']}
+    roots = [36, 32, 39, 34]; chords = [[48, 51, 55], [44, 48, 51], [46, 51, 55], [46, 50, 53]]  # Cm Ab Eb Bb
+    bpm = 96
+    bed_loop(m, 0.0, S['gulf']['start'], bpm, roots, chords, {'pad', 'bass16', 'kick', 'hat'})
+    bed_loop(m, S['gulf']['start'], S['q']['start'] - 0.1, bpm, roots, chords, {'pad', 'bass16', 'heart'}, 2)
+    t = tvec(S['p1']['start'] - S['q']['start'] + 0.6)
+    m.add(np.sin(2 * np.pi * mtof(36) * t) * 0.25 * np.clip(t / 0.2, 0, 1), S['q']['start'] - 0.1, send=0.3)
+    bed_loop(m, S['p1']['start'] - 0.15, S['close']['start'], bpm, roots, chords, {'pad', 'arp', 'bell', 'kick'})
+    m.add(pad([36, 48, 51, 55, 62], DUR - S['close']['start'] + 0.5, cutoff=1500, a=0.6, r=2.5), S['close']['start'], gain=0.55, send=0.6)
+    for c in cues:
+        tt = c['t']
+        if c['type'] == 'alert':
+            m.add(beeps(), tt, gain=0.6, send=0.2); m.add(boom(1.5, 0.6), tt, send=0.2)
+        elif c['type'] == 'freeze':
+            m.add(sweep(900, 120, 0.8, 'mid'), tt, gain=0.5, send=0.4)
+        elif c['type'] == 'whoosh':
+            m.add(sweep(220, 1100, 0.6, 'mid'), tt - 0.3, gain=0.45, send=0.5)
+        elif c['type'] == 'glitch':
+            for k in range(6):
+                m.add(tick(70 + (k * 7) % 24, 0.05), tt + k * 0.045, gain=0.7, pan=(-1) ** k * 0.5, send=0.1)
+            m.add(boom(2.0, 0.8), tt + 0.3, send=0.4)
+        elif c['type'] == 'card':
+            m.add(pluck(79, 0.4, decay=10), tt, gain=0.35, send=0.3); m.add(boom(0.7, 0.3), tt, send=0.1)
+        elif c['type'] == 'end':
+            m.add(boom(3.0, 0.8), tt, send=0.4)
+            for j, n in enumerate((72, 75, 79, 84)):
+                m.add(bell(n, 3.5, idx=1.2), tt + j * 0.12, gain=0.25, pan=(j - 1.5) * 0.3, send=0.7)
+    return m
+
+
+def v5(cues, tl):
+    m = Mix()
+    S = {x['id']: x for x in tl['segments']}
+    roots = [38, 34, 41, 36]; chords = [[50, 53, 57], [46, 50, 53], [48, 53, 57], [48, 52, 55]]  # Dm Bb F C
+    bpm = 90
+    bed_loop(m, 0.0, S['string']['start'], bpm, roots, chords, {'pad', 'pizz', 'bell'})
+    bed_loop(m, S['string']['start'], S['p1']['start'] - 0.1, bpm, roots, chords, {'pad', 'pizz', 'heart'})
+    bed_loop(m, S['p1']['start'] - 0.1, S['close']['start'], bpm, roots, chords, {'pad', 'pizz', 'bell', 'kick'})
+    m.add(pad([38, 50, 53, 57, 64], DUR - S['close']['start'] + 0.5, cutoff=1600, a=0.6, r=2.5), S['close']['start'], gain=0.55, send=0.6)
+    for c in cues:
+        tt = c['t']; g = c.get('gain', 1.0)
+        if c['type'] == 'marker':
+            for k, n in enumerate((74, 77, 81)):
+                m.add(pluck(n, 0.3, decay=12), tt + k * 0.07, gain=0.25, pan=0.3, send=0.3)
+        elif c['type'] == 'whoosh':
+            m.add(sweep(200, 700, 0.5, 'mid'), tt - 0.25, gain=0.35 * g, send=0.5)
+        elif c['type'] == 'slap':
+            m.add(boom(0.5, 0.5), tt, send=0.15); m.add(pluck(62, 0.2, decay=20, harmonics=4), tt, gain=0.3, send=0.1)
+        elif c['type'] == 'twang':
+            m.add(pluck(45, 1.2, decay=3.0, harmonics=8), tt + 0.6, gain=0.45, send=0.3)
+            m.add(pluck(52, 1.0, decay=3.5, harmonics=6), tt + 0.62, gain=0.25, send=0.3)
+        elif c['type'] == 'end':
+            for j, n in enumerate((74, 77, 81, 86)):
+                m.add(bell(n, 3.5, idx=1.2), tt + j * 0.12, gain=0.25, pan=(j - 1.5) * 0.3, send=0.7)
+    return m
+
+
+def text_bed(cues, bpm, roots, chords, sections, handlers):
+    """Instrumental bed for the text-only videos: sections = [(t0, t1, layers)]."""
+    m = Mix()
+    for t0, t1, layers in sections:
+        bed_loop(m, t0, t1, bpm, roots, chords, layers)
+    for c in cues:
+        h = handlers.get(c['type'])
+        if h:
+            h(m, c)
+    return master(m, rev_s=2.6, rev_tone=3800, rev_gain=0.7, fade_out=2.0, target_rms_db=-16)
+
+
+def chime(m, tt, base=(76, 79, 83, 88), g=0.28):
+    for j, n in enumerate(base):
+        m.add(bell(n, 3.5, idx=1.2), tt + j * 0.12, gain=g, pan=(j - 1.5) * 0.3, send=0.7)
+
+
+def v6(cues):  # noir dossier, A minor 72 BPM
+    def typing(m, c):
+        k = 0
+        while k * 0.08 < c['len']:
+            m.add(tick(98 + (k % 3) * 2, 0.03), c['t'] + k * 0.08, gain=0.1, pan=0.2, send=0.05); k += 1
+    H = {'stamp': lambda m, c: (m.add(boom(0.9, 0.8), c['t'], send=0.3), m.add(pluck(33, 0.4, decay=12, harmonics=6), c['t'], gain=0.6, send=0.2)),
+         'slide': lambda m, c: m.add(sweep(160, 520, 0.6, 'mid'), c['t'] - 0.1, gain=0.3, send=0.5),
+         'photo': lambda m, c: m.add(pluck(81, 0.3, decay=14, harmonics=3), c['t'], gain=0.25, send=0.3),
+         'typing': typing,
+         'mark': lambda m, c: m.add(pluck(69, 0.6, decay=6), c['t'], gain=0.35, send=0.4),
+         'end': lambda m, c: chime(m, c['t'], (69, 72, 76, 81))}
+    return text_bed(cues, 72, [45, 41, 43, 40], [[57, 60, 64], [53, 57, 60], [55, 59, 62], [52, 55, 59]],
+                    [(0, 7.5, {'pad'}), (7.5, 61, {'pad', 'pizz', 'bell'}), (61, 77, {'pad', 'heart', 'bell'}), (77, 86.2, {'pad'}), (86.2, 90, set())], H)
+
+
+def v7(cues):  # domino, C major / A minor 100 BPM
+    H = {'knock': lambda m, c: (m.add(pluck(55, 0.25, decay=25, harmonics=4), c['t'], gain=0.7 * c.get('gain', 1), send=0.2),
+                                m.add(boom(0.5, 0.5 * c.get('gain', 1)), c['t'], send=0.1)),
+         'whoosh': lambda m, c: m.add(sweep(220, 900, 0.5, 'mid'), c['t'] - 0.25, gain=0.3, send=0.5),
+         'hit': lambda m, c: (m.add(boom(1.5, 0.8), c['t'], send=0.3), m.add(pad([57, 60, 64, 69], 0.6, cutoff=3500, a=0.003, r=0.4), c['t'], gain=0.35, send=0.5)),
+         'end': lambda m, c: chime(m, c['t'], (72, 76, 79, 84))}
+    return text_bed(cues, 100, [48, 45, 41, 43], [[60, 64, 67], [57, 60, 64], [53, 57, 60], [55, 59, 62]],
+                    [(0, 6.5, {'pad', 'arp'}), (6.5, 46, {'pad', 'arp', 'kick', 'hat'}), (46, 57, {'pad', 'heart', 'bell'}), (57, 61, {'pad'}),
+                     (61, 77.2, {'pad', 'arp', 'kick'}), (77.2, 86.2, {'pad', 'heart'}), (86.2, 90, set())], H)
+
+
+def v8(cues):  # phone, lo-fi 104 BPM; the bed thickens day by day
+    NOTE = {'news': (88, 93, 96), 'mail': (84, 88), 'chat': (91, 88), 'air': (81, 86, 89), 'hr': (86, 91),
+            'bank': (72, 76), 'pay': (79, 84), 'bk': (84, 88, 91, 96)}
+
+    def ding(m, c):
+        g = c.get('gain', 1.0)
+        for k, n in enumerate(NOTE.get(c.get('app'), (88, 93))):
+            m.add(bell(n, 1.2, idx=0.8, decay=4.5), c['t'] + k * 0.085, gain=0.28 * g, pan=0.15, send=0.3)
+
+    def buzz(m, tt, n=2):  # haptic: short low tonal pulses
+        for k in range(n):
+            x = np.sin(2 * np.pi * 150 * tvec(0.09)) * np.sin(np.pi * np.linspace(0, 1, int(0.09 * SR)))
+            m.add(x * 0.35, tt + k * 0.13, send=0)
+
+    def alert(m, c):
+        m.add(beeps(3, 91, 86, 0.11), c['t'], gain=0.5, send=0.2); buzz(m, c['t'])
+
+    def rewind(m, c):
+        m.add(sweep(1500, 140, 2.6, 'mid'), c['t'], gain=0.45, send=0.4)
+        for k in range(14):
+            m.add(tick(96 - k, 0.04), c['t'] + 2.4 * (1 - (1 - k / 14) ** 1.5), gain=0.18, pan=0.3, send=0.1)
+
+    H = {'wake': lambda m, c: m.add(sweep(400, 900, 0.4, 'mid'), c['t'], gain=0.2, send=0.4),
+         'ding': ding, 'alert': alert, 'rewind': rewind,
+         'marker': lambda m, c: m.add(sweep(1200, 2200, 0.35, 'mid'), c['t'], gain=0.08, send=0.2),
+         'swipe': lambda m, c: m.add(sweep(300, 1400, 0.45, 'mid'), c['t'], gain=0.3, send=0.4),
+         'pile': lambda m, c: m.add(boom(1.6, 0.7), c['t'] + 0.5, send=0.3),
+         'pop': lambda m, c: m.add(pluck(76 + 3 * (int(c['t'] * 10) % 4), 0.4, decay=9), c['t'], gain=0.4, send=0.3),
+         'hit': lambda m, c: (m.add(boom(1.4, 0.8), c['t'], send=0.3), buzz(m, c['t'], 1)),
+         'select': lambda m, c: (m.add(pluck(76, 0.4, decay=10), c['t'], gain=0.4, send=0.3), buzz(m, c['t'], 1)),
+         'end': lambda m, c: chime(m, c['t'])}
+    return text_bed(cues, 104, [45, 41, 48, 43], [[57, 60, 64], [53, 57, 60], [55, 60, 64], [55, 59, 62]],
+                    [(0, 3.9, {'pad', 'kick'}), (3.9, 6.6, set()),
+                     (6.6, 17, {'pad', 'pizz'}), (17, 30.2, {'pad', 'pizz', 'kick'}), (30.2, 42, {'pad', 'pizz', 'kick', 'hat'}),
+                     (42, 52, {'pad', 'kick', 'hat', 'bass16'}), (52, 60.5, {'pad', 'heart', 'bass16'}),
+                     (60.5, 70.6, {'pad', 'heart'}), (70.6, 86, {'pad', 'bell', 'kick'}), (86, 90, {'pad'})], H)
+
+
+def with_voice(name, builder):
+    from scipy.io import wavfile
+    tl = json.load(open(f'out/{name}.timeline.json'))
+    set_duration(tl['duration'])
+    cues = json.load(open(f'out/{name}.cues.json'))['cues']
+    m = builder(cues, tl)
+    music = master(m, rev_s=2.6, rev_tone=3800, rev_gain=0.7, fade_out=1.5, target_rms_db=-17)
+    sr, vo = wavfile.read(f'out/{name}.vo.wav')
+    vo = vo.astype(np.float64) / 32768
+    vo = np.pad(vo, (0, max(0, N - len(vo))))[:N]
+    vo = hp(vo, 70)
+    # duck the music under the voice (fast attack, slow release)
+    env = np.abs(vo)
+    env = sosfilt(butter(1, 4, 'low', fs=SR, output='sos'), env)
+    duck = 1 - 0.6 * np.clip(env / 0.05, 0, 1)
+    duck = sosfilt(butter(1, 3, 'low', fs=SR, output='sos'), duck)
+    x = music * 0.42 * duck + np.stack([vo, vo]) * 1.0
+    x = np.tanh(x * 1.2) / 1.2
+    x *= 0.89 / max(np.abs(x).max(), 1e-9)
+    return x
+
+
+if __name__ == '__main__':
+    name = sys.argv[1]
+    if name[:2] in ('v4', 'v5'):
+        x = with_voice(name, {'v4': v4, 'v5': v5}[name[:2]])
+    else:
+        cues = json.load(open(f'out/{name}.cues.json'))['cues']
+        x = {'v1': v1, 'v2': v2, 'v3': v3, 'v6': v6, 'v7': v7, 'v8': v8}[name[:2]](cues)
+    from scipy.io import wavfile
+    wavfile.write(f'out/{name}.wav', SR, (x.T * 32767).astype(np.int16))
+    print('wrote', f'out/{name}.wav', 'peak', float(np.abs(x).max()))
